@@ -48,7 +48,6 @@
 #include "UIManager/include/UI/UISettings.h"
 #include "UIManager/include/UI/Panels/Navigation/UILandingPage.h"
 #include "UIManager/include/UI/Panels/WarcraftLogs/UIWarcraftLogsUrlDialog.h"
-#include "warcraftlogs_manager/include/Auth/OAuthClient.h"
 #include "warcraftlogs_manager/include/Storage/ResponseCache.h"
 #include "Utils/ExecutablePath.h"
 #include <GLFW/glfw3.h>
@@ -394,18 +393,6 @@ int Application::run() {
         return !awow::wclAuthError().empty() || !awow::wclNotice().empty();
     };
 
-    // Validation callback for API credentials
-    const auto validateCredentials = [](const std::string& clientId, const std::string& clientSecret, std::string& outError) -> bool {
-        try {
-            warcraftlogs::OAuthClient testClient(clientId, clientSecret);
-            std::string token = testClient.getToken();
-            return !token.empty();
-        } catch (const std::exception& e) {
-            outError = std::string("Authentication failed: ") + e.what();
-            return false;
-        }
-    };
-
     // Each pass starts at the landing page
     while (true) {
         if (singleInstance_ && singleInstance_->hasPendingFile() && importPendingSnapshot()) {
@@ -413,7 +400,7 @@ int Application::run() {
         }
 
         LandingPageResult landingResult = uiManager_->showLandingPage(
-            validateCredentials, &responseCache, autoOpenWclDialog);
+            &responseCache, autoOpenWclDialog);
         autoOpenWclDialog = false;  // Reset flag after showing
 
         switch (landingResult.choice) {

@@ -130,9 +130,6 @@ private:
     // Class icon cache for cached fights panel
     ClassIconCache* classIconCache_ = nullptr;
 
-    // Credential validation callback (provided by Application)
-    std::function<bool(const std::string&, const std::string&, std::string&)> validateCredentialsCallback_;
-
     // Auto-open the WCL dialog on next render (for returning after auth failure)
     bool autoOpenWclDialog_ = false;
 
@@ -150,13 +147,6 @@ private:
     void renderLanguagePackCard();
 
 public:
-    // Set callback to validate credentials before saving
-    // Callback returns true if valid, false otherwise. Error message in outError.
-    void setValidateCredentialsCallback(
-        std::function<bool(const std::string&, const std::string&, std::string&)> callback) {
-        validateCredentialsCallback_ = std::move(callback);
-    }
-
     // Set response cache for browsing cached fights
     void setResponseCache(warcraftlogs::ResponseCache* cache);
 

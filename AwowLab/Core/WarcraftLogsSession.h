@@ -213,11 +213,6 @@ public:
 
     [[nodiscard]] bool isFightCached(int32_t fightId) const;
 
-    // The user's own API client
-    void setCustomCredentials(const std::string& clientId, const std::string& clientSecret);
-
-    [[nodiscard]] bool hasCustomCredentials() const noexcept { return m_hasCustomCredentials; }
-
 private:
     bool fetchReportMetadata();
     ExtractedData fetchFightEvents(int32_t fightId,
@@ -233,7 +228,6 @@ private:
     std::string m_reportCode;
 
     std::unique_ptr<UserOAuthClient> m_userOAuth;
-    std::unique_ptr<OAuthClient> m_clientOAuth;  // Fallback for public reports
     bool m_useUserAuth = true;
 
     std::unique_ptr<GraphQLClient> m_graphqlClient;
@@ -247,8 +241,6 @@ private:
     std::unique_ptr<ResponseCache> m_cache;
     bool m_cacheEnabled = true;
     std::string m_cacheDir = "./wcl_cache";
-
-    bool m_hasCustomCredentials = false;
 };
 
 } // namespace warcraftlogs

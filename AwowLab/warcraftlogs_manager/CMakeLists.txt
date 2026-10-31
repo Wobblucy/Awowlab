@@ -5,7 +5,6 @@ find_package(RapidJSON CONFIG REQUIRED)
 
 add_library(warcraftlogs_manager STATIC
     # Auth
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/Auth/OAuthClient.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Auth/UserOAuthClient.cpp
 
     # Api
@@ -25,8 +24,6 @@ add_library(warcraftlogs_manager STATIC
 
     # Storage
     ${CMAKE_CURRENT_SOURCE_DIR}/src/Storage/ResponseCache.cpp
-
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/WarcraftLogsManager.cpp
 )
 
 target_include_directories(warcraftlogs_manager

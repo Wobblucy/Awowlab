@@ -372,8 +372,7 @@ AutoAnnotationTriggerManager* UIManager::getAutoAnnotationTriggerManager() {
     return vulkanRenderer ? vulkanRenderer->getAutoAnnotationTriggerManager() : nullptr;
 }
 
-LandingPageResult UIManager::showLandingPage(ValidateCredentialsCallback validateCredentials,
-                                               warcraftlogs::ResponseCache* responseCache,
+LandingPageResult UIManager::showLandingPage(warcraftlogs::ResponseCache* responseCache,
                                                bool autoOpenWclDialog) {
     UILandingPage landingPage;
 
@@ -393,10 +392,6 @@ LandingPageResult UIManager::showLandingPage(ValidateCredentialsCallback validat
     landingPage.setPackageStatus(landingStatus_, landingStatusIsError_);
     landingStatus_.clear();
     landingStatusIsError_ = false;
-
-    if (validateCredentials) {
-        landingPage.setValidateCredentialsCallback(validateCredentials);
-    }
 
     if (responseCache) {
         landingPage.setResponseCache(responseCache);

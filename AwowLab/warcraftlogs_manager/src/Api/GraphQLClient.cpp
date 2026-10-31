@@ -23,22 +23,8 @@ constexpr size_t kLoggedBodyLength = 500;
 
 } // namespace
 
-GraphQLClient::GraphQLClient(OAuthClient& oauthClient)
-    : m_oauthClient(&oauthClient)
-    , m_endpoint(ApiEndpoint::Client)
-{
-    m_httpClient.setTimeout(kDefaultRequestTimeoutMs);
-}
-
-GraphQLClient::GraphQLClient(OAuthClient& oauthClient, RateLimiter& rateLimiter)
-    : GraphQLClient(oauthClient)
-{
-    m_rateLimiter = &rateLimiter;
-}
-
 GraphQLClient::GraphQLClient(UserOAuthClient& userOAuthClient)
     : m_userOAuthClient(&userOAuthClient)
-    , m_endpoint(ApiEndpoint::User)
 {
     m_httpClient.setTimeout(kDefaultRequestTimeoutMs);
 }
@@ -59,13 +45,7 @@ rapidjson::Document GraphQLClient::executeQuery(
 
     std::string token = getAuthToken();
 
-    // User (PKCE) tokens only work on /api/v2/user; client-credentials tokens
-    // use /api/v2/client.
-    const char* endpoint = (m_endpoint == ApiEndpoint::User)
-        ? "/api/v2/user"
-        : "/api/v2/client";
-
-    std::string response = httpsPost(endpoint, body, token);
+    std::string response = httpsPost("/api/v2/user", body, token);
 
     return parseResponse(response);
 }
@@ -211,23 +191,13 @@ rapidjson::Document GraphQLClient::parseResponse(const std::string& responseBody
 }
 
 std::string GraphQLClient::getAuthToken() {
-    if (m_userOAuthClient) {
-        std::string token = m_userOAuthClient->getToken();
-        if (token.empty()) {
-            std::string errorMsg = "User OAuth token not available - authentication required";
-            AWOW_LOG_ERROR("WCL", errorMsg);
-            throw GraphQLException(errorMsg);
-        }
-        return token;
+    std::string token = m_userOAuthClient->getToken();
+    if (token.empty()) {
+        std::string errorMsg = "User OAuth token not available - authentication required";
+        AWOW_LOG_ERROR("WCL", errorMsg);
+        throw GraphQLException(errorMsg);
     }
-
-    if (m_oauthClient) {
-        return m_oauthClient->getToken();
-    }
-
-    std::string errorMsg = "No OAuth client configured";
-    AWOW_LOG_ERROR("WCL", errorMsg);
-    throw GraphQLException(errorMsg);
+    return token;
 }
 
 } // namespace warcraftlogs

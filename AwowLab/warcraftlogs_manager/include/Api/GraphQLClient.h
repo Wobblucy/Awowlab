@@ -1,6 +1,5 @@
 #pragma once
 
-#include "../Auth/OAuthClient.h"
 #include "../Auth/UserOAuthClient.h"
 #include "RateLimiter.h"
 #include <HttpClient.h>
@@ -14,24 +13,16 @@ namespace warcraftlogs {
 
 using http::HttpException;
 
-// A user (PKCE) token is only accepted on the User endpoint.
-enum class ApiEndpoint {
-    Client,  // /api/v2/client, client credentials
-    User     // /api/v2/user, PKCE sign-in
-};
-
 class GraphQLException : public std::runtime_error {
 public:
     explicit GraphQLException(const std::string& message)
         : std::runtime_error(message) {}
 };
 
-// WarcraftLogs GraphQL client. Constructed from an OAuthClient it uses the
-// client-credentials endpoint; from a UserOAuthClient, the user endpoint.
+// WarcraftLogs GraphQL client. Sends the signed-in user's token to the user
+// endpoint, the only one that accepts a PKCE token.
 class GraphQLClient {
 public:
-    explicit GraphQLClient(OAuthClient& oauthClient);
-    GraphQLClient(OAuthClient& oauthClient, RateLimiter& rateLimiter);
     explicit GraphQLClient(UserOAuthClient& userOAuthClient);
     GraphQLClient(UserOAuthClient& userOAuthClient, RateLimiter& rateLimiter);
 
@@ -80,10 +71,8 @@ private:
 
     std::string getAuthToken();
 
-    OAuthClient* m_oauthClient = nullptr;
     UserOAuthClient* m_userOAuthClient = nullptr;
     RateLimiter* m_rateLimiter = nullptr;           // may be null
-    ApiEndpoint m_endpoint = ApiEndpoint::Client;
     http::HttpClient m_httpClient;
 };
 

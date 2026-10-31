@@ -233,8 +233,8 @@ TEST_CASE("kill parses from the fight shape the api sends", "[wcl][cache]") {
     REQUIRE_FALSE(doc.HasParseError());
     REQUIRE(doc.IsArray());
 
-    // Mirrors the reader in WarcraftLogsManager and ResponseCache: only a real
-    // bool is taken, so null and absent both leave the default alone
+    // Mirrors the reader in ResponseCache: only a real bool is taken, so null
+    // and absent both leave the default alone
     std::vector<bool> parsed;
     std::vector<int> keystones;
     for (const auto& f : doc.GetArray()) {

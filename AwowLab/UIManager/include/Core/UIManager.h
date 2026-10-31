@@ -213,9 +213,6 @@ public:
     // Get auto-annotation trigger manager for direct access (e.g., snapshot import)
     AutoAnnotationTriggerManager* getAutoAnnotationTriggerManager();
 
-    // Callback type for validating WarcraftLogs API credentials
-    using ValidateCredentialsCallback = std::function<bool(const std::string&, const std::string&, std::string&)>;
-
     // What the last package or season-list action did. Lives here rather than
     // on the landing page because that is rebuilt every time the menu opens,
     // so a message set during an action would be gone before it was read.
@@ -226,11 +223,9 @@ public:
 
     // Show landing page and wait for user choice
     // Returns the user's choice (LocalFile, WarcraftLogs, CachedFight, or Exit)
-    // validateCredentials: optional callback to validate API credentials before saving
     // responseCache: optional cache for browsing previously loaded WarcraftLogs fights
     // autoOpenWclDialog: if true, automatically opens the WCL URL dialog (e.g., after auth failure)
-    LandingPageResult showLandingPage(ValidateCredentialsCallback validateCredentials = nullptr,
-                                       warcraftlogs::ResponseCache* responseCache = nullptr,
+    LandingPageResult showLandingPage(warcraftlogs::ResponseCache* responseCache = nullptr,
                                        bool autoOpenWclDialog = false);
 
     // Show WarcraftLogs fight selector and wait for user selection

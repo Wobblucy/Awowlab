@@ -36,9 +36,7 @@ constexpr int kMaxEventPages = 100;
 
 WarcraftLogsSession::WarcraftLogsSession()
     : m_userOAuth(std::make_unique<UserOAuthClient>())
-    , m_clientOAuth(nullptr)  // No fallback - PKCE only (client credentials require secret)
     , m_rateLimiter(std::make_unique<RateLimiter>())
-    , m_useUserAuth(true)  // Use PKCE flow by default (no client_secret required)
 {
 }
 
@@ -94,11 +92,7 @@ bool WarcraftLogsSession::authenticate(ProgressCallback progressCallback) {
 }
 
 bool WarcraftLogsSession::isAuthenticated() const noexcept {
-    if (m_useUserAuth && m_userOAuth) {
-        return m_userOAuth->isAuthenticated();
-    }
-    // Client credentials don't require explicit authentication
-    return true;
+    return m_useUserAuth && m_userOAuth && m_userOAuth->isAuthenticated();
 }
 
 bool WarcraftLogsSession::fetchReport(ProgressCallback progressCallback) {
@@ -333,7 +327,7 @@ void WarcraftLogsSession::reset() {
     m_reportCode.clear();
     m_reportMetadata.reset();
     m_graphqlClient.reset();
-    m_useUserAuth = true;  // Use PKCE flow by default (no client_secret required)
+    m_useUserAuth = true;
 }
 
 void WarcraftLogsSession::setCacheEnabled(bool enabled, const std::string& cacheDir) {
@@ -584,19 +578,14 @@ void WarcraftLogsSession::ensureGraphQLClient() {
         return;
     }
 
-    if (m_useUserAuth && m_userOAuth && m_userOAuth->isAuthenticated()) {
-        // Use PKCE/User OAuth for private report access
-        // This uses /api/v2/user endpoint which is required for PKCE tokens
-        m_graphqlClient = std::make_unique<GraphQLClient>(*m_userOAuth, *m_rateLimiter);
-    } else if (m_clientOAuth && m_hasCustomCredentials) {
-        // Only use client credentials if user explicitly provided their own API credentials
-        // This uses /api/v2/client endpoint
-        m_graphqlClient = std::make_unique<GraphQLClient>(*m_clientOAuth, *m_rateLimiter);
-    } else {
+    if (!m_useUserAuth || !m_userOAuth || !m_userOAuth->isAuthenticated()) {
         std::string errorMsg = "User authentication required - please authenticate with WarcraftLogs";
         AWOW_LOG_ERROR("WCL", errorMsg);
         throw std::runtime_error(errorMsg);
     }
+
+    // PKCE tokens only work against the /api/v2/user endpoint
+    m_graphqlClient = std::make_unique<GraphQLClient>(*m_userOAuth, *m_rateLimiter);
 
     if (m_requestTimeoutMs > 0) m_graphqlClient->setTimeout(m_requestTimeoutMs);
 }
@@ -772,14 +761,6 @@ void WarcraftLogsSession::setUserAccessToken(const std::string& token) {
     m_useUserAuth = true;
 
     // Rebuilt lazily with the new token
-    m_graphqlClient.reset();
-}
-
-void WarcraftLogsSession::setCustomCredentials(const std::string& clientId, const std::string& clientSecret) {
-    m_clientOAuth = std::make_unique<OAuthClient>(clientId, clientSecret);
-    m_hasCustomCredentials = true;
-
-    // Rebuilt lazily with the new credentials
     m_graphqlClient.reset();
 }
 

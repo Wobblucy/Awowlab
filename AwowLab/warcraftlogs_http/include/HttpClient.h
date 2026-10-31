@@ -67,13 +67,11 @@ public:
         const std::optional<std::string>& authToken = std::nullopt
     );
 
-    // Form-encoded POST, used for OAuth token exchange. basicAuthCredentials
-    // is the already base64-encoded "id:secret" for Basic auth.
+    // Form-encoded POST, used for OAuth token exchange.
     [[nodiscard]] HttpResponse postForm(
         const std::string& host,
         const std::string& path,
-        const std::map<std::string, std::string>& formData,
-        const std::optional<std::string>& basicAuthCredentials = std::nullopt
+        const std::map<std::string, std::string>& formData
     );
 
 private:

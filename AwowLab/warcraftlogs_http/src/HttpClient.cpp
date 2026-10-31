@@ -121,8 +121,7 @@ HttpResponse HttpClient::get(
 HttpResponse HttpClient::postForm(
     const std::string& host,
     const std::string& path,
-    const std::map<std::string, std::string>& formData,
-    const std::optional<std::string>& basicAuthCredentials
+    const std::map<std::string, std::string>& formData
 ) {
     std::ostringstream body;
     bool first = true;
@@ -132,18 +131,13 @@ HttpResponse HttpClient::postForm(
         body << urlEncode(key) << "=" << urlEncode(value);
     }
 
-    std::optional<std::string> authHeader;
-    if (basicAuthCredentials) {
-        authHeader = "Basic " + *basicAuthCredentials;
-    }
-
     return performRequest(
         "POST",
         host,
         path,
         body.str(),
         "application/x-www-form-urlencoded",
-        authHeader
+        std::nullopt
     );
 }
 

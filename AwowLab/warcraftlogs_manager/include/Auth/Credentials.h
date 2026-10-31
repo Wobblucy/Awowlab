@@ -14,13 +14,9 @@ namespace credentials {
     // configure time with AWOWLAB_WCL_CLIENT_ID (docs/BUILD-OPTIONS.md).
     constexpr const char* CLIENT_ID = AWOWLAB_WCL_CLIENT_ID;
 
-    // PKCE sends a code_verifier instead.
-    constexpr const char* CLIENT_SECRET = "";
-
     constexpr const char* OAUTH_AUTHORIZE_URL = "https://www.warcraftlogs.com/oauth/authorize";
     constexpr const char* OAUTH_TOKEN_URL = "https://www.warcraftlogs.com/oauth/token";
 
-    constexpr const char* GRAPHQL_CLIENT_ENDPOINT = "https://www.warcraftlogs.com/api/v2/client";
     constexpr const char* GRAPHQL_USER_ENDPOINT = "https://www.warcraftlogs.com/api/v2/user";
 
     constexpr const char* API_HOST = "www.warcraftlogs.com";
