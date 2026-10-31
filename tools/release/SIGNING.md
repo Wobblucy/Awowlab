@@ -38,14 +38,15 @@ sign your releases with your private key as described below.
 
 ## Per-release
 
-`generate-manifest.py` signs automatically when it can find the key:
+`generate-manifest.py` signs automatically when it can find the key. Put its
+path in `signing_key_path` in `awowlab.config.json`:
 
 ```
-set AWOWLAB_SIGNING_KEY=C:\Users\you\awowlab-signing\awowlab-signing-key.pem
-python tools/release/generate-manifest.py release 0.18.0
+"signing_key_path": "D:/keys/awowlab-signing-key.pem"
 ```
 
-or pass `--sign-key <path>` explicitly. Upload `manifest.json.sig` and
+The `AWOWLAB_SIGNING_KEY` environment variable or `--sign-key <path>`
+override it for one run. Upload `manifest.json.sig` and
 `SHA256SUMS.txt` along with the usual release assets.
 
 `tools/release/release.py` does all of this as part of a release. It stops

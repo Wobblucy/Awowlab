@@ -11,6 +11,9 @@ public repositories work in a fresh checkout. Standard library only.
     config.update_repo        # "owner/name"
     config.github_url(config.assets_repo, "releases/download/assets-v5")
 
+A field missing from the builder's file takes the example's value, the same
+way CMake fills it in on the next configure.
+
 Scripts outside tools/release add that folder to sys.path first; see
 tools/fetch-assets.py.
 """
@@ -45,6 +48,15 @@ class Config:
     # one up; settings_key_generated is true when CMake made it up.
     settings_key: str = ""
     settings_key_generated: bool = False
+    # Private release signing key file; AWOWLAB_SIGNING_KEY overrides it
+    signing_key_path: str = ""
+    # DeepL key for tools/translate/translate_all.py
+    deepl_api_key: str = ""
+
+    @property
+    def signing_key(self):
+        """Path of the private signing key, or "" when none is set."""
+        return os.environ.get("AWOWLAB_SIGNING_KEY", "") or self.signing_key_path
 
     @property
     def is_example(self):
@@ -78,16 +90,23 @@ def check_public_key(value):
     return value.lower()
 
 
-def load(path=CONFIG_PATH):
-    if path == CONFIG_PATH and not os.path.isfile(path) and os.path.isfile(EXAMPLE_PATH):
-        path = EXAMPLE_PATH
+def _read(path):
     try:
         with open(path, encoding="utf-8") as handle:
-            data = json.load(handle)
+            return json.load(handle)
     except OSError as error:
         raise ConfigError(f"cannot read {path}: {error}") from error
     except json.JSONDecodeError as error:
         raise ConfigError(f"{path} is not valid JSON: {error}") from error
+
+
+def load(path=CONFIG_PATH):
+    if path == CONFIG_PATH and not os.path.isfile(path) and os.path.isfile(EXAMPLE_PATH):
+        path = EXAMPLE_PATH
+    data = _read(path)
+    if os.path.isfile(EXAMPLE_PATH) and os.path.abspath(path) != os.path.abspath(EXAMPLE_PATH):
+        example = _read(EXAMPLE_PATH)
+        data = {**{k: v for k, v in example.items() if k != "settings_key"}, **data}
 
     def field(name):
         value = data.get(name)
@@ -109,6 +128,12 @@ def load(path=CONFIG_PATH):
     generated = data.get("settings_key_generated", False)
     if not isinstance(generated, bool):
         raise ConfigError(f"{path}: \"settings_key_generated\" is not true or false")
+
+    def optional(name):
+        value = data.get(name, "")
+        if not isinstance(value, str):
+            raise ConfigError(f"{path}: \"{name}\" is not a string")
+        return value
     try:
         return Config(
             path=path,
@@ -119,6 +144,8 @@ def load(path=CONFIG_PATH):
             signing_public_key=check_public_key(field("signing_public_key")),
             settings_key=settings_key,
             settings_key_generated=generated,
+            signing_key_path=optional("signing_key_path"),
+            deepl_api_key=optional("deepl_api_key"),
         )
     except ConfigError as error:
         raise ConfigError(f"{path}: {error}") from error

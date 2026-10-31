@@ -17,7 +17,9 @@ Where a build points lives in one file at the repository root,
 committed (it is gitignored). The first configure creates it from
 `awowlab.config.example.json` and fills in `settings_key` (see below). A fork
 edits this file and nothing else: its own project page, release repository,
-assets repository, WarcraftLogs client and signing key.
+assets repository, WarcraftLogs client, signing key and DeepL key. When the
+example gains a field, the next configure copies it into your file with the
+example's value, so your file always lists everything there is to set.
 
 | Field | Cache variable | |
 |-------|----------------|-|
@@ -25,9 +27,12 @@ assets repository, WarcraftLogs client and signing key.
 | `update_repo` | `AWOWLAB_UPDATE_REPO` | Repository (`owner/name`) the updater installs releases from |
 | `assets_repo` | `AWOWLAB_ASSETS_REPO` | Repository (`owner/name`) holding the static assets release |
 | `wcl_client_id` | `AWOWLAB_WCL_CLIENT_ID` | WarcraftLogs OAuth client id |
+| `wcl_redirect_ports` | `AWOWLAB_WCL_REDIRECT_PORTS` | Local ports sign-in listens on, tried in order; see [WarcraftLogs client](#warcraftlogs-client-id) |
 | `signing_public_key` | `AWOWLAB_SIGNING_PUBLIC_KEY` | Public half of the release signing key, 128 hex characters |
+| `signing_key_path` | | Private signing key file the release tools sign with; `AWOWLAB_SIGNING_KEY` overrides it |
 | `settings_key` | `AWOWLAB_SETTINGS_KEY` | What the settings file key is derived from; see [Settings key](#settings-key) |
 | `settings_key_generated` | | `true` when CMake made `settings_key` up; releases refuse such a key |
+| `deepl_api_key` | | DeepL key for `tools/translate/translate_all.py` |
 
 The example holds the official repositories and client id. CMake reads the file at configure
 time and re-runs on its own when the file changes. Each field is the default
@@ -45,9 +50,9 @@ The release tools read the same file through `tools/release/awowlab_config.py`:
 `release.py` and `generate-manifest.py` take the release and assets
 repositories from it, and `tools/fetch-assets.py` downloads from `assets_repo`.
 
-The private signing key never goes in this file. It stays outside the
-repository and is passed to `generate-manifest.py` through the
-`AWOWLAB_SIGNING_KEY` environment variable or `--sign-key`.
+The private signing key itself never goes in this file. It stays outside the
+repository; `signing_key_path` only names where it is. The
+`AWOWLAB_SIGNING_KEY` environment variable or `--sign-key` override that path.
 
 ## Updater
 
@@ -116,8 +121,9 @@ To use your own client:
 
 1. On warcraftlogs.com, create an API client and mark it as a public client,
    since the token request carries no secret.
-2. Add all four redirect URLs. The app binds the first free port of these and
-   sends the matching URL, so any of them can be the one in use:
+2. Add a redirect URL for every port in `wcl_redirect_ports`. The app binds
+   the first free port of these and sends the matching URL, so any of them can
+   be the one in use. With the default ports:
 
    ```
    http://localhost:8080/callback
@@ -134,7 +140,8 @@ To use your own client:
    cmake --preset x64-debug -DAWOWLAB_WCL_CLIENT_ID=<your client id>
    ```
 
-The ports and the URL format are in
+To use other ports, list them in `wcl_redirect_ports` and register the same
+set on the client. The URL format is in
 `AwowLab/warcraftlogs_manager/include/Auth/Credentials.h`.
 
 ## Settings key

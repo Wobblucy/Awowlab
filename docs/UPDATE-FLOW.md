@@ -378,7 +378,7 @@ and it uploads nothing until you ask it to in a second run.
 
 ```bash
 # Bump AwowLab/Core/Version.h first; release.py refuses a version that differs.
-set AWOWLAB_SIGNING_KEY=C:\path\to\awowlab-signing-key.pem
+# The signing key is signing_key_path in awowlab.config.json.
 
 # See what it would do. Writes nothing.
 python tools/release/release.py {VERSION} --dry-run
@@ -501,6 +501,7 @@ Loaded at runtime:
   with `!` rules. Because git will not descend into an excluded directory, a
   directory must be re-included before any file inside it can be. Generated output
   and the DB2 dumps stay out.
-- `tools/translate/config.json` holds the DeepL API key and must never be
-  committed. Dry-run `git add -An` before staging
-  under `tools/`.
+- `awowlab.config.json` holds the DeepL API key and must never be committed.
+  Dry-run `git add -An` before staging under `tools/` anyway: an old checkout
+  may still have `tools/translate/config.json` and the Google Sheets
+  `credentials.json` and `token.json` there.

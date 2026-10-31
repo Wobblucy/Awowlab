@@ -37,8 +37,8 @@ python translate_all.py
    - Copy your API key from the account dashboard
 
 3. **Configure the API key:**
-   - Edit `config.json`
-   - Replace `YOUR_API_KEY_HERE` with your actual API key
+   - Put it in `deepl_api_key` in `awowlab.config.json` at the repository root
+     (the first CMake configure creates that file; it is gitignored)
 
 ## Usage
 
@@ -99,7 +99,7 @@ key,value
 ## Troubleshooting
 
 **API key error:**
-- Ensure `config.json` contains your actual API key
+- Ensure `deepl_api_key` in `awowlab.config.json` holds your actual API key
 - Check that the key is valid at https://www.deepl.com/account
 
 **Rate limit error:**

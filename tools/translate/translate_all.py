@@ -10,7 +10,7 @@ etc.) are preserved.
 
 Usage:
     1. Get a free DeepL API key from https://www.deepl.com/pro-api
-    2. Add your key to config.json
+    2. Put your key in deepl_api_key in awowlab.config.json at the repository root
     3. Run: python translate_all.py          # fill gaps in every locale
             python translate_all.py de_DE    # one locale
             python translate_all.py --all    # retranslate everything
@@ -18,11 +18,12 @@ Usage:
 
 import csv
 import html
-import json
-import os
 import re
 import sys
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent / "release"))
+import awowlab_config  # noqa: E402
 
 try:
     import deepl
@@ -68,24 +69,18 @@ PLACEHOLDER_PATTERN = re.compile(
 )
 
 
-def load_config():
-    """Load configuration from config.json."""
-    config_path = Path(__file__).parent / "config.json"
-
-    if not config_path.exists():
-        print(f"Error: {config_path} not found.")
-        print("Create config.json with your DeepL API key:")
-        print('  {"deepl_api_key": "YOUR_API_KEY_HERE"}')
+def deepl_key():
+    """The DeepL key from awowlab.config.json, or exit saying where it goes."""
+    try:
+        key = awowlab_config.load().deepl_api_key
+    except awowlab_config.ConfigError as error:
+        print(f"Error: {error}")
         sys.exit(1)
-
-    with open(config_path, "r", encoding="utf-8") as f:
-        config = json.load(f)
-
-    if not config.get("deepl_api_key") or config["deepl_api_key"] == "YOUR_API_KEY_HERE":
-        print("Error: Please add your DeepL API key to config.json")
+    if not key:
+        print("Error: no DeepL API key. Put it in deepl_api_key in awowlab.config.json")
+        print("at the repository root (gitignored; never commit it).")
         sys.exit(1)
-
-    return config
+    return key
 
 
 def placeholders_in(text):
@@ -280,12 +275,11 @@ def main():
     print("AwowLab Localization Translator")
     print("=" * 40)
 
-    # Load config
-    config = load_config()
+    key = deepl_key()
 
     # Initialize DeepL translator
     print("\nInitializing DeepL API...")
-    translator = deepl.Translator(config["deepl_api_key"])
+    translator = deepl.Translator(key)
 
     # Check API usage
     try:

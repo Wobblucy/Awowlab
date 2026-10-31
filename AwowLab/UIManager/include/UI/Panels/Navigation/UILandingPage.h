@@ -92,8 +92,7 @@ public:
 private:
     void renderHeader();
     void renderSourceCards();
-    void renderPartnerSiteCard();
-    void renderSocialLinks();
+    void renderProjectLinks();
     void renderFooter();
 
     LandingPageResult result_;
@@ -109,10 +108,6 @@ private:
     // Animation state
     float animationTime_ = 0.0f;
     int hoveredCard_ = -1;
-
-    // Partner block starts collapsed so first-run users see
-    // the source actions without the extra rows competing
-    bool showExtras_ = false;
 
     // Play Along mode pending (after cached fight selection)
     bool playAlongPending_ = false;

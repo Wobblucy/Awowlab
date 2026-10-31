@@ -369,10 +369,6 @@ landing.local_file_hint,WoW_retail_\Logs\
 landing.warcraftlogs,魔獸爭霸日誌
 landing.warcraftlogs_desc,從 WarcraftLogs 載入
 landing.press_esc,按 ESC 離開
-landing.partner_site,合作網站
-landing.partner_site_desc,免費的團隊副本規劃工具，附帶動態策略示意
-landing.diar_bullet1,免費動畫團本策略規劃工具
-landing.diar_bullet2,透過可分享的計畫，協調公會成員的行動
 
 # =============================================================================
 # Updater / Updates
@@ -391,8 +387,6 @@ langpack.no_thanks,不用了，謝謝
 langpack.disabled_build,語言套件是由更新程式安裝的，而此版本中該更新程式已被關閉
 
 # Social Links
-social.youtube,在 YouTube 上觀看
-social.patreon,Patreon 支持
 
 # =============================================================================
 # Landing Page - Overlay Mode
@@ -1626,8 +1620,6 @@ death_recap.col_ability,能力
 death_recap.col_amount,金額
 
 # Landing page extras toggle
-landing.extras_show,關於與合作夥伴
-landing.extras_hide,隱藏關於與合作夥伴
 
 # Landing page links to the project page (project_url in awowlab.config.json)
 landing.report_issue,回報問題

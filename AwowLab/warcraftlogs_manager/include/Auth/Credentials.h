@@ -27,10 +27,9 @@ namespace credentials {
     constexpr const char* API_PORT = "443";
 
     // Sign-in tries these in order until one binds. Each must be registered
-    // as a redirect URL on the WarcraftLogs client:
-    // http://localhost:8080/callback, http://localhost:8765/callback,
-    // http://localhost:8766/callback, http://localhost:8767/callback
-    constexpr int REDIRECT_PORTS[] = {8080, 8765, 8766, 8767};
+    // as http://localhost:<port>/callback on the WarcraftLogs client. Set
+    // with wcl_redirect_ports (docs/BUILD-OPTIONS.md).
+    constexpr int REDIRECT_PORTS[] = {AWOWLAB_WCL_REDIRECT_PORTS};
 
     inline std::string getRedirectUri(int port) {
         return "http://localhost:" + std::to_string(port) + "/callback";

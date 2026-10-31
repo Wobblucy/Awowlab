@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ManifestParser.h"
+#include "AwowLabBuildOptions.h"
 #include <string>
 #include <vector>
 #include <optional>
@@ -100,8 +101,8 @@ private:
     // the defaults/ layout (0.22.0).
     void migrateToDefaultsLayout(UpdateProgressCallback progress);
 
-    std::string repoOwner_ = "Wobblucy";
-    std::string repoName_ = "Awowlab";
+    std::string repoOwner_ = AWOWLAB_UPDATE_REPO_OWNER;
+    std::string repoName_ = AWOWLAB_UPDATE_REPO_NAME;
     std::string appDir_;
     bool runsFromInstall_ = false;
     std::string lastError_;

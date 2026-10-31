@@ -369,10 +369,6 @@ landing.local_file_hint,WoW_retail_\Logs\
 landing.warcraftlogs,WarcraftLogs
 landing.warcraftlogs_desc,Chargement de WarcraftLogs
 landing.press_esc,Appuyez sur ESC pour quitter
-landing.partner_site,Site partenaire
-landing.partner_site_desc,Planificateur de raid gratuit avec des stratégies animées
-landing.diar_bullet1,Planificateur gratuit et animé de stratégies de raid
-landing.diar_bullet2,Coordonnez votre guilde grâce à des plans partageables
 
 # =============================================================================
 # Updater / Updates
@@ -391,8 +387,6 @@ langpack.no_thanks,"Non, merci"
 langpack.disabled_build,"Les packs de langue sont installés par le programme de mise à jour, qui est désactivé dans cette version"
 
 # Social Links
-social.youtube,Voir sur YouTube
-social.patreon,Soutien sur Patreon
 
 # =============================================================================
 # Landing Page - Overlay Mode
@@ -1626,8 +1620,6 @@ death_recap.col_ability,Compétence
 death_recap.col_amount,Montant
 
 # Landing page extras toggle
-landing.extras_show,À propos & partenaires
-landing.extras_hide,Masquer à propos & partenaires
 
 # Landing page links to the project page (project_url in awowlab.config.json)
 landing.report_issue,Signaler un problème

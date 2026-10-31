@@ -369,10 +369,6 @@ landing.local_file_hint,WoW_retail_\Logs\
 landing.warcraftlogs,워크래프트 로그
 landing.warcraftlogs_desc,워크래프트 로그에서 로드
 landing.press_esc,ESC를 눌러 종료
-landing.partner_site,제휴 사이트
-landing.partner_site_desc,애니메이션 전략이 포함된 무료 레이드 플래너
-landing.diar_bullet1,무료 애니메이션 레이드 전략 플래너
-landing.diar_bullet2,공유 가능한 계획을 통해 길드원들과 협력하세요
 
 # =============================================================================
 # Updater / Updates
@@ -391,8 +387,6 @@ langpack.no_thanks,"아니요, 괜찮습니다"
 langpack.disabled_build,"언어 팩은 업데이트 프로그램을 통해 설치되는데, 이 빌드에서는 해당 프로그램이 비활성화되어 있습니다."
 
 # Social Links
-social.youtube,YouTube에서 시청하기
-social.patreon,Patreon 지원
 
 # =============================================================================
 # Landing Page - Overlay Mode
@@ -1626,8 +1620,6 @@ death_recap.col_ability,능력
 death_recap.col_amount,금액
 
 # Landing page extras toggle
-landing.extras_show,정보 및 파트너
-landing.extras_hide,정보 및 파트너 숨기기
 
 # Landing page links to the project page (project_url in awowlab.config.json)
 landing.report_issue,문제 신고하기

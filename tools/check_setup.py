@@ -19,7 +19,10 @@ Settings it reads (all environment variables):
     RUSTYDEMON_CLI       rustydemon-cli executable
     WOWEXPORT_SRC        wow.export source checkout (default: wowexport-src beside this repo)
     WOWEXPORT_MMAP_NODE  mmap.node from an installed wow.export
-    AWOWLAB_SIGNING_KEY  manifest signing key (release packaging only)
+    AWOWLAB_SIGNING_KEY  manifest signing key (release packaging only; overrides
+                         signing_key_path in awowlab.config.json)
+
+The DeepL key, signing key path and settings key come from awowlab.config.json.
 """
 
 import glob
@@ -356,13 +359,6 @@ def check_file_setting(name, env_name, hint, optional=False):
     return Item(name, OK, f"{path} ({env_name})")
 
 
-def check_present(name, path, hint):
-    """Existence only. These hold secrets, so the contents are never read."""
-    if path.is_file():
-        return Item(name, OK, f"present ({path.relative_to(REPO_ROOT)})")
-    return Item(name, MISSING, hint)
-
-
 def check_config():
     """awowlab.config.json: present, kept out of git, and holding a settings key.
     The key itself is never printed."""
@@ -408,6 +404,37 @@ def check_config():
     return items
 
 
+def config_value(field):
+    """A string from awowlab.config.json, or "" when it is missing or unreadable."""
+    try:
+        data = json.loads((REPO_ROOT / "awowlab.config.json").read_text(encoding="utf-8"))
+    except (OSError, ValueError):
+        return ""
+    value = data.get(field, "")
+    return value.strip() if isinstance(value, str) else ""
+
+
+def check_config_secret(name, field, hint):
+    """Set or not. These hold secrets, so the value is never printed."""
+    if config_value(field):
+        return Item(name, OK, f"set ({field} in awowlab.config.json)")
+    return Item(name, MISSING, f"{field} in awowlab.config.json is empty - {hint}")
+
+
+def check_signing_key():
+    """AWOWLAB_SIGNING_KEY wins over signing_key_path, as in the release tools."""
+    path, source = setting("AWOWLAB_SIGNING_KEY")
+    if path is None and config_value("signing_key_path"):
+        path, source = Path(config_value("signing_key_path")), "signing_key_path"
+    if path is None:
+        return Item("signing key", OPTIONAL,
+                    "signing_key_path in awowlab.config.json is empty - needed to publish: the "
+                    "updater refuses unsigned releases, see tools/release/SIGNING.md")
+    if not path.is_file():
+        return Item("signing key", MISSING, f"{path} ({source}) does not exist")
+    return Item("signing key", OK, f"{path} ({source})")
+
+
 # --- report ------------------------------------------------------------------
 
 def build_report():
@@ -436,7 +463,6 @@ def build_report():
         else Item("io_scene_wowobj", MISSING,
                   "copy the patched addon into Blender's addons folder "
                   "(tools/external/wow.export/README.md)")
-    translate = TOOLS_DIR / "translate"
 
     vs = find_visual_studio()
     return [
@@ -476,16 +502,12 @@ def build_report():
         ("Models", [mmap, node, wow]),
         ("Translations", [
             check_package("deepl"),
-            check_present("DeepL key", translate / "config.json",
-                          "tools/translate/config.json - see tools/translate/README.md"),
+            check_config_secret("DeepL key", "deepl_api_key", "see tools/translate/README.md"),
         ]),
         ("Release packaging", [
             check_program("gh", "gh", "GitHub CLI - https://cli.github.com/"),
             check_package("cryptography"),
-            check_file_setting("signing key", "AWOWLAB_SIGNING_KEY",
-                               "needed to publish: the updater refuses unsigned releases, "
-                               "see tools/release/SIGNING.md",
-                               optional=True),
+            check_signing_key(),
         ]),
     ]
 

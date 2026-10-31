@@ -514,9 +514,10 @@ def main():
     parser.add_argument('--assets-tag', default=current_assets_tag(),
                         help='Assets release tag for static files '
                              '(default: assets_tag in assets-hashes.json)')
-    parser.add_argument('--sign-key', default=os.environ.get('AWOWLAB_SIGNING_KEY', ''),
-                        help='Path to the release signing key PEM '
-                             '(or set AWOWLAB_SIGNING_KEY). Omit to skip signing.')
+    parser.add_argument('--sign-key', default='',
+                        help='Path to the release signing key PEM (default: AWOWLAB_SIGNING_KEY, '
+                             'then signing_key_path in awowlab.config.json). Without one the '
+                             'manifest is not signed.')
     parser.add_argument('--offline', action='store_true',
                         help='Do not ask GitHub whether the static assets are published')
 
@@ -530,6 +531,7 @@ def main():
     except awowlab_config.ConfigError as error:
         print(f"Error: {error}")
         sys.exit(1)
+    args.sign_key = args.sign_key or config.signing_key
     repo = config.update_repo
     assets_repo = config.assets_repo
 
@@ -565,7 +567,7 @@ def main():
         print(f"Generated: {sig_path}")
         print("Remember to upload manifest.json.sig with the release assets.")
     else:
-        print("Note: manifest not signed (no --sign-key / AWOWLAB_SIGNING_KEY).")
+        print("Note: manifest not signed (no --sign-key, AWOWLAB_SIGNING_KEY or signing_key_path).")
 
     # Published checksums so users can verify downloads by hand
     sums_path = write_checksums(args.release_dir)

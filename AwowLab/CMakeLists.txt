@@ -35,6 +35,37 @@ else()
     set(_awowlab_config_created FALSE)
 endif()
 
+# A config made before a field existed does not have it. Copy the example's
+# value in, so the builder's file always lists every value a fork can set.
+if(NOT _awowlab_config_created)
+    file(READ "${CMAKE_SOURCE_DIR}/awowlab.config.example.json" _awowlab_example)
+    string(JSON _example_count LENGTH "${_awowlab_example}")
+    math(EXPR _example_last "${_example_count} - 1")
+    set(_awowlab_added "")
+    foreach(_index RANGE ${_example_last})
+        string(JSON _name MEMBER "${_awowlab_example}" ${_index})
+        string(JSON _present ERROR_VARIABLE _absent GET "${_awowlab_config}" "${_name}")
+        if(NOT _absent OR _name MATCHES "^_")
+            continue()
+        endif()
+        string(JSON _type TYPE "${_awowlab_example}" "${_name}")
+        string(JSON _value GET "${_awowlab_example}" "${_name}")
+        if(_type STREQUAL "STRING")
+            string(REPLACE "\\" "\\\\" _value "${_value}")
+            string(REPLACE "\"" "\\\"" _value "${_value}")
+            set(_value "\"${_value}\"")
+        endif()
+        string(JSON _awowlab_config SET "${_awowlab_config}" "${_name}" "${_value}")
+        list(APPEND _awowlab_added "${_name}")
+    endforeach()
+    if(_awowlab_added)
+        file(WRITE "${AWOWLAB_CONFIG_FILE}" "${_awowlab_config}\n")
+        list(JOIN _awowlab_added ", " _awowlab_added)
+        message(NOTICE "Added ${_awowlab_added} to ${AWOWLAB_CONFIG_FILE} with the values from "
+            "awowlab.config.example.json; change them there if your build needs others.")
+    endif()
+endif()
+
 # The settings file is encrypted with a key derived from settings_key. A
 # builder who has none gets a random one, kept in the config so later
 # configures reuse it and the settings survive rebuilds. It only has to
@@ -66,6 +97,20 @@ function(awowlab_config_option var key type doc)
     if(_error)
         message(FATAL_ERROR "${AWOWLAB_CONFIG_FILE}: cannot read \"${key}\": ${_error}")
     endif()
+    # A list becomes its items separated by ", ", ready for a C initializer
+    string(JSON _type TYPE "${_awowlab_config}" "${key}")
+    if(_type STREQUAL "ARRAY")
+        string(JSON _count LENGTH "${_awowlab_config}" "${key}")
+        set(_items "")
+        if(_count GREATER 0)
+            math(EXPR _last "${_count} - 1")
+            foreach(_index RANGE ${_last})
+                string(JSON _item GET "${_awowlab_config}" "${key}" ${_index})
+                list(APPEND _items "${_item}")
+            endforeach()
+        endif()
+        list(JOIN _items ", " _value)
+    endif()
     # Remember what the file said last time, so an untouched cache entry can
     # tell itself apart from a -D override and pick up the new value.
     if(NOT DEFINED CACHE{${var}} OR "${${var}}" STREQUAL "${_AWOWLAB_CONFIG_${var}}")
@@ -83,6 +128,8 @@ awowlab_config_option(AWOWLAB_ASSETS_REPO assets_repo STRING
     "GitHub repository (owner/name) holding the static assets release")
 awowlab_config_option(AWOWLAB_WCL_CLIENT_ID wcl_client_id STRING
     "WarcraftLogs OAuth client id used for sign-in")
+awowlab_config_option(AWOWLAB_WCL_REDIRECT_PORTS wcl_redirect_ports STRING
+    "Local ports sign-in listens on, in order; each is a redirect URL on the WarcraftLogs client")
 awowlab_config_option(AWOWLAB_SIGNING_PUBLIC_KEY signing_public_key STRING
     "Release signing public key, ECDSA P-256 X then Y as 128 hex characters")
 awowlab_config_option(AWOWLAB_SETTINGS_KEY settings_key STRING
@@ -105,6 +152,18 @@ endif()
 if(NOT AWOWLAB_WCL_CLIENT_ID MATCHES "^[A-Za-z0-9-]+$")
     message(FATAL_ERROR "AWOWLAB_WCL_CLIENT_ID must be a WarcraftLogs client id, got '${AWOWLAB_WCL_CLIENT_ID}'")
 endif()
+
+# Becomes a C initializer list
+if(NOT AWOWLAB_WCL_REDIRECT_PORTS MATCHES "^[0-9]+(, *[0-9]+)*$")
+    message(FATAL_ERROR "AWOWLAB_WCL_REDIRECT_PORTS must be one or more port numbers, got '${AWOWLAB_WCL_REDIRECT_PORTS}'")
+endif()
+string(REPLACE "," ";" _ports "${AWOWLAB_WCL_REDIRECT_PORTS}")
+foreach(_port IN LISTS _ports)
+    string(STRIP "${_port}" _port)
+    if(_port LESS 1 OR _port GREATER 65535)
+        message(FATAL_ERROR "AWOWLAB_WCL_REDIRECT_PORTS: ${_port} is not a port number")
+    endif()
+endforeach()
 
 # Becomes a C string literal, so no quotes, backslashes or spaces
 if(NOT AWOWLAB_SETTINGS_KEY MATCHES "^[A-Za-z0-9_.:+/=-]+$")
@@ -141,7 +200,7 @@ string(STRIP "${AWOWLAB_SIGNING_PUBLIC_KEY_BYTES}" AWOWLAB_SIGNING_PUBLIC_KEY_BY
 message(STATUS "AwowLab config: ${AWOWLAB_CONFIG_FILE}")
 message(STATUS "AwowLab updater: ${AWOWLAB_ENABLE_UPDATER} (${AWOWLAB_UPDATE_REPO})")
 foreach(_overridable AWOWLAB_PROJECT_URL AWOWLAB_UPDATE_REPO AWOWLAB_ASSETS_REPO
-                     AWOWLAB_WCL_CLIENT_ID AWOWLAB_SIGNING_PUBLIC_KEY)
+                     AWOWLAB_WCL_CLIENT_ID AWOWLAB_WCL_REDIRECT_PORTS AWOWLAB_SIGNING_PUBLIC_KEY)
     if(NOT "${${_overridable}}" STREQUAL "${AWOWLAB_CONFIG_${_overridable}}")
         message(STATUS "AwowLab ${_overridable} overridden: ${${_overridable}}")
     endif()

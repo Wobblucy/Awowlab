@@ -12,9 +12,9 @@ Prepare, and separately publish, an AwowLab release.
         Checks the prepared folder again and uploads it with `gh release
         create` to update_repo in awowlab.config.json.
 
-Signing is required, because the updater refuses an unsigned release. Set
-AWOWLAB_SIGNING_KEY to the private key file (or pass --sign-key); you are
-asked for its password. See tools/release/SIGNING.md, including how a fork
+Signing is required, because the updater refuses an unsigned release. Put
+the private key file in signing_key_path in awowlab.config.json (or set
+AWOWLAB_SIGNING_KEY, or pass --sign-key); you are asked for its password. See tools/release/SIGNING.md, including how a fork
 makes its own key.
 
 The settings key must be the release one. awowlab.config.json has to exist
@@ -139,16 +139,16 @@ def check_version(version):
 
 
 def signing_key(args):
-    return args.sign_key or os.environ.get('AWOWLAB_SIGNING_KEY', '')
+    return args.sign_key
 
 
 def check_signing_key(args):
     key = signing_key(args)
     if not key:
-        fail("AWOWLAB_SIGNING_KEY is not set.\n"
+        fail("No signing key is set.\n"
              "The updater refuses unsigned releases, so a release cannot be made without\n"
-             "the private signing key. Set AWOWLAB_SIGNING_KEY to its path (or pass\n"
-             "--sign-key). tools/release/SIGNING.md explains the key, and how a fork\n"
+             "the private signing key. Put its path in signing_key_path in\n"
+             "awowlab.config.json (or set AWOWLAB_SIGNING_KEY, or pass --sign-key). tools/release/SIGNING.md explains the key, and how a fork\n"
              "makes its own. To check the packaging without signing, use --stage-only.")
     if not Path(key).is_file():
         fail(f"signing key not found: {key}")
@@ -402,7 +402,7 @@ def prepare(args, config):
         heading("Signing key")
         if dry_run:
             key = signing_key(args)
-            print(f"  {'would sign with ' + key if key else 'AWOWLAB_SIGNING_KEY is not set; a real run would stop here'}")
+            print(f"  {'would sign with ' + key if key else 'no signing key is set; a real run would stop here'}")
         else:
             print(f"  {check_signing_key(args)}")
 
@@ -483,7 +483,7 @@ def summary(args, config, manifest, release_dir):
 
     print("\nNext:")
     if args.stage_only:
-        print("  Run again without --stage-only, with AWOWLAB_SIGNING_KEY set, to make a release you can publish.")
+        print("  Run again without --stage-only, with a signing key set, to make a release you can publish.")
     else:
         assets = f" --assets-tag {args.assets_tag} --assets-dir {args.assets_dir}" if args.assets_dir else ""
         print(f"  python tools/release/release.py {args.version} --publish --notes-file <notes.md>{assets}")
@@ -580,7 +580,7 @@ def main():
     parser.add_argument('--assets-dir',
                         help='Folder holding a complete new assets set for --assets-tag')
     parser.add_argument('--sign-key', default='',
-                        help='Private key file (default: AWOWLAB_SIGNING_KEY)')
+                        help='Private key file (default: AWOWLAB_SIGNING_KEY, then signing_key_path in awowlab.config.json)')
     parser.add_argument('--stage-only', action='store_true',
                         help='Stop before signing; the result cannot be published')
     parser.add_argument('--offline', action='store_true',
@@ -605,6 +605,7 @@ def main():
         config = awowlab_config.load()
     except awowlab_config.ConfigError as error:
         fail(str(error))
+    args.sign_key = args.sign_key or config.signing_key
 
     print(f"AwowLab release {args.version}{' (dry run)' if args.dry_run else ''}")
     print(f"  release repository: {config.update_repo}")

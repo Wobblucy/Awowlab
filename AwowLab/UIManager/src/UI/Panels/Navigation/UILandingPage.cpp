@@ -112,9 +112,8 @@ bool UILandingPage::render() {
     ImGui::BeginGroup();
 
     // Vertical centering - estimate total content height more accurately
-    // Header ~100, Cards ~220, Rate limit ~30, Socials ~80, Footer ~30, spacing ~100
-    // Partner ~115 only when the extras block is expanded
-    float totalHeight = (showExtras_ ? 680.0f : 560.0f) * scale;
+    // Header ~100, Cards ~220, Rate limit ~30, Links ~40, Footer ~30, spacing ~100
+    float totalHeight = 520.0f * scale;
     float startY = std::max(20.0f * scale, (windowSize.y - totalHeight) * 0.5f);
     ImGui::SetCursorPosY(startY);
 
@@ -122,7 +121,7 @@ bool UILandingPage::render() {
 
     ImGui::Dummy(ImVec2(0, 8.0f * scale));  // Tight spacing
 
-    renderSocialLinks();
+    renderProjectLinks();
 
     ImGui::Dummy(ImVec2(0, 24.0f * scale));  // Spacing before cards
 
@@ -132,23 +131,6 @@ bool UILandingPage::render() {
 
     // Show language pack download card if current locale needs optional pack and it's missing
     renderLanguagePackCard();
-
-    // The partner link lives behind a collapsed row so the page leads
-    // with the three source actions
-    {
-        const char* extrasLabel = showExtras_ ? L("landing.extras_hide") : L("landing.extras_show");
-        float labelWidth = ImGui::CalcTextSize(extrasLabel).x + 28.0f;
-        ImGui::SetCursorPosX(contentStartX + (contentWidth - labelWidth) * 0.5f);
-        if (awlui::Button(extrasLabel, awlui::ButtonVariant::Ghost, awlui::ButtonSize::Sm)) {
-            showExtras_ = !showExtras_;
-        }
-    }
-
-    if (showExtras_) {
-        ImGui::Dummy(ImVec2(0, 8.0f * scale));
-
-        renderPartnerSiteCard();
-    }
 
     ImGui::Dummy(ImVec2(0, 16.0f * scale));  // Spacing
 
@@ -417,93 +399,13 @@ void UILandingPage::renderFooter() {
     }
 }
 
-void UILandingPage::renderSocialLinks() {
+void UILandingPage::renderProjectLinks() {
     float scale = ImGui::GetIO().FontGlobalScale;
-
-    // Social media brand colors
-    const ImU32 YouTubeRed = IM_COL32(255, 0, 0, 255);        // #FF0000
-    const ImU32 PatreonCoral = IM_COL32(255, 66, 77, 255);    // #FF424D
-
-    // Button sizing
-    float buttonSize = 36.0f * scale;
-    float spacing = 24.0f * scale;
-    float totalWidth = buttonSize * 2 + spacing;
-
-    float startX = (900.0f * scale - totalWidth) * 0.5f;
-    ImGui::SetCursorPosX(ImGui::GetCursorPosX() + startX);
 
     ImDrawList* drawList = ImGui::GetWindowDrawList();
 
-    // Helper lambda to draw a social button
-    auto drawSocialButton = [&](const char* id, ImU32 bgColor, ImU32 iconColor,
-                                 const char* tooltip, const char* url,
-                                 auto drawIconFn) -> bool {
-        ImVec2 pos = ImGui::GetCursorScreenPos();
-        ImVec2 center = ImVec2(pos.x + buttonSize / 2, pos.y + buttonSize / 2);
-
-        // Invisible button for interaction
-        ImGui::InvisibleButton(id, ImVec2(buttonSize, buttonSize));
-        bool clicked = ImGui::IsItemClicked();
-        bool hovered = ImGui::IsItemHovered();
-
-        // Background circle with hover effect
-        float radius = buttonSize / 2 - 2.0f * scale;
-        if (hovered) {
-            // Glow effect on hover
-            float glowAlpha = 0.3f + 0.1f * std::sin(animationTime_ * 3.0f);
-            ImU32 glowColor = (bgColor & 0x00FFFFFF) | (static_cast<ImU32>(glowAlpha * 255) << 24);
-            drawList->AddCircleFilled(center, radius + 4.0f * scale, glowColor, 32);
-        }
-        drawList->AddCircleFilled(center, radius, bgColor, 32);
-
-        drawIconFn(drawList, center, iconColor, scale);
-
-        // Tooltip
-        if (hovered) {
-            ImGui::SetTooltip("%s", tooltip);
-        }
-
-        if (clicked) {
-            BrowserHelper::openUrl(url);
-        }
-
-        return clicked;
-    };
-
-    drawSocialButton("##youtube", YouTubeRed, IM_COL32(255, 255, 255, 255),
-        L("social.youtube"), "https://www.youtube.com/@AWowlab",
-        [](ImDrawList* dl, ImVec2 c, ImU32 col, float s) {
-            // YouTube play button icon - white triangle
-            dl->AddTriangleFilled(
-                ImVec2(c.x - 4.0f * s, c.y - 5.0f * s),
-                ImVec2(c.x - 4.0f * s, c.y + 5.0f * s),
-                ImVec2(c.x + 6.0f * s, c.y),
-                col
-            );
-        });
-
-    ImGui::SameLine(0, spacing);
-
-    drawSocialButton("##patreon", PatreonCoral, IM_COL32(255, 255, 255, 255),
-        L("social.patreon"), "https://www.patreon.com/c/AWowlab",
-        [](ImDrawList* dl, ImVec2 c, ImU32 col, float s) {
-            // Patreon "P" letter icon (simplified)
-            float thickness = 2.5f * s;
-            // Vertical stroke of P
-            dl->AddRectFilled(
-                ImVec2(c.x - 5.0f * s, c.y - 7.0f * s),
-                ImVec2(c.x - 5.0f * s + thickness, c.y + 7.0f * s),
-                col
-            );
-            // Curved part of P (approximated with circle)
-            dl->AddCircleFilled(ImVec2(c.x + 1.0f * s, c.y - 2.0f * s), 5.0f * s, col, 16);
-            // Cut out inner circle to make it hollow
-            dl->AddCircleFilled(ImVec2(c.x + 1.0f * s, c.y - 2.0f * s), 2.5f * s, PatreonCoral, 16);
-        });
-
     // Issues and releases on the project page this build was configured
     // with (project_url in awowlab.config.json), so a fork links to itself
-    ImGui::Dummy(ImVec2(0, 12.0f * scale));
     {
         static const std::string issuesUrl = std::string(AWOWLAB_PROJECT_URL) + "/issues";
         static const std::string releasesUrl = std::string(AWOWLAB_PROJECT_URL) + "/releases";

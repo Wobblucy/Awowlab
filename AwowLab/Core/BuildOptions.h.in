@@ -23,6 +23,10 @@
 // WarcraftLogs OAuth client id sent during sign-in
 #define AWOWLAB_WCL_CLIENT_ID "@AWOWLAB_WCL_CLIENT_ID@"
 
+// Local ports WarcraftLogs sign-in listens on, tried in order. Each must be
+// registered as http://localhost:<port>/callback on the client.
+#define AWOWLAB_WCL_REDIRECT_PORTS @AWOWLAB_WCL_REDIRECT_PORTS@
+
 // Public half of the release signing key, as configured (128 hex characters,
 // empty when the build has none)
 #define AWOWLAB_SIGNING_PUBLIC_KEY "@AWOWLAB_SIGNING_PUBLIC_KEY@"
