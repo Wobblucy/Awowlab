@@ -1,0 +1,45 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Wobblucy <Wobblucy@users.noreply.github.com>
+Date: Sun, 2 Aug 2026 13:39:15 -0600
+Subject: [PATCH] Keep WMO shader 20 textures from sampling black
+
+WMO textures are opaque but often ship with an unused, fully zero alpha
+channel. Blender defaults new images to straight alpha and multiplies the
+colour by it when sampling, so those textures reached the shader as black
+and the affected surfaces rendered as solid black slabs.
+
+Every other material path in the importer already sets an alpha mode that
+avoids this; the shader 20 path did not. Set it there too, for both the
+diffuse layers and the height textures whose alpha the blend group reads.
+---
+ addons/blender/io_scene_wowobj/import_wowobj.py | 7 +++++++
+ 1 file changed, 7 insertions(+)
+
+diff --git a/addons/blender/io_scene_wowobj/import_wowobj.py b/addons/blender/io_scene_wowobj/import_wowobj.py
+index 180ce43..a15d121 100644
+--- a/addons/blender/io_scene_wowobj/import_wowobj.py
++++ b/addons/blender/io_scene_wowobj/import_wowobj.py
+@@ -722,6 +722,10 @@ def createWMOShader20Material(material_name, json_info, base_dir, lookup_name=No
+ 				abs_path = os.path.join(base_dir, rel_path)
+ 				if os.path.exists(abs_path):
+ 					tex_node.image = loadImage(abs_path)
++					# These textures are opaque and often carry an unused, fully
++					# zero alpha channel. Read as straight alpha that multiplies
++					# the colour away, leaving the surface black.
++					tex_node.image.alpha_mode = 'CHANNEL_PACKED'
+ 
+ 		links.new(uv_nodes[i].outputs['UV'], tex_node.inputs['Vector'])
+ 		diffuse_nodes.append(tex_node)
+@@ -742,6 +746,9 @@ def createWMOShader20Material(material_name, json_info, base_dir, lookup_name=No
+ 				if os.path.exists(abs_path):
+ 					tex_node.image = loadImage(abs_path)
+ 					tex_node.image.colorspace_settings.name = 'Non-Color'
++					# The blend group samples this texture's alpha as a height
++					# value, so it has to stay untouched by premultiplication.
++					tex_node.image.alpha_mode = 'CHANNEL_PACKED'
+ 
+ 			links.new(uv_nodes[i].outputs['UV'], tex_node.inputs['Vector'])
+ 			height_nodes.append(tex_node)
+-- 
+2.47.1.windows.1
+

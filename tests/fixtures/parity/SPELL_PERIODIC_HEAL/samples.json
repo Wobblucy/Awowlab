@@ -1,0 +1,99 @@
+[
+{
+    "timestamp": 4294209,
+    "type": "heal",
+    "sourceID": 87,
+    "targetID": 83,
+    "abilityGameID": 119611,
+    "fight": 8,
+    "hitType": 1,
+    "amount": 0,
+    "overheal": 134667,
+    "tick": true,
+    "resourceActor": 2,
+    "classResources": [
+        {
+            "amount": 120,
+            "max": 120,
+            "type": 3
+        }
+    ],
+    "hitPoints": 16958989,
+    "maxHitPoints": 16958989,
+    "attackPower": 144303,
+    "spellPower": 18176,
+    "armor": 49485,
+    "absorb": 0,
+    "x": -341168,
+    "y": 207839,
+    "facing": -606,
+    "mapID": 2467,
+    "versatility": 2021,
+    "avoidance": 300,
+    "itemLevel": 729
+},
+{
+    "timestamp": 4420687,
+    "type": "heal",
+    "sourceID": 107,
+    "targetID": 108,
+    "abilityGameID": 382024,
+    "fight": 8,
+    "hitType": 1,
+    "amount": 134887,
+    "tick": true,
+    "resourceActor": 2,
+    "classResources": [
+        {
+            "amount": 2355550,
+            "max": 2625000,
+            "type": 0
+        }
+    ],
+    "hitPoints": 12729155,
+    "maxHitPoints": 17615015,
+    "attackPower": 15103,
+    "spellPower": 152770,
+    "armor": 30271,
+    "absorb": 18433,
+    "x": -334329,
+    "y": 209419,
+    "facing": -516,
+    "mapID": 2467,
+    "versatility": 1331,
+    "avoidance": 615,
+    "itemLevel": 728
+},
+{
+    "timestamp": 4587697,
+    "type": "heal",
+    "sourceID": 94,
+    "targetID": 83,
+    "abilityGameID": 77489,
+    "fight": 8,
+    "hitType": 1,
+    "amount": 280946,
+    "tick": true,
+    "resourceActor": 2,
+    "classResources": [
+        {
+            "amount": 10,
+            "max": 120,
+            "type": 3
+        }
+    ],
+    "hitPoints": 16219447,
+    "maxHitPoints": 21946937,
+    "attackPower": 144303,
+    "spellPower": 18176,
+    "armor": 49485,
+    "absorb": 1534906,
+    "x": -21955,
+    "y": 217009,
+    "facing": -513,
+    "mapID": 2469,
+    "versatility": 2221,
+    "avoidance": 300,
+    "itemLevel": 729
+}
+]

@@ -1,0 +1,2070 @@
+# AwowLab Localization - Chinese (Traditional)
+# Machine translated with DeepL - community review welcome
+# Format: key,value
+# Lines starting with # are comments
+key,value
+
+
+# =============================================================================
+# Menu Bar - File Menu
+# =============================================================================
+menu.file,檔案
+menu.change_encounter,變更遭遇...
+menu.return_home,返回首頁
+menu.import_export_settings,匯入/匯出設定...
+
+# =============================================================================
+# Menu Bar - View Menu
+# =============================================================================
+menu.view,檢視
+menu.playback_controls,播放控制
+menu.creatures_vehicles_pets,生物/車輛/寵物
+menu.raid_frames,突擊框架
+menu.enemy_grid,敵人網格
+menu.filters,濾波器
+menu.minimap_2d,2D 最小地圖
+menu.gcd_history,GCD 歷史
+menu.upcoming_boss_casts,即將上場的老闆演員
+menu.meter_1,計量表 1
+menu.meter_2,計量表 2
+menu.meter_3,計量表 3
+menu.deaths,死亡人數
+menu.player_buffs,玩家 Buffs
+menu.player_debuffs,玩家 Debuffs
+menu.aura_debug,Aura 除錯
+menu.cooldowns,玩家冷卻時間
+menu.raid_cd1,襲擊冷卻時間 (主要)
+menu.raid_cd2,襲擊冷卻時間 (次要)
+menu.raid_cd3,襲擊冷卻時間 (公用程式)
+menu.enable_snapping,啟用擷取
+menu.snap_threshold,瞬間閾值
+menu.ui_scale,UI 標準
+menu.reset_layout,重設佈局
+menu.save_layout,儲存版面
+menu.customize_appearances,自訂外觀
+
+# =============================================================================
+# Menu Bar - Tools Menu
+# =============================================================================
+menu.tools,工具
+menu.export_snapshot,匯出重播快照...
+
+# =============================================================================
+# Export Snapshot Modal
+# =============================================================================
+export.title,匯出重播快照
+export.time_range,時間範圍
+export.start_time,開始
+export.end_time,結束
+export.duration,持續時間
+export.export_button,匯出
+export.cancel_button,取消
+
+# =============================================================================
+# Landing Page - Snapshot Import Card
+# =============================================================================
+landing.snapshot_title,開啟快照
+landing.snapshot_desc,載入共享的 .awsnap 重播片段
+landing.snapshot_browse,瀏覽
+
+# =============================================================================
+# Menu Bar - Settings Menu
+# =============================================================================
+menu.settings,設定
+menu.actor_appearance,演員出場...
+menu.camera_settings,相機設定
+menu.nameplate_settings,銘牌設定
+menu.raid_frame_settings,Raid 框架設定
+menu.show_auras,顯示光環圖示
+menu.show_spell_icons,顯示咒語圖示
+menu.aura_icon_size,圖示大小
+menu.icon_size,圖示大小
+menu.language,語言
+menu.help_improve_localization,協助改善在地化
+
+# =============================================================================
+# Nameplate Settings Modal
+# =============================================================================
+nameplate.settings_title,銘牌設定
+nameplate.global_settings,全局設定
+nameplate.tab_players,球員
+nameplate.tab_other,其他
+nameplate.font_scale,字體刻度
+nameplate.use_actor_color,使用演員顏色
+nameplate.text_color,文字顏色
+nameplate.show_background,顯示背景
+nameplate.background_opacity,背景不透明度
+nameplate.name_length,名稱 長度
+nameplate.show_last_cast,顯示最後的演員
+nameplate.last_cast_icon_size,最後投射圖示大小
+tooltip.nameplate_font_scale,銘牌文字的比例係數 (0.5x - 2.0x)
+tooltip.nameplate_name_length,顯示的最大字元 (0 = 全名)
+tooltip.nameplate_use_actor_color,使用演員指定的顏色為銘牌文字著色
+tooltip.nameplate_show_background,在銘牌文字後方顯示半透明背景
+tooltip.nameplate_background_opacity,銘牌文字背景的不透明度
+tooltip.nameplate_icon_size,銘牌上光環圖示的大小 (16-48 像素)
+
+# =============================================================================
+# Facing Indicator Settings
+# =============================================================================
+menu.facing_indicator,面對指示器
+facing.enabled,顯示面版
+facing.opacity,不透明度
+facing.size,尺寸
+facing.color,顏色
+
+# =============================================================================
+# UI Scale Buttons
+# =============================================================================
+btn.scale_small,小型
+btn.scale_normal,正常
+btn.scale_large,大型
+btn.scale_xl,XL
+
+# =============================================================================
+# Panel Titles
+# =============================================================================
+panel.filters,濾波器
+panel.playback,播放
+panel.creatures,生物/車輛/寵物
+panel.raid_frames,突擊框架
+panel.enemy_grid,敵人網格
+panel.gcd_history,GCD 歷史
+panel.meter_1,計量表 1
+panel.meter_2,計量表 2
+panel.meter_3,計量表 3
+panel.deaths,死亡人數
+panel.player_buffs,玩家 Buffs
+panel.player_debuffs,玩家 Debuffs
+panel.aura_debug,Aura 除錯
+panel.player_focus,玩家焦點
+panel.actor_appearance,演員出場
+panel.cooldowns,選定玩家的冷卻時間
+
+# =============================================================================
+# Actor Selector Panel
+# =============================================================================
+selector.title,選取要對焦的播放器
+selector.load_hint,(載入包含 SPELL_CAST 事件的作戰記錄檔）
+
+# =============================================================================
+# GCD History Panel
+# =============================================================================
+gcd.no_player,未選取任何球員
+gcd.select_hint,從 Raid Frames 面板選取玩家
+gcd.row_gcd,GCD
+gcd.row_ogcd,oGCD
+
+# =============================================================================
+# Cooldown Panel
+# =============================================================================
+cd.no_player,未選取任何球員
+cd.select_hint,從 Raid Frames 面板選取玩家
+cd.no_data,沒有咒語資料
+cd.no_spells,沒有設定顯示冷卻時間的咒語
+
+# =============================================================================
+# Raid Cooldown Panel
+# =============================================================================
+panel.raid_cd1,襲擊冷卻時間 - 主要
+panel.raid_cd2,突擊冷卻時間 - 輕微
+panel.raid_cd3,突襲冷卻 - 工具
+raid_cd.no_data,沒有咒語資料
+raid_cd.no_spells,未設定突擊冷卻時間
+raid_cd.config_hint,在設定 > 法術指派中設定法術
+
+# =============================================================================
+# Filters Panel
+# =============================================================================
+filter.actor_visibility,演員可見度篩選器
+filter.friendly,友善
+filter.hostile,敵意
+filter.neutral,中性
+filter.players,球員
+filter.creatures,生物
+filter.vehicles,車輛
+filter.pets,寵物
+filter.camera_options,相機選項
+filter.display_options,顯示選項
+filter.debug_options,除錯選項
+filter.camera_target,"攝影機目標： (%.1f, %.1f, %.1f)"
+filter.reset_camera,重設相機檢視
+filter.show_nameplates,顯示銘牌
+filter.show_health_bars,顯示健康棒
+filter.dump_databases,將資料庫轉存為 CSV
+filter.enable_camera_follow,啟用相機跟拍
+filter.follow,跟隨
+filter.follow_speed,追蹤速度
+filter.pan_sensitivity,平移靈敏度
+
+# =============================================================================
+# Tooltips
+# =============================================================================
+tooltip.health_bars,在 3D 檢視中，在演員銘牌上方顯示健康長條
+tooltip.show_auras,在名牌上方顯示 buff/debuff 圖示 (在法術指派中設定)
+tooltip.aura_icon_size,名牌上方的 buff/debuff 圖示大小 (16-48 像素)
+tooltip.show_spell_icons,在突擊框架上顯示法術追蹤圖示
+tooltip.raid_frame_icon_size,突擊框架上咒語圖示的大小 (12-32 像素)
+tooltip.dump_databases,在 ./debug - db tables/ 中將所有資料庫表格匯出為 CSV 檔案。
+tooltip.camera_follow,攝影機會自動跟隨演員的中心點
+tooltip.follow_speed,攝影機跟拍演員的速度（較低 = 較平滑，較高 = 較快速）
+tooltip.pan_sensitivity,調整攝影機平移靈敏度 (LMB 拖曳)
+tooltip.refresh_encounters,檢查日誌檔案中的新遭遇（按 F5 來刷新）
+
+# =============================================================================
+# Combat Meters
+# =============================================================================
+meter.damage_done,已造成的損害
+meter.healing_done,治療完成
+meter.damage_taken,受到的損害
+meter.cumulative,累計
+meter.full_encounter,完整邂逅
+meter.dps,DPS
+meter.hps,HPS
+meter.dtps,DTPS
+meter.melee,混戰
+meter.environment,環境
+meter.blacklist,黑名單
+meter.tab.damage,損壞
+meter.tab.healing,癒合
+meter.tab.taken,已採取
+meter.tab.taken_by,採取
+meter.tab.dispels,驅散
+meter.tab.interrupts,中斷
+meter.tab.deaths,死亡人數
+meter.tab.friendly_fire,誤傷
+meter.tab.overhealing,過度癒合
+meter.tab.healing_taken,《療癒之途》
+meter.tab.resurrections,復活
+meter.tab.cc_breaks,CC 間歇
+meter.tab.avoidance,迴避
+meter.tab.absorbs,吸收
+meter.tab.enemy_damage,敵方傷害
+meter.tab.enemy_healing,敵方治療
+meter.total_absorbed,成功避免損害
+meter.event_count,吸收事件
+meter.total,總計
+status.no_absorb_data,沒有可用的吸收數據
+status.no_enemy_damage_data,沒有敵方傷害資料
+status.no_enemy_healing_data,沒有敵方治療資料
+breakdown.hit_distribution,命中分佈
+breakdown.hit_normal,正常
+breakdown.hit_crit,Crit
+breakdown.hit_glance,一瞥
+breakdown.hit_resisted,遭到抵制
+breakdown.hit_blocked,被封鎖
+breakdown.hit_absorbed,沉浸其中
+meter.category.damage,損害
+meter.category.healing,療癒
+meter.category.utility,實用性
+meter.category.survivability,生存能力
+meter.death_count,死亡人數
+meter.resurrection_count,復活
+meter.cc_break_count,CC 間歇
+meter.avoidance_count,迴避
+meter.avoidance_total,總計
+meter.avoidance_dodge,道奇
+meter.avoidance_parry,帕里
+meter.avoidance_miss,小姐
+meter.avoidance_block,區塊
+meter.avoidance_deflect,偏轉
+meter.avoidance_immune,免疫
+meter.avoidance_resist,抵抗
+meter.avoidance_reflect,反思
+meter.avoidance_absorb,吸收
+meter.avoidance_other,其他
+meter.avoidance,迴避
+meter.cc_breaks,CC 間隔
+meter.total_cc_breaks,CC 中斷總數
+meter.total_deaths,死亡總數
+meter.total_avoidance,總迴避次數
+status.no_avoidance,未記錄任何迴避資料
+status.no_avoidance_data,無迴避相關資料
+status.no_overhealing_data,沒有過度治療的相關數據
+status.no_healing_taken_data,無「已接受治療」的資料
+status.no_friendly_fire_data,沒有友軍誤擊的相關數據
+status.no_cc_break_data,沒有 CC 中斷資料
+status.no_death_data,無死亡資料可供參考
+meter.select_target,選擇目標
+meter.select_target_hint,按一下敵人網格面板中的敵人，即可看到對他們造成的傷害。
+meter.damage_to,損壞
+meter.dispel_count,驅散
+meter.interrupt_count,中斷
+meter.stolen_count,被盜
+
+# =============================================================================
+# Status Messages
+# =============================================================================
+status.no_combat_data,無戰鬥資料
+status.no_dispel_data,無驅散資料
+status.no_interrupt_data,無中斷資料
+status.no_damage_data,無損壞資料
+status.no_healing_data,無療癒資料
+status.no_damage_taken_data,選取的篩選器沒有損壞資料
+status.no_damage_to_target,此目標無損傷記錄
+status.no_deaths,無死亡記錄
+status.no_player_deaths,沒有玩家死亡
+status.no_players,作戰記錄中沒有玩家
+status.no_creatures,看不到生物
+status.no_enemies,目前看不到敵人
+status.no_friendly_players,突襲中沒有友好玩家
+status.no_friendly_fire,未記錄任何友軍誤擊造成的損害
+status.no_overhealing,未記錄任何過度治療的情況
+status.no_healing_taken,未收到治療相關資料
+status.no_resurrections,未記錄任何復活事件
+status.no_cc_breaks,未記錄任何維持秩序的暫停
+status.not_visible,在目前的時間視窗中不可見
+status.no_actor_data,沒有載入演員資料。
+status.dead,已死亡
+status.click_for_gcd,按一下以選取 GCD 歷史
+
+# =============================================================================
+# Format Strings
+# =============================================================================
+format.total_dps,總計: %s  | DPS: %s
+format.total_hps,總計: %s  | HPS: %s
+format.total_hps_overheal,總計：  %s |  HPS：  %s |  超額治療： %.1f%%
+format.total_dtps,總計: %s  | DTPS: %s
+format.health_full,健康：%llu/ %llu (%.0f%%)
+format.power_full,%s：%u/ %u (%.0f%%)
+format.player_deaths,玩家死亡：%zu
+format.spell_id,咒語 %u
+format.encounters_found,在作戰記錄中找到 %zu 片段。選擇其中一個重播：
+
+# =============================================================================
+# Buttons
+# =============================================================================
+btn.load_encounter,載入選取的遭遇
+btn.refresh_log,刷新日誌
+btn.return_home,返回首頁
+btn.browse_files,瀏覽檔案
+btn.browse_cache,瀏覽快取記憶體
+btn.clear_selection,清除選擇
+btn.save_settings,儲存設定
+btn.load_settings,載入設定
+btn.close,關閉
+btn.cancel,取消
+btn.load,負載
+btn.load_report,負載報告
+btn.load_fight,載入選取的戰鬥
+btn.refresh,刷新
+btn.authorize,授權私人存取
+btn.reauthorize,重新授權
+btn.play,遊戲
+btn.pause,暫停
+btn.fetch_url,從網址擷取
+btn.play_along,一起玩吧
+btn.play_again,再次播放
+btn.open_snapshot,開啟快照
+
+# =============================================================================
+# Landing Page
+# =============================================================================
+landing.title,AwowLab
+landing.subtitle,魔獸世界》戰鬥日誌展示台
+landing.choose_source,選擇您的資料來源
+landing.local_file,本地檔案
+landing.local_file_desc,從電腦載入
+landing.local_file_hint,WoW_retail_\Logs\
+landing.warcraftlogs,魔獸爭霸日誌
+landing.warcraftlogs_desc,從 WarcraftLogs 載入
+landing.press_esc,按 ESC 離開
+landing.partner_site,合作網站
+landing.partner_site_desc,免費的團隊副本規劃工具，附帶動態策略示意
+landing.diar_bullet1,免費動畫團本策略規劃工具
+landing.diar_bullet2,透過可分享的計畫，協調公會成員的行動
+
+# =============================================================================
+# Updater / Updates
+# =============================================================================
+btn.check_updates,檢查是否有更新
+update.checking,正在檢查是否有更新...
+update.up_to_date,您已更新至最新版本！
+update.disabled_build,在此版本中，自動更新功能已關閉
+
+# Language Pack Download
+langpack.title,提供語言套件
+langpack.desc,下載 %s 的本地化咒語名稱與字型
+langpack.size_hint,~%d MB 下載
+langpack.download,下載套裝
+langpack.no_thanks,不用了，謝謝
+langpack.disabled_build,語言套件是由更新程式安裝的，而此版本中該更新程式已被關閉
+
+# Social Links
+social.youtube,在 YouTube 上觀看
+social.patreon,Patreon 支持
+
+# =============================================================================
+# Landing Page - Overlay Mode
+# =============================================================================
+landing.overlay_mode,疊加模式
+landing.overlay_mode_desc,即時戰鬥數值顯示疊加
+btn.launch_overlay,啟動覆蓋層
+tooltip.landing_overlay,實時傷害／治療計量表（適用於激戰中）
+
+# =============================================================================
+# Play Along Mode
+# =============================================================================
+playalong.select_player,選擇要練習的球員
+playalong.select_player_desc,選擇您想要複製的球員動作和能力
+playalong.practicing_as,練習為
+playalong.your_position,您的位置
+playalong.target_position,目標位置
+playalong.distance,距離
+playalong.move,移動
+playalong.camera,攝影機
+playalong.snap,鎖定目標
+playalong.play_pause,播放/暫停
+playalong.back,返回
+playalong.past,過去
+playalong.upcoming,下一頁
+playalong.configure_keybinds,設定按鍵綁定
+playalong.no_spells_found,沒有找到此玩家的咒語
+playalong.keybind_help,按一下按鍵轉換。按 ESC 清除。
+playalong.click_to_set,按一下設定
+playalong.press_key,按任意組合鍵...
+playalong.hold_modifiers,(按住 Ctrl/Shift/Alt + 鍵）
+playalong.esc_cancel,按 ESC 取消
+playalong.your_inputs,您的輸入
+playalong.expected_casts,預期
+playalong.report_card,報告卡
+playalong.section,章節
+playalong.good,良好
+playalong.bad,壞的
+playalong.missed,遺漏
+playalong.accuracy,精確度
+playalong.overall,整體
+playalong.spell_queue_window,拼寫佇列視窗 (ms)
+playalong.spell_queue_tooltip,多早可以按下下一個能力
+playalong.gcd_timeline,GCD 時間線
+playalong.stats,統計資料
+playalong.last_15,最近 15 次
+playalong.streak,連續
+playalong.best_streak,最佳
+playalong.total,總計
+playalong.ignored,被忽略
+playalong.clear_all,全部清除
+playalong.countdown_starting,從...
+playalong.snap_hint,距離目標太遠！按右鍵跳到下一個能力
+playalong.audio_feedback,聲音
+playalong.show_annotations,顯示註解
+playalong.unknown_spec,規格不詳
+playalong.show_spell,顯示
+playalong.clear_keybind,清除
+playalong.ignore_spell,忽略
+playalong.return_home_confirm,返回首頁？
+
+# =============================================================================
+# Buttons
+# =============================================================================
+btn.back,返回
+btn.done,完成
+
+# =============================================================================
+# WarcraftLogs Dialog
+# =============================================================================
+wcl.dialog_title,WarcraftLogs 報告
+wcl.paste_url,貼上 WarcraftLogs 報告的 URL 或代碼：
+wcl.url_hint,https://www.warcraftlogs.com/reports/abc123 或只是 abc123
+wcl.valid_code,有效的報告代碼：%s
+wcl.example_hint,範例：j1N7Rf4d23FAmtMk 或完整 URL
+wcl.private_logs,私人日誌
+wcl.authorizing,授權...
+wcl.waiting_browser,等待瀏覽器...
+wcl.authenticated,已驗證
+wcl.public_only,僅公開記錄
+wcl.session_expired,會話過期 - 請重新授權
+wcl.select_fight,選擇戰鬥
+wcl.no_session,未載入會話
+wcl.report,報告：%s
+wcl.fights_count,(%zu戰鬥)
+wcl.api_usage,API 使用方式：%d/%d（在 %d 分鐘內重設）
+wcl.api_usage_hourly,API 使用量：%d/%d每小時
+wcl.rate_limited,速率受限 - 在 %d 分鐘內重設
+wcl.api_queries_remaining,%d/%d 本小時剩餘的 API 查詢次數
+wcl.mplus_note,注意：M+ 地下城使用 2 次 API 查詢
+
+# =============================================================================
+# Cached Fights Panel
+# =============================================================================
+cache.title,先前裝載的鬥爭
+cache.cached_count,(%zu緩存)
+cache.yes,是
+cache.meta,Meta
+cache.no_fights,未找到快取的戰鬥。
+cache.load_hint,從 WarcraftLogs 載入戰鬥以快取。
+cache.double_click_hint,按兩下以載入，或選取並按一下「載入鬥爭
+cache.show_all,顯示所有格鬥
+cache.show_all_tooltip,包含僅快取了元資料的對戰。\n這些對戰在載入時將需要擷取事件資料。
+cache.col_fight,鬥爭
+cache.col_report,報告
+cache.mythic_plus,神話+地下城
+cache.raid_encounters,突擊遭遇
+cache.other,其他
+cache.report_tooltip,報告：%s/nFight ID：%d
+cache.meta_tooltip,在載入時只會取得快取的 metadata。
+cache.col_link,WCL
+cache.open_wcl_tooltip,在 WarcraftLogs 中開啟
+cache.col_date,日期
+cache.col_cached,快取
+cache.col_actions,動作
+cache.col_composition,結構
+cache.sort_by,排序
+cache.sort_date_newest,日期（最新）
+cache.sort_date_oldest,日期（最舊的）
+cache.sort_name_az,姓名（A-Z）
+cache.sort_name_za,姓名（Z-A）
+cache.filter_difficulty,難度
+cache.filter_all,全部
+cache.open,開啟
+cache.open_tooltip,載入這場對戰
+cache.delete,刪除
+cache.delete_confirm_title,確認刪除
+cache.delete_confirm_msg,刪除以下項目的快取資料：
+cache.delete_warning,此操作無法撤銷。
+
+# =============================================================================
+# Encounter Selector Columns
+# =============================================================================
+encounter.col_number,#
+encounter.col_name,名稱
+encounter.col_difficulty,難度
+encounter.col_size,尺寸
+encounter.col_duration,時間長度
+encounter.col_fight,鬥爭
+encounter.col_result,結果
+encounter.parsed_info,已解析：%zu 行（%.1f MB）
+
+# =============================================================================
+# Encounter Results
+# =============================================================================
+encounter.timed,定時
+encounter.depleted,耗盡
+encounter.kill,殺戮
+encounter.wipe,擦拭
+
+# =============================================================================
+# Full Difficulty Names (with raid size)
+# =============================================================================
+difficulty.10_player,10 名玩家
+difficulty.25_player,25 名玩家
+difficulty.10_heroic,10 英雄級
+difficulty.25_heroic,25 英雄級
+difficulty.40_player,40 名玩家
+difficulty.heroic_scenario,英雄情境
+difficulty.normal_scenario,正常情況
+difficulty.mythic_keystone,神話鑰匙石
+difficulty.timewalking,時光漫步
+difficulty.unknown,未知
+
+# =============================================================================
+# Difficulty Names
+# =============================================================================
+difficulty.lfr,LFR
+difficulty.normal,正常
+difficulty.heroic,英雄
+difficulty.mythic,神話
+
+# =============================================================================
+# Power Types
+# =============================================================================
+power.mana,瑪娜
+power.rage,憤怒
+power.focus,焦點
+power.energy,能源
+power.combo_points,組合點數
+power.runes,符文
+power.runic_power,符文力量
+power.soul_shards,靈魂碎片
+power.lunar_power,月球動力
+power.holy_power,神聖力量
+power.maelstrom,漩渦
+power.insanity,精神錯亂
+power.fury,憤怒
+power.pain,疼痛
+power.essence,精華
+power.chi,池
+power.power,電源
+
+# =============================================================================
+# Actor Roles
+# =============================================================================
+role.unknown,未知
+role.tank,水箱
+role.healer,治療師
+role.melee_dps,近戰 DPS
+role.ranged_dps,範圍 DPS
+
+# =============================================================================
+# Actor Appearance Panel
+# =============================================================================
+appearance.title,演員外觀設定
+appearance.tab_role_defaults,角色預設值
+appearance.tab_overrides,覆寫
+appearance.tab_individual,個別演員
+appearance.tab_enemies,敵人
+appearance.role_defaults_desc,設定根據角色指定給演員的預設形狀。這些可以按類別、規格或角色覆寫。
+appearance.auto_assign,自動為玩家指定角色造型
+appearance.auto_assign_tooltip,啟用後，擁有已知專精的玩家將自動獲得適合角色的形狀 (坦克的盾牌、治療師的十字架等)。
+appearance.player_shapes,玩家角色形狀：
+appearance.nonplayer_shapes,非玩家形狀：
+appearance.global_scale,全球規模：
+appearance.default_scale,預設刻度
+appearance.role_overrides,角色覆寫
+appearance.class_overrides,類別覆寫
+appearance.overrides_desc,依角色、類別或專業設定外觀覆寫。具體程度較高的覆寫優先。
+appearance.individual_desc,覆寫特定演員的外觀。個別覆寫的優先順序最高。
+appearance.enemies_desc,自訂以名稱分類的敵對與中立角色。相同生物的所有實體共用顏色、形狀和比例。展開可覆寫特定角色。
+appearance.search_hint,依名稱搜尋...
+appearance.only_overridden,僅覆寫
+appearance.all_actors,所有演員
+appearance.clear_override,清除覆寫
+appearance.reset_default,重設為預設值
+appearance.selected_actor,精選演員：
+appearance.showing_actors,顯示 %zu 演員 (%zu具有覆寫功能)
+appearance.showing_enemies,顯示 %zu 敵人類型 (%zu具有覆寫功能)
+appearance.no_enemies,目前的遭遇中沒有發現敵對/中立的行動者。
+appearance.default_label,%s（預設值）
+appearance.shape_tooltip,覆寫此敵人類型所有實體的形狀
+appearance.scale_tooltip,覆寫此敵人類型所有實例的比例
+
+# =============================================================================
+# Actor Roles (for appearance settings)
+# =============================================================================
+role.tank_label,水箱
+role.healer_label,治療師
+role.melee_dps_label,近戰 DPS
+role.ranged_dps_label,範圍 DPS
+role.unknown_label,未知角色
+
+# =============================================================================
+# Non-Player Types
+# =============================================================================
+nonplayer.creatures,生物/NPCs
+nonplayer.vehicles,車輛
+nonplayer.pets,寵物
+
+# =============================================================================
+# Shape Names
+# =============================================================================
+shape.default,(預設)
+shape.sphere,球體
+shape.cube,立方體
+shape.shield,保護罩
+shape.medic_cross,醫護十字勳章
+shape.sword,劍
+shape.bow,弓形
+shape.cone,錐形
+shape.cylinder,滾筒
+shape.diamond,鑽石
+shape.pyramid,金字塔
+shape.star,星級
+shape.classicon,規格圖示
+shape.builtin_header,內建圖形
+shape.custom_header,客製化模型
+shape.custom_load_failed,載入失敗
+shape.no_custom_models,未找到任何自訂模型
+shape.tooltip.sphere,預設球形——適用於所有演員
+shape.tooltip.cube,方塊形狀——適用於建築物或非玩家角色
+shape.tooltip.shield,盾牌圖示——推薦給坦克
+shape.tooltip.medic_cross,醫療十字架——推薦給治療者
+shape.tooltip.sword,劍圖示 — 推薦用於近戰傷害輸出（Melee DPS）
+shape.tooltip.bow,弓箭圖示 — 推薦給遠程輸出職業
+shape.tooltip.cone,尖錐形
+shape.tooltip.cylinder,桶狀／藥丸狀圓柱體
+shape.tooltip.diamond,雙金字塔（八面體）形狀
+shape.tooltip.pyramid,一個朝上的金字塔
+shape.tooltip.star,3D 星形
+shape.tooltip.classicon,帶有專精圖示紋理的扁平圓盤
+appearance.tab_custom_models,客製化模型
+appearance.custom_models_desc,調整自訂 OBJ 模型的旋轉角度。模型會從可執行檔旁的 custom_models 資料夾中載入。
+appearance.custom_models_tip,提示：請將模型的前進方向與朝向指示箭頭對齊。
+appearance.custom_models_workflow,旋轉控制項會設定一個基準方向。設定完成後，模型將隨角色面向的方向旋轉，而非始終朝向鏡頭。
+appearance.custom_registry_not_available,無法使用自訂模型登錄表
+appearance.models_folder,「Models」資料夾
+appearance.drop_obj_hint,將 .obj 檔案拖放至 custom_models 資料夾中，即可將其用作角色模型。
+appearance.rotation_x,旋轉 X
+appearance.rotation_y,Y 軸旋轉
+appearance.rotation_z,Z 軸旋轉
+appearance.z_offset,Z 偏移量
+appearance.load_errors,載入錯誤
+appearance.search_hint_extended,依姓名、職務或班級搜尋...
+appearance.search_results,%zu 位 %zu 演員
+appearance.enemy_search_results,%zu 種 %zu 敵人類型
+appearance.override_trace,覆寫解析度
+appearance.override_level_default,預設
+appearance.override_level_role,角色
+appearance.override_level_class,班級
+appearance.override_level_spec,規格
+appearance.override_level_name,姓名
+appearance.override_level_guid,GUID
+appearance.trace_level,等級
+appearance.trace_value,價值
+appearance.trace_shape,S
+appearance.trace_color,C
+appearance.trace_scale,X
+appearance.trace_system,系統
+appearance.badge_guid,[G]
+appearance.badge_name,[N]
+appearance.badge_spec,[S]
+appearance.badge_class,[C]
+appearance.badge_role,[R]
+appearance.badge_guid_tooltip,具有針對 GUID 的特定覆寫設定
+appearance.badge_name_tooltip,是否具有「名稱」群組覆寫
+appearance.badge_spec_tooltip,具有「專精」覆寫效果
+appearance.badge_class_tooltip,Class 是否已覆寫
+appearance.badge_role_tooltip,具有「角色覆寫」功能
+appearance.favorites,收藏
+appearance.only_favorites,僅限收藏項目
+appearance.toggle_favorite,切換「收藏」狀態
+appearance.favorite_tooltip,點擊以切換「收藏」狀態
+appearance.starred_actors,主演演員：
+appearance.color_presets,色彩預設
+appearance.preset_classes,課程
+appearance.preset_roles,角色
+appearance.preset_custom,自訂
+appearance.preset_slot,插槽
+appearance.preset_empty,空
+appearance.preset_clear_slot,清除插槽
+appearance.color_right_click_save,右鍵點擊以儲存當前顏色
+appearance.quick_reset_all,重設所有設定
+appearance.quick_reset_all_tooltip,清除所有覆寫設定並重設為預設值
+appearance.confirm_reset,您確定要重設所有外觀設定嗎？
+appearance.quick_copy,複製
+appearance.quick_copy_tooltip,將選取的演員外貌複製到剪貼簿
+appearance.quick_copy_no_selection,選擇一位演員以複製其外貌
+appearance.quick_paste,貼上
+appearance.quick_paste_tooltip,將剪貼板外觀套用至選取的角色
+appearance.quick_paste_no_clipboard,目前尚未複製任何外觀
+appearance.quick_paste_no_selection,選擇一位演員以貼上其外貌資訊
+appearance.quick_apply_similar,申請...
+appearance.quick_apply_similar_tooltip,將剪貼板外觀套用至所有同類別／同角色的角色
+appearance.apply_to_class,全部
+appearance.apply_to_role,全部
+appearance.context_copy,複製外觀
+appearance.context_paste,貼上外觀
+appearance.context_clear,清除所有覆寫設定
+appearance.context_focus,在 3D 視圖中對焦
+appearance.context_apply_class,套用至所有 %s
+appearance.context_apply_role,套用至所有 %s
+appearance.context_no_clipboard,目前尚未複製任何內容
+btn.refresh,刷新
+btn.reset,重設
+btn.yes,是的
+btn.no,不
+
+# =============================================================================
+# Actor Breakdown Panel
+# =============================================================================
+breakdown.title,球員分佈
+breakdown.spells,法術
+breakdown.damage_done,已造成的損害
+breakdown.healing_done,治療完成
+breakdown.damage_taken,受到的損害
+breakdown.total_stats,總計：   |%s  ：%s  %s |  命中：  %u |  暴擊： %.1f%%
+breakdown.group_spells,+ 群體法術
+breakdown.group_tooltip,雙擊標題可重新命名。
+breakdown.delete_group,刪除群組
+breakdown.rename,重新命名
+breakdown.blacklist_spell,黑名單咒語
+breakdown.unblacklist_spell,解除黑名單咒語
+breakdown.blacklisted_spells_title,黑名單上的法術
+breakdown.dragging_melee,拖曳：近戰
+breakdown.dragging_spell,拖曳：咒語 %u
+breakdown.click_to_see,按一下咒語以查看詳細資訊
+breakdown.hits_format,點擊數：%u
+breakdown.average,平均值：%s
+breakdown.min,最小值：%s
+breakdown.max,最大值：%s
+breakdown.normal_hits,正常點數
+breakdown.critical_hits,關鍵一擊
+breakdown.targets,目標
+breakdown.pets_guardians,寵物與監護人
+breakdown.no_data_graph,圖表中沒有 %s 資料
+breakdown.reset_selection,重設選擇
+breakdown.drag_to_select_hint,(在圖表上拖曳以選擇時間範圍）
+breakdown.select_time_hint,在圖表上拖曳，選擇分析的時間範圍
+breakdown.selection_info,已選取： %u:%02u - %u:%02u (%u:%02u 持續時間)
+breakdown.hover_tooltip,時間：%u:%02u（點選並拖曳以選取範圍
+breakdown.blacklisted_healing,黑名單上的法術（從治療報告中排除）
+breakdown.blacklisted_damage,黑名單上的法術（從損傷報告中排除）
+breakdown.restore,還原
+breakdown.more_targets,...和%zu更多的目標
+
+# =============================================================================
+# Aura Debug Panel
+# =============================================================================
+aura.filter_label,依 GUID 或名稱篩選：
+aura.buffs,增益效果
+aura.debuffs,削弱
+aura.active_only,僅活躍
+aura.targets_with_auras,有光環的目標：%zu
+aura.current_time,目前時間：%s
+aura.no_data,沒有先兆資料
+aura.no_target,未選取任何球員
+aura.col_type,類型
+aura.col_spell,咒語
+aura.col_source,來源
+aura.col_stacks,堆疊
+aura.col_duration,時間長度
+aura.col_applied,應用
+aura.type_buff,BUFF
+aura.type_debuff,減益效果
+aura.status_active,活躍
+
+# =============================================================================
+# Deaths Panel
+# =============================================================================
+deaths.col_time,時間
+deaths.col_player,球員
+deaths.col_ability,能力
+deaths.col_amount,金額
+deaths.unknown,未知
+deaths.filter_threshold,最小事件 %
+deaths.filter_tooltip,隱藏小於此最大健康值百分比的事件
+deaths.filter_label,事件篩選器
+deaths.click_for_recap,點擊開啟死亡事件回顧
+deaths.right_click_hint,右鍵點擊以查看詳細死亡分析
+deaths.analysis_title,死亡分析
+deaths.player,球員
+deaths.killing_ability,殺戮能力
+deaths.health_chart,健康時間軸
+deaths.no_health_data,沒有相關健康資料
+deaths.last_events,近期活動
+deaths.no_events,未記錄任何傷害／治療事件
+resurrections.spell,復活咒語
+status.view_not_implemented,此檢視尚未實作
+
+# =============================================================================
+# WarcraftLogs Help Text
+# =============================================================================
+wcl_help.want_unlimited,想要無限制存取？建立您自己的 API 用戶端（免費）
+wcl_help.get_unlimited,取得無限存取權 - 建立您自己的 API 用戶端（免費！）：
+wcl_help.step1,1.前往：warcraftlogs.com/api/clients
+wcl_help.step2,2.按一下「建立客戶
+wcl_help.step3,3.應用程式名稱：測試
+wcl_help.step4,4.重定向 URL: http://localhost:8080/callback
+wcl_help.step5,5.不勾選「公開用戶端
+wcl_help.step6,6.按一下「建立
+wcl_help.step7,7.複製您的客戶 ID 和客戶保密資訊
+wcl_help.step8,8.在 AwowLab.exe 旁建立「wcl_credentials.txt」。
+wcl_help.step9,9.第 1 行：客戶 ID | 第 2 行：客戶秘密
+wcl_help.go_to,前往：warcraftlogs.com/api/clients
+wcl_help.app_name,應用程式名稱：測試
+wcl_help.redirect_url,重定向 URL: http://localhost:8080/callback
+wcl_help.public_client,不勾選「公開用戶端」，按一下建立
+wcl_help.save_credentials,儲存用戶端 ID & Secret 到 'wcl_credentials.txt' 中
+wcl_help.credentials_format,(第 1 行：客戶 ID，第 2 行：客戶密碼）
+
+# =============================================================================
+# Spell Display Locations
+# =============================================================================
+location.none,無
+location.cd_group_1,主要光碟
+location.cd_group_2,次要 CD
+location.cd_group_3,實用光碟
+location.raid_frame,突擊框架
+location.hud_major_cd,HUD - 主要 CD
+location.hud_utility,HUD - 公用事業
+location.hud_defensive,HUD - 防禦
+location.gcd_tracker,GCD 追蹤器
+location.nameplate,銘牌
+location.short.cd1,主要
+location.short.cd2,輕微
+location.short.cd3,公用設施
+location.short.raid,襲擊
+location.short.hud_cd,HUD
+location.short.hud_util,功用
+location.short.hud_def,Def
+location.short.gcd,GCD
+location.short.plate,板材
+location.short.buffs,增益效果
+location.short.debuffs,削弱
+location.player_buffs,玩家 Buffs 面板
+location.player_debuffs,玩家 Debuffs 面板
+
+# =============================================================================
+# Spell Assignment Panel
+# =============================================================================
+menu.spell_assignments,拼字顯示設定...
+menu.auto_annotations,自動註解...
+menu.annotation_list,手動註釋
+menu.raid_notes,團隊副本筆記
+assignment.panel_title,拼字顯示設定
+assignment.class_label,班級：
+assignment.select_class,選擇類別...
+assignment.all_classes,所有班級
+assignment.spec_label,規格：
+assignment.select_spec,選擇規格...
+assignment.all_specs,所有規格
+assignment.cooldowns,冷凍時間
+assignment.buffs,緩衝
+assignment.debuffs,DEBUFF
+assignment.encounter,非玩家
+assignment.all,全部
+assignment.search_hint,搜尋咒文...
+assignment.no_spells_for_filter,沒有符合目前篩選條件的咒語
+assignment.col_type,類型
+assignment.col_spell,咒語
+assignment.col_id,ID
+assignment.col_cd1,主要
+assignment.col_cd2,輕微
+assignment.col_cd3,公用設施
+assignment.col_raid,襲擊
+assignment.col_hud_big,大
+assignment.col_hud_util,功用
+assignment.col_hud_def,Def
+assignment.col_gcd,GCD
+assignment.col_name,名稱
+assignment.icon_sizes,圖示尺寸
+assignment.raid_frames,突擊框架
+assignment.nameplates,銘牌
+
+# =============================================================================
+# Spell Data Version Selector
+# =============================================================================
+settings.spell_data_version,咒語資料
+settings.spell_data_12_0,12.0（內心的戰爭）
+settings.spell_data_11_2,11.2 (龍飛)
+settings.title,設定
+settings.log_folder,日誌資料夾
+settings.change_log_folder,變更...
+settings.language,語言
+
+# =============================================================================
+# Boss Timer / Playback Controls
+# =============================================================================
+playback.boss_timer,老闆計時器
+playback.boss_timer_tooltip,顯示/隱藏播放列下方的老闆計時器條
+playback.ortho,2D
+playback.ortho_tooltip,切換至正交（自上而下）攝影機視圖
+menu.enemy_cast_filters,敵人鑄造過濾器...
+
+# =============================================================================
+# Help Panel (Keyboard Shortcuts)
+# =============================================================================
+help.title,鍵盤捷徑
+help.playback,播放
+help.camera,攝影機
+help.speed,速度
+help.other,其他
+
+# Key labels
+help.key_space,空間
+help.key_q,Q
+help.key_e,E
+help.key_1,1
+help.key_2,2
+help.key_3,3
+help.key_4,4
+help.key_5,5
+help.key_wasd,W/A/S/D
+help.key_r,R
+help.key_lmb,LMB 拖曳
+help.key_rmb,人民幣拖曳
+help.key_scroll,捲軸
+help.key_f1,F1 / ?
+help.key_f5,F5
+
+# Descriptions
+help.space,切換播放/暫停
+help.q,跳回 5 秒
+help.e,向前跳 5 秒
+help.speed_1,速度 0.25 倍
+help.speed_2,速度 0.5 倍
+help.speed_3,速度 1x
+help.speed_4,速度 2 倍
+help.speed_5,速度 4x
+help.wasd,移動相機
+help.r,切換自動跟隨
+help.lmb,平移攝影機
+help.rmb,旋轉相機
+help.scroll,放大/縮小
+help.f1,切換此面板
+help.f5,刷新邂逅
+help.close_hint,按 F1 或 ? 關閉
+
+# =============================================================================
+# Settings Export/Import Panel
+# =============================================================================
+Import/Export Settings,匯入/匯出設定
+Export,出口
+Import,進口
+Select settings to export:,選擇要匯出的設定：
+Select settings to import:,選擇要匯入的設定：
+Select All,全部選擇
+Select None,選擇無
+Select All Available,選擇所有可用
+Filename:,檔案名稱：
+File path:,檔案路徑：
+Probe,探針
+Export Selected,選取出口
+Import Selected,已選擇匯入
+Files saved to: exported_settings/,檔案儲存至： exported_settings/
+Enter a file path and click Probe to see available settings.,輸入檔案路徑，然後按一下 Probe 以查看可用的設定。
+No valid settings found in file.,檔案中找不到有效的設定。
+
+# =============================================================================
+# Upcoming Boss Casts Panel
+# =============================================================================
+upcoming.no_casts,在接下來 %.0f 秒內，沒有即將出現的 Boss 施法。
+upcoming.enable_spells,啟用敵人施法過濾器中的咒語
+
+# =============================================================================
+# Raid Notes Panel
+# =============================================================================
+menu.raid_notes,團隊副本筆記
+raidnotes.title,團隊副本筆記
+raidnotes.ctx_add_title,新增至團隊副本筆記
+raidnotes.ctx_spell_fmt,咒語：%s
+raidnotes.ctx_timestamp_fmt,時間戳記：%d:%02d
+raidnotes.ctx_add_to_note,新增至備註：
+raidnotes.ctx_this_instance_fmt,就這個例子而言 (%d:%02d)
+raidnotes.ctx_this_instance_none,僅此一例（無時間戳記）
+raidnotes.ctx_all_instances_fmt,所有實例（共找到 %zu 個）
+raidnotes.ctx_all_instances_none,所有實例（未找到）
+raidnotes.ctx_custom_text,自訂文字（可選）：
+raidnotes.ctx_custom_text_hint,例如：球員姓名、職務……
+raidnotes.ctx_add_button,新增至備忘錄
+raidnotes.phase_delay,相位延遲：
+raidnotes.after,之後
+raidnotes.by,作者：
+raidnotes.sec,秒
+raidnotes.add_delay,新增
+raidnotes.phase_delay_after_tooltip,時間戳記閾值（分：秒）。在此時間點或之後的記錄將會被移位。
+raidnotes.phase_delay_tooltip,在階段轉換後延遲時間戳記。此效果具累積性——若您的團隊在多個階段都延誤，請疊加多次延遲。
+raidnotes.options,選項
+raidnotes.opt_headers,包含群組標題
+raidnotes.opt_spellnames,包含咒語名稱
+raidnotes.opt_sort,依時間戳記排序
+raidnotes.no_entries,沒有條目。請右鍵點擊法術圖示以新增。
+raidnotes.custom_text_hint,作業／筆記……
+raidnotes.add_manual,新增手動備註：
+raidnotes.manual_hint,輸入註解（例如：防禦、吸收）
+raidnotes.add,新增
+raidnotes.copy_clipboard,複製到剪貼簿
+raidnotes.copied,已複製！
+raidnotes.clear_all,清除所有項目
+raidnotes.clear_confirm,您確定要刪除所有項目嗎？
+raidnotes.entry,條目
+raidnotes.entries,條目
+raidnotes.all_instances_tooltip,此條目將匯出多行（每筆資料一列）
+raidnotes.phase_delays,-- 相位延遲 --
+raidnotes.load_preset,載入：
+raidnotes.select_preset,-- 選擇預設值 --
+raidnotes.load,載入
+raidnotes.delete_preset,刪除
+raidnotes.save_as,另存為：
+raidnotes.preset_name_hint,預設名稱...
+raidnotes.save,儲存
+raidnotes.saved,已儲存！
+raidnotes.save_failed,無法儲存預設值
+raidnotes.delete_confirm,要刪除此預設嗎？
+common.yes,是的
+common.no,不
+
+# =============================================================================
+# Auto Annotations - Anchor Types
+# =============================================================================
+At Caster,在 Caster
+At Target,在 Target
+At Caster (Facing),在轉向輪處（朝向）
+At Target (Facing),在 Target（正面）
+Source -> Target,來源 → 目標
+Use 'Facing' to orient shapes in the direction the player is looking,使用「朝向」功能，將圖形朝向玩家的視線方向調整
+Place annotation at caster's position,將註解放置於施法者的位置
+Place annotation at target's position,將註解放置於目標位置
+Place at caster's position, 旋轉以使其朝向與角色一致，放置於施法者所在位置，並旋轉以使其朝向與角色一致
+Place at target's position, 旋轉以使其朝向與目標一致，放置於目標位置，旋轉以使其朝向與目標一致
+Draw shape spanning from caster to target (beams, （鎖鏈），繪製從施法者延伸至目標的形狀（光束、鎖鏈）
+
+# =============================================================================
+# Auto Annotations - Position Offset
+# =============================================================================
+Offset X (yards),X 偏移量（碼）
+Offset Y (yards),Y 偏移量（碼）
+Offset from anchor in world X axis (positive = East),相對於錨點在世界座標系 X 軸上的偏移量（正值表示東方）
+Offset from anchor in world Y axis (positive = North),相對於錨點在世界座標系 Y 軸上的偏移量（正值 = 北方）
+
+# =============================================================================
+# Auto Annotations - Shapes
+# =============================================================================
+Circle,圓圈
+Rectangle,矩形
+Cone,錐體
+Line,行
+Star,星
+Donut,甜甜圈
+Outer Radius (yards),外半徑（碼）
+Inner Radius (yards),內半徑（碼）
+
+# =============================================================================
+# Auto Annotations - Preview
+# =============================================================================
+Show Preview,顯示預覽
+Show annotation preview on the 3D map at the first event position,在第一個事件位置的 3D 地圖上顯示註解預覽
+Ignore Early Pull,忽略早期拉扯
+Skip casts in the first 500ms of the encounter (filters fake 0:00 boss casts),跳過戰鬥開始後前 500 毫秒內的施法（過濾掉偽造的 0:00 頭目施法）
+
+# =============================================================================
+# Auto Annotations - Motion
+# =============================================================================
+Motion,動議
+Motion Type,動作類型
+None,無
+Rotate,旋轉
+Projectile,投射物
+Rotation Speed (deg/s),轉速（度／秒）
+End Offset X (yards),X 軸終點偏移量（碼）
+End Offset Y (yards),Y 軸終點偏移量（碼）
+Travel Time (sec),行駛時間（秒）
+Return to Origin,回歸本源
+Projectile travels to destination and returns to starting position (splits travel time in half),投射物飛抵目的地後，再返回起始位置（將行進時間縮短一半）
+End Behavior,結束行為
+Persist at End,堅持到底
+Disappear at End,結尾時消失
+End Position,終點位置
+Manual,手冊
+To Target,目標對象
+In Facing Direction,《面對方向》
+Distance (yards),距離（碼）
+Direction Offset (deg),方向偏移（度）
+Offset from caster's facing direction. 0=forward, 180=後退，90=右轉，-90=左轉，以玩家面向方向為基準的偏移量。0=前進，180=後退，90=右轉，-90=左轉
+Fallback X (yards),備用距離 X（碼）
+Fallback Y (yards),備用 Y 值（碼）
+Projectile travels from caster to target,彈丸從施法者飛向目標
+Fallback offsets used if no valid target:,若無有效目標時所使用的備用偏移量：
+Fallback offsets used if facing unavailable:,若正面方向不可用時，將使用以下備用偏移量：
+How far the projectile travels in the caster's facing direction,投擲物沿著施法者正前方方向飛行多遠
+Use fixed X/Y offsets for end position,使用固定的 X/Y 偏移量設定終點位置
+Travel from caster to spell target position (snapshotted at cast time),從施法者移動至法術目標的位置（以施法時為基準進行快照）
+Travel in caster's facing direction for configured distance,朝著施法者的面向方向移動設定好的距離
+Annotation rotates continuously around its anchor point,註解會以錨點為中心持續旋轉
+Annotation moves from start position to end offset over travel time,註解在移動時間內從起始位置移動到結束偏移量處
+Raindrops,雨滴
+Spawns small circles within annotation bounds (swirlie effect),在註解邊界內生成小圓圈（漩渦效果）
+Drops per Second,每秒滴數
+Drop Radius (yards),墜落半徑（碼）
+Drop Lifetime (sec),墜落時間（秒）
+How many raindrops spawn each second,每秒會生成多少顆雨滴
+Size of each raindrop circle,每個雨滴圓圈的大小
+How long each drop remains visible before fading,每一滴在褪色前能維持可見的時間有多長
+Add World Marker,新增世界標記
+Star (Yellow),星（黃色）
+Circle (Orange),圓圈（橘色）
+Diamond (Purple),鑽石（紫色）
+Triangle (Green),三角形（綠色）
+Moon (Silver),月亮（銀色）
+Square (Blue),正方形（藍色）
+Cross (Red),十字架（紅色）
+Skull (White),骷髏（白色）
+Symbol Height (yards),標誌高度（碼）
+Height of floating symbol above ground,浮動標誌距地面的高度
+World Marker Settings,世界標記設定
+
+# =============================================================================
+# Settings Hub
+# =============================================================================
+settings.hub.title,設定
+settings.hub.display,顯示
+settings.hub.appearance,外觀
+settings.hub.camera,相機
+settings.hub.import_export,進口／出口
+settings.hub.actors,演員
+settings.hub.nameplates,銘牌
+settings.hub.facing,朝向指示器
+settings.hub.ui_scale,UI 比例
+settings.hub.layout,版面配置
+settings.hub.reset_layout,重設為預設值
+settings.hub.save_layout,儲存當前設定
+settings.hub.import_export_desc,匯出或匯入您的設定，以便與他人分享或從備份中還原。
+settings.hub.open_import_export,開啟「匯入／匯出」...
+menu.show_menu_bar,顯示選單列
+camera.enable_follow,啟用相機跟隨功能
+camera.pan_sensitivity,泛敏感性
+camera.follow_speed,追蹤 Speed
+camera.orthographic,正投影圖（2D）
+camera.reset,重設相機
+actor.auto_assign_shapes,自動指派角色圖形
+actor.role_shapes,角色形狀指派
+actor.tank_shape,坦克
+actor.healer_shape,治療者
+actor.melee_dps_shape,近戰傷害輸出
+actor.ranged_dps_shape,遠程傷害輸出
+actor.default_scale,預設比例尺
+tooltip.auto_assign_shapes,根據玩家角色（坦克／治療／輸出）自動分配技能圖示
+tooltip.landing_local_file,從您的電腦載入戰鬥日誌檔案（.txt）
+tooltip.landing_warcraftlogs,透過網址或 API 從 WarcraftLogs.com 匯入戰鬥紀錄
+tooltip.landing_recent,瀏覽從快取中載入的先前對戰紀錄
+tooltip.landing_playalong,練習模式 — 重播角色的動作
+tooltip.camera_follow,攝影機會自動跟隨演員的中心點
+tooltip.camera_pan,拖曳時相機移動的速度有多快
+tooltip.camera_speed,攝影機能多快跟上移動中的演員
+tooltip.camera_ortho,自上而下的 2D 視圖（停用透視效果）
+tooltip.camera_reset,將攝影機恢復至預設位置並調整變焦
+tooltip.ui_scale,調整所有 UI 元素的大小
+tooltip.menu_bar,切換頂部的「檔案／檢視／設定」選單
+tooltip.reset_layout,將所有面板位置還原為預設值
+
+# =============================================================================
+# Annotation Wizard
+# =============================================================================
+wizard.title,註解精靈
+wizard.use_wizard,使用精靈
+wizard.back,返回
+wizard.next,下一頁
+wizard.finish,建立
+wizard.cancel,取消
+
+# Wizard Step Indicator
+wizard.step.source,來源
+wizard.step.event,活動
+wizard.step.position,職位
+wizard.step.shape,形狀
+wizard.step.visual,視覺
+wizard.step.advanced,進階
+
+# Step 1: Trigger Source
+wizard.source.mode,選擇觸發來源：
+wizard.source.spell,咒語事件
+wizard.source.actor,演員職位
+wizard.source.select_spell,選擇要追蹤的法術：
+wizard.source.actor_name,要追蹤的演員姓名：
+wizard.source.actor_hint,請輸入確切的 NPC 名稱（例如：Sikran）
+wizard.source.no_spells,本次遭遇中未發現任何敵對生物
+wizard.source.selected,已選取
+wizard.category.cast,演員陣容
+wizard.category.debuff,負面效果
+wizard.category.buff,增益效果
+wizard.category.damage,損害
+wizard.category.damage_taken,所受傷害
+wizard.tooltip.damage_taken,當玩家受到此法術造成的傷害時觸發
+wizard.category.actor,演員
+
+# Step 2: Event Type
+wizard.event.timing,註解應在何時觸發？
+wizard.event.cast_info,當法術施放完成時觸發
+wizard.event.damage_info,當法術造成傷害時觸發
+wizard.event.debuff_timing,選擇何時顯示註解：
+wizard.event.buff_timing,選擇何時顯示註解：
+wizard.event.on_applied,當應用時
+wizard.event.while_active,處於活躍狀態時（追蹤目標）
+wizard.event.on_end,移除時
+wizard.event.actor_mode,選擇追蹤該演員的方式：
+wizard.event.actor_follow,追蹤演員
+wizard.event.actor_follow_desc,註解隨演員移動
+wizard.event.actor_trail,留下足跡
+wizard.event.actor_trail_desc,以固定間隔放置標記點
+wizard.event.actor_spawn,關於《Spawn》
+wizard.event.actor_spawn_desc,在演員出現時做標記
+wizard.event.actor_death,論死亡
+wizard.event.actor_death_desc,標記演員死亡的地點
+wizard.event.trail_interval,步道標記間距：
+wizard.event.death_behavior,當演員過世時：
+wizard.event.death_disappear,立刻消失
+wizard.event.death_persist,留在死亡地點
+wizard.event.death_fade,隨時間逐漸淡出
+
+# Step 3: Positioning
+wizard.position.anchor,註解應該顯示在哪裡？
+wizard.position.at_caster,在轉向輪位置
+wizard.position.at_caster_facing,以施法者為基準（以面向方向為準）
+wizard.position.at_target,在目標位置
+wizard.position.at_target_facing,抵達目標位置（以面向方向為準）
+wizard.position.facing_hint,使用朝向：僅提供「圓錐」和「矩形」兩種形狀
+wizard.position.actor_hint,基於角色的觸發器會自動跟隨角色的位置
+wizard.position.offset,相對於錨點的位置偏移量：
+wizard.position.offset_x,X（東／西）
+wizard.position.offset_y,Y（北／南）
+wizard.position.offset_hint,X 軸正方向 = 東方。Y 軸正方向 = 北方。
+wizard.position.lead_time,在事件發生前顯示註解：
+wizard.position.lead_time_hint,在問題發生前，先聯絡維修技師
+
+# Step 4: Shape & Size
+wizard.shape.select,選擇註解形狀：
+wizard.shape.dimensions,調整尺寸：
+wizard.shape.circle,圓圈
+wizard.shape.rectangle,矩形
+wizard.shape.cone,錐體
+wizard.shape.line,行
+wizard.shape.star,星
+wizard.shape.donut,甜甜圈
+wizard.shape.radius,半徑
+wizard.shape.height,高度
+wizard.shape.width,寬度
+wizard.shape.length,長度
+wizard.shape.rotation,旋轉
+wizard.shape.cone_length,錐體長度
+wizard.shape.cone_angle,錐角
+wizard.shape.line_length,行長
+wizard.shape.line_width,線寬
+wizard.shape.ray_length,光程
+wizard.shape.ray_width,光束寬度
+wizard.shape.points,光線數量
+wizard.shape.outer_radius,外半徑
+wizard.shape.inner_radius,內半徑
+
+# Step 5: Visual Style
+wizard.visual.color,註解顏色：
+wizard.visual.base_color,底色
+wizard.visual.pattern,視覺圖案：
+wizard.visual.solid,實心
+wizard.visual.striped,條紋
+wizard.visual.hatched,孵化
+wizard.visual.ripple,漣漪環
+wizard.visual.swirl,漩渦
+wizard.visual.stripe_spacing,條紋間距
+wizard.visual.ripple_speed,漣波速度
+wizard.visual.ripple_count,漣漪週期
+wizard.visual.motion,動議類型：
+wizard.visual.motion_none,無（靜態）
+wizard.visual.motion_rotate,旋轉
+wizard.visual.motion_projectile,投射物
+wizard.visual.motion_raindrops,雨滴
+wizard.visual.rotation_speed,轉速
+wizard.visual.end_mode,終點位置模式：
+wizard.visual.end_manual,手動偏移量
+wizard.visual.end_to_target,拼寫「target」
+wizard.visual.end_in_facing,面向方向
+wizard.visual.end_offset_x,結束 X 偏移量
+wizard.visual.end_offset_y,結束 Y 偏移量
+wizard.visual.projectile_distance,行駛距離
+wizard.visual.travel_time,行車時間
+wizard.visual.return_to_origin,返回起點
+wizard.visual.end_behavior,抵達目的地後：
+wizard.visual.end_persist,保持可見度
+wizard.visual.end_disappear,消失
+wizard.visual.drops_per_sec,每秒滴數
+wizard.visual.drop_radius,滴珠尺寸
+wizard.visual.drop_lifetime,滴落壽命
+
+# Step 6: Duration & Advanced
+wizard.advanced.duration,註解應顯示多久？
+wizard.advanced.duration_encounter,整個遭遇
+wizard.advanced.duration_encounter_desc,（整場對戰皆可見）
+wizard.advanced.duration_timed,定時
+wizard.advanced.duration_timed_desc,（持續時間結束後消失）
+wizard.advanced.duration_sec,持續時間
+wizard.advanced.stacks,堆疊／劑量濾波（可選）：
+wizard.advanced.min_stacks,最小堆疊數
+wizard.advanced.max_stacks,最大堆疊數
+wizard.advanced.stacks_hint,若不進行篩選，請將數值設為 0
+wizard.advanced.stack_colors,依堆疊數量分色：
+wizard.advanced.color_count,閾值數量
+wizard.advanced.negation,否定區（清除其他註解）：
+wizard.advanced.is_negation,發揮否定區的作用
+wizard.advanced.negation_hint,當此效果觸發時，將法術 ID 加入清除清單
+wizard.advanced.add_spell,新增
+wizard.advanced.summary,摘要：
+wizard.summary.spell,咒語
+wizard.summary.actor,演員
+wizard.summary.timing,時機
+wizard.summary.shape,形狀
+wizard.summary.duration,持續時間
+wizard.summary.seconds,秒
+
+# =============================================================================
+# Auto Annotations Panel - Trigger Config
+# =============================================================================
+Trigger When,觸發條件：何時
+Trigger Mode,扳機模式
+On Applied,關於「應用」
+During Debuff,在減益效果期間
+During Buff,在增益效果期間
+On End,《On End》
+Fixate,執著
+Tether,Tether
+On Cast Start,關於「Cast Start」
+On Cast Success,關於選角的成功
+During Cast,演出期間
+Pool Interval (sec),池間隔（秒）
+After Cast (sec),施法後 (秒)
+Follow Actor,追蹤演員
+Leave Trail,留下足跡
+On Spawn,關於《Spawn》
+On Death,論死亡
+On Actor Death,論演員之死
+Disappear Immediately,立刻消失
+Persist at Death Spot,在死亡點堅持下去
+Fade Over Time,隨時間逐漸淡出
+Trail Interval (sec),軌跡間隔（秒）
+Single annotation when debuff is first applied,當負面效果首次施加時，僅顯示一次標記
+Annotation follows the debuffed player while active,標記在生效期間會跟隨受到減益效果的玩家
+Single annotation at player's position when debuff ends,當負面效果結束時，在玩家所在位置顯示單一標記
+Fixate Line,固定線
+Line connecting source NPC to target player (updates every 250ms),連接來源 NPC 與目標玩家的線條（每 250 毫秒更新一次）
+Anchor: Source NPC to Target Player,錨點：來源 NPC 至目標玩家
+Line automatically connects the debuff source (NPC) to the debuff target (player),Line 會自動將負面效果的來源（NPC）與負面效果的目標（玩家）連結起來
+Shape: Line (required for Fixate),形狀：線（「Fixate」功能必備）
+Thickness of the fixate line,固定線的厚度
+Single annotation when buff is first applied,首次套用緩衝效果時僅進行一次標註
+Annotation follows the buffed enemy while active,標記在生效期間會跟隨被增益的敵人
+Single annotation at enemy's position when buff ends,增益效果結束時，在敵方位置標記單一標記
+Annotation appears at actor's position as timeline progresses,隨著時間軸推進，註解會出現在演員所在的位置
+Leave persistent annotations at actor's position over time (void zone trail),在一段時間內於角色所在位置留下持久的標記（虛空區域軌跡）
+Single annotation when actor first appears,當角色首次登場時進行單次註解
+Single annotation when actor dies,當角色死亡時僅顯示一次註解
+How often to leave a new annotation (in seconds),新增註解的間隔時間（以秒為單位）
+Annotation vanishes when actor dies,當演員去世時，註解便會消失
+Annotation stays at death location (uses duration setting),註解會保留在死亡位置（採用持續時間設定）
+Annotation fades out after actor dies,演員過世後，註解會逐漸淡出
+
+# Trigger Config - Headers and Preview
+Editing Actor: %s,編輯者：%s
+Configure Actor: %s,設定角色：%s
+Editing: %s,編輯：%s
+Configure: %s,設定：%s
+
+# Trigger Config - Lead Time
+Lead Time (sec),前導時間（秒）
+Fire annotation this many seconds BEFORE the cast completes,在施法完成前「這幾秒」觸發火之標記
+Fire annotation this many seconds BEFORE the event occurs,在事件發生前「這幾秒」進行火災標註
+
+# Trigger Config - Anchor/Position
+Place at,放置於
+At Buffed Unit,在 Buffed Unit
+At Buffed Unit (Facing),在「Buffed Unit」（正面）
+Use 'Facing' to orient shapes in the direction the enemy is looking,使用「朝向」功能，將圖形朝向敵人注視的方向調整
+
+# Trigger Config - Trigger Types
+Trigger: On Cast Success,觸發條件：施法成功時
+Trigger: On Damage,觸發條件：受到傷害時
+Trigger: On Damage Taken,觸發條件：受到傷害時
+
+# Trigger Config - Cast Timing Tooltips
+Single annotation when cast begins (interruptible casts only),鑄造開始時僅顯示單一註解（僅限可中斷的鑄造）
+Single annotation when spell cast completes,施法完成時觸發單一註解
+Spawn pool annotations at caster position at intervals during cast,在施法過程中，以固定間隔於施法者位置生成法術池標記
+
+# Trigger Config - Dimensions
+Radius (yards),半徑（碼）
+Width (yards),寬度（碼）
+Length (yards),長度（碼）
+Height,高度
+Angle (deg),角度（度）
+Rotation (deg),旋轉角度（度）
+Ray Length (yards),射程（碼）
+Ray Width (yards),射線寬度（碼）
+Points,要點
+
+# Trigger Config - Stack Filtering
+Stack Filtering,堆疊篩選
+Min Stacks,最小籌碼堆
+Max Stacks,Max Stacks
+No min,無最低限制
+No max,無上限
+Only show annotation when aura has at least this many stacks (0 = no minimum),僅當光環的疊加層數至少達到此數值時才顯示註解（0 表示無最低要求）
+Only show annotation when aura has at most this many stacks (0 = no maximum),僅當光環的疊加層數不超過此數值時才顯示註解（0 表示無上限）
+Stack Colors,堆疊顏色
+Change annotation color based on stack count. Higher thresholds take priority.,根據堆疊計數變更註解顏色。較高的閾值具有優先權。
+Color Thresholds,色彩閾值
+Number of stack-based color changes (0 = use base color only),基於堆疊的顏色變更次數（0 表示僅使用基礎顏色）
+At %d+ stacks,在 %d+ 堆疊處
+at %d+ stacks,在 %d+ 堆疊處
+Higher thresholds take priority over lower ones,較高的閾值優先於較低的閾值
+
+# Trigger Config - Visual Styles
+Default solid fill,預設實心填充
+Diagonal stripes (uncertainty indicator),對角條紋（不確定性指標）
+Cross-hatch pattern (uncertainty indicator),交叉線圖案（不確定性指標）
+Animated ripples expanding outward (projectile/wave effect),向外擴散的動畫漣漪（投射物／波浪效果）
+Spiral pattern from center (saturation shift),從中心向外延伸的螺旋圖案（飽和度偏移）
+Stripe Spacing,條紋間距
+Distance between stripes/hatches in yards,條紋／陰影線之間的距離（以碼為單位）
+Ring Speed,環速
+How fast rings expand outward,年輪向外擴展的速度有多快
+Ring Count,戒指數量
+Number of visible ring cycles,可見環狀週期的數量
+
+# Trigger Config - Motion
+Static annotation (no motion),靜態註解（無動態）
+Annotation rotates around its center point,註解會繞著其中心點旋轉
+Annotation moves from start to end position over time,標註會隨著時間推移，從起始位置移動到結束位置
+Spawns small circles within annotation bounds (swirlie effect),在註解邊界內生成小圓圈（漩渦效果）
+Positive = clockwise, 負極 = 逆時針，正極 = 順時針，負極 = 逆時針
+Horizontal distance to travel (positive = East),需行經的水平距離（正值表示東方）
+Vertical distance to travel (positive = North),垂直移動距離（正值表示北方）
+How long it takes to reach the destination,抵達目的地需要多久時間
+Annotation stays at final position after reaching destination,註解在抵達目標位置後仍保持在最終位置
+Annotation disappears when it reaches the destination,註解在抵達目的地時便會消失
+
+# Trigger Config - Negation
+Negation,否定
+Acts as Negation Zone,發揮「否定區」的作用
+When this annotation fires, 它會永久移除其半徑範圍內符合條件的註解；當此註解觸發時，它會永久移除其半徑範圍內符合條件的註解
+Spells to Negate:,需抵消的法術：
+Enter spell ID of annotations to clear when this fires,當此事件觸發時，請輸入要清除的註解之咒語 ID
+No spells configured - add spell IDs to negate,未設定任何法術 — 請新增法術 ID 以進行抵消
+
+# Trigger Config - Buttons
+Update Trigger,更新觸發器
+Create Trigger,建立觸發器
+Select a spell or actor to configure,選擇一個咒語或角色進行設定
+Annotation follows the buffed unit while active,標記在生效期間會跟隨被強化單位移動
+Single annotation at unit's position when buff ends,當緩衝區結束時，在單元位置處進行單次註解
+
+# Shared
+Color,顏色
+Shape,形狀
+%.0f deg,%.0f 度
+%.1f yards,%.1f 碼
+%.1f yards/s,%.1f 碼/秒
+Adds a bright glow effect at edges,在邊緣添加明亮的光暈效果
+Adds a darker border around the shape,在圖形周圍新增較深色的邊框
+Angle,角度
+Annotation Properties,註解屬性
+Color gradient from center to edge,從中心到邊緣的色彩漸變
+Delete,刪除
+Duration (sec),持續時間（秒）
+Duration,持續時間
+Edge Fade,邊緣漸層
+Edge Glow,邊緣光暈
+Encounter,邂逅
+Fade Width,淡入淡出寬度
+Glow Intensity,發光強度
+Gradient,梯度
+Hatched,孵化
+No annotation selected,未選取任何註解
+Outline Width,輪廓寬度
+Outline,大綱
+Ripple Rings,漣漪環
+Rotation,旋轉
+Soft alpha fade at edges for a smoother look,邊緣採用柔和的α淡入淡出效果，呈現更平滑的外觀
+Solid,實心
+Striped,條紋
+Swirl,漩渦
+Timed,定時
+Visual Polish,視覺波蘭語
+Visual Style,視覺風格
+Add,新增
+
+# Facing Offset
+Facing Offset (deg),面對偏移角（度）
+Rotate the shape from the actor's facing direction. 0=forward, 90=右、-90=左、180=後方，以角色面向的方向為基準旋轉圖形。0=前方、90=右、-90=左、180=後方
+
+# Spell Context Menu
+context_menu.open_wowhead,在 Wowhead 上開啟
+context_menu.open_spell_settings,開啟「咒語設定」
+context_menu.open_auto_annotations,在「自動註解」中開啟
+context_menu.add_to_raid_note,新增至團隊副本筆記
+
+# CJK Font Settings
+settings.enable_cjk_fonts,啟用 CJK 字型（中文／韓文）
+tooltip.cjk_fonts,啟用對中文和韓文的支援。若停用此功能，可節省約 100MB 的 RAM。
+settings.requires_restart,需要重新啟動
+
+# =============================================================================
+# Overlay View Modes
+# =============================================================================
+overlay.view_mode.current_pull,當前拉力
+overlay.view_mode.dungeon,地牢
+overlay.view_mode.trash_overall,所有垃圾
+overlay.view_mode.session,會期
+
+# Meter tooltip and breakdown strings
+breakdown.raw_tooltip,減傷前的傷害/治療
+breakdown.raw_tooltip_crit1,對於爆擊，我們會估算原始傷害
+breakdown.raw_tooltip_crit2,按 200% 爆擊倍率計算。
+format.effective_total_overheal,有效: %s  |  總計: %s (%.1f%% 過量治療)
+format.total_persec,總計: %s  |  %s: %s
+format.hits_crits,命中: %u (爆擊: %u)
+meter.click_hint,左鍵選擇，右鍵展開
+meter.click_hint_select,左鍵點擊以選取
+meter.show_who_damaged_fmt,顯示誰損壞了 %s
+meter.damage_avoided_fmt,避免的傷害：%s
+meter.click_breakdown_fmt,點擊查看 %s 的傷害細項
+meter.tip_total_fmt,總計：%s
+meter.tip_effective_fmt,生效日期：%s
+meter.tip_hits_fmt,瀏覽次數：%u
+meter.tip_crits_fmt,關鍵詞：%u (%.1f%%)
+meter.tip_max_hit_fmt,最高命中數：%s
+
+# Settings import/export status messages
+settings_export.exported_fmt,已匯出 %zu 個類別到 %s
+settings_export.export_failed,匯出失敗
+settings_export.imported_fmt,已匯入 %zu 個類別
+settings_export.import_failed,匯入失敗
+settings_export.file_not_found,找不到檔案
+settings_export.no_valid_settings,檔案中沒有有效的設定
+settings_export.found_fmt,找到 %zu 個類別
+settings_export.not_in_file,（檔案中沒有）
+settings_export.invalid_filename,請使用不含資料夾或特殊字元的簡單檔案名稱
+settings_export.file_exists_fmt,%s 已存在 — 請選擇另一個名稱
+
+# Playback shortcut hints
+playback.tooltip.play_pause,播放/暫停（空白鍵）
+playback.tooltip.skip_back,後退 5 秒（Q）
+playback.tooltip.skip_forward,前進 5 秒（E）
+playback.tooltip.speed,播放速度（按 1-5 選擇預設）
+
+# Raid notes crash recovery and empty-state hints
+raidnotes.recovered_notes,已還原上次工作階段中未儲存的筆記
+raidnotes.restore,還原
+raidnotes.discard,捨棄
+empty.select_encounter_hint,選擇一場戰鬥或等待戰鬥開始
+empty.scrub_hint,此時間區段內還沒有紀錄
+
+# Death recap window
+death_recap.title,死亡分析
+death_recap.count_fmt,%zu 次死亡
+death_recap.deaths,死亡人數
+death_recap.no_deaths,未錄得任何死亡病例。
+death_recap.select_death,請選擇一則死亡案例進行分析。
+death_recap.died_at_fmt,於 %s 逝世
+death_recap.killing_blow,致命一擊：
+death_recap.hide_hits_under,將點擊數隱藏於
+death_recap.max_hp_fmt,%.0f%% 最大生命值
+death_recap.hide_hits_tooltip,篩選下方事件清單。當傷害值低於玩家最大生命值的此百分比時，對事後分析無關緊要的小傷害將被隱藏。
+death_recap.hp_timeline,HP 時間軸（30 秒視窗）
+death_recap.no_hp_data,此視窗中未記錄任何 HP 資料。
+death_recap.axis_death,死亡
+death_recap.events_fmt,活動  (%zu)
+death_recap.events_filtered_fmt,事件  （顯示 %zu 中的 %zu）
+death_recap.no_events,過去 30 秒內未發生任何傷害／治療事件。
+death_recap.col_time,時間
+death_recap.col_ability,能力
+death_recap.col_amount,金額
+
+# Landing page extras toggle
+landing.extras_show,關於與合作夥伴
+landing.extras_hide,隱藏關於與合作夥伴
+
+# Landing page links to the project page (project_url in awowlab.config.json)
+landing.report_issue,回報問題
+landing.releases,新聞稿
+landing.translate_hint,請在 AwowLab/data/lang 目錄中編輯您所選語言的檔案，並提交拉取請求
+
+# Mob weighting panel
+mobweight.title,怪物權重
+mobweight.enabled,啟用怪物權重
+mobweight.explainer,對已設權重怪物造成的傷害在統計中僅按該比例計入
+mobweight.active_hint,怪物權重已生效
+mobweight.reset_all,重設所有權重
+mobweight.not_in_encounter,本場戰鬥中沒有的已儲存權重
+mobweight.refresh,重新整理
+mobweight.hits_fmt,%zu 次命中
+
+# Boss phase tracking and meter report
+context_menu.set_phase_trigger,從此處開始新階段
+context_menu.remove_phase_trigger,移除階段觸發
+meter.phase_all,全部階段
+meter.report,戰報
+meter.report_tooltip,複製單行摘要以貼到聊天框
+meter.report_copied,已複製！
+
+# Boss phase editor
+phases.title,首領階段
+phases.kind_cast,首次施放
+phases.kind_time,於
+phases.kind_emote,表情
+phases.not_this_pull,本次嘗試未達到
+phases.add_time,新增時間分段
+phases.time_hint,分:秒
+phases.emotes_header,本次嘗試的表情
+phases.split_here,在此分段
+phases.no_emotes,本次嘗試沒有表情
+phases.no_rules,此首領尚無階段規則
+phases.casts_header,本次嘗試的首領施法
+phases.offset_label,變換
+meter.class_colors,依職業為長條著色
+defensives.title,防守型球員（過去10秒）
+defensives.pressed_fmt,死前按下了 %d 鍵
+defensives.active_at_death,身故時仍有效
+defensives.none,未使用
+settings.tracked_defensives,追蹤型防禦型基金
+settings.tracked_defensives_hint,死亡回顧中需檢查的法術 ID
+settings.add_spell_id,新增法術 ID
+settings.add,新增
+settings.remove,移除
+
+# =============================================================================
+# BENCHMARK - comparing a pull against a reference log
+# =============================================================================
+benchmark.title,成績單
+benchmark.headline,%s 對 %s
+benchmark.window_died,在 %s 處剪接 — %s 已逝世
+benchmark.window_survived,完全拉出 - %s
+benchmark.stat.dps,每秒傷害
+benchmark.stat.cpm,每分鐘鑄造次數
+benchmark.stat.burst,冷卻時間內每秒傷害 (DPS)
+benchmark.stat.filler,填充型 DPS
+benchmark.attribution.burst,這段差距大部分都出現在冷卻時間內——在此時間段內，%s 落後於對手。
+benchmark.attribution.filler,大部分差距發生在冷卻時間之外——在此時間段內，%s 落後。
+benchmark.tab.findings,差異
+benchmark.tab.cooldowns,冷卻時間
+benchmark.tab.throughput,吞吐量
+benchmark.tab.timeline,時間軸
+benchmark.weight.major,大
+benchmark.weight.notable,值得注意的
+benchmark.weight.info,次要
+benchmark.later,稍後
+benchmark.earlier,較早前
+benchmark.no_findings,沒有顯著差異
+benchmark.no_findings_hint,在此期間，您的拉取操作與參考版本的變更軌跡高度吻合。
+benchmark.no_cooldowns,兩次拉怪操作均未記錄到冷卻時間的使用。
+benchmark.cd_row,%s（請使用 %d）
+benchmark.section.burst,在冷卻時間結束之前
+benchmark.section.filler,在冷卻時間之間
+benchmark.throughput_hint,按法術分類的每次施法佔比。
+benchmark.unknown_spell,咒語 %u
+benchmark.unknown_npc,敵人 %u
+benchmark.finding.cd_delayed,%s 的 %.1f 比參考值 %s 更強
+benchmark.finding.cd_weaker,%s 在其運作期間執行了 %s —— 該參考執行了 %s
+benchmark.finding.cd_unused,所使用的參考資料 %s %d 次；您的拉取並未
+benchmark.finding.cd_fewer,%s 被使用 %d 次——該參考文獻曾引用它 %d
+benchmark.finding.filler_dps,在冷卻時間之間，你的每秒輸出為 %s —— 參考值則是 %s
+benchmark.finding.filler_idle,在冷卻時間之間的 %.0f%% 期間，並未發動任何施法——該參考點位於 %.0f%%
+benchmark.finding.cast_rate,每分鐘施放 %s 次——參考值為 %.1f 次，實際施放次數為 %.1f 次
+benchmark.finding.damage_taken,您從 %s 移除了 %s —— 該參考資料移至 %s
+benchmark.finding.target,%s 承受了你造成的 %.0f%% 傷害——該參考資料將 %.0f%% 放在那裡
+benchmark.finding.proc_wasted,%s 在未被使用的情況下已過期 %d 次
+benchmark.finding.uptime,%s 當時有 %.0f%% 的時間——該參考資料維持了 %.0f%%
+benchmark.finding.resource_capped,您以最大資源狀態運行了 %.0f 秒
+benchmark.finding.uncomparable,這個階段無法相提並論
+benchmark.blocked.generic,目前還無法執行這項比較
+benchmark.blocked.unconfirmed,有些咒語仍需分類
+benchmark.blocked.unconfirmed_hint,此比較功能會依據您的分類來判斷哪些情況屬於冷卻時間，不會自行推測。
+benchmark.blocked.spec,不同的專業領域
+benchmark.blocked.spec_hint,這兩項規格基於不同原因而採取不同的做法，因此進行比較並無意義。
+benchmark.blocked.encounter,不同的邂逅
+benchmark.blocked.phases,相位分裂已發生變化
+benchmark.blocked.phases_hint,該參考資料是根據不同的相位規則進行分割的。請重新建構它，以便與您目前的分割結果進行比較。
+benchmark.blocked.no_overlap,沒有可比對的視窗
+benchmark.blocked.pending_count,%d 有法術正等著你施放
+benchmark.action.open_replay,開啟重播
+benchmark.action.change_mentor,變更參考資料
+benchmark.action.review,檢視分類
+benchmark.action.dismiss,關閉
+
+# =============================================================================
+# BENCHMARK - spell classification review
+# =============================================================================
+classify.title,法術分類
+classify.subtitle,此 %s 所使用的法術
+classify.pending,%d 仍需您的確認
+classify.all_done,全部已確認
+classify.explainer,此比較會根據這些資訊來判斷哪些屬於冷卻時間，哪些屬於過渡技能。建議是根據每個法術的施放頻率所提出——請修正任何看起來不對的地方，然後確認。
+classify.tab.spells,演員陣容
+classify.tab.auras,增益效果
+classify.show_confirmed,演出已確認
+classify.confirm,確認
+classify.confirmed,已確認
+classify.accept_all,接受所有建議
+classify.close,關閉
+classify.empty,目前尚無需分類的內容
+classify.empty_hint,請先載入參考日誌，其法術便會顯示於此處。
+classify.no_pending_spells,沒有待處理的鑄件
+classify.no_pending_auras,沒有待處理的增益效果
+classify.no_pending_hint,勾選「顯示已確認的項目」，以重新檢視先前的決定。
+classify.evidence.cadence,%d 每分鐘施放 - %.1f 次，每次施放間隔約 %.0f 秒
+classify.evidence.irregular,%d 字形，無固定間距
+classify.evidence.single,只拋了一次——數量太少，無法判斷其規律
+classify.evidence.plain,%d 鑄件
+classify.evidence.aura,%d 次應用時間——拉伸過程中的 %.0f%%，每次約 %.1f 秒
+classify.role.filler,填充物
+classify.role.proc,Proc 消費者
+classify.role.spender,資源消耗者
+classify.role.major,主要冷卻時間
+classify.role.minor,較短的冷卻時間
+classify.role.defensive,防守型
+classify.role.utility,實用性
+classify.role.ignored,忽略這個咒語
+classify.role.none,未分類
+classify.aura.proc,Proc
+classify.aura.maintenance,繼續保持下去
+classify.aura.cdbuff,冷卻時間增益
+classify.aura.unimportant,不重要
+classify.aura.none,未分類
+
+# =============================================================================
+# LANDING - compare pulls
+# =============================================================================
+btn.compare_live,觀看直播
+settings.self_character,您的角色名稱
+settings.self_character_hint,需要這樣做，以便透過拉取比較來辨識哪位玩家是你。
+overlay.benchmark_result,對 %s：每秒造成 %+.0f 點傷害
+overlay.benchmark_findings,%d 差異 - 請開啟成績單查看詳細資訊
+btn.save,儲存
+landing.compare,比較拉力
+landing.compare_desc,將某項動作與你試圖模仿的球員進行比較
+tooltip.landing_compare,請選擇兩則快取日誌進行比較，或即時觀看您的日誌，並在每次清除後取得評分報告。
+btn.prepare_mentor,準備
+btn.compare_report,報告
+btn.back,返回
+btn.cancel,取消
+tooltip.needs_mentor,首先準備一個參考範例——選擇一個日誌以及您想要複製的玩家。
+mentorpicker.title,比較拉力
+mentorpicker.step_encounter,是哪一場遭遇？
+mentorpicker.step_mentor,%s 應採用哪個參考資料？
+mentorpicker.step_fight,應以 %s 為基準測量哪個拉力？
+mentorpicker.mentor_detail,%s - 來自 %s
+mentorpicker.none_prepared,尚未準備參考文獻
+mentorpicker.none_prepared_hint,請使用「準備」功能，選擇要複製的日誌以及要複製的玩家。
+mentorpicker.no_fights,此場遭遇戰沒有快取拉取
+mentorpicker.no_fights_hint,請先載入此頭目的戰鬥紀錄，它就會出現在這裡。
+mentorpicker.unknown_encounter,遭遇 %u
+benchmark.prepare_prompt,選擇您要複製的玩家
+benchmark.prepare_pick_player,請在演員清單中選取一名演員，然後在此確認。
+benchmark.prepare_use,請使用 %s 作為參考
+prepare.title,準備參考資料
+prepare.subtitle,%s - %s
+prepare.explainer,選擇你想複製的玩家。該玩家的施法動作將成為後續每次拉怪的基準。
+prepare.no_players,在此日誌中未找到任何玩家
+prepare.no_players_hint,該紀錄可能不包含交戰人員的資訊。
+prepare.unknown_spec,未知專長
+classify.unknown_spec,未知專長
+mentorpicker.needs_download,尚未下載
+prepare.source_cache,摘自一份快取報告
+prepare.source_local,摘自一份當地戰鬥日誌
+benchmark.cd_window_detail,%s 優先於 %d 的全域變數
+benchmark.strip.globals,每個視窗中按下的全域變數
+benchmark.strip.dps,每個視窗每秒造成的傷害
+classify.filter_hint,搜尋咒語
+benchmark.action.review_classes,變更法術角色
+preview.action.reopen_prepare,變更已準備好的日誌
+benchmark.stale_rulings,自此比較建立以來，法術角色已有所變更。請重新建立此比較以查看最新數據。
+benchmark.live_waiting,查看針對 %s 的拉取日誌
+benchmark.live_reading,正在讀取 %d...
+benchmark.live_showing,顯示拉出 %d
+benchmark.live_skipped,那種吸引力無可比擬——期待下一次的到來
+classify.role.trinket,使用型飾品
+classify.role.cantrip,非全球性（小咒）
+classify.role.melee,普通攻擊
+benchmark.action.rebuild,立即重建
+benchmark.cd_show_buffs,顯示每個視窗中正在運作的緩衝區
+benchmark.cd_window,(%s - %s)
+benchmark.cd_output,%s 傷害 (%s DPS) 超過 %d 全局冷卻時間
+benchmark.cd_buff,%s (%.0fs)
+benchmark.melee,近戰
+classify.evidence.faster_than_gcd,%d 四處散落——%.2f速度太快，來不及按下
+classify.evidence.auto_attack,%d 普通攻擊揮擊
+classify.spell_id,(#%d)
+classify.section.casts,演員陣容
+classify.section.buffs,增益效果
+preview.title,參考資料已準備妥當
+preview.hint,這將作為比較時的基準。如果這裡的數字看起來有誤，那麼該咒語的判定結果很可能有誤。
+preview.tab.summary,摘要
+preview.tab.cooldowns,冷卻時間窗口
+preview.tab.spells,演員陣容
+preview.player,球員
+preview.encounter,邂逅
+preview.duration,拉伸長度
+preview.damage,造成的損害
+preview.dps,每秒傷害
+preview.taken,所受傷害
+preview.globals,已設定全域變數
+preview.globals_per_min,每分鐘的全球數
+preview.per_minute,%.1f
+preview.major_cooldowns,主要冷卻時間
+preview.cd_uses,冷卻時間區間
+preview.ignored,被忽略的法術
+preview.off_global,非全球性法術
+preview.no_cooldowns_warning,沒有任何法術被歸類為主要冷卻時間，因此整個拉怪過程都算作過渡階段。請在「變更法術角色」下設定一組，以進行爆發傷害分析。
+preview.unresolved_phases,從未觸發的相位規則：%s
+preview.cd_hint,每個視窗都會依序與您的視窗進行對比。
+preview.cd_detail,%s - %s  |  %s 傷害 (%s DPS) 跨越 %d 全局冷卻時間
+preview.no_cd_uses,無冷卻時間窗口
+preview.no_cd_uses_hint,本次拉怪過程中，並未施放任何被判定為主要冷卻時間的技能。
+preview.no_spells,未記錄任何演員陣容
+preview.spell_row,%d 次鑄造 (%.1f/分鐘)
+preview.action.accept,看起來沒問題
+classify.window_pair,賦予同名的增益效果——其持續時間直至該增益效果消失為止
+classify.window_pair_idle,同時會賦予同名的增益效果。請將此視為冷卻時間，其冷卻時間即為使用該增益效果的時段。
+classify.window_pair_buff,由同名劇組賦予——此增益效果標示了該時間窗
+classify.aura.major,主要冷卻時間（日誌中未顯示施法時間）
+benchmark.tab.breakdown,細項說明
+benchmark.breakdown_hint,關於此參考資料，謹此致意。
+benchmark.section.targets,按目標分類的傷害
+benchmark.section.execution,每次按壓造成的傷害
+benchmark.section.time,時光都去哪兒了
+benchmark.execution_hint,每次按壓造成的傷害。
+benchmark.col.target,目標
+benchmark.col.spell,咒語
+benchmark.col.spent,所花費的時間
+benchmark.col.delta,差異
+benchmark.row.idle,閒置（無施法、無GCD）
+benchmark.timeline_hint,過去 30 秒內的 DPS。
+benchmark.timeline_worst,在該路段，%s 至 %s 之間出現了最大的單一落差
+benchmark.cast_time_suffix, (%.1f 陣容)
+benchmark.burst_hint,重疊的冷卻時間將視為一個時段，並按順序配對。
+benchmark.burst_row,視窗 %d - %s
+benchmark.strip.gap,後方總損壞情況
+benchmark.source_share,%s  (%.0f%%)
+benchmark.no_sources,未記錄任何損害來源
+benchmark.no_sources_hint,重新建構該參考，以記錄每個法術的傷害。
+benchmark.window.all,完整拉取
+benchmark.window.entry,視窗 %d - %s
+benchmark.window.casts_heading,此視窗中的演員陣容
+benchmark.window.cast_count,%s × %d
+benchmark.window.no_casts,此視窗中未顯示任何內容
+benchmark.cd_show_blacklisted,包含黑名單中的項目
+mentorpicker.delete_hint,刪除此參考資料
+mentorpicker.delete_confirm,要刪除此預先設定的參考資料嗎？此規格的法術分類將予以保留。
+mentorpicker.delete_yes,刪除
+benchmark.differences_hint,請將您的內容置於上方，參考資料置於下方。
+benchmark.diff.output,輸出
+benchmark.diff.weighted,傷害（加權）
+benchmark.diff.raw,傷害（原始值）
+benchmark.diff.burst,爆發性每秒傷害 (DPS)
+benchmark.diff.filler,填充型 DPS
+benchmark.diff.cooldowns,冷卻時間的使用
+benchmark.diff.cd_count,使用的 Windows 版本
+benchmark.diff.cd_uptime,總冷卻時間
+benchmark.diff.survival,生存
+benchmark.diff.taken,所受傷害
+benchmark.diff.defensives,防守球員遭到緊逼
+benchmark.diff.mitigated,防禦所承受的傷害
+benchmark.diff.casts,依法術施放
+benchmark.section.taken_by_spell,技能造成的傷害
+benchmark.section.downtime,停機時間
+benchmark.row.downtime,無所事事的時光
+benchmark.row.downtime_burst,冷卻時間內的停機時間
+benchmark.row.downtime_filler,冷卻時間以外的停機時間
+benchmark.downtime_value,%s (%.0f%%)
+benchmark.weight_suffix,  x%.0f%%
+benchmark.window_target,%s %s
+benchmark.tab.movement,運動
+benchmark.movement_hint,相對模式會將頭目置於畫面中央。
+benchmark.movement_relative,與老闆相比
+benchmark.movement_distance,行駛距離
+benchmark.movement_yards,%.0f 碼
+benchmark.no_positions,無位置資料
+benchmark.no_positions_hint,重新建構參考點以捕捉動作。
+benchmark.movie.play,播放
+benchmark.movie.pause,暫停
+benchmark.movie.restart,重新啟動
+benchmark.movie.speed,%.0fx
+benchmark.trail.full,完整路徑
+benchmark.trail.5s,最後 5 秒
+benchmark.trail.10s,過去 10 秒
+benchmark.trail.20s,20多歲末期
+benchmark.trail.30s,最後 30 秒
+benchmark.composition.other,其他一切
+benchmark.composition.shares,%.0f%% / %.0f%%
+benchmark.downtime_hint,未發出鑄造指令的空缺。僅在日誌中顯示原因時，才會列出該原因。
+benchmark.downtime_count,%s 橫跨 %d 間隙
+benchmark.downtime_worst,%s 的最長間隔
+benchmark.downtime_gap,%s  -  s%.1f
+benchmark.downtime_in_cd,處於冷卻時間內
+benchmark.downtime_cancelled,已取消 %s
+benchmark.downtime_none,沒有值得報告的差距
+benchmark.composition.header,%s / %s
+benchmark.gap_seconds,%.1fs
+classify.aura.channel,頻道（仍在徵選中）
+benchmark.tab.damage,損害
+benchmark.strip.cumulative,累積傷害
+benchmark.downtime_caveat,除非其增益效果被判定為「蓄力」，否則蓄力效果會顯示為「停機時間」。那些消耗全局冷卻時間卻未記錄施法時間的技能，始終會如此顯示。
+benchmark.section.phases,按階段
+benchmark.phase_index,階段 %d
+benchmark.phases_unresolved,某些階段規則從未觸發；這些階段不會被進行比對。
+benchmark.window_mentor_end,完整拉取 - %s，以參考值為上限
+benchmark.verdict_behind,%.1f%% 位於 %s 後方，並覆蓋在對比視窗上
+benchmark.verdict_ahead,%.1f%% 在 %s 之前，於所比較之視窗範圍內
+benchmark.shortfall_heading,缺失的傷害從何而來
+benchmark.shortfall_burst,%s 在冷卻時間內
+benchmark.shortfall_filler,%s 冷卻時間之間
+benchmark.section.damage_taken,所受傷害
+benchmark.not_used,未使用
+benchmark.vs,對戰 %s
+prepare.step.spells,咒語
+prepare.step.phases,階段
+prepare.step.weights,群眾的份量
+prepare.spells_state,%d 已裁決，%d 待定
+prepare.spells_review,複習咒語
+prepare.spells_change,檢視法術角色
+prepare.spells_blocked,每個咒語都必須先被賦予一個角色，才能建立參照。
+prepare.phases_state,%d 相位規則
+prepare.weights_state,%d 怪物權重
+prepare.next,下一頁
+prepare.back,返回
+prepare.finish,準備
+
+# Auto-annotation wizard: source filter
+wizard.source.filter_label,來源篩選器
+wizard.source.filter_any,任何來源
+wizard.source.filter_creature,特定生物
+wizard.source.filter_environment,僅限環境
+wizard.source.filter_any_debuff_tip,匹配來自任何來源的負面效果（預設）
+wizard.source.filter_creature_debuff_tip,僅匹配所選生物的負面效果
+wizard.source.filter_environment_debuff_tip,僅匹配來自環境來源的減益效果（無特定施法者）
+wizard.source.filter_any_buff_tip,合併來自任何來源的增益效果（預設）
+wizard.source.filter_creature_buff_tip,僅匹配來自所選生物的增益效果
+wizard.source.filter_environment_buff_tip,僅匹配來自環境來源的增益效果（無特定施放者）
+
+# Auto-annotation wizard: tether shapes
+wizard.shape.tether_dynamic_tip,連接來源 NPC 與目標玩家的形狀（每 250 毫秒更新一次）
+wizard.shape.tether_static_tip,從靜態 NPC 位置（減益效果開始時）到目標玩家的形狀（每 250 毫秒更新一次）
+wizard.shape.tether_direction_tip,從 NPC 到玩家繪製一條直線。在 NPC 處繪製一個指向玩家的錐體。
+wizard.shape.tether_thickness_tip,繫繩的厚度
+
+# Auto-annotation wizard: anchoring
+wizard.position.anchor_source_to_target,錨點：來源 NPC 至目標玩家
+wizard.position.anchor_source_to_target_tip,Shape 會自動將負面效果的來源（NPC）與負面效果的目標（玩家）連結起來
+wizard.position.anchor_static_to_target,錨點：靜態來源至目標播放器
+wizard.position.anchor_static_to_target_tip,從減益效果開始時的 NPC 位置（靜態）到減益效果目標（玩家）的形狀
+wizard.position.anchor_at_caster,主播：在 Caster
+wizard.position.anchor_at_caster_tip,施法期間，水池會出現在施法者的位置
+wizard.position.rotation_auto,旋轉：自動（朝向目標）
+
+# Auto-annotation wizard: pool spawning
+wizard.advanced.pool_interval_tip,在施法期間，每隔多久（以秒為單位）生成一個新的法力池
+wizard.advanced.pool_lead_tip,在施法開始前，提前這多少秒開始生成生成池
+wizard.advanced.pool_trail_tip,在施法結束後，繼續生成此數秒的生成池
+
+# Auto-annotation wizard: visual polish
+wizard.visual.polish,視覺波蘭語
+wizard.visual.edge_fade,邊緣漸層
+wizard.visual.edge_fade_tip,邊緣採用柔和的α淡入淡出效果，呈現更平滑的外觀
+wizard.visual.fade_width,淡入淡出寬度
+wizard.visual.outline,大綱
+wizard.visual.outline_tip,在圖形周圍新增較深色的邊框
+wizard.visual.outline_width,輪廓寬度
+wizard.visual.edge_glow,邊緣光暈
+wizard.visual.edge_glow_tip,在邊緣添加明亮的光暈效果
+wizard.visual.glow_intensity,發光強度
+wizard.visual.gradient,梯度
+wizard.visual.gradient_tip,從中心到邊緣的色彩漸變
+wizard.visual.dual_colors,雙色
+wizard.visual.use_secondary_color,使用輔助色
+wizard.visual.use_secondary_color_tip,針對漸層、輪廓和圖案，請使用自訂顏色，而非自動生成的顏色
+wizard.visual.secondary_color,次要顏色
+wizard.visual.use_inner_zone_color,使用內區顏色
+wizard.visual.use_inner_zone_color_tip,中心區域採用不同顏色（例如：浸泡機制中的安全區）
+wizard.visual.inner_zone_color,內圈顏色
+
+# Landing page: package a fight for AI analysis
+landing.package,AI 套件
+landing.package_desc,將一場對戰以 AI 能讀取並審查的 ZIP 檔案格式匯出
+tooltip.landing_package,將一場戰鬥以 CSV 表格加上清單的形式寫入，並壓縮成 ZIP 檔，以便交給 AI。
+btn.package_export,挑起一場爭鬥
+btn.package_rankings,拉取排名
+tooltip.package_rankings,擷取某位頭目排名最高的玩家，並儲存回傳結果。此操作會消耗一次 API 查詢。
+btn.baseline_dungeon,地牢
+btn.baseline_raid,突襲
+btn.baseline_dummy,靶人偶
+btn.baseline_rebuild,重建
+tooltip.baseline_dungeon,從本季的地下城中挑選一個，並列出其最佳通關紀錄。
+tooltip.baseline_raid,從本季中挑選一位團隊副本首領，並列出其最高擊殺次數。
+tooltip.baseline_dummy,針對每個目標模擬配置，擷取頂層日誌。每個目標的計數皆會分別進行抽樣。
+tooltip.baseline_rebuild,重新載入季節清單。僅在補丁變更地下城或團隊副本後才需要執行此操作。
+
+# Baseline: spec, hero talent and content picker
+baseline.pick_title,建立基準
+baseline.pick_desc,選擇一個用來作為基準的設定。英雄天賦會改變技能輪替與冷卻時間的使用方式，因此這個基準是將兩種平均遊戲風格混合而成的，而這兩種風格其實根本沒人會用。
+baseline.class,班級
+baseline.spec,專業領域
+baseline.hero,英雄天賦
+baseline.hero_any,每一棵樹
+baseline.hero_unknown,此專精未列出任何英雄天賦。所提供的天賦資料可能比遊戲版本更舊。
+baseline.content,內容
+btn.baseline_start,拉取排名
+error.gpu_lost_title,圖形裝置遺失
+error.gpu_lost_message,顯示卡驅動程式已停止回應，AwowLab 必須關閉。更新您的 GPU 驅動程式可能會有所幫助。
+warnings.title,解析警告
+warnings.heading,警告：已偵測到問題
+warnings.intro,運作期間偵測到一些問題。請參閱以下詳細資訊以獲取更多資訊。
+warnings.details_fmt,詳細資訊 (%zu 警告)：
+warnings.log_saved_fmt,日誌檔已儲存至：%s
+warnings.report_hint,如果這種情況持續發生，請回報此問題並附上日誌檔案。
+warnings.clear,清除警告
+btn.ok,好

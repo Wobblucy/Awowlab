@@ -1,0 +1,2070 @@
+# AwowLab Localization - Korean
+# Machine translated with DeepL - community review welcome
+# Format: key,value
+# Lines starting with # are comments
+key,value
+
+
+# =============================================================================
+# Menu Bar - File Menu
+# =============================================================================
+menu.file,파일
+menu.change_encounter,만남 변경...
+menu.return_home,홈으로 돌아가기
+menu.import_export_settings,설정 가져오기/내보내기...
+
+# =============================================================================
+# Menu Bar - View Menu
+# =============================================================================
+menu.view,보기
+menu.playback_controls,재생 컨트롤
+menu.creatures_vehicles_pets,생물/차량/펫
+menu.raid_frames,레이드 프레임
+menu.enemy_grid,적 그리드
+menu.filters,필터
+menu.minimap_2d,2D 미니맵
+menu.gcd_history,GCD 역사
+menu.upcoming_boss_casts,예정된 보스 캐스트
+menu.meter_1,미터 1
+menu.meter_2,미터 2
+menu.meter_3,미터 3
+menu.deaths,사망자
+menu.player_buffs,플레이어 버프
+menu.player_debuffs,플레이어 디버프
+menu.aura_debug,아우라 디버그
+menu.cooldowns,플레이어 재사용 대기시간
+menu.raid_cd1,공격대 재사용 대기시간 (주요)
+menu.raid_cd2,공격대 재사용 대기시간 (마이너)
+menu.raid_cd3,공격대 재사용 대기시간(유틸리티)
+menu.enable_snapping,스냅 활성화
+menu.snap_threshold,스냅 임계값
+menu.ui_scale,UI 스케일
+menu.reset_layout,레이아웃 재설정
+menu.save_layout,레이아웃 저장
+menu.customize_appearances,외형 사용자 정의
+
+# =============================================================================
+# Menu Bar - Tools Menu
+# =============================================================================
+menu.tools,도구
+menu.export_snapshot,리플레이 스냅샷 내보내기...
+
+# =============================================================================
+# Export Snapshot Modal
+# =============================================================================
+export.title,리플레이 스냅샷 내보내기
+export.time_range,시간 범위
+export.start_time,시작
+export.end_time,끝
+export.duration,기간
+export.export_button,내보내기
+export.cancel_button,취소
+
+# =============================================================================
+# Landing Page - Snapshot Import Card
+# =============================================================================
+landing.snapshot_title,스냅샷 열기
+landing.snapshot_desc,공유된 .awsnap 리플레이 클립 불러오기
+landing.snapshot_browse,찾아보기
+
+# =============================================================================
+# Menu Bar - Settings Menu
+# =============================================================================
+menu.settings,설정
+menu.actor_appearance,배우 출연...
+menu.camera_settings,카메라 설정
+menu.nameplate_settings,명판 설정
+menu.raid_frame_settings,레이드 프레임 설정
+menu.show_auras,오라 아이콘 표시
+menu.show_spell_icons,주문 아이콘 표시
+menu.aura_icon_size,아이콘 크기
+menu.icon_size,아이콘 크기
+menu.language,언어
+menu.help_improve_localization,현지화 개선에 동참해 주세요
+
+# =============================================================================
+# Nameplate Settings Modal
+# =============================================================================
+nameplate.settings_title,명판 설정
+nameplate.global_settings,글로벌 설정
+nameplate.tab_players,플레이어
+nameplate.tab_other,기타
+nameplate.font_scale,글꼴 배율
+nameplate.use_actor_color,액터 컬러 사용
+nameplate.text_color,텍스트 색상
+nameplate.show_background,배경 표시
+nameplate.background_opacity,배경 불투명도
+nameplate.name_length,이름 길이
+nameplate.show_last_cast,마지막 캐스트 표시
+nameplate.last_cast_icon_size,마지막 캐스트 아이콘 크기
+tooltip.nameplate_font_scale,명판 텍스트 배율(0.5배 - 2.0배)
+tooltip.nameplate_name_length,표시할 최대 글자 수(0 = 전체 이름)
+tooltip.nameplate_use_actor_color,액터에 할당된 색상을 사용하여 명판 텍스트 색상 지정하기
+tooltip.nameplate_show_background,명판 텍스트 뒤에 반투명 배경 표시
+tooltip.nameplate_background_opacity,명판 텍스트 배경의 불투명도
+tooltip.nameplate_icon_size,명판의 아우라 아이콘 크기(16-48픽셀)
+
+# =============================================================================
+# Facing Indicator Settings
+# =============================================================================
+menu.facing_indicator,방향 표시기
+facing.enabled,페이싱 표시
+facing.opacity,불투명도
+facing.size,크기
+facing.color,색상
+
+# =============================================================================
+# UI Scale Buttons
+# =============================================================================
+btn.scale_small,작은
+btn.scale_normal,보통
+btn.scale_large,대형
+btn.scale_xl,XL
+
+# =============================================================================
+# Panel Titles
+# =============================================================================
+panel.filters,필터
+panel.playback,재생
+panel.creatures,생물/차량/펫
+panel.raid_frames,레이드 프레임
+panel.enemy_grid,적 그리드
+panel.gcd_history,GCD 역사
+panel.meter_1,미터 1
+panel.meter_2,미터 2
+panel.meter_3,미터 3
+panel.deaths,사망자
+panel.player_buffs,플레이어 버프
+panel.player_debuffs,플레이어 디버프
+panel.aura_debug,아우라 디버그
+panel.player_focus,플레이어 포커스
+panel.actor_appearance,배우 출연
+panel.cooldowns,선택된 플레이어 재사용 대기시간
+
+# =============================================================================
+# Actor Selector Panel
+# =============================================================================
+selector.title,초점을 맞출 플레이어 선택
+selector.load_hint,(SPELL_CAST 이벤트가 포함된 전투 로그 파일 로드)
+
+# =============================================================================
+# GCD History Panel
+# =============================================================================
+gcd.no_player,선택한 플레이어 없음
+gcd.select_hint,레이드 프레임 패널에서 플레이어를 선택합니다
+gcd.row_gcd,GCD
+gcd.row_ogcd,oGCD
+
+# =============================================================================
+# Cooldown Panel
+# =============================================================================
+cd.no_player,선택한 플레이어 없음
+cd.select_hint,레이드 프레임 패널에서 플레이어를 선택합니다
+cd.no_data,사용 가능한 주문 데이터 없음
+cd.no_spells,재사용 대기시간 표시를 위해 구성된 주문이 없습니다
+
+# =============================================================================
+# Raid Cooldown Panel
+# =============================================================================
+panel.raid_cd1,공격대 재사용 대기시간 - 주요
+panel.raid_cd2,공격대 재사용 대기시간 - 마이너
+panel.raid_cd3,공격대 재사용 대기시간 - 유틸리티
+raid_cd.no_data,사용 가능한 주문 데이터 없음
+raid_cd.no_spells,레이드 재사용 대기시간이 설정되지 않았습니다
+raid_cd.config_hint,설정 > 주문 지정에서 주문 구성하기
+
+# =============================================================================
+# Filters Panel
+# =============================================================================
+filter.actor_visibility,액터 가시성 필터
+filter.friendly,친절함
+filter.hostile,적대적
+filter.neutral,중립
+filter.players,플레이어
+filter.creatures,크리처
+filter.vehicles,차량
+filter.pets,애완동물
+filter.camera_options,카메라 옵션
+filter.display_options,디스플레이 옵션
+filter.debug_options,디버그 옵션
+filter.camera_target,"카메라 대상: (%.1f, %.1f, %.1f)"
+filter.reset_camera,카메라 보기 재설정
+filter.show_nameplates,명판 표시
+filter.show_health_bars,상태 표시줄 표시
+filter.dump_databases,데이터베이스를 CSV로 덤프
+filter.enable_camera_follow,카메라 팔로우 활성화
+filter.follow,팔로우
+filter.follow_speed,팔로우 속도
+filter.pan_sensitivity,팬 감도
+
+# =============================================================================
+# Tooltips
+# =============================================================================
+tooltip.health_bars,3D 뷰에서 배우 명판 위에 체력 표시줄을 표시합니다
+tooltip.show_auras,명판 위에 버프/디버프 아이콘 표시(주문 지정에서 구성)
+tooltip.aura_icon_size,명판 위의 버프/디버프 아이콘 크기(16-48픽셀)
+tooltip.show_spell_icons,레이드 프레임에 주문 추적 아이콘 표시
+tooltip.raid_frame_icon_size,레이드 프레임의 주문 아이콘 크기(12~32픽셀)
+tooltip.dump_databases,모든 데이터베이스 테이블을 ./debug - db tables/의 CSV 파일로 내보내기
+tooltip.camera_follow,카메라가 자동으로 배우의 중심을 따라갑니다
+tooltip.follow_speed,"카메라가 배우를 따라가는 속도(낮음=더 부드러움, 높음=더 빠름)"
+tooltip.pan_sensitivity,카메라 패닝 감도 조정(LMB 드래그)
+tooltip.refresh_encounters,로그 파일에서 새로운 만남을 확인합니다\n(새로 고치려면 F5를 누릅니다)
+
+# =============================================================================
+# Combat Meters
+# =============================================================================
+meter.damage_done,손상된 피해
+meter.healing_done,치유 완료
+meter.damage_taken,받은 피해
+meter.cumulative,누적
+meter.full_encounter,전체 만남
+meter.dps,DPS
+meter.hps,HPS
+meter.dtps,DTPS
+meter.melee,근접
+meter.environment,환경
+meter.blacklist,블랙리스트
+meter.tab.damage,피해
+meter.tab.healing,힐링
+meter.tab.taken,촬영
+meter.tab.taken_by,찍은 사람
+meter.tab.dispels,해제
+meter.tab.interrupts,인터럽트
+meter.tab.deaths,사망자 수
+meter.tab.friendly_fire,아군 오발
+meter.tab.overhealing,과도한 치유
+meter.tab.healing_taken,치유 효과 적용
+meter.tab.resurrections,부활
+meter.tab.cc_breaks,CC 브레이크
+meter.tab.avoidance,회피
+meter.tab.absorbs,흡수합니다
+meter.tab.enemy_damage,적의 피해량
+meter.tab.enemy_healing,적의 치유
+meter.total_absorbed,피해 방지
+meter.event_count,이벤트 흡수
+meter.total,합계
+status.no_absorb_data,흡수 데이터가 없습니다.
+status.no_enemy_damage_data,적의 피해 데이터가 없습니다.
+status.no_enemy_healing_data,적의 치유 데이터가 없습니다.
+breakdown.hit_distribution,타구 분포
+breakdown.hit_normal,일반
+breakdown.hit_crit,크리트
+breakdown.hit_glance,한눈에 보기
+breakdown.hit_resisted,저항했다
+breakdown.hit_blocked,차단됨
+breakdown.hit_absorbed,흡수됨
+meter.category.damage,피해
+meter.category.healing,치유
+meter.category.utility,유틸리티
+meter.category.survivability,생존성
+meter.death_count,사망자 수
+meter.resurrection_count,부활
+meter.cc_break_count,CC 브레이크
+meter.avoidance_count,회피
+meter.avoidance_total,합계
+meter.avoidance_dodge,닷지
+meter.avoidance_parry,패리
+meter.avoidance_miss,미스
+meter.avoidance_block,차단
+meter.avoidance_deflect,회피
+meter.avoidance_immune,면역
+meter.avoidance_resist,저항하다
+meter.avoidance_reflect,반성하다
+meter.avoidance_absorb,흡수하다
+meter.avoidance_other,기타
+meter.avoidance,회피
+meter.cc_breaks,CC 브레이크
+meter.total_cc_breaks,CC 브레이크 총계
+meter.total_deaths,총 사망자 수
+meter.total_avoidance,총 회피 횟수
+status.no_avoidance,회피 데이터가 기록되지 않았습니다.
+status.no_avoidance_data,회피 관련 데이터가 없습니다.
+status.no_overhealing_data,과치유 관련 데이터가 없습니다.
+status.no_healing_taken_data,치유 관련 데이터가 없습니다.
+status.no_friendly_fire_data,아군 오사 관련 데이터가 없습니다.
+status.no_cc_break_data,CC 중단 데이터가 없습니다.
+status.no_death_data,사망 관련 데이터가 없습니다.
+meter.select_target,대상 선택
+meter.select_target_hint,적 그리드 패널에서 적을 클릭하면 적에게 가해진 피해를 확인할 수 있습니다.
+meter.damage_to,다음 대상에 대한 손상
+meter.dispel_count,해제
+meter.interrupt_count,인터럽트
+meter.stolen_count,도난
+
+# =============================================================================
+# Status Messages
+# =============================================================================
+status.no_combat_data,사용 가능한 전투 데이터 없음
+status.no_dispel_data,데이터 삭제 금지
+status.no_interrupt_data,인터럽트 데이터 없음
+status.no_damage_data,사용 가능한 손상 데이터 없음
+status.no_healing_data,사용 가능한 치유 데이터 없음
+status.no_damage_taken_data,선택한 필터에 대해 손상된 데이터 없음
+status.no_damage_to_target,이 대상에 대한 피해가 기록되지 않았습니다
+status.no_deaths,사망자 기록 없음
+status.no_player_deaths,플레이어 사망 없음
+status.no_players,전투 로그에 플레이어 없음
+status.no_creatures,생물이 보이지 않음
+status.no_enemies,현재 보이는 적 없음
+status.no_friendly_players,레이드에 아군 플레이어 없음
+status.no_friendly_fire,아군에 의한 피해는 기록되지 않았습니다
+status.no_overhealing,과치유 현상은 기록되지 않았습니다
+status.no_healing_taken,치유 관련 데이터가 없습니다.
+status.no_resurrections,부활 사례는 기록되어 있지 않음
+status.no_cc_breaks,군중 통제 중단 기록 없음
+status.not_visible,현재 시간 창에 표시되지 않음
+status.no_actor_data,액터 데이터가 로드되지 않았습니다.
+status.dead,사망
+status.click_for_gcd,GCD 기록을 보려면 클릭합니다
+
+# =============================================================================
+# Format Strings
+# =============================================================================
+format.total_dps,총합: %s  | DPS: %s
+format.total_hps,합계: %s  | HPS: %s
+format.total_hps_overheal,합계: %s  | HPS: %s  | 오버힐: %.1f%%
+format.total_dtps,합계: %s  | dtps: %s
+format.health_full,건강:  %llu/  %llu(%.0f%%)
+format.power_full,%s: %u / %u (%.0f%%)
+format.player_deaths,플레이어 사망: %zu
+format.spell_id,주문 %u
+format.encounters_found,전투 로그에서 %zu 세그먼트를 발견했습니다. 재생하려면 하나를 선택하세요:
+
+# =============================================================================
+# Buttons
+# =============================================================================
+btn.load_encounter,선택한 인카운터 로드
+btn.refresh_log,로그 새로 고침
+btn.return_home,홈으로 돌아가기
+btn.browse_files,파일 찾아보기
+btn.browse_cache,캐시 찾아보기
+btn.clear_selection,선택 지우기
+btn.save_settings,설정 저장
+btn.load_settings,로드 설정
+btn.close,닫기
+btn.cancel,취소
+btn.load,로드
+btn.load_report,로드 보고서
+btn.load_fight,선택된 전투 로드
+btn.refresh,새로 고침
+btn.authorize,비공개 액세스 권한 부여
+btn.reauthorize,재인증
+btn.play,플레이
+btn.pause,일시 중지
+btn.fetch_url,URL에서 가져오기
+btn.play_along,함께 연주해 보세요
+btn.play_again,다시 재생하기
+btn.open_snapshot,스냅샷 열기
+
+# =============================================================================
+# Landing Page
+# =============================================================================
+landing.title,AwowLab
+landing.subtitle,월드 오브 워크래프트 전투 로그 시각화 도구
+landing.choose_source,데이터 원본 선택
+landing.local_file,로컬 파일
+landing.local_file_desc,컴퓨터에서 로드
+landing.local_file_hint,WoW_retail_\Logs\
+landing.warcraftlogs,워크래프트 로그
+landing.warcraftlogs_desc,워크래프트 로그에서 로드
+landing.press_esc,ESC를 눌러 종료
+landing.partner_site,제휴 사이트
+landing.partner_site_desc,애니메이션 전략이 포함된 무료 레이드 플래너
+landing.diar_bullet1,무료 애니메이션 레이드 전략 플래너
+landing.diar_bullet2,공유 가능한 계획을 통해 길드원들과 협력하세요
+
+# =============================================================================
+# Updater / Updates
+# =============================================================================
+btn.check_updates,업데이트 확인
+update.checking,업데이트 확인 중...
+update.up_to_date,이제 최신 정보를 확인하셨네요!
+update.disabled_build,이 빌드에서는 자동 업데이트가 비활성화되어 있습니다.
+
+# Language Pack Download
+langpack.title,언어 팩 제공
+langpack.desc,%s용 현지화된 주문 이름 및 글꼴 다운로드
+langpack.size_hint,~%d MB 다운로드
+langpack.download,패키지 다운로드
+langpack.no_thanks,"아니요, 괜찮습니다"
+langpack.disabled_build,"언어 팩은 업데이트 프로그램을 통해 설치되는데, 이 빌드에서는 해당 프로그램이 비활성화되어 있습니다."
+
+# Social Links
+social.youtube,YouTube에서 시청하기
+social.patreon,Patreon 지원
+
+# =============================================================================
+# Landing Page - Overlay Mode
+# =============================================================================
+landing.overlay_mode,오버레이 모드
+landing.overlay_mode_desc,실시간 전투 지표 오버레이
+btn.launch_overlay,오버레이 실행
+tooltip.landing_overlay,실시간 전투 중 피해/치유량 표시기
+
+# =============================================================================
+# Play Along Mode
+# =============================================================================
+playalong.select_player,연습할 플레이어 선택
+playalong.select_player_desc,복제할 플레이어의 동작과 능력을 선택하세요
+playalong.practicing_as,다음과 같이 연습
+playalong.your_position,귀하의 위치
+playalong.target_position,목표 위치
+playalong.distance,거리
+playalong.move,이동
+playalong.camera,카메라
+playalong.snap,타겟에 스냅
+playalong.play_pause,재생/일시 정지
+playalong.back,뒤로
+playalong.past,과거
+playalong.upcoming,다음
+playalong.configure_keybinds,키 바인드 구성
+playalong.no_spells_found,이 플레이어에 대한 주문을 찾을 수 없습니다
+playalong.keybind_help,키 바인딩을 클릭하여 변경합니다. 지우려면 ESC 키를 누릅니다.
+playalong.click_to_set,설정하려면 클릭
+playalong.press_key,아무 키나 누르세요...
+playalong.hold_modifiers,(Ctrl/Shift/Alt + 키 누르기)
+playalong.esc_cancel,취소하려면 ESC를 누릅니다
+playalong.your_inputs,사용자 입력
+playalong.expected_casts,예상
+playalong.report_card,성적표
+playalong.section,섹션
+playalong.good,좋아요
+playalong.bad,나쁜
+playalong.missed,누락됨
+playalong.accuracy,정확성
+playalong.overall,전체
+playalong.spell_queue_window,주문 대기열 창(ms)
+playalong.spell_queue_tooltip,다음 능력을 얼마나 빨리 누를 수 있는지
+playalong.gcd_timeline,GCD 타임라인
+playalong.stats,통계
+playalong.last_15,지난 15
+playalong.streak,연승
+playalong.best_streak,최고
+playalong.total,합계
+playalong.ignored,무시됨
+playalong.clear_all,모두 지우기
+playalong.countdown_starting,시작...
+playalong.snap_hint,목표물에서 너무 멀리 떨어져 있습니다! 다음 능력으로 건너뛰려면 오른쪽 시프트 키를 누릅니다
+playalong.audio_feedback,소리
+playalong.show_annotations,주석 표시
+playalong.unknown_spec,사양 미상
+playalong.show_spell,표시
+playalong.clear_keybind,지우기
+playalong.ignore_spell,무시하기
+playalong.return_home_confirm,홈으로 돌아가시겠습니까?
+
+# =============================================================================
+# Buttons
+# =============================================================================
+btn.back,뒤로
+btn.done,완료
+
+# =============================================================================
+# WarcraftLogs Dialog
+# =============================================================================
+wcl.dialog_title,워크래프트 로그 보고서
+wcl.paste_url,워크래프트 로그 보고서 URL 또는 코드를 붙여넣습니다:
+wcl.url_hint,https://www.warcraftlogs.com/reports/abc123 또는 그냥 abc123
+wcl.valid_code,유효한 보고 코드입니다: %s
+wcl.example_hint,예: j1N7Rf4d23FAmtMk 또는 전체 URL
+wcl.private_logs,비공개 로그
+wcl.authorizing,권한 부여...
+wcl.waiting_browser,브라우저를 기다리는 중...
+wcl.authenticated,인증됨
+wcl.public_only,공개 로그만 해당
+wcl.session_expired,세션이 만료되었습니다 - 다시 승인해 주세요
+wcl.select_fight,싸움 선택
+wcl.no_session,세션이 로드되지 않았습니다
+wcl.report,보고: 보고: %s
+wcl.fights_count,(%zu 싸움)
+wcl.api_usage,API 사용량: %d/%d (%d 분 단위로 재설정)
+wcl.api_usage_hourly,API 사용량: 시간당 %d/%d: 시간당
+wcl.rate_limited,속도 제한 - %d 분 단위로 재설정됩니다
+wcl.api_queries_remaining,%d/%d 이 시간 동안 남은 API 쿼리
+wcl.mplus_note,참고: M+ 던전은 2개의 API 쿼리를 사용합니다
+
+# =============================================================================
+# Cached Fights Panel
+# =============================================================================
+cache.title,이전에 로드된 전투
+cache.cached_count,(%zu 캐시됨)
+cache.yes,예
+cache.meta,메타
+cache.no_fights,캐시된 전투를 찾을 수 없습니다.
+cache.load_hint,빠른 액세스를 위해 워크래프트 로그에서 전투를 로드하여 캐시에 저장합니다.
+cache.double_click_hint,더블 클릭하여 로드하거나 '로드 전투'를 선택하고 클릭합니다
+cache.show_all,모든 전투 표시
+cache.show_all_tooltip,메타데이터만 캐시된 전투를 포함합니다.\n로드 시 이벤트 데이터를 가져와야 합니다.
+cache.col_fight,싸움
+cache.col_report,신고
+cache.mythic_plus,신화+ 던전
+cache.raid_encounters,공격대 만남
+cache.other,기타
+cache.report_tooltip,보고합니다: %s\n전투 ID: %d
+cache.meta_tooltip,메타데이터만 캐시됩니다.\n이벤트 데이터는 로드 시 가져옵니다.
+cache.col_link,WCL
+cache.open_wcl_tooltip,워크래프트 로그에서 열기
+cache.col_date,날짜
+cache.col_cached,캐시됨
+cache.col_actions,작업
+cache.col_composition,구성
+cache.sort_by,정렬
+cache.sort_date_newest,날짜 (최신순)
+cache.sort_date_oldest,날짜 (가장 오래된 순)
+cache.sort_name_az,이름 (A-Z)
+cache.sort_name_za,이름 (Z-A)
+cache.filter_difficulty,난이도
+cache.filter_all,전체
+cache.open,열기
+cache.open_tooltip,이 시합 불러오기
+cache.delete,삭제
+cache.delete_confirm_title,삭제 확인
+cache.delete_confirm_msg,다음 항목에 대한 캐시된 데이터를 삭제합니다:
+cache.delete_warning,이 작업은 되돌릴 수 없습니다.
+
+# =============================================================================
+# Encounter Selector Columns
+# =============================================================================
+encounter.col_number,#
+encounter.col_name,이름
+encounter.col_difficulty,난이도
+encounter.col_size,크기
+encounter.col_duration,기간
+encounter.col_fight,싸움
+encounter.col_result,결과
+encounter.parsed_info,구문 분석: %zu 줄 (%.1f MB)
+
+# =============================================================================
+# Encounter Results
+# =============================================================================
+encounter.timed,시간 제한
+encounter.depleted,고갈
+encounter.kill,죽이다
+encounter.wipe,닦기
+
+# =============================================================================
+# Full Difficulty Names (with raid size)
+# =============================================================================
+difficulty.10_player,10 플레이어
+difficulty.25_player,25 플레이어
+difficulty.10_heroic,10 영웅
+difficulty.25_heroic,25 영웅
+difficulty.40_player,40 플레이어
+difficulty.heroic_scenario,영웅 시나리오
+difficulty.normal_scenario,일반 시나리오
+difficulty.mythic_keystone,신화 열쇠석
+difficulty.timewalking,시간 여행
+difficulty.unknown,알 수 없음
+
+# =============================================================================
+# Difficulty Names
+# =============================================================================
+difficulty.lfr,LFR
+difficulty.normal,보통
+difficulty.heroic,영웅
+difficulty.mythic,신화
+
+# =============================================================================
+# Power Types
+# =============================================================================
+power.mana,마나
+power.rage,분노
+power.focus,초점
+power.energy,에너지
+power.combo_points,콤보 포인트
+power.runes,룬
+power.runic_power,룬 파워
+power.soul_shards,영혼 파편
+power.lunar_power,달의 힘
+power.holy_power,신성한 힘
+power.maelstrom,소용돌이
+power.insanity,광기
+power.fury,퓨리
+power.pain,고통
+power.essence,에센스
+power.chi,치
+power.power,전원
+
+# =============================================================================
+# Actor Roles
+# =============================================================================
+role.unknown,알 수 없음
+role.tank,탱크
+role.healer,힐러
+role.melee_dps,근접 공격력
+role.ranged_dps,원거리 DPS
+
+# =============================================================================
+# Actor Appearance Panel
+# =============================================================================
+appearance.title,액터 모양 설정
+appearance.tab_role_defaults,역할 기본값
+appearance.tab_overrides,재정의
+appearance.tab_individual,개별 액터
+appearance.tab_enemies,적
+appearance.role_defaults_desc,"역할에 따라 액터에 할당된 기본 모양을 구성합니다. 클래스별, 사양별 또는 액터별로 재정의할 수 있습니다."
+appearance.auto_assign,플레이어에게 역할 모양 자동 할당
+appearance.auto_assign_tooltip,"이 기능을 활성화하면 전문화가 알려진 플레이어는 자동으로 역할에 맞는 모양(탱커는 방패, 힐러는 십자가 등)을 얻게 됩니다"
+appearance.player_shapes,플레이어 역할 모양:
+appearance.nonplayer_shapes,비플레이어 셰이프:
+appearance.global_scale,글로벌 규모:
+appearance.default_scale,기본 스케일
+appearance.role_overrides,역할 재정의
+appearance.class_overrides,클래스 재정의
+appearance.overrides_desc,"역할, 클래스 또는 전문 분야별로 모양 재정의 설정을 지정합니다. 구체성이 높은 오버라이드가 우선합니다."
+appearance.individual_desc,특정 액터에 대한 모양을 재정의합니다. 개별 재정의가 가장 높은 우선순위를 갖습니다.
+appearance.enemies_desc,"적대적 액터와 중립 액터를 이름별로 그룹화하여 커스터마이징할 수 있습니다. 같은 크리처의 모든 인스턴스는 색상, 모양, 스케일을 공유합니다. 확장하여 특정 액터를 재정의할 수 있습니다."
+appearance.search_hint,이름으로 검색...
+appearance.only_overridden,재정의만
+appearance.all_actors,모든 액터:
+appearance.clear_override,재정의 지우기
+appearance.reset_default,기본값으로 재설정
+appearance.selected_actor,선택한 액터:
+appearance.showing_actors,%zu 액터 표시(%zu 오버라이드 포함)
+appearance.showing_enemies,%zu 적 유형 표시 (%zu 오버라이드 포함)
+appearance.no_enemies,현재 전투에서 적대적/중립 행위자가 발견되지 않았습니다.
+appearance.default_label,%s (기본값)
+appearance.shape_tooltip,이 적 유형의 모든 인스턴스에 대한 모양 재정의
+appearance.scale_tooltip,이 적 유형의 모든 인스턴스에 대한 스케일 오버라이드
+
+# =============================================================================
+# Actor Roles (for appearance settings)
+# =============================================================================
+role.tank_label,탱크
+role.healer_label,힐러
+role.melee_dps_label,근접 공격력
+role.ranged_dps_label,원거리 DPS
+role.unknown_label,알 수 없는 역할
+
+# =============================================================================
+# Non-Player Types
+# =============================================================================
+nonplayer.creatures,크리처/NPC
+nonplayer.vehicles,차량
+nonplayer.pets,애완동물
+
+# =============================================================================
+# Shape Names
+# =============================================================================
+shape.default,(기본값)
+shape.sphere,구체
+shape.cube,큐브
+shape.shield,방패
+shape.medic_cross,메디크로스
+shape.sword,검
+shape.bow,활
+shape.cone,원뿔
+shape.cylinder,실린더
+shape.diamond,다이아몬드
+shape.pyramid,피라미드
+shape.star,스타
+shape.classicon,사양 아이콘
+shape.builtin_header,기본 도형
+shape.custom_header,맞춤형 모델
+shape.custom_load_failed,로딩에 실패했습니다
+shape.no_custom_models,사용자 정의 모델이 없습니다.
+shape.tooltip.sphere,기본 구형 - 모든 배우에게 적합
+shape.tooltip.cube,상자 모양 - 구조물이나 NPC에 유용함
+shape.tooltip.shield,방패 아이콘 - 탱크에게 권장
+shape.tooltip.medic_cross,의료용 십자가 - 치유사에게 추천
+shape.tooltip.sword,검 아이콘 - 근접 DPS에게 권장
+shape.tooltip.bow,활 아이콘 - 원거리 DPS에게 권장
+shape.tooltip.cone,뾰족한 원뿔 모양
+shape.tooltip.cylinder,통 모양/알약 모양의 원통
+shape.tooltip.diamond,이중 피라미드(팔면체) 모양
+shape.tooltip.pyramid,위쪽을 향한 단일 피라미드
+shape.tooltip.star,3D 별 모양
+shape.tooltip.classicon,특화 아이콘 텍스처가 적용된 평평한 원반
+appearance.tab_custom_models,맞춤형 모델
+appearance.custom_models_desc,사용자 정의 OBJ 모델의 회전 각도를 조정합니다. 모델은 실행 파일 옆의 custom_models 폴더에서 불러옵니다.
+appearance.custom_models_tip,팁: 모델의 전진 방향을 방향 표시 화살표와 일치시키세요.
+appearance.custom_models_workflow,"회전 제어 기능을 사용하면 기본 방향을 설정할 수 있습니다. 이 설정이 완료되면 모델은 항상 카메라를 향하는 대신, 액터의 시선 방향에 따라 회전하게 됩니다."
+appearance.custom_registry_not_available,사용자 정의 모델 레지스트리를 사용할 수 없습니다.
+appearance.models_folder,Models 폴더
+appearance.drop_obj_hint,.obj 파일을 custom_models 폴더에 넣으면 액터 모양으로 사용할 수 있습니다.
+appearance.rotation_x,회전 X
+appearance.rotation_y,Y축 회전
+appearance.rotation_z,Z축 회전
+appearance.z_offset,Z 오프셋
+appearance.load_errors,로드 오류
+appearance.search_hint_extended,"이름, 역할 또는 클래스로 검색..."
+appearance.search_results,%zu명의 %zu 배우
+appearance.enemy_search_results,%zu의 %zu 적 유형
+appearance.override_trace,해결 방안 재정의
+appearance.override_level_default,기본값
+appearance.override_level_role,역할
+appearance.override_level_class,수업
+appearance.override_level_spec,사양
+appearance.override_level_name,이름
+appearance.override_level_guid,GUID
+appearance.trace_level,레벨
+appearance.trace_value,값
+appearance.trace_shape,S
+appearance.trace_color,C
+appearance.trace_scale,X
+appearance.trace_system,시스템
+appearance.badge_guid,[G]
+appearance.badge_name,[N]
+appearance.badge_spec,[S]
+appearance.badge_class,[C]
+appearance.badge_role,[R]
+appearance.badge_guid_tooltip,GUID별 재정의가 있습니다
+appearance.badge_name_tooltip,'Name' 그룹 재정의가 있습니까?
+appearance.badge_spec_tooltip,‘전문화’가 우선 적용됩니다
+appearance.badge_class_tooltip,Class를 재정의했습니까?
+appearance.badge_role_tooltip,'Role'이 재정의됨
+appearance.favorites,즐겨찾기
+appearance.only_favorites,즐겨찾기만
+appearance.toggle_favorite,즐겨찾기 표시/숨기기
+appearance.favorite_tooltip,클릭하여 즐겨찾기 상태를 전환하세요
+appearance.starred_actors,주연 배우:
+appearance.color_presets,색상 사전 설정
+appearance.preset_classes,수업
+appearance.preset_roles,역할
+appearance.preset_custom,사용자 지정
+appearance.preset_slot,슬롯
+appearance.preset_empty,비어 있음
+appearance.preset_clear_slot,슬롯 지우기
+appearance.color_right_click_save,마우스 오른쪽 버튼을 클릭하여 현재 색상을 저장하세요
+appearance.quick_reset_all,모두 초기화
+appearance.quick_reset_all_tooltip,모든 재정의 항목을 지우고 기본값으로 재설정
+appearance.confirm_reset,모든 외관 설정을 초기화하시겠습니까?
+appearance.quick_copy,복사
+appearance.quick_copy_tooltip,선택한 배우의 외모를 클립보드에 복사
+appearance.quick_copy_no_selection,외모를 복사할 배우를 선택하세요
+appearance.quick_paste,붙여넣기
+appearance.quick_paste_tooltip,선택한 액터에 클립보드 모양 적용하기
+appearance.quick_paste_no_clipboard,아직 복사된 출연 기록이 없습니다
+appearance.quick_paste_no_selection,출연진을 선택하여 출연 정보를 붙여넣으세요
+appearance.quick_apply_similar,지원하기...
+appearance.quick_apply_similar_tooltip,동일한 클래스/역할을 가진 모든 액터에 클립보드 모양을 적용합니다.
+appearance.apply_to_class,전체
+appearance.apply_to_role,전체
+appearance.context_copy,모양 복사
+appearance.context_paste,붙여넣기 모양
+appearance.context_clear,모든 재정의 항목 지우기
+appearance.context_focus,3D 뷰에서 초점 맞추기
+appearance.context_apply_class,%s 전체에 적용
+appearance.context_apply_role,모든 %s에 적용
+appearance.context_no_clipboard,아직 복사된 내용이 없습니다
+btn.refresh,새로 고침
+btn.reset,초기화
+btn.yes,네
+btn.no,아니요
+
+# =============================================================================
+# Actor Breakdown Panel
+# =============================================================================
+breakdown.title,플레이어 분석
+breakdown.spells,주문
+breakdown.damage_done,손상된 피해
+breakdown.healing_done,치유 완료
+breakdown.damage_taken,받은 피해
+breakdown.total_stats,합계: %s  | %s: %s  | 히트: %u  | 치명타: %.1f%%
+breakdown.group_spells,+ 그룹 주문
+breakdown.group_tooltip,그룹 헤더로 주문을 끌어 그룹화합니다.\n헤더를 두 번 클릭하여 이름을 바꿉니다.\n헤더를 마우스 오른쪽 버튼으로 클릭하여 삭제합니다.
+breakdown.delete_group,그룹 삭제
+breakdown.rename,이름 바꾸기
+breakdown.blacklist_spell,블랙리스트 주문
+breakdown.unblacklist_spell,블랙리스트 해제 주문
+breakdown.blacklisted_spells_title,블랙리스트 주문
+breakdown.dragging_melee,드래그: 근접
+breakdown.dragging_spell,드래그: 주문 %u
+breakdown.click_to_see,자세한 내용을 보려면 주문을 클릭하세요
+breakdown.hits_format,Hits: 조회 수: %u
+breakdown.average,평균: %s
+breakdown.min,Min: 최소: %s
+breakdown.max,최대: %s
+breakdown.normal_hits,일반 조회수
+breakdown.critical_hits,크리티컬 히트
+breakdown.targets,타겟
+breakdown.pets_guardians,반려동물 및 보호자
+breakdown.no_data_graph,그래프에 대한 %s 데이터 없음
+breakdown.reset_selection,선택 항목 초기화
+breakdown.drag_to_select_hint,(그래프에서 드래그하여 시간 범위 선택)
+breakdown.select_time_hint,그래프를 드래그하여 분석할 시간 범위를 선택합니다
+breakdown.selection_info,선택됨: %u:%02u - %u:%02u (%u:%02u 기간)
+breakdown.hover_tooltip,시간: %u:%02u\n클릭하고 드래그하여 범위 선택
+breakdown.blacklisted_healing,블랙리스트 주문(치유 보고에서 제외)
+breakdown.blacklisted_damage,블랙리스트 주문(피해 보고에서 제외)
+breakdown.restore,복원
+breakdown.more_targets,... 그리고 %zu 더 많은 대상
+
+# =============================================================================
+# Aura Debug Panel
+# =============================================================================
+aura.filter_label,GUID 또는 이름으로 필터링합니다:
+aura.buffs,버프
+aura.debuffs,디버프
+aura.active_only,활성 전용
+aura.targets_with_auras,오라가 있는 대상입니다: %zu
+aura.current_time,현재 시간입니다: %s
+aura.no_data,아우라 데이터 없음
+aura.no_target,선택한 플레이어 없음
+aura.col_type,유형
+aura.col_spell,주문
+aura.col_source,출처
+aura.col_stacks,스택
+aura.col_duration,기간
+aura.col_applied,적용됨
+aura.type_buff,BUFF
+aura.type_debuff,디버프
+aura.status_active,활성
+
+# =============================================================================
+# Deaths Panel
+# =============================================================================
+deaths.col_time,시간
+deaths.col_player,플레이어
+deaths.col_ability,능력
+deaths.col_amount,금액
+deaths.unknown,알 수 없음
+deaths.filter_threshold,최소 이벤트 %
+deaths.filter_tooltip,최대 체력의 이 비율보다 작은 이벤트 숨기기
+deaths.filter_label,이벤트 필터
+deaths.click_for_recap,클릭하여 사망 요약 보기
+deaths.right_click_hint,자세한 사망 분석을 보려면 마우스 오른쪽 버튼을 클릭하세요
+deaths.analysis_title,사망 원인 분석
+deaths.player,플레이어
+deaths.killing_ability,살상 능력
+deaths.health_chart,건강 연표
+deaths.no_health_data,건강 관련 데이터가 없습니다.
+deaths.last_events,최근 행사
+deaths.no_events,기록된 피해/치유 이벤트 없음
+resurrections.spell,부활 주문
+status.view_not_implemented,이 기능은 아직 구현되지 않았습니다.
+
+# =============================================================================
+# WarcraftLogs Help Text
+# =============================================================================
+wcl_help.want_unlimited,무제한 액세스를 원하시나요? 나만의 API 클라이언트 만들기(무료!)
+wcl_help.get_unlimited,무제한 액세스 - 나만의 API 클라이언트 만들기(무료!):
+wcl_help.step1,1. 이동: warcraftlogs.com/api/clients
+wcl_help.step2,2. '클라이언트 만들기'를 클릭합니다
+wcl_help.step3,3. 애플리케이션 이름: 테스트
+wcl_help.step4,4. 리디렉션 URL: http://localhost:8080/callback
+wcl_help.step5,5. '공용 클라이언트'를 선택하지 않은 상태로 둡니다
+wcl_help.step6,6. '만들기'를 클릭합니다
+wcl_help.step7,7. 클라이언트 ID와 클라이언트 비밀번호 복사
+wcl_help.step8,8. AwowLab.exe 옆에 'wcl_credentials.txt'를 생성합니다
+wcl_help.step9,9. 라인 1: 1줄: 클라이언트 ID | 2줄: 클라이언트 비밀
+wcl_help.go_to,이동: warcraftlogs.com/api/clients
+wcl_help.app_name,애플리케이션 이름: 테스트
+wcl_help.redirect_url,리디렉션 URL: http://localhost:8080/callback
+wcl_help.public_client,'공용 클라이언트'를 선택하지 않은 상태로 두고 만들기를 클릭합니다
+wcl_help.save_credentials,클라이언트 ID 및 비밀번호를 'wcl_credentials.txt'에 저장합니다
+wcl_help.credentials_format,"(1줄: 클라이언트 ID, 2줄: 클라이언트 비밀번호)"
+
+# =============================================================================
+# Spell Display Locations
+# =============================================================================
+location.none,없음
+location.cd_group_1,주요 CD
+location.cd_group_2,미성년자 CD
+location.cd_group_3,유틸리티 CD
+location.raid_frame,레이드 프레임
+location.hud_major_cd,HUD - 주요 CD
+location.hud_utility,HUD - 유틸리티
+location.hud_defensive,HUD - 방어
+location.gcd_tracker,GCD 트래커
+location.nameplate,명찰
+location.short.cd1,전공
+location.short.cd2,미성년자
+location.short.cd3,유틸리티
+location.short.raid,레이드
+location.short.hud_cd,HUD
+location.short.hud_util,Util
+location.short.hud_def,Def
+location.short.gcd,GCD
+location.short.plate,플레이트
+location.short.buffs,버프
+location.short.debuffs,디버프
+location.player_buffs,플레이어 버프 패널
+location.player_debuffs,플레이어 디버프 패널
+
+# =============================================================================
+# Spell Assignment Panel
+# =============================================================================
+menu.spell_assignments,주문 표시 설정...
+menu.auto_annotations,자동 주석...
+menu.annotation_list,수동 주석
+menu.raid_notes,레이드 노트
+assignment.panel_title,주문 표시 설정
+assignment.class_label,클래스:
+assignment.select_class,수업 선택...
+assignment.all_classes,모든 클래스
+assignment.spec_label,사양:
+assignment.select_spec,사양 선택...
+assignment.all_specs,모든 사양
+assignment.cooldowns,쿨다운
+assignment.buffs,버프
+assignment.debuffs,디버프
+assignment.encounter,비플레이어
+assignment.all,모두
+assignment.search_hint,검색 주문...
+assignment.no_spells_for_filter,현재 필터와 일치하는 주문이 없습니다
+assignment.col_type,유형
+assignment.col_spell,주문
+assignment.col_id,ID
+assignment.col_cd1,전공
+assignment.col_cd2,미성년자
+assignment.col_cd3,유틸리티
+assignment.col_raid,레이드
+assignment.col_hud_big,크다
+assignment.col_hud_util,Util
+assignment.col_hud_def,Def
+assignment.col_gcd,GCD
+assignment.col_name,이름
+assignment.icon_sizes,아이콘 크기
+assignment.raid_frames,레이드 프레임
+assignment.nameplates,명찰
+
+# =============================================================================
+# Spell Data Version Selector
+# =============================================================================
+settings.spell_data_version,주문 데이터
+settings.spell_data_12_0,12.0 (내면의 전쟁)
+settings.spell_data_11_2,11.2 (드래곤 플라이트)
+settings.title,설정
+settings.log_folder,로그 폴더
+settings.change_log_folder,변경...
+settings.language,언어
+
+# =============================================================================
+# Boss Timer / Playback Controls
+# =============================================================================
+playback.boss_timer,보스 타이머
+playback.boss_timer_tooltip,재생 막대 아래의 보스 타이머 스트립 표시/숨기기
+playback.ortho,2D
+playback.ortho_tooltip,직교(하향식) 카메라 보기로 전환하기
+menu.enemy_cast_filters,적 캐스트 필터...
+
+# =============================================================================
+# Help Panel (Keyboard Shortcuts)
+# =============================================================================
+help.title,키보드 단축키
+help.playback,재생
+help.camera,카메라
+help.speed,속도
+help.other,기타
+
+# Key labels
+help.key_space,공간
+help.key_q,Q
+help.key_e,E
+help.key_1,1
+help.key_2,2
+help.key_3,3
+help.key_4,4
+help.key_5,5
+help.key_wasd,W/A/S/D
+help.key_r,R
+help.key_lmb,LMB 드래그
+help.key_rmb,RMB 드래그
+help.key_scroll,스크롤
+help.key_f1,F1 / ?
+help.key_f5,F5
+
+# Descriptions
+help.space,재생/일시 정지 토글
+help.q,5초 뒤로 건너뛰기
+help.e,5초 앞으로 건너뛰기
+help.speed_1,속도 0.25배
+help.speed_2,속도 0.5배
+help.speed_3,속도 1배
+help.speed_4,속도 2배
+help.speed_5,속도 4배
+help.wasd,카메라 이동
+help.r,자동 팔로우 토글
+help.lmb,팬 카메라
+help.rmb,카메라 회전
+help.scroll,확대/축소
+help.f1,이 패널 토글
+help.f5,만남 새로 고침
+help.close_hint,F1 또는 ? 키를 눌러 닫습니다
+
+# =============================================================================
+# Settings Export/Import Panel
+# =============================================================================
+Import/Export Settings,설정 가져오기/내보내기
+Export,내보내기
+Import,가져오기
+Select settings to export:,내보낼 설정을 선택합니다:
+Select settings to import:,가져올 설정을 선택합니다:
+Select All,모두 선택
+Select None,없음 선택
+Select All Available,사용 가능한 모든 항목 선택
+Filename:,파일 이름:
+File path:,파일 경로:
+Probe,프로브
+Export Selected,선택된 내보내기
+Import Selected,선택 항목 가져오기
+Files saved to: exported_settings/,파일 저장 위치: exported_settings/
+Enter a file path and click Probe to see available settings.,파일 경로를 입력하고 프로브를 클릭하여 사용 가능한 설정을 확인합니다.
+No valid settings found in file.,파일에 유효한 설정이 없습니다.
+
+# =============================================================================
+# Upcoming Boss Casts Panel
+# =============================================================================
+upcoming.no_casts,다음 %.0f 초 동안 다가오는 보스 시전이 없습니다
+upcoming.enable_spells,적 시전 필터에서 주문 활성화
+
+# =============================================================================
+# Raid Notes Panel
+# =============================================================================
+menu.raid_notes,레이드 노트
+raidnotes.title,레이드 노트
+raidnotes.ctx_add_title,레이드 메모에 추가
+raidnotes.ctx_spell_fmt,주문: %s
+raidnotes.ctx_timestamp_fmt,타임스탬프: %d:%02d
+raidnotes.ctx_add_to_note,메모에 추가:
+raidnotes.ctx_this_instance_fmt,바로 이 경우(%d:%02d)
+raidnotes.ctx_this_instance_none,바로 이 경우 (타임스탬프 없음)
+raidnotes.ctx_all_instances_fmt,모든 사례 (%zu 건 발견됨)
+raidnotes.ctx_all_instances_none,모든 인스턴스 (찾은 항목 없음)
+raidnotes.ctx_custom_text,사용자 지정 텍스트 (선택 사항):
+raidnotes.ctx_custom_text_hint,"예: 선수 이름, 배정..."
+raidnotes.ctx_add_button,메모에 추가
+raidnotes.phase_delay,위상 지연:
+raidnotes.after,~ 이후
+raidnotes.by,작성자:
+raidnotes.sec,초
+raidnotes.add_delay,추가
+raidnotes.phase_delay_after_tooltip,타임스탬프 임계값 (분:초). 이 시간 이후의 항목은 이동됩니다.
+raidnotes.phase_delay_tooltip,"단계 전환 후 타임스탬프를 지연시킵니다. 누적 적용됩니다. 팀이 여러 단계에서 일정을 지키지 못한 경우, 지연 시간을 여러 번 더할 수 있습니다."
+raidnotes.options,옵션
+raidnotes.opt_headers,그룹 헤더 포함
+raidnotes.opt_spellnames,주문 이름 포함
+raidnotes.opt_sort,시간순으로 정렬
+raidnotes.no_entries,항목이 없습니다. 주문 아이콘을 마우스 오른쪽 버튼으로 클릭하여 추가하세요.
+raidnotes.custom_text_hint,과제/메모...
+raidnotes.add_manual,수동 메모 추가:
+raidnotes.manual_hint,"메모 내용을 입력하세요(예: 방어, 흡수)."
+raidnotes.add,추가
+raidnotes.copy_clipboard,클립보드에 복사
+raidnotes.copied,복사했습니다!
+raidnotes.clear_all,모두 지우기
+raidnotes.clear_confirm,모든 항목을 삭제하시겠습니까?
+raidnotes.entry,항목
+raidnotes.entries,항목
+raidnotes.all_instances_tooltip,이 항목은 여러 줄(인스턴스당 한 줄씩)을 내보냅니다.
+raidnotes.phase_delays,-- 위상 지연 --
+raidnotes.load_preset,로드:
+raidnotes.select_preset,-- 사전 설정 선택 --
+raidnotes.load,로드
+raidnotes.delete_preset,삭제
+raidnotes.save_as,다른 이름으로 저장:
+raidnotes.preset_name_hint,사전 설정 이름...
+raidnotes.save,저장
+raidnotes.saved,저장됨!
+raidnotes.save_failed,프리셋을 저장할 수 없습니다.
+raidnotes.delete_confirm,이 사전 설정을 삭제하시겠습니까?
+common.yes,네
+common.no,아니요
+
+# =============================================================================
+# Auto Annotations - Anchor Types
+# =============================================================================
+At Caster,Caster에서
+At Target,타겟에서
+At Caster (Facing),캐스터(정면)에서
+At Target (Facing),타겟 매장 (정면)
+Source -> Target,원문 -> 번역문
+Use 'Facing' to orient shapes in the direction the player is looking,'방향' 기능을 사용하여 도형을 플레이어가 바라보는 방향으로 정렬하세요
+Place annotation at caster's position,시전자의 위치에 주석을 배치합니다
+Place annotation at target's position,대상 위치에 주석 삽입
+Place at caster's position," 캐릭터의 시선 방향에 맞춰 회전시킨 후, 캐스터의 위치에 배치하고, 캐릭터의 시선 방향에 맞춰 회전시킨다."
+Place at target's position," 대상의 향하는 방향에 맞춰 회전시킨 후, 대상의 위치에 배치하고, 대상의 향하는 방향에 맞춰 회전시킨다."
+Draw shape spanning from caster to target (beams," (사슬), 시전자에서 대상까지 이어지는 도형을 그립니다 (광선, 사슬)"
+
+# =============================================================================
+# Auto Annotations - Position Offset
+# =============================================================================
+Offset X (yards),X축 오프셋 (야드)
+Offset Y (yards),Y축 오프셋 (야드)
+Offset from anchor in world X axis (positive = East),월드 좌표계의 X축을 기준으로 앵커로부터의 오프셋 (양수 = 동쪽)
+Offset from anchor in world Y axis (positive = North),월드 좌표계의 Y축을 기준으로 앵커로부터의 오프셋 (양수 = 북쪽)
+
+# =============================================================================
+# Auto Annotations - Shapes
+# =============================================================================
+Circle,원
+Rectangle,직사각형
+Cone,원뿔
+Line,Line
+Star,별
+Donut,도넛
+Outer Radius (yards),외반경 (야드)
+Inner Radius (yards),내반경 (야드)
+
+# =============================================================================
+# Auto Annotations - Preview
+# =============================================================================
+Show Preview,미리 보기 표시
+Show annotation preview on the 3D map at the first event position,첫 번째 이벤트 위치에서 3D 지도에 주석 미리보기를 표시합니다.
+Ignore Early Pull,초기 풀 무시하기
+Skip casts in the first 500ms of the encounter (filters fake 0:00 boss casts),전투 시작 후 첫 500ms 동안의 시전 무시 (0:00에 나타나는 가짜 보스 시전 필터링)
+
+# =============================================================================
+# Auto Annotations - Motion
+# =============================================================================
+Motion,동의안
+Motion Type,모션 유형
+None,없음
+Rotate,회전
+Projectile,투사체
+Rotation Speed (deg/s),회전 속도 (deg/s)
+End Offset X (yards),X축 끝단 오프셋 (야드)
+End Offset Y (yards),Y축 끝점 오프셋 (야드)
+Travel Time (sec),이동 시간 (초)
+Return to Origin,기원으로 돌아가기
+Projectile travels to destination and returns to starting position (splits travel time in half),투사체는 목적지까지 이동한 뒤 출발 위치로 되돌아온다(이동 시간을 절반으로 단축한다).
+End Behavior,종료 동작
+Persist at End,끝까지 끈기 있게 버티기
+Disappear at End,끝에서 사라짐
+End Position,종료 위치
+Manual,사용 설명서
+To Target,대상:
+In Facing Direction,‘Facing Direction’에서
+Distance (yards),거리 (야드)
+Direction Offset (deg),방향 오프셋 (도)
+Offset from caster's facing direction. 0=forward," 180=뒤로, 90=오른쪽, -90=왼쪽, 플레이어의 시선 방향에서 벗어난 각도. 0=앞으로, 180=뒤로, 90=오른쪽, -90=왼쪽"
+Fallback X (yards),폴백 X (야드)
+Fallback Y (yards),예비 거리 Y (야드)
+Projectile travels from caster to target,발사체는 시전자로부터 표적까지 이동한다
+Fallback offsets used if no valid target:,유효한 대상이 없는 경우 사용되는 대체 오프셋:
+Fallback offsets used if facing unavailable:,사용할 수 없는 경우 적용되는 대체 오프셋:
+How far the projectile travels in the caster's facing direction,발사체가 시전자의 정면 방향으로 얼마나 멀리 날아가는지
+Use fixed X/Y offsets for end position,종단 위치에 고정된 X/Y 오프셋 사용
+Travel from caster to spell target position (snapshotted at cast time),시전자가 주문 대상의 위치(시전 시점의 스냅샷 기준)로 이동합니다.
+Travel in caster's facing direction for configured distance,설정된 거리만큼 캐스터의 진행 방향으로 이동합니다.
+Annotation rotates continuously around its anchor point,주석은 고정점을 중심으로 지속적으로 회전합니다.
+Annotation moves from start position to end offset over travel time,주석은 이동 시간 동안 시작 위치에서 끝 오프셋까지 이동합니다.
+Raindrops,빗방울
+Spawns small circles within annotation bounds (swirlie effect),주석 경계 내에 작은 원들을 생성합니다(소용돌이 효과).
+Drops per Second,초당 방울 수
+Drop Radius (yards),낙하 반경 (야드)
+Drop Lifetime (sec),낙하 지속 시간 (초)
+How many raindrops spawn each second,매초 몇 개의 빗방울이 생성되나요?
+Size of each raindrop circle,각 빗방울 원의 크기
+How long each drop remains visible before fading,각 방울이 희미해지기 전까지 얼마나 오랫동안 눈에 띄는지
+Add World Marker,세계 마커 추가
+Star (Yellow),별 (노란색)
+Circle (Orange),원 (주황색)
+Diamond (Purple),다이아몬드 (보라색)
+Triangle (Green),삼각형 (녹색)
+Moon (Silver),달 (은색)
+Square (Blue),사각형 (파란색)
+Cross (Red),십자(빨간색)
+Skull (White),해골 (흰색)
+Symbol Height (yards),기호 높이 (야드)
+Height of floating symbol above ground,지상으로부터 부유 기호의 높이
+World Marker Settings,월드 마커 설정
+
+# =============================================================================
+# Settings Hub
+# =============================================================================
+settings.hub.title,설정
+settings.hub.display,표시
+settings.hub.appearance,외관
+settings.hub.camera,카메라
+settings.hub.import_export,수입/수출
+settings.hub.actors,배우들
+settings.hub.nameplates,명판
+settings.hub.facing,정면 표시기
+settings.hub.ui_scale,UI 크기 조정
+settings.hub.layout,레이아웃
+settings.hub.reset_layout,기본값으로 재설정
+settings.hub.save_layout,현재 내용 저장
+settings.hub.import_export_desc,설정을 내보내거나 가져와 다른 사람과 공유하거나 백업에서 복원할 수 있습니다.
+settings.hub.open_import_export,‘가져오기/내보내기…’ 열기
+menu.show_menu_bar,메뉴 막대 표시
+camera.enable_follow,카메라 추적 기능 활성화
+camera.pan_sensitivity,팬 감도
+camera.follow_speed,Speed 팔로우하기
+camera.orthographic,정투영도 (2D)
+camera.reset,카메라 초기화
+actor.auto_assign_shapes,역할 도형 자동 할당
+actor.role_shapes,역할-형태 할당
+actor.tank_shape,탱크
+actor.healer_shape,치유사
+actor.melee_dps_shape,근접 DPS
+actor.ranged_dps_shape,원거리 DPS
+actor.default_scale,기본 배율
+tooltip.auto_assign_shapes,플레이어의 역할(탱크/힐러/DPS)에 따라 자동으로 스킬을 할당합니다.
+tooltip.landing_local_file,컴퓨터에 있는 전투 로그 파일(.txt)을 불러오기
+tooltip.landing_warcraftlogs,URL 또는 API를 통해 WarcraftLogs.com에서 전투 기록을 가져오기
+tooltip.landing_recent,캐시에 저장된 이전 시합을 찾아보기
+tooltip.landing_playalong,연습 모드 - 캐릭터의 행동을 다시 재생하기
+tooltip.camera_follow,카메라가 자동으로 배우의 중심을 따라갑니다
+tooltip.camera_pan,드래그할 때 카메라가 얼마나 빠르게 움직이는지
+tooltip.camera_speed,카메라가 움직이는 배우들을 얼마나 빨리 따라잡는가
+tooltip.camera_ortho,탑다운 2D 뷰 (원근법 비활성화)
+tooltip.camera_reset,카메라를 기본 위치로 되돌리고 줌을 조정합니다.
+tooltip.ui_scale,모든 UI 요소의 크기 조정
+tooltip.menu_bar,상단의 ‘파일/보기/설정’ 메뉴를 전환하세요
+tooltip.reset_layout,모든 패널 위치를 기본값으로 복원
+
+# =============================================================================
+# Annotation Wizard
+# =============================================================================
+wizard.title,주석 마법사
+wizard.use_wizard,마법사 사용
+wizard.back,뒤로
+wizard.next,다음
+wizard.finish,만들기
+wizard.cancel,취소
+
+# Wizard Step Indicator
+wizard.step.source,출처
+wizard.step.event,행사
+wizard.step.position,직책
+wizard.step.shape,모양
+wizard.step.visual,시각적
+wizard.step.advanced,고급
+
+# Step 1: Trigger Source
+wizard.source.mode,트리거 소스 선택:
+wizard.source.spell,주문 이벤트
+wizard.source.actor,배우 모집
+wizard.source.select_spell,추적할 주문을 선택하세요:
+wizard.source.actor_name,추적할 배우 이름:
+wizard.source.actor_hint,NPC의 정확한 이름을 입력하세요 (예: 시크란)
+wizard.source.no_spells,이번 전투에서 적대적인 생물은 발견되지 않았습니다.
+wizard.source.selected,선택됨
+wizard.category.cast,출연진
+wizard.category.debuff,디버프
+wizard.category.buff,버프
+wizard.category.damage,피해
+wizard.category.damage_taken,받은 피해
+wizard.tooltip.damage_taken,이 주문으로 피해를 입은 플레이어에게 발동되는 트리거
+wizard.category.actor,배우
+
+# Step 2: Event Type
+wizard.event.timing,주석은 언제 발동되어야 할까요?
+wizard.event.cast_info,주문 시전이 완료되면 발동됩니다.
+wizard.event.damage_info,이 주문이 피해를 입힐 때 발동됩니다
+wizard.event.debuff_timing,주석을 표시할 시점을 선택하세요:
+wizard.event.buff_timing,주석을 표시할 시점을 선택하세요:
+wizard.event.on_applied,적용 시
+wizard.event.while_active,활성 상태일 때 (대상을 추적 중)
+wizard.event.on_end,제거 시
+wizard.event.actor_mode,배우를 추적할 방법을 선택하세요:
+wizard.event.actor_follow,배우 팔로우하기
+wizard.event.actor_follow_desc,애노테이션은 액터와 함께 이동합니다
+wizard.event.actor_trail,흔적 남기기
+wizard.event.actor_trail_desc,일정한 간격으로 마커를 배치합니다
+wizard.event.actor_spawn,스폰에 대하여
+wizard.event.actor_spawn_desc,배우가 등장할 때 표시하기
+wizard.event.actor_death,죽음에 대하여
+wizard.event.actor_death_desc,배우가 사망하는 장면을 표시하세요
+wizard.event.trail_interval,등산로 표지판 간격:
+wizard.event.death_behavior,배우가 사망할 경우:
+wizard.event.death_disappear,당장 사라져라
+wizard.event.death_persist,사망 현장에서 머물러라
+wizard.event.death_fade,시간이 지남에 따라 서서히 사라짐
+
+# Step 3: Positioning
+wizard.position.anchor,주석은 어디에 표시되어야 합니까?
+wizard.position.at_caster,캐스터 위치에서
+wizard.position.at_caster_facing,캐스터 기준 (방향은 정면을 향함)
+wizard.position.at_target,목표 위치에서
+wizard.position.at_target_facing,목표 지점 (방향 기준)
+wizard.position.facing_hint,방향 지정 시: 원뿔 및 직사각형 도형만 사용할 수 있습니다.
+wizard.position.actor_hint,액터 기반 트리거는 액터의 위치를 자동으로 따라갑니다.
+wizard.position.offset,앵커로부터의 위치 오프셋:
+wizard.position.offset_x,X (동/서)
+wizard.position.offset_y,Y (북/남)
+wizard.position.offset_hint,X축 양의 방향 = 동쪽. Y축 양의 방향 = 북쪽.
+wizard.position.lead_time,이벤트 시작 전에 주석 표시:
+wizard.position.lead_time_hint,문제가 발생하기 전에 정비사에게 연락하세요
+
+# Step 4: Shape & Size
+wizard.shape.select,주석 모양 선택:
+wizard.shape.dimensions,치수 조정:
+wizard.shape.circle,원
+wizard.shape.rectangle,직사각형
+wizard.shape.cone,원뿔
+wizard.shape.line,Line
+wizard.shape.star,별
+wizard.shape.donut,도넛
+wizard.shape.radius,반지름
+wizard.shape.height,높이
+wizard.shape.width,너비
+wizard.shape.length,길이
+wizard.shape.rotation,회전
+wizard.shape.cone_length,원뿔 길이
+wizard.shape.cone_angle,원뿔 각도
+wizard.shape.line_length,줄 길이
+wizard.shape.line_width,선 너비
+wizard.shape.ray_length,광선 길이
+wizard.shape.ray_width,레이 폭
+wizard.shape.points,광선 수
+wizard.shape.outer_radius,외반경
+wizard.shape.inner_radius,내반경
+
+# Step 5: Visual Style
+wizard.visual.color,주석 색상:
+wizard.visual.base_color,기본 색상
+wizard.visual.pattern,시각적 패턴:
+wizard.visual.solid,단단한
+wizard.visual.striped,줄무늬
+wizard.visual.hatched,부화
+wizard.visual.ripple,물결 무늬
+wizard.visual.swirl,소용돌이
+wizard.visual.stripe_spacing,줄 간격
+wizard.visual.ripple_speed,리플 속도
+wizard.visual.ripple_count,리플 주기
+wizard.visual.motion,동작 유형:
+wizard.visual.motion_none,없음 (정적)
+wizard.visual.motion_rotate,회전
+wizard.visual.motion_projectile,투사체
+wizard.visual.motion_raindrops,빗방울
+wizard.visual.rotation_speed,회전 속도
+wizard.visual.end_mode,종단 위치 모드:
+wizard.visual.end_manual,수동 오프셋
+wizard.visual.end_to_target,'target'의 철자
+wizard.visual.end_in_facing,정면을 향하여
+wizard.visual.end_offset_x,X축 끝점 오프셋
+wizard.visual.end_offset_y,Y축 오프셋 종료
+wizard.visual.projectile_distance,이동 거리
+wizard.visual.travel_time,소요 시간
+wizard.visual.return_to_origin,시작으로 돌아가기
+wizard.visual.end_behavior,목적지에서:
+wizard.visual.end_persist,계속 눈에 띄세요
+wizard.visual.end_disappear,사라지다
+wizard.visual.drops_per_sec,초당 방울 수
+wizard.visual.drop_radius,방울 크기
+wizard.visual.drop_lifetime,낙하 수명
+
+# Step 6: Duration & Advanced
+wizard.advanced.duration,주석은 얼마나 오래 표시되어야 하나요?
+wizard.advanced.duration_encounter,전체 전투
+wizard.advanced.duration_encounter_desc,(전체 경기 영상)
+wizard.advanced.duration_timed,시간 제한
+wizard.advanced.duration_timed_desc,(지정된 시간이 지나면 사라짐)
+wizard.advanced.duration_sec,기간
+wizard.advanced.stacks,스택/도즈 필터링 (선택 사항):
+wizard.advanced.min_stacks,최소 스택 수
+wizard.advanced.max_stacks,최대 중첩 횟수
+wizard.advanced.stacks_hint,필터링을 하지 않으려면 0으로 설정하세요
+wizard.advanced.stack_colors,스택 개수별 색상:
+wizard.advanced.color_count,임계값 개수
+wizard.advanced.negation,부정 영역 (다른 주석을 지움):
+wizard.advanced.is_negation,부정 구역의 역할을 한다
+wizard.advanced.negation_hint,이 이벤트가 발생하면 제거할 주문 ID를 추가하세요
+wizard.advanced.add_spell,추가
+wizard.advanced.summary,요약:
+wizard.summary.spell,주문
+wizard.summary.actor,배우
+wizard.summary.timing,시기
+wizard.summary.shape,모양
+wizard.summary.duration,기간
+wizard.summary.seconds,초
+
+# =============================================================================
+# Auto Annotations Panel - Trigger Config
+# =============================================================================
+Trigger When,트리거 조건
+Trigger Mode,트리거 모드
+On Applied,‘On Applied’에서
+During Debuff,디버프 상태일 때
+During Buff,버프 지속 중
+On End,끝
+Fixate,고정하다
+Tether,테더
+On Cast Start,캐스트 시작 시
+On Cast Success,‘캐스트 성공’에 대하여
+During Cast,출연진
+Pool Interval (sec),풀 간격 (초)
+After Cast (sec),캐스팅 후 (초)
+Follow Actor,배우 팔로우하기
+Leave Trail,흔적 남기기
+On Spawn,스폰에 대하여
+On Death,죽음에 대하여
+On Actor Death,배우의 죽음에 대하여
+Disappear Immediately,즉시 사라지다
+Persist at Death Spot,‘데스 스팟’에서 버티기
+Fade Over Time,시간이 지남에 따라 서서히 사라짐
+Trail Interval (sec),트레일 간격 (초)
+Single annotation when debuff is first applied,디버프가 처음 적용될 때 단일 어노테이션
+Annotation follows the debuffed player while active,이 효과는 활성화되어 있는 동안 디버프가 적용된 플레이어를 따라다닙니다.
+Single annotation at player's position when debuff ends,디버프가 종료될 때 플레이어의 위치에 단일 어노테이션 표시
+Fixate Line,고정선
+Line connecting source NPC to target player (updates every 250ms),소스 NPC와 대상 플레이어를 연결하는 선 (250ms마다 업데이트됨)
+Anchor: Source NPC to Target Player,진행자: 소스 NPC → 대상 플레이어
+Line automatically connects the debuff source (NPC) to the debuff target (player),Line은 디버프의 원천(NPC)과 디버프 대상(플레이어)을 자동으로 연결합니다.
+Shape: Line (required for Fixate),형태: 선 (고정 기능에 필수)
+Thickness of the fixate line,고정선의 두께
+Single annotation when buff is first applied,버프가 처음 적용될 때 단일 어노테이션
+Annotation follows the buffed enemy while active,이 효과는 활성화되어 있는 동안 버프를 받은 적을 따라다닙니다.
+Single annotation at enemy's position when buff ends,버프가 종료될 때 적의 위치에 단일 어노테이션 표시
+Annotation appears at actor's position as timeline progresses,타임라인이 진행됨에 따라 배우의 위치에 주석이 표시됩니다.
+Leave persistent annotations at actor's position over time (void zone trail),시간이 지남에 따라 액터의 위치에 지속적인 주석을 남기기 (공백 영역 흔적)
+Single annotation when actor first appears,배우가 처음 등장할 때 단일 주석 추가
+Single annotation when actor dies,배우가 사망할 때 단일 주석 추가
+How often to leave a new annotation (in seconds),새로운 주석을 남기는 간격 (초 단위)
+Annotation vanishes when actor dies,배우가 사망하면 주석이 사라집니다
+Annotation stays at death location (uses duration setting),주석은 사망 위치에 그대로 남아 있습니다(지속 시간 설정을 적용함).
+Annotation fades out after actor dies,배우가 사망하면 자막이 서서히 사라진다
+
+# Trigger Config - Headers and Preview
+Editing Actor: %s,편집자: %s
+Configure Actor: %s,액터 구성: %s
+Editing: %s,편집: %s
+Configure: %s,구성: %s
+
+# Trigger Config - Lead Time
+Lead Time (sec),리드 타임 (초)
+Fire annotation this many seconds BEFORE the cast completes,캐스팅이 완료되기 이만큼의 초 전에 파이어 어노테이션
+Fire annotation this many seconds BEFORE the event occurs,사건이 발생하기 몇 초 전에 화재 주석을 달기
+
+# Trigger Config - Anchor/Position
+Place at,~에 위치
+At Buffed Unit,Buffed Unit에서
+At Buffed Unit (Facing),버프된 유닛 (정면)
+Use 'Facing' to orient shapes in the direction the enemy is looking,'방향' 기능을 사용하여 도형을 적이 바라보는 방향으로 배치하세요
+
+# Trigger Config - Trigger Types
+Trigger: On Cast Success,트리거: 주문 시전 성공 시
+Trigger: On Damage,트리거: 피해 발생 시
+Trigger: On Damage Taken,트리거: 피해를 입었을 때
+
+# Trigger Config - Cast Timing Tooltips
+Single annotation when cast begins (interruptible casts only),캐스팅 시작 시 단일 어노테이션 (중단 가능한 캐스팅에만 해당)
+Single annotation when spell cast completes,주문 시전이 완료될 때 단일 어노테이션
+Spawn pool annotations at caster position at intervals during cast,시전 중 시전자 위치에서 일정한 간격으로 스폰 풀 어노테이션을 생성합니다.
+
+# Trigger Config - Dimensions
+Radius (yards),반경 (야드)
+Width (yards),폭 (야드)
+Length (yards),길이 (야드)
+Height,높이
+Angle (deg),각도 (도)
+Rotation (deg),회전 각도 (deg)
+Ray Length (yards),레이 길이 (야드)
+Ray Width (yards),레이 폭 (야드)
+Points,포인트
+
+# Trigger Config - Stack Filtering
+Stack Filtering,스택 필터링
+Min Stacks,최소 스택
+Max Stacks,맥스 스택스
+No min,최소 없음
+No max,최대값 없음
+Only show annotation when aura has at least this many stacks (0 = no minimum),오라의 스택 수가 이 수 이상일 때만 주석을 표시합니다 (0 = 최소값 없음).
+Only show annotation when aura has at most this many stacks (0 = no maximum),오라의 스택 수가 이 수 이하일 때만 주석을 표시합니다 (0 = 제한 없음).
+Stack Colors,스택 색상
+Change annotation color based on stack count. Higher thresholds take priority.,스택 개수에 따라 주석 색상을 변경합니다. 임계값이 높은 쪽이 우선 적용됩니다.
+Color Thresholds,색상 임계값
+Number of stack-based color changes (0 = use base color only),스택 기반의 색상 변경 횟수 (0 = 기본 색상만 사용)
+At %d+ stacks,%d+ 스택에서
+at %d+ stacks,%d+ 스택에서
+Higher thresholds take priority over lower ones,더 높은 임계값은 더 낮은 임계값보다 우선합니다.
+
+# Trigger Config - Visual Styles
+Default solid fill,기본 단색 채우기
+Diagonal stripes (uncertainty indicator),대각선 줄무늬 (불확실성 표시)
+Cross-hatch pattern (uncertainty indicator),교차 선 패턴 (불확실성 표시기)
+Animated ripples expanding outward (projectile/wave effect),바깥쪽으로 퍼져 나가는 애니메이션 물결 (투사체/파동 효과)
+Spiral pattern from center (saturation shift),중심에서 시작되는 나선형 패턴 (채도 변화)
+Stripe Spacing,줄 간격
+Distance between stripes/hatches in yards,줄무늬/해치 사이의 거리 (야드)
+Ring Speed,링 속도
+How fast rings expand outward,고리가 바깥쪽으로 얼마나 빨리 퍼져 나가는가
+Ring Count,링 수
+Number of visible ring cycles,보이는 고리 주기의 수
+
+# Trigger Config - Motion
+Static annotation (no motion),정적 주석 (움직임 없음)
+Annotation rotates around its center point,주석은 중심점을 중심으로 회전합니다.
+Annotation moves from start to end position over time,주석은 시간이 지남에 따라 시작 위치에서 끝 위치로 이동합니다.
+Spawns small circles within annotation bounds (swirlie effect),주석 경계 내에 작은 원들을 생성합니다(소용돌이 효과).
+Positive = clockwise," 음극 = 시계 반대 방향, 양극 = 시계 방향, 음극 = 시계 반대 방향"
+Horizontal distance to travel (positive = East),이동해야 할 수평 거리 (양수 = 동쪽)
+Vertical distance to travel (positive = North),수직 이동 거리 (양수 = 북쪽)
+How long it takes to reach the destination,목적지에 도착하는 데 걸리는 시간
+Annotation stays at final position after reaching destination,주석은 목적지에 도달한 후에도 마지막 위치에 그대로 남아 있습니다.
+Annotation disappears when it reaches the destination,주석은 목적지에 도달하면 사라집니다
+
+# Trigger Config - Negation
+Negation,부정
+Acts as Negation Zone,‘부정 구역’ 역할을 한다
+When this annotation fires," 이 어노테이션은 반경 내의 일치하는 어노테이션을 영구적으로 제거하며, 이 어노테이션이 발동되면 반경 내의 일치하는 어노테이션을 영구적으로 제거합니다."
+Spells to Negate:,무효화할 주문:
+Enter spell ID of annotations to clear when this fires,이 이벤트가 발생하면 지울 주석의 스펠 ID를 입력하세요
+No spells configured - add spell IDs to negate,설정된 주문 없음 - 무효화할 주문 ID를 추가하세요
+
+# Trigger Config - Buttons
+Update Trigger,업데이트 트리거
+Create Trigger,트리거 생성
+Select a spell or actor to configure,설정할 주문이나 행위자를 선택하세요
+Annotation follows the buffed unit while active,주석은 활성화되어 있는 동안 버프를 받은 유닛을 따라다닙니다.
+Single annotation at unit's position when buff ends,버프가 종료될 때 유닛의 위치에 단일 어노테이션 표시
+
+# Shared
+Color,색상
+Shape,모양
+%.0f deg,%.0f 도
+%.1f yards,%.1f 야드
+%.1f yards/s,%.1f 야드/초
+Adds a bright glow effect at edges,가장자리에 밝은 빛 효과를 더합니다
+Adds a darker border around the shape,도형 주위에 더 어두운 테두리를 추가합니다.
+Angle,각도
+Annotation Properties,주석 속성
+Color gradient from center to edge,중앙에서 가장자리로 이어지는 색상 그라데이션
+Delete,삭제
+Duration (sec),소요 시간 (초)
+Duration,기간
+Edge Fade,엣지 페이드
+Edge Glow,엣지 글로우
+Encounter,만남
+Fade Width,페이드 폭
+Glow Intensity,광도
+Gradient,그라디언트
+Hatched,부화
+No annotation selected,선택된 주석이 없습니다.
+Outline Width,윤곽선 두께
+Outline,개요
+Ripple Rings,물결 무늬
+Rotation,회전
+Soft alpha fade at edges for a smoother look,가장자리에 부드러운 알파 페이드 효과를 적용하여 더 매끄러운 느낌을 줍니다
+Solid,단단한
+Striped,줄무늬
+Swirl,소용돌이
+Timed,시간 제한
+Visual Polish,비주얼 폴란드어
+Visual Style,시각적 스타일
+Add,추가
+
+# Facing Offset
+Facing Offset (deg),정면 오프셋 (도)
+Rotate the shape from the actor's facing direction. 0=forward," 90=오른쪽, -90=왼쪽, 180=뒤쪽, 액터의 시선 방향을 기준으로 도형을 회전합니다. 0=앞쪽, 90=오른쪽, -90=왼쪽, 180=뒤쪽"
+
+# Spell Context Menu
+context_menu.open_wowhead,Wowhead에서 열기
+context_menu.open_spell_settings,주문 설정 열기
+context_menu.open_auto_annotations,'자동 주석'에서 열기
+context_menu.add_to_raid_note,레이드 메모에 추가
+
+# CJK Font Settings
+settings.enable_cjk_fonts,CJK 글꼴(중국어/한국어) 활성화
+tooltip.cjk_fonts,중국어 및 한국어 텍스트 지원을 활성화합니다. 이 기능을 비활성화하면 약 100MB의 RAM을 절약할 수 있습니다.
+settings.requires_restart,재시작이 필요합니다
+
+# =============================================================================
+# Overlay View Modes
+# =============================================================================
+overlay.view_mode.current_pull,현재 풀
+overlay.view_mode.dungeon,던전
+overlay.view_mode.trash_overall,모든 휴지통
+overlay.view_mode.session,세션
+
+# Meter tooltip and breakdown strings
+breakdown.raw_tooltip,피해 감소 적용 전 피해/치유
+breakdown.raw_tooltip_crit1,치명타의 경우 원래 피해량을 추정합니다
+breakdown.raw_tooltip_crit2,치명타 배율을 200%로 가정합니다.
+format.effective_total_overheal,유효: %s  |  전체: %s (%.1f%% 과다 치유)
+format.total_persec,전체: %s  |  %s: %s
+format.hits_crits,적중: %u (치명타: %u)
+meter.click_hint,"좌클릭으로 선택, 우클릭으로 펼치기"
+meter.click_hint_select,왼쪽 마우스 버튼을 클릭하여 선택하세요
+meter.show_who_damaged_fmt,%s을 파손한 사람을 표시하세요
+meter.damage_avoided_fmt,피한 피해: %s
+meter.click_breakdown_fmt,%s의 피해 내역을 보려면 클릭하세요
+meter.tip_total_fmt,합계: %s
+meter.tip_effective_fmt,시행일: %s
+meter.tip_hits_fmt,조회수: %u
+meter.tip_crits_fmt,크리티컬: %u (%.1f%%)
+meter.tip_max_hit_fmt,최대 히트: %s
+
+# Settings import/export status messages
+settings_export.exported_fmt,%zu개 카테고리를 %s(으)로 내보냈습니다
+settings_export.export_failed,내보내기 실패
+settings_export.imported_fmt,%zu개 카테고리를 가져왔습니다
+settings_export.import_failed,가져오기 실패
+settings_export.file_not_found,파일을 찾을 수 없습니다
+settings_export.no_valid_settings,파일에 유효한 설정이 없습니다
+settings_export.found_fmt,%zu개 카테고리를 찾았습니다
+settings_export.not_in_file,(파일에 없음)
+settings_export.invalid_filename,폴더나 특수 문자가 포함되지 않은 간단한 파일 이름을 사용하세요.
+settings_export.file_exists_fmt,%s는 이미 존재합니다. 다른 이름을 선택하세요.
+
+# Playback shortcut hints
+playback.tooltip.play_pause,재생/일시정지 (스페이스바)
+playback.tooltip.skip_back,5초 뒤로 (Q)
+playback.tooltip.skip_forward,5초 앞으로 (E)
+playback.tooltip.speed,재생 속도 (1-5 키로 프리셋 선택)
+
+# Raid notes crash recovery and empty-state hints
+raidnotes.recovered_notes,지난 세션에서 저장되지 않은 메모를 복구했습니다
+raidnotes.restore,복원
+raidnotes.discard,삭제
+empty.select_encounter_hint,전투를 선택하거나 전투를 기다리세요
+empty.scrub_hint,이 시간 구간에는 아직 기록이 없습니다
+
+# Death recap window
+death_recap.title,죽음 분석
+death_recap.count_fmt,죽음 %zu회
+death_recap.deaths,사망자 수
+death_recap.no_deaths,사망자는 보고되지 않았다.
+death_recap.select_death,분석할 사망 사례를 선택하세요.
+death_recap.died_at_fmt,%s에서 사망했다.
+death_recap.killing_blow,결정타:
+death_recap.hide_hits_under,'히트' 항목 숨기기
+death_recap.max_hp_fmt,%.0f%% 최대 HP
+death_recap.hide_hits_tooltip,"아래의 이벤트 목록을 필터링합니다. 사후 분석에 중요하지 않은 작은 타격은, 그 피해량이 플레이어의 최대 HP 대비 이 비율 미만일 경우 숨겨집니다."
+death_recap.hp_timeline,HP 타임라인 (30초 구간)
+death_recap.no_hp_data,이 창에는 HP 데이터가 기록되어 있지 않습니다.
+death_recap.axis_death,죽음
+death_recap.events_fmt,행사  (%zu)
+death_recap.events_filtered_fmt,이벤트  (%zu의 %zu 표시됨)
+death_recap.no_events,지난 30초 동안 피해/치유 사건이 발생하지 않았습니다.
+death_recap.col_time,시간
+death_recap.col_ability,능력
+death_recap.col_amount,금액
+
+# Landing page extras toggle
+landing.extras_show,정보 및 파트너
+landing.extras_hide,정보 및 파트너 숨기기
+
+# Landing page links to the project page (project_url in awowlab.config.json)
+landing.report_issue,문제 신고하기
+landing.releases,보도자료
+landing.translate_hint,AwowLab/data/lang 디렉터리에 있는 해당 언어의 파일을 편집한 후 풀 리퀘스트를 제출해 주세요.
+
+# Mob weighting panel
+mobweight.title,몹 가중치
+mobweight.enabled,몹 가중치 사용
+mobweight.explainer,가중치가 적용된 몹에게 입힌 피해는 미터에 해당 비율만큼만 집계됩니다
+mobweight.active_hint,몹 가중치 적용 중
+mobweight.reset_all,모든 가중치 초기화
+mobweight.not_in_encounter,이 전투에 없는 저장된 가중치
+mobweight.refresh,새로 고침
+mobweight.hits_fmt,%zu회 적중
+
+# Boss phase tracking and meter report
+context_menu.set_phase_trigger,여기서 새 단계 시작
+context_menu.remove_phase_trigger,단계 트리거 제거
+meter.phase_all,모든 단계
+meter.report,보고
+meter.report_tooltip,채팅에 붙여넣을 한 줄 요약 복사
+meter.report_copied,복사됨!
+
+# Boss phase editor
+phases.title,우두머리 단계
+phases.kind_cast,첫 시전:
+phases.kind_time,시점
+phases.kind_emote,감정 표현
+phases.not_this_pull,이번 시도에서 도달하지 못함
+phases.add_time,시간 분할 추가
+phases.time_hint,분:초
+phases.emotes_header,이번 시도의 감정 표현
+phases.split_here,여기서 분할
+phases.no_emotes,이번 시도에 감정 표현 없음
+phases.no_rules,이 전투에 대한 페이즈 규칙이 아직 없습니다
+phases.casts_header,이번 시도의 우두머리 시전
+phases.offset_label,교대
+meter.class_colors,직업별로 막대 색상 표시
+defensives.title,방어형 종목 (최근 10초)
+defensives.pressed_fmt,죽기 전에 %d을 눌렀다
+defensives.active_at_death,사망 당시 유효한
+defensives.none,사용되지 않음
+settings.tracked_defensives,추적형 방어주
+settings.tracked_defensives_hint,사망 요약에서 확인해야 할 스펠 ID
+settings.add_spell_id,주문 ID 추가
+settings.add,추가
+settings.remove,제거
+
+# =============================================================================
+# BENCHMARK - comparing a pull against a reference log
+# =============================================================================
+benchmark.title,성적표
+benchmark.headline,%s 대 %s
+benchmark.window_died,%s - %s 지점에서 절단됨
+benchmark.window_survived,완전 당기기 - %s
+benchmark.stat.dps,초당 피해량
+benchmark.stat.cpm,분당 주조 횟수
+benchmark.stat.burst,쿨타임 DPS
+benchmark.stat.filler,필러 DPS
+benchmark.attribution.burst,차이의 대부분은 쿨타임 기간에 발생합니다. 이 기간 동안 %s이 뒤처져 있습니다.
+benchmark.attribution.filler,"차이의 대부분은 쿨타임이 적용되지 않는 구간에서 발생하며, 이 기간 동안 %s이 뒤처져 있습니다."
+benchmark.tab.findings,차이점
+benchmark.tab.cooldowns,재사용 대기시간
+benchmark.tab.throughput,처리량
+benchmark.tab.timeline,연표
+benchmark.weight.major,대형
+benchmark.weight.notable,주목할 만한
+benchmark.weight.info,사소한
+benchmark.later,나중에
+benchmark.earlier,앞서
+benchmark.no_findings,유의미한 차이는 없음
+benchmark.no_findings_hint,이 기간 동안 귀하의 풀은 참조를 매우 밀접하게 따랐습니다.
+benchmark.no_cooldowns,두 번의 풀 모두 쿨타임 사용 기록이 없었습니다.
+benchmark.cd_row,%s (%d을 사용하세요))
+benchmark.section.burst,재사용 대기 시간이 걸려 있는 동안
+benchmark.section.filler,재사용 대기 시간 사이
+benchmark.throughput_hint,주문별 각 풀의 비중.
+benchmark.unknown_spell,주문 %u
+benchmark.unknown_npc,적 %u
+benchmark.finding.cd_delayed,%s는 기준치보다 %.1f의 %s만큼 더 높았다.
+benchmark.finding.cd_weaker,%s 그것이 올라와 있는 %s동안 했던 일 — 그 참고 자료는 %s
+benchmark.finding.cd_unused,사용된 참조 %s %d 횟수; 귀하의 풀은
+benchmark.finding.cd_fewer,"%s은 %d 번 사용되었으며, 해당 참고 문헌에서는 이를 %d로 인용했습니다."
+benchmark.finding.filler_dps,"재사용 대기시간 사이에는 초당 %s을 기록했는데, 기준값은 %s이었습니다."
+benchmark.finding.filler_idle,재사용 대기시간 사이의 %.0f%% 동안 시전이 이루어지지 않았습니다. 참조 지점은 %.0f%%이었습니다.
+benchmark.finding.cast_rate,"%s은 분당 %.1f회 시전되었으며, 기준 값은 %.1f회였다."
+benchmark.finding.damage_taken,%s에서 %s을 가져왔습니다. 참조는 %s를 가져왔습니다.
+benchmark.finding.target,%s은 당신의 피해 중 %.0f%%를 흡수했습니다. 참조 항목에 %.0f%%가 표시되어 있습니다.
+benchmark.finding.proc_wasted,%s은(는) 사용되지 않은 채로 유효기간이 만료되었습니다. %d 회
+benchmark.finding.uptime,"%s은 그 시간 중 %.0f%% 동안 지속되었으며, 기준값은 %.0f%%를 유지했다."
+benchmark.finding.resource_capped,%.0f 초 동안 최대 자원 상태를 유지했습니다.
+benchmark.finding.uncomparable,이 단계는 비교할 수 없었다
+benchmark.blocked.generic,이 비교는 아직 실행할 수 없습니다.
+benchmark.blocked.unconfirmed,아직 분류가 필요한 주문들이 있습니다
+benchmark.blocked.unconfirmed_hint,이 비교 기능은 사용자가 지정한 분류 기준을 바탕으로 무엇이 재사용 대기시간으로 간주되는지 파악합니다. 임의로 추측하지 않습니다.
+benchmark.blocked.spec,다양한 전공 분야
+benchmark.blocked.spec_hint,"두 사양은 각기 다른 이유로 서로 다른 버튼을 누르기 때문에, 두 가지를 비교하는 것은 아무런 의미가 없을 것입니다."
+benchmark.blocked.encounter,각기 다른 만남들
+benchmark.blocked.phases,상 분리가 변경되었습니다
+benchmark.blocked.phases_hint,해당 레퍼런스는 다른 위상 규칙을 적용하여 분할되었습니다. 현재 분할 결과와 비교할 수 있도록 다시 생성해 주세요.
+benchmark.blocked.no_overlap,비교할 만한 창이 없음
+benchmark.blocked.pending_count,%d 주문이 여러분을 기다리고 있습니다
+benchmark.action.open_replay,리플레이 열기
+benchmark.action.change_mentor,참조 변경
+benchmark.action.review,분류 검토
+benchmark.action.dismiss,닫기
+
+# =============================================================================
+# BENCHMARK - spell classification review
+# =============================================================================
+classify.title,주문 분류하기
+classify.subtitle,이 %s가 사용하는 주문
+classify.pending,%d 아직 귀하의 확인이 필요합니다
+classify.all_done,모두 확인됨
+classify.explainer,이 비교는 이를 바탕으로 무엇이 쿨타임에 해당하고 무엇이 필러에 해당하는지 파악합니다. 제안 사항은 각 주문의 시전 빈도를 기준으로 합니다. 잘못된 것으로 보이는 부분은 수정하신 후 확인하십시오.
+classify.tab.spells,출연진
+classify.tab.auras,버프
+classify.show_confirmed,공연이 이미 확정되었습니다
+classify.confirm,확인
+classify.confirmed,확인됨
+classify.accept_all,모든 제안을 수락합니다
+classify.close,닫기
+classify.empty,아직 분류할 항목이 없습니다
+classify.empty_hint,먼저 참조 로그를 불러오면 해당 로그에 포함된 주문들이 여기에 표시됩니다.
+classify.no_pending_spells,대기 중인 캐스트 없음
+classify.no_pending_auras,대기 중인 버프 없음
+classify.no_pending_hint,이전에 내린 결정을 다시 확인하려면 ‘이미 확인된 항목 표시’를 선택하세요.
+classify.evidence.cadence,"%d이 분당 %.1f을 시전하며, 시전 간격은 약 %.0f초입니다."
+classify.evidence.irregular,"%d 캐스트, 균일한 간격 없음"
+classify.evidence.single,한 번만 캐스팅했다 - 패턴을 판단하기에는 수가 너무 적다
+classify.evidence.plain,%d 캐스트
+classify.evidence.aura,"%d 횟수 적용 - 풀 동작 중 %.0f%%까지, 각 %.1f초 정도"
+classify.role.filler,필러
+classify.role.proc,Proc 소비자
+classify.role.spender,자원 소모자
+classify.role.major,주요 재사용 대기시간
+classify.role.minor,짧은 재사용 대기시간
+classify.role.defensive,수비형
+classify.role.utility,유틸리티
+classify.role.ignored,이 주문을 무시하세요
+classify.role.none,비기밀
+classify.aura.proc,Proc
+classify.aura.maintenance,계속 힘내세요
+classify.aura.cdbuff,재사용 대기시간 감소 버프
+classify.aura.unimportant,별것 아니에요
+classify.aura.none,비기밀
+
+# =============================================================================
+# LANDING - compare pulls
+# =============================================================================
+btn.compare_live,실시간으로 시청하기
+settings.self_character,캐릭터 이름
+settings.self_character_hint,비교할 때 어떤 선수가 본인인지 알 수 있도록 필요합니다.
+overlay.benchmark_result,vs %s: %+.0f 초당 피해량
+overlay.benchmark_findings,%d 차이점 - 자세한 내용을 보려면 성적표를 열어보세요
+btn.save,저장
+landing.compare,풀 비교
+landing.compare_desc,모방하려는 선수를 상대로 슛을 시도해 보세요
+tooltip.landing_compare,"비교할 캐시된 로그 두 개를 선택하거나, 로그를 실시간으로 확인하며 매번 삭제할 때마다 평가 결과를 받아보세요."
+btn.prepare_mentor,준비하기
+btn.compare_report,보고서
+btn.back,뒤로
+btn.cancel,취소
+tooltip.needs_mentor,먼저 기준을 정해 두세요. 복제할 로그와 플레이어를 선택하세요.
+mentorpicker.title,풀 비교
+mentorpicker.step_encounter,어떤 만남을 말하는 건가요?
+mentorpicker.step_mentor,%s에 대한 참조는 무엇입니까?
+mentorpicker.step_fight,%s를 기준으로 어떤 당김력을 측정해야 합니까?
+mentorpicker.mentor_detail,%s - %s에서
+mentorpicker.none_prepared,아직 참고 문헌이 준비되지 않았습니다.
+mentorpicker.none_prepared_hint,'준비'를 사용하여 복제할 로그와 플레이어를 선택하세요.
+mentorpicker.no_fights,이 전투에서는 캐시된 풀이 없습니다
+mentorpicker.no_fights_hint,먼저 이 보스의 로그를 불러오면 여기에 표시됩니다.
+mentorpicker.unknown_encounter,만남 %u
+benchmark.prepare_prompt,복제할 선수를 선택하세요
+benchmark.prepare_pick_player,"배우 목록에서 배우를 선택한 다음, 여기서 확인하세요."
+benchmark.prepare_use,참조로 %s을 사용하십시오
+prepare.title,참고 자료 준비하기
+prepare.subtitle,%s - %s
+prepare.explainer,모방하고 싶은 플레이어를 선택하세요. 해당 플레이어의 캐스팅이 이후 모든 전투의 기준이 됩니다.
+prepare.no_players,이 로그에서 해당 플레이어를 찾을 수 없습니다.
+prepare.no_players_hint,해당 기록에는 전투원 정보가 포함되지 않을 수 있습니다.
+prepare.unknown_spec,알 수 없는 전공
+classify.unknown_spec,알 수 없는 전공
+mentorpicker.needs_download,아직 다운로드하지 않았습니다
+prepare.source_cache,캐시된 보고서에서
+prepare.source_local,지역 전투 기록에서 발췌
+benchmark.cd_window_detail,%s보다 %d 전역 변수
+benchmark.strip.globals,창당 글로벌 변수 개수
+benchmark.strip.dps,창당 초당 피해량
+classify.filter_hint,주문 검색
+benchmark.action.review_classes,주문 역할 변경
+preview.action.reopen_prepare,준비된 로그 변경
+benchmark.stale_rulings,이 비교 자료가 작성된 이후 주문의 역할이 변경되었습니다. 현재 수치를 확인하려면 다시 생성해 주세요.
+benchmark.live_waiting,%s에 대한 풀 요청 로그 확인
+benchmark.live_reading,%d 읽기 중...
+benchmark.live_showing,%d 풀 표시
+benchmark.live_skipped,그 끌림은 비교할 수 없을 정도였다 — 다음 순간을 기다리며
+classify.role.trinket,사용형 장신구
+classify.role.cantrip,비글로벌 (캔트립)
+classify.role.melee,자동 공격
+benchmark.action.rebuild,지금 다시 구축하기
+benchmark.cd_show_buffs,각 창에서 활성화된 버프 표시
+benchmark.cd_window,(%s - %s)
+benchmark.cd_output,%s 피해 (%s DPS)가 %d 전역 쿨타임 동안
+benchmark.cd_buff,%s (%.0f개)
+benchmark.melee,근접전
+classify.evidence.faster_than_gcd,%d은 %.2f 정도 떨어진 곳을 이리저리 둘러본다 - 너무 빨라서 누를 수가 없다
+classify.evidence.auto_attack,%d 자동 공격 타격
+classify.spell_id,(#%d)
+classify.section.casts,출연진
+classify.section.buffs,버프
+preview.title,참고 자료 작성 완료
+preview.hint,"이것이 비교의 기준이 됩니다. 여기 있는 숫자 중 하나라도 이상해 보인다면, 해당 주문에 대한 판정이 잘못되었을 가능성이 높습니다."
+preview.tab.summary,요약
+preview.tab.cooldowns,쿨다운 기간
+preview.tab.spells,출연진
+preview.player,플레이어
+preview.encounter,만남
+preview.duration,당김 길이
+preview.damage,입은 피해
+preview.dps,초당 피해량
+preview.taken,받은 피해
+preview.globals,글로벌 변수 선언
+preview.globals_per_min,분당 글로벌 수
+preview.per_minute,%.1f
+preview.major_cooldowns,주요 재사용 대기시간
+preview.cd_uses,쿨다운 기간
+preview.ignored,무시된 주문
+preview.off_global,글로벌 외 주문
+preview.no_cooldowns_warning,"어떤 주문도 주요 재사용 대기시간으로 간주되지 않으므로, 전체 풀링은 필러로 간주됩니다. 버스트 분배를 확인하려면 ‘주문 역할 변경’에서 하나를 설정하세요."
+preview.unresolved_phases,한 번도 발동되지 않은 위상 규칙: %s
+preview.cd_hint,비교 대상인 각 창이 사용자의 창과 순서대로 나란히 배치됩니다.
+preview.cd_detail,%s - %s  |  %s 대미지 (%s DPS) %d 글로벌 시간 동안
+preview.no_cd_uses,쿨다운 기간 없음
+preview.no_cd_uses_hint,이번 전투에서 쿨타임이 긴 스킬이 시전되었다는 기록은 없습니다.
+preview.no_spells,기록된 캐스트가 없습니다
+preview.spell_row,%d 캐스트 (%.1f/분)
+preview.action.accept,맞는 것 같네요
+classify.window_pair,"동일한 이름의 버프를 부여하며, 해당 버프가 사라질 때까지 효과가 지속됩니다."
+classify.window_pair_idle,또한 같은 이름의 버프를 부여합니다. 이 버프를 사용할 수 있는 기간을 재사용 대기시간으로 간주하십시오.
+classify.window_pair_buff,같은 이름의 출연진이 부여한 이 버프는 해당 창을 표시합니다
+classify.aura.major,주요 재사용 대기시간 (로그에 시전 기록 없음)
+benchmark.tab.breakdown,내역
+benchmark.breakdown_hint,참고 자료에 대해 감사드립니다.
+benchmark.section.targets,대상별 피해량
+benchmark.section.execution,한 번 누를 때마다의 피해량
+benchmark.section.time,시간은 어디로 갔을까
+benchmark.execution_hint,한 번 누를 때마다 입는 피해량.
+benchmark.col.target,목표
+benchmark.col.spell,주문
+benchmark.col.spent,소요 시간
+benchmark.col.delta,차이
+benchmark.row.idle,"대기 상태 (시전 없음, GCD 없음)"
+benchmark.timeline_hint,지난 30초 동안의 DPS.
+benchmark.timeline_worst,해당 구간에서 %s - %s 구간이 가장 큰 폭으로 하락했습니다.
+benchmark.cast_time_suffix, (%.1f 출연진)
+benchmark.burst_hint,"연속해서 누른 쿨타임은 하나의 창으로 간주되며, 순서대로 매칭됩니다."
+benchmark.burst_row,창 %d - %s
+benchmark.strip.gap,뒤쪽의 총 피해량
+benchmark.source_share,%s  (%.0f%%)
+benchmark.no_sources,기록된 피해 원인이 없음
+benchmark.no_sources_hint,주문별 피해를 반영하도록 참조를 재구성하십시오.
+benchmark.window.all,전체 당기기
+benchmark.window.entry,창 %d - %s
+benchmark.window.casts_heading,이 창에 표시된 출연진
+benchmark.window.cast_count,%s × %d
+benchmark.window.no_casts,이 창에는 아무것도 표시되지 않습니다.
+benchmark.cd_show_blacklisted,블랙리스트에 포함된 항목 포함
+mentorpicker.delete_hint,이 참조 삭제하기
+mentorpicker.delete_confirm,이 미리 준비된 참조를 삭제하시겠습니까? 이 사양의 주문 분류 정보는 유지됩니다.
+mentorpicker.delete_yes,삭제
+benchmark.differences_hint,"상단에 귀하의 내용을 기재하고, 하단에 참조 사항을 기재해 주십시오."
+benchmark.diff.output,출력
+benchmark.diff.weighted,피해량 (가중치 적용)
+benchmark.diff.raw,피해량 (원시)
+benchmark.diff.burst,버스트 DPS
+benchmark.diff.filler,필러 DPS
+benchmark.diff.cooldowns,쿨타임 활용
+benchmark.diff.cd_count,사용된 Windows 버전
+benchmark.diff.cd_uptime,총 재사용 대기 시간
+benchmark.diff.survival,생존
+benchmark.diff.taken,받은 피해
+benchmark.diff.defensives,수비수들이 압박을 가했다
+benchmark.diff.mitigated,방어 측이 입은 피해
+benchmark.diff.casts,주문별 시전 횟수
+benchmark.section.taken_by_spell,스킬로 인한 피해량
+benchmark.section.downtime,가동 중단 시간
+benchmark.row.downtime,아무것도 하지 않는 시간
+benchmark.row.downtime_burst,쿨타임 중의 다운타임
+benchmark.row.downtime_filler,쿨타임 외의 가동 중단 시간
+benchmark.downtime_value,%s (%.0f%%)
+benchmark.weight_suffix,  x%.0f%%
+benchmark.window_target,%s %s
+benchmark.tab.movement,운동
+benchmark.movement_hint,상대 모드에서는 보스가 화면 중앙에 위치합니다.
+benchmark.movement_relative,상사와 비교하여
+benchmark.movement_distance,주행 거리
+benchmark.movement_yards,%.0f 야드
+benchmark.no_positions,위치 데이터 없음
+benchmark.no_positions_hint,움직임을 포착할 수 있도록 참조를 재구성하십시오.
+benchmark.movie.play,재생
+benchmark.movie.pause,일시 정지
+benchmark.movie.restart,다시 시작
+benchmark.movie.speed,%.0fx
+benchmark.trail.full,전체 경로
+benchmark.trail.5s,지난 5초
+benchmark.trail.10s,지난 10초
+benchmark.trail.20s,20대 후반
+benchmark.trail.30s,지난 30초
+benchmark.composition.other,그 외 모든 것
+benchmark.composition.shares,%.0f%% / %.0f%%
+benchmark.downtime_hint,캐스트가 발생하지 않은 갭. 원인은 로그에 원인이 표시된 경우에만 명시됩니다.
+benchmark.downtime_count,%s을 가로질러 %d 간극
+benchmark.downtime_worst,%s의 가장 긴 간격
+benchmark.downtime_gap,%s  -  s%.1f
+benchmark.downtime_in_cd,쿨타임 중
+benchmark.downtime_cancelled,취소됨 %s
+benchmark.downtime_none,보고할 만한 차이는 없음
+benchmark.composition.header,%s / %s
+benchmark.gap_seconds,%.1fs
+classify.aura.channel,채널 (현재 모집 중)
+benchmark.tab.damage,피해
+benchmark.strip.cumulative,누적 피해량
+benchmark.downtime_caveat,채널링 효과는 해당 버프가 ‘채널링’으로 판정되지 않는 한 가동 중지 상태로 표시됩니다. 시전 기록이 남지 않고 전역 대기 시간을 소모하는 능력은 항상 가동 중지 상태로 표시됩니다.
+benchmark.section.phases,단계별
+benchmark.phase_index,단계 %d
+benchmark.phases_unresolved,"일부 단계 규칙은 한 번도 실행되지 않았으며, 해당 단계들은 비교 대상에서 제외됩니다."
+benchmark.window_mentor_end,"완전 인출 - %s, 기준값으로 상한 설정"
+benchmark.verdict_behind,"%.1f%% %s 뒤, 비교 대상 창 위에"
+benchmark.verdict_ahead,%.1f%%이 비교 대상 창에서 %s보다 앞서 있다
+benchmark.shortfall_heading,누락된 피해 수치가 어디서 비롯된 것인지
+benchmark.shortfall_burst,%s 쿨타임 기간 중
+benchmark.shortfall_filler,%s 재사용 대기시간 사이에
+benchmark.section.damage_taken,받은 피해
+benchmark.not_used,사용되지 않음
+benchmark.vs,vs %s
+prepare.step.spells,주문
+prepare.step.phases,단계
+prepare.step.weights,무리의 무게
+prepare.spells_state,"%d 판결, %d 계류 중"
+prepare.spells_review,주문 복습하기
+prepare.spells_change,주문의 역할을 살펴보기
+prepare.spells_blocked,모든 주문은 참조를 생성하기 전에 역할을 지정해야 합니다.
+prepare.phases_state,%d 위상 규칙
+prepare.weights_state,%d 무게가 있는 몬스터들
+prepare.next,다음
+prepare.back,뒤로
+prepare.finish,준비하기
+
+# Auto-annotation wizard: source filter
+wizard.source.filter_label,소스 필터
+wizard.source.filter_any,모든 출처
+wizard.source.filter_creature,특정 생물
+wizard.source.filter_environment,환경 전용
+wizard.source.filter_any_debuff_tip,모든 출처의 디버프를 일치시킵니다 (기본값)
+wizard.source.filter_creature_debuff_tip,선택한 생물에게만 적용된 디버프만 일치시킵니다
+wizard.source.filter_environment_debuff_tip,환경적 요인에서 비롯된 디버프만 일치시킵니다(특정 시전자는 제외).
+wizard.source.filter_any_buff_tip,모든 출처의 버프 합치기 (기본값)
+wizard.source.filter_creature_buff_tip,선택한 생물에게서만 버프를 매칭합니다
+wizard.source.filter_environment_buff_tip,환경 출처에서 비롯된 버프만 적용 (특정 시전자 없음)
+
+# Auto-annotation wizard: tether shapes
+wizard.shape.tether_dynamic_tip,소스 NPC와 대상 플레이어를 연결하는 모양 (250ms마다 업데이트됨)
+wizard.shape.tether_static_tip,(디버프 시작 시점의) 고정된 NPC 위치에서 대상 플레이어까지의 경로(250ms마다 업데이트됨)
+wizard.shape.tether_direction_tip,NPC에서 플레이어 쪽으로 선을 그립니다. NPC를 중심으로 플레이어를 향한 원뿔을 그립니다.
+wizard.shape.tether_thickness_tip,테더 라인의 두께
+
+# Auto-annotation wizard: anchoring
+wizard.position.anchor_source_to_target,진행자: 소스 NPC → 대상 플레이어
+wizard.position.anchor_source_to_target_tip,Shape는 디버프의 원천(NPC)과 디버프 대상(플레이어)을 자동으로 연결합니다.
+wizard.position.anchor_static_to_target,앵커: 소스에서 대상 플레이어로의 정적 전송
+wizard.position.anchor_static_to_target_tip,디버프 시작 시점의 NPC 위치(고정)에서 디버프 대상(플레이어)까지의 경로
+wizard.position.anchor_at_caster,아나운서: 캐스터에서
+wizard.position.anchor_at_caster_tip,시전 중에는 시전자의 위치에 풀이 생성됩니다.
+wizard.position.rotation_auto,회전: 자동 (표적 방향)
+
+# Auto-annotation wizard: pool spawning
+wizard.advanced.pool_interval_tip,캐스팅 중에 새로운 풀을 생성하는 간격 (초 단위)
+wizard.advanced.pool_lead_tip,시전 시작 전 이만큼의 초 전에 스폰 풀을 생성하기 시작합니다
+wizard.advanced.pool_trail_tip,시전 종료 후 이만큼의 초 동안 계속 스폰 풀을 생성합니다
+
+# Auto-annotation wizard: visual polish
+wizard.visual.polish,비주얼 폴란드어
+wizard.visual.edge_fade,엣지 페이드
+wizard.visual.edge_fade_tip,가장자리에 부드러운 알파 페이드 효과를 적용하여 더 매끄러운 느낌을 줍니다
+wizard.visual.fade_width,페이드 폭
+wizard.visual.outline,개요
+wizard.visual.outline_tip,도형 주위에 더 어두운 테두리를 추가합니다.
+wizard.visual.outline_width,윤곽선 두께
+wizard.visual.edge_glow,엣지 글로우
+wizard.visual.edge_glow_tip,가장자리에 밝은 빛 효과를 더합니다
+wizard.visual.glow_intensity,광도
+wizard.visual.gradient,그라디언트
+wizard.visual.gradient_tip,중앙에서 가장자리로 이어지는 색상 그라데이션
+wizard.visual.dual_colors,두 가지 색상
+wizard.visual.use_secondary_color,보조 색상 사용
+wizard.visual.use_secondary_color_tip,"그라데이션, 윤곽선 및 패턴에 대해 자동으로 도출된 색상 대신 사용자 지정 색상을 사용하세요."
+wizard.visual.secondary_color,보조 색상
+wizard.visual.use_inner_zone_color,내부 영역 색상 사용
+wizard.visual.use_inner_zone_color_tip,중앙 영역에 다른 색상을 적용 (예: 소크 메커니즘의 안전 구역)
+wizard.visual.inner_zone_color,내부 영역 색상
+
+# Landing page: package a fight for AI analysis
+landing.package,AI용 패키지
+landing.package_desc,AI가 읽고 검토할 수 있는 형식으로 싸움을 zip 파일로 내보내기
+tooltip.landing_package,"한 번의 전투를 CSV 테이블과 매니페스트 파일로 작성한 뒤, AI에 전달할 수 있도록 압축합니다."
+btn.package_export,싸움을 골라라
+btn.package_rankings,순위 조회
+tooltip.package_rankings,특정 보스의 상위 랭크 플레이어를 조회하고 응답을 저장합니다. API 호출 1회가 소요됩니다.
+btn.baseline_dungeon,던전
+btn.baseline_raid,레이드
+btn.baseline_dummy,표적 마네킹
+btn.baseline_rebuild,재구축
+tooltip.baseline_dungeon,"이번 시즌의 던전 중 하나를 골라, 그 던전의 최고 기록들을 확인해 보세요."
+tooltip.baseline_raid,"이번 시즌의 레이드 보스 중 하나를 골라, 해당 보스의 상위 처치 기록을 확인해 보세요."
+tooltip.baseline_dummy,각 대상 더미 구성에 대해 상위 로그를 추출합니다. 각 대상의 개수는 별도로 표본 추출됩니다.
+tooltip.baseline_rebuild,시즌 목록을 다시 불러옵니다. 패치로 인해 던전이나 레이드가 변경된 경우에만 필요합니다.
+
+# Baseline: spec, hero talent and content picker
+baseline.pick_title,기준선 설정하기
+baseline.pick_desc,"비교 기준으로 삼을 스펙을 선택하세요. 영웅 특성은 로테이션과 재사용 대기시간 활용 방식을 바꾸기 때문에, 아무도 사용하지 않는 두 가지 평균적인 플레이 스타일을 혼합한 기준은 의미가 없습니다."
+baseline.class,수업
+baseline.spec,전공
+baseline.hero,영웅의 특기
+baseline.hero_any,모든 나무
+baseline.hero_unknown,이 특화에는 영웅 재능이 등록되어 있지 않습니다. 제공된 재능 데이터가 게임 버전보다 오래된 것일 수 있습니다.
+baseline.content,내용
+btn.baseline_start,순위 조회
+error.gpu_lost_title,그래픽 장치 손실
+error.gpu_lost_message,그래픽 드라이버가 응답을 중단하여 AwowLab을 종료해야 합니다. GPU 드라이버를 업데이트하면 문제가 해결될 수 있습니다.
+warnings.title,구문 분석 경고
+warnings.heading,경고: 문제가 감지되었습니다
+warnings.intro,작동 중에 몇 가지 문제가 감지되었습니다. 자세한 내용은 아래를 확인해 주세요.
+warnings.details_fmt,세부 정보 (%zu 경고):
+warnings.log_saved_fmt,로그 파일 저장 위치: %s
+warnings.report_hint,"이런 현상이 계속 발생한다면, 해당 문제를 신고하고 로그 파일을 첨부해 주시기 바랍니다."
+warnings.clear,경고 메시지 지우기
+btn.ok,알겠습니다

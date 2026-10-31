@@ -1,0 +1,44 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Wobblucy <Wobblucy@users.noreply.github.com>
+Date: Sun, 2 Aug 2026 18:28:09 -0600
+Subject: [PATCH 2/2] Key the texture export cache on destination path as well
+
+The cache was keyed on fileDataID alone, but with shared textures
+disabled the same texture legitimately lands in a different folder per
+WMO. The first write cached the id and every later WMO's copy was
+skipped, leaving its MTL pointing at a file that was never written.
+Keying on id plus destination keeps the dedupe for repeat references to
+the same path and writes each distinct destination once.
+---
+ src/js/3D/exporters/WMOExporter.js | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+
+diff --git a/src/js/3D/exporters/WMOExporter.js b/src/js/3D/exporters/WMOExporter.js
+index 94c6c1e..1706649 100644
+--- a/src/js/3D/exporters/WMOExporter.js
++++ b/src/js/3D/exporters/WMOExporter.js
+@@ -176,7 +176,11 @@ class WMOExporter {
+ 					// reference. Decoding it once per export is enough - a large
+ 					// raid can reference the same handful of textures thousands of
+ 					// times, and the fetch+BLP decode dominates the export time.
+-					const already_written = textureExportCache.has(fileDataID);
++					// Keyed on the destination too: with shared textures disabled
++					// the same fileDataID legitimately lands in several folders,
++					// and skipping those writes would leave dangling MTL entries.
++					const texture_cache_key = fileDataID + '>' + texPath;
++					const already_written = textureExportCache.has(texture_cache_key);
+ 
+ 					if (glbMode && !raw) {
+ 						// glb mode: convert to PNG buffer without writing
+@@ -200,7 +204,7 @@ class WMOExporter {
+ 							const blp = new BLPFile(data);
+ 							await blp.saveToPNG(texPath, useAlpha ? 0b1111 : 0b0111);
+ 						}
+-						textureExportCache.add(fileDataID);
++						textureExportCache.add(texture_cache_key);
+ 					} else {
+ 						log.write('Skipping WMO texture export %s (already exported this run or exists)', texPath);
+ 					}
+-- 
+2.47.1.windows.1
+

@@ -1,0 +1,2068 @@
+# AwowLab Localization - English (US)
+# Format: key,value
+# Lines starting with # are comments
+key,value
+
+# =============================================================================
+# Menu Bar - File Menu
+# =============================================================================
+menu.file,File
+menu.change_encounter,Change Encounter...
+menu.return_home,Return to Home
+menu.import_export_settings,Import/Export Settings...
+
+# =============================================================================
+# Menu Bar - View Menu
+# =============================================================================
+menu.view,View
+menu.playback_controls,Playback Controls
+menu.creatures_vehicles_pets,Creatures/Vehicles/Pets
+menu.raid_frames,Raid Frames
+menu.enemy_grid,Enemy Grid
+menu.filters,Filters
+menu.minimap_2d,2D Minimap
+menu.gcd_history,GCD History
+menu.upcoming_boss_casts,Upcoming Boss Casts
+menu.meter_1,Meter 1
+menu.meter_2,Meter 2
+menu.meter_3,Meter 3
+menu.deaths,Deaths
+menu.player_buffs,Player Buffs
+menu.player_debuffs,Player Debuffs
+menu.aura_debug,Aura Debug
+menu.cooldowns,Player Cooldowns
+menu.raid_cd1,Raid Cooldowns (Major)
+menu.raid_cd2,Raid Cooldowns (Minor)
+menu.raid_cd3,Raid Cooldowns (Utility)
+menu.enable_snapping,Enable Snapping
+menu.snap_threshold,Snap Threshold
+menu.ui_scale,UI Scale
+menu.reset_layout,Reset Layout
+menu.save_layout,Save Layout
+menu.customize_appearances,Customize Appearances
+
+# =============================================================================
+# Menu Bar - Tools Menu
+# =============================================================================
+menu.tools,Tools
+menu.export_snapshot,Export Replay Snapshot...
+
+# =============================================================================
+# Export Snapshot Modal
+# =============================================================================
+export.title,Export Replay Snapshot
+export.time_range,Time Range
+export.start_time,Start
+export.end_time,End
+export.duration,Duration
+export.export_button,Export
+export.cancel_button,Cancel
+
+# =============================================================================
+# Landing Page - Snapshot Import Card
+# =============================================================================
+landing.snapshot_title,Open Snapshot
+landing.snapshot_desc,Load a shared .awsnap replay clip
+landing.snapshot_browse,Browse
+
+# =============================================================================
+# Menu Bar - Settings Menu
+# =============================================================================
+menu.settings,Settings
+menu.actor_appearance,Actor Appearance...
+menu.camera_settings,Camera Settings
+menu.nameplate_settings,Nameplate Settings
+menu.raid_frame_settings,Raid Frame Settings
+menu.show_auras,Show Aura Icons
+menu.show_spell_icons,Show Spell Icons
+menu.aura_icon_size,Icon Size
+menu.icon_size,Icon Size
+menu.language,Language
+menu.help_improve_localization,Help Improve Localization
+
+# =============================================================================
+# Nameplate Settings Modal
+# =============================================================================
+nameplate.settings_title,Nameplate Settings
+nameplate.global_settings,Global Settings
+nameplate.tab_players,Players
+nameplate.tab_other,Other
+nameplate.font_scale,Font Scale
+nameplate.use_actor_color,Use Actor Color
+nameplate.text_color,Text Color
+nameplate.show_background,Show Background
+nameplate.background_opacity,Background Opacity
+nameplate.name_length,Name Length
+nameplate.show_last_cast,Show Last Cast
+nameplate.last_cast_icon_size,Last Cast Icon Size
+tooltip.nameplate_font_scale,Scale factor for nameplate text (0.5x - 2.0x)
+tooltip.nameplate_name_length,Maximum characters to show (0 = full name)
+tooltip.nameplate_use_actor_color,Color nameplate text using the actor's assigned color
+tooltip.nameplate_show_background,Show a semi-transparent background behind nameplate text
+tooltip.nameplate_background_opacity,Opacity of the nameplate text background
+tooltip.nameplate_icon_size,Size of aura icons on nameplates (16-48 pixels)
+
+# =============================================================================
+# Facing Indicator Settings
+# =============================================================================
+menu.facing_indicator,Facing Indicator
+facing.enabled,Show Facing
+facing.opacity,Opacity
+facing.size,Size
+facing.color,Color
+
+# =============================================================================
+# UI Scale Buttons
+# =============================================================================
+btn.scale_small,Small
+btn.scale_normal,Normal
+btn.scale_large,Large
+btn.scale_xl,XL
+
+# =============================================================================
+# Panel Titles
+# =============================================================================
+panel.filters,Filters
+panel.playback,Playback
+panel.creatures,Creatures/Vehicles/Pets
+panel.raid_frames,Raid Frames
+panel.enemy_grid,Enemy Grid
+panel.gcd_history,GCD History
+panel.meter_1,Meter 1
+panel.meter_2,Meter 2
+panel.meter_3,Meter 3
+panel.deaths,Deaths
+panel.player_buffs,Player Buffs
+panel.player_debuffs,Player Debuffs
+panel.aura_debug,Aura Debug
+panel.player_focus,Player Focus
+panel.actor_appearance,Actor Appearance
+panel.cooldowns,Selected Player Cooldowns
+
+# =============================================================================
+# Actor Selector Panel
+# =============================================================================
+selector.title,Select Player to Focus
+selector.load_hint,(Load a combat log file with SPELL_CAST events)
+
+# =============================================================================
+# GCD History Panel
+# =============================================================================
+gcd.no_player,No player selected
+gcd.select_hint,Select a player from the Raid Frames panel
+gcd.row_gcd,GCD
+gcd.row_ogcd,oGCD
+
+# =============================================================================
+# Cooldown Panel
+# =============================================================================
+cd.no_player,No player selected
+cd.select_hint,Select a player from the Raid Frames panel
+cd.no_data,No spell data available
+cd.no_spells,No spells configured for cooldown display
+
+# =============================================================================
+# Raid Cooldown Panel
+# =============================================================================
+panel.raid_cd1,Raid Cooldowns - Major
+panel.raid_cd2,Raid Cooldowns - Minor
+panel.raid_cd3,Raid Cooldowns - Utility
+raid_cd.no_data,No spell data available
+raid_cd.no_spells,No raid cooldowns configured
+raid_cd.config_hint,Configure spells in Settings > Spell Assignments
+
+# =============================================================================
+# Filters Panel
+# =============================================================================
+filter.actor_visibility,Actor Visibility Filters
+filter.friendly,Friendly
+filter.hostile,Hostile
+filter.neutral,Neutral
+filter.players,Players
+filter.creatures,Creatures
+filter.vehicles,Vehicles
+filter.pets,Pets
+filter.camera_options,Camera Options
+filter.display_options,Display Options
+filter.debug_options,Debug Options
+filter.camera_target,Camera Target: (%.1f, %.1f, %.1f)
+filter.reset_camera,Reset Camera View
+filter.show_nameplates,Show Nameplates
+filter.show_health_bars,Show Health Bars
+filter.dump_databases,Dump Databases to CSV
+filter.enable_camera_follow,Enable Camera Follow
+filter.follow,Follow
+filter.follow_speed,Follow Speed
+filter.pan_sensitivity,Pan Sensitivity
+
+# =============================================================================
+# Tooltips
+# =============================================================================
+tooltip.health_bars,Display health bars above actor nameplates in 3D view
+tooltip.show_auras,Display buff/debuff icons above nameplates (configure in Spell Assignments)
+tooltip.aura_icon_size,Size of buff/debuff icons above nameplates (16-48 pixels)
+tooltip.show_spell_icons,Display spell tracking icons on raid frames
+tooltip.raid_frame_icon_size,Size of spell icons on raid frames (12-32 pixels)
+tooltip.dump_databases,Export all database tables to CSV files in ./debug - db tables/
+tooltip.camera_follow,Camera automatically follows the centroid of actors
+tooltip.follow_speed,How quickly camera follows actors (lower = smoother, higher = snappier)
+tooltip.pan_sensitivity,Adjust camera panning sensitivity (LMB drag)
+tooltip.refresh_encounters,Check for new encounters in the log file\n(Press F5 to refresh)
+
+# =============================================================================
+# Combat Meters
+# =============================================================================
+meter.damage_done,Damage Done
+meter.healing_done,Healing Done
+meter.damage_taken,Damage Taken
+meter.cumulative,Cumulative
+meter.full_encounter,Full Encounter
+meter.dps,DPS
+meter.hps,HPS
+meter.dtps,DTPS
+meter.melee,Melee
+meter.environment,Environment
+meter.blacklist,Blacklist
+meter.tab.damage,Damage
+meter.tab.healing,Healing
+meter.tab.taken,Taken
+meter.tab.taken_by,Taken By
+meter.tab.dispels,Dispels
+meter.tab.interrupts,Interrupts
+meter.tab.deaths,Deaths
+meter.tab.friendly_fire,Friendly Fire
+meter.tab.overhealing,Overhealing
+meter.tab.healing_taken,Healing Taken
+meter.tab.resurrections,Resurrections
+meter.tab.cc_breaks,CC Breaks
+meter.tab.avoidance,Avoidance
+meter.tab.absorbs,Absorbs
+meter.tab.enemy_damage,Enemy Damage
+meter.tab.enemy_healing,Enemy Healing
+meter.total_absorbed,Damage Prevented
+meter.event_count,Absorb Events
+meter.total,Total
+status.no_absorb_data,No absorb data available
+status.no_enemy_damage_data,No enemy damage data available
+status.no_enemy_healing_data,No enemy healing data available
+breakdown.hit_distribution,Hit Distribution
+breakdown.hit_normal,Normal
+breakdown.hit_crit,Crit
+breakdown.hit_glance,Glance
+breakdown.hit_resisted,Resisted
+breakdown.hit_blocked,Blocked
+breakdown.hit_absorbed,Absorbed
+meter.category.damage,Damage
+meter.category.healing,Healing
+meter.category.utility,Utility
+meter.category.survivability,Survivability
+meter.death_count,Deaths
+meter.resurrection_count,Resurrections
+meter.cc_break_count,CC Breaks
+meter.avoidance_count,Avoidances
+meter.avoidance_total,Total
+meter.avoidance_dodge,Dodge
+meter.avoidance_parry,Parry
+meter.avoidance_miss,Miss
+meter.avoidance_block,Block
+meter.avoidance_deflect,Deflect
+meter.avoidance_immune,Immune
+meter.avoidance_resist,Resist
+meter.avoidance_reflect,Reflect
+meter.avoidance_absorb,Absorb
+meter.avoidance_other,Other
+meter.avoidance,Avoidance
+meter.cc_breaks,CC Breaks
+meter.total_cc_breaks,Total CC Breaks
+meter.total_deaths,Total Deaths
+meter.total_avoidance,Total Avoidances
+status.no_avoidance,No avoidance data recorded
+status.no_avoidance_data,No avoidance data available
+status.no_overhealing_data,No overhealing data available
+status.no_healing_taken_data,No healing received data available
+status.no_friendly_fire_data,No friendly fire data available
+status.no_cc_break_data,No CC break data available
+status.no_death_data,No death data available
+meter.select_target,Select a Target
+meter.select_target_hint,Click on an enemy in the Enemy Grid panel to see damage done to them.
+meter.damage_to,Damage to
+meter.dispel_count,Dispels
+meter.interrupt_count,Interrupts
+meter.stolen_count,Stolen
+
+# =============================================================================
+# Status Messages
+# =============================================================================
+status.no_combat_data,No combat data available
+status.no_dispel_data,No dispel data
+status.no_interrupt_data,No interrupt data
+status.no_damage_data,No damage data available
+status.no_healing_data,No healing data available
+status.no_damage_taken_data,No damage taken data for selected filter
+status.no_damage_to_target,No damage recorded for this target
+status.no_deaths,No deaths recorded
+status.no_player_deaths,No player deaths
+status.no_players,No players in combat log
+status.no_creatures,No creatures visible
+status.no_enemies,No enemies currently visible
+status.no_friendly_players,No friendly players in raid
+status.no_friendly_fire,No friendly fire damage recorded
+status.no_overhealing,No overhealing recorded
+status.no_healing_taken,No healing received data
+status.no_resurrections,No resurrections recorded
+status.no_cc_breaks,No crowd control breaks recorded
+status.not_visible,Not visible in current time window
+status.no_actor_data,No actor data loaded.
+status.dead,DEAD
+status.click_for_gcd,Click to select for GCD History
+
+# =============================================================================
+# Format Strings
+# =============================================================================
+format.total_dps,Total: %s  |  DPS: %s
+format.total_hps,Total: %s  |  HPS: %s
+format.total_hps_overheal,Total: %s  |  HPS: %s  |  Overheal: %.1f%%
+format.total_dtps,Total: %s  |  DTPS: %s
+format.health_full,Health: %llu / %llu (%.0f%%)
+format.power_full,%s: %u / %u (%.0f%%)
+format.player_deaths,Player Deaths: %zu
+format.spell_id,Spell %u
+format.encounters_found,Found %zu segment(s) in combat log. Select one to replay:
+
+# =============================================================================
+# Buttons
+# =============================================================================
+btn.load_encounter,Load Selected Encounter
+btn.refresh_log,Refresh Log
+btn.return_home,Return to Home
+btn.browse_files,Browse Files
+btn.browse_cache,Browse Cache
+btn.clear_selection,Clear Selection
+btn.save_settings,Save Settings
+btn.load_settings,Load Settings
+btn.close,Close
+btn.cancel,Cancel
+btn.load,Load
+btn.load_report,Load Report
+btn.load_fight,Load Selected Fight
+btn.refresh,Refresh
+btn.authorize,Authorize Private Access
+btn.reauthorize,Re-authorize
+btn.play,Play
+btn.pause,Pause
+btn.fetch_url,Fetch from URL
+btn.play_along,Play Along
+btn.play_again,Play Again
+btn.open_snapshot,Open Snapshot
+
+# =============================================================================
+# Landing Page
+# =============================================================================
+landing.title,AwowLab
+landing.subtitle,World of Warcraft Combat Log Visualizer
+landing.choose_source,Choose your data source
+landing.local_file,Local File
+landing.local_file_desc,Load from your computer
+landing.local_file_hint,WoW_retail_\Logs\
+landing.warcraftlogs,WarcraftLogs
+landing.warcraftlogs_desc,Load from WarcraftLogs
+landing.press_esc,Press ESC to exit
+landing.partner_site,Partner Site
+landing.partner_site_desc,Free raid planner with animated strategies
+landing.diar_bullet1,Free animated raid strategy planner
+landing.diar_bullet2,Coordinate your guild with shareable plans
+
+# =============================================================================
+# Updater / Updates
+# =============================================================================
+btn.check_updates,Check for Updates
+update.checking,Checking for updates...
+update.up_to_date,You're up to date!
+update.disabled_build,Automatic updates are turned off in this build
+
+# Language Pack Download
+langpack.title,Language Pack Available
+langpack.desc,Download localized spell names and font for %s
+langpack.size_hint,~%d MB download
+langpack.download,Download Pack
+langpack.no_thanks,No Thanks
+langpack.disabled_build,Language packs are installed by the updater, which is turned off in this build
+
+# Social Links
+social.youtube,Watch on YouTube
+social.patreon,Support on Patreon
+
+# =============================================================================
+# Landing Page - Overlay Mode
+# =============================================================================
+landing.overlay_mode,Overlay Mode
+landing.overlay_mode_desc,Real-time combat meters overlay
+btn.launch_overlay,Launch Overlay
+tooltip.landing_overlay,Live damage/healing meters for active combat
+
+# =============================================================================
+# Play Along Mode
+# =============================================================================
+playalong.select_player,Select Player to Practice
+playalong.select_player_desc,Choose which player's movements and abilities you want to replicate
+playalong.practicing_as,Practicing as
+playalong.your_position,Your Position
+playalong.target_position,Target Position
+playalong.distance,Distance
+playalong.move,Move
+playalong.camera,Camera
+playalong.snap,Snap to Target
+playalong.play_pause,Play/Pause
+playalong.back,Back
+playalong.past,Past
+playalong.upcoming,Next
+playalong.configure_keybinds,Configure Keybinds
+playalong.no_spells_found,No spells found for this player
+playalong.keybind_help,Click a keybind to change it. Press ESC to clear.
+playalong.click_to_set,Click to set
+playalong.press_key,Press any key combination...
+playalong.hold_modifiers,(Hold Ctrl/Shift/Alt + Key)
+playalong.esc_cancel,Press ESC to cancel
+playalong.your_inputs,Your Inputs
+playalong.expected_casts,Expected
+playalong.report_card,Report Card
+playalong.section,Section
+playalong.good,Good
+playalong.bad,Bad
+playalong.missed,Missed
+playalong.accuracy,Accuracy
+playalong.overall,Overall
+playalong.spell_queue_window,Spell Queue Window (ms)
+playalong.spell_queue_tooltip,How early you can press the next ability
+playalong.gcd_timeline,GCD Timeline
+playalong.stats,Stats
+playalong.last_15,Last 15
+playalong.streak,Streak
+playalong.best_streak,Best
+playalong.total,Total
+playalong.ignored,Ignored
+playalong.clear_all,Clear All
+playalong.countdown_starting,Starting in...
+playalong.snap_hint,Too far from target! Press Right Shift to skip to next ability
+playalong.audio_feedback,Sound
+playalong.show_annotations,Show Annotations
+playalong.unknown_spec,Unknown Spec
+playalong.show_spell,Show
+playalong.clear_keybind,Clear
+playalong.ignore_spell,Ignore
+playalong.return_home_confirm,Return to home?
+
+# =============================================================================
+# Buttons
+# =============================================================================
+btn.back,Back
+btn.done,Done
+
+# =============================================================================
+# WarcraftLogs Dialog
+# =============================================================================
+wcl.dialog_title,WarcraftLogs Report
+wcl.paste_url,Paste a WarcraftLogs report URL or code:
+wcl.url_hint,https://www.warcraftlogs.com/reports/abc123 or just abc123
+wcl.valid_code,Valid report code: %s
+wcl.example_hint,Example: j1N7Rf4d23FAmtMk or full URL
+wcl.private_logs,Private Logs
+wcl.authorizing,Authorizing...
+wcl.waiting_browser,Waiting for browser...
+wcl.authenticated,Authenticated
+wcl.public_only,Public logs only
+wcl.session_expired,Session expired - please re-authorize
+wcl.select_fight,Select Fight
+wcl.no_session,No session loaded
+wcl.report,Report: %s
+wcl.fights_count,(%zu fights)
+wcl.api_usage,API Usage: %d/%d (resets in %d min)
+wcl.api_usage_hourly,API Usage: %d/%d per hour
+wcl.rate_limited,Rate limited - resets in %d minutes
+wcl.api_queries_remaining,%d/%d API queries remaining this hour
+wcl.mplus_note,Note: M+ dungeons use 2 API queries
+
+# =============================================================================
+# Cached Fights Panel
+# =============================================================================
+cache.title,Previously Loaded Fights
+cache.cached_count,(%zu cached)
+cache.yes,Yes
+cache.meta,Meta
+cache.no_fights,No cached fights found.
+cache.load_hint,Load a fight from WarcraftLogs to cache it for quick access.
+cache.double_click_hint,Double-click to load, or select and click 'Load Fight'
+cache.show_all,Show all fights
+cache.show_all_tooltip,Include fights with only metadata cached.\nThese will require fetching event data on load.
+cache.col_fight,Fight
+cache.col_report,Report
+cache.mythic_plus,Mythic+ Dungeons
+cache.raid_encounters,Raid Encounters
+cache.other,Other
+cache.report_tooltip,Report: %s\nFight ID: %d
+cache.meta_tooltip,Only metadata cached.\nEvent data will be fetched on load.
+cache.col_link,WCL
+cache.open_wcl_tooltip,Open in WarcraftLogs
+cache.col_date,Date
+cache.col_cached,Cached
+cache.col_actions,Actions
+cache.col_composition,Composition
+cache.sort_by,Sort
+cache.sort_date_newest,Date (Newest)
+cache.sort_date_oldest,Date (Oldest)
+cache.sort_name_az,Name (A-Z)
+cache.sort_name_za,Name (Z-A)
+cache.filter_difficulty,Difficulty
+cache.filter_all,All
+cache.open,Open
+cache.open_tooltip,Load this fight
+cache.delete,Delete
+cache.delete_confirm_title,Confirm Delete
+cache.delete_confirm_msg,Delete cached data for:
+cache.delete_warning,This action cannot be undone.
+
+# =============================================================================
+# Encounter Selector Columns
+# =============================================================================
+encounter.col_number,#
+encounter.col_name,Name
+encounter.col_difficulty,Difficulty
+encounter.col_size,Size
+encounter.col_duration,Duration
+encounter.col_fight,Fight
+encounter.col_result,Result
+encounter.parsed_info,Parsed: %zu lines (%.1f MB)
+
+# =============================================================================
+# Encounter Results
+# =============================================================================
+encounter.timed,Timed
+encounter.depleted,Depleted
+encounter.kill,Kill
+encounter.wipe,Wipe
+
+# =============================================================================
+# Full Difficulty Names (with raid size)
+# =============================================================================
+difficulty.10_player,10 Player
+difficulty.25_player,25 Player
+difficulty.10_heroic,10 Heroic
+difficulty.25_heroic,25 Heroic
+difficulty.40_player,40 Player
+difficulty.heroic_scenario,Heroic Scenario
+difficulty.normal_scenario,Normal Scenario
+difficulty.mythic_keystone,Mythic Keystone
+difficulty.timewalking,Timewalking
+difficulty.unknown,Unknown
+
+# =============================================================================
+# Difficulty Names
+# =============================================================================
+difficulty.lfr,LFR
+difficulty.normal,Normal
+difficulty.heroic,Heroic
+difficulty.mythic,Mythic
+
+# =============================================================================
+# Power Types
+# =============================================================================
+power.mana,Mana
+power.rage,Rage
+power.focus,Focus
+power.energy,Energy
+power.combo_points,Combo Points
+power.runes,Runes
+power.runic_power,Runic Power
+power.soul_shards,Soul Shards
+power.lunar_power,Lunar Power
+power.holy_power,Holy Power
+power.maelstrom,Maelstrom
+power.insanity,Insanity
+power.fury,Fury
+power.pain,Pain
+power.essence,Essence
+power.chi,Chi
+power.power,Power
+
+# =============================================================================
+# Actor Roles
+# =============================================================================
+role.unknown,Unknown
+role.tank,Tank
+role.healer,Healer
+role.melee_dps,Melee DPS
+role.ranged_dps,Ranged DPS
+
+# =============================================================================
+# Actor Appearance Panel
+# =============================================================================
+appearance.title,Actor Appearance Settings
+appearance.tab_role_defaults,Role Defaults
+appearance.tab_overrides,Overrides
+appearance.tab_individual,Individual Actors
+appearance.tab_enemies,Enemies
+appearance.role_defaults_desc,Configure default shapes assigned to actors based on their role. These can be overridden per-class, per-spec, or per-actor.
+appearance.auto_assign,Auto-assign role shapes to players
+appearance.auto_assign_tooltip,When enabled, players with known specializations will automatically get role-appropriate shapes (Shield for tanks, Cross for healers, etc.)
+appearance.player_shapes,Player Role Shapes:
+appearance.nonplayer_shapes,Non-Player Shapes:
+appearance.global_scale,Global Scale:
+appearance.default_scale,Default Scale
+appearance.role_overrides,Role Overrides
+appearance.class_overrides,Class Overrides
+appearance.overrides_desc,Set appearance overrides by role, class, or specialization. Higher specificity overrides take precedence.
+appearance.individual_desc,Override appearance for specific actors. Individual overrides have the highest priority.
+appearance.enemies_desc,Customize hostile and neutral actors grouped by name. All instances of the same creature share a color, shape, and scale. Expand to override specific actors.
+appearance.search_hint,Search by name...
+appearance.only_overridden,Only Overridden
+appearance.all_actors,All Actors:
+appearance.clear_override,Clear Override
+appearance.reset_default,Reset to Default
+appearance.selected_actor,Selected Actor:
+appearance.showing_actors,Showing %zu actors (%zu with overrides)
+appearance.showing_enemies,Showing %zu enemy types (%zu with overrides)
+appearance.no_enemies,No hostile/neutral actors found in current encounter.
+appearance.default_label,%s (Default)
+appearance.shape_tooltip,Override shape for all instances of this enemy type
+appearance.scale_tooltip,Override scale for all instances of this enemy type
+
+# =============================================================================
+# Actor Roles (for appearance settings)
+# =============================================================================
+role.tank_label,Tank
+role.healer_label,Healer
+role.melee_dps_label,Melee DPS
+role.ranged_dps_label,Ranged DPS
+role.unknown_label,Unknown Role
+
+# =============================================================================
+# Non-Player Types
+# =============================================================================
+nonplayer.creatures,Creatures/NPCs
+nonplayer.vehicles,Vehicles
+nonplayer.pets,Pets
+
+# =============================================================================
+# Shape Names
+# =============================================================================
+shape.default,(Default)
+shape.sphere,Sphere
+shape.cube,Cube
+shape.shield,Shield
+shape.medic_cross,Medic Cross
+shape.sword,Sword
+shape.bow,Bow
+shape.cone,Cone
+shape.cylinder,Cylinder
+shape.diamond,Diamond
+shape.pyramid,Pyramid
+shape.star,Star
+shape.classicon,Spec Icon
+shape.builtin_header,Built-in Shapes
+shape.custom_header,Custom Models
+shape.custom_load_failed,Failed to load
+shape.no_custom_models,No custom models found
+shape.tooltip.sphere,Default spherical shape - good for all actors
+shape.tooltip.cube,Box shape - useful for structures or NPCs
+shape.tooltip.shield,Shield icon - recommended for Tanks
+shape.tooltip.medic_cross,Medical cross - recommended for Healers
+shape.tooltip.sword,Sword icon - recommended for Melee DPS
+shape.tooltip.bow,Bow icon - recommended for Ranged DPS
+shape.tooltip.cone,Pointed cone shape
+shape.tooltip.cylinder,Barrel/pill shaped cylinder
+shape.tooltip.diamond,Double pyramid (octahedron) shape
+shape.tooltip.pyramid,Single pyramid pointing up
+shape.tooltip.star,3D star shape
+shape.tooltip.classicon,Flat disc with specialization icon texture
+appearance.tab_custom_models,Custom Models
+appearance.custom_models_desc,Adjust rotation for custom OBJ models. Models are loaded from the custom_models folder next to the executable.
+appearance.custom_models_tip,Tip: Align the model's forward direction with the facing indicator arrow.
+appearance.custom_models_workflow,The rotation controls set a baseline orientation. Once set, the model will rotate with the actor's facing direction instead of always facing the camera.
+appearance.custom_registry_not_available,Custom model registry not available
+appearance.models_folder,Models folder
+appearance.drop_obj_hint,Drop .obj files into the custom_models folder to use them as actor shapes.
+appearance.rotation_x,Rotation X
+appearance.rotation_y,Rotation Y
+appearance.rotation_z,Rotation Z
+appearance.z_offset,Z Offset
+appearance.load_errors,Load Errors
+appearance.search_hint_extended,Search by name, role, or class...
+appearance.search_results,%zu of %zu actors
+appearance.enemy_search_results,%zu of %zu enemy types
+appearance.override_trace,Override Resolution
+appearance.override_level_default,Default
+appearance.override_level_role,Role
+appearance.override_level_class,Class
+appearance.override_level_spec,Spec
+appearance.override_level_name,Name
+appearance.override_level_guid,GUID
+appearance.trace_level,Level
+appearance.trace_value,Value
+appearance.trace_shape,S
+appearance.trace_color,C
+appearance.trace_scale,X
+appearance.trace_system,System
+appearance.badge_guid,[G]
+appearance.badge_name,[N]
+appearance.badge_spec,[S]
+appearance.badge_class,[C]
+appearance.badge_role,[R]
+appearance.badge_guid_tooltip,Has GUID-specific override
+appearance.badge_name_tooltip,Has Name group override
+appearance.badge_spec_tooltip,Has Specialization override
+appearance.badge_class_tooltip,Has Class override
+appearance.badge_role_tooltip,Has Role override
+appearance.favorites,Favorites
+appearance.only_favorites,Favorites Only
+appearance.toggle_favorite,Toggle Favorite
+appearance.favorite_tooltip,Click to toggle favorite status
+appearance.starred_actors,Starred Actors:
+appearance.color_presets,Color Presets
+appearance.preset_classes,Classes
+appearance.preset_roles,Roles
+appearance.preset_custom,Custom
+appearance.preset_slot,Slot
+appearance.preset_empty,empty
+appearance.preset_clear_slot,Clear slot
+appearance.color_right_click_save,Right-click to save current color
+appearance.quick_reset_all,Reset All
+appearance.quick_reset_all_tooltip,Clear all overrides and reset to defaults
+appearance.confirm_reset,Are you sure you want to reset all appearance settings?
+appearance.quick_copy,Copy
+appearance.quick_copy_tooltip,Copy selected actor's appearance to clipboard
+appearance.quick_copy_no_selection,Select an actor to copy their appearance
+appearance.quick_paste,Paste
+appearance.quick_paste_tooltip,Apply clipboard appearance to selected actor
+appearance.quick_paste_no_clipboard,No appearance copied yet
+appearance.quick_paste_no_selection,Select an actor to paste appearance
+appearance.quick_apply_similar,Apply to...
+appearance.quick_apply_similar_tooltip,Apply clipboard appearance to all actors of same class/role
+appearance.apply_to_class,All
+appearance.apply_to_role,All
+appearance.context_copy,Copy Appearance
+appearance.context_paste,Paste Appearance
+appearance.context_clear,Clear All Overrides
+appearance.context_focus,Focus in 3D View
+appearance.context_apply_class,Apply to All %s
+appearance.context_apply_role,Apply to All %ss
+appearance.context_no_clipboard,Nothing copied yet
+btn.refresh,Refresh
+btn.reset,Reset
+btn.yes,Yes
+btn.no,No
+
+# =============================================================================
+# Actor Breakdown Panel
+# =============================================================================
+breakdown.title,Player Breakdown
+breakdown.spells,Spells
+breakdown.damage_done,Damage Done
+breakdown.healing_done,Healing Done
+breakdown.damage_taken,Damage Taken
+breakdown.total_stats,Total: %s  |  %s: %s  |  Hits: %u  |  Crit: %.1f%%
+breakdown.group_spells,+ Group Spells
+breakdown.group_tooltip,Drag spells onto group headers to group them.\nDouble-click header to rename.\nRight-click header to delete.
+breakdown.delete_group,Delete Group
+breakdown.rename,Rename
+breakdown.blacklist_spell,Blacklist Spell
+breakdown.unblacklist_spell,Unblacklist Spell
+breakdown.blacklisted_spells_title,Blacklisted Spells
+breakdown.dragging_melee,Dragging: Melee
+breakdown.dragging_spell,Dragging: Spell %u
+breakdown.click_to_see,Click a spell to see details
+breakdown.hits_format,Hits: %u
+breakdown.average,Average: %s
+breakdown.min,Min: %s
+breakdown.max,Max: %s
+breakdown.normal_hits,Normal Hits
+breakdown.critical_hits,Critical Hits
+breakdown.targets,Targets
+breakdown.pets_guardians,Pets & Guardians
+breakdown.no_data_graph,No %s data for graph
+breakdown.reset_selection,Reset Selection
+breakdown.drag_to_select_hint,(Drag on graph to select time range)
+breakdown.select_time_hint,Drag on graph to select a time range for analysis
+breakdown.selection_info,Selected: %u:%02u - %u:%02u (%u:%02u duration)
+breakdown.hover_tooltip,Time: %u:%02u\nClick and drag to select range
+breakdown.blacklisted_healing,Blacklisted Spells (excluded from healing reports)
+breakdown.blacklisted_damage,Blacklisted Spells (excluded from damage reports)
+breakdown.restore,Restore
+breakdown.more_targets,... and %zu more targets
+
+# =============================================================================
+# Aura Debug Panel
+# =============================================================================
+aura.filter_label,Filter by GUID or Name:
+aura.buffs,Buffs
+aura.debuffs,Debuffs
+aura.active_only,Active Only
+aura.targets_with_auras,Targets with auras: %zu
+aura.current_time,Current time: %s
+aura.no_data,No aura data available
+aura.no_target,No player selected
+aura.col_type,Type
+aura.col_spell,Spell
+aura.col_source,Source
+aura.col_stacks,Stacks
+aura.col_duration,Duration
+aura.col_applied,Applied
+aura.type_buff,BUFF
+aura.type_debuff,DEBUFF
+aura.status_active,Active
+
+# =============================================================================
+# Deaths Panel
+# =============================================================================
+deaths.col_time,Time
+deaths.col_player,Player
+deaths.col_ability,Ability
+deaths.col_amount,Amount
+deaths.unknown,Unknown
+deaths.filter_threshold,Min Event %
+deaths.filter_tooltip,Hide events smaller than this percentage of max health
+deaths.filter_label,Event Filter
+deaths.click_for_recap,Click to open death recap
+deaths.right_click_hint,Right-click for detailed death analysis
+deaths.analysis_title,Death Analysis
+deaths.player,Player
+deaths.killing_ability,Killing Ability
+deaths.health_chart,Health Timeline
+deaths.no_health_data,No health data available
+deaths.last_events,Recent Events
+deaths.no_events,No damage/healing events recorded
+resurrections.spell,Resurrection Spell
+status.view_not_implemented,View not yet implemented
+
+# =============================================================================
+# WarcraftLogs Help Text
+# =============================================================================
+wcl_help.want_unlimited,Want unlimited access? Create your own API client (free!)
+wcl_help.get_unlimited,Get unlimited access - create your own API client (free!):
+wcl_help.step1,1. Go to: warcraftlogs.com/api/clients
+wcl_help.step2,2. Click 'Create a Client'
+wcl_help.step3,3. Application name: test
+wcl_help.step4,4. Redirect URL: http://localhost:8080/callback
+wcl_help.step5,5. Leave 'Public Client' UNCHECKED
+wcl_help.step6,6. Click 'Create'
+wcl_help.step7,7. Copy your Client ID and Client Secret
+wcl_help.step8,8. Create 'wcl_credentials.txt' next to AwowLab.exe
+wcl_help.step9,9. Line 1: Client ID | Line 2: Client Secret
+wcl_help.go_to,Go to: warcraftlogs.com/api/clients
+wcl_help.app_name,Application name: test
+wcl_help.redirect_url,Redirect URL: http://localhost:8080/callback
+wcl_help.public_client,Leave 'Public Client' unchecked, click Create
+wcl_help.save_credentials,Save Client ID & Secret to 'wcl_credentials.txt'
+wcl_help.credentials_format,(Line 1: Client ID, Line 2: Client Secret)
+
+# =============================================================================
+# Spell Display Locations
+# =============================================================================
+location.none,None
+location.cd_group_1,Major CDs
+location.cd_group_2,Minor CDs
+location.cd_group_3,Utility CDs
+location.raid_frame,Raid Frame
+location.hud_major_cd,HUD - Major CD
+location.hud_utility,HUD - Utility
+location.hud_defensive,HUD - Defensive
+location.gcd_tracker,GCD Tracker
+location.nameplate,Nameplate
+location.short.cd1,Major
+location.short.cd2,Minor
+location.short.cd3,Utility
+location.short.raid,Raid
+location.short.hud_cd,HUD
+location.short.hud_util,Util
+location.short.hud_def,Def
+location.short.gcd,GCD
+location.short.plate,Plate
+location.short.buffs,Buffs
+location.short.debuffs,Debuffs
+location.player_buffs,Player Buffs Panel
+location.player_debuffs,Player Debuffs Panel
+
+# =============================================================================
+# Spell Assignment Panel
+# =============================================================================
+menu.spell_assignments,Spell Display Settings...
+menu.auto_annotations,Auto Annotations...
+menu.annotation_list,Manual Annotations
+menu.raid_notes,Raid Notes
+assignment.panel_title,Spell Display Settings
+assignment.class_label,Class:
+assignment.select_class,Select a class...
+assignment.all_classes,All Classes
+assignment.spec_label,Spec:
+assignment.select_spec,Select a spec...
+assignment.all_specs,All Specs
+assignment.cooldowns,cooldowns
+assignment.buffs,buffs
+assignment.debuffs,debuffs
+assignment.encounter,Non-Player
+assignment.all,All
+assignment.search_hint,Search spells...
+assignment.no_spells_for_filter,No spells match the current filter
+assignment.col_type,Type
+assignment.col_spell,Spell
+assignment.col_id,ID
+assignment.col_cd1,Major
+assignment.col_cd2,Minor
+assignment.col_cd3,Utility
+assignment.col_raid,Raid
+assignment.col_hud_big,Big
+assignment.col_hud_util,Util
+assignment.col_hud_def,Def
+assignment.col_gcd,GCD
+assignment.col_name,Name
+assignment.icon_sizes,Icon Sizes
+assignment.raid_frames,Raid Frames
+assignment.nameplates,Nameplates
+
+# =============================================================================
+# Spell Data Version Selector
+# =============================================================================
+settings.spell_data_version,Spell Data
+settings.spell_data_12_0,12.0 (The War Within)
+settings.spell_data_11_2,11.2 (Dragonflight)
+settings.title,Settings
+settings.log_folder,Log folder
+settings.change_log_folder,Change...
+settings.language,Language
+
+# =============================================================================
+# Boss Timer / Playback Controls
+# =============================================================================
+playback.boss_timer,Boss Timer
+playback.boss_timer_tooltip,Show/hide the boss timer strip below the playback bar
+playback.ortho,2D
+playback.ortho_tooltip,Switch to orthographic (top-down) camera view
+menu.enemy_cast_filters,Enemy Cast Filters...
+
+# =============================================================================
+# Help Panel (Keyboard Shortcuts)
+# =============================================================================
+help.title,Keyboard Shortcuts
+help.playback,Playback
+help.camera,Camera
+help.speed,Speed
+help.other,Other
+
+# Key labels
+help.key_space,Space
+help.key_q,Q
+help.key_e,E
+help.key_1,1
+help.key_2,2
+help.key_3,3
+help.key_4,4
+help.key_5,5
+help.key_wasd,W/A/S/D
+help.key_r,R
+help.key_lmb,LMB Drag
+help.key_rmb,RMB Drag
+help.key_scroll,Scroll
+help.key_f1,F1 / ?
+help.key_f5,F5
+
+# Descriptions
+help.space,Toggle Play/Pause
+help.q,Skip Back 5s
+help.e,Skip Forward 5s
+help.speed_1,Speed 0.25x
+help.speed_2,Speed 0.5x
+help.speed_3,Speed 1x
+help.speed_4,Speed 2x
+help.speed_5,Speed 4x
+help.wasd,Move Camera
+help.r,Toggle Auto-Follow
+help.lmb,Pan Camera
+help.rmb,Rotate Camera
+help.scroll,Zoom In/Out
+help.f1,Toggle This Panel
+help.f5,Refresh Encounters
+help.close_hint,Press F1 or ? to close
+
+# =============================================================================
+# Settings Export/Import Panel
+# =============================================================================
+Import/Export Settings,Import/Export Settings
+Export,Export
+Import,Import
+Select settings to export:,Select settings to export:
+Select settings to import:,Select settings to import:
+Select All,Select All
+Select None,Select None
+Select All Available,Select All Available
+Filename:,Filename:
+File path:,File path:
+Probe,Probe
+Export Selected,Export Selected
+Import Selected,Import Selected
+Files saved to: exported_settings/,Files saved to: exported_settings/
+Enter a file path and click Probe to see available settings.,Enter a file path and click Probe to see available settings.
+No valid settings found in file.,No valid settings found in file.
+
+# =============================================================================
+# Upcoming Boss Casts Panel
+# =============================================================================
+upcoming.no_casts,No upcoming boss casts in the next %.0f seconds
+upcoming.enable_spells,Enable spells in Enemy Cast Filters
+
+# =============================================================================
+# Raid Notes Panel
+# =============================================================================
+menu.raid_notes,Raid Notes
+raidnotes.title,Raid Notes
+raidnotes.ctx_add_title,Add to Raid Note
+raidnotes.ctx_spell_fmt,Spell: %s
+raidnotes.ctx_timestamp_fmt,Timestamp: %d:%02d
+raidnotes.ctx_add_to_note,Add to note:
+raidnotes.ctx_this_instance_fmt,Just this instance (%d:%02d)
+raidnotes.ctx_this_instance_none,Just this instance (no timestamp)
+raidnotes.ctx_all_instances_fmt,All instances (%zu found)
+raidnotes.ctx_all_instances_none,All instances (none found)
+raidnotes.ctx_custom_text,Custom text (optional):
+raidnotes.ctx_custom_text_hint,"e.g., Player name, assignment..."
+raidnotes.ctx_add_button,Add to Note
+raidnotes.phase_delay,Phase Delay:
+raidnotes.after,after
+raidnotes.by,by
+raidnotes.sec,sec
+raidnotes.add_delay,Add
+raidnotes.phase_delay_after_tooltip,Timestamp threshold (M:SS). Entries at or after this time will be shifted.
+raidnotes.phase_delay_tooltip,Delay timestamps after a phase transition. Applies cumulatively - add multiple delays if your team is late on multiple phases.
+raidnotes.options,Options
+raidnotes.opt_headers,Include Group Headers
+raidnotes.opt_spellnames,Include Spell Names
+raidnotes.opt_sort,Sort by Timestamp
+raidnotes.no_entries,No entries. Right-click spell icons to add.
+raidnotes.custom_text_hint,Assignment/note...
+raidnotes.add_manual,Add Manual Note:
+raidnotes.manual_hint,Type a note (e.g., Defensive, Soak)
+raidnotes.add,Add
+raidnotes.copy_clipboard,Copy to Clipboard
+raidnotes.copied,Copied!
+raidnotes.clear_all,Clear All
+raidnotes.clear_confirm,Are you sure you want to remove all entries?
+raidnotes.entry,entry
+raidnotes.entries,entries
+raidnotes.all_instances_tooltip,This entry will export multiple lines (one per instance)
+raidnotes.phase_delays,-- Phase Delays --
+raidnotes.load_preset,Load:
+raidnotes.select_preset,-- Select Preset --
+raidnotes.load,Load
+raidnotes.delete_preset,Delete
+raidnotes.save_as,Save as:
+raidnotes.preset_name_hint,Preset name...
+raidnotes.save,Save
+raidnotes.saved,Saved!
+raidnotes.save_failed,Could not save the preset
+raidnotes.delete_confirm,Delete this preset?
+common.yes,Yes
+common.no,No
+
+# =============================================================================
+# Auto Annotations - Anchor Types
+# =============================================================================
+At Caster,At Caster
+At Target,At Target
+At Caster (Facing),At Caster (Facing)
+At Target (Facing),At Target (Facing)
+Source -> Target,Source -> Target
+Use 'Facing' to orient shapes in the direction the player is looking,Use 'Facing' to orient shapes in the direction the player is looking
+Place annotation at caster's position,Place annotation at caster's position
+Place annotation at target's position,Place annotation at target's position
+Place at caster's position, rotate to match their facing direction,Place at caster's position, rotate to match their facing direction
+Place at target's position, rotate to match their facing direction,Place at target's position, rotate to match their facing direction
+Draw shape spanning from caster to target (beams, chains),Draw shape spanning from caster to target (beams, chains)
+
+# =============================================================================
+# Auto Annotations - Position Offset
+# =============================================================================
+Offset X (yards),Offset X (yards)
+Offset Y (yards),Offset Y (yards)
+Offset from anchor in world X axis (positive = East),Offset from anchor in world X axis (positive = East)
+Offset from anchor in world Y axis (positive = North),Offset from anchor in world Y axis (positive = North)
+
+# =============================================================================
+# Auto Annotations - Shapes
+# =============================================================================
+Circle,Circle
+Rectangle,Rectangle
+Cone,Cone
+Line,Line
+Star,Star
+Donut,Donut
+Outer Radius (yards),Outer Radius (yards)
+Inner Radius (yards),Inner Radius (yards)
+
+# =============================================================================
+# Auto Annotations - Preview
+# =============================================================================
+Show Preview,Show Preview
+Show annotation preview on the 3D map at the first event position,Show annotation preview on the 3D map at the first event position
+Ignore Early Pull,Ignore Early Pull
+Skip casts in the first 500ms of the encounter (filters fake 0:00 boss casts),Skip casts in the first 500ms of the encounter (filters fake 0:00 boss casts)
+
+# =============================================================================
+# Auto Annotations - Motion
+# =============================================================================
+Motion,Motion
+Motion Type,Motion Type
+None,None
+Rotate,Rotate
+Projectile,Projectile
+Rotation Speed (deg/s),Rotation Speed (deg/s)
+End Offset X (yards),End Offset X (yards)
+End Offset Y (yards),End Offset Y (yards)
+Travel Time (sec),Travel Time (sec)
+Return to Origin,Return to Origin
+Projectile travels to destination and returns to starting position (splits travel time in half),Projectile travels to destination and returns to starting position (splits travel time in half)
+End Behavior,End Behavior
+Persist at End,Persist at End
+Disappear at End,Disappear at End
+End Position,End Position
+Manual,Manual
+To Target,To Target
+In Facing Direction,In Facing Direction
+Distance (yards),Distance (yards)
+Direction Offset (deg),Direction Offset (deg)
+Offset from caster's facing direction. 0=forward, 180=backward, 90=right, -90=left,Offset from caster's facing direction. 0=forward, 180=backward, 90=right, -90=left
+Fallback X (yards),Fallback X (yards)
+Fallback Y (yards),Fallback Y (yards)
+Projectile travels from caster to target,Projectile travels from caster to target
+Fallback offsets used if no valid target:,Fallback offsets used if no valid target:
+Fallback offsets used if facing unavailable:,Fallback offsets used if facing unavailable:
+How far the projectile travels in the caster's facing direction,How far the projectile travels in the caster's facing direction
+Use fixed X/Y offsets for end position,Use fixed X/Y offsets for end position
+Travel from caster to spell target position (snapshotted at cast time),Travel from caster to spell target position (snapshotted at cast time)
+Travel in caster's facing direction for configured distance,Travel in caster's facing direction for configured distance
+Annotation rotates continuously around its anchor point,Annotation rotates continuously around its anchor point
+Annotation moves from start position to end offset over travel time,Annotation moves from start position to end offset over travel time
+Raindrops,Raindrops
+Spawns small circles within annotation bounds (swirlie effect),Spawns small circles within annotation bounds (swirlie effect)
+Drops per Second,Drops per Second
+Drop Radius (yards),Drop Radius (yards)
+Drop Lifetime (sec),Drop Lifetime (sec)
+How many raindrops spawn each second,How many raindrops spawn each second
+Size of each raindrop circle,Size of each raindrop circle
+How long each drop remains visible before fading,How long each drop remains visible before fading
+Add World Marker,Add World Marker
+Star (Yellow),Star (Yellow)
+Circle (Orange),Circle (Orange)
+Diamond (Purple),Diamond (Purple)
+Triangle (Green),Triangle (Green)
+Moon (Silver),Moon (Silver)
+Square (Blue),Square (Blue)
+Cross (Red),Cross (Red)
+Skull (White),Skull (White)
+Symbol Height (yards),Symbol Height (yards)
+Height of floating symbol above ground,Height of floating symbol above ground
+World Marker Settings,World Marker Settings
+
+# =============================================================================
+# Settings Hub
+# =============================================================================
+settings.hub.title,Settings
+settings.hub.display,Display
+settings.hub.appearance,Appearance
+settings.hub.camera,Camera
+settings.hub.import_export,Import/Export
+settings.hub.actors,Actors
+settings.hub.nameplates,Nameplates
+settings.hub.facing,Facing Indicator
+settings.hub.ui_scale,UI Scale
+settings.hub.layout,Layout
+settings.hub.reset_layout,Reset to Default
+settings.hub.save_layout,Save Current
+settings.hub.import_export_desc,Export or import your settings to share with others or restore from a backup.
+settings.hub.open_import_export,Open Import/Export...
+menu.show_menu_bar,Show Menu Bar
+camera.enable_follow,Enable Camera Follow
+camera.pan_sensitivity,Pan Sensitivity
+camera.follow_speed,Follow Speed
+camera.orthographic,Orthographic View (2D)
+camera.reset,Reset Camera
+actor.auto_assign_shapes,Auto-Assign Role Shapes
+actor.role_shapes,Role Shape Assignments
+actor.tank_shape,Tank
+actor.healer_shape,Healer
+actor.melee_dps_shape,Melee DPS
+actor.ranged_dps_shape,Ranged DPS
+actor.default_scale,Default Scale
+tooltip.auto_assign_shapes,Automatically assign shapes based on player role (Tank/Healer/DPS)
+tooltip.landing_local_file,Load a combat log file (.txt) from your computer
+tooltip.landing_warcraftlogs,Import fights from WarcraftLogs.com via URL or API
+tooltip.landing_recent,Browse previously loaded fights from cache
+tooltip.landing_playalong,Practice mode - replay your character's actions
+tooltip.camera_follow,Camera automatically follows selected actor
+tooltip.camera_pan,How fast the camera moves when dragging
+tooltip.camera_speed,How quickly camera catches up to moving actors
+tooltip.camera_ortho,Top-down 2D view (disables perspective)
+tooltip.camera_reset,Return camera to default position and zoom
+tooltip.ui_scale,Resize all UI elements
+tooltip.menu_bar,Toggle the File/View/Settings menu at top
+tooltip.reset_layout,Restore all panel positions to defaults
+
+# =============================================================================
+# Annotation Wizard
+# =============================================================================
+wizard.title,Annotation Wizard
+wizard.use_wizard,Use Wizard
+wizard.back,Back
+wizard.next,Next
+wizard.finish,Create
+wizard.cancel,Cancel
+
+# Wizard Step Indicator
+wizard.step.source,Source
+wizard.step.event,Event
+wizard.step.position,Position
+wizard.step.shape,Shape
+wizard.step.visual,Visual
+wizard.step.advanced,Advanced
+
+# Step 1: Trigger Source
+wizard.source.mode,Choose trigger source:
+wizard.source.spell,Spell Event
+wizard.source.actor,Actor Position
+wizard.source.select_spell,Select a spell to track:
+wizard.source.actor_name,Actor name to track:
+wizard.source.actor_hint,Enter the exact NPC name (e.g. Sikran)
+wizard.source.no_spells,No hostile creatures found in this encounter
+wizard.source.selected,Selected
+wizard.category.cast,Casts
+wizard.category.debuff,Debuffs
+wizard.category.buff,Buffs
+wizard.category.damage,Damage
+wizard.category.damage_taken,Damage Taken
+wizard.tooltip.damage_taken,Triggers on players who take damage from this spell
+wizard.category.actor,Actor
+
+# Step 2: Event Type
+wizard.event.timing,When should the annotation trigger?
+wizard.event.cast_info,Triggers when the spell cast completes
+wizard.event.damage_info,Triggers when the spell deals damage
+wizard.event.debuff_timing,Choose when to show the annotation:
+wizard.event.buff_timing,Choose when to show the annotation:
+wizard.event.on_applied,When applied
+wizard.event.while_active,While active (follows target)
+wizard.event.on_end,When removed
+wizard.event.actor_mode,Choose how to track the actor:
+wizard.event.actor_follow,Follow Actor
+wizard.event.actor_follow_desc,Annotation moves with actor
+wizard.event.actor_trail,Leave Trail
+wizard.event.actor_trail_desc,Drops markers at intervals
+wizard.event.actor_spawn,On Spawn
+wizard.event.actor_spawn_desc,Mark when actor appears
+wizard.event.actor_death,On Death
+wizard.event.actor_death_desc,Mark where actor dies
+wizard.event.trail_interval,Trail marker interval:
+wizard.event.death_behavior,When actor dies:
+wizard.event.death_disappear,Disappear immediately
+wizard.event.death_persist,Stay at death spot
+wizard.event.death_fade,Fade over time
+
+# Step 3: Positioning
+wizard.position.anchor,Where should the annotation appear?
+wizard.position.at_caster,At caster position
+wizard.position.at_caster_facing,At caster (using facing direction)
+wizard.position.at_target,At target position
+wizard.position.at_target_facing,At target (using facing direction)
+wizard.position.facing_hint,Using facing direction: only Cone and Rectangle shapes are available
+wizard.position.actor_hint,Actor-based triggers follow the actor's position automatically
+wizard.position.offset,Position offset from anchor:
+wizard.position.offset_x,X (East/West)
+wizard.position.offset_y,Y (North/South)
+wizard.position.offset_hint,Positive X = East. Positive Y = North.
+wizard.position.lead_time,Show annotation before event:
+wizard.position.lead_time_hint,Telegraph the mechanic before it happens
+
+# Step 4: Shape & Size
+wizard.shape.select,Choose annotation shape:
+wizard.shape.dimensions,Adjust dimensions:
+wizard.shape.circle,Circle
+wizard.shape.rectangle,Rectangle
+wizard.shape.cone,Cone
+wizard.shape.line,Line
+wizard.shape.star,Star
+wizard.shape.donut,Donut
+wizard.shape.radius,Radius
+wizard.shape.height,Height
+wizard.shape.width,Width
+wizard.shape.length,Length
+wizard.shape.rotation,Rotation
+wizard.shape.cone_length,Cone length
+wizard.shape.cone_angle,Cone angle
+wizard.shape.line_length,Line length
+wizard.shape.line_width,Line width
+wizard.shape.ray_length,Ray length
+wizard.shape.ray_width,Ray width
+wizard.shape.points,Number of rays
+wizard.shape.outer_radius,Outer radius
+wizard.shape.inner_radius,Inner radius
+
+# Step 5: Visual Style
+wizard.visual.color,Annotation color:
+wizard.visual.base_color,Base Color
+wizard.visual.pattern,Visual pattern:
+wizard.visual.solid,Solid
+wizard.visual.striped,Striped
+wizard.visual.hatched,Hatched
+wizard.visual.ripple,Ripple Rings
+wizard.visual.swirl,Swirl
+wizard.visual.stripe_spacing,Stripe spacing
+wizard.visual.ripple_speed,Ripple speed
+wizard.visual.ripple_count,Ripple cycles
+wizard.visual.motion,Motion type:
+wizard.visual.motion_none,None (static)
+wizard.visual.motion_rotate,Rotate
+wizard.visual.motion_projectile,Projectile
+wizard.visual.motion_raindrops,Raindrops
+wizard.visual.rotation_speed,Rotation speed
+wizard.visual.end_mode,End position mode:
+wizard.visual.end_manual,Manual offset
+wizard.visual.end_to_target,To spell target
+wizard.visual.end_in_facing,In facing direction
+wizard.visual.end_offset_x,End X offset
+wizard.visual.end_offset_y,End Y offset
+wizard.visual.projectile_distance,Travel distance
+wizard.visual.travel_time,Travel time
+wizard.visual.return_to_origin,Return to start
+wizard.visual.end_behavior,At destination:
+wizard.visual.end_persist,Stay visible
+wizard.visual.end_disappear,Disappear
+wizard.visual.drops_per_sec,Drops per second
+wizard.visual.drop_radius,Drop size
+wizard.visual.drop_lifetime,Drop lifetime
+
+# Step 6: Duration & Advanced
+wizard.advanced.duration,How long should annotation stay visible?
+wizard.advanced.duration_encounter,Entire encounter
+wizard.advanced.duration_encounter_desc,(visible whole fight)
+wizard.advanced.duration_timed,Timed
+wizard.advanced.duration_timed_desc,(disappears after duration)
+wizard.advanced.duration_sec,Duration
+wizard.advanced.stacks,Stack/Dose filtering (optional):
+wizard.advanced.min_stacks,Minimum stacks
+wizard.advanced.max_stacks,Maximum stacks
+wizard.advanced.stacks_hint,Leave at 0 for no filtering
+wizard.advanced.stack_colors,Color by stack count:
+wizard.advanced.color_count,Number of thresholds
+wizard.advanced.negation,Negation zone (clears other annotations):
+wizard.advanced.is_negation,Acts as negation zone
+wizard.advanced.negation_hint,Add spell IDs to clear when this triggers
+wizard.advanced.add_spell,Add
+wizard.advanced.summary,Summary:
+wizard.summary.spell,Spell
+wizard.summary.actor,Actor
+wizard.summary.timing,Timing
+wizard.summary.shape,Shape
+wizard.summary.duration,Duration
+wizard.summary.seconds,seconds
+
+# =============================================================================
+# Auto Annotations Panel - Trigger Config
+# =============================================================================
+Trigger When,Trigger When
+Trigger Mode,Trigger Mode
+On Applied,On Applied
+During Debuff,During Debuff
+During Buff,During Buff
+On End,On End
+Fixate,Fixate
+Tether,Tether
+On Cast Start,On Cast Start
+On Cast Success,On Cast Success
+During Cast,During Cast
+Pool Interval (sec),Pool Interval (sec)
+After Cast (sec),After Cast (sec)
+Follow Actor,Follow Actor
+Leave Trail,Leave Trail
+On Spawn,On Spawn
+On Death,On Death
+On Actor Death,On Actor Death
+Disappear Immediately,Disappear Immediately
+Persist at Death Spot,Persist at Death Spot
+Fade Over Time,Fade Over Time
+Trail Interval (sec),Trail Interval (sec)
+Single annotation when debuff is first applied,Single annotation when debuff is first applied
+Annotation follows the debuffed player while active,Annotation follows the debuffed player while active
+Single annotation at player's position when debuff ends,Single annotation at player's position when debuff ends
+Fixate Line,Fixate Line
+Line connecting source NPC to target player (updates every 250ms),Line connecting source NPC to target player (updates every 250ms)
+Anchor: Source NPC to Target Player,Anchor: Source NPC to Target Player
+Line automatically connects the debuff source (NPC) to the debuff target (player),Line automatically connects the debuff source (NPC) to the debuff target (player)
+Shape: Line (required for Fixate),Shape: Line (required for Fixate)
+Thickness of the fixate line,Thickness of the fixate line
+Single annotation when buff is first applied,Single annotation when buff is first applied
+Annotation follows the buffed enemy while active,Annotation follows the buffed enemy while active
+Single annotation at enemy's position when buff ends,Single annotation at enemy's position when buff ends
+Annotation appears at actor's position as timeline progresses,Annotation appears at actor's position as timeline progresses
+Leave persistent annotations at actor's position over time (void zone trail),Leave persistent annotations at actor's position over time (void zone trail)
+Single annotation when actor first appears,Single annotation when actor first appears
+Single annotation when actor dies,Single annotation when actor dies
+How often to leave a new annotation (in seconds),How often to leave a new annotation (in seconds)
+Annotation vanishes when actor dies,Annotation vanishes when actor dies
+Annotation stays at death location (uses duration setting),Annotation stays at death location (uses duration setting)
+Annotation fades out after actor dies,Annotation fades out after actor dies
+
+# Trigger Config - Headers and Preview
+Editing Actor: %s,Editing Actor: %s
+Configure Actor: %s,Configure Actor: %s
+Editing: %s,Editing: %s
+Configure: %s,Configure: %s
+
+# Trigger Config - Lead Time
+Lead Time (sec),Lead Time (sec)
+Fire annotation this many seconds BEFORE the cast completes,Fire annotation this many seconds BEFORE the cast completes
+Fire annotation this many seconds BEFORE the event occurs,Fire annotation this many seconds BEFORE the event occurs
+
+# Trigger Config - Anchor/Position
+Place at,Place at
+At Buffed Unit,At Buffed Unit
+At Buffed Unit (Facing),At Buffed Unit (Facing)
+Use 'Facing' to orient shapes in the direction the enemy is looking,Use 'Facing' to orient shapes in the direction the enemy is looking
+
+# Trigger Config - Trigger Types
+Trigger: On Cast Success,Trigger: On Cast Success
+Trigger: On Damage,Trigger: On Damage
+Trigger: On Damage Taken,Trigger: On Damage Taken
+
+# Trigger Config - Cast Timing Tooltips
+Single annotation when cast begins (interruptible casts only),Single annotation when cast begins (interruptible casts only)
+Single annotation when spell cast completes,Single annotation when spell cast completes
+Spawn pool annotations at caster position at intervals during cast,Spawn pool annotations at caster position at intervals during cast
+
+# Trigger Config - Dimensions
+Radius (yards),Radius (yards)
+Width (yards),Width (yards)
+Length (yards),Length (yards)
+Height,Height
+Angle (deg),Angle (deg)
+Rotation (deg),Rotation (deg)
+Ray Length (yards),Ray Length (yards)
+Ray Width (yards),Ray Width (yards)
+Points,Points
+
+# Trigger Config - Stack Filtering
+Stack Filtering,Stack Filtering
+Min Stacks,Min Stacks
+Max Stacks,Max Stacks
+No min,No min
+No max,No max
+Only show annotation when aura has at least this many stacks (0 = no minimum),Only show annotation when aura has at least this many stacks (0 = no minimum)
+Only show annotation when aura has at most this many stacks (0 = no maximum),Only show annotation when aura has at most this many stacks (0 = no maximum)
+Stack Colors,Stack Colors
+Change annotation color based on stack count. Higher thresholds take priority.,Change annotation color based on stack count. Higher thresholds take priority.
+Color Thresholds,Color Thresholds
+Number of stack-based color changes (0 = use base color only),Number of stack-based color changes (0 = use base color only)
+At %d+ stacks,At %d+ stacks
+at %d+ stacks,at %d+ stacks
+Higher thresholds take priority over lower ones,Higher thresholds take priority over lower ones
+
+# Trigger Config - Visual Styles
+Default solid fill,Default solid fill
+Diagonal stripes (uncertainty indicator),Diagonal stripes (uncertainty indicator)
+Cross-hatch pattern (uncertainty indicator),Cross-hatch pattern (uncertainty indicator)
+Animated ripples expanding outward (projectile/wave effect),Animated ripples expanding outward (projectile/wave effect)
+Spiral pattern from center (saturation shift),Spiral pattern from center (saturation shift)
+Stripe Spacing,Stripe Spacing
+Distance between stripes/hatches in yards,Distance between stripes/hatches in yards
+Ring Speed,Ring Speed
+How fast rings expand outward,How fast rings expand outward
+Ring Count,Ring Count
+Number of visible ring cycles,Number of visible ring cycles
+
+# Trigger Config - Motion
+Static annotation (no motion),Static annotation (no motion)
+Annotation rotates around its center point,Annotation rotates around its center point
+Annotation moves from start to end position over time,Annotation moves from start to end position over time
+Spawns small circles within annotation bounds (swirlie effect),Spawns small circles within annotation bounds (swirlie effect)
+Positive = clockwise, Negative = counter-clockwise,Positive = clockwise, Negative = counter-clockwise
+Horizontal distance to travel (positive = East),Horizontal distance to travel (positive = East)
+Vertical distance to travel (positive = North),Vertical distance to travel (positive = North)
+How long it takes to reach the destination,How long it takes to reach the destination
+Annotation stays at final position after reaching destination,Annotation stays at final position after reaching destination
+Annotation disappears when it reaches the destination,Annotation disappears when it reaches the destination
+
+# Trigger Config - Negation
+Negation,Negation
+Acts as Negation Zone,Acts as Negation Zone
+When this annotation fires, it permanently removes matching annotations within its radius,When this annotation fires, it permanently removes matching annotations within its radius
+Spells to Negate:,Spells to Negate:
+Enter spell ID of annotations to clear when this fires,Enter spell ID of annotations to clear when this fires
+No spells configured - add spell IDs to negate,No spells configured - add spell IDs to negate
+
+# Trigger Config - Buttons
+Update Trigger,Update Trigger
+Create Trigger,Create Trigger
+Select a spell or actor to configure,Select a spell or actor to configure
+Annotation follows the buffed unit while active,Annotation follows the buffed unit while active
+Single annotation at unit's position when buff ends,Single annotation at unit's position when buff ends
+
+# Shared
+Color,Color
+Shape,Shape
+%.0f deg,%.0f deg
+%.1f yards,%.1f yards
+%.1f yards/s,%.1f yards/s
+Adds a bright glow effect at edges,Adds a bright glow effect at edges
+Adds a darker border around the shape,Adds a darker border around the shape
+Angle,Angle
+Annotation Properties,Annotation Properties
+Color gradient from center to edge,Color gradient from center to edge
+Delete,Delete
+Duration (sec),Duration (sec)
+Duration,Duration
+Edge Fade,Edge Fade
+Edge Glow,Edge Glow
+Encounter,Encounter
+Fade Width,Fade Width
+Glow Intensity,Glow Intensity
+Gradient,Gradient
+Hatched,Hatched
+No annotation selected,No annotation selected
+Outline Width,Outline Width
+Outline,Outline
+Ripple Rings,Ripple Rings
+Rotation,Rotation
+Soft alpha fade at edges for a smoother look,Soft alpha fade at edges for a smoother look
+Solid,Solid
+Striped,Striped
+Swirl,Swirl
+Timed,Timed
+Visual Polish,Visual Polish
+Visual Style,Visual Style
+Add,Add
+
+# Facing Offset
+Facing Offset (deg),Facing Offset (deg)
+Rotate the shape from the actor's facing direction. 0=forward, 90=right, -90=left, 180=backward,Rotate the shape from the actor's facing direction. 0=forward, 90=right, -90=left, 180=backward
+
+# Spell Context Menu
+context_menu.open_wowhead,Open on Wowhead
+context_menu.open_spell_settings,Open Spell Settings
+context_menu.open_auto_annotations,Open in Auto Annotations
+context_menu.add_to_raid_note,Add to Raid Note
+
+# CJK Font Settings
+settings.enable_cjk_fonts,Enable CJK Fonts (Chinese/Korean)
+tooltip.cjk_fonts,Enable support for Chinese and Korean text. Disabling saves ~100MB RAM.
+settings.requires_restart,requires restart
+
+# =============================================================================
+# Overlay View Modes
+# =============================================================================
+overlay.view_mode.current_pull,Current Pull
+overlay.view_mode.dungeon,Dungeon
+overlay.view_mode.trash_overall,All Trash
+overlay.view_mode.session,Session
+
+# Meter tooltip and breakdown strings
+breakdown.raw_tooltip,Pre-mitigation damage/healing
+breakdown.raw_tooltip_crit1,"For critical hits, we estimate raw damage"
+breakdown.raw_tooltip_crit2,by assuming a 200% crit multiplier.
+format.effective_total_overheal,Effective: %s  |  Total: %s (%.1f%% overheal)
+format.total_persec,Total: %s  |  %s: %s
+format.hits_crits,Hits: %u (Crits: %u)
+meter.click_hint,"Left-click to select, Right-click to expand"
+meter.click_hint_select,Left-click to select
+meter.show_who_damaged_fmt,Show who damaged %s
+meter.damage_avoided_fmt,Damage avoided: %s
+meter.click_breakdown_fmt,Click for %s's damage breakdown
+meter.tip_total_fmt,Total: %s
+meter.tip_effective_fmt,Effective: %s
+meter.tip_hits_fmt,Hits: %u
+meter.tip_crits_fmt,Crits: %u (%.1f%%)
+meter.tip_max_hit_fmt,Max Hit: %s
+
+# Settings import/export status messages
+settings_export.exported_fmt,Exported %zu categories to %s
+settings_export.export_failed,Export failed
+settings_export.imported_fmt,Imported %zu categories
+settings_export.import_failed,Import failed
+settings_export.file_not_found,File not found
+settings_export.no_valid_settings,No valid settings in file
+settings_export.found_fmt,Found %zu categories
+settings_export.not_in_file,(not in file)
+settings_export.invalid_filename,Use a plain file name with no folders or special characters
+settings_export.file_exists_fmt,%s already exists - choose another name
+
+# Playback shortcut hints
+playback.tooltip.play_pause,Play/Pause (Space)
+playback.tooltip.skip_back,Back 5 seconds (Q)
+playback.tooltip.skip_forward,Forward 5 seconds (E)
+playback.tooltip.speed,Playback speed (keys 1-5 for presets)
+
+# Raid notes crash recovery and empty-state hints
+raidnotes.recovered_notes,Unsaved notes from your last session were recovered
+raidnotes.restore,Restore
+raidnotes.discard,Discard
+empty.select_encounter_hint,Pick an encounter or wait for combat
+empty.scrub_hint,Nothing recorded in this time window yet
+
+# Death recap window
+death_recap.title,Death Analysis
+death_recap.count_fmt,%zu deaths
+death_recap.deaths,Deaths
+death_recap.no_deaths,No deaths recorded.
+death_recap.select_death,Select a death to analyze.
+death_recap.died_at_fmt,Died at %s
+death_recap.killing_blow,Killing blow:
+death_recap.hide_hits_under,Hide hits under
+death_recap.max_hp_fmt,%.0f%% max HP
+death_recap.hide_hits_tooltip,Filters the event list below. Small ticks that don't matter for post-mortem analysis are hidden when their damage is under this percentage of the player's max HP.
+death_recap.hp_timeline,HP timeline (30s window)
+death_recap.no_hp_data,No HP data recorded in this window.
+death_recap.axis_death,Death
+death_recap.events_fmt,Events  (%zu)
+death_recap.events_filtered_fmt,Events  (%zu of %zu shown)
+death_recap.no_events,No damage/healing events in the last 30 seconds.
+death_recap.col_time,Time
+death_recap.col_ability,Ability
+death_recap.col_amount,Amount
+
+# Landing page extras toggle
+landing.extras_show,About & partners
+landing.extras_hide,Hide about & partners
+
+# Landing page links to the project page (project_url in awowlab.config.json)
+landing.report_issue,Report an issue
+landing.releases,Releases
+landing.translate_hint,Edit your language's file in AwowLab/data/lang and open a pull request
+
+# Mob weighting panel
+mobweight.title,Mob Weighting
+mobweight.enabled,Enable mob weighting
+mobweight.explainer,Damage done to weighted mobs counts at that fraction in the meters
+mobweight.active_hint,Mob weighting active
+mobweight.reset_all,Reset all weights
+mobweight.not_in_encounter,Saved weights not in this encounter
+mobweight.refresh,Refresh
+mobweight.hits_fmt,%zu hits
+
+# Boss phase tracking and meter report
+context_menu.set_phase_trigger,Starts a new phase here
+context_menu.remove_phase_trigger,Remove phase trigger
+meter.phase_all,All phases
+meter.report,Report
+meter.report_tooltip,Copy a one-line summary for pasting into chat
+meter.report_copied,Copied!
+
+# Boss phase editor
+phases.title,Boss Phases
+phases.kind_cast,First cast of
+phases.kind_time,At
+phases.kind_emote,Emote
+phases.not_this_pull,not reached this pull
+phases.add_time,Add time split
+phases.time_hint,m:ss
+phases.emotes_header,Emotes this pull
+phases.split_here,Split here
+phases.no_emotes,No emotes in this pull
+phases.no_rules,No phase rules for this encounter yet
+phases.casts_header,Boss casts this pull
+phases.offset_label,shift
+meter.class_colors,Color bars by class
+defensives.title,Defensives (last 10s)
+defensives.pressed_fmt,pressed %ds before death
+defensives.active_at_death,active at death
+defensives.none,not used
+settings.tracked_defensives,Tracked defensives
+settings.tracked_defensives_hint,Spell IDs to check in the death recap
+settings.add_spell_id,Add spell ID
+settings.add,Add
+settings.remove,Remove
+
+# =============================================================================
+# BENCHMARK - comparing a pull against a reference log
+# =============================================================================
+benchmark.title,Report Card
+benchmark.headline,%s vs %s
+benchmark.window_died,Cut at %s - %s died
+benchmark.window_survived,Full pull - %s
+benchmark.stat.dps,Damage per second
+benchmark.stat.cpm,Casts per minute
+benchmark.stat.burst,Cooldown DPS
+benchmark.stat.filler,Filler DPS
+benchmark.attribution.burst,Most of the gap is inside cooldowns - %s behind over this window.
+benchmark.attribution.filler,Most of the gap is outside cooldowns - %s behind over this window.
+benchmark.tab.findings,Differences
+benchmark.tab.cooldowns,Cooldowns
+benchmark.tab.throughput,Throughput
+benchmark.tab.timeline,Timeline
+benchmark.weight.major,Large
+benchmark.weight.notable,Notable
+benchmark.weight.info,Minor
+benchmark.later,later
+benchmark.earlier,earlier
+benchmark.no_findings,No meaningful differences
+benchmark.no_findings_hint,Your pull tracked the reference closely over this window.
+benchmark.no_cooldowns,No cooldown uses were recorded for either pull.
+benchmark.cd_row,%s (use %d)
+benchmark.section.burst,While cooldowns were up
+benchmark.section.filler,Between cooldowns
+benchmark.throughput_hint,Share of each pull, by spell.
+benchmark.unknown_spell,Spell %u
+benchmark.unknown_npc,Enemy %u
+benchmark.finding.cd_delayed,%s went out %.1fs %s than the reference
+benchmark.finding.cd_weaker,%s did %s while it was up - the reference did %s
+benchmark.finding.cd_unused,The reference used %s %d time(s); your pull did not
+benchmark.finding.cd_fewer,%s was used %d time(s) - the reference used it %d
+benchmark.finding.filler_dps,Between cooldowns you did %s per second - the reference did %s
+benchmark.finding.filler_idle,%.0f%% of your time between cooldowns had no cast going out - the reference was at %.0f%%
+benchmark.finding.cast_rate,%s was cast %.1f times per minute - the reference cast it %.1f
+benchmark.finding.damage_taken,You took %s from %s - the reference took %s
+benchmark.finding.target,%s took %.0f%% of your damage - the reference put %.0f%% there
+benchmark.finding.proc_wasted,%s expired without being used %d time(s)
+benchmark.finding.uptime,%s was up %.0f%% of the time - the reference held %.0f%%
+benchmark.finding.resource_capped,You sat at maximum resource for %.0f seconds
+benchmark.finding.uncomparable,This phase could not be compared
+benchmark.blocked.generic,This comparison cannot run yet
+benchmark.blocked.unconfirmed,Some spells still need classifying
+benchmark.blocked.unconfirmed_hint,The comparison uses your classifications to know what counts as a cooldown. It will not guess.
+benchmark.blocked.spec,Different specialisations
+benchmark.blocked.spec_hint,Two specs press different buttons for different reasons, so a comparison would not mean anything.
+benchmark.blocked.encounter,Different encounters
+benchmark.blocked.phases,Phase splits have changed
+benchmark.blocked.phases_hint,The reference was cut with different phase rules. Rebuild it to compare against your current splits.
+benchmark.blocked.no_overlap,No comparable window
+benchmark.blocked.pending_count,%d spell(s) waiting on you
+benchmark.action.open_replay,Open replay
+benchmark.action.change_mentor,Change reference
+benchmark.action.review,Review classifications
+benchmark.action.dismiss,Dismiss
+
+# =============================================================================
+# BENCHMARK - spell classification review
+# =============================================================================
+classify.title,Classify Spells
+classify.subtitle,Spells used by this %s
+classify.pending,%d still need your confirmation
+classify.all_done,All confirmed
+classify.explainer,The comparison uses these to know what counts as a cooldown and what counts as filler. Suggestions are based on how often each spell was cast - correct anything that looks wrong, then confirm.
+classify.tab.spells,Casts
+classify.tab.auras,Buffs
+classify.show_confirmed,Show already confirmed
+classify.confirm,Confirm
+classify.confirmed,Confirmed
+classify.accept_all,Accept all suggestions
+classify.close,Close
+classify.empty,Nothing to classify yet
+classify.empty_hint,Load a reference log first and its spells will appear here.
+classify.no_pending_spells,No casts waiting
+classify.no_pending_auras,No buffs waiting
+classify.no_pending_hint,Tick 'Show already confirmed' to revisit earlier decisions.
+classify.evidence.cadence,%d casts - %.1f per minute, about %.0fs apart
+classify.evidence.irregular,%d casts, with no regular spacing
+classify.evidence.single,Cast once - too few to judge a pattern
+classify.evidence.plain,%d casts
+classify.evidence.aura,Applied %d time(s) - up %.0f%% of the pull, about %.1fs each
+classify.role.filler,Filler
+classify.role.proc,Proc consumer
+classify.role.spender,Resource spender
+classify.role.major,Major cooldown
+classify.role.minor,Minor cooldown
+classify.role.defensive,Defensive
+classify.role.utility,Utility
+classify.role.ignored,Ignore this spell
+classify.role.none,Not classified
+classify.aura.proc,Proc
+classify.aura.maintenance,Keep it up
+classify.aura.cdbuff,Cooldown buff
+classify.aura.unimportant,Not important
+classify.aura.none,Not classified
+
+# =============================================================================
+# LANDING - compare pulls
+# =============================================================================
+btn.compare_live,Watch live
+settings.self_character,Your character name
+settings.self_character_hint,Needed so pull comparisons know which player is you.
+overlay.benchmark_result,vs %s: %+.0f damage per second
+overlay.benchmark_findings,%d difference(s) - open the report card for detail
+btn.save,Save
+landing.compare,Compare Pulls
+landing.compare_desc,Measure a pull against a player you are trying to replicate
+tooltip.landing_compare,Pick two cached logs to compare, or watch your log live and get a report card after each wipe.
+btn.prepare_mentor,Prepare
+btn.compare_report,Report
+btn.back,Back
+btn.cancel,Cancel
+tooltip.needs_mentor,Prepare a reference first - pick a log and the player you want to replicate.
+mentorpicker.title,Compare Pulls
+mentorpicker.step_encounter,Which encounter?
+mentorpicker.step_mentor,Which reference for %s?
+mentorpicker.step_fight,Which pull should be measured against %s?
+mentorpicker.mentor_detail,%s - from %s
+mentorpicker.none_prepared,No references prepared yet
+mentorpicker.none_prepared_hint,Use Prepare to pick a log and the player you want to replicate.
+mentorpicker.no_fights,No cached pulls for this encounter
+mentorpicker.no_fights_hint,Load a log of this boss first and it will appear here.
+mentorpicker.unknown_encounter,Encounter %u
+benchmark.prepare_prompt,Pick the player you want to replicate
+benchmark.prepare_pick_player,Select a player in the actor list, then confirm here.
+benchmark.prepare_use,Use %s as the reference
+prepare.title,Prepare a Reference
+prepare.subtitle,%s - %s
+prepare.explainer,Pick the player you want to replicate. Their casts become the reference every later pull is measured against.
+prepare.no_players,No players found in this log
+prepare.no_players_hint,The log may not include combatant information.
+prepare.unknown_spec,Unknown specialisation
+classify.unknown_spec,Unknown specialisation
+mentorpicker.needs_download,not downloaded yet
+prepare.source_cache,From a cached report
+prepare.source_local,From a local combat log
+benchmark.cd_window_detail,%s over %d globals
+benchmark.strip.globals,Globals pressed per window
+benchmark.strip.dps,Damage per second per window
+classify.filter_hint,Search spells
+benchmark.action.review_classes,Change spell roles
+preview.action.reopen_prepare,Change prepared log
+benchmark.stale_rulings,Spell roles changed since this comparison was built. Rebuild it to see current numbers.
+benchmark.live_waiting,Watching the log for a pull against %s
+benchmark.live_reading,Reading pull %d...
+benchmark.live_showing,Showing pull %d
+benchmark.live_skipped,That pull could not be compared - watching for the next one
+classify.role.trinket,On-use trinket
+classify.role.cantrip,Off-global (cantrip)
+classify.role.melee,Auto-attack
+benchmark.action.rebuild,Rebuild now
+benchmark.cd_show_buffs,Show buffs active in each window
+benchmark.cd_window,(%s - %s)
+benchmark.cd_output,%s damage (%s DPS) over %d globals
+benchmark.cd_buff,%s (%.0fs)
+benchmark.melee,Melee
+classify.evidence.faster_than_gcd,%d casts about %.2fs apart - too fast to be pressed
+classify.evidence.auto_attack,%d auto-attack swings
+classify.spell_id,(#%d)
+classify.section.casts,Casts
+classify.section.buffs,Buffs
+preview.title,Reference prepared
+preview.hint,This is what the comparison will measure against. If a number here looks wrong, a spell is probably ruled the wrong way.
+preview.tab.summary,Summary
+preview.tab.cooldowns,Cooldown windows
+preview.tab.spells,Casts
+preview.player,Player
+preview.encounter,Encounter
+preview.duration,Pull length
+preview.damage,Damage done
+preview.dps,Damage per second
+preview.taken,Damage taken
+preview.globals,Globals pressed
+preview.globals_per_min,Globals per minute
+preview.per_minute,%.1f
+preview.major_cooldowns,Major cooldowns
+preview.cd_uses,Cooldown windows
+preview.ignored,Spells ignored
+preview.off_global,Off-global spells
+preview.no_cooldowns_warning,No spell is ruled a major cooldown, so the whole pull counts as filler. Set one under Change spell roles for a burst breakdown.
+preview.unresolved_phases,Phase rules that never fired: %s
+preview.cd_hint,Each window the comparison will line up against yours, in order.
+preview.cd_detail,%s - %s  |  %s damage (%s DPS) over %d globals
+preview.no_cd_uses,No cooldown windows
+preview.no_cd_uses_hint,Nothing ruled a major cooldown was cast in this pull.
+preview.no_spells,No casts recorded
+preview.spell_row,%d casts (%.1f/min)
+preview.action.accept,Looks right
+classify.window_pair,Grants a buff of the same name - its window runs until that buff drops
+classify.window_pair_idle,Also grants a buff of the same name. Rule this a cooldown to use that buff as its window.
+classify.window_pair_buff,Granted by the cast of the same name - this buff marks that window
+classify.aura.major,Major cooldown (no cast in log)
+benchmark.tab.breakdown,Breakdown
+benchmark.breakdown_hint,Yours over the reference.
+benchmark.section.targets,Damage by target
+benchmark.section.execution,Damage per press
+benchmark.section.time,Where the time went
+benchmark.execution_hint,Damage per press.
+benchmark.col.target,Target
+benchmark.col.spell,Spell
+benchmark.col.spent,Time spent
+benchmark.col.delta,Difference
+benchmark.row.idle,Idle (no cast, no GCD)
+benchmark.timeline_hint,DPS over the previous 30s.
+benchmark.timeline_worst,Biggest single drop at %s - %s behind over that stretch
+benchmark.cast_time_suffix, (%.1fs cast)
+benchmark.burst_hint,Cooldowns pressed together count as one window, matched in order.
+benchmark.burst_row,Window %d - %s
+benchmark.strip.gap,Total damage behind
+benchmark.source_share,%s  (%.0f%%)
+benchmark.no_sources,No damage sources recorded
+benchmark.no_sources_hint,Rebuild the reference to capture per-spell damage.
+benchmark.window.all,Whole pull
+benchmark.window.entry,Window %d - %s
+benchmark.window.casts_heading,Casts in this window
+benchmark.window.cast_count,%s x%d
+benchmark.window.no_casts,Nothing cast in this window
+benchmark.cd_show_blacklisted,Include blacklisted
+mentorpicker.delete_hint,Delete this reference
+mentorpicker.delete_confirm,Delete this prepared reference? The spell classifications for this spec are kept.
+mentorpicker.delete_yes,Delete
+benchmark.differences_hint,Yours on top, reference below.
+benchmark.diff.output,Output
+benchmark.diff.weighted,Damage (weighted)
+benchmark.diff.raw,Damage (raw)
+benchmark.diff.burst,Burst DPS
+benchmark.diff.filler,Filler DPS
+benchmark.diff.cooldowns,Cooldown usage
+benchmark.diff.cd_count,Windows used
+benchmark.diff.cd_uptime,Total cooldown time
+benchmark.diff.survival,Survival
+benchmark.diff.taken,Damage taken
+benchmark.diff.defensives,Defensives pressed
+benchmark.diff.mitigated,Damage met by a defensive
+benchmark.diff.casts,Casts by spell
+benchmark.section.taken_by_spell,Damage taken by ability
+benchmark.section.downtime,Downtime
+benchmark.row.downtime,Time doing nothing
+benchmark.row.downtime_burst,Downtime in cooldowns
+benchmark.row.downtime_filler,Downtime outside cooldowns
+benchmark.downtime_value,%s (%.0f%%)
+benchmark.weight_suffix,  x%.0f%%
+benchmark.window_target,%s %s
+benchmark.tab.movement,Movement
+benchmark.movement_hint,Relative mode centres the boss.
+benchmark.movement_relative,Relative to boss
+benchmark.movement_distance,Distance travelled
+benchmark.movement_yards,%.0f yd
+benchmark.no_positions,No position data
+benchmark.no_positions_hint,Rebuild the reference to capture movement.
+benchmark.movie.play,Play
+benchmark.movie.pause,Pause
+benchmark.movie.restart,Restart
+benchmark.movie.speed,%.0fx
+benchmark.trail.full,Full path
+benchmark.trail.5s,Last 5s
+benchmark.trail.10s,Last 10s
+benchmark.trail.20s,Last 20s
+benchmark.trail.30s,Last 30s
+benchmark.composition.other,Everything else
+benchmark.composition.shares,%.0f%% / %.0f%%
+benchmark.downtime_hint,Gaps with no cast going out. Causes are named only where the log shows one.
+benchmark.downtime_count,%s across %d gaps
+benchmark.downtime_worst,Longest gaps for %s
+benchmark.downtime_gap,%s  -  %.1fs
+benchmark.downtime_in_cd,inside a cooldown
+benchmark.downtime_cancelled,cancelled %s
+benchmark.downtime_none,No gaps worth reporting
+benchmark.composition.header,%s / %s
+benchmark.gap_seconds,%.1fs
+classify.aura.channel,Channel (still casting)
+benchmark.tab.damage,Damage
+benchmark.strip.cumulative,Cumulative damage
+benchmark.downtime_caveat,Channels show as downtime unless their buff is ruled a Channel. Abilities that take a global without logging a cast always will.
+benchmark.section.phases,By phase
+benchmark.phase_index,Phase %d
+benchmark.phases_unresolved,Some phase rules never fired; those phases are not compared.
+benchmark.window_mentor_end,Full pull - %s, capped by the reference
+benchmark.verdict_behind,%.1f%% behind %s over the compared window
+benchmark.verdict_ahead,%.1f%% ahead of %s over the compared window
+benchmark.shortfall_heading,Where the missing damage came from
+benchmark.shortfall_burst,%s inside cooldown windows
+benchmark.shortfall_filler,%s between cooldowns
+benchmark.section.damage_taken,Damage taken
+benchmark.not_used,not used
+benchmark.vs,vs %s
+prepare.step.spells,Spells
+prepare.step.phases,Phases
+prepare.step.weights,Mob weights
+prepare.spells_state,%d ruled, %d pending
+prepare.spells_review,Review spells
+prepare.spells_change,Review spell roles
+prepare.spells_blocked,Every spell needs a role before a reference can be cut.
+prepare.phases_state,%d phase rules
+prepare.weights_state,%d mobs weighted
+prepare.next,Next
+prepare.back,Back
+prepare.finish,Prepare
+
+# Auto-annotation wizard: source filter
+wizard.source.filter_label,Source Filter
+wizard.source.filter_any,Any Source
+wizard.source.filter_creature,Specific Creature
+wizard.source.filter_environment,Environment Only
+wizard.source.filter_any_debuff_tip,Match debuffs from any source (default)
+wizard.source.filter_creature_debuff_tip,Match debuffs only from the selected creature
+wizard.source.filter_environment_debuff_tip,Match debuffs from environment sources only (no specific caster)
+wizard.source.filter_any_buff_tip,Match buffs from any source (default)
+wizard.source.filter_creature_buff_tip,Match buffs only from the selected creature
+wizard.source.filter_environment_buff_tip,Match buffs from environment sources only (no specific caster)
+
+# Auto-annotation wizard: tether shapes
+wizard.shape.tether_dynamic_tip,Shape connecting source NPC to target player (updates every 250ms)
+wizard.shape.tether_static_tip,Shape from static NPC position (at debuff start) to target player (updates every 250ms)
+wizard.shape.tether_direction_tip,Line draws from NPC to player. Cone draws at NPC pointing toward player.
+wizard.shape.tether_thickness_tip,Thickness of the tether line
+
+# Auto-annotation wizard: anchoring
+wizard.position.anchor_source_to_target,Anchor: Source NPC to Target Player
+wizard.position.anchor_source_to_target_tip,Shape automatically connects the debuff source (NPC) to the debuff target (player)
+wizard.position.anchor_static_to_target,Anchor: Static Source to Target Player
+wizard.position.anchor_static_to_target_tip,Shape from NPC position at debuff start (static) to the debuff target (player)
+wizard.position.anchor_at_caster,Anchor: At Caster
+wizard.position.anchor_at_caster_tip,Pools spawn at the caster's position during the cast
+wizard.position.rotation_auto,Rotation: auto (toward target)
+
+# Auto-annotation wizard: pool spawning
+wizard.advanced.pool_interval_tip,How often to spawn a new pool during the cast (in seconds)
+wizard.advanced.pool_lead_tip,Start spawning pools this many seconds BEFORE the cast begins
+wizard.advanced.pool_trail_tip,Continue spawning pools this many seconds AFTER the cast ends
+
+# Auto-annotation wizard: visual polish
+wizard.visual.polish,Visual Polish
+wizard.visual.edge_fade,Edge Fade
+wizard.visual.edge_fade_tip,Soft alpha fade at edges for a smoother look
+wizard.visual.fade_width,Fade Width
+wizard.visual.outline,Outline
+wizard.visual.outline_tip,Adds a darker border around the shape
+wizard.visual.outline_width,Outline Width
+wizard.visual.edge_glow,Edge Glow
+wizard.visual.edge_glow_tip,Adds a bright glow effect at edges
+wizard.visual.glow_intensity,Glow Intensity
+wizard.visual.gradient,Gradient
+wizard.visual.gradient_tip,Color gradient from center to edge
+wizard.visual.dual_colors,Dual Colors
+wizard.visual.use_secondary_color,Use Secondary Color
+wizard.visual.use_secondary_color_tip,Use a custom color for gradients, outlines, and patterns instead of auto-derived
+wizard.visual.secondary_color,Secondary Color
+wizard.visual.use_inner_zone_color,Use Inner Zone Color
+wizard.visual.use_inner_zone_color_tip,Different color for the center region (e.g., safe zone in soak mechanics)
+wizard.visual.inner_zone_color,Inner Zone Color
+
+# Landing page: package a fight for AI analysis
+landing.package,Package for AI
+landing.package_desc,Export a fight as a zip an AI can read and review
+tooltip.landing_package,Writes one fight out as CSV tables plus a manifest, zipped, for handing to an AI.
+btn.package_export,Choose a fight
+btn.package_rankings,Pull rankings
+tooltip.package_rankings,Fetches the top ranked players for a boss and saves the reply. Costs one API query.
+btn.baseline_dungeon,Dungeons
+btn.baseline_raid,Raid
+btn.baseline_dummy,Target dummies
+btn.baseline_rebuild,Rebuild
+tooltip.baseline_dungeon,Pick a dungeon from this season and pull its top runs.
+tooltip.baseline_raid,Pick a raid boss from this season and pull its top kills.
+tooltip.baseline_dummy,Pull the top logs for each target dummy configuration. Each target count is sampled separately.
+tooltip.baseline_rebuild,Refetch the season list. Only needed after a patch changes the dungeons or raid.
+
+# Baseline: spec, hero talent and content picker
+baseline.pick_title,Build a baseline
+baseline.pick_desc,Pick the spec to measure against. Hero talent changes rotation and cooldown use, so a baseline that mixes two averages playstyles nobody uses.
+baseline.class,Class
+baseline.spec,Specialization
+baseline.hero,Hero talent
+baseline.hero_any,Every tree
+baseline.hero_unknown,No hero talents listed for this spec. The shipped talent data may be older than the game.
+baseline.content,Content
+btn.baseline_start,Pull rankings
+error.gpu_lost_title,Graphics device lost
+error.gpu_lost_message,The graphics driver stopped responding and AwowLab has to close. Updating your GPU driver may help.
+warnings.title,Parse Warnings
+warnings.heading,Warning: Issues detected
+warnings.intro,Some issues were detected during operation. Check the details below for more information.
+warnings.details_fmt,Details (%zu warning(s)):
+warnings.log_saved_fmt,Log file saved to: %s
+warnings.report_hint,If this keeps happening, please report it and attach the log file.
+warnings.clear,Clear Warnings
+btn.ok,OK

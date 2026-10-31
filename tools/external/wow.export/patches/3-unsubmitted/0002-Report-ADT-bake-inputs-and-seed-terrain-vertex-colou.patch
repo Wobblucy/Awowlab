@@ -1,0 +1,62 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Wobblucy <Wobblucy@users.noreply.github.com>
+Date: Sun, 2 Aug 2026 02:18:49 -0600
+Subject: [PATCH] Report ADT bake inputs and seed terrain vertex colours
+
+Tiles were baking as solid black with no error. The bake multiplies each
+sampled layer by the terrain vertex colour, so log the layer count and the
+vertex colour range per tile to show which input is empty.
+
+The colour array was also allocated sparse, leaving any entry the chunk
+loop does not reach as undefined, which reaches the shader as NaN and
+blacks out the tile. Seed it with the neutral value instead.
+---
+ src/js/3D/exporters/ADTExporter.js | 25 ++++++++++++++++++++++++-
+ 1 file changed, 24 insertions(+), 1 deletion(-)
+
+diff --git a/src/js/3D/exporters/ADTExporter.js b/src/js/3D/exporters/ADTExporter.js
+index 520a93a..9d69782 100644
+--- a/src/js/3D/exporters/ADTExporter.js
++++ b/src/js/3D/exporters/ADTExporter.js
+@@ -494,7 +494,11 @@ class ADTExporter {
+ 			const normals = new Array(16 * 16 * 145 * 3);
+ 			const uvs = new Array(16 * 16 * 145 * 2);
+ 			const uvsBake = new Array(16 * 16 * 145 * 2);
+-			const vertexColors = new Array(16 * 16 * 145 * 4);
++			// Filled per-vertex below, but any entry the chunk loop does not reach
++			// would stay undefined and reach the shader as NaN, blacking out the
++			// bake. Start from the neutral colour used when a chunk carries no
++			// shading of its own.
++			const vertexColors = new Array(16 * 16 * 145 * 4).fill(1);
+ 
+ 			const chunkMeshes = new Array(256);
+ 
+@@ -1021,6 +1025,25 @@ class ADTExporter {
+ 						const diffuse_array = await build_texture_array(unique_diffuse_ids, false);
+ 						const height_array = await build_texture_array(unique_height_ids.length > 0 ? unique_height_ids : unique_diffuse_ids, true);
+ 
++						// The bake multiplies the sampled layers by the terrain vertex
++						// colour, so an empty colour array silently turns the whole tile
++						// black. Report the inputs that decide the output.
++						let vcMin = Infinity, vcMax = -Infinity, vcBad = 0;
++						for (let i = 0, n = vertexColors.length; i < n; i++) {
++							const v = vertexColors[i];
++							if (typeof v !== 'number' || Number.isNaN(v)) {
++								vcBad++;
++								continue;
++							}
++							if (v < vcMin) vcMin = v;
++							if (v > vcMax) vcMax = v;
++						}
++
++						log.write('Tile %s bake inputs: %d diffuse layers, vertex colour %s..%s, %d unusable entries',
++							this.tileID, unique_diffuse_ids.length,
++							vcMin === Infinity ? 'none' : vcMin.toFixed(3),
++							vcMax === -Infinity ? 'none' : vcMax.toFixed(3), vcBad);
++
+ 						// map file data id -> array index
+ 						const diffuse_id_to_index = new Map();
+ 						unique_diffuse_ids.forEach((id, idx) => diffuse_id_to_index.set(id, idx));
+-- 
+2.47.1.windows.1
+

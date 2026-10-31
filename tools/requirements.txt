@@ -1,0 +1,15 @@
+# Third-party packages the data and release scripts under tools/ import.
+# Everything else they use is in the standard library.
+#
+#   python -m pip install -r tools/requirements.txt
+#
+# Run tools/check_setup.py to see what is still missing.
+
+# World map tiles (BLP -> PNG, stitching) and the arena map contact sheet
+Pillow>=9.0
+
+# Signing the update manifest (generate-manifest.py, generate-signing-key.py)
+cryptography>=41.0
+
+# Translations (tools/translate/, which also has its own requirements.txt)
+deepl>=1.16.0

@@ -1,0 +1,48 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Wobblucy <Wobblucy@users.noreply.github.com>
+Date: Sun, 2 Aug 2026 18:23:24 -0600
+Subject: [PATCH] Load textures channel-packed so unused alpha cannot black
+ them out
+
+Opaque game textures often ship with an alpha channel that is unused and
+sits at zero. Blender defaults loaded images to straight alpha and
+multiplies the colour by it when sampling, so those textures reach the
+shader as solid black even though their colour data is fine.
+
+Loading everything channel-packed uses the colour as-is and keeps the
+alpha channel readable for the material paths that treat it as a blend
+mask or a height source. Several material builders already set this mode
+on the images they load; doing it once at the shared load point covers
+the paths that did not, including the WMO shader 20 builder.
+
+Found on a Midnight dungeon WMO where the texture covering a third of
+the model carries an all-zero alpha channel. Rendering that texture as
+flat emission samples black with straight alpha and the actual art with
+channel-packed; a full re-import of the dungeon confirms the affected
+surfaces now render with their textures.
+---
+ addons/blender/io_scene_wowobj/import_wowobj.py | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+
+diff --git a/addons/blender/io_scene_wowobj/import_wowobj.py b/addons/blender/io_scene_wowobj/import_wowobj.py
+index 180ce43..f69e4ab 100644
+--- a/addons/blender/io_scene_wowobj/import_wowobj.py
++++ b/addons/blender/io_scene_wowobj/import_wowobj.py
+@@ -858,6 +858,14 @@ def loadImage(textureLocation):
+         loadedImage = bpy.data.images.load(textureLocation)
+         loadedImage.name = imageName
+ 
++        # Game textures pack independent data into their channels; many opaque
++        # ones ship with an unused alpha channel that sits at zero. Blender's
++        # default straight-alpha handling multiplies the colour by alpha when
++        # sampling, which turns those textures solid black. Channel-packed
++        # leaves the colour untouched and keeps the alpha readable for the
++        # material paths that use it as a mask or height source.
++        loadedImage.alpha_mode = 'CHANNEL_PACKED'
++
+     return bpy.data.images[imageName]
+ 
+ def createStandardMaterial(materialName, textureLocation, blendMode, createEmissive, extension_mode='REPEAT'):
+-- 
+2.47.1.windows.1
+

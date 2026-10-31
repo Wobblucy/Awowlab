@@ -1,0 +1,110 @@
+[
+{
+    "timestamp": 4298780,
+    "type": "damage",
+    "sourceID": 81,
+    "targetID": 117,
+    "targetInstance": 5,
+    "abilityGameID": 410089,
+    "fight": 8,
+    "hitType": 2,
+    "amount": 23769,
+    "unmitigatedAmount": 8137,
+    "isAoE": false,
+    "supportID": 102,
+    "subtractsFromSupportedActor": true,
+    "resourceActor": 2,
+    "classResources": [
+        {
+            "amount": 0,
+            "max": 0,
+            "type": 1
+        }
+    ],
+    "hitPoints": 86430128,
+    "maxHitPoints": 128755200,
+    "attackPower": 0,
+    "spellPower": 0,
+    "armor": 42857,
+    "absorb": 0,
+    "x": -335968,
+    "y": 207416,
+    "facing": -315,
+    "mapID": 2467,
+    "versatility": 0,
+    "avoidance": 0,
+    "itemLevel": 82,
+    "targetMarker": 7
+},
+{
+    "timestamp": 4491365,
+    "type": "damage",
+    "sourceID": 81,
+    "targetID": 189,
+    "abilityGameID": 413984,
+    "fight": 8,
+    "hitType": 1,
+    "amount": 16596,
+    "unmitigatedAmount": 16112,
+    "isAoE": false,
+    "supportID": 95,
+    "subtractsFromSupportedActor": true,
+    "resourceActor": 2,
+    "classResources": [
+        {
+            "amount": 12,
+            "max": 100,
+            "type": 3
+        }
+    ],
+    "hitPoints": 2766870163,
+    "maxHitPoints": 5579392000,
+    "attackPower": 0,
+    "spellPower": 0,
+    "armor": 42857,
+    "absorb": 0,
+    "x": -191450,
+    "y": 198385,
+    "facing": -691,
+    "mapID": 2468,
+    "versatility": 0,
+    "avoidance": 0,
+    "itemLevel": 82
+},
+{
+    "timestamp": 4574443,
+    "type": "damage",
+    "sourceID": 81,
+    "targetID": 192,
+    "targetInstance": 9,
+    "abilityGameID": 413984,
+    "fight": 8,
+    "hitType": 1,
+    "amount": 6664,
+    "unmitigatedAmount": 6470,
+    "isAoE": false,
+    "supportID": 92,
+    "subtractsFromSupportedActor": true,
+    "resourceActor": 2,
+    "classResources": [
+        {
+            "amount": 21,
+            "max": 100,
+            "type": 3
+        }
+    ],
+    "hitPoints": 63829558,
+    "maxHitPoints": 139484800,
+    "attackPower": 0,
+    "spellPower": 0,
+    "armor": 42857,
+    "absorb": 0,
+    "x": -21883,
+    "y": 213464,
+    "facing": -716,
+    "mapID": 2469,
+    "versatility": 0,
+    "avoidance": 0,
+    "itemLevel": 81
+}
+]

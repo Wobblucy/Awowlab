@@ -1,0 +1,39 @@
+[
+{
+    "timestamp": 4340019,
+    "type": "absorbed",
+    "sourceID": 1,
+    "targetID": 1,
+    "abilityGameID": 203975,
+    "fight": 8,
+    "attackerID": 4,
+    "amount": 1241404,
+    "extraAbilityGameID": 1,
+    "sourceMarker": 2,
+    "targetMarker": 2
+},
+{
+    "timestamp": 4379626,
+    "type": "absorbed",
+    "sourceID": 93,
+    "targetID": 93,
+    "abilityGameID": 207203,
+    "fight": 8,
+    "attackerID": 4,
+    "amount": 59775,
+    "extraAbilityGameID": 1243702
+},
+{
+    "timestamp": 4427112,
+    "type": "absorbed",
+    "sourceID": 1,
+    "targetID": 1,
+    "abilityGameID": 203975,
+    "fight": 8,
+    "attackerID": 4,
+    "amount": 1253435,
+    "extraAbilityGameID": 1,
+    "sourceMarker": 2,
+    "targetMarker": 2
+}
+]

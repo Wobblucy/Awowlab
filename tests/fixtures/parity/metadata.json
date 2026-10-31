@@ -1,0 +1,26 @@
+{
+    "fight_start_time_wcl": 4294177,
+    "encounter_start_local_ms": 424991497,
+    "actor_mapping": {
+        "meatyhands": {
+            "wcl_id": 104,
+            "name": "Meatyhands-Tichondrius-US",
+            "local_guid": "Player-11-0E1C48C3"
+        },
+        "demonsruz": {
+            "wcl_id": 85,
+            "name": "Demonsruz-Tichondrius-US",
+            "local_guid": "Player-11-0E210C0B"
+        },
+        "living_mass": {
+            "wcl_id": 117,
+            "name": "Living Mass",
+            "local_guid": "Creature-0-3018-2810-26542-242587-000232672E"
+        },
+        "pargoth": {
+            "wcl_id": 196,
+            "name": "Pargoth",
+            "local_guid": "Creature-0-3018-2810-26542-245222-000032672D"
+        }
+    }
+}

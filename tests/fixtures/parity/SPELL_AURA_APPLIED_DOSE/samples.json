@@ -1,0 +1,29 @@
+[
+{
+    "timestamp": 4294194,
+    "type": "applybuffstack",
+    "sourceID": 81,
+    "targetID": 81,
+    "abilityGameID": 441248,
+    "fight": 8,
+    "stack": 2
+},
+{
+    "timestamp": 4400631,
+    "type": "applybuffstack",
+    "sourceID": 95,
+    "targetID": 98,
+    "abilityGameID": 272790,
+    "fight": 8,
+    "stack": 3
+},
+{
+    "timestamp": 4575958,
+    "type": "applybuffstack",
+    "sourceID": 94,
+    "targetID": 95,
+    "abilityGameID": 64844,
+    "fight": 8,
+    "stack": 3
+}
+]

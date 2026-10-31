@@ -1,0 +1,2774 @@
+{
+  "Adderis": {
+    "customShapeName": "model_1722611",
+    "npcId": "262530",
+    "displayId": "83550",
+    "m2_fdid": 1722611,
+    "source": "trash"
+  },
+  "Aka'ali the Conqueror": {
+    "customShapeName": "model_1995441",
+    "npcId": "269808",
+    "displayId": "84269",
+    "m2_fdid": 1995441,
+    "source": "trash"
+  },
+  "Aspix": {
+    "customShapeName": "model_1722600",
+    "npcId": "262822",
+    "displayId": "83552",
+    "m2_fdid": 1722600,
+    "source": "trash"
+  },
+  "Avatar of Sethraliss": {
+    "customShapeName": "model_1865877",
+    "npcId": "133392",
+    "displayId": "83203",
+    "m2_fdid": 1865877,
+    "source": "trash"
+  },
+  "Barbed Bulwark": {
+    "customShapeName": "model_234963",
+    "npcId": "269194",
+    "displayId": "2887",
+    "m2_fdid": 234963,
+    "source": "boss"
+  },
+  "Blazebound Firestorm": {
+    "customShapeName": "model_3952432",
+    "npcId": "189886",
+    "displayId": "102505",
+    "m2_fdid": 3952432,
+    "source": "trash"
+  },
+  "Blightscale Viper": {
+    "customShapeName": "model_234801",
+    "npcId": null,
+    "displayId": "2895",
+    "m2_fdid": 234801,
+    "source": "boss"
+  },
+  "Blood of Ula'tek": {
+    "customShapeName": "model_997378",
+    "npcId": "258558",
+    "displayId": "2874",
+    "m2_fdid": 997378,
+    "source": "boss"
+  },
+  "Bloodthorn Roots": {
+    "customShapeName": "model_251902",
+    "npcId": "253571",
+    "displayId": "28634",
+    "m2_fdid": 251902,
+    "source": "boss"
+  },
+  "Breath of Ula'tek": {
+    "customShapeName": "model_997378",
+    "npcId": "258557",
+    "displayId": "2874",
+    "m2_fdid": 997378,
+    "source": "boss"
+  },
+  "Broodling of Ithraz": {
+    "customShapeName": "model_234963",
+    "npcId": "270898",
+    "displayId": "2887",
+    "m2_fdid": 234963,
+    "source": "boss"
+  },
+  "Burning Venom": {
+    "customShapeName": "model_124643",
+    "npcId": "260905",
+    "displayId": "2882",
+    "m2_fdid": 124643,
+    "source": "boss"
+  },
+  "Clotting Venom": {
+    "customShapeName": "model_125264",
+    "npcId": null,
+    "displayId": "6168",
+    "m2_fdid": 125264,
+    "source": "boss"
+  },
+  "Corrupted Guardian": {
+    "customShapeName": "model_1722611",
+    "npcId": "268344",
+    "displayId": "84761",
+    "m2_fdid": 1722611,
+    "source": "trash"
+  },
+  "Crawling Clutch": {
+    "customShapeName": "model_959310",
+    "npcId": null,
+    "displayId": "6232",
+    "m2_fdid": 959310,
+    "source": "boss"
+  },
+  "Devourer's Spawn": {
+    "customShapeName": "model_234801",
+    "npcId": null,
+    "displayId": "2895",
+    "m2_fdid": 234801,
+    "source": "boss"
+  },
+  "Doomscale Warden": {
+    "customShapeName": "model_1018060",
+    "npcId": null,
+    "displayId": "6229",
+    "m2_fdid": 1018060,
+    "source": "boss"
+  },
+  "Echo of Jawae": {
+    "customShapeName": "model_125395",
+    "npcId": "263050",
+    "displayId": "6192",
+    "m2_fdid": 125395,
+    "source": "boss"
+  },
+  "Erkhart Stormvein": {
+    "customShapeName": "model_1022938",
+    "npcId": "190485",
+    "displayId": "108318",
+    "m2_fdid": 1022938,
+    "source": "trash"
+  },
+  "Essence Defiler": {
+    "customShapeName": "model_1018060",
+    "npcId": "268427",
+    "displayId": "84024",
+    "m2_fdid": 1018060,
+    "source": "trash"
+  },
+  "Faithless Tormentor": {
+    "customShapeName": "model_1722600",
+    "npcId": "268317",
+    "displayId": "80960",
+    "m2_fdid": 1722600,
+    "source": "trash"
+  },
+  "First Mate Nama": {
+    "customShapeName": "model_243581",
+    "npcId": "261835",
+    "displayId": "2894",
+    "m2_fdid": 243581,
+    "source": "boss"
+  },
+  "Forbidden Freight": {
+    "customShapeName": "model_7292881",
+    "npcId": "234852",
+    "displayId": "137176",
+    "m2_fdid": 7292881,
+    "source": "trash"
+  },
+  "Fractured Shivercore": {
+    "customShapeName": "model_4052268",
+    "npcId": "244759",
+    "displayId": "103231",
+    "m2_fdid": 4052268,
+    "source": "boss"
+  },
+  "Fragment of Malacrass": {
+    "customShapeName": "model_201132",
+    "npcId": null,
+    "displayId": "2883",
+    "m2_fdid": 201132,
+    "source": "boss"
+  },
+  "Furious Vilefiend": {
+    "customShapeName": "model_125045",
+    "npcId": null,
+    "displayId": "2682",
+    "m2_fdid": 125045,
+    "source": "boss"
+  },
+  "Galvazzt": {
+    "customShapeName": "model_1786375",
+    "npcId": "263658",
+    "displayId": "81654",
+    "m2_fdid": 1786375,
+    "source": "trash"
+  },
+  "Gore Rattle": {
+    "customShapeName": "model_124118",
+    "npcId": null,
+    "displayId": "6211",
+    "m2_fdid": 124118,
+    "source": "boss"
+  },
+  "Hex Lord Malacrass": {
+    "customShapeName": "model_201132",
+    "npcId": "259854",
+    "displayId": "2883",
+    "m2_fdid": 201132,
+    "source": "boss"
+  },
+  "Ikuzz the Light Hunter": {
+    "customShapeName": "model_5927977",
+    "npcId": "244887",
+    "displayId": "129424",
+    "m2_fdid": 5927977,
+    "source": "trash"
+  },
+  "Infernal": {
+    "customShapeName": "model_1098452",
+    "npcId": "238414",
+    "displayId": "103096",
+    "m2_fdid": 1098452,
+    "source": "trash"
+  },
+  "Infused Whelp": {
+    "customShapeName": "model_3947971",
+    "npcId": "187894",
+    "displayId": "110633",
+    "m2_fdid": 3947971,
+    "source": "trash"
+  },
+  "Ithraz": {
+    "customShapeName": "model_234963",
+    "npcId": "257368",
+    "displayId": "2887",
+    "m2_fdid": 234963,
+    "source": "boss"
+  },
+  "Ko'kia Blazehoof": {
+    "customShapeName": "model_123088",
+    "npcId": null,
+    "displayId": "2485",
+    "m2_fdid": 123088,
+    "source": "boss"
+  },
+  "Kula the Butcher": {
+    "customShapeName": "model_1662187",
+    "npcId": "269811",
+    "displayId": "84272",
+    "m2_fdid": 1662187,
+    "source": "trash"
+  },
+  "Kyrakka": {
+    "customShapeName": "model_4496325",
+    "npcId": "190484",
+    "displayId": "107137",
+    "m2_fdid": 4496325,
+    "source": "trash"
+  },
+  "Kystia Manaheart": {
+    "customShapeName": "model_1100258",
+    "npcId": "234648",
+    "displayId": "124578",
+    "m2_fdid": 1100258,
+    "source": "trash"
+  },
+  "Latent Cultist": {
+    "customShapeName": "model_125395",
+    "npcId": null,
+    "displayId": "6191",
+    "m2_fdid": 125395,
+    "source": "boss"
+  },
+  "Lekshi": {
+    "customShapeName": "model_6240657",
+    "npcId": "243030",
+    "displayId": "139025",
+    "m2_fdid": 6240657,
+    "source": "trash"
+  },
+  "Lightspawn Lasher": {
+    "customShapeName": "model_6247694",
+    "npcId": "247755",
+    "displayId": "131589",
+    "m2_fdid": 6247694,
+    "source": "trash"
+  },
+  "Lightwarden Ruia": {
+    "customShapeName": "model_5422149",
+    "npcId": "245912",
+    "displayId": "129856",
+    "m2_fdid": 5422149,
+    "source": "trash"
+  },
+  "Lithiel Cinderfury": {
+    "customShapeName": "model_1100258",
+    "npcId": "234763",
+    "displayId": "124577",
+    "m2_fdid": 1100258,
+    "source": "trash"
+  },
+  "Manifestation of Dread": {
+    "customShapeName": "model_201132",
+    "npcId": "261218",
+    "displayId": "2883",
+    "m2_fdid": 201132,
+    "source": "boss"
+  },
+  "Mchimba the Embalmer": {
+    "customShapeName": "model_1874876",
+    "npcId": "134993",
+    "displayId": "83529",
+    "m2_fdid": 1874876,
+    "source": "trash"
+  },
+  "Meittik": {
+    "customShapeName": "model_6240657",
+    "npcId": "243028",
+    "displayId": "129588",
+    "m2_fdid": 6240657,
+    "source": "trash"
+  },
+  "Melidrussa Chillworn": {
+    "customShapeName": "model_921844",
+    "npcId": "188252",
+    "displayId": "106891",
+    "m2_fdid": 921844,
+    "source": "trash"
+  },
+  "Merektha": {
+    "customShapeName": "model_2201186",
+    "npcId": "133384",
+    "displayId": "88585",
+    "m2_fdid": 2201186,
+    "source": "trash"
+  },
+  "Mor'zahi": {
+    "customShapeName": "model_2010243",
+    "npcId": "261584",
+    "displayId": "6196",
+    "m2_fdid": 2010243,
+    "source": "boss"
+  },
+  "Nek'zali": {
+    "customShapeName": "model_234770",
+    "npcId": null,
+    "displayId": "2888",
+    "m2_fdid": 234770,
+    "source": "boss"
+  },
+  "Nibbles": {
+    "customShapeName": "model_6253063",
+    "npcId": "234660",
+    "displayId": "126199",
+    "m2_fdid": 6253063,
+    "source": "trash"
+  },
+  "Raised Amani": {
+    "customShapeName": "model_125395",
+    "npcId": "261509",
+    "displayId": "6190",
+    "m2_fdid": 125395,
+    "source": "boss"
+  },
+  "Rav'i": {
+    "customShapeName": "model_7133449",
+    "npcId": "259445",
+    "displayId": "144110",
+    "m2_fdid": 7133449,
+    "source": "trash"
+  },
+  "Rotten Mushroom": {
+    "customShapeName": "model_124640",
+    "npcId": null,
+    "displayId": "129345",
+    "m2_fdid": 124640,
+    "source": "boss"
+  },
+  "Scrollsage Iku": {
+    "customShapeName": "model_2010243",
+    "npcId": "261843",
+    "displayId": "6195",
+    "m2_fdid": 2010243,
+    "source": "boss"
+  },
+  "Shrouded Venom": {
+    "customShapeName": "model_125263",
+    "npcId": "260895",
+    "displayId": "6171",
+    "m2_fdid": 125263,
+    "source": "boss"
+  },
+  "Slithering Clutch": {
+    "customShapeName": "model_234801",
+    "npcId": null,
+    "displayId": "2895",
+    "m2_fdid": 234801,
+    "source": "boss"
+  },
+  "Spawn of Vexhul": {
+    "customShapeName": "model_997378",
+    "npcId": "264023",
+    "displayId": "6234",
+    "m2_fdid": 997378,
+    "source": "boss"
+  },
+  "Spiteful Soulcoiler": {
+    "customShapeName": "model_974343",
+    "npcId": "261521",
+    "displayId": "6231",
+    "m2_fdid": 974343,
+    "source": "boss"
+  },
+  "Sszorak": {
+    "customShapeName": "model_950080",
+    "npcId": "257347",
+    "displayId": "6128",
+    "m2_fdid": 950080,
+    "source": "boss"
+  },
+  "Storm Serpent": {
+    "customShapeName": "model_1670968",
+    "npcId": "134390",
+    "displayId": "78247",
+    "m2_fdid": 1670968,
+    "source": "trash"
+  },
+  "Taz'Rah": {
+    "customShapeName": "model_5926159",
+    "npcId": "238887",
+    "displayId": "140300",
+    "m2_fdid": 5926159,
+    "source": "trash"
+  },
+  "The Golden Serpent": {
+    "customShapeName": "model_1661930",
+    "npcId": "135322",
+    "displayId": "84202",
+    "m2_fdid": 1661930,
+    "source": "trash"
+  },
+  "The Writhing Coil": {
+    "customShapeName": "model_7133447",
+    "npcId": "259446",
+    "displayId": "144156",
+    "m2_fdid": 7133447,
+    "source": "trash"
+  },
+  "Toxic Blightscale": {
+    "customShapeName": "model_234801",
+    "npcId": null,
+    "displayId": "2895",
+    "m2_fdid": 234801,
+    "source": "boss"
+  },
+  "Toxic Creeper": {
+    "customShapeName": "model_6046787",
+    "npcId": "239070",
+    "displayId": "140374",
+    "m2_fdid": 6046787,
+    "source": "trash"
+  },
+  "Toxic Viper": {
+    "customShapeName": "model_1670968",
+    "npcId": "134389",
+    "displayId": "78250",
+    "m2_fdid": 1670968,
+    "source": "trash"
+  },
+  "Trader Gebbo": {
+    "customShapeName": "model_1011653",
+    "npcId": "261848",
+    "displayId": "6194",
+    "m2_fdid": 1011653,
+    "source": "boss"
+  },
+  "Twisted Hexxer": {
+    "customShapeName": "model_1630447",
+    "npcId": "136250",
+    "displayId": "84676",
+    "m2_fdid": 1630447,
+    "source": "trash"
+  },
+  "Ula'tek": {
+    "customShapeName": "model_234801",
+    "npcId": null,
+    "displayId": "2895",
+    "m2_fdid": 234801,
+    "source": "boss"
+  },
+  "Vashnik the Malignant": {
+    "customShapeName": "model_125264",
+    "npcId": null,
+    "displayId": "6170",
+    "m2_fdid": 125264,
+    "source": "boss"
+  },
+  "Venomous Birthling": {
+    "customShapeName": "model_234801",
+    "npcId": null,
+    "displayId": "2895",
+    "m2_fdid": 234801,
+    "source": "boss"
+  },
+  "Vexhul": {
+    "customShapeName": "model_234963",
+    "npcId": "257361",
+    "displayId": "2887",
+    "m2_fdid": 234963,
+    "source": "boss"
+  },
+  "Xathuux the Annihilator": {
+    "customShapeName": "model_1349024",
+    "npcId": "234647",
+    "displayId": "140268",
+    "m2_fdid": 1349024,
+    "source": "trash"
+  },
+  "Zaen Bladesorrow": {
+    "customShapeName": "model_1100087",
+    "npcId": "234649",
+    "displayId": "124592",
+    "m2_fdid": 1100087,
+    "source": "trash"
+  },
+  "Zanazal the Wise": {
+    "customShapeName": "model_1630447",
+    "npcId": "269810",
+    "displayId": "84271",
+    "m2_fdid": 1630447,
+    "source": "trash"
+  },
+  "Zul'jan": {
+    "customShapeName": "model_6225159",
+    "npcId": "259447",
+    "displayId": "145435",
+    "m2_fdid": 6225159,
+    "source": "trash"
+  },
+  "A Knot of Snakes": {
+    "customShapeName": "model_353152",
+    "npcId": "134388",
+    "displayId": "83574",
+    "m2_fdid": 353152,
+    "source": "trash"
+  },
+  "Abducted Drakonid": {
+    "customShapeName": "model_4217881",
+    "npcId": "249461",
+    "displayId": "140299",
+    "m2_fdid": 4217881,
+    "source": "trash"
+  },
+  "Agitated Nimbus": {
+    "customShapeName": "model_1249243",
+    "npcId": "136076",
+    "displayId": "65631",
+    "m2_fdid": 1249243,
+    "source": "trash"
+  },
+  "Agitated Voidscythe": {
+    "customShapeName": "model_6051319",
+    "npcId": "263228",
+    "displayId": "138723",
+    "m2_fdid": 6051319,
+    "source": "trash"
+  },
+  "Aldwin Laughlin": {
+    "customShapeName": "model_124410",
+    "npcId": "4974",
+    "displayId": "2974",
+    "m2_fdid": 124410,
+    "source": "trash"
+  },
+  "Alleria Windrunner": {
+    "customShapeName": "model_1624825",
+    "npcId": "123187",
+    "displayId": "76272",
+    "m2_fdid": 1624825,
+    "source": "trash"
+  },
+  "Aln'sharan": {
+    "customShapeName": "model_577443",
+    "npcId": "242086",
+    "displayId": "128173",
+    "m2_fdid": 577443,
+    "source": "trash"
+  },
+  "Alyn Black": {
+    "customShapeName": "model_1011653",
+    "npcId": "61834",
+    "displayId": "42273",
+    "m2_fdid": 1011653,
+    "source": "trash"
+  },
+  "Angry Krolusk": {
+    "customShapeName": "model_1566953",
+    "npcId": "249590",
+    "displayId": "141195",
+    "m2_fdid": 1566953,
+    "source": "trash"
+  },
+  "Animated Gold": {
+    "customShapeName": "model_2059757",
+    "npcId": "135406",
+    "displayId": "88651",
+    "m2_fdid": 2059757,
+    "source": "trash"
+  },
+  "Animated Guardian": {
+    "customShapeName": "model_1721658",
+    "npcId": "133935",
+    "displayId": "83252",
+    "m2_fdid": 1721658,
+    "source": "trash"
+  },
+  "Arcane Tripwire": {
+    "customShapeName": "model_1112735",
+    "npcId": "252870",
+    "displayId": "328",
+    "m2_fdid": 1112735,
+    "source": "trash"
+  },
+  "Ascendant Serpent": {
+    "customShapeName": "model_7545081",
+    "npcId": "261573",
+    "displayId": "146299",
+    "m2_fdid": 7545081,
+    "source": "trash"
+  },
+  "Ashseer Flamelasher": {
+    "customShapeName": "model_1022938",
+    "npcId": "190206",
+    "displayId": "102969",
+    "m2_fdid": 1022938,
+    "source": "trash"
+  },
+  "Atroxus": {
+    "customShapeName": "model_6423200",
+    "npcId": "239008",
+    "displayId": "131553",
+    "m2_fdid": 6423200,
+    "source": "trash"
+  },
+  "Auctioneer Chilton": {
+    "customShapeName": "model_124804",
+    "npcId": "8670",
+    "displayId": "7991",
+    "m2_fdid": 124804,
+    "source": "trash"
+  },
+  "Avatar of Determination": {
+    "customShapeName": "model_1505169",
+    "npcId": "241869",
+    "displayId": "128095",
+    "m2_fdid": 1505169,
+    "source": "trash"
+  },
+  "Avatar of Starvation": {
+    "customShapeName": "model_234884",
+    "npcId": "241805",
+    "displayId": "141003",
+    "m2_fdid": 234884,
+    "source": "trash"
+  },
+  "Barbed Krolusk": {
+    "customShapeName": "model_1566953",
+    "npcId": "134616",
+    "displayId": "83787",
+    "m2_fdid": 1566953,
+    "source": "trash"
+  },
+  "Belath Dawnblade": {
+    "customShapeName": "model_1100087",
+    "npcId": "235850",
+    "displayId": "129619",
+    "m2_fdid": 1100087,
+    "source": "trash"
+  },
+  "Ben Trias": {
+    "customShapeName": "model_1011653",
+    "npcId": "4981",
+    "displayId": "5547",
+    "m2_fdid": 1011653,
+    "source": "trash"
+  },
+  "Blacksmithing Follower - Alliance": {
+    "customShapeName": "model_1000764",
+    "npcId": "88403",
+    "displayId": "53955",
+    "m2_fdid": 1000764,
+    "source": "trash"
+  },
+  "Blade of the Altar": {
+    "customShapeName": "model_7224879",
+    "npcId": "271453",
+    "displayId": "142336",
+    "m2_fdid": 7224879,
+    "source": "trash"
+  },
+  "Blazebound Destroyer": {
+    "customShapeName": "model_3952432",
+    "npcId": "190034",
+    "displayId": "102505",
+    "m2_fdid": 3952432,
+    "source": "trash"
+  },
+  "Blistercreep": {
+    "customShapeName": "model_6256526",
+    "npcId": "243736",
+    "displayId": "141204",
+    "m2_fdid": 6256526,
+    "source": "trash"
+  },
+  "Bloodletter": {
+    "customShapeName": "model_1670968",
+    "npcId": "261552",
+    "displayId": "146661",
+    "m2_fdid": 1670968,
+    "source": "trash"
+  },
+  "Bloodsworn Assassin": {
+    "customShapeName": "model_1716306",
+    "npcId": "137485",
+    "displayId": "85285",
+    "m2_fdid": 1716306,
+    "source": "trash"
+  },
+  "Bonded Beasttamer": {
+    "customShapeName": "model_1022938",
+    "npcId": "245145",
+    "displayId": "129581",
+    "m2_fdid": 1022938,
+    "source": "trash"
+  },
+  "Bouncy Mushroom": {
+    "customShapeName": "model_5482013",
+    "npcId": "268045",
+    "displayId": "113253",
+    "m2_fdid": 5482013,
+    "source": "trash"
+  },
+  "Bound Voidcaller": {
+    "customShapeName": "model_1410362",
+    "npcId": "122412",
+    "displayId": "71758",
+    "m2_fdid": 1410362,
+    "source": "trash"
+  },
+  "Bribed Captain": {
+    "customShapeName": "model_1100087",
+    "npcId": "252529",
+    "displayId": "137450",
+    "m2_fdid": 1100087,
+    "source": "trash"
+  },
+  "Bribed Guard": {
+    "customShapeName": "model_1100087",
+    "npcId": "236071",
+    "displayId": "126157",
+    "m2_fdid": 1100087,
+    "source": "trash"
+  },
+  "Brood Tender": {
+    "customShapeName": "model_1722600",
+    "npcId": "139425",
+    "displayId": "83444",
+    "m2_fdid": 1722600,
+    "source": "trash"
+  },
+  "Brutal Overseer": {
+    "customShapeName": "model_6211933",
+    "npcId": "252053",
+    "displayId": "137329",
+    "m2_fdid": 6211933,
+    "source": "trash"
+  },
+  "Brutok": {
+    "customShapeName": "model_1095530",
+    "npcId": "244309",
+    "displayId": "140264",
+    "m2_fdid": 1095530,
+    "source": "trash"
+  },
+  "Bubblefin Berserker": {
+    "customShapeName": "model_360359",
+    "npcId": "253180",
+    "displayId": "86462",
+    "m2_fdid": 360359,
+    "source": "trash"
+  },
+  "Bubblefin Frostscale": {
+    "customShapeName": "model_4693104",
+    "npcId": "257892",
+    "displayId": "110491",
+    "m2_fdid": 4693104,
+    "source": "trash"
+  },
+  "Bubblefin Shorerunner": {
+    "customShapeName": "model_1113034",
+    "npcId": "253032",
+    "displayId": "139267",
+    "m2_fdid": 1113034,
+    "source": "trash"
+  },
+  "Charonus": {
+    "customShapeName": "model_6181816",
+    "npcId": "239167",
+    "displayId": "138269",
+    "m2_fdid": 6181816,
+    "source": "trash"
+  },
+  "Chitigoth": {
+    "customShapeName": "model_613599",
+    "npcId": "244260",
+    "displayId": "140256",
+    "m2_fdid": 613599,
+    "source": "trash"
+  },
+  "Circuit Seer": {
+    "customShapeName": "model_5926159",
+    "npcId": "248373",
+    "displayId": "131484",
+    "m2_fdid": 5926159,
+    "source": "trash"
+  },
+  "Coalesced Void": {
+    "customShapeName": "model_853120",
+    "npcId": "122716",
+    "displayId": "76601",
+    "m2_fdid": 853120,
+    "source": "trash"
+  },
+  "Core Technician": {
+    "customShapeName": "model_5926159",
+    "npcId": "249711",
+    "displayId": "132030",
+    "m2_fdid": 5926159,
+    "source": "trash"
+  },
+  "Corespark Conduit": {
+    "customShapeName": "model_5932230",
+    "npcId": "252852",
+    "displayId": "138268",
+    "m2_fdid": 5932230,
+    "source": "trash"
+  },
+  "Corewarden Nysarra": {
+    "customShapeName": "model_6181818",
+    "npcId": "241542",
+    "displayId": "131511",
+    "m2_fdid": 6181818,
+    "source": "trash"
+  },
+  "Corewright Arcanist": {
+    "customShapeName": "model_6152557",
+    "npcId": "241644",
+    "displayId": "131625",
+    "m2_fdid": 6152557,
+    "source": "trash"
+  },
+  "Corrupted Warlock": {
+    "customShapeName": "model_1100087",
+    "npcId": "235265",
+    "displayId": "124763",
+    "m2_fdid": 1100087,
+    "source": "trash"
+  },
+  "Crate Loader": {
+    "customShapeName": "model_1100087",
+    "npcId": "234860",
+    "displayId": "140261",
+    "m2_fdid": 1100087,
+    "source": "trash"
+  },
+  "Creepy Statue": {
+    "customShapeName": "model_987996",
+    "npcId": "264706",
+    "displayId": "61849",
+    "m2_fdid": 987996,
+    "source": "trash"
+  },
+  "Curious Yearling": {
+    "customShapeName": "model_4532352",
+    "npcId": "241809",
+    "displayId": "141179",
+    "m2_fdid": 4532352,
+    "source": "trash"
+  },
+  "Cursed Bones": {
+    "customShapeName": "model_6153821",
+    "npcId": "272104",
+    "displayId": "137924",
+    "m2_fdid": 6153821,
+    "source": "trash"
+  },
+  "Cursed Voidcaller": {
+    "customShapeName": "model_6705352",
+    "npcId": "248706",
+    "displayId": "131624",
+    "m2_fdid": 6705352,
+    "source": "trash"
+  },
+  "Dark Conjurer": {
+    "customShapeName": "model_6152557",
+    "npcId": "122405",
+    "displayId": "124411",
+    "m2_fdid": 6152557,
+    "source": "trash"
+  },
+  "Darkfang": {
+    "customShapeName": "model_1591786",
+    "npcId": "122319",
+    "displayId": "76602",
+    "m2_fdid": 1591786,
+    "source": "trash"
+  },
+  "Deepstone Earthshaper": {
+    "customShapeName": "model_878772",
+    "npcId": "187969",
+    "displayId": "102955",
+    "m2_fdid": 878772,
+    "source": "trash"
+  },
+  "Defier Draghar": {
+    "customShapeName": "model_4217881",
+    "npcId": "187897",
+    "displayId": "107106",
+    "m2_fdid": 4217881,
+    "source": "trash"
+  },
+  "Defiled Golem": {
+    "customShapeName": "model_6316091",
+    "npcId": "235322",
+    "displayId": "137564",
+    "m2_fdid": 6316091,
+    "source": "trash"
+  },
+  "Demon Fly": {
+    "customShapeName": "model_1624281",
+    "npcId": "235257",
+    "displayId": "77024",
+    "m2_fdid": 1624281,
+    "source": "trash"
+  },
+  "Demonic Gateway": {
+    "customShapeName": "model_7373458",
+    "npcId": "235597",
+    "displayId": "138185",
+    "m2_fdid": 7373458,
+    "source": "trash"
+  },
+  "Devouring Brutalizer": {
+    "customShapeName": "model_6181818",
+    "npcId": "268184",
+    "displayId": "142611",
+    "m2_fdid": 6181818,
+    "source": "trash"
+  },
+  "Dire Voidbender": {
+    "customShapeName": "model_6152557",
+    "npcId": "122404",
+    "displayId": "124412",
+    "m2_fdid": 6152557,
+    "source": "trash"
+  },
+  "Disgusting Fish": {
+    "customShapeName": "model_8062022",
+    "npcId": "265670",
+    "displayId": "144920",
+    "m2_fdid": 8062022,
+    "source": "trash"
+  },
+  "Dominated Brawler": {
+    "customShapeName": "model_6211933",
+    "npcId": "238883",
+    "displayId": "130200",
+    "m2_fdid": 6211933,
+    "source": "trash"
+  },
+  "Doomguard": {
+    "customShapeName": "model_1115848",
+    "npcId": "253278",
+    "displayId": "113717",
+    "m2_fdid": 1115848,
+    "source": "trash"
+  },
+  "Draggled Vermin": {
+    "customShapeName": "model_5865739",
+    "npcId": "250978",
+    "displayId": "120521",
+    "m2_fdid": 5865739,
+    "source": "trash"
+  },
+  "Dreadflail": {
+    "customShapeName": "model_6181818",
+    "npcId": "248506",
+    "displayId": "131531",
+    "m2_fdid": 6181818,
+    "source": "trash"
+  },
+  "Drowned Echo": {
+    "customShapeName": "model_1695668",
+    "npcId": "268204",
+    "displayId": "147111",
+    "m2_fdid": 1695668,
+    "source": "trash"
+  },
+  "Duskfright Herald": {
+    "customShapeName": "model_6181816",
+    "npcId": "241660",
+    "displayId": "131525",
+    "m2_fdid": 6181816,
+    "source": "trash"
+  },
+  "Dutiful Tamer": {
+    "customShapeName": "model_1722611",
+    "npcId": "139422",
+    "displayId": "84761",
+    "m2_fdid": 1722611,
+    "source": "trash"
+  },
+  "Earthbound Guardian": {
+    "customShapeName": "model_1709847",
+    "npcId": "188011",
+    "displayId": "79800",
+    "m2_fdid": 1709847,
+    "source": "trash"
+  },
+  "Earthwhisper Tender": {
+    "customShapeName": "model_4066013",
+    "npcId": "241814",
+    "displayId": "128080",
+    "m2_fdid": 4066013,
+    "source": "trash"
+  },
+  "Egg Marker": {
+    "customShapeName": "model_124639",
+    "npcId": "263181",
+    "displayId": "55649",
+    "m2_fdid": 124639,
+    "source": "trash"
+  },
+  "Elaine Trias": {
+    "customShapeName": "model_1000764",
+    "npcId": "483",
+    "displayId": "5546",
+    "m2_fdid": 1000764,
+    "source": "trash"
+  },
+  "Elling Trias": {
+    "customShapeName": "model_1011653",
+    "npcId": "482",
+    "displayId": "3246",
+    "m2_fdid": 1011653,
+    "source": "trash"
+  },
+  "Embalming Fluid": {
+    "customShapeName": "model_390813",
+    "npcId": "137989",
+    "displayId": "33008",
+    "m2_fdid": 390813,
+    "source": "trash"
+  },
+  "Enchanted Broom": {
+    "customShapeName": "model_5045776",
+    "npcId": "103033",
+    "displayId": "16910",
+    "m2_fdid": 5045776,
+    "source": "trash"
+  },
+  "Enraged Domanaar": {
+    "customShapeName": "model_6181820",
+    "npcId": "252354",
+    "displayId": "139047",
+    "m2_fdid": 6181820,
+    "source": "trash"
+  },
+  "Enraged Shards": {
+    "customShapeName": "model_2101161",
+    "npcId": "187075",
+    "displayId": "107485",
+    "m2_fdid": 2101161,
+    "source": "trash"
+  },
+  "Enthralled Shaman": {
+    "customShapeName": "model_6211933",
+    "npcId": "241496",
+    "displayId": "130201",
+    "m2_fdid": 6211933,
+    "source": "trash"
+  },
+  "Ethereal Shade": {
+    "customShapeName": "model_5926159",
+    "npcId": "254677",
+    "displayId": "124083",
+    "m2_fdid": 5926159,
+    "source": "trash"
+  },
+  "Explosive Bomb": {
+    "customShapeName": "model_308826",
+    "npcId": "266037",
+    "displayId": "145049",
+    "m2_fdid": 308826,
+    "source": "trash"
+  },
+  "Explosive Totem": {
+    "customShapeName": "model_1940567",
+    "npcId": "135764",
+    "displayId": "84933",
+    "m2_fdid": 1940567,
+    "source": "trash"
+  },
+  "Faithless Conscript": {
+    "customShapeName": "model_1722600",
+    "npcId": "135971",
+    "displayId": "88179",
+    "m2_fdid": 1722600,
+    "source": "trash"
+  },
+  "Faithless Spireguard": {
+    "customShapeName": "model_1722611",
+    "npcId": "129776",
+    "displayId": "83716",
+    "m2_fdid": 1722611,
+    "source": "trash"
+  },
+  "Faithless Subjugator": {
+    "customShapeName": "model_1722600",
+    "npcId": "134364",
+    "displayId": "86510",
+    "m2_fdid": 1722600,
+    "source": "trash"
+  },
+  "Famished Broken": {
+    "customShapeName": "model_1574725",
+    "npcId": "122322",
+    "displayId": "75479",
+    "m2_fdid": 1574725,
+    "source": "trash"
+  },
+  "Fel Bat": {
+    "customShapeName": "model_1321517",
+    "npcId": "238390",
+    "displayId": "137896",
+    "m2_fdid": 1321517,
+    "source": "trash"
+  },
+  "Fel Invoker": {
+    "customShapeName": "model_1100258",
+    "npcId": "235268",
+    "displayId": "124770",
+    "m2_fdid": 1100258,
+    "source": "trash"
+  },
+  "Felcaster Neophyte": {
+    "customShapeName": "model_1100258",
+    "npcId": "238380",
+    "displayId": "124770",
+    "m2_fdid": 1100258,
+    "source": "trash"
+  },
+  "Felmaster Lucsei": {
+    "customShapeName": "model_1100087",
+    "npcId": "236905",
+    "displayId": "138787",
+    "m2_fdid": 1100087,
+    "source": "trash"
+  },
+  "Felonious Mage": {
+    "customShapeName": "model_1100258",
+    "npcId": "236084",
+    "displayId": "129784",
+    "m2_fdid": 1100258,
+    "source": "trash"
+  },
+  "Felwyrm": {
+    "customShapeName": "model_6253063",
+    "npcId": "236085",
+    "displayId": "139997",
+    "m2_fdid": 6253063,
+    "source": "trash"
+  },
+  "Feral Saberon": {
+    "customShapeName": "model_982557",
+    "npcId": "243988",
+    "displayId": "140041",
+    "m2_fdid": 982557,
+    "source": "trash"
+  },
+  "Fetid Roach": {
+    "customShapeName": "model_5795291",
+    "npcId": "254927",
+    "displayId": "120514",
+    "m2_fdid": 5795291,
+    "source": "trash"
+  },
+  "Flamegullet": {
+    "customShapeName": "model_4496325",
+    "npcId": "197697",
+    "displayId": "106023",
+    "m2_fdid": 4496325,
+    "source": "trash"
+  },
+  "Flarebat": {
+    "customShapeName": "model_2966279",
+    "npcId": "254928",
+    "displayId": "138559",
+    "m2_fdid": 2966279,
+    "source": "trash"
+  },
+  "Flashfrost Chillweaver": {
+    "customShapeName": "model_974343",
+    "npcId": "188067",
+    "displayId": "107397",
+    "m2_fdid": 974343,
+    "source": "trash"
+  },
+  "Flashfrost Tarasek": {
+    "customShapeName": "model_4485357",
+    "npcId": "187089",
+    "displayId": "107479",
+    "m2_fdid": 4485357,
+    "source": "trash"
+  },
+  "Flux Engineer": {
+    "customShapeName": "model_5926159",
+    "npcId": "241647",
+    "displayId": "131487",
+    "m2_fdid": 5926159,
+    "source": "trash"
+  },
+  "Fractured Image": {
+    "customShapeName": "model_3743312",
+    "npcId": "251568",
+    "displayId": "136110",
+    "m2_fdid": 3743312,
+    "source": "trash"
+  },
+  "Frigid Mauler": {
+    "customShapeName": "model_4062295",
+    "npcId": "241872",
+    "displayId": "141288",
+    "m2_fdid": 4062295,
+    "source": "trash"
+  },
+  "Frostfang": {
+    "customShapeName": "model_1350103",
+    "npcId": "241874",
+    "displayId": "141223",
+    "m2_fdid": 1350103,
+    "source": "trash"
+  },
+  "Frostwyrm's Fury": {
+    "customShapeName": "model_346110",
+    "npcId": "92870",
+    "displayId": "137930",
+    "m2_fdid": 346110,
+    "source": "trash"
+  },
+  "Gavin Marlsbury": {
+    "customShapeName": "model_307454",
+    "npcId": "61838",
+    "displayId": "42276",
+    "m2_fdid": 307454,
+    "source": "trash"
+  },
+  "Ghostly Brute": {
+    "customShapeName": "model_1709122",
+    "npcId": "135231",
+    "displayId": "85125",
+    "m2_fdid": 1709122,
+    "source": "trash"
+  },
+  "Glacial Revenant": {
+    "customShapeName": "model_3948746",
+    "npcId": "241876",
+    "displayId": "103213",
+    "m2_fdid": 3948746,
+    "source": "trash"
+  },
+  "Grand Nullifier": {
+    "customShapeName": "model_6705352",
+    "npcId": "251031",
+    "displayId": "137240",
+    "m2_fdid": 6705352,
+    "source": "trash"
+  },
+  "Grand Shadow-Weaver": {
+    "customShapeName": "model_6152557",
+    "npcId": "122423",
+    "displayId": "124089",
+    "m2_fdid": 6152557,
+    "source": "trash"
+  },
+  "Grizzled Warbringer": {
+    "customShapeName": "model_123058",
+    "npcId": "245146",
+    "displayId": "131630",
+    "m2_fdid": 123058,
+    "source": "trash"
+  },
+  "Guard Captain Atu": {
+    "customShapeName": "model_1716306",
+    "npcId": "137473",
+    "displayId": "85270",
+    "m2_fdid": 1716306,
+    "source": "trash"
+  },
+  "Gulpling": {
+    "customShapeName": "model_1618556",
+    "npcId": "255407",
+    "displayId": "76759",
+    "m2_fdid": 1618556,
+    "source": "trash"
+  },
+  "Half-Finished Mummy": {
+    "customShapeName": "model_1630447",
+    "npcId": "270502",
+    "displayId": "84688",
+    "m2_fdid": 1630447,
+    "source": "trash"
+  },
+  "Hatchling": {
+    "customShapeName": "model_801469",
+    "npcId": "261556",
+    "displayId": "146662",
+    "m2_fdid": 801469,
+    "source": "trash"
+  },
+  "Herald of Frost": {
+    "customShapeName": "model_3948746",
+    "npcId": "191315",
+    "displayId": "103228",
+    "m2_fdid": 3948746,
+    "source": "trash"
+  },
+  "High Channeler Ryvati": {
+    "customShapeName": "model_986648",
+    "npcId": "197535",
+    "displayId": "110966",
+    "m2_fdid": 986648,
+    "source": "trash"
+  },
+  "High Evolutionist": {
+    "customShapeName": "model_7224879",
+    "npcId": "261557",
+    "displayId": "146663",
+    "m2_fdid": 7224879,
+    "source": "trash"
+  },
+  "High Inquisitor Whitemane": {
+    "customShapeName": "model_1000764",
+    "npcId": "221633",
+    "displayId": "119365",
+    "m2_fdid": 1000764,
+    "source": "trash"
+  },
+  "Highlord Darion Mograine": {
+    "customShapeName": "model_1011653",
+    "npcId": "221632",
+    "displayId": "119368",
+    "m2_fdid": 1011653,
+    "source": "trash"
+  },
+  "Hollowsoul Scrounger": {
+    "customShapeName": "model_6377937",
+    "npcId": "241645",
+    "displayId": "131528",
+    "m2_fdid": 6377937,
+    "source": "trash"
+  },
+  "Honored Raptor": {
+    "customShapeName": "model_1886694",
+    "npcId": "135192",
+    "displayId": "84133",
+    "m2_fdid": 1886694,
+    "source": "trash"
+  },
+  "Horrific Siphoid": {
+    "customShapeName": "model_7110402",
+    "npcId": "248724",
+    "displayId": "130544",
+    "m2_fdid": 7110402,
+    "source": "trash"
+  },
+  "Ian Drake": {
+    "customShapeName": "model_1011653",
+    "npcId": "29093",
+    "displayId": "25901",
+    "m2_fdid": 1011653,
+    "source": "trash"
+  },
+  "Imbued Stormcaller": {
+    "customShapeName": "model_1722600",
+    "npcId": "134599",
+    "displayId": "83779",
+    "m2_fdid": 1722600,
+    "source": "trash"
+  },
+  "Influentual Reviewer": {
+    "customShapeName": "model_1100258",
+    "npcId": "253081",
+    "displayId": "136524",
+    "m2_fdid": 1100258,
+    "source": "trash"
+  },
+  "Infused Egg": {
+    "customShapeName": "model_4094537",
+    "npcId": "189595",
+    "displayId": "104556",
+    "m2_fdid": 4094537,
+    "source": "trash"
+  },
+  "Infused Eggs": {
+    "customShapeName": "model_7277181",
+    "npcId": "264798",
+    "displayId": "144271",
+    "m2_fdid": 7277181,
+    "source": "trash"
+  },
+  "Insatiable Siphoid": {
+    "customShapeName": "model_7110402",
+    "npcId": "248723",
+    "displayId": "130542",
+    "m2_fdid": 7110402,
+    "source": "trash"
+  },
+  "Interment Construct": {
+    "customShapeName": "model_796529",
+    "npcId": "137969",
+    "displayId": "85677",
+    "m2_fdid": 796529,
+    "source": "trash"
+  },
+  "Kasreth": {
+    "customShapeName": "model_5926159",
+    "npcId": "241539",
+    "displayId": "131510",
+    "m2_fdid": 5926159,
+    "source": "trash"
+  },
+  "Kaznormu": {
+    "customShapeName": "model_3947971",
+    "npcId": "253231",
+    "displayId": "102137",
+    "m2_fdid": 3947971,
+    "source": "trash"
+  },
+  "Keen Taskmaster": {
+    "customShapeName": "model_1100087",
+    "npcId": "236897",
+    "displayId": "136657",
+    "m2_fdid": 1100087,
+    "source": "trash"
+  },
+  "Keen-Eyed Striker": {
+    "customShapeName": "model_6163242",
+    "npcId": "241816",
+    "displayId": "124212",
+    "m2_fdid": 6163242,
+    "source": "trash"
+  },
+  "Kezkitt": {
+    "customShapeName": "model_6240657",
+    "npcId": "243029",
+    "displayId": "139027",
+    "m2_fdid": 6240657,
+    "source": "trash"
+  },
+  "Kilivore Screamer": {
+    "customShapeName": "model_986212",
+    "npcId": "243766",
+    "displayId": "141196",
+    "m2_fdid": 986212,
+    "source": "trash"
+  },
+  "King Dazar": {
+    "customShapeName": "model_1928970",
+    "npcId": "136160",
+    "displayId": "84352",
+    "m2_fdid": 1928970,
+    "source": "trash"
+  },
+  "King Thoras Trollbane": {
+    "customShapeName": "model_1011653",
+    "npcId": "221635",
+    "displayId": "119367",
+    "m2_fdid": 1011653,
+    "source": "trash"
+  },
+  "King Timalji": {
+    "customShapeName": "model_1630447",
+    "npcId": "137474",
+    "displayId": "85272",
+    "m2_fdid": 1630447,
+    "source": "trash"
+  },
+  "Kokia Blazehoof": {
+    "customShapeName": "model_1630402",
+    "npcId": "189232",
+    "displayId": "106851",
+    "m2_fdid": 1630402,
+    "source": "trash"
+  },
+  "Krolusk Matriarch": {
+    "customShapeName": "model_1566953",
+    "npcId": "134686",
+    "displayId": "75595",
+    "m2_fdid": 1566953,
+    "source": "trash"
+  },
+  "L'ura": {
+    "customShapeName": "model_1605112",
+    "npcId": "124729",
+    "displayId": "141808",
+    "m2_fdid": 1605112,
+    "source": "trash"
+  },
+  "Lady Liadrin": {
+    "customShapeName": "model_6225127",
+    "npcId": "263790",
+    "displayId": "136435",
+    "m2_fdid": 6225127,
+    "source": "trash"
+  },
+  "Lasher": {
+    "customShapeName": "model_1722688",
+    "npcId": "245410",
+    "displayId": "104473",
+    "m2_fdid": 1722688,
+    "source": "trash"
+  },
+  "Leafy Grovecrawler": {
+    "customShapeName": "model_5884351",
+    "npcId": "245460",
+    "displayId": "128068",
+    "m2_fdid": 5884351,
+    "source": "trash"
+  },
+  "Legion Axe": {
+    "customShapeName": "model_605596",
+    "npcId": "235520",
+    "displayId": "16956",
+    "m2_fdid": 605596,
+    "source": "trash"
+  },
+  "Life Pools Crasher": {
+    "customShapeName": "model_4227968",
+    "npcId": "187105",
+    "displayId": "107487",
+    "m2_fdid": 4227968,
+    "source": "trash"
+  },
+  "Life Pools Stalwart": {
+    "customShapeName": "model_4252337",
+    "npcId": "187107",
+    "displayId": "107701",
+    "m2_fdid": 4252337,
+    "source": "trash"
+  },
+  "Lightblossom": {
+    "customShapeName": "model_7233269",
+    "npcId": "244528",
+    "displayId": "129261",
+    "m2_fdid": 7233269,
+    "source": "trash"
+  },
+  "Lightfeather Petalwing": {
+    "customShapeName": "model_6379356",
+    "npcId": "245484",
+    "displayId": "136758",
+    "m2_fdid": 6379356,
+    "source": "trash"
+  },
+  "Lightgorged Lasher": {
+    "customShapeName": "model_6247694",
+    "npcId": "245345",
+    "displayId": "125875",
+    "m2_fdid": 6247694,
+    "source": "trash"
+  },
+  "Lightning Serpent": {
+    "customShapeName": "model_1670968",
+    "npcId": "135846",
+    "displayId": "78247",
+    "m2_fdid": 1670968,
+    "source": "trash"
+  },
+  "Lightwrought": {
+    "customShapeName": "model_3952432",
+    "npcId": "254926",
+    "displayId": "140804",
+    "m2_fdid": 3952432,
+    "source": "trash"
+  },
+  "Lindormi": {
+    "customShapeName": "model_589715",
+    "npcId": "197915",
+    "displayId": "109669",
+    "m2_fdid": 589715,
+    "source": "trash"
+  },
+  "Lingering Image": {
+    "customShapeName": "model_6730408",
+    "npcId": "241642",
+    "displayId": "140945",
+    "m2_fdid": 6730408,
+    "source": "trash"
+  },
+  "Loa Speaker Nanea": {
+    "customShapeName": "model_6366139",
+    "npcId": "244889",
+    "displayId": "138584",
+    "m2_fdid": 6366139,
+    "source": "trash"
+  },
+  "Longtooth Tuskarr": {
+    "customShapeName": "model_4039115",
+    "npcId": "243985",
+    "displayId": "140034",
+    "m2_fdid": 4039115,
+    "source": "trash"
+  },
+  "Loose Spark": {
+    "customShapeName": "model_331801",
+    "npcId": "136108",
+    "displayId": "51418",
+    "m2_fdid": 331801,
+    "source": "trash"
+  },
+  "Lost Sethrak": {
+    "customShapeName": "model_1722611",
+    "npcId": "243996",
+    "displayId": "140045",
+    "m2_fdid": 1722611,
+    "source": "trash"
+  },
+  "Lothraxion": {
+    "customShapeName": "model_6730408",
+    "npcId": "241546",
+    "displayId": "137705",
+    "m2_fdid": 6730408,
+    "source": "trash"
+  },
+  "Loyal Saberfang": {
+    "customShapeName": "model_6254408",
+    "npcId": "245190",
+    "displayId": "124949",
+    "m2_fdid": 6254408,
+    "source": "trash"
+  },
+  "Luminous Thornmaw": {
+    "customShapeName": "model_6078519",
+    "npcId": "246871",
+    "displayId": "126929",
+    "m2_fdid": 6078519,
+    "source": "trash"
+  },
+  "Magister's Missive": {
+    "customShapeName": "model_6402839",
+    "npcId": "265903",
+    "displayId": "129133",
+    "m2_fdid": 6402839,
+    "source": "trash"
+  },
+  "Magma Totem": {
+    "customShapeName": "model_328325",
+    "npcId": "248666",
+    "displayId": "30762",
+    "m2_fdid": 328325,
+    "source": "trash"
+  },
+  "Malefic Voidwalker": {
+    "customShapeName": "model_3087474",
+    "npcId": "248759",
+    "displayId": "130547",
+    "m2_fdid": 3087474,
+    "source": "trash"
+  },
+  "Malfunctioning Construct": {
+    "customShapeName": "model_1721658",
+    "npcId": "141806",
+    "displayId": "81103",
+    "m2_fdid": 1721658,
+    "source": "trash"
+  },
+  "Malignant Tumor": {
+    "customShapeName": "model_3055290",
+    "npcId": "269430",
+    "displayId": "146425",
+    "m2_fdid": 3055290,
+    "source": "trash"
+  },
+  "Mana Battery": {
+    "customShapeName": "model_5928068",
+    "npcId": "252825",
+    "displayId": "137629",
+    "m2_fdid": 5928068,
+    "source": "trash"
+  },
+  "Masked Noble": {
+    "customShapeName": "model_1100258",
+    "npcId": "236088",
+    "displayId": "140207",
+    "m2_fdid": 1100258,
+    "source": "trash"
+  },
+  "Massive Felwyrm": {
+    "customShapeName": "model_6253063",
+    "npcId": "236902",
+    "displayId": "139996",
+    "m2_fdid": 6253063,
+    "source": "trash"
+  },
+  "Mature Slasher": {
+    "customShapeName": "model_4252337",
+    "npcId": "187108",
+    "displayId": "109751",
+    "m2_fdid": 4252337,
+    "source": "trash"
+  },
+  "Merciless Subjugator": {
+    "customShapeName": "model_1572377",
+    "npcId": "124171",
+    "displayId": "75011",
+    "m2_fdid": 1572377,
+    "source": "trash"
+  },
+  "Messenger Aelor": {
+    "customShapeName": "model_1734034",
+    "npcId": "257544",
+    "displayId": "140229",
+    "m2_fdid": 1734034,
+    "source": "trash"
+  },
+  "Minion of Zul": {
+    "customShapeName": "model_123949",
+    "npcId": "133943",
+    "displayId": "76055",
+    "m2_fdid": 123949,
+    "source": "trash"
+  },
+  "Moni Widdlesprock": {
+    "customShapeName": "model_940356",
+    "npcId": "61836",
+    "displayId": "42274",
+    "m2_fdid": 940356,
+    "source": "trash"
+  },
+  "Nalorakk": {
+    "customShapeName": "model_6237648",
+    "npcId": "246404",
+    "displayId": "129989",
+    "m2_fdid": 6237648,
+    "source": "trash"
+  },
+  "Nauseous Patron": {
+    "customShapeName": "model_1100258",
+    "npcId": "240289",
+    "displayId": "136524",
+    "m2_fdid": 1100258,
+    "source": "trash"
+  },
+  "Nazgrim": {
+    "customShapeName": "model_917116",
+    "npcId": "221634",
+    "displayId": "119366",
+    "m2_fdid": 917116,
+    "source": "trash"
+  },
+  "Nek'zali the Soulcoiler": {
+    "customShapeName": "model_7490191",
+    "npcId": "259927",
+    "displayId": "142077",
+    "m2_fdid": 7490191,
+    "source": "trash"
+  },
+  "Newborn Potadpole": {
+    "customShapeName": "model_6674331",
+    "npcId": "250202",
+    "displayId": "131772",
+    "m2_fdid": 6674331,
+    "source": "trash"
+  },
+  "Nexus Adept": {
+    "customShapeName": "model_6152557",
+    "npcId": "248708",
+    "displayId": "131532",
+    "m2_fdid": 6152557,
+    "source": "trash"
+  },
+  "Note of Despair": {
+    "customShapeName": "model_404989",
+    "npcId": "255535",
+    "displayId": "5187",
+    "m2_fdid": 404989,
+    "source": "trash"
+  },
+  "Null Sentinel": {
+    "customShapeName": "model_6181814",
+    "npcId": "248502",
+    "displayId": "131526",
+    "m2_fdid": 6181814,
+    "source": "trash"
+  },
+  "Nymrissa Wavecaller": {
+    "customShapeName": "model_2200488",
+    "npcId": "252959",
+    "displayId": "137687",
+    "m2_fdid": 2200488,
+    "source": "trash"
+  },
+  "Orb Watcher": {
+    "customShapeName": "model_1722611",
+    "npcId": "135007",
+    "displayId": "84503",
+    "m2_fdid": 1722611,
+    "source": "trash"
+  },
+  "Orweyna": {
+    "customShapeName": "model_5633401",
+    "npcId": "263792",
+    "displayId": "117116",
+    "m2_fdid": 5633401,
+    "source": "trash"
+  },
+  "Overgrown Hydra": {
+    "customShapeName": "model_6247696",
+    "npcId": "245513",
+    "displayId": "142839",
+    "m2_fdid": 6247696,
+    "source": "trash"
+  },
+  "Path Helper": {
+    "customShapeName": "model_1112735",
+    "npcId": "257109",
+    "displayId": "21955",
+    "m2_fdid": 1112735,
+    "source": "trash"
+  },
+  "Pestering Swarm": {
+    "customShapeName": "model_1712371",
+    "npcId": "250102",
+    "displayId": "79805",
+    "m2_fdid": 1712371,
+    "source": "trash"
+  },
+  "Phantom Hex Priest": {
+    "customShapeName": "model_1630447",
+    "npcId": "135204",
+    "displayId": "84140",
+    "m2_fdid": 1630447,
+    "source": "trash"
+  },
+  "Poisonous Viper": {
+    "customShapeName": "model_1670968",
+    "npcId": "135562",
+    "displayId": "78250",
+    "m2_fdid": 1670968,
+    "source": "trash"
+  },
+  "Potadpole Egg": {
+    "customShapeName": "model_1711713",
+    "npcId": "249783",
+    "displayId": "83115",
+    "m2_fdid": 1711713,
+    "source": "trash"
+  },
+  "Potatoad Matriarch": {
+    "customShapeName": "model_5884357",
+    "npcId": "249756",
+    "displayId": "136026",
+    "m2_fdid": 5884357,
+    "source": "trash"
+  },
+  "Primal Avalanche": {
+    "customShapeName": "model_4050827",
+    "npcId": "187082",
+    "displayId": "102508",
+    "m2_fdid": 4050827,
+    "source": "trash"
+  },
+  "Primal Juggernaut": {
+    "customShapeName": "model_4050827",
+    "npcId": "188244",
+    "displayId": "101209",
+    "m2_fdid": 4050827,
+    "source": "trash"
+  },
+  "Primal Serpent": {
+    "customShapeName": "model_7109496",
+    "npcId": "261560",
+    "displayId": "146653",
+    "m2_fdid": 7109496,
+    "source": "trash"
+  },
+  "Primal Thundercloud": {
+    "customShapeName": "model_3946582",
+    "npcId": "197509",
+    "displayId": "102516",
+    "m2_fdid": 3946582,
+    "source": "trash"
+  },
+  "Primalist Cinderweaver": {
+    "customShapeName": "model_1100258",
+    "npcId": "190207",
+    "displayId": "102886",
+    "m2_fdid": 1100258,
+    "source": "trash"
+  },
+  "Protective Turtle": {
+    "customShapeName": "model_418699",
+    "npcId": "249603",
+    "displayId": "140295",
+    "m2_fdid": 418699,
+    "source": "trash"
+  },
+  "Purification Construct": {
+    "customShapeName": "model_1721658",
+    "npcId": "134739",
+    "displayId": "83836",
+    "m2_fdid": 1721658,
+    "source": "trash"
+  },
+  "Queen Patlaa": {
+    "customShapeName": "model_1662187",
+    "npcId": "137486",
+    "displayId": "85287",
+    "m2_fdid": 1662187,
+    "source": "trash"
+  },
+  "Queen Wasi": {
+    "customShapeName": "model_1662187",
+    "npcId": "137478",
+    "displayId": "85274",
+    "m2_fdid": 1662187,
+    "source": "trash"
+  },
+  "Radiant Spellsower": {
+    "customShapeName": "model_6240657",
+    "npcId": "245336",
+    "displayId": "127945",
+    "m2_fdid": 6240657,
+    "source": "trash"
+  },
+  "Radiant Swarm": {
+    "customShapeName": "model_1112735",
+    "npcId": "254932",
+    "displayId": "52309",
+    "m2_fdid": 1112735,
+    "source": "trash"
+  },
+  "Raging Raptor": {
+    "customShapeName": "model_125559",
+    "npcId": "249608",
+    "displayId": "141194",
+    "m2_fdid": 125559,
+    "source": "trash"
+  },
+  "Raj'kess the Spellstorm": {
+    "customShapeName": "model_120263",
+    "npcId": "267546",
+    "displayId": "143575",
+    "m2_fdid": 120263,
+    "source": "trash"
+  },
+  "Ramparts Watcher": {
+    "customShapeName": "model_3087474",
+    "npcId": "247802",
+    "displayId": "142721",
+    "m2_fdid": 3087474,
+    "source": "trash"
+  },
+  "Rattling Writhe": {
+    "customShapeName": "model_7133447",
+    "npcId": "262011",
+    "displayId": "146664",
+    "m2_fdid": 7133447,
+    "source": "trash"
+  },
+  "Ravenous Descendant": {
+    "customShapeName": "model_7133443",
+    "npcId": "261553",
+    "displayId": "146654",
+    "m2_fdid": 7133443,
+    "source": "trash"
+  },
+  "Ravenous Umbralfin": {
+    "customShapeName": "model_1570694",
+    "npcId": "255320",
+    "displayId": "74902",
+    "m2_fdid": 1570694,
+    "source": "trash"
+  },
+  "Reban": {
+    "customShapeName": "model_1886694",
+    "npcId": "136984",
+    "displayId": "84273",
+    "m2_fdid": 1886694,
+    "source": "trash"
+  },
+  "Reformed Voidling": {
+    "customShapeName": "model_7344962",
+    "npcId": "248501",
+    "displayId": "131529",
+    "m2_fdid": 7344962,
+    "source": "trash"
+  },
+  "Renato Gallina": {
+    "customShapeName": "model_666616",
+    "npcId": "1432",
+    "displayId": "5074",
+    "m2_fdid": 666616,
+    "source": "trash"
+  },
+  "Rift Warden": {
+    "customShapeName": "model_6705352",
+    "npcId": "122571",
+    "displayId": "136883",
+    "m2_fdid": 6705352,
+    "source": "trash"
+  },
+  "Risen Ghoul": {
+    "customShapeName": "model_1574384",
+    "npcId": "26125",
+    "displayId": "24994",
+    "m2_fdid": 1574384,
+    "source": "trash"
+  },
+  "Risen Hexer": {
+    "customShapeName": "model_1695668",
+    "npcId": "134174",
+    "displayId": "83371",
+    "m2_fdid": 1695668,
+    "source": "trash"
+  },
+  "Ritual Chieftain": {
+    "customShapeName": "model_7133443",
+    "npcId": "270306",
+    "displayId": "146680",
+    "m2_fdid": 7133443,
+    "source": "trash"
+  },
+  "Ritual Spirit": {
+    "customShapeName": "model_7133443",
+    "npcId": "270378",
+    "displayId": "146372",
+    "m2_fdid": 7133443,
+    "source": "trash"
+  },
+  "Rogue Krolusk": {
+    "customShapeName": "model_1566953",
+    "npcId": "134617",
+    "displayId": "83790",
+    "m2_fdid": 1566953,
+    "source": "trash"
+  },
+  "Row Hooligan": {
+    "customShapeName": "model_1100087",
+    "npcId": "236073",
+    "displayId": "136939",
+    "m2_fdid": 1100087,
+    "source": "trash"
+  },
+  "Row Snitch": {
+    "customShapeName": "model_1100258",
+    "npcId": "237723",
+    "displayId": "128954",
+    "m2_fdid": 1100258,
+    "source": "trash"
+  },
+  "Rowdy Patron": {
+    "customShapeName": "model_1100258",
+    "npcId": "236525",
+    "displayId": "136524",
+    "m2_fdid": 1100258,
+    "source": "trash"
+  },
+  "Royal Berserker": {
+    "customShapeName": "model_1630447",
+    "npcId": "135167",
+    "displayId": "84112",
+    "m2_fdid": 1630447,
+    "source": "trash"
+  },
+  "Ruby Commander": {
+    "customShapeName": "model_4183015",
+    "npcId": "187102",
+    "displayId": "102689",
+    "m2_fdid": 4183015,
+    "source": "trash"
+  },
+  "Ruby Culler": {
+    "customShapeName": "model_4217881",
+    "npcId": "187117",
+    "displayId": "102741",
+    "m2_fdid": 4217881,
+    "source": "trash"
+  },
+  "Ruby Sitter": {
+    "customShapeName": "model_4216711",
+    "npcId": "188086",
+    "displayId": "102721",
+    "m2_fdid": 4216711,
+    "source": "trash"
+  },
+  "Ruby Watcher": {
+    "customShapeName": "model_4183015",
+    "npcId": "187097",
+    "displayId": "102697",
+    "m2_fdid": 4183015,
+    "source": "trash"
+  },
+  "Ruthless Totemcaller": {
+    "customShapeName": "model_1022938",
+    "npcId": "245143",
+    "displayId": "129563",
+    "m2_fdid": 1022938,
+    "source": "trash"
+  },
+  "Sand-Sworn Rider": {
+    "customShapeName": "model_1722611",
+    "npcId": "134629",
+    "displayId": "84761",
+    "m2_fdid": 1722611,
+    "source": "trash"
+  },
+  "Sandfury Stonefist": {
+    "customShapeName": "model_1709122",
+    "npcId": "134991",
+    "displayId": "84207",
+    "m2_fdid": 1709122,
+    "source": "trash"
+  },
+  "Sandswept Hunter": {
+    "customShapeName": "model_1722611",
+    "npcId": "134600",
+    "displayId": "83780",
+    "m2_fdid": 1722611,
+    "source": "trash"
+  },
+  "Sandswept Marksman": {
+    "customShapeName": "model_1722611",
+    "npcId": "139097",
+    "displayId": "83780",
+    "m2_fdid": 1722611,
+    "source": "trash"
+  },
+  "Saprish": {
+    "customShapeName": "model_1572417",
+    "npcId": "122316",
+    "displayId": "143117",
+    "m2_fdid": 1572417,
+    "source": "trash"
+  },
+  "Satiated Avatar of Starvation": {
+    "customShapeName": "model_234884",
+    "npcId": "252041",
+    "displayId": "141003",
+    "m2_fdid": 234884,
+    "source": "trash"
+  },
+  "Savage Shredclaw": {
+    "customShapeName": "model_6225355",
+    "npcId": "243835",
+    "displayId": "141810",
+    "m2_fdid": 6225355,
+    "source": "trash"
+  },
+  "Scarred Voidspawn": {
+    "customShapeName": "model_7344962",
+    "npcId": "247995",
+    "displayId": "130543",
+    "m2_fdid": 7344962,
+    "source": "trash"
+  },
+  "Scavenging Siphoid": {
+    "customShapeName": "model_7110402",
+    "npcId": "252508",
+    "displayId": "141207",
+    "m2_fdid": 7110402,
+    "source": "trash"
+  },
+  "Scorchling": {
+    "customShapeName": "model_3952432",
+    "npcId": "190205",
+    "displayId": "102535",
+    "m2_fdid": 3952432,
+    "source": "trash"
+  },
+  "Seductive Sayaad": {
+    "customShapeName": "model_1537008",
+    "npcId": "236082",
+    "displayId": "77400",
+    "m2_fdid": 1537008,
+    "source": "trash"
+  },
+  "Selenar Sunshy": {
+    "customShapeName": "model_1100087",
+    "npcId": "235841",
+    "displayId": "105873",
+    "m2_fdid": 1100087,
+    "source": "trash"
+  },
+  "Seneschal M'bara": {
+    "customShapeName": "model_1716306",
+    "npcId": "134251",
+    "displayId": "83517",
+    "m2_fdid": 1716306,
+    "source": "trash"
+  },
+  "Sentinel of Winter": {
+    "customShapeName": "model_4074868",
+    "npcId": "244100",
+    "displayId": "129418",
+    "m2_fdid": 4074868,
+    "source": "trash"
+  },
+  "Shadewing": {
+    "customShapeName": "model_1570694",
+    "npcId": "125340",
+    "displayId": "78427",
+    "m2_fdid": 1570694,
+    "source": "trash"
+  },
+  "Shadow of Zul": {
+    "customShapeName": "model_1928040",
+    "npcId": "138489",
+    "displayId": "85860",
+    "m2_fdid": 1928040,
+    "source": "trash"
+  },
+  "Shadow-Borne Champion": {
+    "customShapeName": "model_1719446",
+    "npcId": "134158",
+    "displayId": "83364",
+    "m2_fdid": 1719446,
+    "source": "trash"
+  },
+  "Shadowguard Champion": {
+    "customShapeName": "model_6152557",
+    "npcId": "122403",
+    "displayId": "124440",
+    "m2_fdid": 6152557,
+    "source": "trash"
+  },
+  "Shadowguard Defender": {
+    "customShapeName": "model_6152557",
+    "npcId": "241643",
+    "displayId": "131485",
+    "m2_fdid": 6152557,
+    "source": "trash"
+  },
+  "Shay Pressler": {
+    "customShapeName": "model_1011653",
+    "npcId": "46602",
+    "displayId": "37372",
+    "m2_fdid": 1011653,
+    "source": "trash"
+  },
+  "Shivan Punisher": {
+    "customShapeName": "model_1617431",
+    "npcId": "235465",
+    "displayId": "76712",
+    "m2_fdid": 1617431,
+    "source": "trash"
+  },
+  "Shrouded Fang": {
+    "customShapeName": "model_1722611",
+    "npcId": "134602",
+    "displayId": "83782",
+    "m2_fdid": 1722611,
+    "source": "trash"
+  },
+  "Silvermoon Patron": {
+    "customShapeName": "model_1100258",
+    "npcId": "234984",
+    "displayId": "136524",
+    "m2_fdid": 1100258,
+    "source": "trash"
+  },
+  "Skeletal Hunting Raptor": {
+    "customShapeName": "model_405423",
+    "npcId": "137487",
+    "displayId": "33733",
+    "m2_fdid": 405423,
+    "source": "trash"
+  },
+  "Smudge": {
+    "customShapeName": "model_853124",
+    "npcId": "248769",
+    "displayId": "141002",
+    "m2_fdid": 853124,
+    "source": "trash"
+  },
+  "Snake": {
+    "customShapeName": "model_915265",
+    "npcId": "263383",
+    "displayId": "7409",
+    "m2_fdid": 915265,
+    "source": "trash"
+  },
+  "Solid Egg": {
+    "customShapeName": "model_1706666",
+    "npcId": "139300",
+    "displayId": "83181",
+    "m2_fdid": 1706666,
+    "source": "trash"
+  },
+  "Spark Channeler": {
+    "customShapeName": "model_1722600",
+    "npcId": "139110",
+    "displayId": "83553",
+    "m2_fdid": 1722600,
+    "source": "trash"
+  },
+  "Spectral Shaman": {
+    "customShapeName": "model_1662187",
+    "npcId": "135239",
+    "displayId": "84163",
+    "m2_fdid": 1662187,
+    "source": "trash"
+  },
+  "Spineshield Beetle": {
+    "customShapeName": "model_4421211",
+    "npcId": "245527",
+    "displayId": "110392",
+    "m2_fdid": 4421211,
+    "source": "trash"
+  },
+  "Spirit Bear": {
+    "customShapeName": "model_6218499",
+    "npcId": "246367",
+    "displayId": "129858",
+    "m2_fdid": 6218499,
+    "source": "trash"
+  },
+  "Spirit Moonkin": {
+    "customShapeName": "model_6181811",
+    "npcId": "246371",
+    "displayId": "137347",
+    "m2_fdid": 6181811,
+    "source": "trash"
+  },
+  "Spirit of Hunger": {
+    "customShapeName": "model_234884",
+    "npcId": "245855",
+    "displayId": "26857",
+    "m2_fdid": 234884,
+    "source": "trash"
+  },
+  "Splitting Venom": {
+    "customShapeName": "model_800898",
+    "npcId": "259408",
+    "displayId": "145366",
+    "m2_fdid": 800898,
+    "source": "trash"
+  },
+  "Sporeblight Belcher": {
+    "customShapeName": "model_6121550",
+    "npcId": "254850",
+    "displayId": "126462",
+    "m2_fdid": 6121550,
+    "source": "trash"
+  },
+  "Starvation Effigy": {
+    "customShapeName": "model_2481162",
+    "npcId": "245567",
+    "displayId": "129707",
+    "m2_fdid": 2481162,
+    "source": "trash"
+  },
+  "Static Anomaly": {
+    "customShapeName": "model_1786375",
+    "npcId": "134691",
+    "displayId": "81655",
+    "m2_fdid": 1786375,
+    "source": "trash"
+  },
+  "Storm Adept": {
+    "customShapeName": "model_1018060",
+    "npcId": "134990",
+    "displayId": "84024",
+    "m2_fdid": 1018060,
+    "source": "trash"
+  },
+  "Storm Warrior": {
+    "customShapeName": "model_974343",
+    "npcId": "197982",
+    "displayId": "110964",
+    "m2_fdid": 974343,
+    "source": "trash"
+  },
+  "Stormbound Mystic": {
+    "customShapeName": "model_1018060",
+    "npcId": "245139",
+    "displayId": "129562",
+    "m2_fdid": 1018060,
+    "source": "trash"
+  },
+  "Street Sneak": {
+    "customShapeName": "model_1100087",
+    "npcId": "236091",
+    "displayId": "137441",
+    "m2_fdid": 1100087,
+    "source": "trash"
+  },
+  "Summoner Jawae": {
+    "customShapeName": "model_6366139",
+    "npcId": "263473",
+    "displayId": "143697",
+    "m2_fdid": 6366139,
+    "source": "trash"
+  },
+  "Sycophantic Tarasek": {
+    "customShapeName": "model_4485357",
+    "npcId": "243983",
+    "displayId": "140037",
+    "m2_fdid": 4485357,
+    "source": "trash"
+  },
+  "T'zala": {
+    "customShapeName": "model_1719222",
+    "npcId": "136976",
+    "displayId": "84274",
+    "m2_fdid": 1719222,
+    "source": "trash"
+  },
+  "Tempest Channeler": {
+    "customShapeName": "model_921844",
+    "npcId": "198047",
+    "displayId": "110967",
+    "m2_fdid": 921844,
+    "source": "trash"
+  },
+  "Temple Disruptor": {
+    "customShapeName": "model_1722600",
+    "npcId": "269227",
+    "displayId": "80961",
+    "m2_fdid": 1722600,
+    "source": "trash"
+  },
+  "Terra Rumbler": {
+    "customShapeName": "model_426122",
+    "npcId": "241911",
+    "displayId": "35201",
+    "m2_fdid": 426122,
+    "source": "trash"
+  },
+  "Territorial Matriarch": {
+    "customShapeName": "model_1266661",
+    "npcId": "241808",
+    "displayId": "14316",
+    "m2_fdid": 1266661,
+    "source": "trash"
+  },
+  "The Hoardmonger": {
+    "customShapeName": "model_4066013",
+    "npcId": "241812",
+    "displayId": "129344",
+    "m2_fdid": 4066013,
+    "source": "trash"
+  },
+  "The Pale Eye": {
+    "customShapeName": "model_196754",
+    "npcId": "245076",
+    "displayId": "129498",
+    "m2_fdid": 196754,
+    "source": "trash"
+  },
+  "The Winter Squall": {
+    "customShapeName": "model_3946582",
+    "npcId": "250478",
+    "displayId": "138885",
+    "m2_fdid": 3946582,
+    "source": "trash"
+  },
+  "Thomas Miller": {
+    "customShapeName": "model_1011653",
+    "npcId": "3518",
+    "displayId": "1541",
+    "m2_fdid": 1011653,
+    "source": "trash"
+  },
+  "Thornclaw Gatherer": {
+    "customShapeName": "model_4066013",
+    "npcId": "241813",
+    "displayId": "141213",
+    "m2_fdid": 4066013,
+    "source": "trash"
+  },
+  "Thorny Saptor": {
+    "customShapeName": "model_6730402",
+    "npcId": "245473",
+    "displayId": "122805",
+    "m2_fdid": 6730402,
+    "source": "trash"
+  },
+  "Thundering Totem": {
+    "customShapeName": "model_1940573",
+    "npcId": "135761",
+    "displayId": "84680",
+    "m2_fdid": 1940573,
+    "source": "trash"
+  },
+  "Thurman Mullby": {
+    "customShapeName": "model_1011653",
+    "npcId": "1285",
+    "displayId": "1434",
+    "m2_fdid": 1011653,
+    "source": "trash"
+  },
+  "Tidebound Brute": {
+    "customShapeName": "model_1275197",
+    "npcId": "270305",
+    "displayId": "67527",
+    "m2_fdid": 1275197,
+    "source": "trash"
+  },
+  "Tiny Felwyrm": {
+    "customShapeName": "model_6253063",
+    "npcId": "253324",
+    "displayId": "139997",
+    "m2_fdid": 6253063,
+    "source": "trash"
+  },
+  "Torrent Totem": {
+    "customShapeName": "model_1940575",
+    "npcId": "135765",
+    "displayId": "84934",
+    "m2_fdid": 1940575,
+    "source": "trash"
+  },
+  "Trained Felhunter": {
+    "customShapeName": "model_1245325",
+    "npcId": "235261",
+    "displayId": "144382",
+    "m2_fdid": 1245325,
+    "source": "trash"
+  },
+  "Treacherous Voidspawn": {
+    "customShapeName": "model_7344962",
+    "npcId": "248760",
+    "displayId": "130545",
+    "m2_fdid": 7344962,
+    "source": "trash"
+  },
+  "Twinfang Harrower": {
+    "customShapeName": "model_7133445",
+    "npcId": "261554",
+    "displayId": "142386",
+    "m2_fdid": 7133445,
+    "source": "trash"
+  },
+  "Ula'tek's Chosen": {
+    "customShapeName": "model_7224879",
+    "npcId": "263109",
+    "displayId": "142327",
+    "m2_fdid": 7224879,
+    "source": "trash"
+  },
+  "Umbral Tentacle": {
+    "customShapeName": "model_1601821",
+    "npcId": "122827",
+    "displayId": "77103",
+    "m2_fdid": 1601821,
+    "source": "trash"
+  },
+  "Umbral War-Adept": {
+    "customShapeName": "model_5926159",
+    "npcId": "122421",
+    "displayId": "124453",
+    "m2_fdid": 5926159,
+    "source": "trash"
+  },
+  "Umbral Warrior": {
+    "customShapeName": "model_1719446",
+    "npcId": "134157",
+    "displayId": "83363",
+    "m2_fdid": 1719446,
+    "source": "trash"
+  },
+  "Uncoiled Writhe": {
+    "customShapeName": "model_1670968",
+    "npcId": "262398",
+    "displayId": "142361",
+    "m2_fdid": 1670968,
+    "source": "trash"
+  },
+  "Underbrush Stalker": {
+    "customShapeName": "model_6240657",
+    "npcId": "245339",
+    "displayId": "127942",
+    "m2_fdid": 6240657,
+    "source": "trash"
+  },
+  "Unleashed Imp": {
+    "customShapeName": "model_1098889",
+    "npcId": "234849",
+    "displayId": "65901",
+    "m2_fdid": 1098889,
+    "source": "trash"
+  },
+  "Untainted Spirit Guide": {
+    "customShapeName": "model_1630447",
+    "npcId": "141086",
+    "displayId": "87046",
+    "m2_fdid": 1630447,
+    "source": "trash"
+  },
+  "Useless Junk": {
+    "customShapeName": "model_950769",
+    "npcId": "270069",
+    "displayId": "60240",
+    "m2_fdid": 950769,
+    "source": "trash"
+  },
+  "Vashnik": {
+    "customShapeName": "model_7377755",
+    "npcId": "259181",
+    "displayId": "141675",
+    "m2_fdid": 7377755,
+    "source": "trash"
+  },
+  "Venom Coagulation": {
+    "customShapeName": "model_5313922",
+    "npcId": "260766",
+    "displayId": "116611",
+    "m2_fdid": 5313922,
+    "source": "trash"
+  },
+  "Venom Leech": {
+    "customShapeName": "model_6247698",
+    "npcId": "261550",
+    "displayId": "146598",
+    "m2_fdid": 6247698,
+    "source": "trash"
+  },
+  "Viceroy Nezhar": {
+    "customShapeName": "model_1601820",
+    "npcId": "122056",
+    "displayId": "78415",
+    "m2_fdid": 1601820,
+    "source": "trash"
+  },
+  "Virid Grovekeeper": {
+    "customShapeName": "model_6240657",
+    "npcId": "245346",
+    "displayId": "127946",
+    "m2_fdid": 6240657,
+    "source": "trash"
+  },
+  "Void Portal": {
+    "customShapeName": "model_124639",
+    "npcId": "125102",
+    "displayId": "123031",
+    "m2_fdid": 124639,
+    "source": "trash"
+  },
+  "Void Rift": {
+    "customShapeName": "model_404989",
+    "npcId": "254542",
+    "displayId": "5187",
+    "m2_fdid": 404989,
+    "source": "trash"
+  },
+  "Void Shades": {
+    "customShapeName": "model_1572417",
+    "npcId": "259426",
+    "displayId": "141582",
+    "m2_fdid": 1572417,
+    "source": "trash"
+  },
+  "Void-Infused Destroyer": {
+    "customShapeName": "model_6254042",
+    "npcId": "252756",
+    "displayId": "126552",
+    "m2_fdid": 6254042,
+    "source": "trash"
+  },
+  "Voidminder": {
+    "customShapeName": "model_6377937",
+    "npcId": "244708",
+    "displayId": "140373",
+    "m2_fdid": 6377937,
+    "source": "trash"
+  },
+  "Voidtouched Magi": {
+    "customShapeName": "model_6211933",
+    "npcId": "252072",
+    "displayId": "137330",
+    "m2_fdid": 6211933,
+    "source": "trash"
+  },
+  "Volatile Totem": {
+    "customShapeName": "model_328325",
+    "npcId": "272074",
+    "displayId": "30762",
+    "m2_fdid": 328325,
+    "source": "trash"
+  },
+  "Warding Incense": {
+    "customShapeName": "model_5002712",
+    "npcId": "257419",
+    "displayId": "140091",
+    "m2_fdid": 5002712,
+    "source": "trash"
+  },
+  "Warehouse Worker": {
+    "customShapeName": "model_1100258",
+    "npcId": "236893",
+    "displayId": "136834",
+    "m2_fdid": 1100258,
+    "source": "trash"
+  },
+  "Watchful Harrower": {
+    "customShapeName": "model_6658800",
+    "npcId": "245950",
+    "displayId": "141286",
+    "m2_fdid": 6658800,
+    "source": "trash"
+  },
+  "Waystone": {
+    "customShapeName": "model_6941861",
+    "npcId": "247012",
+    "displayId": "142553",
+    "m2_fdid": 6941861,
+    "source": "trash"
+  },
+  "Wild Imp": {
+    "customShapeName": "model_1138493",
+    "npcId": "237626",
+    "displayId": "77406",
+    "m2_fdid": 1138493,
+    "source": "trash"
+  },
+  "Wrathguard Flayer": {
+    "customShapeName": "model_1127297",
+    "npcId": "235267",
+    "displayId": "63968",
+    "m2_fdid": 1127297,
+    "source": "trash"
+  },
+  "Xitostrasz": {
+    "customShapeName": "model_4416923",
+    "npcId": "190252",
+    "displayId": "106938",
+    "m2_fdid": 4416923,
+    "source": "trash"
+  },
+  "Ziekket": {
+    "customShapeName": "model_6795857",
+    "npcId": "247676",
+    "displayId": "136619",
+    "m2_fdid": 6795857,
+    "source": "trash"
+  },
+  "Zul'jarra": {
+    "customShapeName": "model_6225161",
+    "npcId": "246409",
+    "displayId": "125149",
+    "m2_fdid": 6225161,
+    "source": "trash"
+  },
+  "Zuraal the Ascended": {
+    "customShapeName": "model_1659554",
+    "npcId": "122313",
+    "displayId": "77871",
+    "m2_fdid": 1659554,
+    "source": "trash"
+  },
+  "[DNT] Visual Stalker": {
+    "customShapeName": "model_1516641",
+    "npcId": "244492",
+    "displayId": "75375",
+    "m2_fdid": 1516641,
+    "source": "trash"
+  }
+}

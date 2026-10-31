@@ -1,0 +1,4 @@
+# Patches for other projects must stay byte-for-byte as generated. Some of the
+# files they touch use CRLF, and normalising line endings here would stop them
+# applying upstream.
+tools/external/**/*.patch -text

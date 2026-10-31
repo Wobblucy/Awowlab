@@ -1,0 +1,76 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Wobblucy <Wobblucy@users.noreply.github.com>
+Date: Sat, 1 Aug 2026 15:43:07 -0600
+Subject: [PATCH 3/4] Evict WMO groups from loader cache as they are exported
+
+WMOLoader.getGroup caches every group it loads and never evicts, so walking
+all groups to export leaves the entire model (boxed vertex/normal/index/uv
+arrays) resident in the loader - on top of the per-group buffers the writer
+builds. Because a map export re-runs the WMO exporter once per referencing
+ADT tile, that cache compounds across passes and still exhausts the V8
+renderer heap on a raid-sized WMO even with the streaming writer.
+
+The streaming generator now drops each group's cache slot (wmo.groups[i] =
+null) once the writer has consumed it; getGroup transparently reloads the
+group from CASC if a later pass needs it. The meta-JSON pass, which runs after
+the geometry write and reads only lightweight per-group metadata, re-fetches
+via getGroup and releases again, so peak memory there is also a single group.
+
+Scoped to the merged exportAsOBJ path; exportGroupsAsSeparateOBJ is untouched.
+---
+ src/js/3D/exporters/WMOExporter.js | 25 ++++++++++++++++++++++---
+ 1 file changed, 22 insertions(+), 3 deletions(-)
+
+diff --git a/src/js/3D/exporters/WMOExporter.js b/src/js/3D/exporters/WMOExporter.js
+index 049f165..7386e99 100644
+--- a/src/js/3D/exporters/WMOExporter.js
++++ b/src/js/3D/exporters/WMOExporter.js
+@@ -480,6 +480,17 @@ class WMOExporter {
+ 					meshes,
+ 					flipUVs: true,
+ 				};
++
++				// Generator execution resumes here only after the writer has fully
++				// consumed the yielded group, so the geometry is safe to release.
++				// WMOLoader.getGroup caches every group it loads and never evicts;
++				// without this, walking all groups leaves the entire model resident
++				// in the loader (boxed vertex/normal/index/uv arrays) - and because a
++				// map export re-runs this per referencing tile, the cache compounds
++				// across passes until the heap is exhausted. Dropping the cache slot
++				// lets it be reclaimed now; getGroup transparently reloads the group
++				// from CASC if a later pass (or the meta writer) needs it again.
++				wmo.groups[i] = null;
+ 			}
+ 		}
+ 
+@@ -635,9 +646,13 @@ class WMOExporter {
+ 			json.addProperty('fog', wmo.fogs);
+ 			json.addProperty('flags', wmo.flags);
+ 
+-			const groups = Array(wmo.groups.length);
+-			for (let i = 0, n = wmo.groups.length; i < n; i++) {
+-				const group = wmo.groups[i];
++			const groups = Array(wmo.groupCount);
++			for (let i = 0, n = wmo.groupCount; i < n; i++) {
++				// The streaming write above evicts each group from the loader cache
++				// as it consumes it, so re-fetch here (getGroup reloads from CASC if
++				// the slot was cleared). Keeps peak memory to a single group during
++				// meta export too, rather than the whole model.
++				const group = await wmo.getGroup(i);
+ 				groups[i] = {
+ 					groupName: wmo.groupNames[group.nameOfs],
+ 					groupDescription: wmo.groupNames[group.descOfs],
+@@ -659,6 +674,10 @@ class WMOExporter {
+ 					colors2: group.colors2,
+ 					liquid: group.liquid
+ 				};
++
++				// Release the geometry again; the JSON above copied only the light
++				// metadata it needs, not the vertex/normal/index/uv arrays.
++				wmo.groups[i] = null;
+ 			}
+ 
+ 			// Create a textures array and push every unique fileDataID from the
+-- 
+2.47.1.windows.1
+

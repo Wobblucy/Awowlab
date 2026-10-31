@@ -1,0 +1,29 @@
+[
+{
+    "timestamp": 4298031,
+    "type": "empowerend",
+    "sourceID": 83,
+    "targetID": -1,
+    "abilityGameID": 1217413,
+    "fight": 8,
+    "empowermentLevel": 1
+},
+{
+    "timestamp": 4395651,
+    "type": "empowerend",
+    "sourceID": 83,
+    "targetID": -1,
+    "abilityGameID": 1217413,
+    "fight": 8,
+    "empowermentLevel": 1
+},
+{
+    "timestamp": 4518842,
+    "type": "empowerend",
+    "sourceID": 81,
+    "targetID": -1,
+    "abilityGameID": 396286,
+    "fight": 8,
+    "empowermentLevel": 1
+}
+]

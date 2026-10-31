@@ -1,0 +1,101 @@
+[
+{
+    "timestamp": 4302472,
+    "type": "drain",
+    "sourceID": 110,
+    "targetID": 110,
+    "abilityGameID": 22568,
+    "fight": 8,
+    "resourceChange": -25,
+    "resourceChangeType": 3,
+    "otherResourceChange": 0,
+    "maxResourceAmount": 140,
+    "resourceActor": 1,
+    "classResources": [
+        {
+            "amount": 139,
+            "max": 140,
+            "type": 3
+        }
+    ],
+    "hitPoints": 17935260,
+    "maxHitPoints": 17935260,
+    "attackPower": 195870,
+    "spellPower": 18176,
+    "armor": 52566,
+    "absorb": 340386,
+    "x": -335406,
+    "y": 201351,
+    "facing": -687,
+    "mapID": 2467,
+    "versatility": 2207,
+    "avoidance": 300,
+    "itemLevel": 729
+},
+{
+    "timestamp": 4373148,
+    "type": "drain",
+    "sourceID": 110,
+    "targetID": 110,
+    "abilityGameID": 22568,
+    "fight": 8,
+    "resourceChange": -25,
+    "resourceChangeType": 3,
+    "otherResourceChange": 0,
+    "maxResourceAmount": 140,
+    "resourceActor": 1,
+    "classResources": [
+        {
+            "amount": 119,
+            "max": 140,
+            "type": 3
+        }
+    ],
+    "hitPoints": 15116145,
+    "maxHitPoints": 17935260,
+    "attackPower": 153199,
+    "spellPower": 18176,
+    "armor": 52566,
+    "absorb": 0,
+    "x": -334004,
+    "y": 200009,
+    "facing": -191,
+    "mapID": 2467,
+    "versatility": 1455,
+    "avoidance": 300,
+    "itemLevel": 729
+},
+{
+    "timestamp": 4496037,
+    "type": "drain",
+    "sourceID": 110,
+    "targetID": 110,
+    "abilityGameID": 22568,
+    "fight": 8,
+    "resourceChange": -25,
+    "resourceChangeType": 3,
+    "otherResourceChange": 0,
+    "maxResourceAmount": 140,
+    "resourceActor": 1,
+    "classResources": [
+        {
+            "amount": 117,
+            "max": 140,
+            "type": 3
+        }
+    ],
+    "hitPoints": 17935260,
+    "maxHitPoints": 17935260,
+    "attackPower": 180621,
+    "spellPower": 18176,
+    "armor": 52566,
+    "absorb": 0,
+    "x": -191970,
+    "y": 198666,
+    "facing": -621,
+    "mapID": 2468,
+    "versatility": 2207,
+    "avoidance": 300,
+    "itemLevel": 729
+}
+]

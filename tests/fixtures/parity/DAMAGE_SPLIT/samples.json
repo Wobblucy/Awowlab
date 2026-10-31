@@ -1,0 +1,48 @@
+[
+{
+    "timestamp": 4512084,
+    "type": "absorbed",
+    "sourceID": 96,
+    "targetID": 96,
+    "abilityGameID": 1237859,
+    "fight": 8,
+    "attackerID": 3,
+    "amount": 874727,
+    "extraAbilityGameID": 1237775
+},
+{
+    "timestamp": 4537696,
+    "type": "resourcechange",
+    "sourceID": 186,
+    "sourceInstance": 8,
+    "targetID": 95,
+    "abilityGameID": 1235467,
+    "fight": 8,
+    "resourceChange": 1,
+    "resourceChangeType": 25,
+    "otherResourceChange": 0,
+    "maxResourceAmount": 3,
+    "waste": 1,
+    "resourceActor": 2,
+    "classResources": [
+        {
+            "amount": 100,
+            "max": 100,
+            "type": 2
+        }
+    ],
+    "hitPoints": 17826328,
+    "maxHitPoints": 17826328,
+    "attackPower": 143809,
+    "spellPower": 14904,
+    "armor": 71386,
+    "absorb": 0,
+    "x": -155384,
+    "y": 214079,
+    "facing": -658,
+    "mapID": 2471,
+    "versatility": 2730,
+    "avoidance": 300,
+    "itemLevel": 728
+}
+]

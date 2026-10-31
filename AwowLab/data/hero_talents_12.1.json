@@ -1,0 +1,339 @@
+{
+  "version": "12.1",
+  "_comment": "WCL trait node entry id -> hero talent tree name. WarcraftLogs sends these ids on combatantinfo but does not say which are hero talents; this names them. Regenerate with tools/db2_extractor/build_hero_talents.py after a patch.",
+  "trees": [
+    "Aldrachi Reaver",
+    "Annihilator",
+    "Archon",
+    "Chronowarden",
+    "Colossus",
+    "Conduit of the Celestials",
+    "Dark Ranger",
+    "Deathbringer",
+    "Deathstalker",
+    "Diabolist",
+    "Druid of the Claw",
+    "Elune's Chosen",
+    "Farseer",
+    "Fatebound",
+    "Fel-Scarred",
+    "Flameshaper",
+    "Frostfire",
+    "Hellcaller",
+    "Herald of the Sun",
+    "Keeper of the Grove",
+    "Lightsmith",
+    "Master of Harmony",
+    "Mountain Thane",
+    "Oracle",
+    "Pack Leader",
+    "Rider of the Apocalypse",
+    "San'layn",
+    "Scalecommander",
+    "Sentinel",
+    "Shado-Pan",
+    "Slayer",
+    "Soul Harvester",
+    "Spellslinger",
+    "Stormbringer",
+    "Sunfury",
+    "Templar",
+    "Totemic",
+    "Trickster",
+    "Void-Scarred",
+    "Voidweaver",
+    "Wildstalker"
+  ],
+  "entries": {
+    "123287": "Voidweaver",
+    "123288": "Voidweaver",
+    "123289": "Archon",
+    "123290": "Oracle",
+    "123291": "Archon",
+    "123292": "Oracle",
+    "123295": "Elune's Chosen",
+    "123296": "Wildstalker",
+    "123297": "Druid of the Claw",
+    "123298": "Wildstalker",
+    "123299": "Keeper of the Grove",
+    "123300": "Keeper of the Grove",
+    "123301": "Druid of the Claw",
+    "123302": "Elune's Chosen",
+    "123306": "Damage Dealer",
+    "123307": "Healer",
+    "123321": "San'layn",
+    "123322": "Rider of the Apocalypse",
+    "123323": "Rider of the Apocalypse",
+    "123324": "Deathbringer",
+    "123325": "San'layn",
+    "123326": "Deathbringer",
+    "123327": "Fel-Scarred",
+    "123328": "Aldrachi Reaver",
+    "123329": "Fel-Scarred",
+    "123330": "Aldrachi Reaver",
+    "123331": "Scalecommander",
+    "123332": "Flameshaper",
+    "123333": "Scalecommander",
+    "123334": "Chronowarden",
+    "123335": "Chronowarden",
+    "123336": "Flameshaper",
+    "123339": "Spellslinger",
+    "123340": "Sunfury",
+    "123341": "Sunfury",
+    "123342": "Frostfire",
+    "123343": "Frostfire",
+    "123344": "Spellslinger",
+    "123345": "Sentinel",
+    "123346": "Dark Ranger",
+    "123347": "Pack Leader",
+    "123348": "Dark Ranger",
+    "123349": "Sentinel",
+    "123350": "Pack Leader",
+    "123357": "Templar",
+    "123358": "Templar",
+    "123359": "Lightsmith",
+    "123360": "Herald of the Sun",
+    "123361": "Lightsmith",
+    "123362": "Herald of the Sun",
+    "123370": "Trickster",
+    "123371": "Fatebound",
+    "123372": "Trickster",
+    "123373": "Deathstalker",
+    "123374": "Fatebound",
+    "123375": "Deathstalker",
+    "123376": "Stormbringer",
+    "123377": "Farseer",
+    "123378": "Totemic",
+    "123379": "Totemic",
+    "123380": "Farseer",
+    "123381": "Stormbringer",
+    "123382": "Hellcaller",
+    "123383": "Soul Harvester",
+    "123384": "Soul Harvester",
+    "123385": "Diabolist",
+    "123386": "Diabolist",
+    "123387": "Hellcaller",
+    "123388": "Mountain Thane",
+    "123389": "Slayer",
+    "123390": "Slayer",
+    "123391": "Colossus",
+    "123392": "Mountain Thane",
+    "123393": "Colossus",
+    "125027": "Shado-Pan",
+    "125028": "Master of Harmony",
+    "125044": "Master of Harmony",
+    "125045": "Conduit of the Celestials",
+    "125046": "Shado-Pan",
+    "125047": "Conduit of the Celestials",
+    "127101": "Totemic",
+    "127102": "Stormbringer",
+    "127103": "Totemic",
+    "127104": "Farseer",
+    "127105": "Stormbringer",
+    "127106": "Farseer",
+    "127357": "Totemic",
+    "127358": "Stormbringer",
+    "127359": "Totemic",
+    "127360": "Farseer",
+    "127361": "Stormbringer",
+    "127362": "Farseer",
+    "128141": "PH",
+    "128142": "PH",
+    "128334": "Tank",
+    "128518": "Tank",
+    "128519": "Damage Dealer",
+    "128520": "Healer",
+    "128701": "Tank",
+    "132762": "Tank",
+    "132763": "Damage Dealer",
+    "132764": "Healer",
+    "134055": "Platemail",
+    "134056": "Robes",
+    "134057": "Chainmail",
+    "134209": "Fel-Scarred",
+    "134229": "Fel-Scarred",
+    "134251": "Annihilator",
+    "134252": "Fel-Scarred",
+    "134253": "Annihilator",
+    "134534": "Damage Dealer",
+    "134535": "Tank",
+    "134536": "Healer",
+    "135342": "Tank",
+    "135343": "Damage Dealer",
+    "135344": "Healer",
+    "135480": "Jan'alai",
+    "135481": "Halazzi",
+    "135482": "Akil'zon",
+    "135483": "Nalorakk",
+    "135518": "Nalorakk",
+    "136623": "Void-Scarred",
+    "137130": "Damage Dealer",
+    "137131": "Tank",
+    "137132": "Healer",
+    "137206": "Damage Dealer",
+    "137778": "Damage Dealer",
+    "137789": "Tank"
+  },
+  "specs": {
+    "62": [
+      "Spellslinger",
+      "Sunfury"
+    ],
+    "63": [
+      "Frostfire",
+      "Sunfury"
+    ],
+    "64": [
+      "Frostfire",
+      "Spellslinger"
+    ],
+    "65": [
+      "Herald of the Sun",
+      "Lightsmith"
+    ],
+    "66": [
+      "Lightsmith",
+      "Templar"
+    ],
+    "70": [
+      "Herald of the Sun",
+      "Templar"
+    ],
+    "71": [
+      "Colossus",
+      "Slayer"
+    ],
+    "72": [
+      "Mountain Thane",
+      "Slayer"
+    ],
+    "73": [
+      "Colossus",
+      "Mountain Thane"
+    ],
+    "102": [
+      "Elune's Chosen",
+      "Keeper of the Grove"
+    ],
+    "103": [
+      "Druid of the Claw",
+      "Wildstalker"
+    ],
+    "104": [
+      "Druid of the Claw",
+      "Elune's Chosen"
+    ],
+    "105": [
+      "Keeper of the Grove",
+      "Wildstalker"
+    ],
+    "250": [
+      "Deathbringer",
+      "San'layn"
+    ],
+    "251": [
+      "Deathbringer",
+      "Rider of the Apocalypse"
+    ],
+    "252": [
+      "Rider of the Apocalypse",
+      "San'layn"
+    ],
+    "253": [
+      "Dark Ranger",
+      "Pack Leader"
+    ],
+    "254": [
+      "Dark Ranger",
+      "Sentinel"
+    ],
+    "255": [
+      "Pack Leader",
+      "Sentinel"
+    ],
+    "256": [
+      "Oracle",
+      "Voidweaver"
+    ],
+    "257": [
+      "Archon",
+      "Oracle"
+    ],
+    "258": [
+      "Archon",
+      "Voidweaver"
+    ],
+    "259": [
+      "Deathstalker",
+      "Fatebound"
+    ],
+    "260": [
+      "Fatebound",
+      "Trickster"
+    ],
+    "261": [
+      "Deathstalker",
+      "Trickster"
+    ],
+    "262": [
+      "Farseer",
+      "Stormbringer"
+    ],
+    "263": [
+      "Stormbringer",
+      "Totemic"
+    ],
+    "264": [
+      "Farseer",
+      "Totemic"
+    ],
+    "265": [
+      "Hellcaller",
+      "Soul Harvester"
+    ],
+    "266": [
+      "Diabolist",
+      "Soul Harvester"
+    ],
+    "267": [
+      "Diabolist",
+      "Hellcaller"
+    ],
+    "268": [
+      "Master of Harmony",
+      "Shado-Pan"
+    ],
+    "269": [
+      "Conduit of the Celestials",
+      "Shado-Pan"
+    ],
+    "270": [
+      "Conduit of the Celestials",
+      "Master of Harmony"
+    ],
+    "577": [
+      "Aldrachi Reaver",
+      "Fel-Scarred"
+    ],
+    "581": [
+      "Aldrachi Reaver",
+      "Fel-Scarred"
+    ],
+    "1467": [
+      "Flameshaper",
+      "Scalecommander"
+    ],
+    "1468": [
+      "Chronowarden",
+      "Flameshaper"
+    ],
+    "1473": [
+      "Chronowarden",
+      "Scalecommander"
+    ],
+    "1480": [
+      "Annihilator",
+      "Void-Scarred"
+    ]
+  }
+}

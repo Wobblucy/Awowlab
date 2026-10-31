@@ -1,0 +1,19 @@
+{
+  "charge_spells": [
+    { "spell_id": 264735, "spell_name": "Survival of the Fittest", "base_charges": 1 },
+    { "spell_id": 22842,  "spell_name": "Frenzied Regeneration", "base_charges": 2 },
+    { "spell_id": 109132, "spell_name": "Roll",                  "base_charges": 2 },
+    { "spell_id": 115008, "spell_name": "Chi Torpedo",           "base_charges": 2 },
+    { "spell_id": 61304,  "spell_name": "Fel Rush",              "base_charges": 2 },
+    { "spell_id": 195072, "spell_name": "Fel Rush (Havoc)",      "base_charges": 2 },
+    { "spell_id": 205523, "spell_name": "Mana Tea",              "base_charges": 2 },
+    { "spell_id": 198793, "spell_name": "Vengeful Retreat",      "base_charges": 1 },
+    { "spell_id": 108199, "spell_name": "Gorefiend's Grasp",     "base_charges": 1 },
+    { "spell_id": 196718, "spell_name": "Darkness",              "base_charges": 1 },
+    { "spell_id": 323764, "spell_name": "Convoke the Spirits",   "base_charges": 1 },
+    { "spell_id": 194223, "spell_name": "Celestial Alignment",   "base_charges": 1 },
+    { "spell_id": 102560, "spell_name": "Incarnation: Chosen of Elune", "base_charges": 1 },
+    { "spell_id": 102543, "spell_name": "Incarnation: King of the Jungle", "base_charges": 1 },
+    { "spell_id": 102558, "spell_name": "Incarnation: Guardian of Ursoc", "base_charges": 1 }
+  ]
+}

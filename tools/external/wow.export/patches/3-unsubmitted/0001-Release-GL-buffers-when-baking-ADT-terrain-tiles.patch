@@ -1,0 +1,59 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Wobblucy <Wobblucy@users.noreply.github.com>
+Date: Sun, 2 Aug 2026 02:17:53 -0600
+Subject: [PATCH] Release GL buffers when baking ADT terrain tiles
+
+The chunk index buffer was recreated for each of the 256 chunks in a tile
+and never released, along with the per-tile vertex, UV and colour buffers.
+A large map export leaked tens of thousands of buffers, which can exhaust
+the GL context partway through and leave later tiles baking as blank
+images with no error raised.
+
+Also report any GL error before writing a tile so a failed bake is
+visible in the log instead of silently producing a black texture.
+---
+ src/js/3D/exporters/ADTExporter.js | 21 +++++++++++++++++++++
+ 1 file changed, 21 insertions(+)
+
+diff --git a/src/js/3D/exporters/ADTExporter.js b/src/js/3D/exporters/ADTExporter.js
+index 7f82f4a..520a93a 100644
+--- a/src/js/3D/exporters/ADTExporter.js
++++ b/src/js/3D/exporters/ADTExporter.js
+@@ -1214,6 +1214,12 @@ class ADTExporter {
+ 								gl.bufferData(gl.ELEMENT_ARRAY_BUFFER, new Uint16Array(indices), gl.STATIC_DRAW);
+ 								gl.drawElements(gl.TRIANGLES, indices.length, gl.UNSIGNED_SHORT, 0);
+ 
++								// The index buffer is rebuilt for every chunk, so it has to be
++								// released here. Leaking it exhausts the GL context partway
++								// through a multi-tile export, after which draws silently
++								// no-op and every remaining tile bakes out pure black.
++								gl.deleteBuffer(indexBuffer);
++
+ 								// cleanup alpha textures
+ 								for (const tex of alphaTextures) {
+ 									if (tex) {
+@@ -1246,6 +1252,21 @@ class ADTExporter {
+ 						gl.deleteTexture(diffuse_array);
+ 						gl.deleteTexture(height_array);
+ 
++						// Release the per-tile geometry buffers. These are rebuilt for
++						// every tile, so holding onto them steadily consumes GL memory
++						// across a large map export.
++						gl.deleteBuffer(vertexBuffer);
++						gl.deleteBuffer(uvBuffer);
++						gl.deleteBuffer(vcBuffer);
++
++						// A GL context that has run out of resources stops drawing without
++						// raising anything, leaving the canvas at the black it was cleared
++						// to. Surface that here rather than writing an unusable tile and
++						// letting it look like a lighting problem downstream.
++						const glError = gl.getError();
++						if (glError !== gl.NO_ERROR)
++							log.write('GL error 0x%s baking tile %s - texture may be blank', glError.toString(16), this.tileID);
++
+ 						// Save the completed composite tile.
+ 						if (!isSplittingTextures) {
+ 							const buf = await BufferWrapper.fromCanvas(composite, 'image/png');
+-- 
+2.47.1.windows.1
+

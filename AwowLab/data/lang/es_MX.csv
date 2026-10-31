@@ -1,0 +1,2070 @@
+# AwowLab Localization - Spanish (Mexico)
+# Machine translated with DeepL - community review welcome
+# Format: key,value
+# Lines starting with # are comments
+key,value
+
+
+# =============================================================================
+# Menu Bar - File Menu
+# =============================================================================
+menu.file,Archivo
+menu.change_encounter,Cambio Encuentro...
+menu.return_home,Volver a la página de inicio
+menu.import_export_settings,Configuración de importación/exportación...
+
+# =============================================================================
+# Menu Bar - View Menu
+# =============================================================================
+menu.view,Ver
+menu.playback_controls,Controles de reproducción
+menu.creatures_vehicles_pets,Criaturas/Vehículos/Mascotas
+menu.raid_frames,Marcos de redada
+menu.enemy_grid,Rejilla enemiga
+menu.filters,Filtros
+menu.minimap_2d,minimapa 2D
+menu.gcd_history,Historia de la DGC
+menu.upcoming_boss_casts,Próximo Jefe Reparto
+menu.meter_1,Contador 1
+menu.meter_2,Contador 2
+menu.meter_3,Contador 3
+menu.deaths,Fallecimientos
+menu.player_buffs,Mejoras para los jugadores
+menu.player_debuffs,Debuffs del jugador
+menu.aura_debug,Depuración de Aura
+menu.cooldowns,Enfriamiento de jugadores
+menu.raid_cd1,Enfriamiento de incursiones (Mayor)
+menu.raid_cd2,Enfriamiento de incursiones (menor)
+menu.raid_cd3,Enfriamiento de incursiones (Utilidad)
+menu.enable_snapping,Activar Snapping
+menu.snap_threshold,Umbral de ruptura
+menu.ui_scale,Escala de IU
+menu.reset_layout,Restablecer diseño
+menu.save_layout,Guardar diseño
+menu.customize_appearances,Personalizar apariencias
+
+# =============================================================================
+# Menu Bar - Tools Menu
+# =============================================================================
+menu.tools,Herramientas
+menu.export_snapshot,Exportar instantánea de reproducción...
+
+# =============================================================================
+# Export Snapshot Modal
+# =============================================================================
+export.title,Exportar instantánea de reproducción
+export.time_range,Intervalo de tiempo
+export.start_time,Inicio
+export.end_time,Fin
+export.duration,Duración
+export.export_button,Exportar
+export.cancel_button,Cancelar
+
+# =============================================================================
+# Landing Page - Snapshot Import Card
+# =============================================================================
+landing.snapshot_title,Abrir instantánea
+landing.snapshot_desc,Cargar un clip de reproducción .awsnap compartido
+landing.snapshot_browse,Explorar
+
+# =============================================================================
+# Menu Bar - Settings Menu
+# =============================================================================
+menu.settings,Ajustes
+menu.actor_appearance,Apariencia de actor...
+menu.camera_settings,Ajustes de la cámara
+menu.nameplate_settings,Ajustes de la placa de características
+menu.raid_frame_settings,Configuración del marco Raid
+menu.show_auras,Mostrar iconos del aura
+menu.show_spell_icons,Mostrar iconos de hechizos
+menu.aura_icon_size,Tamaño del icono
+menu.icon_size,Tamaño del icono
+menu.language,Idioma
+menu.help_improve_localization,Ayúdanos a mejorar la localización
+
+# =============================================================================
+# Nameplate Settings Modal
+# =============================================================================
+nameplate.settings_title,Ajustes de la placa de características
+nameplate.global_settings,Configuración global
+nameplate.tab_players,Jugadores
+nameplate.tab_other,Otros
+nameplate.font_scale,Escala de fuentes
+nameplate.use_actor_color,Utilizar el color del actor
+nameplate.text_color,Color del texto
+nameplate.show_background,Mostrar fondo
+nameplate.background_opacity,Opacidad de fondo
+nameplate.name_length,Nombre Longitud
+nameplate.show_last_cast,Mostrar último reparto
+nameplate.last_cast_icon_size,Tamaño del último icono de reparto
+tooltip.nameplate_font_scale,"Factor de escala para el texto de la placa (0,5x - 2,0x)"
+tooltip.nameplate_name_length,Máximo de caracteres a mostrar (0 = nombre completo)
+tooltip.nameplate_use_actor_color,Colorear el texto de la placa de identificación con el color asignado al actor
+tooltip.nameplate_show_background,Mostrar un fondo semitransparente detrás del texto de la placa de identificación
+tooltip.nameplate_background_opacity,Opacidad del fondo del texto de la placa de identificación
+tooltip.nameplate_icon_size,Tamaño de los iconos de aura en las placas de identificación (16-48 píxeles)
+
+# =============================================================================
+# Facing Indicator Settings
+# =============================================================================
+menu.facing_indicator,Indicador Facing
+facing.enabled,Mostrar cara
+facing.opacity,Opacidad
+facing.size,Talla
+facing.color,Color
+
+# =============================================================================
+# UI Scale Buttons
+# =============================================================================
+btn.scale_small,Pequeño
+btn.scale_normal,Normal
+btn.scale_large,Grande
+btn.scale_xl,XL
+
+# =============================================================================
+# Panel Titles
+# =============================================================================
+panel.filters,Filtros
+panel.playback,Reproducción
+panel.creatures,Criaturas/Vehículos/Mascotas
+panel.raid_frames,Marcos de redada
+panel.enemy_grid,Rejilla enemiga
+panel.gcd_history,Historia de la DGC
+panel.meter_1,Contador 1
+panel.meter_2,Contador 2
+panel.meter_3,Contador 3
+panel.deaths,Fallecimientos
+panel.player_buffs,Mejoras para los jugadores
+panel.player_debuffs,Debuffs del jugador
+panel.aura_debug,Depuración de Aura
+panel.player_focus,Enfoque en el jugador
+panel.actor_appearance,Actor
+panel.cooldowns,Enfriamientos de jugadores seleccionados
+
+# =============================================================================
+# Actor Selector Panel
+# =============================================================================
+selector.title,Seleccionar jugador a enfocar
+selector.load_hint,(Cargar un archivo de registro de combate con eventos SPELL_CAST)
+
+# =============================================================================
+# GCD History Panel
+# =============================================================================
+gcd.no_player,Ningún jugador seleccionado
+gcd.select_hint,Selecciona un jugador en el panel Raid Frames
+gcd.row_gcd,DGC
+gcd.row_ogcd,oGCD
+
+# =============================================================================
+# Cooldown Panel
+# =============================================================================
+cd.no_player,Ningún jugador seleccionado
+cd.select_hint,Selecciona un jugador en el panel Raid Frames
+cd.no_data,No se dispone de datos ortográficos
+cd.no_spells,No hay hechizos configurados para mostrar el enfriamiento
+
+# =============================================================================
+# Raid Cooldown Panel
+# =============================================================================
+panel.raid_cd1,Enfriamiento de incursiones - Mayor
+panel.raid_cd2,Enfriamiento de incursiones - Menor
+panel.raid_cd3,Enfriamiento de incursiones - Utilidad
+raid_cd.no_data,No se dispone de datos ortográficos
+raid_cd.no_spells,No se han configurado enfriamientos de raid
+raid_cd.config_hint,Configura los hechizos en Configuración > Asignación de hechizos
+
+# =============================================================================
+# Filters Panel
+# =============================================================================
+filter.actor_visibility,Filtros de visibilidad de actores
+filter.friendly,Amistoso
+filter.hostile,Hostil
+filter.neutral,Neutro
+filter.players,Jugadores
+filter.creatures,Criaturas
+filter.vehicles,Vehículos
+filter.pets,Mascotas
+filter.camera_options,Opciones de cámara
+filter.display_options,Opciones de visualización
+filter.debug_options,Opciones de depuración
+filter.camera_target,"Objetivo de la cámara: (%.1f, %.1f, %.1f)"
+filter.reset_camera,Restablecer vista de cámara
+filter.show_nameplates,Mostrar placas de identificación
+filter.show_health_bars,Mostrar Barras de Salud
+filter.dump_databases,Volcar bases de datos a CSV
+filter.enable_camera_follow,Activar seguimiento de cámara
+filter.follow,Siga
+filter.follow_speed,Velocidad de seguimiento
+filter.pan_sensitivity,Sensibilidad Pan
+
+# =============================================================================
+# Tooltips
+# =============================================================================
+tooltip.health_bars,Mostrar barras de salud sobre las placas de los actores en la vista 3D
+tooltip.show_auras,Mostrar iconos de potenciación/desactivación sobre las placas de identificación (configurar en Asignación de hechizos)
+tooltip.aura_icon_size,Tamaño de los iconos de potenciación/desactivación sobre las placas de identificación (16-48 píxeles)
+tooltip.show_spell_icons,Mostrar iconos de seguimiento de hechizos en los marcos de incursión
+tooltip.raid_frame_icon_size,Tamaño de los iconos de hechizo en los marcos de incursión (12-32 píxeles)
+tooltip.dump_databases,Exportar todas las tablas de la base de datos a archivos CSV en ./debug - db tables/
+tooltip.camera_follow,La cámara sigue automáticamente el centroide de los actores
+tooltip.follow_speed,"Rapidez con la que la cámara sigue a los actores (más bajo = más suave, más alto = más rápido)"
+tooltip.pan_sensitivity,Ajustar la sensibilidad de desplazamiento de la cámara (arrastre LMB)
+tooltip.refresh_encounters,Comprueba si hay nuevos encuentros en el archivo de registro\n(Pulsa F5 para actualizar)
+
+# =============================================================================
+# Combat Meters
+# =============================================================================
+meter.damage_done,Daños causados
+meter.healing_done,Curación realizada
+meter.damage_taken,Daños sufridos
+meter.cumulative,Acumulado
+meter.full_encounter,Encuentro completo
+meter.dps,DPS
+meter.hps,HPS
+meter.dtps,DTPS
+meter.melee,Cuerpo a cuerpo
+meter.environment,Entorno
+meter.blacklist,Lista negra
+meter.tab.damage,Daños
+meter.tab.healing,Curación
+meter.tab.taken,Tomado
+meter.tab.taken_by,Tomado por
+meter.tab.dispels,Disipa
+meter.tab.interrupts,Interrupciones
+meter.tab.deaths,Fallecimientos
+meter.tab.friendly_fire,Fuego amigo
+meter.tab.overhealing,Curación excesiva
+meter.tab.healing_taken,Curación recibida
+meter.tab.resurrections,Resurrecciones
+meter.tab.cc_breaks,CC Breaks
+meter.tab.avoidance,Evitación
+meter.tab.absorbs,Absorbe
+meter.tab.enemy_damage,Daño infligido por el enemigo
+meter.tab.enemy_healing,Curación del enemigo
+meter.total_absorbed,Daños evitados
+meter.event_count,Absorb Events
+meter.total,Total
+status.no_absorb_data,No hay datos de absorción disponibles
+status.no_enemy_damage_data,No hay datos disponibles sobre el daño infligido por el enemigo
+status.no_enemy_healing_data,No hay datos disponibles sobre la curación del enemigo
+breakdown.hit_distribution,Distribución de los golpes
+breakdown.hit_normal,Normal
+breakdown.hit_crit,Crit
+breakdown.hit_glance,De un vistazo
+breakdown.hit_resisted,Resistido
+breakdown.hit_blocked,Bloqueado
+breakdown.hit_absorbed,Absorbido
+meter.category.damage,Daños
+meter.category.healing,Curación
+meter.category.utility,Servicios públicos
+meter.category.survivability,Capacidad de supervivencia
+meter.death_count,Fallecimientos
+meter.resurrection_count,Resurrecciones
+meter.cc_break_count,CC Breaks
+meter.avoidance_count,Excepciones
+meter.avoidance_total,Total
+meter.avoidance_dodge,Esquivar
+meter.avoidance_parry,Parry
+meter.avoidance_miss,Señorita
+meter.avoidance_block,Bloque
+meter.avoidance_deflect,Desviar
+meter.avoidance_immune,Inmunológico
+meter.avoidance_resist,Resistir
+meter.avoidance_reflect,Reflexionar
+meter.avoidance_absorb,Absorber
+meter.avoidance_other,Otros
+meter.avoidance,Evitación
+meter.cc_breaks,CC Breaks
+meter.total_cc_breaks,Total de pausas de CC
+meter.total_deaths,Total de fallecidos
+meter.total_avoidance,Total de evasiones
+status.no_avoidance,No se han registrado datos sobre evasión
+status.no_avoidance_data,No hay datos disponibles sobre evasión fiscal
+status.no_overhealing_data,No hay datos disponibles sobre la cicatrización excesiva
+status.no_healing_taken_data,No hay datos disponibles sobre la curación recibida
+status.no_friendly_fire_data,No hay datos disponibles sobre fuego amigo
+status.no_cc_break_data,No hay datos disponibles sobre interrupciones de CC
+status.no_death_data,No hay datos disponibles sobre fallecimientos
+meter.select_target,Seleccione un objetivo
+meter.select_target_hint,Haz clic en un enemigo en el panel de la parrilla de enemigos para ver el daño que ha sufrido.
+meter.damage_to,Daños en
+meter.dispel_count,Disipa
+meter.interrupt_count,Interrupciones
+meter.stolen_count,Robado
+
+# =============================================================================
+# Status Messages
+# =============================================================================
+status.no_combat_data,No se dispone de datos de combate
+status.no_dispel_data,No hay datos de disipación
+status.no_interrupt_data,Sin datos de interrupción
+status.no_damage_data,No se dispone de datos sobre daños
+status.no_healing_data,No se dispone de datos de curación
+status.no_damage_taken_data,No hay datos de daños para el filtro seleccionado
+status.no_damage_to_target,No se han registrado daños en este objetivo
+status.no_deaths,No se han registrado muertes
+status.no_player_deaths,Sin muertes de jugadores
+status.no_players,Ningún jugador en el registro de combate
+status.no_creatures,No hay criaturas visibles
+status.no_enemies,No hay enemigos visibles
+status.no_friendly_players,No hay jugadores amistosos en la incursión
+status.no_friendly_fire,No se han registrado daños por fuego amigo
+status.no_overhealing,No se ha registrado ninguna cicatrización excesiva
+status.no_healing_taken,No se han recibido datos sobre curaciones
+status.no_resurrections,No se han registrado resurrecciones
+status.no_cc_breaks,No se han registrado incidentes relacionados con el control de multitudes
+status.not_visible,No visible en la ventana de tiempo actual
+status.no_actor_data,No hay datos de actores cargados.
+status.dead,MUERTO
+status.click_for_gcd,Haga clic para seleccionar el historial de DGC
+
+# =============================================================================
+# Format Strings
+# =============================================================================
+format.total_dps,Total: %s  | DPS: %s
+format.total_hps,Total: %s  | HPS: %s
+format.total_hps_overheal,Total:  %s |  HPS:  %s |  Curación excesiva: %.1f%%
+format.total_dtps,Total: %s  | DTPS: %s
+format.health_full,Salud: %llu / %llu (%.0f%%)
+format.power_full,%s: %u / %u (%.0f%%)
+format.player_deaths,Muertes de jugadores: %zu
+format.spell_id,Hechizo %u
+format.encounters_found,Segmento(s) %zu encontrado(s) en el registro de combate. Selecciona uno para reproducirlo:
+
+# =============================================================================
+# Buttons
+# =============================================================================
+btn.load_encounter,Cargar encuentro seleccionado
+btn.refresh_log,Actualizar registro
+btn.return_home,Volver a la página de inicio
+btn.browse_files,Examinar archivos
+btn.browse_cache,Examinar caché
+btn.clear_selection,Borrar selección
+btn.save_settings,Guardar configuración
+btn.load_settings,Ajustes de carga
+btn.close,Cerrar
+btn.cancel,Cancelar
+btn.load,Carga
+btn.load_report,Informe de carga
+btn.load_fight,Cargar combate seleccionado
+btn.refresh,Actualizar
+btn.authorize,Autorizar el acceso privado
+btn.reauthorize,Vuelva a autorizar
+btn.play,Jugar
+btn.pause,Pausa
+btn.fetch_url,Recuperar desde una URL
+btn.play_along,Toca con nosotros
+btn.play_again,Volver a reproducir
+btn.open_snapshot,Abrir instantánea
+
+# =============================================================================
+# Landing Page
+# =============================================================================
+landing.title,AwowLab
+landing.subtitle,Visualizador de registros de combate de World of Warcraft
+landing.choose_source,Elija su fuente de datos
+landing.local_file,Archivo local
+landing.local_file_desc,Cargar desde el ordenador
+landing.local_file_hint,WoW_retail_\Logs\
+landing.warcraftlogs,WarcraftLogs
+landing.warcraftlogs_desc,Cargar desde WarcraftLogs
+landing.press_esc,Pulse ESC para salir
+landing.partner_site,Sitio asociado
+landing.partner_site_desc,Planificador de incursiones gratuito con estrategias animadas
+landing.diar_bullet1,Planificador gratuito y animado de estrategias para incursiones
+landing.diar_bullet2,Coordina tu gremio con planos que se pueden compartir
+
+# =============================================================================
+# Updater / Updates
+# =============================================================================
+btn.check_updates,Buscar actualizaciones
+update.checking,Buscando actualizaciones...
+update.up_to_date,¡Ya estás al día!
+update.disabled_build,Las actualizaciones automáticas están desactivadas en esta versión
+
+# Language Pack Download
+langpack.title,Paquete de idiomas disponible
+langpack.desc,Descargar los nombres de los hechizos traducidos y la fuente para %s
+langpack.size_hint,~%d Descarga de MB
+langpack.download,Descargar paquete
+langpack.no_thanks,"No, gracias"
+langpack.disabled_build,"Los paquetes de idioma se instalan mediante el programa de actualización, que está desactivado en esta versión."
+
+# Social Links
+social.youtube,Ver en YouTube
+social.patreon,Apoyo en Patreon
+
+# =============================================================================
+# Landing Page - Overlay Mode
+# =============================================================================
+landing.overlay_mode,Modo de superposición
+landing.overlay_mode_desc,Superposición de indicadores de combate en tiempo real
+btn.launch_overlay,Superposición de inicio
+tooltip.landing_overlay,Medidores de daño y curación en tiempo real durante el combate activo
+
+# =============================================================================
+# Play Along Mode
+# =============================================================================
+playalong.select_player,Seleccionar jugador para practicar
+playalong.select_player_desc,Elige qué movimientos y habilidades de los jugadores quieres reproducir
+playalong.practicing_as,Practicar como
+playalong.your_position,Su posición
+playalong.target_position,Posición objetivo
+playalong.distance,Distancia
+playalong.move,Mover
+playalong.camera,Cámara
+playalong.snap,Ajustar al objetivo
+playalong.play_pause,Reproducir/Pausa
+playalong.back,Volver
+playalong.past,Anterior
+playalong.upcoming,Siguiente
+playalong.configure_keybinds,Configurar combinaciones de teclas
+playalong.no_spells_found,No se han encontrado hechizos para este jugador
+playalong.keybind_help,Pulsa una combinación de teclas para cambiarla. Pulsa ESC para borrar.
+playalong.click_to_set,Haga clic para fijar
+playalong.press_key,Pulsa cualquier combinación de teclas...
+playalong.hold_modifiers,(Mantenga pulsada la tecla Ctrl/Mayús/Alt +)
+playalong.esc_cancel,Pulse ESC para cancelar
+playalong.your_inputs,Sus aportaciones
+playalong.expected_casts,Previsto
+playalong.report_card,Boletín de calificaciones
+playalong.section,Sección
+playalong.good,Bien
+playalong.bad,Mal
+playalong.missed,Falta
+playalong.accuracy,Precisión
+playalong.overall,En general
+playalong.spell_queue_window,Ventana de cola de ortografía (ms)
+playalong.spell_queue_tooltip,Con qué antelación puedes pulsar la siguiente habilidad
+playalong.gcd_timeline,Calendario de la DGC
+playalong.stats,Estadísticas
+playalong.last_15,Últimos 15
+playalong.streak,Raya
+playalong.best_streak,Mejor
+playalong.total,Total
+playalong.ignored,Ignorado
+playalong.clear_all,Borrar todo
+playalong.countdown_starting,A partir de...
+playalong.snap_hint,¡Demasiado lejos del objetivo! Pulsa Mayús derecha para pasar a la siguiente habilidad
+playalong.audio_feedback,Sonido
+playalong.show_annotations,Mostrar anotaciones
+playalong.unknown_spec,Especificaciones desconocidas
+playalong.show_spell,Mostrar
+playalong.clear_keybind,Borrar
+playalong.ignore_spell,Ignorar
+playalong.return_home_confirm,¿Volver a la página de inicio?
+
+# =============================================================================
+# Buttons
+# =============================================================================
+btn.back,Volver
+btn.done,Hecho
+
+# =============================================================================
+# WarcraftLogs Dialog
+# =============================================================================
+wcl.dialog_title,Informe WarcraftLogs
+wcl.paste_url,Pega la URL o el código de un informe de WarcraftLogs:
+wcl.url_hint,https://www.warcraftlogs.com/reports/abc123 o simplemente abc123
+wcl.valid_code,Código de informe válido: %s
+wcl.example_hint,Ejemplo: j1N7Rf4d23FAmtMk o URL completa
+wcl.private_logs,Registros privados
+wcl.authorizing,Autorizando...
+wcl.waiting_browser,Esperando navegador...
+wcl.authenticated,Autentificado
+wcl.public_only,Sólo registros públicos
+wcl.session_expired,"Sesión expirada - por favor, vuelva a autorizar"
+wcl.select_fight,Seleccionar combate
+wcl.no_session,No se ha cargado ninguna sesión
+wcl.report,Informe: %s
+wcl.fights_count,(%zupeleas)
+wcl.api_usage,Uso de la API: %d/%d (se reinicia en %d min)
+wcl.api_usage_hourly,Uso de API: %d/%d por hora
+wcl.rate_limited,Velocidad limitada - se restablece en %d minutos
+wcl.api_queries_remaining,%d/%d Consultas API restantes esta hora
+wcl.mplus_note,Nota: Las mazmorras M+ usan 2 consultas de API
+
+# =============================================================================
+# Cached Fights Panel
+# =============================================================================
+cache.title,Peleas anteriores
+cache.cached_count,(%zu caché)
+cache.yes,Sí
+cache.meta,Meta
+cache.no_fights,No se han encontrado peleas en caché.
+cache.load_hint,Carga un combate desde WarcraftLogs para guardarlo en caché y acceder a él rápidamente.
+cache.double_click_hint,"Haga doble clic para cargar, o seleccione y haga clic en ""Cargar combate"""
+cache.show_all,Mostrar todos los combates
+cache.show_all_tooltip,Incluir peleas con sólo metadatos en caché.\nEstas requerirán la obtención de datos de eventos en la carga.
+cache.col_fight,Lucha
+cache.col_report,Informe
+cache.mythic_plus,Mazmorras míticas
+cache.raid_encounters,Encuentros en redadas
+cache.other,Otros
+cache.report_tooltip,Informe: %s\nIdentificación de la pelea: %d
+cache.meta_tooltip,Sólo los metadatos almacenados en caché.\nLos datos de los eventos se obtendrán al cargar.
+cache.col_link,CMT
+cache.open_wcl_tooltip,Abrir en WarcraftLogs
+cache.col_date,Fecha
+cache.col_cached,En caché
+cache.col_actions,Acciones
+cache.col_composition,Composición
+cache.sort_by,Ordenar
+cache.sort_date_newest,Fecha (más reciente)
+cache.sort_date_oldest,Fecha (más antigua)
+cache.sort_name_az,Nombre (A-Z)
+cache.sort_name_za,Nombre (Z-A)
+cache.filter_difficulty,Dificultad
+cache.filter_all,Todos
+cache.open,Abrir
+cache.open_tooltip,Cargar este combate
+cache.delete,Eliminar
+cache.delete_confirm_title,Confirmar eliminación
+cache.delete_confirm_msg,Eliminar los datos almacenados en caché de:
+cache.delete_warning,Esta acción no se puede deshacer.
+
+# =============================================================================
+# Encounter Selector Columns
+# =============================================================================
+encounter.col_number,#
+encounter.col_name,Nombre
+encounter.col_difficulty,Dificultad
+encounter.col_size,Talla
+encounter.col_duration,Duración
+encounter.col_fight,Lucha
+encounter.col_result,Resultado
+encounter.parsed_info,Analizado: líneas %zu (%.1f MB)
+
+# =============================================================================
+# Encounter Results
+# =============================================================================
+encounter.timed,Cronometrado
+encounter.depleted,Agotado
+encounter.kill,Matar
+encounter.wipe,Limpie
+
+# =============================================================================
+# Full Difficulty Names (with raid size)
+# =============================================================================
+difficulty.10_player,10 Jugadores
+difficulty.25_player,25 Jugadores
+difficulty.10_heroic,10 Heroico
+difficulty.25_heroic,25 Heroico
+difficulty.40_player,40 Jugador
+difficulty.heroic_scenario,Escenario heroico
+difficulty.normal_scenario,Escenario normal
+difficulty.mythic_keystone,Llave mítica
+difficulty.timewalking,Caminata en el tiempo
+difficulty.unknown,Desconocido
+
+# =============================================================================
+# Difficulty Names
+# =============================================================================
+difficulty.lfr,LFR
+difficulty.normal,Normal
+difficulty.heroic,Heroico
+difficulty.mythic,Mítico
+
+# =============================================================================
+# Power Types
+# =============================================================================
+power.mana,Maná
+power.rage,Furia
+power.focus,Enfoque
+power.energy,Energía
+power.combo_points,Puntos Combo
+power.runes,Runas
+power.runic_power,Poder rúnico
+power.soul_shards,Fragmentos de alma
+power.lunar_power,Poder lunar
+power.holy_power,Poder sagrado
+power.maelstrom,Vorágine
+power.insanity,Locura
+power.fury,Furia
+power.pain,Dolor
+power.essence,Esencia
+power.chi,Chi
+power.power,Potencia
+
+# =============================================================================
+# Actor Roles
+# =============================================================================
+role.unknown,Desconocido
+role.tank,Depósito
+role.healer,Sanador
+role.melee_dps,DPS cuerpo a cuerpo
+role.ranged_dps,DPS a distancia
+
+# =============================================================================
+# Actor Appearance Panel
+# =============================================================================
+appearance.title,Configuración de la apariencia del actor
+appearance.tab_role_defaults,Funciones por defecto
+appearance.tab_overrides,Anula
+appearance.tab_individual,Actores individuales
+appearance.tab_enemies,Enemigos
+appearance.role_defaults_desc,"Configura las formas por defecto asignadas a los actores en función de su rol. Se pueden anular por clase, por especificación o por actor."
+appearance.auto_assign,Asignación automática de roles a los jugadores
+appearance.auto_assign_tooltip,"Cuando se activa, los jugadores con especializaciones conocidas obtendrán automáticamente formas adecuadas a su rol (Escudo para los tanques, Cruz para los sanadores, etc.)"
+appearance.player_shapes,Formas de rol del jugador:
+appearance.nonplayer_shapes,Formas sin jugador:
+appearance.global_scale,Escala mundial:
+appearance.default_scale,Escala por defecto
+appearance.role_overrides,Anulación de funciones
+appearance.class_overrides,Anulaciones de clase
+appearance.overrides_desc,"Establecer anulaciones de apariencia por rol, clase o especialización. Las modificaciones de mayor especificidad tienen prioridad."
+appearance.individual_desc,Anular la apariencia de determinados actores. Las anulaciones individuales tienen la máxima prioridad.
+appearance.enemies_desc,"Personaliza los actores hostiles y neutrales agrupados por nombre. Todas las instancias de la misma criatura comparten un color, una forma y una escala. Expanda para anular actores específicos."
+appearance.search_hint,Buscar por nombre...
+appearance.only_overridden,Sólo anulado
+appearance.all_actors,Todos los actores:
+appearance.clear_override,Borrar anulación
+appearance.reset_default,Restablecer valores por defecto
+appearance.selected_actor,Actor seleccionado:
+appearance.showing_actors,Mostrar actores %zu (%zu con anulaciones)
+appearance.showing_enemies,Mostrando tipos de enemigos %zu (%zu con anulaciones)
+appearance.no_enemies,No se han encontrado actores hostiles/neutrales en el encuentro actual.
+appearance.default_label,%s (Por defecto)
+appearance.shape_tooltip,Anula la forma para todas las instancias de este tipo de enemigo
+appearance.scale_tooltip,Sobreescala para todas las instancias de este tipo de enemigo
+
+# =============================================================================
+# Actor Roles (for appearance settings)
+# =============================================================================
+role.tank_label,Depósito
+role.healer_label,Sanador
+role.melee_dps_label,DPS cuerpo a cuerpo
+role.ranged_dps_label,DPS a distancia
+role.unknown_label,Papel desconocido
+
+# =============================================================================
+# Non-Player Types
+# =============================================================================
+nonplayer.creatures,Criaturas/NPC
+nonplayer.vehicles,Vehículos
+nonplayer.pets,Mascotas
+
+# =============================================================================
+# Shape Names
+# =============================================================================
+shape.default,(Por defecto)
+shape.sphere,Esfera
+shape.cube,Cubo
+shape.shield,Escudo
+shape.medic_cross,Cruz de San Juan
+shape.sword,Espada
+shape.bow,Arco
+shape.cone,Cono
+shape.cylinder,Cilindro
+shape.diamond,Diamante
+shape.pyramid,Pirámide
+shape.star,Estrella
+shape.classicon,Icono de especificaciones
+shape.builtin_header,Figuras integradas
+shape.custom_header,Modelos personalizados
+shape.custom_load_failed,No se ha podido cargar
+shape.no_custom_models,No se han encontrado modelos personalizados
+shape.tooltip.sphere,Forma esférica predeterminada: adecuada para todos los actores
+shape.tooltip.cube,Forma de caja: útil para estructuras o PNJ
+shape.tooltip.shield,Icono de escudo: recomendado para tanques
+shape.tooltip.medic_cross,Cruz médica: recomendada para sanadores
+shape.tooltip.sword,Icono de espada: recomendado para DPS cuerpo a cuerpo
+shape.tooltip.bow,Icono del arco: recomendado para DPS a distancia
+shape.tooltip.cone,Forma de cono puntiagudo
+shape.tooltip.cylinder,Cilindro con forma de barril o de pastilla
+shape.tooltip.diamond,Forma de doble pirámide (octaedro)
+shape.tooltip.pyramid,Una pirámide que apunta hacia arriba
+shape.tooltip.star,Forma de estrella en 3D
+shape.tooltip.classicon,Disco plano con textura de icono de especialización
+appearance.tab_custom_models,Modelos personalizados
+appearance.custom_models_desc,"Ajusta la rotación de los modelos OBJ personalizados. Los modelos se cargan desde la carpeta «custom_models», situada junto al ejecutable."
+appearance.custom_models_tip,Consejo: Alinea la dirección de avance del modelo con la flecha indicadora de orientación.
+appearance.custom_models_workflow,"Los controles de rotación establecen una orientación de referencia. Una vez configurados, el modelo girará según la dirección hacia la que mire el personaje, en lugar de estar siempre orientado hacia la cámara."
+appearance.custom_registry_not_available,El registro de modelos personalizados no está disponible
+appearance.models_folder,Carpeta «Modelos»
+appearance.drop_obj_hint,Arrastra los archivos .obj a la carpeta «custom_models» para utilizarlos como formas de actores.
+appearance.rotation_x,Rotación X
+appearance.rotation_y,Rotación Y
+appearance.rotation_z,Rotación Z
+appearance.z_offset,Desplazamiento Z
+appearance.load_errors,Errores de carga
+appearance.search_hint_extended,"Buscar por nombre, cargo o clase..."
+appearance.search_results,%zu de %zu actores
+appearance.enemy_search_results,%zu de los tipos de enemigos %zu
+appearance.override_trace,Resolución de anulación
+appearance.override_level_default,Por defecto
+appearance.override_level_role,Función
+appearance.override_level_class,Clase
+appearance.override_level_spec,Especificaciones
+appearance.override_level_name,Nombre
+appearance.override_level_guid,GUID
+appearance.trace_level,Nivel
+appearance.trace_value,Valor
+appearance.trace_shape,S
+appearance.trace_color,C
+appearance.trace_scale,X
+appearance.trace_system,Sistema
+appearance.badge_guid,[G]
+appearance.badge_name,[N]
+appearance.badge_spec,[S]
+appearance.badge_class,[C]
+appearance.badge_role,[R]
+appearance.badge_guid_tooltip,Tiene una sustitución específica para GUID
+appearance.badge_name_tooltip,¿Se ha anulado el grupo «Nombre»?
+appearance.badge_spec_tooltip,Tiene la opción «Anular especialización»
+appearance.badge_class_tooltip,¿La clase tiene una sobrescritura?
+appearance.badge_role_tooltip,Tiene una anulación de rol
+appearance.favorites,Favoritos
+appearance.only_favorites,Solo favoritos
+appearance.toggle_favorite,Activar/desactivar «Favoritos»
+appearance.favorite_tooltip,Haz clic para activar o desactivar el estado de «favorito»
+appearance.starred_actors,Actores destacados:
+appearance.color_presets,Ajustes predefinidos de color
+appearance.preset_classes,Clases
+appearance.preset_roles,Funciones
+appearance.preset_custom,Personalizado
+appearance.preset_slot,Tragaperras
+appearance.preset_empty,vacío
+appearance.preset_clear_slot,Ranura libre
+appearance.color_right_click_save,Haz clic con el botón derecho para guardar el color actual
+appearance.quick_reset_all,Restablecer todo
+appearance.quick_reset_all_tooltip,Borrar todas las modificaciones y restablecer los valores predeterminados
+appearance.confirm_reset,¿Estás seguro de que quieres restablecer todos los ajustes de apariencia?
+appearance.quick_copy,Copiar
+appearance.quick_copy_tooltip,Copiar la apariencia del actor seleccionado al portapapeles
+appearance.quick_copy_no_selection,Selecciona un actor para copiar su aspecto
+appearance.quick_paste,Pegar
+appearance.quick_paste_tooltip,Aplicar el aspecto del portapapeles al actor seleccionado
+appearance.quick_paste_no_clipboard,Aún no se ha copiado ninguna aparición
+appearance.quick_paste_no_selection,Selecciona un actor para pegar su aspecto
+appearance.quick_apply_similar,Solicitar...
+appearance.quick_apply_similar_tooltip,Aplicar el aspecto del portapapeles a todos los actores de la misma clase o rol
+appearance.apply_to_class,Todos
+appearance.apply_to_role,Todos
+appearance.context_copy,Copiar aspecto
+appearance.context_paste,Apariencia del pegado
+appearance.context_clear,Borrar todas las modificaciones
+appearance.context_focus,Enfoque en la vista 3D
+appearance.context_apply_class,Aplicar a todos %s
+appearance.context_apply_role,Aplicar a todos los %s
+appearance.context_no_clipboard,Aún no se ha copiado nada
+btn.refresh,Actualizar
+btn.reset,Restablecer
+btn.yes,Sí
+btn.no,No
+
+# =============================================================================
+# Actor Breakdown Panel
+# =============================================================================
+breakdown.title,Desglose de jugadores
+breakdown.spells,Hechizos
+breakdown.damage_done,Daños causados
+breakdown.healing_done,Curación realizada
+breakdown.damage_taken,Daños sufridos
+breakdown.total_stats,Total: %s  | %s: %s  | Hits: %u  | Crítico: %.1f%%
+breakdown.group_spells,+ Hechizos de grupo
+breakdown.group_tooltip,Arrastre los hechizos a los encabezados de grupo para agruparlos.\NHaga doble clic en el encabezado para renombrarlo.\NHaga clic con el botón derecho en el encabezado para eliminarlo.
+breakdown.delete_group,Borrar grupo
+breakdown.rename,Cambie el nombre de
+breakdown.blacklist_spell,Hechizo de la lista negra
+breakdown.unblacklist_spell,Hechizo de eliminación de la lista negra
+breakdown.blacklisted_spells_title,Hechizos de la lista negra
+breakdown.dragging_melee,Arrastre: Cuerpo a cuerpo
+breakdown.dragging_spell,Arrastrar: Hechizo %u
+breakdown.click_to_see,Haz clic en un hechizo para ver los detalles
+breakdown.hits_format,Golpes: %u
+breakdown.average,Promedio: %s
+breakdown.min,Mín: %s
+breakdown.max,Max: %s
+breakdown.normal_hits,Golpes normales
+breakdown.critical_hits,Golpes críticos
+breakdown.targets,Objetivos
+breakdown.pets_guardians,Mascotas y guardianes
+breakdown.no_data_graph,No hay datos %s para el gráfico
+breakdown.reset_selection,Reiniciar selección
+breakdown.drag_to_select_hint,(Arrastre sobre el gráfico para seleccionar el intervalo de tiempo)
+breakdown.select_time_hint,Arrastre sobre el gráfico para seleccionar un intervalo de tiempo para el análisis
+breakdown.selection_info,Seleccionado: %u:%02u - %u:%02u (%u:%02u duración)
+breakdown.hover_tooltip,Hora: %u:%02u\nPulsa y arrastra para seleccionar el rango
+breakdown.blacklisted_healing,Hechizos de la lista negra (excluidos de los informes de curación)
+breakdown.blacklisted_damage,Hechizos de la lista negra (excluidos de los informes de daños)
+breakdown.restore,Restaurar
+breakdown.more_targets,... y %zu más objetivos
+
+# =============================================================================
+# Aura Debug Panel
+# =============================================================================
+aura.filter_label,Filtrar por GUID o Nombre:
+aura.buffs,Mejoras
+aura.debuffs,Efectos negativos
+aura.active_only,Sólo activo
+aura.targets_with_auras,Objetivos con auras: %zu
+aura.current_time,Hora actual: %s
+aura.no_data,No se dispone de datos sobre el aura
+aura.no_target,Ningún jugador seleccionado
+aura.col_type,Tipo
+aura.col_spell,Hechizo
+aura.col_source,Fuente
+aura.col_stacks,Pilas
+aura.col_duration,Duración
+aura.col_applied,Aplicada
+aura.type_buff,BUFF
+aura.type_debuff,DESPERFECTO
+aura.status_active,Activo
+
+# =============================================================================
+# Deaths Panel
+# =============================================================================
+deaths.col_time,Tiempo
+deaths.col_player,Jugador
+deaths.col_ability,Capacidad
+deaths.col_amount,Importe
+deaths.unknown,Desconocido
+deaths.filter_threshold,Min Evento %
+deaths.filter_tooltip,Ocultar los eventos inferiores a este porcentaje de salud máxima
+deaths.filter_label,Filtro de eventos
+deaths.click_for_recap,Haz clic para ver el resumen de las muertes
+deaths.right_click_hint,Haz clic con el botón derecho del ratón para ver un análisis detallado de las muertes
+deaths.analysis_title,Análisis de la muerte
+deaths.player,Jugador
+deaths.killing_ability,Capacidad para matar
+deaths.health_chart,Cronología de la salud
+deaths.no_health_data,No hay datos sanitarios disponibles
+deaths.last_events,Eventos recientes
+deaths.no_events,No se han registrado eventos de daño ni de curación
+resurrections.spell,Hechizo de resurrección
+status.view_not_implemented,Vista aún no implementada
+
+# =============================================================================
+# WarcraftLogs Help Text
+# =============================================================================
+wcl_help.want_unlimited,¿Quiere acceso ilimitado? Cree su propio cliente API (¡gratis!)
+wcl_help.get_unlimited,Obtenga acceso ilimitado: cree su propio cliente API (¡gratis!):
+wcl_help.step1,1. Ir a: warcraftlogs.com/api/clients
+wcl_help.step2,"2. Haga clic en ""Crear un cliente"
+wcl_help.step3,3. Nombre de la aplicación: test
+wcl_help.step4,4. Redirigir URL: http://localhost:8080/callback
+wcl_help.step5,"5. Dejar ""Cliente público"" SIN MARCAR"
+wcl_help.step6,"6. Haga clic en ""Crear"
+wcl_help.step7,7. Copie su ID de cliente y su secreto de cliente
+wcl_help.step8,8. Crear 'wcl_credentials.txt' junto a AwowLab.exe
+wcl_help.step9,9. Línea 1: ID de cliente | Línea 2: Secreto del cliente
+wcl_help.go_to,Ir a: warcraftlogs.com/api/clients
+wcl_help.app_name,Nombre de la aplicación: test
+wcl_help.redirect_url,Redirigir URL: http://localhost:8080/callback
+wcl_help.public_client,"No marque la opción ""Cliente público"" y haga clic en Crear"
+wcl_help.save_credentials,Guardar ID de cliente y secreto en 'wcl_credentials.txt'
+wcl_help.credentials_format,"(Línea 1: ID del cliente, Línea 2: Secreto del cliente)"
+
+# =============================================================================
+# Spell Display Locations
+# =============================================================================
+location.none,Ninguno
+location.cd_group_1,Principales CD
+location.cd_group_2,CD menores
+location.cd_group_3,CD utilitarios
+location.raid_frame,Marco de redada
+location.hud_major_cd,HUD - CD Mayor
+location.hud_utility,HUD - Servicios públicos
+location.hud_defensive,HUD - Defensivo
+location.gcd_tracker,Rastreador de DGC
+location.nameplate,Placa de características
+location.short.cd1,Mayor
+location.short.cd2,Menor
+location.short.cd3,Utilidad
+location.short.raid,Redada
+location.short.hud_cd,HUD
+location.short.hud_util,Util
+location.short.hud_def,Def
+location.short.gcd,DGC
+location.short.plate,Placa
+location.short.buffs,Mejoras
+location.short.debuffs,Efectos negativos
+location.player_buffs,Panel de mejoras para jugadores
+location.player_debuffs,Panel de debilidades del jugador
+
+# =============================================================================
+# Spell Assignment Panel
+# =============================================================================
+menu.spell_assignments,Configuración de la pantalla de ortografía...
+menu.auto_annotations,Anotaciones automáticas...
+menu.annotation_list,Anotaciones manuales
+menu.raid_notes,Notas sobre la incursión
+assignment.panel_title,Configuración de la visualización de conjuros
+assignment.class_label,Clase:
+assignment.select_class,Seleccione una clase...
+assignment.all_classes,Todas las clases
+assignment.spec_label,Espec:
+assignment.select_spec,Seleccione una espec...
+assignment.all_specs,Todas las especificaciones
+assignment.cooldowns,enfriamientos
+assignment.buffs,aficionados
+assignment.debuffs,efectos negativos
+assignment.encounter,No jugadores
+assignment.all,Todos
+assignment.search_hint,Buscar hechizos...
+assignment.no_spells_for_filter,Ningún hechizo coincide con el filtro actual
+assignment.col_type,Tipo
+assignment.col_spell,Hechizo
+assignment.col_id,ID
+assignment.col_cd1,Mayor
+assignment.col_cd2,Menor
+assignment.col_cd3,Utilidad
+assignment.col_raid,Redada
+assignment.col_hud_big,Gran
+assignment.col_hud_util,Util
+assignment.col_hud_def,Def
+assignment.col_gcd,DGC
+assignment.col_name,Nombre
+assignment.icon_sizes,Tamaños de los iconos
+assignment.raid_frames,Marcos de redada
+assignment.nameplates,Placas de identificación
+
+# =============================================================================
+# Spell Data Version Selector
+# =============================================================================
+settings.spell_data_version,Datos de hechizo
+settings.spell_data_12_0,12.0 (La guerra interior)
+settings.spell_data_11_2,11.2 (Vuelo del dragón)
+settings.title,Configuración
+settings.log_folder,Carpeta de registros
+settings.change_log_folder,Cambiar...
+settings.language,Idioma
+
+# =============================================================================
+# Boss Timer / Playback Controls
+# =============================================================================
+playback.boss_timer,Jefe Temporizador
+playback.boss_timer_tooltip,Mostrar/ocultar la franja del temporizador de jefe debajo de la barra de reproducción
+playback.ortho,2D
+playback.ortho_tooltip,Cambiar a vista de cámara ortográfica (arriba-abajo)
+menu.enemy_cast_filters,Filtros de reparto enemigos...
+
+# =============================================================================
+# Help Panel (Keyboard Shortcuts)
+# =============================================================================
+help.title,Atajos de teclado
+help.playback,Reproducción
+help.camera,Cámara
+help.speed,Velocidad
+help.other,Otros
+
+# Key labels
+help.key_space,Espacio
+help.key_q,P
+help.key_e,E
+help.key_1,1
+help.key_2,2
+help.key_3,3
+help.key_4,4
+help.key_5,5
+help.key_wasd,W/A/S/D
+help.key_r,R
+help.key_lmb,Arrastre LMB
+help.key_rmb,RMB Arrastre
+help.key_scroll,Desplácese por
+help.key_f1,F1 / ?
+help.key_f5,F5
+
+# Descriptions
+help.space,Alternar reproducción/pausa
+help.q,Saltar hacia atrás 5s
+help.e,Avanzar 5s
+help.speed_1,"Velocidad 0,25x"
+help.speed_2,"Velocidad 0,5x"
+help.speed_3,Velocidad 1x
+help.speed_4,Velocidad 2x
+help.speed_5,Velocidad 4x
+help.wasd,Mover cámara
+help.r,Activar Auto-Follow
+help.lmb,Cámara panorámica
+help.rmb,Girar cámara
+help.scroll,Acercar/Alejar
+help.f1,Alternar este panel
+help.f5,Refrescar encuentros
+help.close_hint,Pulse F1 o ? para cerrar
+
+# =============================================================================
+# Settings Export/Import Panel
+# =============================================================================
+Import/Export Settings,Configuración de importación/exportación
+Export,Exportar
+Import,Importar
+Select settings to export:,Seleccione los ajustes que desea exportar:
+Select settings to import:,Seleccione la configuración que desea importar:
+Select All,Seleccionar todo
+Select None,Seleccione Ninguno
+Select All Available,Seleccionar todos los disponibles
+Filename:,Archivo:
+File path:,Ruta del archivo:
+Probe,Sonda
+Export Selected,Exportación seleccionada
+Import Selected,Importación seleccionada
+Files saved to: exported_settings/,Archivos guardados en: exported_settings/
+Enter a file path and click Probe to see available settings.,Introduzca una ruta de archivo y haga clic en Sonda para ver los ajustes disponibles.
+No valid settings found in file.,No se ha encontrado ninguna configuración válida en el archivo.
+
+# =============================================================================
+# Upcoming Boss Casts Panel
+# =============================================================================
+upcoming.no_casts,No hay próximos lanzamientos de jefe en los próximos %.0f segundos
+upcoming.enable_spells,Habilitar hechizos en Filtros de Lanzamiento Enemigo
+
+# =============================================================================
+# Raid Notes Panel
+# =============================================================================
+menu.raid_notes,Notas sobre la incursión
+raidnotes.title,Notas sobre la incursión
+raidnotes.ctx_add_title,Añadir a la nota de la incursión
+raidnotes.ctx_spell_fmt,Hechizo: %s
+raidnotes.ctx_timestamp_fmt,Marca de tiempo: %d:%02d
+raidnotes.ctx_add_to_note,Añadir a la nota:
+raidnotes.ctx_this_instance_fmt,Precisamente este caso (%d:%02d)
+raidnotes.ctx_this_instance_none,Solo esta instancia (sin marca de tiempo)
+raidnotes.ctx_all_instances_fmt,Todas las entradas (%zu encontradas)
+raidnotes.ctx_all_instances_none,Todas las entradas (no se ha encontrado ninguna)
+raidnotes.ctx_custom_text,Texto personalizado (opcional):
+raidnotes.ctx_custom_text_hint,"Por ejemplo: nombre del jugador, asignación..."
+raidnotes.ctx_add_button,Añadir a la nota
+raidnotes.phase_delay,Retardo de fase:
+raidnotes.after,después de
+raidnotes.by,por
+raidnotes.sec,seg
+raidnotes.add_delay,Añadir
+raidnotes.phase_delay_after_tooltip,Umbral de marca de tiempo (M:SS). Las entradas que se registren a partir de este momento se desplazarán.
+raidnotes.phase_delay_tooltip,Retrasa las marcas de tiempo tras una transición de fase. Se aplica de forma acumulativa: añade varios retrasos si tu equipo se retrasa en varias fases.
+raidnotes.options,Opciones
+raidnotes.opt_headers,Incluir encabezados de grupo
+raidnotes.opt_spellnames,Incluir los nombres de los hechizos
+raidnotes.opt_sort,Ordenar por fecha y hora
+raidnotes.no_entries,No hay entradas. Haz clic con el botón derecho del ratón en los iconos de hechizos para añadirlos.
+raidnotes.custom_text_hint,Tarea/nota...
+raidnotes.add_manual,Añadir nota manual:
+raidnotes.manual_hint,"Escribe una nota (p. ej., «Defensiva», «Absorción»)"
+raidnotes.add,Añadir
+raidnotes.copy_clipboard,Copiar al portapapeles
+raidnotes.copied,¡Copiado!
+raidnotes.clear_all,Borrar todo
+raidnotes.clear_confirm,¿Estás seguro de que quieres eliminar todas las entradas?
+raidnotes.entry,entrada
+raidnotes.entries,entradas
+raidnotes.all_instances_tooltip,Esta entrada exportará varias líneas (una por instancia)
+raidnotes.phase_delays,-- Retardos de fase --
+raidnotes.load_preset,Carga:
+raidnotes.select_preset,-- Seleccionar preajuste --
+raidnotes.load,Cargar
+raidnotes.delete_preset,Eliminar
+raidnotes.save_as,Guardar como:
+raidnotes.preset_name_hint,Nombre del preajuste...
+raidnotes.save,Guardar
+raidnotes.saved,¡Guardado!
+raidnotes.save_failed,No se ha podido guardar el ajuste predefinido
+raidnotes.delete_confirm,¿Quieres eliminar este ajuste predefinido?
+common.yes,Sí
+common.no,No
+
+# =============================================================================
+# Auto Annotations - Anchor Types
+# =============================================================================
+At Caster,En Caster
+At Target,En Target
+At Caster (Facing),En la rueda (de frente)
+At Target (Facing),En Target (de frente)
+Source -> Target,Origen -> Destino
+Use 'Facing' to orient shapes in the direction the player is looking,Utiliza la opción «Orientación» para orientar las figuras en la dirección hacia la que mira el jugador.
+Place annotation at caster's position,Colocar la anotación en la posición del lanzador
+Place annotation at target's position,Colocar la anotación en la posición del objetivo
+Place at caster's position, Gíralas para que su orientación coincida con la de los jugadores; colócalas en la posición de los jugadores y gíralas para que su orientación coincida con la de los jugadores.
+Place at target's position, Gíralos para que su orientación coincida con la del objetivo; colócalos en la posición del objetivo y gíralos para que su orientación coincida con la del objetivo.
+Draw shape spanning from caster to target (beams," (cadenas), Dibujar una figura que se extienda desde el lanzador hasta el objetivo (vigas, cadenas)"
+
+# =============================================================================
+# Auto Annotations - Position Offset
+# =============================================================================
+Offset X (yards),Desviación X (yardas)
+Offset Y (yards),Desviación Y (yardas)
+Offset from anchor in world X axis (positive = East),Desplazamiento respecto al punto de anclaje en el eje X mundial (positivo = este)
+Offset from anchor in world Y axis (positive = North),Desplazamiento respecto al punto de anclaje en el eje Y del sistema de coordenadas mundial (positivo = norte)
+
+# =============================================================================
+# Auto Annotations - Shapes
+# =============================================================================
+Circle,Círculo
+Rectangle,Rectángulo
+Cone,Cono
+Line,Línea
+Star,Estrella
+Donut,Donut
+Outer Radius (yards),Radio exterior (yardas)
+Inner Radius (yards),Radio interior (yardas)
+
+# =============================================================================
+# Auto Annotations - Preview
+# =============================================================================
+Show Preview,Mostrar vista previa
+Show annotation preview on the 3D map at the first event position,Mostrar la vista previa de la anotación en el mapa 3D en la posición del primer evento
+Ignore Early Pull,Ignorar la retirada anticipada
+Skip casts in the first 500ms of the encounter (filters fake 0:00 boss casts),Omite los hechizos lanzados durante los primeros 500 ms del combate (filtra los hechizos falsos del jefe a los 0:00)
+
+# =============================================================================
+# Auto Annotations - Motion
+# =============================================================================
+Motion,Moción
+Motion Type,Tipo de movimiento
+None,Ninguno
+Rotate,Girar
+Projectile,Proyectil
+Rotation Speed (deg/s),Velocidad de rotación (grados/s)
+End Offset X (yards),Desplazamiento final en el eje X (yardas)
+End Offset Y (yards),Desplazamiento final en Y (yardas)
+Travel Time (sec),Tiempo de recorrido (segundos)
+Return to Origin,Volver al origen
+Projectile travels to destination and returns to starting position (splits travel time in half),El proyectil se desplaza hasta su destino y vuelve a la posición inicial (lo que reduce a la mitad el tiempo de recorrido).
+End Behavior,Comportamiento final
+Persist at End,Persistir al final
+Disappear at End,Desaparecer al final
+End Position,Posición final
+Manual,Manual
+To Target,A quién va dirigido
+In Facing Direction,En la dirección de orientación
+Distance (yards),Distancia (yardas)
+Direction Offset (deg),Desviación de la dirección (grados)
+Offset from caster's facing direction. 0=forward," 180 = hacia atrás, 90 = a la derecha, -90 = a la izquierda; desplazamiento respecto a la dirección en la que mira el jugador. 0 = hacia delante, 180 = hacia atrás, 90 = a la derecha, -90 = a la izquierda"
+Fallback X (yards),Retroceso X (yardas)
+Fallback Y (yards),Distancia de seguridad Y (yardas)
+Projectile travels from caster to target,El proyectil va desde quien lo lanza hasta el objetivo
+Fallback offsets used if no valid target:,Compensaciones alternativas que se utilizan si no hay un destino válido:
+Fallback offsets used if facing unavailable:,Compensaciones alternativas que se utilizan si la opción principal no está disponible:
+How far the projectile travels in the caster's facing direction,La distancia que recorre el proyectil en la dirección a la que mira el lanzador
+Use fixed X/Y offsets for end position,Utiliza desplazamientos fijos en los ejes X e Y para la posición final
+Travel from caster to spell target position (snapshotted at cast time),Desplazarse desde el lanzador hasta la posición del objetivo del hechizo (capturada en el momento del lanzamiento)
+Travel in caster's facing direction for configured distance,Desplazarse en la dirección a la que mira la rueda giratoria durante la distancia configurada
+Annotation rotates continuously around its anchor point,La anotación gira continuamente alrededor de su punto de anclaje
+Annotation moves from start position to end offset over travel time,La anotación se desplaza desde la posición inicial hasta el desplazamiento final en el tiempo de recorrido
+Raindrops,Gotas de lluvia
+Spawns small circles within annotation bounds (swirlie effect),Crea pequeños círculos dentro de los límites de la anotación (efecto de remolino)
+Drops per Second,Gotas por segundo
+Drop Radius (yards),Radio de caída (yardas)
+Drop Lifetime (sec),Tiempo de caída (segundos)
+How many raindrops spawn each second,¿Cuántas gotas de lluvia se forman cada segundo?
+Size of each raindrop circle,Tamaño de cada círculo que representa una gota de lluvia
+How long each drop remains visible before fading,Cuánto tiempo permanece visible cada gota antes de desaparecer
+Add World Marker,Añadir marcador mundial
+Star (Yellow),Estrella (amarilla)
+Circle (Orange),Círculo (naranja)
+Diamond (Purple),Diamante (morado)
+Triangle (Green),Triángulo (verde)
+Moon (Silver),Luna (Plata)
+Square (Blue),Cuadrado (azul)
+Cross (Red),Cruz (roja)
+Skull (White),Calavera (blanca)
+Symbol Height (yards),Altura del símbolo (yardas)
+Height of floating symbol above ground,Altura del símbolo flotante sobre el suelo
+World Marker Settings,Configuración de los marcadores mundiales
+
+# =============================================================================
+# Settings Hub
+# =============================================================================
+settings.hub.title,Configuración
+settings.hub.display,Pantalla
+settings.hub.appearance,Aspecto
+settings.hub.camera,Cámara
+settings.hub.import_export,Importación/Exportación
+settings.hub.actors,Actores
+settings.hub.nameplates,Placas identificativas
+settings.hub.facing,Indicador de orientación
+settings.hub.ui_scale,Escala de la interfaz de usuario
+settings.hub.layout,Diseño
+settings.hub.reset_layout,Restablecer los valores predeterminados
+settings.hub.save_layout,Guardar el actual
+settings.hub.import_export_desc,Exporta o importa tu configuración para compartirla con otras personas o restaurarla desde una copia de seguridad.
+settings.hub.open_import_export,Abrir Importación/Exportación...
+menu.show_menu_bar,Mostrar la barra de menús
+camera.enable_follow,Activar el seguimiento de la cámara
+camera.pan_sensitivity,Sensibilidad de la sartén
+camera.follow_speed,Sigue a Speed
+camera.orthographic,Vista ortográfica (2D)
+camera.reset,Restablecer la cámara
+actor.auto_assign_shapes,Asignación automática de formas de roles
+actor.role_shapes,Asignaciones de roles y perfiles
+actor.tank_shape,Depósito
+actor.healer_shape,Sanador
+actor.melee_dps_shape,DPS cuerpo a cuerpo
+actor.ranged_dps_shape,Daño por segundo a distancia
+actor.default_scale,Escala predeterminada
+tooltip.auto_assign_shapes,Asignar automáticamente formas en función del rol del jugador (tanque/sanador/DPS)
+tooltip.landing_local_file,Carga un archivo de registro de combate (.txt) desde tu ordenador
+tooltip.landing_warcraftlogs,Importar partidas desde WarcraftLogs.com mediante una URL o la API
+tooltip.landing_recent,Ver los combates cargados anteriormente desde la caché
+tooltip.landing_playalong,Modo de entrenamiento: repasa las acciones de tu personaje
+tooltip.camera_follow,La cámara sigue automáticamente el centroide de los actores
+tooltip.camera_pan,La velocidad a la que se mueve la cámara al arrastrarla
+tooltip.camera_speed,Con qué rapidez la cámara sigue el ritmo de los actores en movimiento
+tooltip.camera_ortho,Vista 2D desde arriba (desactiva la perspectiva)
+tooltip.camera_reset,Vuelve a colocar la cámara en su posición predeterminada y ajusta el zoom
+tooltip.ui_scale,Ajustar el tamaño de todos los elementos de la interfaz de usuario
+tooltip.menu_bar,Activa o desactiva el menú «Archivo/Ver/Configuración» de la parte superior
+tooltip.reset_layout,Restablecer todas las posiciones de los paneles a los valores predeterminados
+
+# =============================================================================
+# Annotation Wizard
+# =============================================================================
+wizard.title,Asistente de anotaciones
+wizard.use_wizard,Utilizar el asistente
+wizard.back,Atrás
+wizard.next,Siguiente
+wizard.finish,Crear
+wizard.cancel,Cancelar
+
+# Wizard Step Indicator
+wizard.step.source,Fuente
+wizard.step.event,Evento
+wizard.step.position,Puesto
+wizard.step.shape,Forma
+wizard.step.visual,Visual
+wizard.step.advanced,Avanzado
+
+# Step 1: Trigger Source
+wizard.source.mode,Elige la fuente del disparador:
+wizard.source.spell,Evento de hechizos
+wizard.source.actor,Puesto de actor
+wizard.source.select_spell,Selecciona un hechizo para seguir:
+wizard.source.actor_name,Nombre del actor que se quiere seguir:
+wizard.source.actor_hint,"Introduce el nombre exacto del PNJ (p. ej., Sikran)"
+wizard.source.no_spells,No se han encontrado criaturas hostiles en este encuentro
+wizard.source.selected,Seleccionado
+wizard.category.cast,Reparto
+wizard.category.debuff,Efectos negativos
+wizard.category.buff,Mejoras
+wizard.category.damage,Daños
+wizard.category.damage_taken,Daño recibido
+wizard.tooltip.damage_taken,Se activa cuando los jugadores reciben daño de este hechizo
+wizard.category.actor,Actor
+
+# Step 2: Event Type
+wizard.event.timing,¿Cuándo debería activarse la anotación?
+wizard.event.cast_info,Se activa cuando finaliza el lanzamiento del hechizo
+wizard.event.damage_info,Se activa cuando el hechizo inflige daño
+wizard.event.debuff_timing,Elige cuándo mostrar la anotación:
+wizard.event.buff_timing,Elige cuándo mostrar la anotación:
+wizard.event.on_applied,Cuando se aplica
+wizard.event.while_active,Mientras está activo (sigue al objetivo)
+wizard.event.on_end,Cuando se retira
+wizard.event.actor_mode,Elige cómo seguir al actor:
+wizard.event.actor_follow,Seguir al actor
+wizard.event.actor_follow_desc,La anotación se desplaza con el actor
+wizard.event.actor_trail,Dejar un rastro
+wizard.event.actor_trail_desc,Coloca marcadores a intervalos regulares
+wizard.event.actor_spawn,Sobre Spawn
+wizard.event.actor_spawn_desc,Marca cuándo aparece el actor
+wizard.event.actor_death,Sobre la muerte
+wizard.event.actor_death_desc,Marca el lugar donde muere el personaje
+wizard.event.trail_interval,Intervalo entre las señales del sendero:
+wizard.event.death_behavior,Cuando fallece un actor:
+wizard.event.death_disappear,Desaparece inmediatamente
+wizard.event.death_persist,Quédate en el lugar de la muerte
+wizard.event.death_fade,Se va desvaneciendo con el tiempo
+
+# Step 3: Positioning
+wizard.position.anchor,¿Dónde debería aparecer la anotación?
+wizard.position.at_caster,En la posición de lanzador
+wizard.position.at_caster_facing,En el lanzador (según la dirección a la que mira)
+wizard.position.at_target,En la posición prevista
+wizard.position.at_target_facing,En el objetivo (utilizando la dirección de orientación)
+wizard.position.facing_hint,Orientación de la cara: solo están disponibles las formas «Cono» y «Rectángulo»
+wizard.position.actor_hint,Los activadores basados en actores siguen automáticamente la posición del actor
+wizard.position.offset,Desplazamiento de la posición respecto al punto de anclaje:
+wizard.position.offset_x,X (Este/Oeste)
+wizard.position.offset_y,Y (Norte/Sur)
+wizard.position.offset_hint,X positiva = Este. Y positiva = Norte.
+wizard.position.lead_time,Mostrar la anotación antes del evento:
+wizard.position.lead_time_hint,Avisa al mecánico antes de que ocurra
+
+# Step 4: Shape & Size
+wizard.shape.select,Elige la forma de la anotación:
+wizard.shape.dimensions,Ajustar las dimensiones:
+wizard.shape.circle,Círculo
+wizard.shape.rectangle,Rectángulo
+wizard.shape.cone,Cono
+wizard.shape.line,Línea
+wizard.shape.star,Estrella
+wizard.shape.donut,Donut
+wizard.shape.radius,Radio
+wizard.shape.height,Altura
+wizard.shape.width,Ancho
+wizard.shape.length,Longitud
+wizard.shape.rotation,Rotación
+wizard.shape.cone_length,Longitud del cono
+wizard.shape.cone_angle,Ángulo del cono
+wizard.shape.line_length,Longitud de la línea
+wizard.shape.line_width,Ancho de la línea
+wizard.shape.ray_length,Longitud del rayo
+wizard.shape.ray_width,Ancho del haz
+wizard.shape.points,Número de rayos
+wizard.shape.outer_radius,Radio exterior
+wizard.shape.inner_radius,Radio interior
+
+# Step 5: Visual Style
+wizard.visual.color,Color de la anotación:
+wizard.visual.base_color,Color de base
+wizard.visual.pattern,Patrón visual:
+wizard.visual.solid,Sólido
+wizard.visual.striped,A rayas
+wizard.visual.hatched,Nacido
+wizard.visual.ripple,Anillos de ondas
+wizard.visual.swirl,Remolino
+wizard.visual.stripe_spacing,Espaciado entre rayas
+wizard.visual.ripple_speed,Velocidad de propagación
+wizard.visual.ripple_count,Ciclos de ondulación
+wizard.visual.motion,Tipo de moción:
+wizard.visual.motion_none,Ninguno (estático)
+wizard.visual.motion_rotate,Girar
+wizard.visual.motion_projectile,Proyectil
+wizard.visual.motion_raindrops,Gotas de lluvia
+wizard.visual.rotation_speed,Velocidad de rotación
+wizard.visual.end_mode,Modo de posición final:
+wizard.visual.end_manual,Desplazamiento manual
+wizard.visual.end_to_target,Escribir «target»
+wizard.visual.end_in_facing,En la dirección de la cara
+wizard.visual.end_offset_x,Desplazamiento horizontal final
+wizard.visual.end_offset_y,Desplazamiento horizontal final
+wizard.visual.projectile_distance,Distancia recorrida
+wizard.visual.travel_time,Duración del trayecto
+wizard.visual.return_to_origin,Volver al inicio
+wizard.visual.end_behavior,Una vez en el destino:
+wizard.visual.end_persist,Mantente visible
+wizard.visual.end_disappear,Desaparecer
+wizard.visual.drops_per_sec,Gotas por segundo
+wizard.visual.drop_radius,Tamaño de la gota
+wizard.visual.drop_lifetime,Vida útil de la gota
+
+# Step 6: Duration & Advanced
+wizard.advanced.duration,¿Durante cuánto tiempo debe permanecer visible la anotación?
+wizard.advanced.duration_encounter,Todo el encuentro
+wizard.advanced.duration_encounter_desc,(visible durante todo el combate)
+wizard.advanced.duration_timed,Programado
+wizard.advanced.duration_timed_desc,(desaparece al cabo de un tiempo)
+wizard.advanced.duration_sec,Duración
+wizard.advanced.stacks,Filtrado por pila/dosis (opcional):
+wizard.advanced.min_stacks,Apilamientos mínimos
+wizard.advanced.max_stacks,Número máximo de acumulaciones
+wizard.advanced.stacks_hint,Deja el valor en 0 para no aplicar ningún filtro
+wizard.advanced.stack_colors,Color según el número de pilas:
+wizard.advanced.color_count,Número de umbrales
+wizard.advanced.negation,Zona de negación (borra el resto de anotaciones):
+wizard.advanced.is_negation,Actúa como zona de negación
+wizard.advanced.negation_hint,Añadir los ID de los hechizos que se deben borrar cuando se active esto
+wizard.advanced.add_spell,Añadir
+wizard.advanced.summary,Resumen:
+wizard.summary.spell,Hechizo
+wizard.summary.actor,Actor
+wizard.summary.timing,Momento oportuno
+wizard.summary.shape,Forma
+wizard.summary.duration,Duración
+wizard.summary.seconds,segundos
+
+# =============================================================================
+# Auto Annotations Panel - Trigger Config
+# =============================================================================
+Trigger When,Activador: Cuando
+Trigger Mode,Modo de disparo
+On Applied,Sobre «Applied»
+During Debuff,Durante el debuff
+During Buff,Durante el Buff
+On End,Fin
+Fixate,Fijarse
+Tether,Tether
+On Cast Start,Al inicio de la emisión
+On Cast Success,Sobre el éxito del reparto
+During Cast,Durante el reparto
+Pool Interval (sec),Intervalo de agrupación (segundos)
+After Cast (sec),Tiempo de fraguado (segundos)
+Follow Actor,Seguir al actor
+Leave Trail,Dejar un rastro
+On Spawn,Sobre Spawn
+On Death,Sobre la muerte
+On Actor Death,Sobre la muerte de un actor
+Disappear Immediately,Desaparecer inmediatamente
+Persist at Death Spot,Persistir en el punto de muerte
+Fade Over Time,Desvanecimiento progresivo
+Trail Interval (sec),Intervalo de seguimiento (segundos)
+Single annotation when debuff is first applied,Una sola anotación cuando se aplica el efecto negativo por primera vez
+Annotation follows the debuffed player while active,La anotación sigue al jugador afectado por el debuff mientras esté activa.
+Single annotation at player's position when debuff ends,Una única anotación en la posición del jugador cuando finaliza el efecto negativo
+Fixate Line,Línea de fijación
+Line connecting source NPC to target player (updates every 250ms),Línea que conecta al NPC de origen con el jugador de destino (se actualiza cada 250 ms)
+Anchor: Source NPC to Target Player,Ancla: PNJ de origen al jugador de destino
+Line automatically connects the debuff source (NPC) to the debuff target (player),La línea conecta automáticamente la fuente del efecto negativo (PNJ) con el objetivo del efecto negativo (jugador).
+Shape: Line (required for Fixate),Forma: Línea (obligatoria para «Fixate»)
+Thickness of the fixate line,Grosor de la línea de fijación
+Single annotation when buff is first applied,Una única anotación cuando se aplica el «buff» por primera vez
+Annotation follows the buffed enemy while active,La anotación sigue al enemigo potenciado mientras está activa
+Single annotation at enemy's position when buff ends,Se muestra una única indicación en la posición del enemigo cuando finaliza el efecto de mejora
+Annotation appears at actor's position as timeline progresses,La anotación aparece en la posición del actor a medida que avanza la línea de tiempo
+Leave persistent annotations at actor's position over time (void zone trail),Dejar anotaciones persistentes en la posición del actor a lo largo del tiempo (rastro de zona vacía)
+Single annotation when actor first appears,Una sola anotación cuando el actor aparece por primera vez
+Single annotation when actor dies,Una sola anotación cuando fallece el actor
+How often to leave a new annotation (in seconds),Cada cuánto tiempo se debe añadir una nueva anotación (en segundos)
+Annotation vanishes when actor dies,La anotación desaparece cuando fallece el actor
+Annotation stays at death location (uses duration setting),La anotación permanece en el lugar de la muerte (se aplica la configuración de duración)
+Annotation fades out after actor dies,La anotación se desvanece tras la muerte del actor
+
+# Trigger Config - Headers and Preview
+Editing Actor: %s,Responsable de la edición: %s
+Configure Actor: %s,Configurar actor: %s
+Editing: %s,Edición: %s
+Configure: %s,Configurar: %s
+
+# Trigger Config - Lead Time
+Lead Time (sec),Tiempo de respuesta (segundos)
+Fire annotation this many seconds BEFORE the cast completes,Activa esta anotación tantos segundos ANTES de que finalice el lanzamiento
+Fire annotation this many seconds BEFORE the event occurs,Anotación de incendio tantos segundos ANTES de que se produzca el suceso
+
+# Trigger Config - Anchor/Position
+Place at,Colocar en
+At Buffed Unit,En Buffed Unit
+At Buffed Unit (Facing),En la unidad pulida (vista frontal)
+Use 'Facing' to orient shapes in the direction the enemy is looking,Utiliza la opción «Orientación» para orientar las figuras en la dirección en la que mira el enemigo.
+
+# Trigger Config - Trigger Types
+Trigger: On Cast Success,Desencadenante: Al lanzar con éxito
+Trigger: On Damage,Activador: Al recibir daño
+Trigger: On Damage Taken,Condición de activación: al recibir daño
+
+# Trigger Config - Cast Timing Tooltips
+Single annotation when cast begins (interruptible casts only),Anotación única al inicio de la transmisión (solo transmisiones interrumpibles)
+Single annotation when spell cast completes,Una sola anotación al finalizar el lanzamiento del hechizo
+Spawn pool annotations at caster position at intervals during cast,Generar anotaciones del grupo de engendros en la posición del lanzador a intervalos regulares durante el lanzamiento
+
+# Trigger Config - Dimensions
+Radius (yards),Radio (yardas)
+Width (yards),Ancho (yardas)
+Length (yards),Longitud (yardas)
+Height,Altura
+Angle (deg),Ángulo (grados)
+Rotation (deg),Rotación (grados)
+Ray Length (yards),Longitud del rayo (yardas)
+Ray Width (yards),Ancho del haz (yardas)
+Points,Puntos
+
+# Trigger Config - Stack Filtering
+Stack Filtering,Filtrado por pila
+Min Stacks,Apiles mínimos
+Max Stacks,Max Stacks
+No min,Sin mínimo
+No max,Sin límite máximo
+Only show annotation when aura has at least this many stacks (0 = no minimum),Mostrar la anotación solo cuando el aura tenga al menos este número de acumulaciones (0 = sin mínimo)
+Only show annotation when aura has at most this many stacks (0 = no maximum),Mostrar la anotación solo cuando el aura tenga como máximo este número de acumulaciones (0 = sin límite máximo)
+Stack Colors,Colores de la pila
+Change annotation color based on stack count. Higher thresholds take priority.,Cambiar el color de la anotación en función del número de apilamientos. Los umbrales más altos tienen prioridad.
+Color Thresholds,Umbrales de color
+Number of stack-based color changes (0 = use base color only),Número de cambios de color basados en la pila (0 = utilizar solo el color base)
+At %d+ stacks,En las pilas de %d+
+at %d+ stacks,en pilas de %d+
+Higher thresholds take priority over lower ones,Los umbrales más altos tienen prioridad sobre los más bajos
+
+# Trigger Config - Visual Styles
+Default solid fill,Relleno sólido predeterminado
+Diagonal stripes (uncertainty indicator),Rayas diagonales (indicador de incertidumbre)
+Cross-hatch pattern (uncertainty indicator),Patrón de rayas cruzadas (indicador de incertidumbre)
+Animated ripples expanding outward (projectile/wave effect),Ondas animadas que se expanden hacia fuera (efecto de proyectil/onda)
+Spiral pattern from center (saturation shift),Motivo en espiral desde el centro (cambio de saturación)
+Stripe Spacing,Espaciado entre rayas
+Distance between stripes/hatches in yards,Distancia entre las rayas o los trazos en yardas
+Ring Speed,Velocidad del anillo
+How fast rings expand outward,A qué velocidad se expanden los anillos hacia el exterior
+Ring Count,Recuento de anillos
+Number of visible ring cycles,Número de ciclos de anillos visibles
+
+# Trigger Config - Motion
+Static annotation (no motion),Anotación estática (sin movimiento)
+Annotation rotates around its center point,La anotación gira alrededor de su punto central
+Annotation moves from start to end position over time,La anotación se desplaza de la posición inicial a la final a lo largo del tiempo
+Spawns small circles within annotation bounds (swirlie effect),Crea pequeños círculos dentro de los límites de la anotación (efecto de remolino)
+Positive = clockwise," Negativo = en sentido antihorario, Positivo = en sentido horario, Negativo = en sentido antihorario"
+Horizontal distance to travel (positive = East),Distancia horizontal a recorrer (positiva = este)
+Vertical distance to travel (positive = North),Distancia vertical a recorrer (positiva = norte)
+How long it takes to reach the destination,Cuánto tiempo se tarda en llegar al destino
+Annotation stays at final position after reaching destination,La anotación permanece en la posición final tras llegar al destino
+Annotation disappears when it reaches the destination,La anotación desaparece al llegar a su destino
+
+# Trigger Config - Negation
+Negation,Negación
+Acts as Negation Zone,Actúa como zona de negación
+When this annotation fires," Elimina de forma permanente las anotaciones coincidentes que se encuentren dentro de su radio. Cuando se activa esta anotación, elimina de forma permanente las anotaciones coincidentes que se encuentren dentro de su radio."
+Spells to Negate:,Hechizos que hay que anular:
+Enter spell ID of annotations to clear when this fires,Introduce el ID del hechizo de las anotaciones que deseas borrar cuando se active esto
+No spells configured - add spell IDs to negate,No hay hechizos configurados: añade los ID de los hechizos para anularlos
+
+# Trigger Config - Buttons
+Update Trigger,Desencadenador de actualización
+Create Trigger,Crear un disparador
+Select a spell or actor to configure,Selecciona un hechizo o un actor para configurarlo
+Annotation follows the buffed unit while active,La anotación sigue a la unidad potenciada mientras esté activa
+Single annotation at unit's position when buff ends,Una única anotación en la posición de la unidad cuando finaliza el «buff»
+
+# Shared
+Color,Color
+Shape,Forma
+%.0f deg,%.0f grados
+%.1f yards,%.1f yardas
+%.1f yards/s,%.1f yardas/s
+Adds a bright glow effect at edges,Añade un efecto de resplandor brillante en los bordes
+Adds a darker border around the shape,Añade un borde más oscuro alrededor de la figura
+Angle,Ángulo
+Annotation Properties,Propiedades de las anotaciones
+Color gradient from center to edge,Degradado de color desde el centro hacia los bordes
+Delete,Eliminar
+Duration (sec),Duración (segundos)
+Duration,Duración
+Edge Fade,Corte degradado en los laterales
+Edge Glow,Resplandor en los bordes
+Encounter,Encuentro
+Fade Width,Ancho de fundido
+Glow Intensity,Intensidad del brillo
+Gradient,Gradiente
+Hatched,Nacido
+No annotation selected,No se ha seleccionado ninguna anotación
+Outline Width,Ancho del contorno
+Outline,Esquema
+Ripple Rings,Anillos de ondas
+Rotation,Rotación
+Soft alpha fade at edges for a smoother look,Desvanecimiento alfa suave en los bordes para conseguir un aspecto más uniforme
+Solid,Sólido
+Striped,A rayas
+Swirl,Remolino
+Timed,Programado
+Visual Polish,Polaco visual
+Visual Style,Estilo visual
+Add,Añadir
+
+# Facing Offset
+Facing Offset (deg),Desplazamiento frontal (grados)
+Rotate the shape from the actor's facing direction. 0=forward," 90 = a la derecha, -90 = a la izquierda, 180 = hacia atrás; gira la forma desde la dirección a la que mira el actor. 0 = hacia delante, 90 = a la derecha, -90 = a la izquierda, 180 = hacia atrás"
+
+# Spell Context Menu
+context_menu.open_wowhead,Abrir en Wowhead
+context_menu.open_spell_settings,Abrir la configuración de Spell
+context_menu.open_auto_annotations,Abrir en «Anotaciones automáticas»
+context_menu.add_to_raid_note,Añadir a la nota de la incursión
+
+# CJK Font Settings
+settings.enable_cjk_fonts,Habilitar fuentes CJK (chino/coreano)
+tooltip.cjk_fonts,"Activa la compatibilidad con texto en chino y coreano. Si la desactivas, ahorrarás unos 100 MB de RAM."
+settings.requires_restart,Es necesario reiniciar
+
+# =============================================================================
+# Overlay View Modes
+# =============================================================================
+overlay.view_mode.current_pull,Corriente de tracción
+overlay.view_mode.dungeon,Mazmorra
+overlay.view_mode.trash_overall,Toda la basura
+overlay.view_mode.session,Sesión
+
+# Meter tooltip and breakdown strings
+breakdown.raw_tooltip,Daño/sanación antes de mitigación
+breakdown.raw_tooltip_crit1,"Para golpes críticos, estimamos el daño bruto"
+breakdown.raw_tooltip_crit2,asumiendo un multiplicador de crítico de 200%.
+format.effective_total_overheal,Efectivo: %s  |  Total: %s (%.1f%% de sobresanación)
+format.total_persec,Total:   |%s  :%s %s
+format.hits_crits,Golpes: %u (Críticos: %u)
+meter.click_hint,"Clic izquierdo para seleccionar, clic derecho para expandir"
+meter.click_hint_select,Haz clic con el botón izquierdo para seleccionar
+meter.show_who_damaged_fmt,Mostrar quién ha dañado %s
+meter.damage_avoided_fmt,Daño evitado: %s
+meter.click_breakdown_fmt,Haz clic aquí para ver el desglose de los daños de %s
+meter.tip_total_fmt,Total: %s
+meter.tip_effective_fmt,Vigencia: %s
+meter.tip_hits_fmt,Visitas: %u
+meter.tip_crits_fmt,Críticas: %u (%.1f%%)
+meter.tip_max_hit_fmt,Máximo de golpes: %s
+
+# Settings import/export status messages
+settings_export.exported_fmt,%zu categorías exportadas a %s
+settings_export.export_failed,Error al exportar
+settings_export.imported_fmt,%zu categorías importadas
+settings_export.import_failed,Error al importar
+settings_export.file_not_found,Archivo no encontrado
+settings_export.no_valid_settings,No hay ajustes válidos en el archivo
+settings_export.found_fmt,%zu categorías encontradas
+settings_export.not_in_file,(no está en el archivo)
+settings_export.invalid_filename,"Utiliza un nombre de archivo sencillo, sin carpetas ni caracteres especiales."
+settings_export.file_exists_fmt,%s ya existe: elige otro nombre
+
+# Playback shortcut hints
+playback.tooltip.play_pause,Reproducir/Pausar (Espacio)
+playback.tooltip.skip_back,Retroceder 5 segundos (Q)
+playback.tooltip.skip_forward,Avanzar 5 segundos (E)
+playback.tooltip.speed,Velocidad de reproducción (teclas 1-5 para preajustes)
+
+# Raid notes crash recovery and empty-state hints
+raidnotes.recovered_notes,Se recuperaron notas sin guardar de tu última sesión
+raidnotes.restore,Restaurar
+raidnotes.discard,Descartar
+empty.select_encounter_hint,Elige un encuentro o espera al combate
+empty.scrub_hint,Aún no hay nada registrado en esta ventana de tiempo
+
+# Death recap window
+death_recap.title,Análisis de muertes
+death_recap.count_fmt,%zu muertes
+death_recap.deaths,Fallecimientos
+death_recap.no_deaths,No se han registrado fallecimientos.
+death_recap.select_death,Selecciona un fallecimiento para analizarlo.
+death_recap.died_at_fmt,Falleció en %s
+death_recap.killing_blow,Golpe mortal:
+death_recap.hide_hits_under,Ocultar resultados en
+death_recap.max_hp_fmt,%.0f%% PV máximos
+death_recap.hide_hits_tooltip,Filtra la lista de eventos que aparece a continuación. Las pequeñas marcas que no son relevantes para el análisis posterior se ocultan cuando el daño que causan es inferior a este porcentaje de los PV máximos del jugador.
+death_recap.hp_timeline,Cronología de HP (ventana de 30 segundos)
+death_recap.no_hp_data,No hay datos de HP registrados en esta ventana.
+death_recap.axis_death,Muerte
+death_recap.events_fmt,Eventos  (%zu)
+death_recap.events_filtered_fmt,Eventos  (%zu de %zu mostrado)
+death_recap.no_events,No se han producido eventos de daño ni de curación en los últimos 30 segundos.
+death_recap.col_time,Hora
+death_recap.col_ability,Habilidad
+death_recap.col_amount,Importe
+
+# Landing page extras toggle
+landing.extras_show,Acerca de y socios
+landing.extras_hide,Ocultar acerca de y socios
+
+# Landing page links to the project page (project_url in awowlab.config.json)
+landing.report_issue,Informar de un problema
+landing.releases,Comunicados de prensa
+landing.translate_hint,Edita el archivo de tu idioma en AwowLab/data/lang y envía una solicitud de incorporación de cambios
+
+# Mob weighting panel
+mobweight.title,Ponderación de monstruos
+mobweight.enabled,Activar ponderación de monstruos
+mobweight.explainer,El daño hecho a monstruos ponderados cuenta solo esa fracción en los medidores
+mobweight.active_hint,Ponderación de monstruos activa
+mobweight.reset_all,Restablecer todas las ponderaciones
+mobweight.not_in_encounter,Ponderaciones guardadas que no están en este combate
+mobweight.refresh,Actualizar
+mobweight.hits_fmt,%zu golpes
+
+# Boss phase tracking and meter report
+context_menu.set_phase_trigger,Inicia una nueva fase aquí
+context_menu.remove_phase_trigger,Quitar activador de fase
+meter.phase_all,Todas las fases
+meter.report,Informe
+meter.report_tooltip,Copia un resumen de una línea para pegarlo en el chat
+meter.report_copied,¡Copiado!
+
+# Boss phase editor
+phases.title,Fases del jefe
+phases.kind_cast,Primer lanzamiento de
+phases.kind_time,En
+phases.kind_emote,Emote
+phases.not_this_pull,no alcanzado en este intento
+phases.add_time,Agregar división de tiempo
+phases.time_hint,m:ss
+phases.emotes_header,Emotes de este intento
+phases.split_here,Dividir aquí
+phases.no_emotes,No hay emotes en este intento
+phases.no_rules,Aún no hay reglas de fase para este encuentro
+phases.casts_header,Lanzamientos del jefe en este intento
+phases.offset_label,turno
+meter.class_colors,Colorear barras por clase
+defensives.title,Jugadas defensivas (últimos 10 segundos)
+defensives.pressed_fmt,pulsó %d antes de morir
+defensives.active_at_death,en vigor en el momento del fallecimiento
+defensives.none,no se utiliza
+settings.tracked_defensives,Defensas con seguimiento
+settings.tracked_defensives_hint,ID de hechizos que hay que comprobar en el resumen de la muerte
+settings.add_spell_id,Añadir ID de hechizo
+settings.add,Añadir
+settings.remove,Eliminar
+
+# =============================================================================
+# BENCHMARK - comparing a pull against a reference log
+# =============================================================================
+benchmark.title,Boletín de notas
+benchmark.headline,%s frente a %s
+benchmark.window_died,Corte en %s - %s falleció
+benchmark.window_survived,Tracción completa - %s
+benchmark.stat.dps,Daño por segundo
+benchmark.stat.cpm,Moldeos por minuto
+benchmark.stat.burst,DPS durante el tiempo de recarga
+benchmark.stat.filler,DPS de relleno
+benchmark.attribution.burst,La mayor parte de la diferencia se debe a los tiempos de recarga: %s va por detrás en este intervalo.
+benchmark.attribution.filler,La mayor parte de la diferencia se produce fuera de los tiempos de recarga: %s va por detrás en este intervalo.
+benchmark.tab.findings,Diferencias
+benchmark.tab.cooldowns,Tiempos de recarga
+benchmark.tab.throughput,Rendimiento
+benchmark.tab.timeline,Cronología
+benchmark.weight.major,Grande
+benchmark.weight.notable,Destacado
+benchmark.weight.info,Menor
+benchmark.later,más tarde
+benchmark.earlier,antes
+benchmark.no_findings,No se observan diferencias significativas
+benchmark.no_findings_hint,Tu extracción ha seguido de cerca la referencia durante este intervalo.
+benchmark.no_cooldowns,No se registró ningún uso de tiempo de recarga en ninguna de las dos atracciones.
+benchmark.cd_row,%s (utiliza %d)
+benchmark.section.burst,Mientras los tiempos de recarga estaban activos
+benchmark.section.filler,Entre tiempos de recarga
+benchmark.throughput_hint,"Porcentaje de cada tirada, por hechizo."
+benchmark.unknown_spell,Hechizo %u
+benchmark.unknown_npc,Enemigo %u
+benchmark.finding.cd_delayed,%s salió %.1fs %s que la referencia
+benchmark.finding.cd_weaker,%s hizo %s mientras estaba en marcha; la referencia hizo %s
+benchmark.finding.cd_unused,La referencia utilizada %s %d vez(es); tu pull no
+benchmark.finding.cd_fewer,%s se utilizó %d vez(es); la referencia lo utilizó %d
+benchmark.finding.filler_dps,"Entre los tiempos de recarga, hiciste %s por segundo; la referencia hizo %s"
+benchmark.finding.filler_idle,%.0f%% del tiempo transcurrido entre los tiempos de recarga no se lanzó ningún hechizo; la referencia era a %.0f%%
+benchmark.finding.cast_rate,%s se lanzó %.1f veces por minuto; la referencia lo lanzó %.1f veces.
+benchmark.finding.damage_taken,Has tomado %s de %s; la referencia ha tomado %s
+benchmark.finding.target,%s absorbió %.0f%% de tu daño; la referencia puso %.0f%% ahí
+benchmark.finding.proc_wasted,%s caducó sin haberse utilizado %d vez(es)
+benchmark.finding.uptime,%s estuvo activo %.0f%% del tiempo; la referencia se mantuvo %.0f%%
+benchmark.finding.resource_capped,Has estado al máximo de recursos durante %.0f segundos
+benchmark.finding.uncomparable,Esta fase no se podía comparar
+benchmark.blocked.generic,Esta comparación aún no se puede ejecutar
+benchmark.blocked.unconfirmed,Algunos hechizos aún deben clasificarse
+benchmark.blocked.unconfirmed_hint,La comparación utiliza tus clasificaciones para determinar qué se considera un tiempo de recarga. No hará conjeturas.
+benchmark.blocked.spec,Diferentes especializaciones
+benchmark.blocked.spec_hint,"Dos modelos pulsan botones diferentes por motivos distintos, por lo que una comparación no tendría sentido."
+benchmark.blocked.encounter,Diferentes encuentros
+benchmark.blocked.phases,Las divisiones de fases han cambiado
+benchmark.blocked.phases_hint,La referencia se ha recortado siguiendo unas reglas de fase diferentes. Reconstrúyela para compararla con tus divisiones actuales.
+benchmark.blocked.no_overlap,No hay ninguna ventana comparable
+benchmark.blocked.pending_count,%d hechizo(s) a la espera de que los lances
+benchmark.action.open_replay,Abrir repetición
+benchmark.action.change_mentor,Modificar referencia
+benchmark.action.review,Revisar las clasificaciones
+benchmark.action.dismiss,Descartar
+
+# =============================================================================
+# BENCHMARK - spell classification review
+# =============================================================================
+classify.title,Clasificar hechizos
+classify.subtitle,Hechizos utilizados por este %s
+classify.pending,%d Todavía necesito tu confirmación
+classify.all_done,Todos confirmados
+classify.explainer,"La comparación utiliza estos datos para determinar qué se considera un tiempo de recarga y qué se considera un relleno. Las sugerencias se basan en la frecuencia con la que se ha lanzado cada hechizo: corrige cualquier dato que te parezca incorrecto y, a continuación, confirma."
+classify.tab.spells,Reparto
+classify.tab.auras,Mejoras
+classify.show_confirmed,Concierto ya confirmado
+classify.confirm,Confirmar
+classify.confirmed,Confirmado
+classify.accept_all,Aceptar todas las sugerencias
+classify.close,Cerrar
+classify.empty,Aún no hay nada que clasificar
+classify.empty_hint,Carga primero un registro de referencia y sus hechizos aparecerán aquí.
+classify.no_pending_spells,No hay moldes en espera
+classify.no_pending_auras,No hay potenciadores en espera
+classify.no_pending_hint,Marca la casilla «Mostrar lo ya confirmado» para volver a ver las decisiones anteriores.
+classify.evidence.cadence,"%d lanzamientos - %.1f por minuto, con un intervalo de aproximadamente %.0f s entre ellos"
+classify.evidence.irregular,%d se muestra sin espaciado regular
+classify.evidence.single,He hecho un solo lanzamiento; son muy pocos para evaluar el patrón.
+classify.evidence.plain,%d lanzamientos
+classify.evidence.aura,"Tiempo(s) aplicado(s) %d: hasta %.0f%% del tirón, unos %.1f s cada uno"
+classify.role.filler,Relleno
+classify.role.proc,Consumidor de Proc
+classify.role.spender,Consumidor de recursos
+classify.role.major,Tiempo de recarga importante
+classify.role.minor,Tiempo de recarga menor
+classify.role.defensive,Defensivo
+classify.role.utility,Servicios públicos
+classify.role.ignored,Ignora este hechizo
+classify.role.none,Sin clasificar
+classify.aura.proc,Proc
+classify.aura.maintenance,Sigue así
+classify.aura.cdbuff,Mejora del tiempo de recarga
+classify.aura.unimportant,No es importante
+classify.aura.none,Sin clasificar
+
+# =============================================================================
+# LANDING - compare pulls
+# =============================================================================
+btn.compare_live,Ver en directo
+settings.self_character,El nombre de tu personaje
+settings.self_character_hint,Es necesario para que las comparaciones de tiradas sepan qué jugador eres tú.
+overlay.benchmark_result,vs %s: %+.0f de daño por segundo
+overlay.benchmark_findings,%d diferencia(s): abre el boletín de notas para ver los detalles
+btn.save,Guardar
+landing.compare,Comparar tiradores
+landing.compare_desc,Compara una jugada con la de un jugador al que intentas imitar
+tooltip.landing_compare,"Elige dos registros almacenados en caché para compararlos, o visualiza tu registro en tiempo real y obtén un informe después de cada borrado."
+btn.prepare_mentor,Prepárate
+btn.compare_report,Informe
+btn.back,Volver
+btn.cancel,Cancelar
+tooltip.needs_mentor,"Primero, prepara una referencia: elige un registro y el jugador que quieras replicar."
+mentorpicker.title,Comparar tiradores
+mentorpicker.step_encounter,¿Qué encuentro?
+mentorpicker.step_mentor,¿Qué referencia corresponde a %s?
+mentorpicker.step_fight,¿Qué fuerza de tracción debe medirse con respecto a %s?
+mentorpicker.mentor_detail,%s - de %s
+mentorpicker.none_prepared,Aún no se han elaborado las referencias
+mentorpicker.none_prepared_hint,Utiliza «Preparar» para seleccionar un registro y el jugador que quieras replicar.
+mentorpicker.no_fights,No hay capturas en caché para este encuentro
+mentorpicker.no_fights_hint,Carga primero un registro de este jefe y aparecerá aquí.
+mentorpicker.unknown_encounter,Encuentro %u
+benchmark.prepare_prompt,Elige el jugador que quieras imitar
+benchmark.prepare_pick_player,"Selecciona un actor de la lista y, a continuación, confirma aquí."
+benchmark.prepare_use,Utiliza %s como referencia
+prepare.title,Preparar una referencia
+prepare.subtitle,%s - %s
+prepare.explainer,Elige al jugador al que quieras imitar. Sus lanzamientos se convertirán en la referencia con la que se medirán todos los lanzamientos posteriores.
+prepare.no_players,No se han encontrado jugadores en este registro
+prepare.no_players_hint,Es posible que el registro no incluya información sobre los combatientes.
+prepare.unknown_spec,Especialización desconocida
+classify.unknown_spec,Especialización desconocida
+mentorpicker.needs_download,Aún no se ha descargado
+prepare.source_cache,De un informe almacenado en caché
+prepare.source_local,Extraído de un registro de combate local
+benchmark.cd_window_detail,Variables globales %s sobre %d
+benchmark.strip.globals,Variables globales pulsadas por ventana
+benchmark.strip.dps,Daño por segundo por ventana
+classify.filter_hint,Buscar hechizos
+benchmark.action.review_classes,Cambiar las funciones de los hechizos
+preview.action.reopen_prepare,Modificar el registro preparado
+benchmark.stale_rulings,Las funciones de los hechizos han cambiado desde que se creó esta comparación. Vuelve a generarla para ver las cifras actuales.
+benchmark.live_waiting,Estar pendiente del registro para detectar un tirón contra %s
+benchmark.live_reading,Leyendo pull %d...
+benchmark.live_showing,Mostrando el tirador %d
+benchmark.live_skipped,Esa emoción era incomparable; a la espera de la siguiente
+classify.role.trinket,Abalorio de uso inmediato
+classify.role.cantrip,Fuera de lo global (cantrip)
+classify.role.melee,Ataque automático
+benchmark.action.rebuild,Reconstruir ahora
+benchmark.cd_show_buffs,Mostrar los buffs activos en cada ventana
+benchmark.cd_window,(%s - %s)
+benchmark.cd_output,%s de daño (%s DPS) durante los %d de tiempo global
+benchmark.cd_buff,%s (%.0fs)
+benchmark.melee,Cuerpo a cuerpo
+classify.evidence.faster_than_gcd,%d se mueve a unos %.2f de distancia; es demasiado rápido como para poder pulsarlo.
+classify.evidence.auto_attack,%d golpes de ataque automático
+classify.spell_id,(#%d)
+classify.section.casts,Reparto
+classify.section.buffs,Mejoras
+preview.title,Referencia elaborada
+preview.hint,"Esto es lo que servirá de referencia para la comparación. Si alguna cifra de aquí parece incorrecta, es probable que se haya aplicado mal una regla."
+preview.tab.summary,Resumen
+preview.tab.cooldowns,Periodos de espera
+preview.tab.spells,Reparto
+preview.player,Jugador
+preview.encounter,Encuentro
+preview.duration,Longitud de tracción
+preview.damage,Daños causados
+preview.dps,Daño por segundo
+preview.taken,Daño recibido
+preview.globals,Variables globales declaradas
+preview.globals_per_min,Globales por minuto
+preview.per_minute,%.1f
+preview.major_cooldowns,Tiempos de recarga importantes
+preview.cd_uses,Periodos de espera
+preview.ignored,Hechizos ignorados
+preview.off_global,Hechizos fuera del mundo
+preview.no_cooldowns_warning,"Ningún hechizo se considera un tiempo de recarga importante, por lo que toda la secuencia cuenta como relleno. Configúralo en «Cambiar roles de hechizos» para obtener un desglose del daño explosivo."
+preview.unresolved_phases,Reglas de fase que nunca se han activado: %s
+preview.cd_hint,"En cada ventana, la comparación aparecerá alineada con la tuya, por orden."
+preview.cd_detail,%s - %s  |  daño de %s (%s DPS) durante los globales de %d
+preview.no_cd_uses,Sin periodos de espera
+preview.no_cd_uses_hint,No se ha detectado que se haya lanzado ningún hechizo con un tiempo de recarga importante en esta ronda.
+preview.no_spells,No se han registrado moldes
+preview.spell_row,%d moldes (%.1f/min)
+preview.action.accept,Parece correcto
+classify.window_pair,Otorga una mejora del mismo nombre; su duración se prolonga hasta que dicha mejora desaparezca.
+classify.window_pair_idle,"Además, otorga una mejora del mismo nombre. Considera que el tiempo de recarga corresponde al periodo de duración de dicha mejora."
+classify.window_pair_buff,"Concedida por el hechizo del mismo nombre, esta mejora marca esa ventana"
+classify.aura.major,Tiempo de recarga importante (no aparece el lanzamiento en el registro)
+benchmark.tab.breakdown,Desglose
+benchmark.breakdown_hint,"Atentamente, en relación con la referencia."
+benchmark.section.targets,Daño por objetivo
+benchmark.section.execution,Daño por pulsación
+benchmark.section.time,¿Dónde se ha ido el tiempo?
+benchmark.execution_hint,Daño por pulsación.
+benchmark.col.target,Objetivo
+benchmark.col.spell,Hechizo
+benchmark.col.spent,Tiempo dedicado
+benchmark.col.delta,Diferencia
+benchmark.row.idle,"En reposo (sin hechizo, sin GCD)"
+benchmark.timeline_hint,DPS en los últimos 30 segundos.
+benchmark.timeline_worst,El mayor descenso en un solo tramo se produce entre %s y %s en ese tramo
+benchmark.cast_time_suffix, (%.1fs)
+benchmark.burst_hint,"Los tiempos de recarga que se superponen cuentan como un único intervalo, ordenados de forma consecutiva."
+benchmark.burst_row,Ventana %d - %s
+benchmark.strip.gap,Daños totales en la parte trasera
+benchmark.source_share,%s  (%.0f%%)
+benchmark.no_sources,No se han registrado fuentes de daños
+benchmark.no_sources_hint,Modifica la referencia para que registre el daño por hechizo.
+benchmark.window.all,Tirón completo
+benchmark.window.entry,Ventana %d - %s
+benchmark.window.casts_heading,Reparto de esta obra
+benchmark.window.cast_count,%s × %d
+benchmark.window.no_casts,No hay nada en esta ventana
+benchmark.cd_show_blacklisted,Incluir en la lista negra
+mentorpicker.delete_hint,Elimina esta referencia
+mentorpicker.delete_confirm,¿Deseas eliminar esta referencia preparada? Se conservarán las clasificaciones de hechizos de esta especificación.
+mentorpicker.delete_yes,Eliminar
+benchmark.differences_hint,"Lo tuyo arriba, la referencia abajo."
+benchmark.diff.output,Resultado
+benchmark.diff.weighted,Daños (ponderados)
+benchmark.diff.raw,Daño (bruto)
+benchmark.diff.burst,DPS en ráfaga
+benchmark.diff.filler,DPS de relleno
+benchmark.diff.cooldowns,Uso del tiempo de recarga
+benchmark.diff.cd_count,Ventanas utilizadas
+benchmark.diff.cd_uptime,Tiempo total de recarga
+benchmark.diff.survival,Supervivencia
+benchmark.diff.taken,Daño recibido
+benchmark.diff.defensives,Los defensas presionaron
+benchmark.diff.mitigated,Daño recibido por una defensa
+benchmark.diff.casts,Lanza hechizos
+benchmark.section.taken_by_spell,Daño recibido por una habilidad
+benchmark.section.downtime,Tiempo de inactividad
+benchmark.row.downtime,Tiempo sin hacer nada
+benchmark.row.downtime_burst,Tiempo de inactividad durante los tiempos de recarga
+benchmark.row.downtime_filler,Tiempo de inactividad fuera de los tiempos de recarga
+benchmark.downtime_value,%s (%.0f%%)
+benchmark.weight_suffix,  x%.0f%%
+benchmark.window_target,%s %s
+benchmark.tab.movement,Movimiento
+benchmark.movement_hint,El modo «Relativo» centra al jefe.
+benchmark.movement_relative,En relación con el jefe
+benchmark.movement_distance,Distancia recorrida
+benchmark.movement_yards,%.0f yardas
+benchmark.no_positions,No hay datos de posición
+benchmark.no_positions_hint,Reconstruye la referencia para capturar el movimiento.
+benchmark.movie.play,Jugar
+benchmark.movie.pause,Pausa
+benchmark.movie.restart,Reiniciar
+benchmark.movie.speed,%.0fx
+benchmark.trail.full,Ruta completa
+benchmark.trail.5s,Últimos 5 segundos
+benchmark.trail.10s,Últimos 10 segundos
+benchmark.trail.20s,Los últimos 20 segundos
+benchmark.trail.30s,Los últimos 30 segundos
+benchmark.composition.other,Todo lo demás
+benchmark.composition.shares,%.0f%% / %.0f%%
+benchmark.downtime_hint,Huecos sin que se haya lanzado el anzuelo. Las causas solo se indican cuando el registro muestra alguna.
+benchmark.downtime_count,%s a través de los huecos de %d
+benchmark.downtime_worst,Los intervalos más largos para %s
+benchmark.downtime_gap,%s  -  s%.1f
+benchmark.downtime_in_cd,durante un tiempo de espera
+benchmark.downtime_cancelled,cancelado %s
+benchmark.downtime_none,No hay diferencias dignas de mención
+benchmark.composition.header,%s / %s
+benchmark.gap_seconds,%.1fs
+classify.aura.channel,Canal (aún en fase de selección de personal)
+benchmark.tab.damage,Daños
+benchmark.strip.cumulative,Daño acumulado
+benchmark.downtime_caveat,Los canales se muestran como tiempo de inactividad a menos que su mejora se considere un canal. Las habilidades que consumen un tiempo de recarga global sin registrar un lanzamiento siempre lo harán.
+benchmark.section.phases,Por fases
+benchmark.phase_index,Fase %d
+benchmark.phases_unresolved,Algunas reglas de fase nunca se han activado; esas fases no se comparan.
+benchmark.window_mentor_end,"Extracción completa - %s, limitada por la referencia"
+benchmark.verdict_behind,%.1f%% detrás de %s sobre la ventana comparada
+benchmark.verdict_ahead,%.1f%% por delante de %s en la ventana comparada
+benchmark.shortfall_heading,De dónde procedía el daño que faltaba
+benchmark.shortfall_burst,%s dentro de los intervalos de enfriamiento
+benchmark.shortfall_filler,%s entre tiempos de recarga
+benchmark.section.damage_taken,Daño recibido
+benchmark.not_used,no se utiliza
+benchmark.vs,vs %s
+prepare.step.spells,Hechizos
+prepare.step.phases,Fases
+prepare.step.weights,Peso de la multitud
+prepare.spells_state,"%d resuelto, %d pendiente"
+prepare.spells_review,Repasar los hechizos
+prepare.spells_change,Repasar las funciones de los hechizos
+prepare.spells_blocked,Cada hechizo necesita un rol antes de que se pueda establecer una referencia.
+prepare.phases_state,Reglas de fase %d
+prepare.weights_state,%d monstruos ponderados
+prepare.next,Siguiente
+prepare.back,Atrás
+prepare.finish,Prepárate
+
+# Auto-annotation wizard: source filter
+wizard.source.filter_label,Filtro de origen
+wizard.source.filter_any,Cualquier fuente
+wizard.source.filter_creature,Criatura específica
+wizard.source.filter_environment,Solo medio ambiente
+wizard.source.filter_any_debuff_tip,Coincidir con los efectos negativos de cualquier origen (por defecto)
+wizard.source.filter_creature_debuff_tip,Aplicar solo los efectos negativos de la criatura seleccionada
+wizard.source.filter_environment_debuff_tip,Coincidir únicamente con los efectos negativos procedentes del entorno (sin lanzador específico)
+wizard.source.filter_any_buff_tip,Coincidir con los potenciadores de cualquier origen (por defecto)
+wizard.source.filter_creature_buff_tip,Buscar solo los potenciadores de la criatura seleccionada
+wizard.source.filter_environment_buff_tip,Aplicar solo los potenciadores procedentes de fuentes del entorno (sin lanzador específico)
+
+# Auto-annotation wizard: tether shapes
+wizard.shape.tether_dynamic_tip,Figura que conecta al NPC de origen con el jugador de destino (se actualiza cada 250 ms)
+wizard.shape.tether_static_tip,Trayectoria desde la posición estática del PNJ (al inicio del efecto negativo) hasta el jugador objetivo (se actualiza cada 250 ms)
+wizard.shape.tether_direction_tip,Se dibuja una línea desde el PNJ hasta el jugador. Se dibuja un cono en el PNJ que apunta hacia el jugador.
+wizard.shape.tether_thickness_tip,Espesor del cable de sujeción
+
+# Auto-annotation wizard: anchoring
+wizard.position.anchor_source_to_target,Ancla: PNJ de origen al jugador de destino
+wizard.position.anchor_source_to_target_tip,Shape conecta automáticamente la fuente del efecto negativo (PNJ) con el destinatario del efecto negativo (jugador).
+wizard.position.anchor_static_to_target,Ancla: Fuente estática al reproductor de destino
+wizard.position.anchor_static_to_target_tip,Traza una línea desde la posición del NPC al inicio del efecto negativo (estática) hasta el objetivo del efecto negativo (jugador)
+wizard.position.anchor_at_caster,Presentador: En Caster
+wizard.position.anchor_at_caster_tip,Las esferas aparecen en la posición del lanzador durante el lanzamiento.
+wizard.position.rotation_auto,Rotación: automática (hacia el objetivo)
+
+# Auto-annotation wizard: pool spawning
+wizard.advanced.pool_interval_tip,Cada cuánto tiempo se debe crear un nuevo grupo durante el lanzamiento (en segundos)
+wizard.advanced.pool_lead_tip,Empieza a generar zonas de aparición tantos segundos ANTES de que comience el lanzamiento
+wizard.advanced.pool_trail_tip,Seguir generando zonas de aparición durante este número de segundos DESPUÉS de que finalice el lanzamiento
+
+# Auto-annotation wizard: visual polish
+wizard.visual.polish,Polaco visual
+wizard.visual.edge_fade,Corte degradado en los laterales
+wizard.visual.edge_fade_tip,Desvanecimiento alfa suave en los bordes para conseguir un aspecto más uniforme
+wizard.visual.fade_width,Ancho de fundido
+wizard.visual.outline,Esquema
+wizard.visual.outline_tip,Añade un borde más oscuro alrededor de la figura
+wizard.visual.outline_width,Ancho del contorno
+wizard.visual.edge_glow,Resplandor en los bordes
+wizard.visual.edge_glow_tip,Añade un efecto de resplandor brillante en los bordes
+wizard.visual.glow_intensity,Intensidad del brillo
+wizard.visual.gradient,Gradiente
+wizard.visual.gradient_tip,Degradado de color desde el centro hacia los bordes
+wizard.visual.dual_colors,Dos colores
+wizard.visual.use_secondary_color,Utilizar el color secundario
+wizard.visual.use_secondary_color_tip,"Utiliza un color personalizado para los degradados, los contornos y los patrones, en lugar de los que se derivan automáticamente"
+wizard.visual.secondary_color,Color secundario
+wizard.visual.use_inner_zone_color,Utilizar el color de la zona interior
+wizard.visual.use_inner_zone_color_tip,"Un color diferente para la zona central (por ejemplo, la zona segura en la mecánica de «soak»)"
+wizard.visual.inner_zone_color,Color de la zona interior
+
+# Landing page: package a fight for AI analysis
+landing.package,Paquete para IA
+landing.package_desc,Exporta una pelea en un archivo ZIP que una IA pueda leer y analizar
+tooltip.landing_package,"Exporta un combate en forma de tablas CSV más un manifiesto, comprimidos en un archivo ZIP, para entregárselos a una IA."
+btn.package_export,Elige una pelea
+btn.package_rankings,Consultar clasificaciones
+tooltip.package_rankings,Recupera los jugadores mejor clasificados para un jefe y guarda la respuesta. Supone una consulta a la API.
+btn.baseline_dungeon,Mazmorras
+btn.baseline_raid,Redada
+btn.baseline_dummy,Maniquíes de prácticas
+btn.baseline_rebuild,Reconstruir
+tooltip.baseline_dungeon,Elige una mazmorra de esta temporada y selecciona sus mejores partidas.
+tooltip.baseline_raid,Elige un jefe de raid de esta temporada y muestra las mejores marcas de muertes.
+tooltip.baseline_dummy,Extrae los registros principales para cada configuración de simulacro objetivo. Cada recuento objetivo se muestrea por separado.
+tooltip.baseline_rebuild,Vuelve a cargar la lista de temporadas. Solo es necesario después de que una actualización modifique las mazmorras o las incursiones.
+
+# Baseline: spec, hero talent and content picker
+baseline.pick_title,Establecer una referencia
+baseline.pick_desc,"Elige la configuración con la que quieres comparar. Los talentos del héroe modifican la rotación y el uso de los tiempos de recarga, por lo que una referencia que combine dos estilos de juego medios que nadie utiliza."
+baseline.class,Clase
+baseline.spec,Especialización
+baseline.hero,Talento de héroe
+baseline.hero_any,Cada árbol
+baseline.hero_unknown,No hay talentos de héroe listados para esta especialización. Es posible que los datos de talentos incluidos sean anteriores a los del juego.
+baseline.content,Contenido
+btn.baseline_start,Consultar clasificaciones
+error.gpu_lost_title,Se ha perdido el dispositivo gráfico
+error.gpu_lost_message,El controlador gráfico ha dejado de responder y AwowLab tiene que cerrarse. Actualizar el controlador de la GPU podría solucionar el problema.
+warnings.title,Advertencias de análisis sintáctico
+warnings.heading,Advertencia: Se han detectado problemas
+warnings.intro,Se han detectado algunos problemas durante el funcionamiento. Consulta los detalles a continuación para obtener más información.
+warnings.details_fmt,Detalles (advertencia(s) %zu):
+warnings.log_saved_fmt,Archivo de registro guardado en: %s
+warnings.report_hint,"Si esto sigue ocurriendo, por favor, informa de ello y adjunta el archivo de registro."
+warnings.clear,Advertencias claras
+btn.ok,Vale

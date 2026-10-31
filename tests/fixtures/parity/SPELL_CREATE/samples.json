@@ -1,0 +1,29 @@
+[
+{
+    "timestamp": 4346832,
+    "type": "create",
+    "sourceID": 79,
+    "targetID": 167,
+    "targetInstance": 1,
+    "abilityGameID": 48018,
+    "fight": 8
+},
+{
+    "timestamp": 4478897,
+    "type": "create",
+    "sourceID": 79,
+    "targetID": 167,
+    "targetInstance": 2,
+    "abilityGameID": 48018,
+    "fight": 8
+},
+{
+    "timestamp": 4557833,
+    "type": "create",
+    "sourceID": 79,
+    "targetID": 167,
+    "targetInstance": 3,
+    "abilityGameID": 48018,
+    "fight": 8
+}
+]

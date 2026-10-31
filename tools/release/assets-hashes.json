@@ -1,0 +1,68 @@
+{
+  "assets_tag": "assets-v5",
+  "generated_at": "2026-08-14T05:35:45.752616+00:00",
+  "archives": {
+    "Worldmaps.zip": {
+      "sha256": "518ef3df7de05e23b84e7f5003886ade39e91e8a9e5440f5cbea418f876456a7",
+      "size": 17583696
+    },
+    "EncounterMaps.zip": {
+      "sha256": "edecef061d8271c4fe6350c0e3d7fbd960aac2bf77646239418f861c87e186f1",
+      "size": 21594588
+    },
+    "Triggers.zip": {
+      "sha256": "e77cac077f374655e8f475655d8bb49c88fbec27d63ab4b7923a1e8d2337849a",
+      "size": 11552
+    },
+    "DemoReplays.zip": {
+      "sha256": "c3d1eb42104ceeff93222741c80e85448f5c8852cadc521944c71d1b18b2e708",
+      "size": 4574993
+    }
+  },
+  "optional_packs": {
+    "langpack_ko_KR": {
+      "sha256": "07b6b75c273efa70cae7f91364ead79dde53ba799c325c903de7e0f1188afc0a",
+      "size": 17580267,
+      "path": "langpack_ko_KR.zip",
+      "display_name": "Korean Language Pack (\ud55c\uad6d\uc5b4)",
+      "is_archive": true,
+      "extract_to": "data/spellnames"
+    }
+  },
+  "chunked_archives": {
+    "SpellIcons": {
+      "extract_to": "PNG/Spell Icons",
+      "group": "SpellIcons",
+      "chunks": [
+        {
+          "filename": "SpellIcons-001.zip",
+          "part": 1,
+          "sha256": "3e1931e7606dad77faf9506a5f088c7d443bccb5d340cf20f5be803a381ce5b6",
+          "size": 5643699,
+          "file_count": 2124
+        },
+        {
+          "filename": "SpellIcons-002.zip",
+          "part": 2,
+          "sha256": "32aaa3dec7d25ae40fcdb4970e29a580c601e84918d02139d24e0fa677a6c9d1",
+          "size": 5631522,
+          "file_count": 2204
+        },
+        {
+          "filename": "SpellIcons-003.zip",
+          "part": 3,
+          "sha256": "3a58e8d8e5f3a6b95848875a049014c367bac73cc246d293b06f10ac896eba9b",
+          "size": 5621453,
+          "file_count": 2321
+        },
+        {
+          "filename": "SpellIcons-004.zip",
+          "part": 4,
+          "sha256": "da1d8feced9884558f5e19694ddbfca66a7b6391a31b947539920c66708af815",
+          "size": 1285968,
+          "file_count": 1368
+        }
+      ]
+    }
+  }
+}

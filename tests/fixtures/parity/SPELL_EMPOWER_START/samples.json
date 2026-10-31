@@ -1,0 +1,26 @@
+[
+{
+    "timestamp": 4297641,
+    "type": "empowerstart",
+    "sourceID": 83,
+    "targetID": 83,
+    "abilityGameID": 1217413,
+    "fight": 8
+},
+{
+    "timestamp": 4396159,
+    "type": "empowerstart",
+    "sourceID": 81,
+    "targetID": 81,
+    "abilityGameID": 357208,
+    "fight": 8
+},
+{
+    "timestamp": 4518253,
+    "type": "empowerstart",
+    "sourceID": 81,
+    "targetID": 189,
+    "abilityGameID": 396286,
+    "fight": 8
+}
+]

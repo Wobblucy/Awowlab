@@ -1,0 +1,30 @@
+[
+{
+    "timestamp": 4610962,
+    "type": "removedebuff",
+    "sourceID": 1,
+    "targetID": 192,
+    "targetInstance": 16,
+    "abilityGameID": 99,
+    "fight": 8,
+    "sourceMarker": 2
+},
+{
+    "timestamp": 4610962,
+    "type": "removedebuff",
+    "sourceID": 1,
+    "targetID": 192,
+    "targetInstance": 15,
+    "abilityGameID": 99,
+    "fight": 8,
+    "sourceMarker": 2
+},
+{
+    "timestamp": 4690372,
+    "type": "removebuff",
+    "sourceID": 108,
+    "targetID": 108,
+    "abilityGameID": 110960,
+    "fight": 8
+}
+]

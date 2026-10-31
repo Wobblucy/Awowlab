@@ -1,0 +1,2562 @@
+[
+{
+    "timestamp": 4294177,
+    "type": "combatantinfo",
+    "fight": 8,
+    "sourceID": 105,
+    "gear": [
+        {
+            "id": 237718,
+            "quality": 4,
+            "icon": "inv_helm_cloth_raidmageethereal_d_01.jpg",
+            "itemLevel": 730,
+            "bonusIDs": [
+                10356,
+                12231,
+                6652,
+                12676,
+                13446,
+                1540,
+                10255,
+                12365
+            ],
+            "gems": [
+                {
+                    "id": 213485,
+                    "itemLevel": 610,
+                    "icon": "inv_jewelcrafting_cut-standart-gem-hybrid_color1_1.jpg"
+                }
+            ],
+            "setID": 1924
+        },
+        {
+            "id": 237568,
+            "quality": 4,
+            "icon": "inv_112_raidtrinkets_necklace01_etherealnontechnologicalstyle_gold.jpg",
+            "itemLevel": 730,
+            "bonusIDs": [
+                6652,
+                10356,
+                10879,
+                10396,
+                13446,
+                1540,
+                10255
+            ],
+            "gems": [
+                {
+                    "id": 213746,
+                    "itemLevel": 610,
+                    "icon": "inv_misc_gem_x4_metagem_cut.jpg"
+                },
+                {
+                    "id": 213485,
+                    "itemLevel": 610,
+                    "icon": "inv_jewelcrafting_cut-standart-gem-hybrid_color1_1.jpg"
+                }
+            ]
+        },
+        {
+            "id": 237716,
+            "quality": 4,
+            "icon": "inv_shoulder_cloth_raidmageethereal_d_01.jpg",
+            "itemLevel": 730,
+            "bonusIDs": [
+                6652,
+                10356,
+                12233,
+                12675,
+                13446,
+                1540,
+                10255
+            ],
+            "setID": 1924
+        },
+        {
+            "id": 0,
+            "quality": 1,
+            "icon": "inv_axe_02.jpg",
+            "itemLevel": 0
+        },
+        {
+            "id": 185782,
+            "quality": 3,
+            "icon": "inv_robe_cloth_oribosdungeon_c_01.jpg",
+            "itemLevel": 730,
+            "permanentEnchant": 7364,
+            "bonusIDs": [
+                10390,
+                41,
+                12239,
+                10383,
+                13446,
+                10042,
+                10255
+            ]
+        },
+        {
+            "id": 222816,
+            "quality": 4,
+            "icon": "inv_cloth_outdoorarathor_d_01_belt.jpg",
+            "itemLevel": 727,
+            "bonusIDs": [
+                10421,
+                9633,
+                8902,
+                9627,
+                12050,
+                11304,
+                8960,
+                8792,
+                12053,
+                12922,
+                13468
+            ],
+            "gems": [
+                {
+                    "id": 213485,
+                    "itemLevel": 610,
+                    "icon": "inv_jewelcrafting_cut-standart-gem-hybrid_color1_1.jpg"
+                }
+            ]
+        },
+        {
+            "id": 237717,
+            "quality": 4,
+            "icon": "inv_pant_cloth_raidmageethereal_d_01.jpg",
+            "itemLevel": 730,
+            "permanentEnchant": 7534,
+            "bonusIDs": [
+                10356,
+                12232,
+                6652,
+                12676,
+                13446,
+                1540,
+                10255
+            ],
+            "setID": 1924
+        },
+        {
+            "id": 243305,
+            "quality": 4,
+            "icon": "inv_boot_cloth_raidpriestethereal_d_01.jpg",
+            "itemLevel": 730,
+            "permanentEnchant": 7424,
+            "bonusIDs": [
+                6652,
+                12239,
+                10356,
+                13504,
+                13446,
+                1540,
+                10255
+            ]
+        },
+        {
+            "id": 222815,
+            "quality": 4,
+            "icon": "inv_cloth_outdoorarathor_d_01_bracer.jpg",
+            "itemLevel": 727,
+            "permanentEnchant": 7397,
+            "bonusIDs": [
+                10421,
+                9633,
+                8902,
+                9627,
+                12050,
+                11304,
+                8960,
+                8792,
+                12053,
+                12922,
+                13468
+            ],
+            "gems": [
+                {
+                    "id": 213485,
+                    "itemLevel": 610,
+                    "icon": "inv_jewelcrafting_cut-standart-gem-hybrid_color1_1.jpg"
+                }
+            ]
+        },
+        {
+            "id": 237719,
+            "quality": 4,
+            "icon": "inv_glove_cloth_raidmageethereal_d_01.jpg",
+            "itemLevel": 730,
+            "bonusIDs": [
+                6652,
+                10390,
+                12230,
+                12675,
+                13446,
+                1540,
+                10255
+            ],
+            "setID": 1924
+        },
+        {
+            "id": 242405,
+            "quality": 4,
+            "icon": "inv_112_raidtrinkets_ring02_etherealribbonorrunestyle_gold.jpg",
+            "itemLevel": 717,
+            "permanentEnchant": 7340,
+            "bonusIDs": [
+                6652,
+                10355,
+                13444,
+                1527,
+                10255,
+                10879,
+                10396
+            ],
+            "gems": [
+                {
+                    "id": 213470,
+                    "itemLevel": 610,
+                    "icon": "inv_jewelcrafting_cut-standart-gem-hybrid_color5_3.jpg"
+                },
+                {
+                    "id": 213485,
+                    "itemLevel": 610,
+                    "icon": "inv_jewelcrafting_cut-standart-gem-hybrid_color1_1.jpg"
+                }
+            ]
+        },
+        {
+            "id": 237567,
+            "quality": 4,
+            "icon": "inv_112_raidtrinkets_ring03_etherealtechnomancerstyle_gold.jpg",
+            "itemLevel": 730,
+            "permanentEnchant": 7340,
+            "bonusIDs": [
+                6652,
+                10356,
+                10879,
+                10396,
+                13446,
+                1540,
+                10255
+            ],
+            "gems": [
+                {
+                    "id": 213494,
+                    "itemLevel": 610,
+                    "icon": "inv_jewelcrafting_cut-standart-gem-hybrid_color2_3.jpg"
+                },
+                {
+                    "id": 213455,
+                    "itemLevel": 610,
+                    "icon": "inv_jewelcrafting_cut-standart-gem-hybrid_color4_3.jpg"
+                }
+            ]
+        },
+        {
+            "id": 242392,
+            "quality": 4,
+            "icon": "inv_112_raidtrinkets_intdps_ancientkareshirelic.jpg",
+            "itemLevel": 730,
+            "bonusIDs": [
+                6652,
+                10356,
+                13446,
+                1540,
+                10255
+            ],
+            "setID": 1960
+        },
+        {
+            "id": 242497,
+            "quality": 3,
+            "icon": "inv_devourersmallmount_light.jpg",
+            "itemLevel": 730,
+            "bonusIDs": [
+                10390,
+                6652,
+                10383,
+                13446,
+                3222,
+                10255
+            ]
+        },
+        {
+            "id": 235499,
+            "quality": 6,
+            "icon": "inv_cape_armor_etherealshawl_d_01.jpg",
+            "itemLevel": 730,
+            "permanentEnchant": 7403,
+            "bonusIDs": [
+                12401,
+                9893,
+                12258
+            ],
+            "gems": [
+                {
+                    "id": 238045,
+                    "itemLevel": 571,
+                    "icon": "inv_112_etherealwraps_empowered_green.jpg"
+                }
+            ]
+        },
+        {
+            "id": 237730,
+            "quality": 4,
+            "icon": "inv_staff_2h_etherealraid_d_02.jpg",
+            "itemLevel": 730,
+            "permanentEnchant": 7448,
+            "temporaryEnchant": 7495,
+            "bonusIDs": [
+                42,
+                10356,
+                13446,
+                1540,
+                10255
+            ],
+            "setID": 1960
+        },
+        {
+            "id": 0,
+            "quality": 1,
+            "icon": "inv_axe_02.jpg",
+            "itemLevel": 0
+        },
+        {
+            "id": 205286,
+            "quality": 4,
+            "icon": "inv_tabard_niffen_b_01_blue.jpg",
+            "itemLevel": 1
+        }
+    ],
+    "auras": [
+        {
+            "source": 105,
+            "ability": 1236891,
+            "stacks": 1,
+            "icon": "inv_10_inscription_glyphs_color5.jpg",
+            "name": "Vantus Rune: Manaforge Omega"
+        },
+        {
+            "source": 105,
+            "ability": 1236899,
+            "stacks": 1,
+            "icon": "inv_inscriptions_vantus_rune_orange.jpg",
+            "name": "Vantus Rune: Dimensius, the All-Devouring"
+        },
+        {
+            "source": 105,
+            "ability": 1242340,
+            "stacks": 1,
+            "icon": "inv_engineering_90_blackhole.jpg",
+            "name": "Speed Siphoner"
+        },
+        {
+            "source": 105,
+            "ability": 1237913,
+            "stacks": 1,
+            "icon": "inv_-firearm_2h_outdoorethereal_c_01.jpg",
+            "name": "Behind Enemy Lines"
+        },
+        {
+            "source": 105,
+            "ability": 431973,
+            "stacks": 1,
+            "icon": "inv_potion_blue.jpg",
+            "name": "Flask of Tempered Versatility"
+        },
+        {
+            "source": 105,
+            "ability": 321526,
+            "stacks": 1,
+            "icon": "spell_arcane_arcanepotency.jpg",
+            "name": "Mana Adept"
+        },
+        {
+            "source": 105,
+            "ability": 384452,
+            "stacks": 1,
+            "icon": "inv12_ability_mage_arcanesalvo.jpg",
+            "name": "Arcane Salvo"
+        },
+        {
+            "source": 105,
+            "ability": 384612,
+            "stacks": 1,
+            "icon": "ability_mage_studentofthemind.jpg",
+            "name": "Prodigious Savant"
+        },
+        {
+            "source": 105,
+            "ability": 461457,
+            "stacks": 1,
+            "icon": "inv_seed_arcaneenergy.jpg",
+            "name": "Energy Reconstitution"
+        },
+        {
+            "source": 105,
+            "ability": 384581,
+            "stacks": 1,
+            "icon": "ability_socererking_arcanereplication.jpg",
+            "name": "Arcane Bombardment"
+        },
+        {
+            "source": 105,
+            "ability": 1459,
+            "stacks": 1,
+            "icon": "spell_holy_magicalsentry.jpg",
+            "name": "Arcane Intellect"
+        },
+        {
+            "source": 105,
+            "ability": 1234969,
+            "stacks": 1,
+            "icon": "inv_alchemy_90_stone_purple.jpg",
+            "name": "Ethereal Augmentation"
+        },
+        {
+            "source": 81,
+            "ability": 381750,
+            "stacks": 1,
+            "icon": "ability_evoker_blessingofthebronze.jpg",
+            "name": "Blessing of the Bronze"
+        },
+        {
+            "source": 102,
+            "ability": 462854,
+            "stacks": 1,
+            "icon": "achievement_raidprimalist_windelemental.jpg",
+            "name": "Skyfury"
+        },
+        {
+            "source": 84,
+            "ability": 6673,
+            "stacks": 1,
+            "icon": "ability_warrior_battleshout.jpg",
+            "name": "Battle Shout"
+        },
+        {
+            "source": 87,
+            "ability": 166646,
+            "stacks": 1,
+            "icon": "monk_stance_whitetiger.jpg",
+            "name": "Windwalking"
+        },
+        {
+            "source": 97,
+            "ability": 465,
+            "stacks": 1,
+            "icon": "spell_holy_devotionaura.jpg",
+            "name": "Devotion Aura"
+        },
+        {
+            "source": 110,
+            "ability": 1126,
+            "stacks": 1,
+            "icon": "spell_nature_regeneration.jpg",
+            "name": "Mark of the Wild"
+        },
+        {
+            "source": 105,
+            "ability": 462210,
+            "stacks": 1,
+            "icon": "spell_misc_food.jpg",
+            "name": "Hearty Well Fed"
+        },
+        {
+            "source": 94,
+            "ability": 21562,
+            "stacks": 1,
+            "icon": "spell_holy_wordfortitude.jpg",
+            "name": "Power Word: Fortitude"
+        }
+    ],
+    "expansion": "dragonflight",
+    "faction": 1,
+    "specID": 62,
+    "strength": 7767,
+    "agility": 11998,
+    "stamina": 827639,
+    "intellect": 160304,
+    "dodge": 0,
+    "parry": 0,
+    "block": 0,
+    "armor": 30210,
+    "critMelee": 12531,
+    "critRanged": 12531,
+    "critSpell": 12531,
+    "hasteMelee": 24854,
+    "hasteRanged": 24854,
+    "hasteSpell": 24854,
+    "speed": 2224,
+    "leech": 1224,
+    "avoidance": 545,
+    "mastery": 10293,
+    "versatilityDamageDone": 16228,
+    "versatilityHealingDone": 16228,
+    "versatilityDamageReduction": 16228,
+    "talentTree": [
+        {
+            "id": 80141,
+            "rank": 1,
+            "nodeID": 62085
+        },
+        {
+            "id": 80142,
+            "rank": 1,
+            "nodeID": 62086
+        },
+        {
+            "id": 80145,
+            "rank": 1,
+            "nodeID": 62089
+        },
+        {
+            "id": 80147,
+            "rank": 1,
+            "nodeID": 62091
+        },
+        {
+            "id": 80149,
+            "rank": 1,
+            "nodeID": 62093
+        },
+        {
+            "id": 80155,
+            "rank": 1,
+            "nodeID": 62098
+        },
+        {
+            "id": 80156,
+            "rank": 2,
+            "nodeID": 62099
+        },
+        {
+            "id": 80158,
+            "rank": 1,
+            "nodeID": 62101
+        },
+        {
+            "id": 80159,
+            "rank": 1,
+            "nodeID": 62102
+        },
+        {
+            "id": 80160,
+            "rank": 1,
+            "nodeID": 62103
+        },
+        {
+            "id": 80161,
+            "rank": 1,
+            "nodeID": 62104
+        },
+        {
+            "id": 80163,
+            "rank": 1,
+            "nodeID": 62105
+        },
+        {
+            "id": 80165,
+            "rank": 2,
+            "nodeID": 62107
+        },
+        {
+            "id": 80171,
+            "rank": 1,
+            "nodeID": 62113
+        },
+        {
+            "id": 80173,
+            "rank": 2,
+            "nodeID": 62114
+        },
+        {
+            "id": 80174,
+            "rank": 1,
+            "nodeID": 62115
+        },
+        {
+            "id": 80177,
+            "rank": 1,
+            "nodeID": 62118
+        },
+        {
+            "id": 80179,
+            "rank": 1,
+            "nodeID": 62120
+        },
+        {
+            "id": 80181,
+            "rank": 1,
+            "nodeID": 62122
+        },
+        {
+            "id": 80182,
+            "rank": 2,
+            "nodeID": 62123
+        },
+        {
+            "id": 80183,
+            "rank": 1,
+            "nodeID": 62124
+        },
+        {
+            "id": 80187,
+            "rank": 1,
+            "nodeID": 62127
+        },
+        {
+            "id": 80188,
+            "rank": 2,
+            "nodeID": 62128
+        },
+        {
+            "id": 115877,
+            "rank": 1,
+            "nodeID": 93524
+        },
+        {
+            "id": 117246,
+            "rank": 1,
+            "nodeID": 94643
+        },
+        {
+            "id": 117247,
+            "rank": 1,
+            "nodeID": 94644
+        },
+        {
+            "id": 117248,
+            "rank": 1,
+            "nodeID": 94645
+        },
+        {
+            "id": 117249,
+            "rank": 1,
+            "nodeID": 94646
+        },
+        {
+            "id": 117251,
+            "rank": 1,
+            "nodeID": 94648
+        },
+        {
+            "id": 117252,
+            "rank": 1,
+            "nodeID": 94649
+        },
+        {
+            "id": 117255,
+            "rank": 1,
+            "nodeID": 94652
+        },
+        {
+            "id": 117256,
+            "rank": 1,
+            "nodeID": 94653
+        },
+        {
+            "id": 123341,
+            "rank": 1,
+            "nodeID": 99830
+        },
+        {
+            "id": 123832,
+            "rank": 1,
+            "nodeID": 94651
+        },
+        {
+            "id": 123867,
+            "rank": 1,
+            "nodeID": 94650
+        },
+        {
+            "id": 125817,
+            "rank": 1,
+            "nodeID": 62092
+        },
+        {
+            "id": 126060,
+            "rank": 1,
+            "nodeID": 62094
+        },
+        {
+            "id": 126505,
+            "rank": 1,
+            "nodeID": 102435
+        },
+        {
+            "id": 126507,
+            "rank": 1,
+            "nodeID": 102437
+        },
+        {
+            "id": 126509,
+            "rank": 1,
+            "nodeID": 102439
+        },
+        {
+            "id": 126514,
+            "rank": 1,
+            "nodeID": 102444
+        },
+        {
+            "id": 126515,
+            "rank": 1,
+            "nodeID": 102445
+        },
+        {
+            "id": 126516,
+            "rank": 1,
+            "nodeID": 102446
+        },
+        {
+            "id": 126517,
+            "rank": 1,
+            "nodeID": 102447
+        },
+        {
+            "id": 126518,
+            "rank": 1,
+            "nodeID": 102448
+        },
+        {
+            "id": 126519,
+            "rank": 1,
+            "nodeID": 102449
+        },
+        {
+            "id": 126520,
+            "rank": 2,
+            "nodeID": 102450
+        },
+        {
+            "id": 126522,
+            "rank": 1,
+            "nodeID": 102452
+        },
+        {
+            "id": 126523,
+            "rank": 1,
+            "nodeID": 102453
+        },
+        {
+            "id": 126524,
+            "rank": 1,
+            "nodeID": 102454
+        },
+        {
+            "id": 126526,
+            "rank": 1,
+            "nodeID": 102456
+        },
+        {
+            "id": 126527,
+            "rank": 1,
+            "nodeID": 102457
+        },
+        {
+            "id": 126528,
+            "rank": 1,
+            "nodeID": 102458
+        },
+        {
+            "id": 126529,
+            "rank": 1,
+            "nodeID": 102459
+        },
+        {
+            "id": 126533,
+            "rank": 1,
+            "nodeID": 102463
+        },
+        {
+            "id": 126535,
+            "rank": 1,
+            "nodeID": 102465
+        },
+        {
+            "id": 126537,
+            "rank": 1,
+            "nodeID": 102467
+        },
+        {
+            "id": 126538,
+            "rank": 1,
+            "nodeID": 102468
+        },
+        {
+            "id": 126539,
+            "rank": 1,
+            "nodeID": 102469
+        },
+        {
+            "id": 126540,
+            "rank": 1,
+            "nodeID": 102470
+        },
+        {
+            "id": 126541,
+            "rank": 1,
+            "nodeID": 102471
+        },
+        {
+            "id": 126543,
+            "rank": 1,
+            "nodeID": 102473
+        },
+        {
+            "id": 126544,
+            "rank": 1,
+            "nodeID": 102474
+        },
+        {
+            "id": 126547,
+            "rank": 1,
+            "nodeID": 102477
+        },
+        {
+            "id": 126550,
+            "rank": 1,
+            "nodeID": 102480
+        },
+        {
+            "id": 128689,
+            "rank": 1,
+            "nodeID": 104113
+        },
+        {
+            "id": 80180,
+            "rank": 1,
+            "nodeID": 62121
+        },
+        {
+            "id": 117250,
+            "rank": 1,
+            "nodeID": 94647
+        }
+    ],
+    "talents": [],
+    "pvpTalents": [
+        {
+            "id": 0,
+            "icon": "inv_axe_02.jpg"
+        },
+        {
+            "id": 210476,
+            "icon": "ability_mage_invisibility.jpg"
+        },
+        {
+            "id": 415945,
+            "icon": "ability_mage_massinvisibility.jpg"
+        },
+        {
+            "id": 353128,
+            "icon": "ability_mage_arcanosphere.jpg"
+        }
+    ],
+    "customPowerSet": [],
+    "secondaryCustomPowerSet": [],
+    "tertiaryCustomPowerSet": []
+},
+{
+    "timestamp": 4294177,
+    "type": "combatantinfo",
+    "fight": 8,
+    "sourceID": 83,
+    "gear": [
+        {
+            "id": 237525,
+            "quality": 4,
+            "icon": "inv_helm_leather_raidmonkethereal_d_01.jpg",
+            "itemLevel": 730,
+            "bonusIDs": [
+                6652,
+                12239,
+                10356,
+                13446,
+                1540,
+                10255,
+                12365
+            ],
+            "gems": [
+                {
+                    "id": 213497,
+                    "itemLevel": 610,
+                    "icon": "inv_jewelcrafting_cut-standart-gem-hybrid_color2_1.jpg"
+                }
+            ]
+        },
+        {
+            "id": 185820,
+            "quality": 3,
+            "icon": "inv_7_0raid_necklace_02c.jpg",
+            "itemLevel": 730,
+            "bonusIDs": [
+                10390,
+                6652,
+                10383,
+                10879,
+                10396,
+                13446,
+                10042,
+                10255
+            ],
+            "gems": [
+                {
+                    "id": 213743,
+                    "itemLevel": 610,
+                    "icon": "item_cutmetagemb.jpg"
+                },
+                {
+                    "id": 213479,
+                    "itemLevel": 610,
+                    "icon": "inv_jewelcrafting_cut-standart-gem-hybrid_color1_2.jpg"
+                }
+            ]
+        },
+        {
+            "id": 237671,
+            "quality": 4,
+            "icon": "inv_shoulder_leather_raidmonkethereal_d_01.jpg",
+            "itemLevel": 730,
+            "bonusIDs": [
+                10356,
+                12233,
+                6652,
+                12675,
+                13446,
+                1540,
+                10255
+            ],
+            "setID": 1925
+        },
+        {
+            "id": 0,
+            "quality": 1,
+            "icon": "inv_axe_02.jpg",
+            "itemLevel": 0
+        },
+        {
+            "id": 237676,
+            "quality": 4,
+            "icon": "inv_chest_leather_raidmonkethereal_d_01.jpg",
+            "itemLevel": 730,
+            "permanentEnchant": 7364,
+            "bonusIDs": [
+                12229,
+                10390,
+                6652,
+                12676,
+                13446,
+                1540,
+                10255
+            ],
+            "setID": 1925
+        },
+        {
+            "id": 219331,
+            "quality": 4,
+            "icon": "inv_leather_outdoorarathor_d_01_belt.jpg",
+            "itemLevel": 727,
+            "bonusIDs": [
+                10421,
+                9633,
+                8902,
+                9627,
+                12053,
+                11304,
+                8960,
+                8793,
+                12050,
+                12922,
+                13468
+            ],
+            "gems": [
+                {
+                    "id": 213482,
+                    "itemLevel": 610,
+                    "icon": "inv_jewelcrafting_cut-standart-gem-hybrid_color1_3.jpg"
+                }
+            ]
+        },
+        {
+            "id": 237672,
+            "quality": 4,
+            "icon": "inv_pant_leather_raidmonkethereal_d_01.jpg",
+            "itemLevel": 730,
+            "permanentEnchant": 7601,
+            "bonusIDs": [
+                10356,
+                12232,
+                6652,
+                12676,
+                13446,
+                1540,
+                10255
+            ],
+            "setID": 1925
+        },
+        {
+            "id": 243306,
+            "quality": 4,
+            "icon": "inv_boot_leather_raidmonkethereal_d_01.jpg",
+            "itemLevel": 730,
+            "permanentEnchant": 7424,
+            "bonusIDs": [
+                42,
+                12239,
+                10356,
+                13504,
+                13446,
+                1540,
+                10255
+            ]
+        },
+        {
+            "id": 219334,
+            "quality": 4,
+            "icon": "inv_leather_outdoorarathor_d_01_bracer.jpg",
+            "itemLevel": 727,
+            "permanentEnchant": 7385,
+            "bonusIDs": [
+                10421,
+                9633,
+                8902,
+                9627,
+                12053,
+                11304,
+                8960,
+                8793,
+                12050,
+                12922,
+                13468
+            ],
+            "gems": [
+                {
+                    "id": 213482,
+                    "itemLevel": 610,
+                    "icon": "inv_jewelcrafting_cut-standart-gem-hybrid_color1_3.jpg"
+                }
+            ]
+        },
+        {
+            "id": 237674,
+            "quality": 4,
+            "icon": "inv_glove_leather_raidmonkethereal_d_01.jpg",
+            "itemLevel": 730,
+            "bonusIDs": [
+                10356,
+                12230,
+                6652,
+                12675,
+                13446,
+                1540,
+                10255
+            ],
+            "setID": 1925
+        },
+        {
+            "id": 215135,
+            "quality": 4,
+            "icon": "inv_11_0_earthen_earthenring_color1.jpg",
+            "itemLevel": 727,
+            "permanentEnchant": 7346,
+            "bonusIDs": [
+                10421,
+                9633,
+                8902,
+                10879,
+                10396,
+                9627,
+                12050,
+                8791,
+                12053,
+                13468
+            ],
+            "gems": [
+                {
+                    "id": 213458,
+                    "itemLevel": 610,
+                    "icon": "inv_jewelcrafting_cut-standart-gem-hybrid_color4_1.jpg"
+                },
+                {
+                    "id": 213470,
+                    "itemLevel": 610,
+                    "icon": "inv_jewelcrafting_cut-standart-gem-hybrid_color5_3.jpg"
+                }
+            ]
+        },
+        {
+            "id": 237570,
+            "quality": 4,
+            "icon": "inv_112_raidtrinkets_ring03_etherealtechnomancerstyle_terra.jpg",
+            "itemLevel": 730,
+            "permanentEnchant": 7340,
+            "bonusIDs": [
+                6652,
+                10356,
+                13446,
+                1540,
+                10255,
+                10879,
+                10396
+            ],
+            "gems": [
+                {
+                    "id": 213494,
+                    "itemLevel": 610,
+                    "icon": "inv_jewelcrafting_cut-standart-gem-hybrid_color2_3.jpg"
+                },
+                {
+                    "id": 213470,
+                    "itemLevel": 610,
+                    "icon": "inv_jewelcrafting_cut-standart-gem-hybrid_color5_3.jpg"
+                }
+            ]
+        },
+        {
+            "id": 242396,
+            "quality": 4,
+            "icon": "inv_112_raidtrinkets_voidprism.jpg",
+            "itemLevel": 730,
+            "bonusIDs": [
+                6652,
+                10356,
+                13446,
+                1540,
+                10255
+            ]
+        },
+        {
+            "id": 242402,
+            "quality": 4,
+            "icon": "inv_112_raidtrinkets_trinkettechnomancer_ritualengine.jpg",
+            "itemLevel": 730,
+            "bonusIDs": [
+                6652,
+                10356,
+                13446,
+                1540,
+                10255
+            ]
+        },
+        {
+            "id": 235499,
+            "quality": 6,
+            "icon": "inv_cape_armor_etherealshawl_d_01.jpg",
+            "itemLevel": 730,
+            "permanentEnchant": 7403,
+            "bonusIDs": [
+                12401,
+                9893,
+                12257
+            ],
+            "gems": [
+                {
+                    "id": 238044,
+                    "itemLevel": 571,
+                    "icon": "inv_112_etherealwraps_empowered_red.jpg"
+                }
+            ]
+        },
+        {
+            "id": 221159,
+            "quality": 3,
+            "icon": "inv_staff_2h_earthendungeon_c_02.jpg",
+            "itemLevel": 730,
+            "permanentEnchant": 7448,
+            "temporaryEnchant": 7495,
+            "bonusIDs": [
+                10390,
+                6652,
+                10384,
+                13446,
+                3222,
+                10255
+            ]
+        },
+        {
+            "id": 0,
+            "quality": 1,
+            "icon": "inv_axe_02.jpg",
+            "itemLevel": 0
+        },
+        {
+            "id": 0,
+            "quality": 1,
+            "icon": "inv_axe_02.jpg",
+            "itemLevel": 0
+        }
+    ],
+    "auras": [
+        {
+            "source": 83,
+            "ability": 431973,
+            "stacks": 1,
+            "icon": "inv_potion_blue.jpg",
+            "name": "Flask of Tempered Versatility"
+        },
+        {
+            "source": 83,
+            "ability": 1236891,
+            "stacks": 1,
+            "icon": "inv_10_inscription_glyphs_color5.jpg",
+            "name": "Vantus Rune: Manaforge Omega"
+        },
+        {
+            "source": 83,
+            "ability": 1236899,
+            "stacks": 1,
+            "icon": "inv_inscriptions_vantus_rune_orange.jpg",
+            "name": "Vantus Rune: Dimensius, the All-Devouring"
+        },
+        {
+            "source": 83,
+            "ability": 166646,
+            "stacks": 1,
+            "icon": "monk_stance_whitetiger.jpg",
+            "name": "Windwalking"
+        },
+        {
+            "source": 83,
+            "ability": 1242340,
+            "stacks": 1,
+            "icon": "inv_engineering_90_blackhole.jpg",
+            "name": "Speed Siphoner"
+        },
+        {
+            "source": 83,
+            "ability": 1237913,
+            "stacks": 1,
+            "icon": "inv_-firearm_2h_outdoorethereal_c_01.jpg",
+            "name": "Behind Enemy Lines"
+        },
+        {
+            "source": 84,
+            "ability": 6673,
+            "stacks": 1,
+            "icon": "ability_warrior_battleshout.jpg",
+            "name": "Battle Shout"
+        },
+        {
+            "source": 83,
+            "ability": 391370,
+            "stacks": 1,
+            "icon": "ability_warrior_unrelentingassault.jpg",
+            "name": "Drinking Horn Cover"
+        },
+        {
+            "source": 83,
+            "ability": 450574,
+            "stacks": 1,
+            "icon": "ability_rogue_sprint_blue.jpg",
+            "name": "Flow of Chi"
+        },
+        {
+            "source": 105,
+            "ability": 1459,
+            "stacks": 1,
+            "icon": "spell_holy_magicalsentry.jpg",
+            "name": "Arcane Intellect"
+        },
+        {
+            "source": 83,
+            "ability": 1234969,
+            "stacks": 1,
+            "icon": "inv_alchemy_90_stone_purple.jpg",
+            "name": "Ethereal Augmentation"
+        },
+        {
+            "source": 81,
+            "ability": 381751,
+            "stacks": 1,
+            "icon": "ability_evoker_blessingofthebronze.jpg",
+            "name": "Blessing of the Bronze"
+        },
+        {
+            "source": 102,
+            "ability": 462854,
+            "stacks": 1,
+            "icon": "achievement_raidprimalist_windelemental.jpg",
+            "name": "Skyfury"
+        },
+        {
+            "source": 110,
+            "ability": 1126,
+            "stacks": 1,
+            "icon": "spell_nature_regeneration.jpg",
+            "name": "Mark of the Wild"
+        },
+        {
+            "source": 94,
+            "ability": 21562,
+            "stacks": 1,
+            "icon": "spell_holy_wordfortitude.jpg",
+            "name": "Power Word: Fortitude"
+        },
+        {
+            "source": 87,
+            "ability": 119611,
+            "stacks": 1,
+            "icon": "ability_monk_renewingmists.jpg",
+            "name": "Renewing Mist"
+        },
+        {
+            "source": 83,
+            "ability": 462210,
+            "stacks": 1,
+            "icon": "spell_misc_food.jpg",
+            "name": "Hearty Well Fed"
+        }
+    ],
+    "expansion": "dragonflight",
+    "faction": 1,
+    "specID": 269,
+    "strength": 7588,
+    "agility": 97423,
+    "stamina": 831323,
+    "intellect": 18176,
+    "dodge": 0,
+    "parry": 0,
+    "block": 0,
+    "armor": 49485,
+    "critMelee": 12608,
+    "critRanged": 12608,
+    "critSpell": 12608,
+    "hasteMelee": 17010,
+    "hasteRanged": 17010,
+    "hasteSpell": 17010,
+    "speed": 918,
+    "leech": 0,
+    "avoidance": 1635,
+    "mastery": 21139,
+    "versatilityDamageDone": 11531,
+    "versatilityHealingDone": 11531,
+    "versatilityDamageReduction": 11531,
+    "talentTree": [
+        {
+            "id": 124805,
+            "rank": 1,
+            "nodeID": 101035
+        },
+        {
+            "id": 124806,
+            "rank": 1,
+            "nodeID": 101036
+        },
+        {
+            "id": 124807,
+            "rank": 1,
+            "nodeID": 101037
+        },
+        {
+            "id": 124810,
+            "rank": 1,
+            "nodeID": 101039
+        },
+        {
+            "id": 124811,
+            "rank": 1,
+            "nodeID": 101040
+        },
+        {
+            "id": 124812,
+            "rank": 1,
+            "nodeID": 101041
+        },
+        {
+            "id": 124817,
+            "rank": 1,
+            "nodeID": 101045
+        },
+        {
+            "id": 124819,
+            "rank": 1,
+            "nodeID": 101047
+        },
+        {
+            "id": 124820,
+            "rank": 1,
+            "nodeID": 101048
+        },
+        {
+            "id": 124823,
+            "rank": 1,
+            "nodeID": 101051
+        },
+        {
+            "id": 124825,
+            "rank": 1,
+            "nodeID": 101052
+        },
+        {
+            "id": 124826,
+            "rank": 1,
+            "nodeID": 101053
+        },
+        {
+            "id": 124827,
+            "rank": 1,
+            "nodeID": 101054
+        },
+        {
+            "id": 124828,
+            "rank": 1,
+            "nodeID": 101055
+        },
+        {
+            "id": 124829,
+            "rank": 1,
+            "nodeID": 101056
+        },
+        {
+            "id": 124833,
+            "rank": 1,
+            "nodeID": 101059
+        },
+        {
+            "id": 124834,
+            "rank": 1,
+            "nodeID": 101060
+        },
+        {
+            "id": 124835,
+            "rank": 1,
+            "nodeID": 101061
+        },
+        {
+            "id": 124924,
+            "rank": 1,
+            "nodeID": 101135
+        },
+        {
+            "id": 124926,
+            "rank": 1,
+            "nodeID": 101136
+        },
+        {
+            "id": 124927,
+            "rank": 1,
+            "nodeID": 101137
+        },
+        {
+            "id": 124930,
+            "rank": 1,
+            "nodeID": 101140
+        },
+        {
+            "id": 124935,
+            "rank": 1,
+            "nodeID": 101145
+        },
+        {
+            "id": 124936,
+            "rank": 1,
+            "nodeID": 101146
+        },
+        {
+            "id": 124937,
+            "rank": 1,
+            "nodeID": 101147
+        },
+        {
+            "id": 124941,
+            "rank": 1,
+            "nodeID": 101150
+        },
+        {
+            "id": 124943,
+            "rank": 1,
+            "nodeID": 101152
+        },
+        {
+            "id": 124944,
+            "rank": 1,
+            "nodeID": 101153
+        },
+        {
+            "id": 124948,
+            "rank": 1,
+            "nodeID": 101156
+        },
+        {
+            "id": 124953,
+            "rank": 1,
+            "nodeID": 101159
+        },
+        {
+            "id": 124955,
+            "rank": 1,
+            "nodeID": 101161
+        },
+        {
+            "id": 124956,
+            "rank": 1,
+            "nodeID": 101162
+        },
+        {
+            "id": 124959,
+            "rank": 1,
+            "nodeID": 101165
+        },
+        {
+            "id": 124961,
+            "rank": 1,
+            "nodeID": 101166
+        },
+        {
+            "id": 124962,
+            "rank": 1,
+            "nodeID": 101167
+        },
+        {
+            "id": 124963,
+            "rank": 1,
+            "nodeID": 101168
+        },
+        {
+            "id": 124964,
+            "rank": 2,
+            "nodeID": 101169
+        },
+        {
+            "id": 124965,
+            "rank": 1,
+            "nodeID": 101170
+        },
+        {
+            "id": 124968,
+            "rank": 1,
+            "nodeID": 101173
+        },
+        {
+            "id": 124969,
+            "rank": 1,
+            "nodeID": 101174
+        },
+        {
+            "id": 124971,
+            "rank": 1,
+            "nodeID": 101175
+        },
+        {
+            "id": 124975,
+            "rank": 1,
+            "nodeID": 101178
+        },
+        {
+            "id": 124976,
+            "rank": 2,
+            "nodeID": 101179
+        },
+        {
+            "id": 124980,
+            "rank": 1,
+            "nodeID": 101182
+        },
+        {
+            "id": 124982,
+            "rank": 1,
+            "nodeID": 101183
+        },
+        {
+            "id": 124983,
+            "rank": 1,
+            "nodeID": 101184
+        },
+        {
+            "id": 124984,
+            "rank": 1,
+            "nodeID": 101185
+        },
+        {
+            "id": 125010,
+            "rank": 1,
+            "nodeID": 101203
+        },
+        {
+            "id": 125011,
+            "rank": 1,
+            "nodeID": 101204
+        },
+        {
+            "id": 125013,
+            "rank": 1,
+            "nodeID": 101206
+        },
+        {
+            "id": 125014,
+            "rank": 1,
+            "nodeID": 101207
+        },
+        {
+            "id": 125015,
+            "rank": 1,
+            "nodeID": 101208
+        },
+        {
+            "id": 125018,
+            "rank": 1,
+            "nodeID": 101211
+        },
+        {
+            "id": 125019,
+            "rank": 1,
+            "nodeID": 101212
+        },
+        {
+            "id": 125022,
+            "rank": 1,
+            "nodeID": 101215
+        },
+        {
+            "id": 125023,
+            "rank": 1,
+            "nodeID": 101216
+        },
+        {
+            "id": 125025,
+            "rank": 1,
+            "nodeID": 101217
+        },
+        {
+            "id": 125026,
+            "rank": 1,
+            "nodeID": 101218
+        },
+        {
+            "id": 125047,
+            "rank": 1,
+            "nodeID": 101232
+        },
+        {
+            "id": 125049,
+            "rank": 1,
+            "nodeID": 101233
+        },
+        {
+            "id": 125050,
+            "rank": 1,
+            "nodeID": 101234
+        },
+        {
+            "id": 125052,
+            "rank": 1,
+            "nodeID": 101235
+        },
+        {
+            "id": 125054,
+            "rank": 1,
+            "nodeID": 101236
+        },
+        {
+            "id": 125055,
+            "rank": 1,
+            "nodeID": 101237
+        },
+        {
+            "id": 125056,
+            "rank": 1,
+            "nodeID": 101238
+        },
+        {
+            "id": 125058,
+            "rank": 1,
+            "nodeID": 101239
+        },
+        {
+            "id": 125059,
+            "rank": 1,
+            "nodeID": 101240
+        },
+        {
+            "id": 125060,
+            "rank": 1,
+            "nodeID": 101241
+        },
+        {
+            "id": 125061,
+            "rank": 1,
+            "nodeID": 101242
+        },
+        {
+            "id": 126307,
+            "rank": 1,
+            "nodeID": 102250
+        },
+        {
+            "id": 124932,
+            "rank": 1,
+            "nodeID": 101142
+        },
+        {
+            "id": 125062,
+            "rank": 1,
+            "nodeID": 101243
+        },
+        {
+            "id": 124985,
+            "rank": 1,
+            "nodeID": 101186
+        }
+    ],
+    "talents": [],
+    "pvpTalents": [
+        {
+            "id": 0,
+            "icon": "inv_axe_02.jpg"
+        },
+        {
+            "id": 0,
+            "icon": "inv_axe_02.jpg"
+        },
+        {
+            "id": 0,
+            "icon": "inv_axe_02.jpg"
+        },
+        {
+            "id": 0,
+            "icon": "inv_axe_02.jpg"
+        }
+    ],
+    "customPowerSet": [],
+    "secondaryCustomPowerSet": [],
+    "tertiaryCustomPowerSet": []
+},
+{
+    "timestamp": 4294177,
+    "type": "combatantinfo",
+    "fight": 8,
+    "sourceID": 84,
+    "gear": [
+        {
+            "id": 237610,
+            "quality": 4,
+            "icon": "inv_helm_plate_raidwarriorethereal_d_01.jpg",
+            "itemLevel": 730,
+            "bonusIDs": [
+                42,
+                10390,
+                13446,
+                12231,
+                12676,
+                1540,
+                12365
+            ],
+            "gems": [
+                {
+                    "id": 213494,
+                    "itemLevel": 610,
+                    "icon": "inv_jewelcrafting_cut-standart-gem-hybrid_color2_3.jpg"
+                }
+            ],
+            "setID": 1931
+        },
+        {
+            "id": 237568,
+            "quality": 4,
+            "icon": "inv_112_raidtrinkets_necklace01_etherealnontechnologicalstyle_gold.jpg",
+            "itemLevel": 730,
+            "bonusIDs": [
+                6652,
+                10356,
+                13446,
+                1540,
+                10255,
+                10879,
+                10396
+            ],
+            "gems": [
+                {
+                    "id": 213746,
+                    "itemLevel": 610,
+                    "icon": "inv_misc_gem_x4_metagem_cut.jpg"
+                },
+                {
+                    "id": 213482,
+                    "itemLevel": 610,
+                    "icon": "inv_jewelcrafting_cut-standart-gem-hybrid_color1_3.jpg"
+                }
+            ]
+        },
+        {
+            "id": 237608,
+            "quality": 4,
+            "icon": "inv_shoulder_plate_raidwarriorethereal_d_01.jpg",
+            "itemLevel": 730,
+            "bonusIDs": [
+                10356,
+                12233,
+                6652,
+                12675,
+                13446,
+                1540,
+                10255
+            ],
+            "setID": 1931
+        },
+        {
+            "id": 16060,
+            "quality": 2,
+            "icon": "inv_shirt_white_01.jpg",
+            "itemLevel": 1
+        },
+        {
+            "id": 237613,
+            "quality": 4,
+            "icon": "inv_chest_plate_raidwarriorethereal_d_01.jpg",
+            "itemLevel": 730,
+            "permanentEnchant": 7364,
+            "bonusIDs": [
+                10356,
+                12229,
+                43,
+                12676,
+                13446,
+                1540,
+                10255
+            ],
+            "setID": 1931
+        },
+        {
+            "id": 237550,
+            "quality": 4,
+            "icon": "inv_belt_plate_raidwarriorethereal_d_01.jpg",
+            "itemLevel": 730,
+            "bonusIDs": [
+                6652,
+                12239,
+                10356,
+                13446,
+                1540,
+                10255,
+                12365
+            ],
+            "gems": [
+                {
+                    "id": 213494,
+                    "itemLevel": 610,
+                    "icon": "inv_jewelcrafting_cut-standart-gem-hybrid_color2_3.jpg"
+                }
+            ]
+        },
+        {
+            "id": 237609,
+            "quality": 4,
+            "icon": "inv_pant_plate_raidwarriorethereal_d_01.jpg",
+            "itemLevel": 730,
+            "permanentEnchant": 7595,
+            "bonusIDs": [
+                6652,
+                10390,
+                12232,
+                12676,
+                13446,
+                1540,
+                10255
+            ],
+            "setID": 1931
+        },
+        {
+            "id": 243307,
+            "quality": 4,
+            "icon": "inv_plate_raidpaladinethereal_d_01_boot.jpg",
+            "itemLevel": 730,
+            "permanentEnchant": 7418,
+            "bonusIDs": [
+                6652,
+                12239,
+                10356,
+                13504,
+                13446,
+                1540,
+                10255
+            ]
+        },
+        {
+            "id": 222435,
+            "quality": 4,
+            "icon": "inv_plate_outdoorarathor_d_01_bracer.jpg",
+            "itemLevel": 727,
+            "permanentEnchant": 7385,
+            "bonusIDs": [
+                10421,
+                9633,
+                8902,
+                9627,
+                8794,
+                12050,
+                12053,
+                11109,
+                8960,
+                12922,
+                13468
+            ],
+            "gems": [
+                {
+                    "id": 213470,
+                    "itemLevel": 610,
+                    "icon": "inv_jewelcrafting_cut-standart-gem-hybrid_color5_3.jpg"
+                }
+            ]
+        },
+        {
+            "id": 237611,
+            "quality": 4,
+            "icon": "inv_glove_plate_raidwarriorethereal_d_01.jpg",
+            "itemLevel": 730,
+            "bonusIDs": [
+                42,
+                13446,
+                10356,
+                12230,
+                12675,
+                1540
+            ],
+            "setID": 1931
+        },
+        {
+            "id": 242405,
+            "quality": 4,
+            "icon": "inv_112_raidtrinkets_ring02_etherealribbonorrunestyle_gold.jpg",
+            "itemLevel": 717,
+            "permanentEnchant": 7346,
+            "bonusIDs": [
+                6652,
+                10355,
+                13444,
+                1527,
+                10255,
+                10879,
+                10396
+            ],
+            "gems": [
+                {
+                    "id": 213500,
+                    "itemLevel": 610,
+                    "icon": "inv_jewelcrafting_cut-standart-gem_color1.jpg"
+                },
+                {
+                    "id": 213500,
+                    "itemLevel": 610,
+                    "icon": "inv_jewelcrafting_cut-standart-gem_color1.jpg"
+                }
+            ]
+        },
+        {
+            "id": 237570,
+            "quality": 4,
+            "icon": "inv_112_raidtrinkets_ring03_etherealtechnomancerstyle_terra.jpg",
+            "itemLevel": 730,
+            "permanentEnchant": 7346,
+            "bonusIDs": [
+                6652,
+                10356,
+                10879,
+                10396,
+                13446,
+                1540,
+                10255
+            ],
+            "gems": [
+                {
+                    "id": 213470,
+                    "itemLevel": 610,
+                    "icon": "inv_jewelcrafting_cut-standart-gem-hybrid_color5_3.jpg"
+                },
+                {
+                    "id": 213458,
+                    "itemLevel": 610,
+                    "icon": "inv_jewelcrafting_cut-standart-gem-hybrid_color4_1.jpg"
+                }
+            ]
+        },
+        {
+            "id": 242394,
+            "quality": 4,
+            "icon": "inv_112_raidtrinkets_obliterationcannon.jpg",
+            "itemLevel": 730,
+            "bonusIDs": [
+                6652,
+                10356,
+                13446,
+                1540,
+                10255
+            ]
+        },
+        {
+            "id": 242399,
+            "quality": 4,
+            "icon": "inv_112_raidtrinkets_blobofswirlingvoid_terra.jpg",
+            "itemLevel": 717,
+            "bonusIDs": [
+                6652,
+                10355,
+                13444,
+                1527,
+                10255
+            ]
+        },
+        {
+            "id": 235499,
+            "quality": 6,
+            "icon": "inv_cape_armor_etherealshawl_d_01.jpg",
+            "itemLevel": 730,
+            "permanentEnchant": 7403,
+            "bonusIDs": [
+                12401,
+                9893,
+                12256
+            ],
+            "gems": [
+                {
+                    "id": 238046,
+                    "itemLevel": 571,
+                    "icon": "inv_112_etherealwraps_empowered_original.jpg"
+                }
+            ]
+        },
+        {
+            "id": 237737,
+            "quality": 4,
+            "icon": "inv_sword_2h_etherealraid_d_01.jpg",
+            "itemLevel": 730,
+            "permanentEnchant": 7448,
+            "temporaryEnchant": 7495,
+            "bonusIDs": [
+                6652,
+                10356,
+                13446,
+                1540,
+                10255
+            ]
+        },
+        {
+            "id": 222443,
+            "quality": 4,
+            "icon": "inv_axe_2h_earthendungeon_c_01.jpg",
+            "itemLevel": 727,
+            "permanentEnchant": 7448,
+            "temporaryEnchant": 7495,
+            "bonusIDs": [
+                10421,
+                9633,
+                8902,
+                9627,
+                8794,
+                12050,
+                12053,
+                11300,
+                8960,
+                13468
+            ]
+        },
+        {
+            "id": 45581,
+            "quality": 2,
+            "icon": "inv_misc_tournaments_tabard_orc.jpg",
+            "itemLevel": 1
+        }
+    ],
+    "auras": [
+        {
+            "source": 84,
+            "ability": 386196,
+            "stacks": 1,
+            "icon": "ability_racial_avatar.jpg",
+            "name": "Berserker Stance"
+        },
+        {
+            "source": 84,
+            "ability": 1236891,
+            "stacks": 1,
+            "icon": "inv_10_inscription_glyphs_color5.jpg",
+            "name": "Vantus Rune: Manaforge Omega"
+        },
+        {
+            "source": 84,
+            "ability": 1236899,
+            "stacks": 1,
+            "icon": "inv_inscriptions_vantus_rune_orange.jpg",
+            "name": "Vantus Rune: Dimensius, the All-Devouring"
+        },
+        {
+            "source": 84,
+            "ability": 431973,
+            "stacks": 1,
+            "icon": "inv_potion_blue.jpg",
+            "name": "Flask of Tempered Versatility"
+        },
+        {
+            "source": 84,
+            "ability": 1242340,
+            "stacks": 1,
+            "icon": "inv_engineering_90_blackhole.jpg",
+            "name": "Speed Siphoner"
+        },
+        {
+            "source": 84,
+            "ability": 1237913,
+            "stacks": 1,
+            "icon": "inv_-firearm_2h_outdoorethereal_c_01.jpg",
+            "name": "Behind Enemy Lines"
+        },
+        {
+            "source": 84,
+            "ability": 6673,
+            "stacks": 1,
+            "icon": "ability_warrior_battleshout.jpg",
+            "name": "Battle Shout"
+        },
+        {
+            "source": 84,
+            "ability": 386628,
+            "stacks": 1,
+            "icon": "spell_shadow_spectralsight.jpg",
+            "name": "Unhinged"
+        },
+        {
+            "source": 105,
+            "ability": 1459,
+            "stacks": 1,
+            "icon": "spell_holy_magicalsentry.jpg",
+            "name": "Arcane Intellect"
+        },
+        {
+            "source": 81,
+            "ability": 381758,
+            "stacks": 1,
+            "icon": "ability_evoker_blessingofthebronze.jpg",
+            "name": "Blessing of the Bronze"
+        },
+        {
+            "source": 87,
+            "ability": 166646,
+            "stacks": 1,
+            "icon": "monk_stance_whitetiger.jpg",
+            "name": "Windwalking"
+        },
+        {
+            "source": 84,
+            "ability": 1234969,
+            "stacks": 1,
+            "icon": "inv_alchemy_90_stone_purple.jpg",
+            "name": "Ethereal Augmentation"
+        },
+        {
+            "source": 110,
+            "ability": 1126,
+            "stacks": 1,
+            "icon": "spell_nature_regeneration.jpg",
+            "name": "Mark of the Wild"
+        },
+        {
+            "source": 94,
+            "ability": 21562,
+            "stacks": 1,
+            "icon": "spell_holy_wordfortitude.jpg",
+            "name": "Power Word: Fortitude"
+        },
+        {
+            "source": 102,
+            "ability": 462854,
+            "stacks": 1,
+            "icon": "achievement_raidprimalist_windelemental.jpg",
+            "name": "Skyfury"
+        },
+        {
+            "source": 84,
+            "ability": 462183,
+            "stacks": 1,
+            "icon": "spell_misc_food.jpg",
+            "name": "Hearty Well Fed"
+        },
+        {
+            "source": 97,
+            "ability": 465,
+            "stacks": 1,
+            "icon": "spell_holy_devotionaura.jpg",
+            "name": "Devotion Aura"
+        }
+    ],
+    "expansion": "dragonflight",
+    "faction": 0,
+    "specID": 72,
+    "strength": 126917,
+    "agility": 12176,
+    "stamina": 991004,
+    "intellect": 12359,
+    "dodge": 0,
+    "parry": 0,
+    "block": 0,
+    "armor": 117608,
+    "critMelee": 8127,
+    "critRanged": 8127,
+    "critSpell": 8127,
+    "hasteMelee": 20316,
+    "hasteRanged": 20316,
+    "hasteSpell": 20316,
+    "speed": 2392,
+    "leech": 0,
+    "avoidance": 1635,
+    "mastery": 21507,
+    "versatilityDamageDone": 14063,
+    "versatilityHealingDone": 14063,
+    "versatilityDamageReduction": 14063,
+    "talentTree": [
+        {
+            "id": 112183,
+            "rank": 1,
+            "nodeID": 90326
+        },
+        {
+            "id": 112185,
+            "rank": 1,
+            "nodeID": 90328
+        },
+        {
+            "id": 112188,
+            "rank": 1,
+            "nodeID": 90331
+        },
+        {
+            "id": 112190,
+            "rank": 1,
+            "nodeID": 90332
+        },
+        {
+            "id": 112206,
+            "rank": 1,
+            "nodeID": 90344
+        },
+        {
+            "id": 112208,
+            "rank": 1,
+            "nodeID": 90346
+        },
+        {
+            "id": 112209,
+            "rank": 2,
+            "nodeID": 90347
+        },
+        {
+            "id": 112216,
+            "rank": 1,
+            "nodeID": 90352
+        },
+        {
+            "id": 112217,
+            "rank": 1,
+            "nodeID": 90353
+        },
+        {
+            "id": 112219,
+            "rank": 1,
+            "nodeID": 90355
+        },
+        {
+            "id": 112223,
+            "rank": 1,
+            "nodeID": 90359
+        },
+        {
+            "id": 112224,
+            "rank": 2,
+            "nodeID": 90360
+        },
+        {
+            "id": 112227,
+            "rank": 1,
+            "nodeID": 90362
+        },
+        {
+            "id": 112232,
+            "rank": 1,
+            "nodeID": 90365
+        },
+        {
+            "id": 112233,
+            "rank": 2,
+            "nodeID": 90366
+        },
+        {
+            "id": 112235,
+            "rank": 2,
+            "nodeID": 90368
+        },
+        {
+            "id": 112238,
+            "rank": 1,
+            "nodeID": 90371
+        },
+        {
+            "id": 112240,
+            "rank": 2,
+            "nodeID": 90373
+        },
+        {
+            "id": 112242,
+            "rank": 1,
+            "nodeID": 90375
+        },
+        {
+            "id": 112245,
+            "rank": 1,
+            "nodeID": 90378
+        },
+        {
+            "id": 112248,
+            "rank": 2,
+            "nodeID": 90381
+        },
+        {
+            "id": 112249,
+            "rank": 1,
+            "nodeID": 90382
+        },
+        {
+            "id": 112253,
+            "rank": 1,
+            "nodeID": 90385
+        },
+        {
+            "id": 112255,
+            "rank": 1,
+            "nodeID": 90387
+        },
+        {
+            "id": 112257,
+            "rank": 1,
+            "nodeID": 90389
+        },
+        {
+            "id": 112259,
+            "rank": 1,
+            "nodeID": 90390
+        },
+        {
+            "id": 112260,
+            "rank": 1,
+            "nodeID": 90391
+        },
+        {
+            "id": 112261,
+            "rank": 1,
+            "nodeID": 90392
+        },
+        {
+            "id": 112263,
+            "rank": 1,
+            "nodeID": 90394
+        },
+        {
+            "id": 112264,
+            "rank": 1,
+            "nodeID": 90395
+        },
+        {
+            "id": 112265,
+            "rank": 1,
+            "nodeID": 90396
+        },
+        {
+            "id": 112266,
+            "rank": 1,
+            "nodeID": 90397
+        },
+        {
+            "id": 112267,
+            "rank": 1,
+            "nodeID": 90398
+        },
+        {
+            "id": 112274,
+            "rank": 1,
+            "nodeID": 90405
+        },
+        {
+            "id": 112275,
+            "rank": 1,
+            "nodeID": 90406
+        },
+        {
+            "id": 112276,
+            "rank": 1,
+            "nodeID": 90407
+        },
+        {
+            "id": 112277,
+            "rank": 1,
+            "nodeID": 90408
+        },
+        {
+            "id": 112278,
+            "rank": 1,
+            "nodeID": 90409
+        },
+        {
+            "id": 112280,
+            "rank": 1,
+            "nodeID": 90411
+        },
+        {
+            "id": 112281,
+            "rank": 1,
+            "nodeID": 90412
+        },
+        {
+            "id": 112282,
+            "rank": 1,
+            "nodeID": 90413
+        },
+        {
+            "id": 112285,
+            "rank": 1,
+            "nodeID": 90415
+        },
+        {
+            "id": 112286,
+            "rank": 2,
+            "nodeID": 90416
+        },
+        {
+            "id": 112292,
+            "rank": 2,
+            "nodeID": 90421
+        },
+        {
+            "id": 112296,
+            "rank": 2,
+            "nodeID": 90425
+        },
+        {
+            "id": 112298,
+            "rank": 1,
+            "nodeID": 90427
+        },
+        {
+            "id": 112299,
+            "rank": 1,
+            "nodeID": 90428
+        },
+        {
+            "id": 112300,
+            "rank": 1,
+            "nodeID": 90429
+        },
+        {
+            "id": 112301,
+            "rank": 1,
+            "nodeID": 90430
+        },
+        {
+            "id": 117381,
+            "rank": 1,
+            "nodeID": 94784
+        },
+        {
+            "id": 117385,
+            "rank": 1,
+            "nodeID": 94788
+        },
+        {
+            "id": 117392,
+            "rank": 1,
+            "nodeID": 94795
+        },
+        {
+            "id": 117398,
+            "rank": 1,
+            "nodeID": 94801
+        },
+        {
+            "id": 117406,
+            "rank": 1,
+            "nodeID": 94809
+        },
+        {
+            "id": 117407,
+            "rank": 1,
+            "nodeID": 94810
+        },
+        {
+            "id": 117410,
+            "rank": 1,
+            "nodeID": 94813
+        },
+        {
+            "id": 117417,
+            "rank": 1,
+            "nodeID": 94820
+        },
+        {
+            "id": 118845,
+            "rank": 1,
+            "nodeID": 90340
+        },
+        {
+            "id": 118850,
+            "rank": 1,
+            "nodeID": 95956
+        },
+        {
+            "id": 119139,
+            "rank": 1,
+            "nodeID": 90388
+        },
+        {
+            "id": 123389,
+            "rank": 1,
+            "nodeID": 99852
+        },
+        {
+            "id": 123409,
+            "rank": 1,
+            "nodeID": 94786
+        },
+        {
+            "id": 123770,
+            "rank": 1,
+            "nodeID": 94787
+        },
+        {
+            "id": 117411,
+            "rank": 1,
+            "nodeID": 94814
+        },
+        {
+            "id": 114644,
+            "rank": 1,
+            "nodeID": 92538
+        },
+        {
+            "id": 112182,
+            "rank": 1,
+            "nodeID": 90325
+        }
+    ],
+    "talents": [],
+    "pvpTalents": [
+        {
+            "id": 0,
+            "icon": "inv_axe_02.jpg"
+        },
+        {
+            "id": 411764,
+            "icon": "ability_warrior_rampage.jpg"
+        },
+        {
+            "id": 352998,
+            "icon": "ability_warrior_deepcuts.jpg"
+        },
+        {
+            "id": 213915,
+            "icon": "ability_warrior_shieldbreak.jpg"
+        }
+    ],
+    "customPowerSet": [],
+    "secondaryCustomPowerSet": [],
+    "tertiaryCustomPowerSet": []
+}
+]

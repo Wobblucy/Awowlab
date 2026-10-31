@@ -1,0 +1,29 @@
+[
+{
+    "timestamp": 4294191,
+    "type": "applybuff",
+    "sourceID": 4,
+    "targetID": 4,
+    "abilityGameID": 1229674,
+    "fight": 8
+},
+{
+    "timestamp": 4414559,
+    "type": "applydebuff",
+    "sourceID": 184,
+    "sourceInstance": 1,
+    "targetID": 117,
+    "targetInstance": 16,
+    "abilityGameID": 59638,
+    "fight": 8,
+    "targetMarker": 4
+},
+{
+    "timestamp": 4573016,
+    "type": "applybuff",
+    "sourceID": 94,
+    "targetID": 131,
+    "abilityGameID": 77489,
+    "fight": 8
+}
+]

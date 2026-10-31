@@ -1,0 +1,26 @@
+[
+{
+    "timestamp": 4491981,
+    "type": "resurrect",
+    "sourceID": 110,
+    "targetID": 96,
+    "abilityGameID": 20484,
+    "fight": 8
+},
+{
+    "timestamp": 4491982,
+    "type": "resurrect",
+    "sourceID": 97,
+    "targetID": 96,
+    "abilityGameID": 391054,
+    "fight": 8
+},
+{
+    "timestamp": 4638790,
+    "type": "resurrect",
+    "sourceID": 104,
+    "targetID": 83,
+    "abilityGameID": 61999,
+    "fight": 8
+}
+]

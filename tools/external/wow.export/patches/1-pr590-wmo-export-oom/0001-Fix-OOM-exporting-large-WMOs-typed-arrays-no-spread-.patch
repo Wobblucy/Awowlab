@@ -1,0 +1,161 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Wobblucy <Wobblucy@users.noreply.github.com>
+Date: Wed, 22 Jul 2026 13:21:36 -0600
+Subject: [PATCH 1/4] Fix OOM exporting large WMOs (typed arrays, no
+ spread-concat)
+
+Exporting a very large WMO (e.g. a raid at several million triangles) could
+exhaust the heap and crash the app. Two causes:
+
+1. WMOExporter's OBJ/GLTF/STL paths pre-allocated geometry buffers as plain JS
+   Arrays (new Array(nInd * 3) for vertices, normals, and each UV/colour layer).
+   On V8 an index-assigned float Array holds boxed doubles at ~8 bytes/element
+   plus overhead; a raid's ~45M elements across the buffers is multiple GB.
+   Switched these to Float32Array (4 bytes/element, no boxing, zero-initialised).
+
+2. OBJWriter.appendGeometry (used when a map appends many WMOs) concatenated with
+   Float32Array.from([...this.verts, ...verts]) - the spread builds a temporary
+   JS array of every element before rebuilding a typed array, a triple copy per
+   append that is quadratic in memory over a map's worth of WMOs. Replaced with a
+   concatFloats helper that allocates the result once and copies via .set().
+
+Measured on a 20-WMO append (30M floats): peak heap 1159 MB -> 629 MB. Output is
+byte-identical; write() indexes the buffers the same way for typed arrays.
+---
+ src/js/3D/exporters/WMOExporter.js | 24 +++++++++++-------
+ src/js/3D/writers/OBJWriter.js     | 40 ++++++++++++++++--------------
+ 2 files changed, 37 insertions(+), 27 deletions(-)
+
+diff --git a/src/js/3D/exporters/WMOExporter.js b/src/js/3D/exporters/WMOExporter.js
+index 116366e..d6dbc34 100644
+--- a/src/js/3D/exporters/WMOExporter.js
++++ b/src/js/3D/exporters/WMOExporter.js
+@@ -281,8 +281,10 @@ class WMOExporter {
+ 			groups.push(group);
+ 		}
+ 
+-		const vertices = new Array(nInd * 3);
+-		const normals = new Array(nInd * 3);
++		// Typed arrays to keep large WMO geometry within the heap (see the OBJ
++		// path above for the rationale).
++		const vertices = new Float32Array(nInd * 3);
++		const normals = new Float32Array(nInd * 3);
+ 
+ 		const uv_maps = [];
+ 
+@@ -306,7 +308,7 @@ class WMOExporter {
+ 			if (group.uvs) {
+ 				for (let i = 0, n = group.uvs.length; i < n; i++) {
+ 					if (!uv_maps[i])
+-						uv_maps[i] = new Array(indCount * 2).fill(0);
++						uv_maps[i] = new Float32Array(indCount * 2);
+ 
+ 					const uv = group.uvs[i];
+ 					const uv_map = uv_maps[i];
+@@ -443,17 +445,21 @@ class WMOExporter {
+ 		if (!core.view.config.modelsExportUV2)
+ 			maxLayerCount = Math.min(maxLayerCount, 1);
+ 
+-		const vertsArray = new Array(nInd * 3);
+-		const normalsArray = new Array(nInd * 3);
++		// Use typed arrays rather than plain JS arrays. A boxed-float JS array
++		// costs ~8 bytes/element plus object overhead; a Float32Array is 4 bytes
++		// with no boxing. Large WMOs (e.g. a raid with millions of triangles)
++		// otherwise exhaust the heap building these vertex/normal/uv buffers.
++		const vertsArray = new Float32Array(nInd * 3);
++		const normalsArray = new Float32Array(nInd * 3);
+ 		const uvArrays = new Array(maxLayerCount);
+ 
+ 		// Create all necessary UV layer arrays.
+ 		for (let i = 0; i < maxLayerCount; i++)
+-			uvArrays[i] = new Array(nInd * 2);
++			uvArrays[i] = new Float32Array(nInd * 2);
+ 
+ 		// colors2 provides vertex blend weights for shader 20.
+ 		const hasColors2 = groups.some(g => g.colors2);
+-		const colorsArray = hasColors2 ? new Array(nInd * 4).fill(0) : null;
++		const colorsArray = hasColors2 ? new Float32Array(nInd * 4) : null;
+ 
+ 		// Iterate over groups again and fill the allocated arrays.
+ 		let indOfs = 0;
+@@ -811,8 +817,8 @@ class WMOExporter {
+ 			groups.push(group);
+ 		}
+ 
+-		const vertsArray = new Array(nInd * 3);
+-		const normalsArray = new Array(nInd * 3);
++		const vertsArray = new Float32Array(nInd * 3);
++		const normalsArray = new Float32Array(nInd * 3);
+ 
+ 		// iterate over groups again and fill the allocated arrays
+ 		let indOfs = 0;
+diff --git a/src/js/3D/writers/OBJWriter.js b/src/js/3D/writers/OBJWriter.js
+index fbe2809..5d397ea 100644
+--- a/src/js/3D/writers/OBJWriter.js
++++ b/src/js/3D/writers/OBJWriter.js
+@@ -8,6 +8,22 @@ const constants = require('../../constants');
+ const generics = require('../../generics');
+ const FileWriter = require('../../file-writer');
+ 
++/**
++ * Concatenate two numeric sequences into a single Float32Array, allocating the
++ * result once and copying in place. Avoids the [...a, ...b] spread that builds a
++ * temporary JS array of every element before rebuilding a typed array - a triple
++ * copy that exhausts the heap on large (e.g. raid-sized) geometry.
++ * @param {Float32Array|Array} a
++ * @param {Float32Array|Array} b
++ * @returns {Float32Array}
++ */
++function concatFloats(a, b) {
++	const out = new Float32Array(a.length + b.length);
++	out.set(a, 0);
++	out.set(b, a.length);
++	return out;
++}
++
+ class OBJWriter {
+ 	/**
+ 	 * Construct a new OBJWriter instance.
+@@ -100,20 +116,12 @@ class OBJWriter {
+ 		this.vertex_offset = current_vertex_count;
+ 
+ 		// append vertices
+-		if (verts) {
+-			if (Array.isArray(this.verts))
+-				this.verts = [...this.verts, ...verts];
+-			else
+-				this.verts = Float32Array.from([...this.verts, ...verts]);
+-		}
++		if (verts)
++			this.verts = concatFloats(this.verts, verts);
+ 
+ 		// append normals
+-		if (normals) {
+-			if (Array.isArray(this.normals))
+-				this.normals = [...this.normals, ...normals];
+-			else
+-				this.normals = Float32Array.from([...this.normals, ...normals]);
+-		}
++		if (normals)
++			this.normals = concatFloats(this.normals, normals);
+ 
+ 		// append uvs (match layer count)
+ 		if (uvArrays) {
+@@ -122,12 +130,8 @@ class OBJWriter {
+ 					this.uvs.push([]);
+ 
+ 				const uv = uvArrays[i];
+-				if (uv) {
+-					if (Array.isArray(this.uvs[i]))
+-						this.uvs[i] = [...this.uvs[i], ...uv];
+-					else
+-						this.uvs[i] = Float32Array.from([...this.uvs[i], ...uv]);
+-				}
++				if (uv)
++					this.uvs[i] = concatFloats(this.uvs[i], uv);
+ 			}
+ 		}
+ 	}
+-- 
+2.47.1.windows.1
+

@@ -1,0 +1,398 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Wobblucy <Wobblucy@users.noreply.github.com>
+Date: Wed, 22 Jul 2026 18:56:55 -0600
+Subject: [PATCH 2/4] Stream WMO OBJ geometry per-group to avoid heap OOM
+
+The Float32Array change reduced buffer size but a raid-sized WMO (several
+million vertices) still exhausted the V8 renderer heap: exportAsOBJ merged
+every group into one vertex/normal/uv buffer AND retained every group's
+source arrays plus every batch's index array on the OBJWriter until the
+final write.
+
+Add OBJWriter.writeStreamingGroups(), which writes the model one group at a
+time - each group's used verts/normals/uvs/colours are emitted with a
+compact local numbering, then its faces with a running global offset. WMO
+groups never share vertices, so no cross-group dedup is lost. exportAsOBJ
+now feeds groups through an async generator that fetches, transforms and
+yields one group at a time, so peak memory is a single group rather than the
+whole model. Output is equivalent to the previous merged-buffer write.
+
+Scoped to the WMO OBJ path (fresh OBJWriter per WMO); glTF/STL and the
+shared write() used by M2/ADT exporters are untouched.
+---
+ src/js/3D/exporters/WMOExporter.js | 171 +++++++++++------------------
+ src/js/3D/writers/OBJWriter.js     | 145 ++++++++++++++++++++++++
+ 2 files changed, 209 insertions(+), 107 deletions(-)
+
+diff --git a/src/js/3D/exporters/WMOExporter.js b/src/js/3D/exporters/WMOExporter.js
+index d6dbc34..049f165 100644
+--- a/src/js/3D/exporters/WMOExporter.js
++++ b/src/js/3D/exporters/WMOExporter.js
+@@ -392,10 +392,6 @@ class WMOExporter {
+ 		for (const [texFileDataID, texInfo] of textureMap)
+ 			fileManifest?.push({ type: 'PNG', fileDataID: texFileDataID, file: texInfo.matPath });
+ 
+-		const groups = [];
+-		let nInd = 0;
+-		let maxLayerCount = 0;
+-
+ 		let mask;
+ 
+ 		// Map our user-facing group mask to a WMO mask.
+@@ -408,124 +404,85 @@ class WMOExporter {
+ 				}
+ 			}
+ 		}
+-	
++
+ 		helper.setCurrentTaskName(wmoName + ' groups');
+ 		helper.setCurrentTaskMax(wmo.groupCount);
+ 
+-		// Iterate over the groups once to calculate the total size of our
+-		// vertex/normal/uv arrays allowing for pre-allocation.
+-		for (let i = 0, n = wmo.groupCount; i < n; i++) {
+-			// Abort if the export has been cancelled.
+-			if (helper.isCancelled())
+-				return;
+-
+-			helper.setCurrentTaskValue(i);
+-
+-			const group = await wmo.getGroup(i);
+-
+-			// Skip empty groups.
+-			if (!group.renderBatches || group.renderBatches.length === 0)
+-				continue;
+-
+-			// Skip masked groups.
+-			if (mask && !mask.has(i))
+-				continue;
+-
+-			// 3 verts per indices.
+-			nInd += group.vertices.length / 3;
+-
+-			// UV counts vary between groups, allocate for the max.
+-			maxLayerCount = Math.max(group.uvs.length, maxLayerCount);
+-
+-			// Store the valid groups for quicker iteration later.
+-			groups.push(group);
+-		}
+-
+-		// Restrict to first UV layer if additional UV layers are not enabled.
+-		if (!core.view.config.modelsExportUV2)
+-			maxLayerCount = Math.min(maxLayerCount, 1);
+-
+-		// Use typed arrays rather than plain JS arrays. A boxed-float JS array
+-		// costs ~8 bytes/element plus object overhead; a Float32Array is 4 bytes
+-		// with no boxing. Large WMOs (e.g. a raid with millions of triangles)
+-		// otherwise exhaust the heap building these vertex/normal/uv buffers.
+-		const vertsArray = new Float32Array(nInd * 3);
+-		const normalsArray = new Float32Array(nInd * 3);
+-		const uvArrays = new Array(maxLayerCount);
+-
+-		// Create all necessary UV layer arrays.
+-		for (let i = 0; i < maxLayerCount; i++)
+-			uvArrays[i] = new Float32Array(nInd * 2);
+-
+-		// colors2 provides vertex blend weights for shader 20.
+-		const hasColors2 = groups.some(g => g.colors2);
+-		const colorsArray = hasColors2 ? new Float32Array(nInd * 4) : null;
+-
+-		// Iterate over groups again and fill the allocated arrays.
+-		let indOfs = 0;
+-		for (const group of groups) {
+-			const indCount = group.vertices.length / 3;
++		// Whether additional UV layers beyond the first are exported.
++		const exportUV2 = core.view.config.modelsExportUV2;
++
++		// Stream the geometry group-by-group rather than merging every group into
++		// one giant vertex/normal/uv buffer up front. A raid-sized WMO is several
++		// million vertices; building the merged buffers (and retaining every
++		// group's source arrays plus every batch's index array until the final
++		// write) exhausts the V8 renderer heap. This generator fetches one group
++		// at a time, transforms just that group's geometry, yields it to the
++		// writer, and lets it be reclaimed before moving on - so peak memory is a
++		// single group, not the whole model.
++		async function* streamGroups() {
++			for (let i = 0, n = wmo.groupCount; i < n; i++) {
++				if (helper.isCancelled())
++					return;
+ 
+-			const vertOfs = indOfs * 3;
+-			const groupVerts = group.vertices;
+-			for (let i = 0, n = groupVerts.length; i < n; i++)
+-				vertsArray[vertOfs + i] = groupVerts[i];
++				helper.setCurrentTaskValue(i);
+ 
+-			// Normals and vertices should match, so re-use vertOfs here.
+-			const groupNormals = group.normals;
+-			for (let i = 0, n = groupNormals.length; i < n; i++)
+-				normalsArray[vertOfs + i] = groupNormals[i];
++				const group = await wmo.getGroup(i);
+ 
+-			const uvsOfs = indOfs * 2;
+-			const groupUVs = group.uvs ?? [];
+-			const uvCount = indCount * 2;
++				// Skip empty groups.
++				if (!group.renderBatches || group.renderBatches.length === 0)
++					continue;
+ 
+-			// Write to all UV layers, even if we have no data.
+-			for (let i = 0; i < maxLayerCount; i++) {
+-				const uv = groupUVs[i];
+-				for (let j = 0; j < uvCount; j++)
+-					uvArrays[i][uvsOfs + j] = uv?.[j] ?? 0;
+-			}
++				// Skip masked groups.
++				if (mask && !mask.has(i))
++					continue;
+ 
+-			// colors2 (BGRA uint8) → RGBA float for shader 20 blend weights.
+-			if (colorsArray && group.colors2) {
+-				const colorOfs = indOfs * 4;
+-				const src = group.colors2;
+-				for (let i = 0; i < indCount; i++) {
+-					const si = i * 4, di = colorOfs + i * 4;
+-					colorsArray[di] = src[si + 2] / 255;
+-					colorsArray[di + 1] = src[si + 1] / 255;
+-					colorsArray[di + 2] = src[si] / 255;
+-					colorsArray[di + 3] = src[si + 3] / 255;
++				const indCount = group.vertices.length / 3;
++				const groupName = wmo.groupNames[group.nameOfs];
++
++				// UV layers for this group (optionally limited to the first).
++				let uvs = group.uvs ?? [];
++				if (!exportUV2 && uvs.length > 1)
++					uvs = [uvs[0]];
++
++				// colors2 (BGRA uint8) -> RGBA float for shader 20 blend weights.
++				let colors = null;
++				if (group.colors2) {
++					colors = new Float32Array(indCount * 4);
++					const src = group.colors2;
++					for (let c = 0; c < indCount; c++) {
++						const si = c * 4, di = c * 4;
++						colors[di] = src[si + 2] / 255;
++						colors[di + 1] = src[si + 1] / 255;
++						colors[di + 2] = src[si] / 255;
++						colors[di + 3] = src[si + 3] / 255;
++					}
+ 				}
+-			}
+ 
+-			const groupName = wmo.groupNames[group.nameOfs];
++				// Build this group's meshes with group-local (zero-based) indices;
++				// writeStreamingGroups applies the running global offset itself.
++				const meshes = [];
++				for (let bI = 0, bC = group.renderBatches.length; bI < bC; bI++) {
++					const batch = group.renderBatches[bI];
++					const indices = new Uint32Array(batch.numFaces);
+ 
+-			// Load all render batches into the mesh.
+-			for (let bI = 0, bC = group.renderBatches.length; bI < bC; bI++) {
+-				const batch = group.renderBatches[bI];
+-				const indices = new Array(batch.numFaces);
++					for (let f = 0; f < batch.numFaces; f++)
++						indices[f] = group.indices[batch.firstFace + f];
+ 
+-				for (let i = 0; i < batch.numFaces; i++)
+-					indices[i] = group.indices[batch.firstFace + i] + indOfs;
++					const matID = ((batch.flags & 2) === 2) ? batch.possibleBox2[2] : batch.materialID;
++					meshes.push({ name: groupName + bI, triangles: indices, matName: materialMap.get(matID) });
++				}
+ 
+-				const matID = ((batch.flags & 2) === 2) ? batch.possibleBox2[2] : batch.materialID;
+-				obj.addMesh(groupName + bI, indices, materialMap.get(matID));
++				yield {
++					verts: group.vertices,
++					normals: group.normals,
++					uvs,
++					colors,
++					meshes,
++					flipUVs: true,
++				};
+ 			}
+-
+-			indOfs += indCount;
+ 		}
+ 
+-		obj.setVertArray(vertsArray);
+-		obj.setNormalArray(normalsArray);
+-
+-		for (const arr of uvArrays)
+-			obj.addUVArray(arr);
+-
+-		if (colorsArray)
+-			obj.setColorArray(colorsArray);
+-
+ 		const csvPath = ExportHelper.replaceExtension(out, '_ModelPlacementInformation.csv');
+ 		if (config.overwriteFiles || !await generics.fileExists(csvPath)) {
+ 			const useAbsolute = core.view.config.enableAbsoluteCSVPaths;
+@@ -642,7 +599,7 @@ class WMOExporter {
+ 		if (!mtl.isEmpty)
+ 			obj.setMaterialLibrary(path.basename(mtl.out));
+ 
+-		await obj.write(config.overwriteFiles);
++		await obj.writeStreamingGroups(streamGroups(), config.overwriteFiles);
+ 		fileManifest?.push({ type: 'OBJ', fileDataID: this.wmo.fileDataID, file: obj.out });
+ 
+ 		await mtl.write(config.overwriteFiles);
+diff --git a/src/js/3D/writers/OBJWriter.js b/src/js/3D/writers/OBJWriter.js
+index 5d397ea..4ab9f41 100644
+--- a/src/js/3D/writers/OBJWriter.js
++++ b/src/js/3D/writers/OBJWriter.js
+@@ -247,6 +247,151 @@ class OBJWriter {
+ 
+ 		writer.close();
+ 	}
++
++	/**
++	 * Write the OBJ file one group at a time, never holding the whole model in
++	 * memory at once. Each group carries its own vertices/normals/uvs/colours and
++	 * its own meshes (whose triangle indices are group-local, i.e. zero-based
++	 * within that group's vertex block). This is the memory-safe path for very
++	 * large models (e.g. raid WMOs of several million vertices) where building a
++	 * single merged buffer plus every retained index array exhausts the V8 heap.
++	 *
++	 * Output is equivalent to write(): each group emits its used verts, normals,
++	 * uvs and (optional) colours, remapped to a compact local numbering, followed
++	 * by its faces. Vertex references in 'f' lines are global 1-based indices, so
++	 * a running offset is carried across groups. Groups are independent (WMO
++	 * groups never share vertices), so no cross-group dedup is needed or lost.
++	 *
++	 * @param {Iterable|AsyncIterable} groups - yields { verts, normals, uvs,
++	 *   colors, meshes, flipUVs } where meshes is [{ name, triangles, matName }]
++	 *   with triangles zero-based within this group's verts.
++	 * @param {boolean} overwrite
++	 */
++	async writeStreamingGroups(groups, overwrite = true) {
++		if (!overwrite && await generics.fileExists(this.out))
++			return;
++
++		await generics.createDirectory(path.dirname(this.out));
++		const writer = new FileWriter(this.out);
++
++		await writer.writeLine('# Exported using wow.export v' + constants.VERSION);
++		await writer.writeLine('o ' + this.name);
++
++		if (this.mtl)
++			await writer.writeLine('mtllib ' + this.mtl);
++
++		// Running counts of already-emitted verts / normals / uvs / colours so
++		// each group's face indices resolve to the correct global 1-based value.
++		let vertBase = 0;
++		let normalBase = 0;
++		let uvBase = 0;
++
++		for await (const group of groups) {
++			const verts = group.verts;
++			const normals = group.normals;
++			const uvLayers = group.uvs ?? [];
++			const colors = group.colors ?? null;
++			const meshes = group.meshes ?? [];
++			const flipUVs = group.flipUVs ?? this.flip_uvs;
++
++			const layerCount = uvLayers.length;
++			const hasUV = layerCount > 0;
++
++			// Determine which of this group's vertices are actually referenced
++			// by a face, mirroring write()'s culling so output stays identical.
++			const usedIndices = new Set();
++			for (const mesh of meshes) {
++				const tris = mesh.triangles;
++				for (let i = 0, n = tris.length; i < n; i++)
++					usedIndices.add(tris[i]);
++			}
++
++			// Local (group) index -> compacted position within the emitted block.
++			const vertMap = new Map();
++			const normalMap = new Map();
++			const uvMap = new Map();
++
++			// Verts.
++			for (let i = 0, j = 0, u = 0, n = verts.length; i < n; j++, i += 3) {
++				if (usedIndices.has(j)) {
++					vertMap.set(j, u++);
++					await writer.writeLine('v ' + verts[i] + ' ' + verts[i + 1] + ' ' + verts[i + 2]);
++				}
++			}
++
++			// Normals.
++			for (let i = 0, j = 0, u = 0, n = normals.length; i < n; j++, i += 3) {
++				if (usedIndices.has(j)) {
++					normalMap.set(j, u++);
++					await writer.writeLine('vn ' + normals[i] + ' ' + normals[i + 1] + ' ' + normals[i + 2]);
++				}
++			}
++
++			// Vertex colours (non-standard, used by the wow.export Blender addon).
++			if (colors) {
++				for (let i = 0, j = 0, n = colors.length; i < n; j++, i += 4) {
++					if (usedIndices.has(j))
++						await writer.writeLine('vc ' + colors[i] + ' ' + colors[i + 1] + ' ' + colors[i + 2] + ' ' + colors[i + 3]);
++				}
++			}
++
++			// UVs (all layers; index map built from the first layer only).
++			if (hasUV) {
++				for (let uvIndex = 0; uvIndex < layerCount; uvIndex++) {
++					const uv = uvLayers[uvIndex];
++					let prefix = 'vt';
++					if (uvIndex > 0)
++						prefix += (uvIndex + 1);
++
++					for (let i = 0, j = 0, u = 0, n = uv.length; i < n; j++, i += 2) {
++						if (usedIndices.has(j)) {
++							if (uvIndex === 0)
++								uvMap.set(j, u++);
++
++							const v = flipUVs ? (1 - uv[i + 1]) : uv[i + 1];
++							await writer.writeLine(prefix + ' ' + uv[i] + ' ' + v);
++						}
++					}
++				}
++			}
++
++			// Faces, using global 1-based indices (local compacted + running base).
++			for (const mesh of meshes) {
++				await writer.writeLine('g ' + mesh.name);
++				await writer.writeLine('s 1');
++
++				if (mesh.matName)
++					await writer.writeLine('usemtl ' + mesh.matName);
++
++				const tris = mesh.triangles;
++				for (let i = 0, n = tris.length; i < n; i += 3) {
++					const a = tris[i], b = tris[i + 1], c = tris[i + 2];
++
++					const va = vertBase + vertMap.get(a) + 1;
++					const vb = vertBase + vertMap.get(b) + 1;
++					const vc = vertBase + vertMap.get(c) + 1;
++
++					const na = normalBase + normalMap.get(a) + 1;
++					const nb = normalBase + normalMap.get(b) + 1;
++					const nc = normalBase + normalMap.get(c) + 1;
++
++					const ua = hasUV ? uvBase + uvMap.get(a) + 1 : '';
++					const ub = hasUV ? uvBase + uvMap.get(b) + 1 : '';
++					const uc = hasUV ? uvBase + uvMap.get(c) + 1 : '';
++
++					await writer.writeLine('f ' + va + '/' + ua + '/' + na + ' ' + vb + '/' + ub + '/' + nb + ' ' + vc + '/' + uc + '/' + nc);
++				}
++			}
++
++			// Advance the global bases by the number of unique verts we emitted
++			// for this group (vertMap/normalMap/uvMap all share usedIndices size).
++			vertBase += vertMap.size;
++			normalBase += normalMap.size;
++			uvBase += uvMap.size;
++		}
++
++		writer.close();
++	}
+ }
+ 
+ module.exports = OBJWriter;
+\ No newline at end of file
+-- 
+2.47.1.windows.1
+

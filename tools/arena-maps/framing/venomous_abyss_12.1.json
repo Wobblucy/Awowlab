@@ -1,0 +1,16 @@
+{
+  "map_id": 3004,
+  "dungeon": "The Venomous Abyss",
+  "game_version": "12.1",
+  "note": "x and y are scene coordinates, scale is the camera's ortho scale, floor picks the storey where rooms stack. camera_z replaces floor when the height was picked directly. liquid false hides the surfaces import_wmo_liquid.py added.",
+  "arenas": {
+    "3420": { "label": "Sszorak", "x": 410.0, "y": -389.0, "scale": 240.0, "camera_z": 608.0, "liquid": false },
+    "3421": { "label": "The Twin Fangs", "x": 0.0, "y": -623.0, "scale": 220.0, "floor": 438.7 },
+    "3429": { "label": "The Coiled Altar", "x": -2.0, "y": -1156.0, "scale": 250.0, "floor": 447.5 },
+    "3445": { "label": "Entombed Sentinels", "x": -356.0, "y": -714.0, "scale": 220.0, "floor": 452.5 },
+    "3455": { "label": "Vashnik the Malignant", "x": -232.0, "y": -477.0, "scale": 300.0, "camera_z": 575.0 },
+    "3470": { "label": "Nek'zali the Soulcoiler", "x": -3.0, "y": -206.0, "scale": 200.0, "floor": 494.6 },
+    "3492": { "label": "Ula'tek", "x": -1.0, "y": -1550.0, "scale": 200.0, "floor": 383.2 },
+    "3497": { "label": "The Lost Explorers", "x": 469.0, "y": -696.0, "scale": 180.0, "floor": 451.6 }
+  }
+}
