@@ -1,8 +1,8 @@
 {
-  "_comment": "Template for awowlab.config.json, which holds every value a fork sets: where the build points, its WarcraftLogs client and its keys. CMake copies it on the first configure and fills settings_key with a random value; edit the copy, never commit it. Fields added to this template later are copied into your file on the next configure. See docs/BUILD-OPTIONS.md. Only the public half of the signing key goes in signing_public_key; signing_key_path names the private key file, which stays outside the repository (tools/release/SIGNING.md).",
-  "project_url": "https://github.com/Wobblucy/Awowlab",
-  "update_repo": "Wobblucy/Awowlab",
-  "assets_repo": "Wobblucy/Awowlab",
+  "_comment": "Template for awowlab.config.json, which holds every value a fork sets: where the build points, its WarcraftLogs client and its keys. CMake copies it on the first configure and fills settings_key with a random value; edit the copy, never commit it. Fields added to this template later are copied into your file on the next configure. The repositories here are placeholders. WarcraftLogs sign-in needs only wcl_client_id and the redirect ports; it never sends the client secret, so there is no field for it. See docs/BUILD-OPTIONS.md. Only the public half of the signing key goes in signing_public_key; signing_key_path names the private key file, which stays outside the repository (tools/release/SIGNING.md).",
+  "project_url": "https://github.com/xyz/xyz",
+  "update_repo": "xyz/xyz",
+  "assets_repo": "xyz/xyz",
   "wcl_client_id": "a099c341-602f-4cc0-90fa-05bb1d4fb015",
   "wcl_redirect_ports": [8080, 8765, 8766, 8767],
   "signing_public_key": "ff1eea5c40acb7b36b489dac769ef7bd77889173eccae8e3549055e6de5107a7e20657365e70fc90136e59a759dc74ce3aec2678cadfc0e42030f65c745a801e",

@@ -75,7 +75,7 @@ Spell icons, the full world map set and the boss arena maps are too large for
 the repository. Either download the published set:
 
 ```bat
-python tools/fetch-assets.py
+python tools/fetch-assets.py --repo Wobblucy/Awowlab
 ```
 
 or produce them from your own game install with the data tools (step 6).
@@ -98,10 +98,12 @@ value, which encrypts your settings file. It is gitignored; never commit it.
 `python tools/check_setup.py` confirms it is there and kept out of git.
 
 Release builds update themselves from a GitHub releases page and sign in to
-WarcraftLogs with a registered client id. The example points at the official
-ones. If you publish builds of your own, fill in your own WarcraftLogs client
-id, project URL, update and asset repositories, and the public half of your own
-release signing key. `docs/BUILD-OPTIONS.md` explains each setting, and
+WarcraftLogs with a registered client id. The example's repositories are the
+placeholder `xyz/xyz`; its client id and signing key are the official ones. If
+you publish builds of your own, fill in your own WarcraftLogs client id,
+project URL, update and asset repositories, and the public half of your own
+release signing key. WarcraftLogs also shows your client a secret: AwowLab
+never uses it, because sign-in needs none, so it has no place in the file. `docs/BUILD-OPTIONS.md` explains each setting, and
 `tools/release/SIGNING.md` how to make a signing key. Builds made with the
 `x64-debug` preset never update themselves.
 

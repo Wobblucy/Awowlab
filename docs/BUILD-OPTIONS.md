@@ -34,7 +34,8 @@ example's value, so your file always lists everything there is to set.
 | `settings_key_generated` | | `true` when CMake made `settings_key` up; releases refuse such a key |
 | `deepl_api_key` | | DeepL key for `tools/translate/translate_all.py` |
 
-The example holds the official repositories and client id. CMake reads the file at configure
+The example's repositories are the placeholder `xyz/xyz`; set your own. Its
+client id and signing key are the official ones. CMake reads the file at configure
 time and re-runs on its own when the file changes. Each field is the default
 of its cache variable, so a `-D` on the configure line still wins:
 
@@ -120,7 +121,9 @@ client id and the PKCE verifier. No client secret is sent.
 To use your own client:
 
 1. On warcraftlogs.com, create an API client and mark it as a public client,
-   since the token request carries no secret.
+   since the token request carries no secret. WarcraftLogs still shows the
+   client a secret; AwowLab never uses it, so it has no field in
+   `awowlab.config.json`. Keep it to yourself.
 2. Add a redirect URL for every port in `wcl_redirect_ports`. The app binds
    the first free port of these and sends the matching URL, so any of them can
    be the one in use. With the default ports:
