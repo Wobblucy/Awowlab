@@ -469,8 +469,19 @@ wcl.authenticated,Authentifiziert
 wcl.public_only,Nur öffentliche Protokolle
 wcl.user_points_spent,"Deine WarcraftLogs-Punkte für diese Stunde sind aufgebraucht. Sie stehen in %d Minuten wieder zur Verfügung; Kämpfe, die du zuvor geöffnet hast, werden weiterhin aus dem Cache geladen."
 wcl.user_points_spent_unknown,"Deine WarcraftLogs-Punkte für diese Stunde sind aufgebraucht. Sie werden innerhalb einer Stunde wieder aufgefüllt; Kämpfe, die du zuvor geöffnet hast, werden weiterhin aus dem Cache geladen."
-wcl.points_help,"Beim Laden aus WarcraftLogs werden deine eigenen WarcraftLogs-Punkte verbraucht, die sich stündlich wieder auffüllen. Ein Raid-Boss-Pull kostet etwa %d Punkte und ein Mythic+-Lauf etwa %d; längere Kämpfe kosten mehr. Kämpfe, die du bereits zuvor geöffnet hast, werden kostenlos aus dem Cache geladen."
-wcl.points_tiers,"Punkte pro Stunde: %d ohne Abonnement, %d mit Silber, %d mit Gold, %d mit Platin. Diese Punkte werden mit allen anderen Websites und Apps geteilt, bei denen du dich mit WarcraftLogs anmeldest."
+wcl.points_used_hour,In dieser Stunde wurden etwa %d WarcraftLogs-Punkte verbraucht; das Guthaben wird in %d Minuten zurückgesetzt
+wcl.points_used_hint,"Geschätzt anhand der von AwowLab hochgeladenen Kämpfe. WarcraftLogs gibt keine Auskunft darüber, wie viele Punkte dir noch bleiben, und auf anderen Websites, bei denen du dich anmeldest, um Punkte einzulösen, werden dieselben Punkte abgezogen."
+wcl.col_points,Punkte
+wcl.points_intro,"Beim Laden aus WarcraftLogs werden Ihre eigenen WarcraftLogs-Punkte verbraucht, die sich stündlich wieder auffüllen. Kämpfe, die Sie bereits zuvor geöffnet haben, werden kostenlos aus dem Cache geladen."
+wcl.points_col_content,Inhalt
+wcl.points_col_per_minute,Punkte pro Minute
+wcl.points_raid,Razzia
+wcl.points_mplus,Mythic+
+wcl.points_col_tier,Abonnement
+wcl.points_col_per_hour,Punkte pro Stunde
+wcl.points_tier_none,Keine
+wcl.points_shared,"Deine Punkte werden an alle anderen Websites und Apps weitergegeben, bei denen du dich mit WarcraftLogs anmeldest."
+wcl.points_estimate_note,"Geschätzte Anzahl an WarcraftLogs-Punkten für diesen Kampf, basierend auf seiner Dauer. Zwischengespeicherte Kämpfe sind kostenlos."
 wcl.points_third_party,Die Abonnements werden von Archon (WarcraftLogs) verkauft. AwowLab steht in keiner Verbindung zu diesem Unternehmen und erhält keine Vergütung von diesem.
 wcl.points_more,Weitere Punkte
 wcl.session_expired,Sitzung ist abgelaufen - bitte erneut autorisieren

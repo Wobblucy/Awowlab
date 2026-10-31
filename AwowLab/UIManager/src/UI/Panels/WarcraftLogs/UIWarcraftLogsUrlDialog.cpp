@@ -8,6 +8,7 @@
 #include "Core/BrowserHelper.h"
 
 #include <imgui.h>
+#include <cstdio>
 #include <fstream>
 #include <filesystem>
 #include <cctype>
@@ -55,18 +56,37 @@ struct UIWarcraftLogsUrlDialog::AuthTask {
 
 namespace {
 
-// WarcraftLogs points a user spends loading a fight with its report details,
-// measured 2026-10-31: a 10-minute 20-player Mythic boss kill cost 70 and a
-// 29-minute +24 key 40. Cost follows the number of events, so short pulls
-// and small groups cost less.
-constexpr int kRaidPullPoints = 70;
-constexpr int kMythicPlusRunPoints = 40;
+// User points per hour by Archon (WarcraftLogs) subscription tier. The tier
+// names are Archon's own and stay in English.
+struct PointsTier {
+    const char* name;  // nullptr for no subscription
+    int pointsPerHour;
+};
+constexpr PointsTier kPointsTiers[] = {
+    {nullptr, 100},
+    {"Silver", 250},
+    {"Gold", 400},
+    {"Platinum", 800},
+};
 
-// User points per hour by Archon (WarcraftLogs) subscription tier
-constexpr int kUserPointsNone = 100;
-constexpr int kUserPointsSilver = 250;
-constexpr int kUserPointsGold = 400;
-constexpr int kUserPointsPlatinum = 800;
+// Two-column table of label and number for the points tooltip
+bool beginPointsTable(const char* id, const char* labelHeader, const char* valueHeader) {
+    if (!ImGui::BeginTable(id, 2, ImGuiTableFlags_BordersInnerH | ImGuiTableFlags_SizingFixedFit)) {
+        return false;
+    }
+    ImGui::TableSetupColumn(labelHeader, ImGuiTableColumnFlags_WidthFixed, ImGui::GetFontSize() * 12.0f);
+    ImGui::TableSetupColumn(valueHeader, ImGuiTableColumnFlags_WidthFixed, ImGui::GetFontSize() * 9.0f);
+    ImGui::TableHeadersRow();
+    return true;
+}
+
+void pointsRow(const char* label, const char* value) {
+    ImGui::TableNextRow();
+    ImGui::TableSetColumnIndex(0);
+    ImGui::TextUnformatted(label);
+    ImGui::TableSetColumnIndex(1);
+    ImGui::TextUnformatted(value);
+}
 
 constexpr const char* kArchonSubscribeUrl = "https://www.patreon.com/warcraftlogs";
 
@@ -351,10 +371,29 @@ void UIWarcraftLogsUrlDialog::renderAuthSection() {
     if (ImGui::IsItemHovered()) {
         ImGui::BeginTooltip();
         ImGui::PushTextWrapPos(ImGui::GetFontSize() * 32.0f);
-        ImGui::TextUnformatted(LF("wcl.points_help", kRaidPullPoints, kMythicPlusRunPoints).c_str());
+        ImGui::TextUnformatted(L("wcl.points_intro"));
         ImGui::Spacing();
-        ImGui::TextUnformatted(LF("wcl.points_tiers", kUserPointsNone, kUserPointsSilver,
-                                  kUserPointsGold, kUserPointsPlatinum).c_str());
+
+        char value[32];
+        if (beginPointsTable("##PointsCost", L("wcl.points_col_content"), L("wcl.points_col_per_minute"))) {
+            std::snprintf(value, sizeof(value), "~%.0f", awow::kRaidPointsPerMinute);
+            pointsRow(L("wcl.points_raid"), value);
+            std::snprintf(value, sizeof(value), "~%.1f", awow::kMythicPlusPointsPerMinute);
+            pointsRow(L("wcl.points_mplus"), value);
+            ImGui::EndTable();
+        }
+        ImGui::Spacing();
+
+        if (beginPointsTable("##PointsTiers", L("wcl.points_col_tier"), L("wcl.points_col_per_hour"))) {
+            for (const auto& tier : kPointsTiers) {
+                std::snprintf(value, sizeof(value), "%d", tier.pointsPerHour);
+                pointsRow(tier.name ? tier.name : L("wcl.points_tier_none"), value);
+            }
+            ImGui::EndTable();
+        }
+        ImGui::Spacing();
+
+        ImGui::TextUnformatted(L("wcl.points_shared"));
         ImGui::Spacing();
         ImGui::TextDisabled("%s", L("wcl.points_third_party"));
         ImGui::PopTextWrapPos();

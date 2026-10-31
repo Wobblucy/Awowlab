@@ -469,8 +469,19 @@ wcl.authenticated,인증됨
 wcl.public_only,공개 로그만 해당
 wcl.user_points_spent,"이번 시간 동안의 워크래프트 로그 포인트가 모두 소진되었습니다. 포인트는 %d 분 후에 다시 충전되며, 이전에 열었던 전투 기록은 캐시에서 계속 불러옵니다."
 wcl.user_points_spent_unknown,"이번 시간대의 워크래프트 로그 포인트가 모두 소진되었습니다. 1시간 이내에 포인트가 다시 충전되며, 이전에 열었던 전투 기록은 캐시에서 계속 불러옵니다."
-wcl.points_help,"WarcraftLogs에서 데이터를 불러오면 본인의 WarcraftLogs 포인트가 소모되며, 이 포인트는 매시간 재충전됩니다. 레이드 보스를 소환하는 데는 약 %d 포인트가 소요되고, 미스틱+ 진행에는 약 %d 포인트가 소요됩니다. 전투 시간이 길수록 더 많은 포인트가 소모됩니다. 이전에 열었던 전투는 캐시에서 무료로 불러옵니다."
-wcl.points_tiers,"시간당 포인트: 구독 미가입 시 %d, 실버 회원 시 %d, 골드 회원 시 %d, 플래티넘 회원 시 %d. 이 포인트는 WarcraftLogs로 로그인한 다른 모든 사이트 및 앱과 공유됩니다."
+wcl.points_used_hour,"이번 시간에 %d WarcraftLogs 포인트가 사용되었으며, %d분 후에 초기화됩니다."
+wcl.points_used_hint,"AwowLab에 등록된 전투 기록을 바탕으로 추산된 수치입니다. WarcraftLogs에서는 남은 포인트가 몇 개인지 표시하지 않으며, 다른 사이트에서는 로그인하여 동일한 포인트를 사용해 포인트를 소모할 수 있습니다."
+wcl.col_points,포인트
+wcl.points_intro,"WarcraftLogs에서 데이터를 불러오면 본인의 WarcraftLogs 포인트가 소모되며, 이 포인트는 매시간 재충전됩니다. 이전에 열었던 전투 기록은 캐시에서 무료로 불러올 수 있습니다."
+wcl.points_col_content,내용
+wcl.points_col_per_minute,분당 득점
+wcl.points_raid,레이드
+wcl.points_mplus,미스틱+
+wcl.points_col_tier,구독
+wcl.points_col_per_hour,시간당 포인트
+wcl.points_tier_none,없음
+wcl.points_shared,귀하의 기록은 WarcraftLogs를 통해 로그인하는 다른 모든 사이트 및 앱과 공유됩니다.
+wcl.points_estimate_note,이 전투의 소요 시간을 기준으로 한 WarcraftLogs 예상 포인트입니다. 캐시된 전투는 무료입니다.
 wcl.points_third_party,"구독 서비스는 Archon(WarcraftLogs)에서 판매합니다. AwowLab은 해당 업체와 아무런 관련이 없으며, 그로부터 어떠한 수익도 얻지 않습니다."
 wcl.points_more,더 많은 포인트
 wcl.session_expired,세션이 만료되었습니다 - 다시 승인해 주세요

@@ -156,6 +156,10 @@ public:
     // when that can't be read. Costs one request.
     [[nodiscard]] int userPointsResetIn();
 
+    // The same figure as it came back with the last report request, free;
+    // -1 before any request carried it.
+    [[nodiscard]] int lastUserPointsResetIn() const noexcept { return m_lastUserPointsResetIn; }
+
     [[nodiscard]] std::string dumpCharacterRankings(int32_t encounterId,
                                                     const std::string& className,
                                                     const std::string& specName,
@@ -224,6 +228,7 @@ private:
                                    ProgressCallback progressCallback,
                                    int32_t onlyActorId);
     void ensureGraphQLClient();
+    void noteUserPointsReset(const rapidjson::Document& response);
 
     SessionState m_state = SessionState::NotInitialized;
     std::string m_lastError;
@@ -236,6 +241,7 @@ private:
     bool m_useUserAuth = true;
 
     std::unique_ptr<GraphQLClient> m_graphqlClient;
+    int m_lastUserPointsResetIn = -1;
     int m_requestTimeoutMs = 0;   // 0 leaves the client's own default
     std::unique_ptr<RateLimiter> m_rateLimiter;
 

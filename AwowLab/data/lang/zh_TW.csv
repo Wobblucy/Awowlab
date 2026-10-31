@@ -469,8 +469,19 @@ wcl.authenticated,已驗證
 wcl.public_only,僅公開記錄
 wcl.user_points_spent,您本小時的《魔獸世界》日誌積分已用罄。積分將於 %d 分鐘後恢復；您先前開啟過的戰鬥仍會從快取中載入。
 wcl.user_points_spent_unknown,您本小時的 WarcraftLogs 點數已用完。這些點數將於一小時內恢復；您先前開啟的戰鬥仍會從快取中載入。
-wcl.points_help,從 WarcraftLogs 載入資料會消耗您自身的 WarcraftLogs 點數，這些點數每小時會自動補充一次。拉一個團隊副本首領約需消耗 %d 點數，而一次神話+副本則約需 %d 點數；戰鬥時間越長，消耗的點數就越多。您先前曾開啟過的戰鬥，將從快取中免費載入。
-wcl.points_tiers,每小時積分：未訂閱時為 %d，銀級會員為 %d，金級會員為 %d，白金級會員為 %d。這些積分將與您透過 WarcraftLogs 登入的其他所有網站和應用程式共享。
+wcl.points_used_hour,本小時已消耗約 %d 點 WarcraftLogs 積分，%d 分鐘後將重置
+wcl.points_used_hint,此數值是根據 AwowLab 上傳的戰鬥紀錄估算得出的。WarcraftLogs 並未顯示您還剩多少點數，而您登入的其他網站則是使用相同的點數進行消費。
+wcl.col_points,要點
+wcl.points_intro,從 WarcraftLogs 載入戰鬥紀錄會消耗您自身的 WarcraftLogs 點數，這些點數每小時會自動補充一次。您先前開啟過的戰鬥紀錄將從快取中免費載入。
+wcl.points_col_content,內容
+wcl.points_col_per_minute,每分鐘得分
+wcl.points_raid,突襲
+wcl.points_mplus,神話+
+wcl.points_col_tier,訂閱
+wcl.points_col_per_hour,每小時積分
+wcl.points_tier_none,無
+wcl.points_shared,您的積分會與您使用 WarcraftLogs 登入的每個其他網站和應用程式共享。
+wcl.points_estimate_note,根據這場戰鬥的長度，估計載入此場戰鬥所需的 WarcraftLogs 點數。已快取的戰鬥無需消耗點數。
 wcl.points_third_party,訂閱服務由 Archon（WarcraftLogs）提供。AwowLab 與其並無任何關聯，亦未從中獲取任何收益。
 wcl.points_more,更多積分
 wcl.session_expired,會話過期 - 請重新授權

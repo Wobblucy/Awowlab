@@ -34,6 +34,9 @@ query($code: String!) @onlySpendUserPoints {
       }
     }
   }
+  rateLimitData {
+    userPointsResetIn
+  }
 }
 )";
 
@@ -124,6 +127,9 @@ query($code: String!, $start: Float, $end: Float, $fightIDs: [Int!]) @onlySpendU
       }
     }
   }
+  rateLimitData {
+    userPointsResetIn
+  }
 }
 )";
 
@@ -158,6 +164,9 @@ query($code: String!, $start: Float, $end: Float, $fightIDs: [Int!], $sourceID: 
         nextPageTimestamp
       }
     }
+  }
+  rateLimitData {
+    userPointsResetIn
   }
 }
 )";

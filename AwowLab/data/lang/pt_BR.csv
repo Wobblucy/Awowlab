@@ -469,8 +469,19 @@ wcl.authenticated,Autenticado
 wcl.public_only,Somente registros públicos
 wcl.user_points_spent,Seus pontos do WarcraftLogs para esta hora se esgotaram. Eles serão repostos em %d min; as batalhas que você já abriu continuam sendo carregadas do cache.
 wcl.user_points_spent_unknown,Seus pontos do WarcraftLogs para esta hora se esgotaram. Eles serão repostos dentro de uma hora; as batalhas que você já iniciou continuam sendo carregadas a partir do cache.
-wcl.points_help,"Carregar a partir do WarcraftLogs gasta seus próprios pontos do WarcraftLogs, que são recarregados a cada hora. Iniciar uma luta contra um chefe de raid custa cerca de %d pontos e uma corrida em Mythic+ custa cerca de %d; lutas mais longas custam mais. As lutas que você já iniciou anteriormente são carregadas do cache gratuitamente."
-wcl.points_tiers,"Pontos por hora: %d sem assinatura, %d com o plano Prata, %d com o plano Ouro, %d com o plano Platina. Esses pontos são compartilhados com todos os outros sites e aplicativos nos quais você fizer login usando o WarcraftLogs."
+wcl.points_used_hour,Cerca de %d pontos do WarcraftLogs foram usados nesta hora; o contador será reiniciado em %d minutos
+wcl.points_used_hint,"Estimado com base nas lutas carregadas pelo AwowLab. O WarcraftLogs não informa quantos pontos você ainda tem, e outros sites nos quais você faz login permitem que você gaste esses mesmos pontos."
+wcl.col_points,Pontos
+wcl.points_intro,"Carregar a partir do WarcraftLogs gasta seus próprios pontos do WarcraftLogs, que são recarregados a cada hora. As batalhas que você já abriu anteriormente são carregadas do cache gratuitamente."
+wcl.points_col_content,Conteúdo
+wcl.points_col_per_minute,Pontos por minuto
+wcl.points_raid,Invasão
+wcl.points_mplus,Mythic+
+wcl.points_col_tier,Assinatura
+wcl.points_col_per_hour,Pontos por hora
+wcl.points_tier_none,Nenhum
+wcl.points_shared,Seus pontos são compartilhados com todos os outros sites e aplicativos nos quais você faz login usando o WarcraftLogs.
+wcl.points_estimate_note,"Estimativa de pontos do WarcraftLogs necessários para carregar essa luta, com base na duração dela. As lutas armazenadas em cache são gratuitas."
 wcl.points_third_party,As assinaturas são vendidas pela Archon (WarcraftLogs). A AwowLab não tem nenhuma afiliação com eles e não recebe nada deles.
 wcl.points_more,Mais pontos
 wcl.session_expired,"A sessão expirou - por favor, autorize novamente"

@@ -211,12 +211,15 @@ def translate_entries(entries, translator, target_lang, locale_name, existing):
         print(f"  Error translating to {locale_name}: {e}")
         return None
 
+    idx_of = {idx: n for n, idx in enumerate(indices)}
     for idx, result, placeholders in zip(indices, results, all_placeholders):
         line_type, (key, _) = translated[idx]
         translated_text = restore_placeholders(result.text, placeholders)
-        if placeholders_in(translated_text) != placeholders:
-            # A reordered or lost placeholder would break the format call;
-            # keep English so the next run tries this string again.
+        if (placeholders_in(translated_text) != placeholders
+                or translated_text.count("%") != to_translate[idx_of[idx]].count("%")):
+            # A reordered, lost or extra placeholder (a stray % counts)
+            # would break the format call; keep English so the next run
+            # tries this string again.
             print(f"  Kept English for {key}: placeholders changed")
             continue
         translated[idx] = ("entry", (key, translated_text))

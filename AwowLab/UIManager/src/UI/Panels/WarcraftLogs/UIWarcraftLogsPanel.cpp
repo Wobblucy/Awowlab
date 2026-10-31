@@ -2,8 +2,10 @@
 #include "UI/AwlUI/Widgets.h"
 #include "Core/WarcraftLogsSession.h"
 #include "Core/LocalizationManager.h"
+#include "Core/Settings/WclSettings.h"
 #include "Adapter/WclToAwowAdapter.h"
 #include <imgui.h>
+#include <ctime>
 
 UIWarcraftLogsPanel::UIWarcraftLogsPanel()
     : session_(nullptr)
@@ -87,6 +89,19 @@ bool UIWarcraftLogsPanel::render() {
         ImGui::SameLine();
         ImGui::TextColored(ImVec4(0.6f, 0.6f, 0.7f, 1.0f), L("wcl.fights_count"), fights.size());
 
+        // What AwowLab has spent of the user's WarcraftLogs points this hour
+        const int64_t now = static_cast<int64_t>(std::time(nullptr));
+        const auto usage = awow::wclPointUsage(now);
+        if (usage.used > 0) {
+            const int minutesLeft = usage.resetsAt > now
+                ? static_cast<int>((usage.resetsAt - now + 59) / 60) : 0;
+            ImGui::TextColored(ImVec4(0.6f, 0.6f, 0.7f, 1.0f), L("wcl.points_used_hour"),
+                               usage.used, minutesLeft);
+            if (ImGui::IsItemHovered()) {
+                ImGui::SetTooltip("%s", L("wcl.points_used_hint"));
+            }
+        }
+
         ImGui::Spacing();
 
         // Buttons
@@ -107,7 +122,7 @@ bool UIWarcraftLogsPanel::render() {
         ImGui::Separator();
 
         // Fight table
-        if (ImGui::BeginTable("FightTable", 5,
+        if (ImGui::BeginTable("FightTable", 6,
             ImGuiTableFlags_Borders | ImGuiTableFlags_RowBg | ImGuiTableFlags_ScrollY)) {
 
             // Headers
@@ -116,6 +131,7 @@ bool UIWarcraftLogsPanel::render() {
             ImGui::TableSetupColumn(L("encounter.col_difficulty"), ImGuiTableColumnFlags_WidthFixed, 100.0f);
             ImGui::TableSetupColumn(L("encounter.col_duration"), ImGuiTableColumnFlags_WidthFixed, 80.0f);
             ImGui::TableSetupColumn(L("cache.meta"), ImGuiTableColumnFlags_WidthFixed, 60.0f);
+            ImGui::TableSetupColumn(L("wcl.col_points"), ImGuiTableColumnFlags_WidthFixed, 70.0f);
             ImGui::TableSetupScrollFreeze(0, 1);
             ImGui::TableHeadersRow();
 
@@ -166,10 +182,22 @@ bool UIWarcraftLogsPanel::render() {
 
                 // Column 4: Cached status
                 ImGui::TableSetColumnIndex(4);
-                if (session_->isFightCached(fight.id)) {
+                const bool cached = session_->isFightCached(fight.id);
+                if (cached) {
                     ImGui::TextColored(ImVec4(0.3f, 1.0f, 0.3f, 1.0f), "%s", L("cache.yes"));
                 } else {
                     ImGui::TextColored(ImVec4(0.5f, 0.5f, 0.5f, 1.0f), "No");
+                }
+
+                // Column 5: estimated WarcraftLogs points to load it
+                ImGui::TableSetColumnIndex(5);
+                if (cached) {
+                    ImGui::TextColored(ImVec4(0.5f, 0.5f, 0.5f, 1.0f), "0");
+                } else {
+                    ImGui::Text("~%d", awow::estimateFightPoints(durationMs, fight.isMythicPlus()));
+                }
+                if (ImGui::IsItemHovered()) {
+                    ImGui::SetTooltip("%s", L("wcl.points_estimate_note"));
                 }
             }
 

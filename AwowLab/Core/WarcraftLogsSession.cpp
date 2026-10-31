@@ -165,6 +165,7 @@ bool WarcraftLogsSession::fetchReport(ProgressCallback progressCallback) {
         }
 
         const auto& reportData = response["data"]["reportData"]["report"];
+        noteUserPointsReset(response);
 
         // Rebuilt as the JSON the adapter reads
         rapidjson::Document metaDoc;
@@ -526,6 +527,16 @@ std::string WarcraftLogsSession::dumpRawQuery(const std::string& query,
                           outputPath, "raw query");
 }
 
+void WarcraftLogsSession::noteUserPointsReset(const rapidjson::Document& response) {
+    const auto& data = response["data"];
+    if (data.HasMember("rateLimitData") && data["rateLimitData"].IsObject()) {
+        const auto& rate = data["rateLimitData"];
+        if (rate.HasMember("userPointsResetIn") && rate["userPointsResetIn"].IsInt()) {
+            m_lastUserPointsResetIn = rate["userPointsResetIn"].GetInt();
+        }
+    }
+}
+
 int WarcraftLogsSession::userPointsResetIn() {
     try {
         ensureGraphQLClient();
@@ -698,6 +709,7 @@ ExtractedData WarcraftLogsSession::fetchFightEvents(int32_t fightId,
         }
 
         const auto& eventsData = response["data"]["reportData"]["report"]["events"];
+        noteUserPointsReset(response);
 
         if (eventsData.HasMember("data") && eventsData["data"].IsArray()) {
             rapidjson::StringBuffer buffer;

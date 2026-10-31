@@ -467,8 +467,19 @@ wcl.authenticated,Authenticated
 wcl.public_only,Public logs only
 wcl.user_points_spent,"Your WarcraftLogs points for this hour are used up. They come back in %d min; fights you have opened before still load from the cache."
 wcl.user_points_spent_unknown,"Your WarcraftLogs points for this hour are used up. They come back within the hour; fights you have opened before still load from the cache."
-wcl.points_help,"Loading from WarcraftLogs spends your own WarcraftLogs points, which refill every hour. A raid boss pull costs about %d points and a Mythic+ run about %d; longer fights cost more. Fights you have opened before load from the cache for free."
-wcl.points_tiers,"Points per hour: %d without a subscription, %d with Silver, %d with Gold, %d with Platinum. They are shared with every other site and app you sign in to with WarcraftLogs."
+wcl.points_used_hour,"About %d WarcraftLogs points used this hour, resets in %d min"
+wcl.points_used_hint,"Estimated from the fights AwowLab loaded. WarcraftLogs does not say how many points you have left, and other sites you sign in to spend from the same points."
+wcl.col_points,Points
+wcl.points_intro,"Loading from WarcraftLogs spends your own WarcraftLogs points, which refill every hour. Fights you have opened before load from the cache for free."
+wcl.points_col_content,Content
+wcl.points_col_per_minute,Points per minute
+wcl.points_raid,Raid
+wcl.points_mplus,Mythic+
+wcl.points_col_tier,Subscription
+wcl.points_col_per_hour,Points per hour
+wcl.points_tier_none,None
+wcl.points_shared,"Your points are shared with every other site and app you sign in to with WarcraftLogs."
+wcl.points_estimate_note,"Estimated WarcraftLogs points to load this fight, from its length. Cached fights are free."
 wcl.points_third_party,Subscriptions are sold by Archon (WarcraftLogs). AwowLab is not affiliated with them and gets nothing from them.
 wcl.points_more,More points
 wcl.session_expired,Session expired - please re-authorize

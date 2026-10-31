@@ -28,6 +28,7 @@
 #include <chrono>
 #include <algorithm>
 #include <cctype>
+#include <ctime>
 #include <fstream>
 #include <functional>
 #include "Settings/WclSettings.h"
@@ -116,6 +117,29 @@ void noteUserPointsSpent(warcraftlogs::WarcraftLogsSession& session) {
     awow::wclNotice() = seconds > 0
         ? LF("wcl.user_points_spent", (seconds + 59) / 60)
         : std::string(L("wcl.user_points_spent_unknown"));
+}
+
+// Adds a fight load to the running estimate of the user's WarcraftLogs
+// points and keeps the reset time WarcraftLogs sent back with it. A fight
+// from the cache cost nothing; one player's events are a page or two.
+void noteFightPoints(const warcraftlogs::WarcraftLogsSession& session, int32_t fightId,
+                     bool wasCached, bool onePlayer) {
+    const int64_t now = static_cast<int64_t>(std::time(nullptr));
+    if (session.lastUserPointsResetIn() > 0) {
+        awow::setWclPointsResetIn(session.lastUserPointsResetIn(), now);
+    }
+    if (wasCached) return;
+
+    int points = 1;
+    if (!onePlayer) {
+        for (const auto& fight : session.getFights()) {
+            if (fight.id == fightId) {
+                points = awow::estimateFightPoints(fight.duration(), fight.isMythicPlus());
+                break;
+            }
+        }
+    }
+    awow::addWclPointUsage(points, now);
 }
 
 void persistIfAuthError(const std::string& error) {
@@ -1022,10 +1046,12 @@ bool Application::runWarcraftLogsFlow(const std::string& urlOrCode, const std::s
         std::string(), selectedFightId);
 
     ExtractedData extractedData;
+    const bool fightWasCached = wclSession_->isFightCached(selectedFightId);
     try {
         extractedData = wclSession_->loadFight(selectedFightId, [this, &fightName](const std::string& /*msg*/, float progress) {
             uiManager_->renderProgressFrame("Loading " + fightName, progress);
         });
+        noteFightPoints(*wclSession_, selectedFightId, fightWasCached, false);
     } catch (const std::exception& e) {
         std::string error = e.what();
         AWOW_LOG_ERROR("WCL", "Failed to load fight " + std::to_string(selectedFightId) + " from " + wclSession_->getReportCode() + ": " + error);
@@ -1457,7 +1483,9 @@ bool Application::buildBaselineFromSample(
             continue;
         }
 
+        const bool pullWasCached = wclSession_->isFightCached(pull->fightId);
         ExtractedData data = wclSession_->loadFight(pull->fightId, nullptr, actorId);
+        noteFightPoints(*wclSession_, pull->fightId, pullWasCached, true);
         if (data.combatEvents.empty()) {
             AWOW_LOG_WARNING("BASELINE", "Fight " + std::to_string(pull->fightId)
                                              + " had no events");
@@ -1962,10 +1990,12 @@ bool Application::runPlayAlongMode(const std::string& reportCode, int32_t fightI
     }
 
     ExtractedData extractedData;
+    const bool fightWasCached = wclSession_->isFightCached(fightId);
     try {
         extractedData = wclSession_->loadFight(fightId, [this, &fightName](const std::string& /*msg*/, float progress) {
             uiManager_->renderProgressFrame("Loading " + fightName, progress);
         });
+        noteFightPoints(*wclSession_, fightId, fightWasCached, false);
     } catch (const std::exception& e) {
         AWOW_LOG_ERROR("PLAYALONG", "Failed to load fight " + std::to_string(fightId) + ": " + std::string(e.what()));
         wclSession_.reset();

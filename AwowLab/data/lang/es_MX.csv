@@ -469,8 +469,19 @@ wcl.authenticated,Autentificado
 wcl.public_only,Sólo registros públicos
 wcl.user_points_spent,Ya has agotado tus puntos de WarcraftLogs para esta hora. Volverán en %d min; las batallas que hayas abierto anteriormente seguirán cargándose desde la caché.
 wcl.user_points_spent_unknown,Ya has agotado tus puntos de WarcraftLogs para esta hora. Se recuperarán en menos de una hora; las batallas que hayas iniciado anteriormente seguirán cargándose desde la caché.
-wcl.points_help,"Al cargar desde WarcraftLogs se consumen tus propios puntos de WarcraftLogs, que se recargan cada hora. Iniciar una batalla contra un jefe de banda cuesta aproximadamente %d puntos y una partida de Mítico+ unos %d; las batallas más largas cuestan más. Las batallas que ya hayas iniciado se cargan desde la caché de forma gratuita."
-wcl.points_tiers,"Puntos por hora: %d sin suscripción, %d con la suscripción Silver, %d con la suscripción Gold, %d con la suscripción Platinum. Se comparten con el resto de sitios web y aplicaciones en los que inicies sesión con WarcraftLogs."
+wcl.points_used_hour,Se han utilizado aproximadamente %d puntos de WarcraftLogs en esta hora; se restablecerán en %d minutos
+wcl.points_used_hint,"Estimado a partir de las partidas que ha cargado AwowLab. WarcraftLogs no indica cuántos puntos te quedan, y en otras páginas en las que inicias sesión se gastan esos mismos puntos."
+wcl.col_points,Puntos
+wcl.points_intro,"Al cargar datos desde WarcraftLogs se consumen tus propios puntos de WarcraftLogs, que se recargan cada hora. Las batallas que hayas abierto anteriormente se cargan desde la caché de forma gratuita."
+wcl.points_col_content,Contenido
+wcl.points_col_per_minute,Puntos por minuto
+wcl.points_raid,Redada
+wcl.points_mplus,Mítico+
+wcl.points_col_tier,Suscripción
+wcl.points_col_per_hour,Puntos por hora
+wcl.points_tier_none,Ninguno
+wcl.points_shared,Tus puntos se comparten con el resto de sitios web y aplicaciones en los que inicias sesión con WarcraftLogs.
+wcl.points_estimate_note,"Puntos estimados de WarcraftLogs necesarios para cargar este combate, en función de su duración. Los combates almacenados en caché son gratuitos."
 wcl.points_third_party,Las suscripciones las comercializa Archon (WarcraftLogs). AwowLab no tiene ninguna relación con ellos y no obtiene ningún beneficio de ellos.
 wcl.points_more,Más puntos
 wcl.session_expired,"Sesión expirada - por favor, vuelva a autorizar"

@@ -469,8 +469,19 @@ wcl.authenticated,已认证
 wcl.public_only,仅限公共日志
 wcl.user_points_spent,您本小时的《魔兽世界日志》积分已用完。积分将在 %d 分钟后恢复；您之前打开过的战斗记录仍会从缓存中加载。
 wcl.user_points_spent_unknown,您本小时的 WarcraftLogs 积分已用完。一小时内积分将自动恢复；此前已开启的战斗仍会从缓存中加载。
-wcl.points_help,从 WarcraftLogs 加载内容会消耗你自己的 WarcraftLogs 积分，这些积分每小时会自动恢复。拉一个团队副本首领大约消耗 %d 积分，一次神话+副本大约消耗 %d 积分；战斗时间越长，消耗的积分越多。你之前打开过的战斗将从缓存中免费加载。
-wcl.points_tiers,每小时积分：未订阅时为 %d，银卡会员为 %d，金卡会员为 %d，白金卡会员为 %d。这些积分将与您使用 WarcraftLogs 登录的其他所有网站和应用共享。
+wcl.points_used_hour,本小时已消耗约 %d WarcraftLogs 积分，%d 分钟后重置
+wcl.points_used_hint,该数值是根据 AwowLab 导入的战斗记录估算得出的。WarcraftLogs 不会显示你还剩多少积分，而其他网站则需要你登录后才能使用这些积分。
+wcl.col_points,要点
+wcl.points_intro,从 WarcraftLogs 加载内容会消耗您自己的 WarcraftLogs 积分，这些积分每小时会自动恢复。您之前打开过的战斗将从缓存中免费加载。
+wcl.points_col_content,内容
+wcl.points_col_per_minute,每分钟得分
+wcl.points_raid,突袭
+wcl.points_mplus,神话+
+wcl.points_col_tier,订阅
+wcl.points_col_per_hour,每小时积分
+wcl.points_tier_none,无
+wcl.points_shared,您的积分会同步到您使用 WarcraftLogs 登录的每个其他网站和应用中。
+wcl.points_estimate_note,根据战斗时长估算，加载此场战斗所需的 WarcraftLogs 积分。缓存的战斗无需积分。
 wcl.points_third_party,订阅服务由 Archon（WarcraftLogs）提供。AwowLab 与该公司无任何关联，也未从中获得任何收益。
 wcl.points_more,更多积分
 wcl.session_expired,会话已过期，请重新授权

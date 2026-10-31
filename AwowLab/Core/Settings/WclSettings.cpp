@@ -4,6 +4,8 @@
 #include <rapidjson/writer.h>
 #include <rapidjson/stringbuffer.h>
 
+#include <algorithm>
+#include <cmath>
 #include <vector>
 
 #ifdef _WIN32
@@ -25,6 +27,8 @@ namespace {
 constexpr const char* kAccessTokenLegacy = "wclAccessToken";
 constexpr const char* kAccessTokenProtected = "wclAccessTokenProtected";
 constexpr const char* kTokenExpiresAt = "wclTokenExpiresAt";
+constexpr const char* kPointsUsedEstimate = "wclPointsUsedEstimate";
+constexpr const char* kPointsResetAt = "wclPointsResetAt";
 
 // Parse one raw-JSON entry from extraValues; returns a document with a
 // parse error when the entry is absent or malformed.
@@ -167,11 +171,22 @@ WclSettings WclSettings::readFrom(const UnifiedSettings::AllSettings& settings) 
         out.tokenExpiresAt = expires.GetInt64();
     }
 
+    auto used = parseEntry(settings, kPointsUsedEstimate);
+    if (!used.HasParseError() && used.IsInt()) {
+        out.pointsUsedEstimate = used.GetInt();
+    }
+    auto resetAt = parseEntry(settings, kPointsResetAt);
+    if (!resetAt.HasParseError() && resetAt.IsInt64()) {
+        out.pointsResetAt = resetAt.GetInt64();
+    }
+
     return out;
 }
 
 void WclSettings::writeTo(UnifiedSettings::AllSettings& settings) const {
     settings.extraValues[kTokenExpiresAt] = std::to_string(tokenExpiresAt);
+    settings.extraValues[kPointsUsedEstimate] = std::to_string(pointsUsedEstimate);
+    settings.extraValues[kPointsResetAt] = std::to_string(pointsResetAt);
 
     // The token only ever leaves this function wrapped with the user's
     // Windows key; the plain-text entry older builds wrote is dropped.
@@ -196,6 +211,55 @@ std::string& awow::wclAuthError() {
 std::string& awow::wclNotice() {
     static std::string message;
     return message;
+}
+
+int awow::estimateFightPoints(int64_t durationMs, bool mythicPlus) {
+    const double minutes = static_cast<double>((std::max)(durationMs, int64_t{0})) / 60000.0;
+    const double rate = mythicPlus ? kMythicPlusPointsPerMinute : kRaidPointsPerMinute;
+    return (std::max)(1, static_cast<int>(std::ceil(minutes * rate)));
+}
+
+namespace {
+
+// The stored estimate with an expired window cleared
+WclSettings currentUsage(int64_t now) {
+    auto wcl = WclSettings::readFrom(SettingsCache::instance().get());
+    if (wcl.pointsResetAt != 0 && now >= wcl.pointsResetAt) {
+        wcl.pointsUsedEstimate = 0;
+        wcl.pointsResetAt = 0;
+    }
+    return wcl;
+}
+
+void saveUsage(const WclSettings& wcl) {
+    auto& cache = SettingsCache::instance();
+    wcl.writeTo(cache.get());
+    cache.markDirty();
+}
+
+} // namespace
+
+awow::WclPointUsage awow::wclPointUsage(int64_t now) {
+    const auto wcl = currentUsage(now);
+    return {wcl.pointsUsedEstimate, wcl.pointsResetAt};
+}
+
+void awow::addWclPointUsage(int points, int64_t now) {
+    if (points <= 0) return;
+    auto wcl = currentUsage(now);
+    wcl.pointsUsedEstimate += points;
+    if (wcl.pointsResetAt == 0) {
+        wcl.pointsResetAt = now + 3600;
+    }
+    saveUsage(wcl);
+}
+
+void awow::setWclPointsResetIn(int seconds, int64_t now) {
+    // Zero means no hour is running for the user yet
+    if (seconds <= 0) return;
+    auto wcl = currentUsage(now);
+    wcl.pointsResetAt = now + seconds;
+    saveUsage(wcl);
 }
 
 void awow::moveWclTokenToProtectedStorage() {

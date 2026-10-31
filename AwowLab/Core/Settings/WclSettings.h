@@ -28,6 +28,11 @@ struct WclSettings {
     std::string accessToken;
     int64_t tokenExpiresAt = 0;
 
+    // AwowLab's estimate of the user's WarcraftLogs points spent this hour,
+    // and when they reset (unix seconds, 0 when not known)
+    int pointsUsedEstimate = 0;
+    int64_t pointsResetAt = 0;
+
     /** Parse the WCL entries out of a loaded settings snapshot. */
     static WclSettings readFrom(const UnifiedSettings::AllSettings& settings);
 
@@ -50,6 +55,34 @@ std::string& wclAuthError();
  * wclAuthError it leaves the token alone. Runtime-only.
  */
 std::string& wclNotice();
+
+/**
+ * Estimated user points to load a whole fight from WarcraftLogs, at least 1.
+ * Cost follows the number of events, so it is charged per minute: about 7 a
+ * minute for raids and 1.5 for Mythic+ (measured 2026-10-31 on a 10-minute
+ * 20-player Mythic kill and a 29-minute +24 key).
+ */
+inline constexpr double kRaidPointsPerMinute = 7.0;
+inline constexpr double kMythicPlusPointsPerMinute = 1.5;
+int estimateFightPoints(int64_t durationMs, bool mythicPlus);
+
+/**
+ * Points spent this hour as far as AwowLab knows. WarcraftLogs only says
+ * whether a user has points left, never how many, so this adds up the
+ * estimates of what AwowLab loaded; other sites the user signs in to spend
+ * from the same pool. Zero once the reset time has passed.
+ */
+struct WclPointUsage {
+    int used = 0;
+    int64_t resetsAt = 0;  // unix seconds, 0 when not known
+};
+WclPointUsage wclPointUsage(int64_t now);
+
+/** Add a load's estimate. Starts an hour-long window if none is known. */
+void addWclPointUsage(int points, int64_t now);
+
+/** Record WarcraftLogs' own reset time for the user's points. */
+void setWclPointsResetIn(int seconds, int64_t now);
 
 /**
  * One-time upgrade for settings files written by older builds: if a
