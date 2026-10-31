@@ -1,0 +1,10 @@
+diff --git a/src/js/journal-encounters.js b/src/js/journal-encounters.js
+index 0eb8b31..a1346ac 100644
+--- a/src/js/journal-encounters.js
++++ b/src/js/journal-encounters.js
+@@ -242,4 +242,4 @@ const get_encounters_for_map = async (map_id) => {
+ 	return positions.map(world_to_terrain_marker);
+ };
+ 
+-module.exports = { get_encounters_for_map, get_wmo_encounters_for_map };
++module.exports = { get_encounters_for_map, get_wmo_encounters_for_map, get_encounter_world_positions };

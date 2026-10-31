@@ -1,0 +1,37 @@
+[
+{
+    "timestamp": 4556135,
+    "type": "resourcechange",
+    "sourceID": 186,
+    "sourceInstance": 12,
+    "targetID": 92,
+    "abilityGameID": 1235467,
+    "fight": 8,
+    "resourceChange": 1,
+    "resourceChangeType": 25,
+    "otherResourceChange": 0,
+    "maxResourceAmount": 3,
+    "waste": 1,
+    "resourceActor": 2,
+    "classResources": [
+        {
+            "amount": 2100,
+            "max": 10000,
+            "type": 13
+        }
+    ],
+    "hitPoints": 16466060,
+    "maxHitPoints": 16466060,
+    "attackPower": 15858,
+    "spellPower": 132674,
+    "armor": 30271,
+    "absorb": 0,
+    "x": -36912,
+    "y": 223454,
+    "facing": -573,
+    "mapID": 2469,
+    "versatility": 1567,
+    "avoidance": 300,
+    "itemLevel": 727
+}
+]

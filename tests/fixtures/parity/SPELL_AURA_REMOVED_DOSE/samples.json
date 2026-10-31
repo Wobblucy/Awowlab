@@ -1,0 +1,30 @@
+[
+{
+    "timestamp": 4296083,
+    "type": "removebuffstack",
+    "sourceID": 107,
+    "targetID": 1,
+    "abilityGameID": 974,
+    "fight": 8,
+    "stack": 8,
+    "targetMarker": 2
+},
+{
+    "timestamp": 4396928,
+    "type": "removedebuffstack",
+    "sourceID": 82,
+    "targetID": 4,
+    "abilityGameID": 247456,
+    "fight": 8,
+    "stack": 2
+},
+{
+    "timestamp": 4580388,
+    "type": "removebuffstack",
+    "sourceID": 82,
+    "targetID": 82,
+    "abilityGameID": 212988,
+    "fight": 8,
+    "stack": 12
+}
+]

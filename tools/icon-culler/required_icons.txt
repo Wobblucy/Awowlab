@@ -1,0 +1,87 @@
+# Required icons that must always be included in the culled pack
+# These are referenced by filename (not spell ID) in the codebase
+
+# === CLASS ICONS ===
+# Used by UICachedFightsPanel for group composition display
+classicon_deathknight.png
+classicon_demonhunter.png
+classicon_druid.png
+classicon_evoker.png
+classicon_hunter.png
+classicon_mage.png
+classicon_monk.png
+classicon_paladin.png
+classicon_priest.png
+classicon_rogue.png
+classicon_shaman.png
+classicon_warlock.png
+classicon_warrior.png
+
+# === SPECIALIZATION ICONS ===
+# Used by SpecIconLoader for the ClassIcon/SpecIcon actor shape
+
+# Death Knight
+spell_deathknight_bloodpresence.png
+spell_deathknight_frostpresence.png
+spell_deathknight_unholypresence.png
+
+# Demon Hunter
+ability_demonhunter_specdps.png
+ability_demonhunter_spectank.png
+classicon_demonhunter_void.png
+
+# Druid
+spell_nature_starfall.png
+ability_druid_catform.png
+ability_racial_bearform.png
+spell_nature_healingtouch.png
+
+# Evoker
+classicon_evoker_devastation.png
+classicon_evoker_preservation.png
+classicon_evoker_augmentation.png
+
+# Hunter
+ability_hunter_bestialdiscipline.png
+ability_hunter_focusedaim.png
+ability_hunter_camouflage.png
+
+# Mage
+spell_holy_magicalsentry.png
+spell_fire_firebolt02.png
+spell_frost_frostbolt02.png
+
+# Monk
+monk_stance_drunkenox.png
+monk_stance_whitetiger.png
+monk_stance_wiseserpent.png
+
+# Paladin
+spell_holy_holybolt.png
+ability_paladin_shieldofthetemplar.png
+spell_holy_auraoflight.png
+
+# Priest
+spell_holy_powerwordshield.png
+spell_holy_guardianspirit.png
+spell_shadow_shadowwordpain.png
+
+# Rogue
+ability_rogue_eviscerate.png
+ability_rogue_waylay.png
+ability_stealth.png
+
+# Shaman
+spell_nature_lightning.png
+spell_nature_lightningshield.png
+spell_nature_magicimmunity.png
+
+# Warlock
+spell_shadow_deathcoil.png
+spell_shadow_metamorphosis.png
+spell_shadow_rainoffire.png
+
+# Warrior
+ability_warrior_savageblow.png
+ability_warrior_innerrage.png
+ability_warrior_defensivestance.png

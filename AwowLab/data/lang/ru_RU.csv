@@ -1,0 +1,2070 @@
+# AwowLab Localization - Russian
+# Machine translated with DeepL - community review welcome
+# Format: key,value
+# Lines starting with # are comments
+key,value
+
+
+# =============================================================================
+# Menu Bar - File Menu
+# =============================================================================
+menu.file,Файл
+menu.change_encounter,Встреча с переменами...
+menu.return_home,Вернуться на главную
+menu.import_export_settings,Настройки импорта/экспорта...
+
+# =============================================================================
+# Menu Bar - View Menu
+# =============================================================================
+menu.view,Посмотреть
+menu.playback_controls,Элементы управления воспроизведением
+menu.creatures_vehicles_pets,Существа/Транспортные средства/Питомцы
+menu.raid_frames,Каркасы для рейдов
+menu.enemy_grid,Вражеская сетка
+menu.filters,Фильтры
+menu.minimap_2d,двухмерная мини-карта
+menu.gcd_history,История GCD
+menu.upcoming_boss_casts,Босс в ролях
+menu.meter_1,Счетчик 1
+menu.meter_2,Счетчик 2
+menu.meter_3,Счетчик 3
+menu.deaths,Смерти
+menu.player_buffs,Баффы для игроков
+menu.player_debuffs,Дебаффы игрока
+menu.aura_debug,Отладка Aura
+menu.cooldowns,Свертывание игроков
+menu.raid_cd1,Свертывание рейдов (основные)
+menu.raid_cd2,Свертывание рейдов (незначительное)
+menu.raid_cd3,Свертывание рейда (полезность)
+menu.enable_snapping,Включить привязку
+menu.snap_threshold,Порог защелкивания
+menu.ui_scale,Масштаб пользовательского интерфейса
+menu.reset_layout,Сброс макета
+menu.save_layout,Сохранить макет
+menu.customize_appearances,Настроить внешний вид
+
+# =============================================================================
+# Menu Bar - Tools Menu
+# =============================================================================
+menu.tools,Инструменты
+menu.export_snapshot,Экспорт моментального снимка воспроизведения...
+
+# =============================================================================
+# Export Snapshot Modal
+# =============================================================================
+export.title,Экспорт моментального снимка воспроизведения
+export.time_range,Временной диапазон
+export.start_time,Начать
+export.end_time,Конец
+export.duration,Продолжительность
+export.export_button,Экспорт
+export.cancel_button,Отменить
+
+# =============================================================================
+# Landing Page - Snapshot Import Card
+# =============================================================================
+landing.snapshot_title,Открыть снимок
+landing.snapshot_desc,Загрузить общий клип воспроизведения в формате .awsnap
+landing.snapshot_browse,Просмотр
+
+# =============================================================================
+# Menu Bar - Settings Menu
+# =============================================================================
+menu.settings,Настройки
+menu.actor_appearance,Появление актера...
+menu.camera_settings,Настройки камеры
+menu.nameplate_settings,Настройки заводской таблички
+menu.raid_frame_settings,Настройки рейдового кадра
+menu.show_auras,Показать значки ауры
+menu.show_spell_icons,Показать значки заклинаний
+menu.aura_icon_size,Размер значка
+menu.icon_size,Размер значка
+menu.language,Язык
+menu.help_improve_localization,Помогите улучшить локализацию
+
+# =============================================================================
+# Nameplate Settings Modal
+# =============================================================================
+nameplate.settings_title,Настройки заводской таблички
+nameplate.global_settings,Глобальные настройки
+nameplate.tab_players,Игроки
+nameplate.tab_other,Другие
+nameplate.font_scale,Шкала шрифтов
+nameplate.use_actor_color,Используйте цвет актера
+nameplate.text_color,Цвет текста
+nameplate.show_background,Показать фон
+nameplate.background_opacity,Непрозрачность фона
+nameplate.name_length,Имя Длина
+nameplate.show_last_cast,Показать последний состав
+nameplate.last_cast_icon_size,Размер значка последнего каста
+tooltip.nameplate_font_scale,"Масштабный коэффициент для текста таблички (0,5x - 2,0x)"
+tooltip.nameplate_name_length,Максимальное количество символов для отображения (0 = полное имя)
+tooltip.nameplate_use_actor_color,"Раскрасьте текст таблички, используя назначенный актером цвет"
+tooltip.nameplate_show_background,Показать полупрозрачный фон за текстом таблички
+tooltip.nameplate_background_opacity,Непрозрачность фона текста таблички
+tooltip.nameplate_icon_size,Размер значков ауры на табличках (16-48 пикселей)
+
+# =============================================================================
+# Facing Indicator Settings
+# =============================================================================
+menu.facing_indicator,Облицовочный индикатор
+facing.enabled,Показать облицовку
+facing.opacity,Непрозрачность
+facing.size,Размер
+facing.color,Цвет
+
+# =============================================================================
+# UI Scale Buttons
+# =============================================================================
+btn.scale_small,Маленький
+btn.scale_normal,Нормальный
+btn.scale_large,Большой
+btn.scale_xl,XL
+
+# =============================================================================
+# Panel Titles
+# =============================================================================
+panel.filters,Фильтры
+panel.playback,Воспроизведение
+panel.creatures,Существа/Транспортные средства/Питомцы
+panel.raid_frames,Каркасы для рейдов
+panel.enemy_grid,Вражеская сетка
+panel.gcd_history,История GCD
+panel.meter_1,Счетчик 1
+panel.meter_2,Счетчик 2
+panel.meter_3,Счетчик 3
+panel.deaths,Смерти
+panel.player_buffs,Баффы для игроков
+panel.player_debuffs,Дебаффы игрока
+panel.aura_debug,Отладка Aura
+panel.player_focus,Фокус на игрока
+panel.actor_appearance,Актерская внешность
+panel.cooldowns,Выборочные блокировки игроков
+
+# =============================================================================
+# Actor Selector Panel
+# =============================================================================
+selector.title,Выберите игрока для фокусировки
+selector.load_hint,(Загрузить файл журнала боевых действий с событиями SPELL_CAST)
+
+# =============================================================================
+# GCD History Panel
+# =============================================================================
+gcd.no_player,Не выбран игрок
+gcd.select_hint,Выберите игрока на панели Raid Frames
+gcd.row_gcd,GCD
+gcd.row_ogcd,oGCD
+
+# =============================================================================
+# Cooldown Panel
+# =============================================================================
+cd.no_player,Не выбран игрок
+cd.select_hint,Выберите игрока на панели Raid Frames
+cd.no_data,Данные о заклинаниях отсутствуют
+cd.no_spells,"Нет заклинаний, настроенных на показ свертывания"
+
+# =============================================================================
+# Raid Cooldown Panel
+# =============================================================================
+panel.raid_cd1,Свертывание рейдов - основные
+panel.raid_cd2,Свертывание рейдов - незначительное
+panel.raid_cd3,Свертывание рейда - Полезность
+raid_cd.no_data,Данные о заклинаниях отсутствуют
+raid_cd.no_spells,Нет настроенных рейдовых кулдаунов
+raid_cd.config_hint,Настройте заклинания в разделе Настройки > Назначения заклинаний
+
+# =============================================================================
+# Filters Panel
+# =============================================================================
+filter.actor_visibility,Фильтры видимости актеров
+filter.friendly,Дружелюбный
+filter.hostile,Враждебный
+filter.neutral,Нейтральный
+filter.players,Игроки
+filter.creatures,Существа
+filter.vehicles,Транспортные средства
+filter.pets,Домашние животные
+filter.camera_options,Параметры камеры
+filter.display_options,Параметры отображения
+filter.debug_options,Параметры отладки
+filter.camera_target,"Цель камеры: (%.1f, %.1f, %.1f)"
+filter.reset_camera,Сброс вида камеры
+filter.show_nameplates,Показать таблички
+filter.show_health_bars,Показать Батончики здоровья
+filter.dump_databases,Выгрузка баз данных в CSV
+filter.enable_camera_follow,Включить слежение за камерой
+filter.follow,Следуйте за
+filter.follow_speed,Следовать за скоростью
+filter.pan_sensitivity,Чувствительность панорамирования
+
+# =============================================================================
+# Tooltips
+# =============================================================================
+tooltip.health_bars,Отображение полосок здоровья над табличками с именами актеров в 3D-виде
+tooltip.show_auras,"Отображать иконки баффов/дебаффов над табличками с именами (настраивается в ""Назначениях заклинаний"")"
+tooltip.aura_icon_size,Размер иконок баффов/дебаффов над табличками (16-48 пикселей)
+tooltip.show_spell_icons,Отображение значков отслеживания заклинаний на фреймах рейда
+tooltip.raid_frame_icon_size,Размер иконок заклинаний на фреймах рейда (12-32 пикселя)
+tooltip.dump_databases,Экспортируйте все таблицы базы данных в CSV-файлы в папку ./debug - db tables/
+tooltip.camera_follow,Камера автоматически следует за центроидом актеров
+tooltip.follow_speed,"Как быстро камера следует за актерами (ниже = плавнее, выше = быстрее)"
+tooltip.pan_sensitivity,Настройка чувствительности панорамирования камеры (перетаскивание LMB)
+tooltip.refresh_encounters,"Проверьте наличие новых встреч в файле журнала\n(нажмите F5, чтобы обновить)"
+
+# =============================================================================
+# Combat Meters
+# =============================================================================
+meter.damage_done,Нанесенный ущерб
+meter.healing_done,Исцеление завершено
+meter.damage_taken,Нанесенный урон
+meter.cumulative,Кумулятивный
+meter.full_encounter,Полная встреча
+meter.dps,ДПС
+meter.hps,HPS
+meter.dtps,DTPS
+meter.melee,Рукопашный бой
+meter.environment,Окружение
+meter.blacklist,Черный список
+meter.tab.damage,Урон
+meter.tab.healing,Исцеление
+meter.tab.taken,Взято
+meter.tab.taken_by,Взято
+meter.tab.dispels,Рассеивает
+meter.tab.interrupts,Прерывания
+meter.tab.deaths,Смертельные случаи
+meter.tab.friendly_fire,Огонь по своим
+meter.tab.overhealing,Чрезмерное заживление
+meter.tab.healing_taken,Исцеление взято
+meter.tab.resurrections,Воскресения
+meter.tab.cc_breaks,CC Breaks
+meter.tab.avoidance,Уклонение
+meter.tab.absorbs,Поглощает
+meter.tab.enemy_damage,"Урон, наносимый противником"
+meter.tab.enemy_healing,Исцеление противника
+meter.total_absorbed,Предотвращенный ущерб
+meter.event_count,События Absorb
+meter.total,Итого
+status.no_absorb_data,Данные об поглощении отсутствуют
+status.no_enemy_damage_data,"Данные об уроне, нанесённом противником, отсутствуют"
+status.no_enemy_healing_data,Данные об исцелении противника отсутствуют
+breakdown.hit_distribution,Распределение попаданий
+breakdown.hit_normal,Нормальный
+breakdown.hit_crit,Крит
+breakdown.hit_glance,Краткий обзор
+breakdown.hit_resisted,С сопротивлением
+breakdown.hit_blocked,Заблокировано
+breakdown.hit_absorbed,Поглощено
+meter.category.damage,Повреждения
+meter.category.healing,Исцеление
+meter.category.utility,Утилита
+meter.category.survivability,Жизнеспособность
+meter.death_count,Смертельные случаи
+meter.resurrection_count,Воскресения
+meter.cc_break_count,CC Breaks
+meter.avoidance_count,Исключения
+meter.avoidance_total,Итого
+meter.avoidance_dodge,Додж
+meter.avoidance_parry,Пэрри
+meter.avoidance_miss,Мисс
+meter.avoidance_block,Блок
+meter.avoidance_deflect,Отклонить
+meter.avoidance_immune,Иммунный
+meter.avoidance_resist,Сопротивляться
+meter.avoidance_reflect,Поразмыслить
+meter.avoidance_absorb,Поглощать
+meter.avoidance_other,Прочее
+meter.avoidance,Уклонение
+meter.cc_breaks,CC Breaks
+meter.total_cc_breaks,Общее количество перерывов CC
+meter.total_deaths,Общее число умерших
+meter.total_avoidance,Общее количество уклонений
+status.no_avoidance,Данные об уклонении не зарегистрированы
+status.no_avoidance_data,Данные об уклонении отсутствуют
+status.no_overhealing_data,Данных о чрезмерном заживлении нет
+status.no_healing_taken_data,Данные о полученном лечении отсутствуют
+status.no_friendly_fire_data,Данных о «дружественном огне» нет
+status.no_cc_break_data,Данные о перерывах в CC отсутствуют
+status.no_death_data,Данные о смертности отсутствуют
+meter.select_target,Выберите цель
+meter.select_target_hint,"Щелкните по врагу на панели ""Сетка врагов"", чтобы увидеть нанесенный ему урон."
+meter.damage_to,Повреждение
+meter.dispel_count,Рассеивает
+meter.interrupt_count,Прерывания
+meter.stolen_count,Украденный
+
+# =============================================================================
+# Status Messages
+# =============================================================================
+status.no_combat_data,Данные о боевых действиях отсутствуют
+status.no_dispel_data,Нет данных о рассеивании
+status.no_interrupt_data,Нет данных о прерывании
+status.no_damage_data,Данные о повреждениях отсутствуют
+status.no_healing_data,Данные о заживлении отсутствуют
+status.no_damage_taken_data,Данные о повреждениях для выбранного фильтра отсутствуют
+status.no_damage_to_target,Урон для этой цели не зафиксирован
+status.no_deaths,Смертей не зарегистрировано
+status.no_player_deaths,Никаких смертей игроков
+status.no_players,В журнале боевых действий нет игроков
+status.no_creatures,Существ не видно
+status.no_enemies,В настоящее время врагов не видно
+status.no_friendly_players,В рейде нет дружелюбных игроков
+status.no_friendly_fire,Ущерб от «дружественного огня» не зафиксирован
+status.no_overhealing,Случаев избыточного заживления не зафиксировано
+status.no_healing_taken,Данные о полученном лечении отсутствуют
+status.no_resurrections,Воскрешений не зарегистрировано
+status.no_cc_breaks,Нарушений порядка при разгоне толпы зафиксировано не было
+status.not_visible,Не видно в текущем окне времени
+status.no_actor_data,Данные об актерах не загружены.
+status.dead,СМЕРТЬ
+status.click_for_gcd,"Нажмите, чтобы выбрать для истории GCD"
+
+# =============================================================================
+# Format Strings
+# =============================================================================
+format.total_dps,Всего: %s  | DPS: %s
+format.total_hps,Всего: %s  | HPS: %s
+format.total_hps_overheal,Всего: %s  | HPS: %s  | Overheal: %.1f%%
+format.total_dtps,Всего: %s  | DTPS: %s
+format.health_full,Здоровье: %llu / %llu (%.0f%%)
+format.power_full,%s %u / %u (%.0f%%)
+format.player_deaths,Смерти игроков: %zu
+format.spell_id,Заклинание %u
+format.encounters_found,Найден сегмент(ы) %zu в журнале боя. Выберите один для воспроизведения:
+
+# =============================================================================
+# Buttons
+# =============================================================================
+btn.load_encounter,Загрузить выбранную встречу
+btn.refresh_log,Обновить журнал
+btn.return_home,Вернуться на главную
+btn.browse_files,Просмотр файлов
+btn.browse_cache,Просмотр кэша
+btn.clear_selection,Очистить выбор
+btn.save_settings,Сохранить настройки
+btn.load_settings,Настройки загрузки
+btn.close,Закрыть
+btn.cancel,Отмена
+btn.load,Загрузить
+btn.load_report,Отчет о нагрузке
+btn.load_fight,Загрузить выбранный бой
+btn.refresh,Обновить
+btn.authorize,Разрешить частный доступ
+btn.reauthorize,Повторная авторизация
+btn.play,Играть
+btn.pause,Пауза
+btn.fetch_url,Загрузить с URL
+btn.play_along,Играйте вместе
+btn.play_again,Играть ещё раз
+btn.open_snapshot,Открыть снимок
+
+# =============================================================================
+# Landing Page
+# =============================================================================
+landing.title,AwowLab
+landing.subtitle,Визуализатор журнала боевых действий World of Warcraft
+landing.choose_source,Выберите источник данных
+landing.local_file,Локальный файл
+landing.local_file_desc,Загрузка с компьютера
+landing.local_file_hint,WoW_retail\Logs\
+landing.warcraftlogs,WarcraftLogs
+landing.warcraftlogs_desc,Загрузка из WarcraftLogs
+landing.press_esc,"Нажмите ESC, чтобы выйти"
+landing.partner_site,Партнёрский сайт
+landing.partner_site_desc,Бесплатный планировщик рейдов с анимированными стратегиями
+landing.diar_bullet1,Бесплатный анимированный планировщик стратегии рейдов
+landing.diar_bullet2,"Координируйте деятельность своего гильдии с помощью планов, которыми можно делиться"
+
+# =============================================================================
+# Updater / Updates
+# =============================================================================
+btn.check_updates,Проверить наличие обновлений
+update.checking,Проверка наличия обновлений...
+update.up_to_date,Вы в курсе последних новостей!
+update.disabled_build,В этой сборке автоматические обновления отключены
+
+# Language Pack Download
+langpack.title,Доступен языковой пакет
+langpack.desc,Скачать локализованные названия заклинаний и шрифт для %s
+langpack.size_hint,~%d Скачать МБ
+langpack.download,Скачать пакет
+langpack.no_thanks,"Нет, спасибо"
+langpack.disabled_build,"Языковые пакеты устанавливаются с помощью программы обновления, которая в данной сборке отключена"
+
+# Social Links
+social.youtube,Смотреть на YouTube
+social.patreon,Поддержка на Patreon
+
+# =============================================================================
+# Landing Page - Overlay Mode
+# =============================================================================
+landing.overlay_mode,Режим наложения
+landing.overlay_mode_desc,Наложение индикаторов боя в реальном времени
+btn.launch_overlay,Запуск оверлея
+tooltip.landing_overlay,Индикаторы урона и исцеления в реальном времени во время боя
+
+# =============================================================================
+# Play Along Mode
+# =============================================================================
+playalong.select_player,Выберите игрока для тренировки
+playalong.select_player_desc,"Выберите, движения и способности какого игрока вы хотите воспроизвести"
+playalong.practicing_as,Практика как
+playalong.your_position,Ваша позиция
+playalong.target_position,Целевая позиция
+playalong.distance,Расстояние
+playalong.move,Переместить
+playalong.camera,Камера
+playalong.snap,Привязка к цели
+playalong.play_pause,Воспроизведение/Пауза
+playalong.back,Назад
+playalong.past,Прошлое
+playalong.upcoming,Следующий
+playalong.configure_keybinds,Настройка привязки клавиш
+playalong.no_spells_found,Для этого игрока не найдено ни одного заклинания
+playalong.keybind_help,"Нажмите на привязку клавиш, чтобы изменить ее. Нажмите ESC, чтобы удалить."
+playalong.click_to_set,"Нажмите, чтобы установить"
+playalong.press_key,Нажмите любую комбинацию клавиш...
+playalong.hold_modifiers,(Удерживайте Ctrl/Shift/Alt + клавиша)
+playalong.esc_cancel,Нажмите ESC для отмены
+playalong.your_inputs,Ваши данные
+playalong.expected_casts,Ожидаемый
+playalong.report_card,Отчетная карта
+playalong.section,Раздел
+playalong.good,Хорошо
+playalong.bad,Плохой
+playalong.missed,Пропущенный
+playalong.accuracy,Точность
+playalong.overall,В целом
+playalong.spell_queue_window,Окно очереди заклинаний (мс)
+playalong.spell_queue_tooltip,Как рано вы можете нажать следующую способность
+playalong.gcd_timeline,Временная шкала GCD
+playalong.stats,Статистика
+playalong.last_15,Последние 15
+playalong.streak,Полоса
+playalong.best_streak,Лучшее
+playalong.total,Всего
+playalong.ignored,Не найдено
+playalong.clear_all,Очистить все
+playalong.countdown_starting,Начиная с...
+playalong.snap_hint,"Слишком далеко от цели! Нажмите правую клавишу Shift, чтобы перейти к следующей способности"
+playalong.audio_feedback,Звук
+playalong.show_annotations,Показать аннотации
+playalong.unknown_spec,Неизвестные технические характеристики
+playalong.show_spell,Показать
+playalong.clear_keybind,Очистить
+playalong.ignore_spell,Игнорировать
+playalong.return_home_confirm,Вернуться на главную страницу?
+
+# =============================================================================
+# Buttons
+# =============================================================================
+btn.back,Назад
+btn.done,Готово
+
+# =============================================================================
+# WarcraftLogs Dialog
+# =============================================================================
+wcl.dialog_title,Отчет WarcraftLogs
+wcl.paste_url,Вставьте URL-адрес или код отчета WarcraftLogs:
+wcl.url_hint,https://www.warcraftlogs.com/reports/abc123 или просто abc123
+wcl.valid_code,Действительный код отчета: %s
+wcl.example_hint,Пример: j1N7Rf4d23FAmtMk или полный URL-адрес
+wcl.private_logs,Частные журналы
+wcl.authorizing,Разрешение...
+wcl.waiting_browser,В ожидании браузера...
+wcl.authenticated,Аутентифицированный
+wcl.public_only,Только публичные журналы
+wcl.session_expired,"Срок действия сессии истек - пожалуйста, авторизуйтесь заново"
+wcl.select_fight,Выберите бой
+wcl.no_session,Сессия не загружена
+wcl.report,Отчет: %s
+wcl.fights_count,(%zu бои)
+wcl.api_usage,Использование API: %d/%d (сбрасывается за %d мин)
+wcl.api_usage_hourly,Использование API: %d/%d в час
+wcl.rate_limited,Ограничение скорости - сбрасывается через %d минут
+wcl.api_queries_remaining,"%d/%d Запросы API, оставшиеся на этот час"
+wcl.mplus_note,Примечание: M+ подземелья используют 2 запроса API
+
+# =============================================================================
+# Cached Fights Panel
+# =============================================================================
+cache.title,Ранее загруженные бои
+cache.cached_count,(%zu в кэше)
+cache.yes,Да
+cache.meta,Мета
+cache.no_fights,Не найдено ни одного кэшированного боя.
+cache.load_hint,"Загрузите бой из WarcraftLogs, чтобы кэшировать его для быстрого доступа."
+cache.double_click_hint,"Дважды щелкните, чтобы загрузить, или выберите и нажмите ""Загрузить бой"""
+cache.show_all,Показать все бои
+cache.show_all_tooltip,"Включите бои, в которых кэшируются только метаданные.\nДля этого потребуется получать данные о событиях при загрузке."
+cache.col_fight,Бой
+cache.col_report,Отчет
+cache.mythic_plus,Мифические+ подземелья
+cache.raid_encounters,Встречи в рейдах
+cache.other,Другие
+cache.report_tooltip,Отчет: %s\nИдентификатор боя: %d
+cache.meta_tooltip,Кэшируются только метаданные.\nДанные о событиях будут получены при загрузке.
+cache.col_link,WCL
+cache.open_wcl_tooltip,Открыть в WarcraftLogs
+cache.col_date,Дата
+cache.col_cached,В кэше
+cache.col_actions,Действия
+cache.col_composition,Состав
+cache.sort_by,Сортировать
+cache.sort_date_newest,Дата (последняя)
+cache.sort_date_oldest,Дата (самая старая)
+cache.sort_name_az,Имя (A–Z)
+cache.sort_name_za,Имя (Z–A)
+cache.filter_difficulty,Сложность
+cache.filter_all,Все
+cache.open,Открыть
+cache.open_tooltip,Загрузить этот бой
+cache.delete,Удалить
+cache.delete_confirm_title,Подтвердить удаление
+cache.delete_confirm_msg,Удалить кэшированные данные для:
+cache.delete_warning,Это действие нельзя отменить.
+
+# =============================================================================
+# Encounter Selector Columns
+# =============================================================================
+encounter.col_number,#
+encounter.col_name,Имя
+encounter.col_difficulty,Трудности
+encounter.col_size,Размер
+encounter.col_duration,Продолжительность
+encounter.col_fight,Бой
+encounter.col_result,Результат
+encounter.parsed_info,Разобрано: %zu строк (%.1f МБ)
+
+# =============================================================================
+# Encounter Results
+# =============================================================================
+encounter.timed,Сроки
+encounter.depleted,Обедненный
+encounter.kill,Убить
+encounter.wipe,Протрите
+
+# =============================================================================
+# Full Difficulty Names (with raid size)
+# =============================================================================
+difficulty.10_player,10 Игрок
+difficulty.25_player,25 Игрок
+difficulty.10_heroic,10 Героический
+difficulty.25_heroic,25 Героический
+difficulty.40_player,40 Игрок
+difficulty.heroic_scenario,Героический сценарий
+difficulty.normal_scenario,Обычный сценарий
+difficulty.mythic_keystone,Мифический камень
+difficulty.timewalking,Прогулки по времени
+difficulty.unknown,Неизвестный
+
+# =============================================================================
+# Difficulty Names
+# =============================================================================
+difficulty.lfr,LFR
+difficulty.normal,Нормальный
+difficulty.heroic,Героический
+difficulty.mythic,Мифический
+
+# =============================================================================
+# Power Types
+# =============================================================================
+power.mana,Мана
+power.rage,Ярость
+power.focus,Фокус
+power.energy,Энергия
+power.combo_points,Комбо-очки
+power.runes,Руны
+power.runic_power,Руническая сила
+power.soul_shards,Осколки души
+power.lunar_power,Лунная сила
+power.holy_power,Святая сила
+power.maelstrom,Водоворот
+power.insanity,Безумие
+power.fury,Ярость
+power.pain,Боль
+power.essence,Эссенция
+power.chi,Чи
+power.power,Мощность
+
+# =============================================================================
+# Actor Roles
+# =============================================================================
+role.unknown,Неизвестный
+role.tank,Резервуар
+role.healer,Целитель
+role.melee_dps,ДПС ближнего боя
+role.ranged_dps,Урон в бою на расстоянии
+
+# =============================================================================
+# Actor Appearance Panel
+# =============================================================================
+appearance.title,Настройки внешнего вида актера
+appearance.tab_role_defaults,Роли по умолчанию
+appearance.tab_overrides,Переопределяет
+appearance.tab_individual,Индивидуальные актеры
+appearance.tab_enemies,Враги
+appearance.role_defaults_desc,"Настройте формы по умолчанию, назначаемые актерам в зависимости от их роли. Их можно переопределить для каждого класса, каждого вида или каждого актера."
+appearance.auto_assign,Автоматическое назначение ролей игрокам
+appearance.auto_assign_tooltip,"Если включить эту функцию, игроки с известными специализациями будут автоматически получать соответствующие роли формы (щит для танков, крест для лекарей и т. д.)"
+appearance.player_shapes,Ролевые фигуры игроков:
+appearance.nonplayer_shapes,Неигровые фигуры:
+appearance.global_scale,Глобальный масштаб:
+appearance.default_scale,Масштаб по умолчанию
+appearance.role_overrides,Переопределения ролей
+appearance.class_overrides,Переопределения класса
+appearance.overrides_desc,"Установите переопределения внешнего вида по роли, классу или специализации. Приоритет имеют переопределения более высокой специфики."
+appearance.individual_desc,Переопределите внешний вид для конкретных актеров. Индивидуальные переопределения имеют наивысший приоритет.
+appearance.enemies_desc,"Настройте враждебные и нейтральные существа, сгруппированные по имени. Все экземпляры одного и того же существа имеют общий цвет, форму и масштаб. Расширьте список, чтобы переопределить определенных агентов."
+appearance.search_hint,Поиск по имени...
+appearance.only_overridden,Только переопределенные
+appearance.all_actors,Все актеры:
+appearance.clear_override,Разблокировать отмену
+appearance.reset_default,Сброс настроек по умолчанию
+appearance.selected_actor,Избранный актер:
+appearance.showing_actors,Показ актеров %zu (%zu с переопределениями)
+appearance.showing_enemies,Показывает типы врагов %zu (%zu с переопределением)
+appearance.no_enemies,В текущем столкновении не обнаружено враждебных/нейтральных субъектов.
+appearance.default_label,%s (по умолчанию)
+appearance.shape_tooltip,Переопределите форму для всех экземпляров этого типа врага
+appearance.scale_tooltip,Переопределите масштаб для всех экземпляров этого типа врага
+
+# =============================================================================
+# Actor Roles (for appearance settings)
+# =============================================================================
+role.tank_label,Резервуар
+role.healer_label,Целитель
+role.melee_dps_label,ДПС ближнего боя
+role.ranged_dps_label,Урон в бою на расстоянии
+role.unknown_label,Неизвестная роль
+
+# =============================================================================
+# Non-Player Types
+# =============================================================================
+nonplayer.creatures,Существа/NPC
+nonplayer.vehicles,Транспортные средства
+nonplayer.pets,Домашние животные
+
+# =============================================================================
+# Shape Names
+# =============================================================================
+shape.default,(По умолчанию)
+shape.sphere,Сфера
+shape.cube,Куб
+shape.shield,Щит
+shape.medic_cross,Медицинский крест
+shape.sword,Меч
+shape.bow,Лук
+shape.cone,Конус
+shape.cylinder,Цилиндр
+shape.diamond,Алмаз
+shape.pyramid,Пирамида
+shape.star,Звезда
+shape.classicon,Значок спецификации
+shape.builtin_header,Встроенные фигуры
+shape.custom_header,Индивидуальные модели
+shape.custom_load_failed,Не удалось загрузить
+shape.no_custom_models,Пользовательские модели не найдены
+shape.tooltip.sphere,Стандартная сферическая форма — подходит для всех участников
+shape.tooltip.cube,Форма «коробка» — удобна для объектов или НПЦ
+shape.tooltip.shield,Значок щита — рекомендуется для танков
+shape.tooltip.medic_cross,Медицинский крест — рекомендуется целителям
+shape.tooltip.sword,Значок меча — рекомендуется для DPS в ближнем бою
+shape.tooltip.bow,Значок лука — рекомендуется для дальнобойных DPS
+shape.tooltip.cone,Форма остроконечного конуса
+shape.tooltip.cylinder,Цилиндр в форме бочки/таблетки
+shape.tooltip.diamond,Форма двойной пирамиды (октаэдр)
+shape.tooltip.pyramid,"Одиночная пирамида, направленная вершиной вверх"
+shape.tooltip.star,3D-форма звезды
+shape.tooltip.classicon,Плоский диск с текстурой значка специализации
+appearance.tab_custom_models,Индивидуальные модели
+appearance.custom_models_desc,"Настройте поворот для пользовательских моделей OBJ. Модели загружаются из папки custom_models, расположенной рядом с исполняемым файлом."
+appearance.custom_models_tip,Совет: Совместите направление движения модели со стрелкой индикатора ориентации.
+appearance.custom_models_workflow,"Элементы управления поворотом задают базовую ориентацию. После настройки модель будет поворачиваться в направлении, в которое смотрит персонаж, а не всегда оставаться обращенной к камере."
+appearance.custom_registry_not_available,Реестр пользовательских моделей недоступен
+appearance.models_folder,Папка «Models»
+appearance.drop_obj_hint,"Переместите файлы .obj в папку custom_models, чтобы использовать их в качестве моделей объектов."
+appearance.rotation_x,Поворот по оси X
+appearance.rotation_y,Поворот по оси Y
+appearance.rotation_z,Вращение по оси Z
+appearance.z_offset,Смещение по оси Z
+appearance.load_errors,Ошибки загрузки
+appearance.search_hint_extended,"Поиск по имени, должности или классу..."
+appearance.search_results,%zu из %zu актеров
+appearance.enemy_search_results,%zu из %zu типов врагов
+appearance.override_trace,Переоценка разрешения
+appearance.override_level_default,По умолчанию
+appearance.override_level_role,Роль
+appearance.override_level_class,Класс
+appearance.override_level_spec,Характеристики
+appearance.override_level_name,Имя
+appearance.override_level_guid,GUID
+appearance.trace_level,Уровень
+appearance.trace_value,Значение
+appearance.trace_shape,S
+appearance.trace_color,C
+appearance.trace_scale,X
+appearance.trace_system,Система
+appearance.badge_guid,[G]
+appearance.badge_name,[N]
+appearance.badge_spec,[S]
+appearance.badge_class,[C]
+appearance.badge_role,[R]
+appearance.badge_guid_tooltip,"Имеет переопределение, специфичное для GUID"
+appearance.badge_name_tooltip,Имеется переопределение группы «Имя»
+appearance.badge_spec_tooltip,Имеет переопределение специализации
+appearance.badge_class_tooltip,Имеет переопределение класса
+appearance.badge_role_tooltip,Имеет переопределение роли
+appearance.favorites,Избранное
+appearance.only_favorites,Только избранное
+appearance.toggle_favorite,Добавить в избранное
+appearance.favorite_tooltip,"Нажмите, чтобы изменить статус «Избранное»"
+appearance.starred_actors,"Актеры, отмеченные звёздочкой:"
+appearance.color_presets,Предустановки цветов
+appearance.preset_classes,Занятия
+appearance.preset_roles,Роли
+appearance.preset_custom,Пользовательский
+appearance.preset_slot,Слот
+appearance.preset_empty,пустой
+appearance.preset_clear_slot,Очистить слот
+appearance.color_right_click_save,"Щелкните правой кнопкой мыши, чтобы сохранить текущий цвет"
+appearance.quick_reset_all,Сбросить все
+appearance.quick_reset_all_tooltip,Очистить все переопределения и восстановить настройки по умолчанию
+appearance.confirm_reset,Вы действительно хотите сбросить все настройки внешнего вида?
+appearance.quick_copy,Копировать
+appearance.quick_copy_tooltip,Скопировать внешний вид выбранного персонажа в буфер обмена
+appearance.quick_copy_no_selection,"Выберите актёра, чтобы скопировать его внешность"
+appearance.quick_paste,Вставить
+appearance.quick_paste_tooltip,Применить стиль буфера обмена к выбранному объекту
+appearance.quick_paste_no_clipboard,Пока не скопировано ни одного появления
+appearance.quick_paste_no_selection,"Выберите актёра, чтобы вставить его изображение"
+appearance.quick_apply_similar,Подать заявку на...
+appearance.quick_apply_similar_tooltip,Применить оформление буфера обмена ко всем участникам одного класса/роли
+appearance.apply_to_class,Все
+appearance.apply_to_role,Все
+appearance.context_copy,Копировать оформление
+appearance.context_paste,Внешний вид вставки
+appearance.context_clear,Очистить все переопределения
+appearance.context_focus,Фокусировка в 3D-режиме
+appearance.context_apply_class,Применить ко всем %s
+appearance.context_apply_role,Применить ко всем %s
+appearance.context_no_clipboard,Пока ничего не скопировано
+btn.refresh,Обновить
+btn.reset,Сброс
+btn.yes,Да
+btn.no,Нет
+
+# =============================================================================
+# Actor Breakdown Panel
+# =============================================================================
+breakdown.title,Разбивка игроков
+breakdown.spells,Заклинания
+breakdown.damage_done,Нанесенный ущерб
+breakdown.healing_done,Исцеление завершено
+breakdown.damage_taken,Нанесенный урон
+breakdown.total_stats,Итого: %s  | %s: %s  | Хиты: %u  | Crit: %.1f%%
+breakdown.group_spells,+ Групповые заклинания
+breakdown.group_tooltip,"Перетащите заклинания на заголовки групп, чтобы сгруппировать их.\nДвойной щелчок по заголовку - переименование.\nПравый щелчок по заголовку - удаление."
+breakdown.delete_group,Удалить группу
+breakdown.rename,Переименовать
+breakdown.blacklist_spell,Заклинание черного списка
+breakdown.unblacklist_spell,Заклинание исключения из черного списка
+breakdown.blacklisted_spells_title,Заклинания из черного списка
+breakdown.dragging_melee,Перетаскивание: Melee
+breakdown.dragging_spell,Перетаскивание: Заклинание %u
+breakdown.click_to_see,"Нажмите на заклинание, чтобы узнать подробности"
+breakdown.hits_format,Хиты: %u
+breakdown.average,Среднее: %s
+breakdown.min,Мин: %s
+breakdown.max,Макс: %s
+breakdown.normal_hits,Обычные хиты
+breakdown.critical_hits,Критические удары
+breakdown.targets,Цели
+breakdown.pets_guardians,Домашние животные и опекуны
+breakdown.no_data_graph,Нет данных %s для графика
+breakdown.reset_selection,Выбор сброса
+breakdown.drag_to_select_hint,"(Перетащите график, чтобы выбрать временной диапазон)"
+breakdown.select_time_hint,"Перетащите на график, чтобы выбрать временной диапазон для анализа"
+breakdown.selection_info,Избранное: %u:%02u - %u:%02u (%u:%02u продолжительность)
+breakdown.hover_tooltip,"Время: %u:%02u\nНажмите и перетащите, чтобы выбрать диапазон"
+breakdown.blacklisted_healing,Заклинания из черного списка (исключены из отчетов о лечении)
+breakdown.blacklisted_damage,Заклинания из черного списка (исключены из отчетов об уроне)
+breakdown.restore,Восстановить
+breakdown.more_targets,... и %zu больше целей
+
+# =============================================================================
+# Aura Debug Panel
+# =============================================================================
+aura.filter_label,Фильтр по GUID или имени:
+aura.buffs,Баффы
+aura.debuffs,Дебаффы
+aura.active_only,Только активные
+aura.targets_with_auras,Цели с аурами: %zu
+aura.current_time,Текущее время: %s
+aura.no_data,Данные по ауре отсутствуют
+aura.no_target,Не выбран игрок
+aura.col_type,Тип
+aura.col_spell,Заклинание
+aura.col_source,Источник
+aura.col_stacks,Стеки
+aura.col_duration,Продолжительность
+aura.col_applied,Прикладная
+aura.type_buff,BUFF
+aura.type_debuff,ДЕБАФФ
+aura.status_active,Активный
+
+# =============================================================================
+# Deaths Panel
+# =============================================================================
+deaths.col_time,Время
+deaths.col_player,Игрок
+deaths.col_ability,Способности
+deaths.col_amount,Сумма
+deaths.unknown,Неизвестный
+deaths.filter_threshold,Мин. событие %
+deaths.filter_tooltip,"Скрывайте события, меньшие, чем этот процент от максимального здоровья"
+deaths.filter_label,Фильтр событий
+deaths.click_for_recap,"Нажмите, чтобы открыть сводку о погибших"
+deaths.right_click_hint,"Щелкните правой кнопкой мыши, чтобы увидеть подробный анализ причин смерти"
+deaths.analysis_title,Анализ смертности
+deaths.player,Игрок
+deaths.killing_ability,Убийственная способность
+deaths.health_chart,Хронология событий в сфере здравоохранения
+deaths.no_health_data,Данные о состоянии здоровья отсутствуют
+deaths.last_events,Последние события
+deaths.no_events,"События, связанные с повреждениями или исцелением, не зарегистрированы"
+resurrections.spell,Заклинание воскрешения
+status.view_not_implemented,Функция просмотра пока не реализована
+
+# =============================================================================
+# WarcraftLogs Help Text
+# =============================================================================
+wcl_help.want_unlimited,Хотите неограниченный доступ? Создайте свой собственный клиент API (бесплатно!)
+wcl_help.get_unlimited,Получите неограниченный доступ - создайте свой собственный клиент API (бесплатно!):
+wcl_help.step1,1. Перейти к: warcraftlogs.com/api/clients
+wcl_help.step2,"2. Нажмите ""Создать клиента"""
+wcl_help.step3,3. Название приложения: тест
+wcl_help.step4,4. URL-адрес перенаправления: http://localhost:8080/callback
+wcl_help.step5,"5. Оставьте ""Публичный клиент"" ОТКЛЮЧЕННЫМ"
+wcl_help.step6,"6. Нажмите ""Создать"""
+wcl_help.step7,7. Скопируйте идентификатор клиента и секрет клиента
+wcl_help.step8,8. Создайте файл 'wcl_credentials.txt' рядом с AwowLab.exe
+wcl_help.step9,9. Строка 1: ID клиента | Строка 2: Секрет клиента
+wcl_help.go_to,Перейти к: warcraftlogs.com/api/clients
+wcl_help.app_name,Название приложения: тест
+wcl_help.redirect_url,URL-адрес перенаправления: http://localhost:8080/callback
+wcl_help.public_client,"Оставьте флажок ""Публичный клиент"" снятым, нажмите кнопку Создать"
+wcl_help.save_credentials,Сохраните идентификатор и секрет клиента в файл 'wcl_credentials.txt'
+wcl_help.credentials_format,"(Строка 1: идентификатор клиента, строка 2: секрет клиента)"
+
+# =============================================================================
+# Spell Display Locations
+# =============================================================================
+location.none,Нет
+location.cd_group_1,Основные компакт-диски
+location.cd_group_2,Незначительные компакт-диски
+location.cd_group_3,Коммунальные компакт-диски
+location.raid_frame,Рама рейда
+location.hud_major_cd,HUD - крупный компакт-диск
+location.hud_utility,HUD - Коммунальное хозяйство
+location.hud_defensive,HUD - Защита
+location.gcd_tracker,GCD Tracker
+location.nameplate,Табличка
+location.short.cd1,Главная
+location.short.cd2,Несовершеннолетний
+location.short.cd3,Коммунальное хозяйство
+location.short.raid,Рейд
+location.short.hud_cd,HUD
+location.short.hud_util,Util
+location.short.hud_def,Def
+location.short.gcd,GCD
+location.short.plate,Тарелка
+location.short.buffs,Баффы
+location.short.debuffs,Дебаффы
+location.player_buffs,Панель баффов игроков
+location.player_debuffs,Панель дебаффов игрока
+
+# =============================================================================
+# Spell Assignment Panel
+# =============================================================================
+menu.spell_assignments,Настройки отображения заклинаний...
+menu.auto_annotations,Автоматические аннотации...
+menu.annotation_list,Ручные аннотации
+menu.raid_notes,Заметки о рейдах
+assignment.panel_title,Настройки отображения заклинаний
+assignment.class_label,Класс:
+assignment.select_class,Выберите класс...
+assignment.all_classes,Все классы
+assignment.spec_label,Специфика:
+assignment.select_spec,Выберите спецификацию...
+assignment.all_specs,Все характеристики
+assignment.cooldowns,свертывание
+assignment.buffs,баффы
+assignment.debuffs,дебаффы
+assignment.encounter,Неигровой
+assignment.all,Все
+assignment.search_hint,Поисковые заклинания...
+assignment.no_spells_for_filter,Ни одно заклинание не соответствует текущему фильтру
+assignment.col_type,Тип
+assignment.col_spell,Заклинание
+assignment.col_id,Идентификатор
+assignment.col_cd1,Главная
+assignment.col_cd2,Несовершеннолетний
+assignment.col_cd3,Коммунальное хозяйство
+assignment.col_raid,Рейд
+assignment.col_hud_big,Большой
+assignment.col_hud_util,Util
+assignment.col_hud_def,Def
+assignment.col_gcd,GCD
+assignment.col_name,Имя
+assignment.icon_sizes,Размеры значков
+assignment.raid_frames,Каркасы для рейдов
+assignment.nameplates,Таблички
+
+# =============================================================================
+# Spell Data Version Selector
+# =============================================================================
+settings.spell_data_version,Данные заклинания
+settings.spell_data_12_0,12.0 (Война внутри)
+settings.spell_data_11_2,11.2 (Полет дракона)
+settings.title,Настройки
+settings.log_folder,Папка журналов
+settings.change_log_folder,Изменить...
+settings.language,Язык
+
+# =============================================================================
+# Boss Timer / Playback Controls
+# =============================================================================
+playback.boss_timer,Таймер босса
+playback.boss_timer_tooltip,Показать/скрыть полосу таймера босса под панелью воспроизведения
+playback.ortho,2D
+playback.ortho_tooltip,Переключение на ортографический вид камеры (сверху вниз)
+menu.enemy_cast_filters,Вражеские фильтры...
+
+# =============================================================================
+# Help Panel (Keyboard Shortcuts)
+# =============================================================================
+help.title,Ярлыки клавиатуры
+help.playback,Воспроизведение
+help.camera,Камера
+help.speed,Скорость
+help.other,Другие
+
+# Key labels
+help.key_space,Космос
+help.key_q,Q
+help.key_e,E
+help.key_1,1
+help.key_2,2
+help.key_3,3
+help.key_4,4
+help.key_5,5
+help.key_wasd,W/A/S/D
+help.key_r,R
+help.key_lmb,LMB Drag
+help.key_rmb,Сопротивление RMB
+help.key_scroll,Прокрутка
+help.key_f1,Ф1 / ?
+help.key_f5,F5
+
+# Descriptions
+help.space,Переключение воспроизведения/паузы
+help.q,Пропустить назад 5 секунд
+help.e,Пропустить вперед на 5 с
+help.speed_1,"Скорость 0,25x"
+help.speed_2,"Скорость 0,5x"
+help.speed_3,Скорость 1х
+help.speed_4,Скорость 2х
+help.speed_5,Скорость 4x
+help.wasd,Переместить камеру
+help.r,Включить автоследование
+help.lmb,Панорамная камера
+help.rmb,Поворот камеры
+help.scroll,Увеличение/уменьшение
+help.f1,Переключить эту панель
+help.f5,Освежить встречи
+help.close_hint,"Нажмите F1 или ?, чтобы закрыть"
+
+# =============================================================================
+# Settings Export/Import Panel
+# =============================================================================
+Import/Export Settings,Настройки импорта/экспорта
+Export,Экспорт
+Import,Импорт
+Select settings to export:,Выберите настройки для экспорта:
+Select settings to import:,Выберите настройки для импорта:
+Select All,Выбрать все
+Select None,Выберите Нет
+Select All Available,Выберите все доступные
+Filename:,Имя файла:
+File path:,Путь к файлу:
+Probe,Зонд
+Export Selected,Экспорт выбран
+Import Selected,Импорт выбран
+Files saved to: exported_settings/,Файлы сохраняются в: exported_settings/
+Enter a file path and click Probe to see available settings.,"Введите путь к файлу и нажмите кнопку Probe, чтобы увидеть доступные настройки."
+No valid settings found in file.,В файле не найдено ни одной правильной настройки.
+
+# =============================================================================
+# Upcoming Boss Casts Panel
+# =============================================================================
+upcoming.no_casts,В ближайшие %.0f секунд не будет кастовать босса
+upcoming.enable_spells,Включите заклинания в фильтрах вражеских заклинаний
+
+# =============================================================================
+# Raid Notes Panel
+# =============================================================================
+menu.raid_notes,Заметки о рейдах
+raidnotes.title,Заметки о рейдах
+raidnotes.ctx_add_title,Добавить в заметку о рейде
+raidnotes.ctx_spell_fmt,Заклинание: %s
+raidnotes.ctx_timestamp_fmt,Временная метка: %d:%02d
+raidnotes.ctx_add_to_note,Добавить в заметку:
+raidnotes.ctx_this_instance_fmt,Именно этот случай (%d:%02d)
+raidnotes.ctx_this_instance_none,Именно этот экземпляр (без отметки времени)
+raidnotes.ctx_all_instances_fmt,Все вхождения (%zu найдено)
+raidnotes.ctx_all_instances_none,Все экземпляры (не найдено)
+raidnotes.ctx_custom_text,Пользовательский текст (необязательно):
+raidnotes.ctx_custom_text_hint,"например, имя игрока, позиция..."
+raidnotes.ctx_add_button,Добавить в заметку
+raidnotes.phase_delay,Задержка фазы:
+raidnotes.after,после
+raidnotes.by,автор:
+raidnotes.sec,сек
+raidnotes.add_delay,Добавить
+raidnotes.phase_delay_after_tooltip,"Пороговое значение временной метки (М:СС). Записи, сделанные в это время или позже, будут сдвинуты."
+raidnotes.phase_delay_tooltip,"Сдвиг временных меток после завершения этапа. Применяется кумулятивно — добавьте несколько сдвигов, если ваша команда отстает по нескольким этапам."
+raidnotes.options,Параметры
+raidnotes.opt_headers,Включить заголовки групп
+raidnotes.opt_spellnames,Включить названия заклинаний
+raidnotes.opt_sort,Сортировать по дате и времени
+raidnotes.no_entries,"Записей нет. Щелкните правой кнопкой мыши по значкам заклинаний, чтобы добавить их."
+raidnotes.custom_text_hint,Задание/заметка...
+raidnotes.add_manual,Добавить примечание вручную:
+raidnotes.manual_hint,"Введите название заклинания (например, «Защита», «Поглощение»)"
+raidnotes.add,Добавить
+raidnotes.copy_clipboard,Скопировать в буфер обмена
+raidnotes.copied,Скопировано!
+raidnotes.clear_all,Очистить всё
+raidnotes.clear_confirm,"Вы уверены, что хотите удалить все записи?"
+raidnotes.entry,запись
+raidnotes.entries,записи
+raidnotes.all_instances_tooltip,Эта запись будет экспортирована несколькими строками (по одной на каждый экземпляр)
+raidnotes.phase_delays,-- Фазовые сдвиги --
+raidnotes.load_preset,Загрузить:
+raidnotes.select_preset,-- Выбрать предустановку --
+raidnotes.load,Загрузить
+raidnotes.delete_preset,Удалить
+raidnotes.save_as,Сохранить как:
+raidnotes.preset_name_hint,Название пресета...
+raidnotes.save,Сохранить
+raidnotes.saved,Сохранено!
+raidnotes.save_failed,Не удалось сохранить пресет
+raidnotes.delete_confirm,Удалить эту настройку?
+common.yes,Да
+common.no,Нет
+
+# =============================================================================
+# Auto Annotations - Anchor Types
+# =============================================================================
+At Caster,В компании Caster
+At Target,В магазине Target
+At Caster (Facing),На кастере (лицевая сторона)
+At Target (Facing),В магазине Target (с витриной)
+Source -> Target,Исходный текст -> Целевой текст
+Use 'Facing' to orient shapes in the direction the player is looking,"Используйте параметр «Facing» для ориентации фигур в направлении, в котором смотрит игрок"
+Place annotation at caster's position,Разместить аннотацию в точке нахождения заклинателя
+Place annotation at target's position,Разместить аннотацию в точке нахождения объекта
+Place at caster's position," поверните их так, чтобы они были обращены в нужную сторону; разместите в положении игрока, поверните их так, чтобы они были обращены в нужную сторону"
+Place at target's position," поверните их так, чтобы они были обращены в нужную сторону; разместите в точке наведения, поверните их так, чтобы они были обращены в нужную сторону"
+Draw shape spanning from caster to target (beams," (цепи), нарисовать фигуру, простирающуюся от заклинателя до цели (лучи, цепи)"
+
+# =============================================================================
+# Auto Annotations - Position Offset
+# =============================================================================
+Offset X (yards),Смещение по оси X (ярды)
+Offset Y (yards),Смещение по оси Y (ярды)
+Offset from anchor in world X axis (positive = East),Смещение от привязки по оси X глобальной координатной системы (положительное значение = восток)
+Offset from anchor in world Y axis (positive = North),Смещение от привязки по оси Y глобальной координатной системы (положительное значение = север)
+
+# =============================================================================
+# Auto Annotations - Shapes
+# =============================================================================
+Circle,Круг
+Rectangle,Прямоугольник
+Cone,Конус
+Line,Строка
+Star,Звезда
+Donut,Пончик
+Outer Radius (yards),Внешний радиус (ярды)
+Inner Radius (yards),Внутренний радиус (ярды)
+
+# =============================================================================
+# Auto Annotations - Preview
+# =============================================================================
+Show Preview,Показать предварительный просмотр
+Show annotation preview on the 3D map at the first event position,Показать предварительный просмотр аннотации на 3D-карте в точке первого события
+Ignore Early Pull,Игнорировать ранний вывод
+Skip casts in the first 500ms of the encounter (filters fake 0:00 boss casts),Игнорировать заклинания в течение первых 500 мс после начала боя (фильтрует ложные заклинания босса в 0:00)
+
+# =============================================================================
+# Auto Annotations - Motion
+# =============================================================================
+Motion,Движение
+Motion Type,Тип движения
+None,Нет
+Rotate,Повернуть
+Projectile,Снаряд
+Rotation Speed (deg/s),Скорость вращения (град./с)
+End Offset X (yards),Смещение по оси X (ярды)
+End Offset Y (yards),Смещение по оси Y (ярды)
+Travel Time (sec),Время движения (сек)
+Return to Origin,Вернуться к исходному состоянию
+Projectile travels to destination and returns to starting position (splits travel time in half),Снаряд долетает до точки назначения и возвращается в исходное положение (время полета сокращается вдвое)
+End Behavior,Поведение при завершении
+Persist at End,Сохранить при завершении
+Disappear at End,Исчезнуть в конце
+End Position,Конечное положение
+Manual,Руководство
+To Target,«To Target»
+In Facing Direction,В направлении движения
+Distance (yards),Расстояние (ярды)
+Direction Offset (deg),Смещение направления (град.)
+Offset from caster's facing direction. 0=forward," 180 = назад, 90 = вправо, -90 = влево; смещение относительно направления, в которое смотрит персонаж. 0 = вперёд, 180 = назад, 90 = вправо, -90 = влево"
+Fallback X (yards),Резервная дистанция X (ярды)
+Fallback Y (yards),Резервная высота Y (ярды)
+Projectile travels from caster to target,Снаряд летит от запускающего к цели
+Fallback offsets used if no valid target:,"Резервные смещения, используемые при отсутствии допустимой цели:"
+Fallback offsets used if facing unavailable:,"Резервные смещения, используемые в случае недоступности:"
+How far the projectile travels in the caster's facing direction,"На какое расстояние летит снаряд в направлении, в котором обращён заклинатель"
+Use fixed X/Y offsets for end position,Используйте фиксированные смещения по осям X и Y для конечного положения
+Travel from caster to spell target position (snapshotted at cast time),Переместиться от заклинателя к месту нахождения цели заклинания (состояние фиксируется на момент произнесения заклинания)
+Travel in caster's facing direction for configured distance,"Переместиться в направлении, в котором обращен кастер, на заданное расстояние"
+Annotation rotates continuously around its anchor point,Аннотация непрерывно вращается вокруг своей опорной точки
+Annotation moves from start position to end offset over travel time,Аннотация перемещается от начальной позиции до конечного смещения за время перемещения
+Raindrops,Капли дождя
+Spawns small circles within annotation bounds (swirlie effect),Создает небольшие кружки в пределах границ аннотации (эффект «вихря»)
+Drops per Second,Капель в секунду
+Drop Radius (yards),Радиус падения (ярды)
+Drop Lifetime (sec),Время падения (сек.)
+How many raindrops spawn each second,Сколько капель дождя появляется каждую секунду
+Size of each raindrop circle,"Размер круга, обозначающего каждую каплю дождя"
+How long each drop remains visible before fading,"Как долго каждая капля остается видимой, прежде чем исчезнет"
+Add World Marker,Добавить маркер на карте мира
+Star (Yellow),Звезда (желтая)
+Circle (Orange),Круг (оранжевый)
+Diamond (Purple),Бриллиант (фиолетовый)
+Triangle (Green),Треугольник (зелёный)
+Moon (Silver),Луна (серебро)
+Square (Blue),Квадрат (синий)
+Cross (Red),Крест (красный)
+Skull (White),Череп (белый)
+Symbol Height (yards),Высота символа (ярды)
+Height of floating symbol above ground,Высота плавающего знака над землей
+World Marker Settings,Настройки «World Marker»
+
+# =============================================================================
+# Settings Hub
+# =============================================================================
+settings.hub.title,Настройки
+settings.hub.display,Отображение
+settings.hub.appearance,Внешний вид
+settings.hub.camera,Камера
+settings.hub.import_export,Импорт/Экспорт
+settings.hub.actors,Актёры
+settings.hub.nameplates,Таблички с надписями
+settings.hub.facing,Индикатор положения
+settings.hub.ui_scale,Масштаб интерфейса
+settings.hub.layout,Макет
+settings.hub.reset_layout,Сброс на настройки по умолчанию
+settings.hub.save_layout,Сохранить текущее
+settings.hub.import_export_desc,"Экспортируйте или импортируйте свои настройки, чтобы поделиться ими с другими или восстановить их из резервной копии."
+settings.hub.open_import_export,Открыть «Импорт/Экспорт»...
+menu.show_menu_bar,Показать панель меню
+camera.enable_follow,Включить функцию «Следование за камерой»
+camera.pan_sensitivity,Чувствительность панели
+camera.follow_speed,Следите за Speed
+camera.orthographic,Ортогональный вид (2D)
+camera.reset,Сброс настроек камеры
+actor.auto_assign_shapes,Автоматическое назначение фигур ролей
+actor.role_shapes,Назначение ролей и должностей
+actor.tank_shape,Танк
+actor.healer_shape,Целитель
+actor.melee_dps_shape,Урон в ближнем бою
+actor.ranged_dps_shape,Урон в бою на расстоянии
+actor.default_scale,Масштаб по умолчанию
+tooltip.auto_assign_shapes,Автоматическое назначение форм в зависимости от роли игрока (танк/целитель/DPS)
+tooltip.landing_local_file,Загрузите файл журнала боя (.txt) со своего компьютера
+tooltip.landing_warcraftlogs,Импортировать данные о боях с сайта WarcraftLogs.com по URL или через API
+tooltip.landing_recent,Просмотр ранее загруженных боёв из кэша
+tooltip.landing_playalong,Режим тренировки — просмотр действий вашего персонажа
+tooltip.camera_follow,Камера автоматически следует за центроидом актеров
+tooltip.camera_pan,С какой скоростью перемещается камера при перетаскивании
+tooltip.camera_speed,Как быстро камера успевает за движущимися актерами
+tooltip.camera_ortho,Двухмерный вид сверху вниз (без перспективы)
+tooltip.camera_reset,Верните камеру в исходное положение и настройте зум
+tooltip.ui_scale,Изменить размер всех элементов пользовательского интерфейса
+tooltip.menu_bar,Откройте меню «Файл» > «Вид» > «Настройки» в верхней части экрана
+tooltip.reset_layout,Сбросить все положения панелей до значений по умолчанию
+
+# =============================================================================
+# Annotation Wizard
+# =============================================================================
+wizard.title,Мастер аннотаций
+wizard.use_wizard,Использовать мастер
+wizard.back,Назад
+wizard.next,Далее
+wizard.finish,Создать
+wizard.cancel,Отменить
+
+# Wizard Step Indicator
+wizard.step.source,Источник
+wizard.step.event,Событие
+wizard.step.position,Должность
+wizard.step.shape,Форма
+wizard.step.visual,Визуальный
+wizard.step.advanced,Для опытных пользователей
+
+# Step 1: Trigger Source
+wizard.source.mode,Выберите источник срабатывания:
+wizard.source.spell,Событие «Заклинание»
+wizard.source.actor,Вакансия актёра
+wizard.source.select_spell,Выберите заклинание для отслеживания:
+wizard.source.actor_name,"Имя актёра, за которым нужно следить:"
+wizard.source.actor_hint,"Введите точное имя NPC (например, Сикран)"
+wizard.source.no_spells,В ходе этой встречи враждебных существ обнаружено не было
+wizard.source.selected,Выбрано
+wizard.category.cast,В ролях
+wizard.category.debuff,Ослабления
+wizard.category.buff,Буффы
+wizard.category.damage,Повреждения
+wizard.category.damage_taken,Полученный урон
+wizard.tooltip.damage_taken,Срабатывает при получении урона от этого заклинания игроками
+wizard.category.actor,Актёр
+
+# Step 2: Event Type
+wizard.event.timing,Когда должна срабатывать аннотация?
+wizard.event.cast_info,Срабатывает по завершении произнесения заклинания
+wizard.event.damage_info,"Срабатывает, когда заклинание наносит урон"
+wizard.event.debuff_timing,"Выберите, когда отображать аннотацию:"
+wizard.event.buff_timing,"Выберите, когда отображать аннотацию:"
+wizard.event.on_applied,При применении
+wizard.event.while_active,В режиме активного следования (следует за целью)
+wizard.event.on_end,При снятии
+wizard.event.actor_mode,Выберите способ отслеживания актера:
+wizard.event.actor_follow,Подписаться на актера
+wizard.event.actor_follow_desc,Аннотация перемещается вместе с актером
+wizard.event.actor_trail,Оставить след
+wizard.event.actor_trail_desc,Размещает маркеры через определённые промежутки
+wizard.event.actor_spawn,О Spawn
+wizard.event.actor_spawn_desc,Отметить момент появления актера
+wizard.event.actor_death,О смерти
+wizard.event.actor_death_desc,"Отметьте место, где умирает персонаж"
+wizard.event.trail_interval,Интервал между указателями маршрута:
+wizard.event.death_behavior,Когда умирает актёр:
+wizard.event.death_disappear,Немедленно исчезнуть
+wizard.event.death_persist,Останься на месте гибели
+wizard.event.death_fade,Постепенное затухание со временем
+
+# Step 3: Positioning
+wizard.position.anchor,Где должна отображаться аннотация?
+wizard.position.at_caster,В положении кастера
+wizard.position.at_caster_facing,На колесике (с учетом направления движения)
+wizard.position.at_target,В заданном положении
+wizard.position.at_target_facing,По цели (с учетом направления движения)
+wizard.position.facing_hint,При использовании направления ориентации доступны только фигуры «Конус» и «Прямоугольник»
+wizard.position.actor_hint,"Триггеры, связанные с участником, автоматически следуют за его положением"
+wizard.position.offset,Смещение положения относительно привязки:
+wizard.position.offset_x,X (Восток/Запад)
+wizard.position.offset_y,Y (Север/Юг)
+wizard.position.offset_hint,Положительное значение X = восток. Положительное значение Y = север.
+wizard.position.lead_time,Показать аннотацию перед событием:
+wizard.position.lead_time_hint,"Сообщите об этом механику, пока это не произошло"
+
+# Step 4: Shape & Size
+wizard.shape.select,Выберите форму аннотации:
+wizard.shape.dimensions,Настройка размеров:
+wizard.shape.circle,Круг
+wizard.shape.rectangle,Прямоугольник
+wizard.shape.cone,Конус
+wizard.shape.line,Строка
+wizard.shape.star,Звезда
+wizard.shape.donut,Пончик
+wizard.shape.radius,Радиус
+wizard.shape.height,Высота
+wizard.shape.width,Ширина
+wizard.shape.length,Длина
+wizard.shape.rotation,Вращение
+wizard.shape.cone_length,Длина конуса
+wizard.shape.cone_angle,Угол конуса
+wizard.shape.line_length,Длина строки
+wizard.shape.line_width,Ширина линии
+wizard.shape.ray_length,Длина луча
+wizard.shape.ray_width,Ширина луча
+wizard.shape.points,Количество лучей
+wizard.shape.outer_radius,Внешний радиус
+wizard.shape.inner_radius,Внутренний радиус
+
+# Step 5: Visual Style
+wizard.visual.color,Цвет аннотации:
+wizard.visual.base_color,Основной цвет
+wizard.visual.pattern,Визуальный образец:
+wizard.visual.solid,Твёрдый
+wizard.visual.striped,В полоску
+wizard.visual.hatched,Вылупившийся
+wizard.visual.ripple,Кольца с рябью
+wizard.visual.swirl,Вихрь
+wizard.visual.stripe_spacing,Междурядье
+wizard.visual.ripple_speed,Скорость распространения волн
+wizard.visual.ripple_count,Циклы колебаний
+wizard.visual.motion,Тип движения:
+wizard.visual.motion_none,Нет (статический)
+wizard.visual.motion_rotate,Повернуть
+wizard.visual.motion_projectile,Снаряд
+wizard.visual.motion_raindrops,Капли дождя
+wizard.visual.rotation_speed,Скорость вращения
+wizard.visual.end_mode,Режим конечного положения:
+wizard.visual.end_manual,Ручное смещение
+wizard.visual.end_to_target,Написание слова «target»
+wizard.visual.end_in_facing,В направлении движения
+wizard.visual.end_offset_x,Смещение по оси X
+wizard.visual.end_offset_y,Смещение по оси Y в конце
+wizard.visual.projectile_distance,Расстояние поездки
+wizard.visual.travel_time,Время в пути
+wizard.visual.return_to_origin,Вернуться к началу
+wizard.visual.end_behavior,По прибытии:
+wizard.visual.end_persist,Оставайтесь на виду
+wizard.visual.end_disappear,Исчезнуть
+wizard.visual.drops_per_sec,Капель в секунду
+wizard.visual.drop_radius,Размер капли
+wizard.visual.drop_lifetime,Срок службы капли
+
+# Step 6: Duration & Advanced
+wizard.advanced.duration,Как долго должна оставаться видимой аннотация?
+wizard.advanced.duration_encounter,Вся встреча
+wizard.advanced.duration_encounter_desc,(виден весь бой)
+wizard.advanced.duration_timed,По времени
+wizard.advanced.duration_timed_desc,(исчезает по истечении времени)
+wizard.advanced.duration_sec,Продолжительность
+wizard.advanced.stacks,Фильтрация стека/дозы (опционально):
+wizard.advanced.min_stacks,Минимальные стеки
+wizard.advanced.max_stacks,Максимальное количество стеков
+wizard.advanced.stacks_hint,"Укажите значение 0, чтобы отключить фильтрацию"
+wizard.advanced.stack_colors,Раскраска по количеству стеков:
+wizard.advanced.color_count,Количество пороговых значений
+wizard.advanced.negation,Зона отрицания (удаляет другие аннотации):
+wizard.advanced.is_negation,Выступает в качестве зоны запрета
+wizard.advanced.negation_hint,"Добавьте идентификаторы заклинаний, которые необходимо удалить при срабатывании этого события"
+wizard.advanced.add_spell,Добавить
+wizard.advanced.summary,Резюме:
+wizard.summary.spell,Заклинание
+wizard.summary.actor,Актёр
+wizard.summary.timing,График
+wizard.summary.shape,Форма
+wizard.summary.duration,Продолжительность
+wizard.summary.seconds,секунды
+
+# =============================================================================
+# Auto Annotations Panel - Trigger Config
+# =============================================================================
+Trigger When,Срабатывание при
+Trigger Mode,Режим срабатывания
+On Applied,О прикладной
+During Debuff,Во время действия дебаффа
+During Buff,Во время действия эффекта «Бафф»
+On End,На конец
+Fixate,Фиксировать
+Tether,Tether
+On Cast Start,При запуске каста
+On Cast Success,Об успехе сериала «Cast»
+During Cast,В процессе съёмки
+Pool Interval (sec),Интервал опроса пула (сек.)
+After Cast (sec),Время после заливки (сек)
+Follow Actor,Подписаться на актера
+Leave Trail,Оставить след
+On Spawn,О Spawn
+On Death,О смерти
+On Actor Death,О смерти актёра
+Disappear Immediately,Немедленно исчезнуть
+Persist at Death Spot,Оставаться на месте гибели
+Fade Over Time,Постепенное затухание
+Trail Interval (sec),Интервал между отметками (сек)
+Single annotation when debuff is first applied,Однократная аннотация при первом наложении дебаффа
+Annotation follows the debuffed player while active,"Пока аннотация активна, она следует за игроком, на которого наложен дебафф"
+Single annotation at player's position when debuff ends,Однократное отображение подсказки на позиции игрока по окончании действия дебаффа
+Fixate Line,Линия фиксации
+Line connecting source NPC to target player (updates every 250ms),"Линия, соединяющая NPC-источник и целевого игрока (обновляется каждые 250 мс)"
+Anchor: Source NPC to Target Player,Анкер: NPC-источник — целевой игрок
+Line automatically connects the debuff source (NPC) to the debuff target (player),Линия автоматически соединяет источник дебаффа (НПЦ) с объектом дебаффа (игроком)
+Shape: Line (required for Fixate),Форма: Линия (обязательно для функции «Фиксация»)
+Thickness of the fixate line,Толщина линии фиксации
+Single annotation when buff is first applied,Однократная аннотация при первом применении буфера
+Annotation follows the buffed enemy while active,"Пока аннотация активна, она следует за усиленным противником"
+Single annotation at enemy's position when buff ends,Однократная отметка на позиции противника по окончании действия усиления
+Annotation appears at actor's position as timeline progresses,По мере продвижения временной шкалы аннотация появляется в точке нахождения персонажа
+Leave persistent annotations at actor's position over time (void zone trail),Оставлять постоянные аннотации в точке нахождения участника в течение определенного времени (след в зоне отсутствия)
+Single annotation when actor first appears,Однократная аннотация при первом появлении участника
+Single annotation when actor dies,Однократная аннотация при смерти участника
+How often to leave a new annotation (in seconds),С какой периодичностью добавлять новую аннотацию (в секундах)
+Annotation vanishes when actor dies,Аннотация исчезает после смерти персонажа
+Annotation stays at death location (uses duration setting),Аннотация остается в месте смерти (используется настройка продолжительности)
+Annotation fades out after actor dies,Аннотация исчезает после смерти актера
+
+# Trigger Config - Headers and Preview
+Editing Actor: %s,Редактор: %s
+Configure Actor: %s,Настройка участника: %s
+Editing: %s,Редактирование: %s
+Configure: %s,Настройка: %s
+
+# Trigger Config - Lead Time
+Lead Time (sec),Время выполнения (сек)
+Fire annotation this many seconds BEFORE the cast completes,Поместить аннотацию «Fire» за столько-то секунд ДО завершения заклинания
+Fire annotation this many seconds BEFORE the event occurs,Поместить метку «Пожар» за столько-то секунд ДО наступления события
+
+# Trigger Config - Anchor/Position
+Place at,Разместить в
+At Buffed Unit,В «Buffed Unit»
+At Buffed Unit (Facing),В «Buffed Unit» (лицевая сторона)
+Use 'Facing' to orient shapes in the direction the enemy is looking,"Используйте параметр «Ориентация», чтобы повернуть фигуры в сторону, куда смотрит противник"
+
+# Trigger Config - Trigger Types
+Trigger: On Cast Success,Триггер: при успешном заклинании
+Trigger: On Damage,Триггер: при получении урона
+Trigger: On Damage Taken,Триггер: при получении урона
+
+# Trigger Config - Cast Timing Tooltips
+Single annotation when cast begins (interruptible casts only),"Однократная аннотация при начале преобразования (только для преобразований, которые можно прервать)"
+Single annotation when spell cast completes,Однократная аннотация по завершении произнесения заклинания
+Spawn pool annotations at caster position at intervals during cast,Анотации пула появления в точке нахождения заклинателя с определенной периодичностью во время произнесения заклинания
+
+# Trigger Config - Dimensions
+Radius (yards),Радиус (ярды)
+Width (yards),Ширина (ярды)
+Length (yards),Длина (ярды)
+Height,Высота
+Angle (deg),Угол (град.)
+Rotation (deg),Угол поворота (град.)
+Ray Length (yards),Длина луча (ярды)
+Ray Width (yards),Ширина луча (ярды)
+Points,Баллы
+
+# Trigger Config - Stack Filtering
+Stack Filtering,Фильтрация стека
+Min Stacks,Минимальные стеки
+Max Stacks,Макс Стакс
+No min,Без минимального количества
+No max,Без ограничения
+Only show annotation when aura has at least this many stacks (0 = no minimum),"Показывать аннотацию только в том случае, если у ауры есть как минимум столько стеков (0 = без минимального количества)"
+Only show annotation when aura has at most this many stacks (0 = no maximum),"Показывать аннотацию только в том случае, если у ауры не более этого количества стеков (0 = без ограничения)"
+Stack Colors,Цвета стека
+Change annotation color based on stack count. Higher thresholds take priority.,Изменить цвет аннотации в зависимости от количества стеков. Более высокие пороговые значения имеют приоритет.
+Color Thresholds,Пороговые значения цвета
+Number of stack-based color changes (0 = use base color only),Количество смен цвета на основе стека (0 = использовать только базовый цвет)
+At %d+ stacks,На стеках %d+
+at %d+ stacks,в стеках %d+
+Higher thresholds take priority over lower ones,Более высокие пороговые значения имеют приоритет над более низкими
+
+# Trigger Config - Visual Styles
+Default solid fill,Заливка по умолчанию
+Diagonal stripes (uncertainty indicator),Диагональные полосы (индикатор неопределённости)
+Cross-hatch pattern (uncertainty indicator),Узор в виде перекрёстных линий (индикатор неопределённости)
+Animated ripples expanding outward (projectile/wave effect),"Анимированные круги, распространяющиеся наружу (эффект «снаряд»/«волна»)"
+Spiral pattern from center (saturation shift),"Спиральный узор, исходящий из центра (сдвиг насыщенности)"
+Stripe Spacing,Междурядье
+Distance between stripes/hatches in yards,Расстояние между полосами/штриховками в ярдах
+Ring Speed,Скорость вращения кольца
+How fast rings expand outward,С какой скоростью кольца расширяются наружу
+Ring Count,Количество колец
+Number of visible ring cycles,Количество видимых циклов колец
+
+# Trigger Config - Motion
+Static annotation (no motion),Статическая аннотация (без движения)
+Annotation rotates around its center point,Аннотация вращается вокруг своей центральной точки
+Annotation moves from start to end position over time,Аннотация с течением времени перемещается от начальной позиции к конечной
+Spawns small circles within annotation bounds (swirlie effect),Создает небольшие кружки в пределах границ аннотации (эффект «вихря»)
+Positive = clockwise," Отрицательный = против часовой стрелки, положительный = по часовой стрелке, отрицательный = против часовой стрелки"
+Horizontal distance to travel (positive = East),"Горизонтальное расстояние, которое необходимо преодолеть (положительное значение = на восток)"
+Vertical distance to travel (positive = North),"Вертикальное расстояние, которое необходимо преодолеть (положительное значение = север)"
+How long it takes to reach the destination,Сколько времени занимает путь до места назначения
+Annotation stays at final position after reaching destination,Аннотация остается в конечной позиции после достижения пункта назначения
+Annotation disappears when it reaches the destination,Аннотация исчезает по достижении места назначения
+
+# Trigger Config - Negation
+Negation,Отрицание
+Acts as Negation Zone,Выполняет функцию зоны отрицания
+When this annotation fires," она навсегда удаляет совпадающие аннотации в пределах своего радиуса; когда эта аннотация срабатывает, она навсегда удаляет совпадающие аннотации в пределах своего радиуса"
+Spells to Negate:,"Заклинания, которые необходимо нейтрализовать:"
+Enter spell ID of annotations to clear when this fires,"Введите идентификатор заклинания аннотаций, которые необходимо удалить при срабатывании этого события"
+No spells configured - add spell IDs to negate,Заклинания не настроены — добавьте идентификаторы заклинаний для отмены
+
+# Trigger Config - Buttons
+Update Trigger,Триггер обновления
+Create Trigger,Создать триггер
+Select a spell or actor to configure,Выберите заклинание или персонажа для настройки
+Annotation follows the buffed unit while active,"Пока аннотация активна, она следует за усиленной единицей"
+Single annotation at unit's position when buff ends,Однократная аннотация в точке нахождения объекта по окончании буфера
+
+# Shared
+Color,Цвет
+Shape,Форма
+%.0f deg,%.0f градусов
+%.1f yards,%.1f ярдов
+%.1f yards/s,%.1f ярдов/с
+Adds a bright glow effect at edges,Добавляет эффект яркого сияния по краям
+Adds a darker border around the shape,Добавляет более тёмную рамку вокруг фигуры
+Angle,Угол
+Annotation Properties,Свойства аннотации
+Color gradient from center to edge,Цветовой градиент от центра к краю
+Delete,Удалить
+Duration (sec),Продолжительность (сек)
+Duration,Продолжительность
+Edge Fade,Стрижка «Эдж-фейд»
+Edge Glow,Свечение по краям
+Encounter,Встреча
+Fade Width,Ширина затухания
+Glow Intensity,Интенсивность свечения
+Gradient,Градиент
+Hatched,Вылупившийся
+No annotation selected,Аннотация не выбрана
+Outline Width,Ширина контура
+Outline,План
+Ripple Rings,Кольца с рябью
+Rotation,Вращение
+Soft alpha fade at edges for a smoother look,Мягкое альфа-затухание по краям для более плавного вида
+Solid,Твёрдый
+Striped,В полоску
+Swirl,Вихрь
+Timed,По времени
+Visual Polish,Визуальный польский
+Visual Style,Визуальный стиль
+Add,Добавить
+
+# Facing Offset
+Facing Offset (deg),Угол смещения (град.)
+Rotate the shape from the actor's facing direction. 0=forward," 90 = вправо, -90 = влево, 180 = назад; поворот фигуры относительно направления, в которое смотрит персонаж. 0 = вперёд, 90 = вправо, -90 = влево, 180 = назад"
+
+# Spell Context Menu
+context_menu.open_wowhead,Открыть на Wowhead
+context_menu.open_spell_settings,Открыть настройки заклинаний
+context_menu.open_auto_annotations,Открыть в разделе «Автоматические аннотации»
+context_menu.add_to_raid_note,Добавить в заметку о рейде
+
+# CJK Font Settings
+settings.enable_cjk_fonts,Включить шрифты CJK (китайские/корейские)
+tooltip.cjk_fonts,Включить поддержку текста на китайском и корейском языках. Отключение этой функции позволяет сэкономить около 100 МБ оперативной памяти.
+settings.requires_restart,требуется перезапуск
+
+# =============================================================================
+# Overlay View Modes
+# =============================================================================
+overlay.view_mode.current_pull,Текущее усилие тяги
+overlay.view_mode.dungeon,Подземелье
+overlay.view_mode.trash_overall,Весь мусор
+overlay.view_mode.session,Сессия
+
+# Meter tooltip and breakdown strings
+breakdown.raw_tooltip,Урон/исцеление до поглощения
+breakdown.raw_tooltip_crit1,Для критических ударов исходный урон оценивается
+breakdown.raw_tooltip_crit2,из расчёта множителя критического удара 200%.
+format.effective_total_overheal,Эффективно: %s  |  Всего: %s (%.1f%% избыточного исцеления)
+format.total_persec,Всего: %s  |  %s: %s
+format.hits_crits,Удары: %u (Криты: %u)
+meter.click_hint,"ЛКМ — выбрать, ПКМ — развернуть"
+meter.click_hint_select,"Щелкните левой кнопкой мыши, чтобы выделить"
+meter.show_who_damaged_fmt,"Показать, кто повредил %s"
+meter.damage_avoided_fmt,Предотвращённый урон: %s
+meter.click_breakdown_fmt,"Нажмите, чтобы увидеть разбивку урона %s"
+meter.tip_total_fmt,Итого: %s
+meter.tip_effective_fmt,Вступает в силу: %s
+meter.tip_hits_fmt,Просмотры: %u
+meter.tip_crits_fmt,Критические удары: %u (%.1f%%)
+meter.tip_max_hit_fmt,Максимальный хит: %s
+
+# Settings import/export status messages
+settings_export.exported_fmt,Экспортировано категорий: %zu в %s
+settings_export.export_failed,Ошибка экспорта
+settings_export.imported_fmt,Импортировано категорий: %zu
+settings_export.import_failed,Ошибка импорта
+settings_export.file_not_found,Файл не найден
+settings_export.no_valid_settings,В файле нет корректных настроек
+settings_export.found_fmt,Найдено категорий: %zu
+settings_export.not_in_file,(нет в файле)
+settings_export.invalid_filename,Используйте простое имя файла без папок и специальных символов
+settings_export.file_exists_fmt,%s уже существует — выберите другое имя
+
+# Playback shortcut hints
+playback.tooltip.play_pause,Воспроизведение/пауза (Пробел)
+playback.tooltip.skip_back,Назад на 5 секунд (Q)
+playback.tooltip.skip_forward,Вперёд на 5 секунд (E)
+playback.tooltip.speed,Скорость воспроизведения (клавиши 1-5 — предустановки)
+
+# Raid notes crash recovery and empty-state hints
+raidnotes.recovered_notes,Восстановлены несохранённые заметки из прошлого сеанса
+raidnotes.restore,Восстановить
+raidnotes.discard,Удалить
+empty.select_encounter_hint,Выберите бой или дождитесь начала боя
+empty.scrub_hint,В этом отрезке времени пока ничего не записано
+
+# Death recap window
+death_recap.title,Анализ смертей
+death_recap.count_fmt,Смертей: %zu
+death_recap.deaths,Смертельные случаи
+death_recap.no_deaths,Смертельных случаев не зафиксировано.
+death_recap.select_death,Выберите случай смерти для анализа.
+death_recap.died_at_fmt,Умер в %s
+death_recap.killing_blow,Смертельный удар:
+death_recap.hide_hits_under,Скрыть результаты поиска под
+death_recap.max_hp_fmt,%.0f%% максимальное количество HP
+death_recap.hide_hits_tooltip,"Фильтрует приведенный ниже список событий. Незначительные удары, не имеющие значения для последующего анализа, скрываются, если наносимый ими урон не превышает указанного процента от максимального запаса здоровья игрока."
+death_recap.hp_timeline,Хронология событий HP (30-секундный отрезок)
+death_recap.no_hp_data,В этом окне данные о мощности не зафиксированы.
+death_recap.axis_death,Смерть
+death_recap.events_fmt,События  (%zu)
+death_recap.events_filtered_fmt,События  (показано %zu из %zu)
+death_recap.no_events,За последние 30 секунд не было случаев нанесения урона или исцеления.
+death_recap.col_time,Время
+death_recap.col_ability,Способность
+death_recap.col_amount,Сумма
+
+# Landing page extras toggle
+landing.extras_show,О программе и партнёры
+landing.extras_hide,Скрыть о программе и партнёров
+
+# Landing page links to the project page (project_url in awowlab.config.json)
+landing.report_issue,Сообщить о проблеме
+landing.releases,Пресс-релизы
+landing.translate_hint,Отредактируйте файл вашего языка в папке AwowLab/data/lang и отправьте пулл-реквест
+
+# Mob weighting panel
+mobweight.title,Взвешивание монстров
+mobweight.enabled,Включить взвешивание монстров
+mobweight.explainer,Урон по взвешенным монстрам учитывается в счетчиках лишь в этой доле
+mobweight.active_hint,Взвешивание монстров активно
+mobweight.reset_all,Сбросить все веса
+mobweight.not_in_encounter,Сохранённые веса вне этого боя
+mobweight.refresh,Обновить
+mobweight.hits_fmt,%zu попаданий
+
+# Boss phase tracking and meter report
+context_menu.set_phase_trigger,Начинает новую фазу здесь
+context_menu.remove_phase_trigger,Убрать триггер фазы
+meter.phase_all,Все фазы
+meter.report,Отчёт
+meter.report_tooltip,Скопировать однострочную сводку для вставки в чат
+meter.report_copied,Скопировано!
+
+# Boss phase editor
+phases.title,Фазы босса
+phases.kind_cast,Первое применение
+phases.kind_time,В
+phases.kind_emote,Эмоция
+phases.not_this_pull,не достигнуто в этой попытке
+phases.add_time,Добавить разделение по времени
+phases.time_hint,м:с
+phases.emotes_header,Эмоции этой попытки
+phases.split_here,Разделить здесь
+phases.no_emotes,В этой попытке нет эмоций
+phases.no_rules,Для этого боя ещё нет правил фаз
+phases.casts_header,Способности босса в этой попытке
+phases.offset_label,смена
+meter.class_colors,Цвет полос по классу
+defensives.title,Защитные действия (последние 10 секунд)
+defensives.pressed_fmt,нажал %d перед смертью
+defensives.active_at_death,действовавший на момент смерти
+defensives.none,не используется
+settings.tracked_defensives,Оборонительные инструменты с фиксированной доходностью
+settings.tracked_defensives_hint,"Идентификаторы заклинаний, которые нужно проверить в отчёте о смерти"
+settings.add_spell_id,Добавить ID заклинания
+settings.add,Добавить
+settings.remove,Удалить
+
+# =============================================================================
+# BENCHMARK - comparing a pull against a reference log
+# =============================================================================
+benchmark.title,Табель успеваемости
+benchmark.headline,%s против %s
+benchmark.window_died,Умер в результате пореза в %s – %s
+benchmark.window_survived,Полный ход — %s
+benchmark.stat.dps,Урон в секунду
+benchmark.stat.cpm,Количество отливок в минуту
+benchmark.stat.burst,DPS с учетом времени восстановления
+benchmark.stat.filler,Заполнитель DPS
+benchmark.attribution.burst,Большая часть отставания приходится на время действия таймеров — %s отстает в течение этого периода.
+benchmark.attribution.filler,"Большая часть отставания приходится на периоды, когда время восстановления не действует — %s отстает в течение этого интервала."
+benchmark.tab.findings,Различия
+benchmark.tab.cooldowns,Время восстановления
+benchmark.tab.throughput,Пропускная способность
+benchmark.tab.timeline,Хронология событий
+benchmark.weight.major,Большой
+benchmark.weight.notable,Примечательно
+benchmark.weight.info,Несовершеннолетний
+benchmark.later,позже
+benchmark.earlier,ранее
+benchmark.no_findings,Значимых различий не обнаружено
+benchmark.no_findings_hint,В течение этого периода ваш пул точно следовал за эталоном.
+benchmark.no_cooldowns,Ни в одном из двух подтягиваний не было зафиксировано использования способностей с временем восстановления.
+benchmark.cd_row,%s (используйте %d)
+benchmark.section.burst,Пока действовали периоды восстановления
+benchmark.section.filler,В перерывах между перезарядками
+benchmark.throughput_hint,Доля каждого рывка в разбивке по заклинаниям.
+benchmark.unknown_spell,Заклинание %u
+benchmark.unknown_npc,Враг %u
+benchmark.finding.cd_delayed,%s оказался %.1fs %s по сравнению с эталоном
+benchmark.finding.cd_weaker,%s выполнил %s пока он работал — эта ссылка выполнила %s
+benchmark.finding.cd_unused,Использовано %s %d раз; ваш пулл не
+benchmark.finding.cd_fewer,%s использовался %d раз — в источнике он упоминается %d
+benchmark.finding.filler_dps,В промежутках между перезарядками вы набирали %s в секунду — в справочнике указано %s
+benchmark.finding.filler_idle,%.0f%% в течение этого промежутка времени между перезарядками не выполнялось никаких заклинаний — ссылка была на %.0f%%
+benchmark.finding.cast_rate,%s запускалось %.1f раз в минуту — контрольный запуск выполнялся %.1f раз
+benchmark.finding.damage_taken,Вы взяли %s из %s — ссылка указала на %s
+benchmark.finding.target,%s принял на себя %.0f%% вашего урона — ссылка поместила туда %.0f%%
+benchmark.finding.proc_wasted,"%s истек, так и не будучи использованным %d раз(ов)"
+benchmark.finding.uptime,%s было вверх %.0f%% большую часть времени — ориентир оставался %.0f%%
+benchmark.finding.resource_capped,Вы пробыли на максимальном уровне ресурсов в течение %.0f секунд
+benchmark.finding.uncomparable,Эту фазу нельзя было сравнить
+benchmark.blocked.generic,Это сравнение пока не может быть выполнено
+benchmark.blocked.unconfirmed,Некоторые заклинания ещё предстоит классифицировать
+benchmark.blocked.unconfirmed_hint,"При сравнении используются ваши классификации, чтобы определить, что считается временем восстановления. Система не будет делать предположений."
+benchmark.blocked.spec,Различные специализации
+benchmark.blocked.spec_hint,"Два устройства нажимают разные кнопки по разным причинам, поэтому их сравнение не имело бы смысла."
+benchmark.blocked.encounter,Различные встречи
+benchmark.blocked.phases,Изменились фазовые разделители
+benchmark.blocked.phases_hint,"Эта эталонная запись была вырезана с использованием других правил фаз. Восстановите её, чтобы сравнить с вашими текущими разбиениями."
+benchmark.blocked.no_overlap,Нет сопоставимого окна
+benchmark.blocked.pending_count,%d заклинание (заклинания) ждут вас
+benchmark.action.open_replay,Открыть повтор
+benchmark.action.change_mentor,Изменить ссылку
+benchmark.action.review,Просмотреть классификации
+benchmark.action.dismiss,Отклонить
+
+# =============================================================================
+# BENCHMARK - spell classification review
+# =============================================================================
+classify.title,Классификация заклинаний
+classify.subtitle,"Заклинания, используемые этим %s"
+classify.pending,%d по-прежнему требуется ваше подтверждение
+classify.all_done,Все подтверждены
+classify.explainer,"При сравнении эти данные используются для того, чтобы определить, что считается фазой восстановления, а что — заполнителем. Рекомендации основаны на частоте применения каждого заклинания — исправьте всё, что кажется неверным, а затем подтвердите."
+classify.tab.spells,В ролях
+classify.tab.auras,Буффы
+classify.show_confirmed,Концерт уже подтвержден
+classify.confirm,Подтвердить
+classify.confirmed,Подтверждено
+classify.accept_all,Принять все предложения
+classify.close,Закрыть
+classify.empty,"Пока нет ничего, что можно было бы классифицировать"
+classify.empty_hint,Сначала загрузите журнал справочной информации — тогда его заклинания появятся здесь.
+classify.no_pending_spells,Нет ожидающих литейных форм
+classify.no_pending_auras,Нет ожидающих усилений
+classify.no_pending_hint,"Установите флажок «Показать уже подтвержденные», чтобы вернуться к ранее принятым решениям."
+classify.evidence.cadence,"%d заклинаний — %.1f в минуту, с интервалом примерно %.0f с"
+classify.evidence.irregular,%d — отливки без равномерного расстояния между ними
+classify.evidence.single,"Один раз набрали — слишком мало, чтобы судить о закономерности"
+classify.evidence.plain,%d броски
+classify.evidence.aura,"Время применения %d — до %.0f%% момента натяжения, примерно по %.1f с каждый раз"
+classify.role.filler,Заполнитель
+classify.role.proc,Процесс-потребитель
+classify.role.spender,Потребитель ресурсов
+classify.role.major,Длительное время восстановления
+classify.role.minor,Незначительное время восстановления
+classify.role.defensive,Оборонительный
+classify.role.utility,Утилита
+classify.role.ignored,Игнорировать это заклинание
+classify.role.none,Не секретно
+classify.aura.proc,Проц
+classify.aura.maintenance,Так держать!
+classify.aura.cdbuff,Усиление времени восстановления
+classify.aura.unimportant,Неважно
+classify.aura.none,Не секретно
+
+# =============================================================================
+# LANDING - compare pulls
+# =============================================================================
+btn.compare_live,Смотреть в прямом эфире
+settings.self_character,Имя вашего персонажа
+settings.self_character_hint,"Это нужно, чтобы при сравнении результатов система могла определить, какой из игроков — это вы."
+overlay.benchmark_result,против %s: %+.0f урона в секунду
+overlay.benchmark_findings,%d различия — откройте табель успеваемости для просмотра подробной информации
+btn.save,Сохранить
+landing.compare,Сравнение тяговых усилий
+landing.compare_desc,"Сравните свой удар с ударом игрока, стиль которого вы пытаетесь повторить"
+tooltip.landing_compare,Выберите два кэшированных журнала для сравнения или просматривайте журнал в режиме реального времени и получайте отчет после каждой очистки.
+btn.prepare_mentor,Подготовьтесь
+btn.compare_report,Отчет
+btn.back,Назад
+btn.cancel,Отмена
+tooltip.needs_mentor,"Сначала подготовьте образец — выберите журнал и игрока, которого хотите воспроизвести."
+mentorpicker.title,Сравнение тяговых усилий
+mentorpicker.step_encounter,Какая встреча?
+mentorpicker.step_mentor,Какой справочник для %s?
+mentorpicker.step_fight,Какое усилие тяги следует измерить относительно %s?
+mentorpicker.mentor_detail,%s — из %s
+mentorpicker.none_prepared,Ссылки пока не подготовлены
+mentorpicker.none_prepared_hint,"Используйте функцию «Подготовить», чтобы выбрать журнал и игрока, которого вы хотите скопировать."
+mentorpicker.no_fights,Для этого боя нет данных из кэша
+mentorpicker.no_fights_hint,"Сначала загрузите журнал этого босса, и он появится здесь."
+mentorpicker.unknown_encounter,Встреча %u
+benchmark.prepare_prompt,"Выберите игрока, которого хотите скопировать"
+benchmark.prepare_pick_player,"Выберите исполнителя в списке актеров, а затем нажмите «Подтвердить» здесь."
+benchmark.prepare_use,В качестве ссылки используйте %s
+prepare.title,Подготовить справочную информацию
+prepare.subtitle,%s — %s
+prepare.explainer,"Выберите игрока, за которым хотите следовать. Его действия станут эталоном, по которому будет оцениваться каждый последующий бой."
+prepare.no_players,В этом журнале не найдено ни одного игрока
+prepare.no_players_hint,В журнале не должно содержаться сведений о комбатантах.
+prepare.unknown_spec,Специализация неизвестна
+classify.unknown_spec,Специализация неизвестна
+mentorpicker.needs_download,еще не загружено
+prepare.source_cache,"Из отчета, сохраненного в кэше"
+prepare.source_local,Из отчета о боевых действиях на местном уровне
+benchmark.cd_window_detail,Глобальные переменные %s и %d
+benchmark.strip.globals,Количество нажатий на глобальные переключатели в каждом окне
+benchmark.strip.dps,Урон в секунду на одно окно
+classify.filter_hint,Поиск заклинаний
+benchmark.action.review_classes,Изменить роли заклинаний
+preview.action.reopen_prepare,Изменить подготовленный журнал
+benchmark.stale_rulings,"Роли заклинаний изменились с момента создания этого сравнения. Создайте его заново, чтобы увидеть актуальные данные."
+benchmark.live_waiting,Отслеживание журнала на предмет попытки доступа к %s
+benchmark.live_reading,Считывание данных из %d...
+benchmark.live_showing,Отображение выдержки %d
+benchmark.live_skipped,Это ощущение было несравнимо — с нетерпением жду следующего
+classify.role.trinket,"Аксессуар, действующий при использовании"
+classify.role.cantrip,Неглобальное (заклинание)
+classify.role.melee,Автоматическая атака
+benchmark.action.rebuild,Восстановить сейчас
+benchmark.cd_show_buffs,"Показать любителей, активных в каждом окне"
+benchmark.cd_window,(%s – %s)
+benchmark.cd_output,%s урон (%s DPS) в течение %d глобальных интервалов
+benchmark.cd_buff,%s (%.0fс)
+benchmark.melee,Рукопашный бой
+classify.evidence.faster_than_gcd,"%d пролетает на расстоянии примерно %.2f — слишком быстро, чтобы успеть нажать кнопку"
+classify.evidence.auto_attack,%d удары при автоматической атаке
+classify.spell_id,(#%d)
+classify.section.casts,В ролях
+classify.section.buffs,Буффы
+preview.title,Справочный материал подготовлен
+preview.hint,"Именно по этому критерию будет проводиться сравнение. Если какое-то число здесь выглядит неверным, вероятно, заклинание было расценено неверно."
+preview.tab.summary,Резюме
+preview.tab.cooldowns,Периоды ожидания
+preview.tab.spells,В ролях
+preview.player,Игрок
+preview.encounter,Встреча
+preview.duration,Длина тяги
+preview.damage,Нанесенный ущерб
+preview.dps,Урон в секунду
+preview.taken,Полученный урон
+preview.globals,Нажаты глобальные переменные
+preview.globals_per_min,Глобалов в минуту
+preview.per_minute,%.1f
+preview.major_cooldowns,Основные периоды восстановления
+preview.cd_uses,Периоды ожидания
+preview.ignored,Игнорируемые заклинания
+preview.off_global,"Заклинания, не относящиеся к глобальному миру"
+preview.no_cooldowns_warning,"Ни одно заклинание не относится к категории «основных заклинаний с длительным временем восстановления», поэтому весь раунд считается «заполнителем». Укажите его в разделе «Изменить роли заклинаний», чтобы увидеть разбивку по всплескам урона."
+preview.unresolved_phases,"Правила фазы, которые так и не сработали: %s"
+preview.cd_hint,Каждое окно будет отображаться рядом с вашим в порядке следования.
+preview.cd_detail,%s - %s  |  урон %s (%s DPS) в течение %d глобальных интервалов
+preview.no_cd_uses,Отсутствие периодов ожидания
+preview.no_cd_uses_hint,В этом раунде не было задействовано ни одного умения с длительным временем восстановления.
+preview.no_spells,Записей о гипсах нет
+preview.spell_row,%d отливов (%.1f/мин)
+preview.action.accept,Выглядит правильно
+classify.window_pair,"Применяет бафф с таким же названием — его действие продолжается до тех пор, пока этот бафф не исчезнет"
+classify.window_pair_idle,"Кроме того, предоставляет одноименный бафф. Считайте это временем восстановления, в течение которого можно использовать этот бафф."
+classify.window_pair_buff,Предоставляется персонажами с одноименным названием — этот бафф отмечает это окно
+classify.aura.major,Основное время восстановления (в журнале нет записи о заклинании)
+benchmark.tab.breakdown,Разбивка
+benchmark.breakdown_hint,"С уважением, в связи с данным запросом."
+benchmark.section.targets,Урон по цели
+benchmark.section.execution,Ущерб за одно нажатие
+benchmark.section.time,Куда ушло время
+benchmark.execution_hint,Урон за одно нажатие.
+benchmark.col.target,Цель
+benchmark.col.spell,Заклинание
+benchmark.col.spent,Затраченное время
+benchmark.col.delta,Разница
+benchmark.row.idle,"В режиме ожидания (без заклинаний, без GCD)"
+benchmark.timeline_hint,DPS за последние 30 секунд.
+benchmark.timeline_worst,Наибольший перепад высоты на участке от %s до %s
+benchmark.cast_time_suffix, (в ролях %.1f)
+benchmark.burst_hint,Нажатия кнопок с одинаковым временем восстановления считаются одним окном и сопоставляются по порядку.
+benchmark.burst_row,Окно %d — %s
+benchmark.strip.gap,Общий ущерб сзади
+benchmark.source_share,%s  (%.0f%%)
+benchmark.no_sources,Источники повреждений не зафиксированы
+benchmark.no_sources_hint,"Переделайте формулу, чтобы учитывать урон каждого заклинания."
+benchmark.window.all,Полный ход
+benchmark.window.entry,Окно %d — %s
+benchmark.window.casts_heading,Касты в этом окне
+benchmark.window.cast_count,%s × %d
+benchmark.window.no_casts,В этом окне ничего не отображается
+benchmark.cd_show_blacklisted,Включить в черный список
+mentorpicker.delete_hint,Удалить эту ссылку
+mentorpicker.delete_confirm,Удалить эту подготовленную ссылку? Классификация заклинаний для этой спецификации сохраняется.
+mentorpicker.delete_yes,Удалить
+benchmark.differences_hint,"Ваш текст сверху, ссылка — ниже."
+benchmark.diff.output,Вывод
+benchmark.diff.weighted,Ущерб (взвешенный)
+benchmark.diff.raw,Урон (непересчитанный)
+benchmark.diff.burst,Максимальный урон в секунду
+benchmark.diff.filler,Заполнитель DPS
+benchmark.diff.cooldowns,Использование времени восстановления
+benchmark.diff.cd_count,Используемые окна
+benchmark.diff.cd_uptime,Общее время перезарядки
+benchmark.diff.survival,Выживание
+benchmark.diff.taken,Полученный урон
+benchmark.diff.defensives,Оборонительные позиции оказались под давлением
+benchmark.diff.mitigated,"Урон, поглощённый защитой"
+benchmark.diff.casts,Число заклинаний
+benchmark.section.taken_by_spell,"Урон, полученный в результате действия способности"
+benchmark.section.downtime,Время простоя
+benchmark.row.downtime,"Время, проведённое в безделье"
+benchmark.row.downtime_burst,Время простоя во время периода восстановления
+benchmark.row.downtime_filler,"Время простоя, не связанное с периодами восстановления"
+benchmark.downtime_value,%s (%.0f%%)
+benchmark.weight_suffix,  x%.0f%%
+benchmark.window_target,%s %s
+benchmark.tab.movement,Движение
+benchmark.movement_hint,В режиме «Относительный» босс располагается по центру.
+benchmark.movement_relative,По отношению к начальнику
+benchmark.movement_distance,Пройденное расстояние
+benchmark.movement_yards,%.0f ярдов
+benchmark.no_positions,Данные о местоположении отсутствуют
+benchmark.no_positions_hint,"Измените кадр, чтобы запечатлеть движение."
+benchmark.movie.play,Играть
+benchmark.movie.pause,Пауза
+benchmark.movie.restart,Перезапуск
+benchmark.movie.speed,%.0fx
+benchmark.trail.full,Полный путь
+benchmark.trail.5s,Последние 5 секунд
+benchmark.trail.10s,Последние 10 секунд
+benchmark.trail.20s,Последние 20 секунд
+benchmark.trail.30s,Последние 30 секунд
+benchmark.composition.other,Всё остальное
+benchmark.composition.shares,%.0f%% / %.0f%%
+benchmark.downtime_hint,"Пробелы, при которых не происходит отправка трансляции. Причины указываются только в тех случаях, когда они отражены в журнале."
+benchmark.downtime_count,%s через промежутки %d
+benchmark.downtime_worst,Наибольшие промежутки для %s
+benchmark.downtime_gap,%s  -  с%.1f
+benchmark.downtime_in_cd,в период ожидания
+benchmark.downtime_cancelled,отменено %s
+benchmark.downtime_none,"Отклонений, заслуживающих упоминания, нет"
+benchmark.composition.header,%s / %s
+benchmark.gap_seconds,%.1fs
+classify.aura.channel,Канал (продолжается набор участников)
+benchmark.tab.damage,Повреждения
+benchmark.strip.cumulative,Накопленный урон
+benchmark.downtime_caveat,"Каналы отображаются как время простоя, если их усиление не классифицируется как «Канал». Умения, которые запускают глобальный таймер без регистрации времени заклинания, всегда будут отображаться таким образом."
+benchmark.section.phases,По этапам
+benchmark.phase_index,Фаза %d
+benchmark.phases_unresolved,Некоторые правила фаз никогда не срабатывали; эти фазы не сравниваются.
+benchmark.window_mentor_end,"Полный ход — %s, ограниченный эталоном"
+benchmark.verdict_behind,%.1f%% позади %s над сравниваемым окном
+benchmark.verdict_ahead,%.1f%% опережает %s в рамках сравниваемого окна
+benchmark.shortfall_heading,Откуда взялся этот пропущенный урон
+benchmark.shortfall_burst,%s в период действия времени восстановления
+benchmark.shortfall_filler,%s в перерывах между активациями
+benchmark.section.damage_taken,Полученный урон
+benchmark.not_used,не используется
+benchmark.vs,против %s
+prepare.step.spells,Заклинания
+prepare.step.phases,Этапы
+prepare.step.weights,Вес толпы
+prepare.spells_state,"%d вынесено решение, %d находится на рассмотрении"
+prepare.spells_review,Просмотреть заклинания
+prepare.spells_change,Просмотреть роли заклинаний
+prepare.spells_blocked,"Каждому заклинанию необходимо присвоить роль, прежде чем можно будет создать ссылку."
+prepare.phases_state,%d правила фаз
+prepare.weights_state,%d мобы с весом
+prepare.next,Далее
+prepare.back,Назад
+prepare.finish,Подготовьтесь
+
+# Auto-annotation wizard: source filter
+wizard.source.filter_label,Фильтр источника
+wizard.source.filter_any,Любой источник
+wizard.source.filter_creature,Конкретное существо
+wizard.source.filter_environment,Только окружающая среда
+wizard.source.filter_any_debuff_tip,Сопоставлять дебаффы из любого источника (по умолчанию)
+wizard.source.filter_creature_debuff_tip,"Учитывать только дебаффы, наложенные выбранным существом"
+wizard.source.filter_environment_debuff_tip,"Учитывать только дебаффы, накладываемые окружающей средой (без указания конкретного заклинателя)"
+wizard.source.filter_any_buff_tip,Сопоставлять баффы из любого источника (по умолчанию)
+wizard.source.filter_creature_buff_tip,Использовать усиления только от выбранного существа
+wizard.source.filter_environment_buff_tip,"Учитывать только усиления, получаемые из окружающей среды (без указания конкретного источника)"
+
+# Auto-annotation wizard: tether shapes
+wizard.shape.tether_dynamic_tip,"Фигура, соединяющая NPC-источник с целевым игроком (обновляется каждые 250 мс)"
+wizard.shape.tether_static_tip,Траектория движения от статичной позиции НПЦ (в момент начала действия дебаффа) до целевого игрока (обновляется каждые 250 мс)
+wizard.shape.tether_direction_tip,"Очертание линии от НПЦ к игроку. Рисуется конус у НПЦ, направленный в сторону игрока."
+wizard.shape.tether_thickness_tip,Толщина троса
+
+# Auto-annotation wizard: anchoring
+wizard.position.anchor_source_to_target,Анкер: NPC-источник — целевой игрок
+wizard.position.anchor_source_to_target_tip,Shape автоматически связывает источник дебаффа (НПЦ) с объектом дебаффа (игроком)
+wizard.position.anchor_static_to_target,Якорь: статическая передача от источника к целевому проигрывателю
+wizard.position.anchor_static_to_target_tip,"Фигура, проходящая от положения NPC в момент начала действия дебаффа (статическое) до цели дебаффа (игрока)"
+wizard.position.anchor_at_caster,Ведущий: В компании Caster
+wizard.position.anchor_at_caster_tip,Во время произнесения заклинания в точке нахождения заклинателя появляются лужи
+wizard.position.rotation_auto,Поворот: автоматический (в сторону цели)
+
+# Auto-annotation wizard: pool spawning
+wizard.advanced.pool_interval_tip,С какой периодичностью создавать новый пул во время выполнения заклинания (в секундах)
+wizard.advanced.pool_lead_tip,Начните создавать зоны появления за столько-то секунд ДО начала заклинания
+wizard.advanced.pool_trail_tip,Продолжать создавать зоны появления в течение такого-то количества секунд ПОСЛЕ завершения заклинания
+
+# Auto-annotation wizard: visual polish
+wizard.visual.polish,Визуальный польский
+wizard.visual.edge_fade,Стрижка с плавным переходом по краям
+wizard.visual.edge_fade_tip,Мягкое альфа-затухание по краям для более плавного вида
+wizard.visual.fade_width,Ширина затухания
+wizard.visual.outline,План
+wizard.visual.outline_tip,Добавляет более тёмную рамку вокруг фигуры
+wizard.visual.outline_width,Ширина контура
+wizard.visual.edge_glow,Свечение по краям
+wizard.visual.edge_glow_tip,Добавляет эффект яркого сияния по краям
+wizard.visual.glow_intensity,Интенсивность свечения
+wizard.visual.gradient,Градиент
+wizard.visual.gradient_tip,Цветовой градиент от центра к краю
+wizard.visual.dual_colors,Два цвета
+wizard.visual.use_secondary_color,Использовать дополнительный цвет
+wizard.visual.use_secondary_color_tip,"Используйте пользовательский цвет для градиентов, контуров и узоров вместо цветов, определяемых автоматически"
+wizard.visual.secondary_color,Вторичный цвет
+wizard.visual.use_inner_zone_color,Использовать цвет внутренней зоны
+wizard.visual.use_inner_zone_color_tip,"Иной цвет для центральной области (например, безопасная зона в механике погружения)"
+wizard.visual.inner_zone_color,Цвет внутренней зоны
+
+# Landing page: package a fight for AI analysis
+landing.package,Пакет для искусственного интеллекта
+landing.package_desc,"Экспорт боя в формате ZIP, который ИИ может прочитать и проанализировать"
+tooltip.landing_package,"Создает один бой в виде таблиц CSV и манифеста, сжатых в ZIP-архив, для передачи ИИ."
+btn.package_export,Выбери сражение
+btn.package_rankings,Рейтинги «Pull»
+tooltip.package_rankings,Извлекает список игроков с наивысшим рейтингом для данного босса и сохраняет результат. Требует одного запроса к API.
+btn.baseline_dungeon,Подземелья
+btn.baseline_raid,Рейд
+btn.baseline_dummy,Мишени-манекены
+btn.baseline_rebuild,Восстановить
+tooltip.baseline_dungeon,Выберите подземелье из текущего сезона и просмотрите лучшие прохождения.
+tooltip.baseline_raid,Выберите босса рейда из этого сезона и просмотрите список лучших результатов по его убийству.
+tooltip.baseline_dummy,Извлеките верхние записи для каждой целевой фиктивной конфигурации. По каждому целевому показателю отбор производится отдельно.
+tooltip.baseline_rebuild,"Обновить список сезонов. Требуется только после того, как патч вносит изменения в подземелья или рейды."
+
+# Baseline: spec, hero talent and content picker
+baseline.pick_title,Определить исходные показатели
+baseline.pick_desc,"Выберите вариант настроек, по которому будете оценивать. Таланты героя влияют на ротацию и использование времени восстановления, поэтому базовый вариант представляет собой смесь двух средних стилей игры, которыми никто не пользуется."
+baseline.class,Класс
+baseline.spec,Специализация
+baseline.hero,Талант героя
+baseline.hero_any,Каждое дерево
+baseline.hero_unknown,Для этой специализации не указано никаких талантов героя. Предоставленные данные о талантах могут быть устаревшими по сравнению с текущей версией игры.
+baseline.content,Содержание
+btn.baseline_start,Рейтинги «Pull»
+error.gpu_lost_title,Устройство графического вывода не найдено
+error.gpu_lost_message,"Графический драйвер перестал отвечать, и AwowLab вынужден закрыться. Возможно, поможет обновление драйвера графического процессора."
+warnings.title,Предупреждения при разборе
+warnings.heading,Предупреждение: обнаружены проблемы
+warnings.intro,В ходе работы были выявлены некоторые проблемы. Более подробную информацию см. ниже.
+warnings.details_fmt,Подробности (%zu предупреждение(я)):
+warnings.log_saved_fmt,Файл журнала сохранен в: %s
+warnings.report_hint,"Если такая ситуация будет повторяться, пожалуйста, сообщите об этом и приложите файл журнала."
+warnings.clear,Очистить предупреждения
+btn.ok,Хорошо

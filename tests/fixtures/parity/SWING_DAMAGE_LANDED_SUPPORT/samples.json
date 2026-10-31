@@ -1,0 +1,38 @@
+[
+{
+    "timestamp": 4302542,
+    "type": "damage",
+    "sourceID": 122,
+    "sourceInstance": 1,
+    "targetID": 117,
+    "targetInstance": 6,
+    "abilityGameID": 1,
+    "fight": 8,
+    "hitType": 0,
+    "amount": 0,
+    "isAoE": false,
+    "targetMarker": 8
+},
+{
+    "timestamp": 4352228,
+    "type": "damage",
+    "sourceID": 96,
+    "targetID": 4,
+    "abilityGameID": 1,
+    "fight": 8,
+    "hitType": 0,
+    "amount": 0,
+    "isAoE": false
+},
+{
+    "timestamp": 4496295,
+    "type": "damage",
+    "sourceID": 96,
+    "targetID": 189,
+    "abilityGameID": 1,
+    "fight": 8,
+    "hitType": 0,
+    "amount": 0,
+    "isAoE": false
+}
+]

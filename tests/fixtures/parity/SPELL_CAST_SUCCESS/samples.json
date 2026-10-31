@@ -1,0 +1,91 @@
+[
+{
+    "timestamp": 4294578,
+    "type": "cast",
+    "sourceID": 82,
+    "targetID": -1,
+    "abilityGameID": 431932,
+    "fight": 8,
+    "resourceActor": 1,
+    "classResources": [
+        {
+            "amount": 0,
+            "max": 120,
+            "type": 17
+        }
+    ],
+    "hitPoints": 30678337,
+    "maxHitPoints": 30678337,
+    "attackPower": 163116,
+    "spellPower": 12359,
+    "armor": 151603,
+    "absorb": 0,
+    "x": -336043,
+    "y": 201506,
+    "facing": -652,
+    "mapID": 2467,
+    "versatility": 2030,
+    "avoidance": 168,
+    "itemLevel": 728
+},
+{
+    "timestamp": 4405777,
+    "type": "cast",
+    "sourceID": 107,
+    "targetID": 79,
+    "abilityGameID": 77472,
+    "fight": 8,
+    "resourceActor": 1,
+    "classResources": [
+        {
+            "amount": 2848836,
+            "max": 2887500,
+            "type": 0,
+            "cost": 62500
+        }
+    ],
+    "hitPoints": 12604058,
+    "maxHitPoints": 18663639,
+    "attackPower": 34391,
+    "spellPower": 154692,
+    "armor": 125698,
+    "absorb": 0,
+    "x": -332231,
+    "y": 211069,
+    "facing": -519,
+    "mapID": 2467,
+    "versatility": 1781,
+    "avoidance": 0,
+    "itemLevel": 729
+},
+{
+    "timestamp": 4568968,
+    "type": "cast",
+    "sourceID": 148,
+    "sourceInstance": 3,
+    "targetID": 196,
+    "abilityGameID": 459753,
+    "fight": 8,
+    "resourceActor": 1,
+    "classResources": [
+        {
+            "amount": 0,
+            "max": 0,
+            "type": 1
+        }
+    ],
+    "hitPoints": 18717642,
+    "maxHitPoints": 18717642,
+    "attackPower": 287618,
+    "spellPower": 143809,
+    "armor": 71386,
+    "absorb": 0,
+    "x": -23435,
+    "y": 213459,
+    "facing": -648,
+    "mapID": 2469,
+    "versatility": 0,
+    "avoidance": 0,
+    "itemLevel": 728
+}
+]

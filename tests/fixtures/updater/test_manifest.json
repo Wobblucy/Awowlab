@@ -1,0 +1,15 @@
+{
+  "version": "0.99.0",
+  "updater_version": 2,
+  "files": [
+    {
+      "path": "AwowLab.exe",
+      "sha256": "abababababababababababababababababababababababababababababababab",
+      "size": 123,
+      "url": "https://example.invalid/AwowLab.exe"
+    }
+  ],
+  "archives": [],
+  "folders": [],
+  "optional_packs": {}
+}

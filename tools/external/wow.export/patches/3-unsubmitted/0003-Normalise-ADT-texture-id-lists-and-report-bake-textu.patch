@@ -1,0 +1,95 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Wobblucy <Wobblucy@users.noreply.github.com>
+Date: Sun, 2 Aug 2026 02:26:50 -0600
+Subject: [PATCH] Normalise ADT texture id lists and report bake texture source
+
+Terrain tiles baked to solid black with no diffuse layers resolved. The
+MDID/MHID readers return a bare number when a chunk holds a single entry,
+which every consumer treats as an empty list, so normalise both to arrays
+and tolerate either shape where the bake reads them.
+
+Replace the earlier vertex colour diagnostic, which showed those inputs
+were healthy, with one reporting whether the ids came from MDID, whether
+MTEX filenames are present instead, and how many MCLY layers the chunks
+declare.
+---
+ src/js/3D/exporters/ADTExporter.js | 35 +++++++++++++-----------------
+ src/js/3D/loaders/ADTLoader.js     |  8 +++++--
+ 2 files changed, 21 insertions(+), 22 deletions(-)
+
+diff --git a/src/js/3D/exporters/ADTExporter.js b/src/js/3D/exporters/ADTExporter.js
+index 9d69782..1d3aeff 100644
+--- a/src/js/3D/exporters/ADTExporter.js
++++ b/src/js/3D/exporters/ADTExporter.js
+@@ -1019,30 +1019,25 @@ class ADTExporter {
+ 						helper.setCurrentTaskName('Tile ' + this.tileID + ', building texture arrays');
+ 
+ 						// collect unique texture ids for arrays
+-						const unique_diffuse_ids = [...new Set(materialIDs.filter(id => id !== 0))];
+-						const unique_height_ids = [...new Set(heightIDs.filter(id => id !== 0))];
++						const asIDList = ids => (Array.isArray(ids) ? ids : (typeof ids === 'number' ? [ids] : []));
++						const unique_diffuse_ids = [...new Set(asIDList(materialIDs).filter(id => id !== 0))];
++						const unique_height_ids = [...new Set(asIDList(heightIDs).filter(id => id !== 0))];
+ 
+ 						const diffuse_array = await build_texture_array(unique_diffuse_ids, false);
+ 						const height_array = await build_texture_array(unique_height_ids.length > 0 ? unique_height_ids : unique_diffuse_ids, true);
+ 
+-						// The bake multiplies the sampled layers by the terrain vertex
+-						// colour, so an empty colour array silently turns the whole tile
+-						// black. Report the inputs that decide the output.
+-						let vcMin = Infinity, vcMax = -Infinity, vcBad = 0;
+-						for (let i = 0, n = vertexColors.length; i < n; i++) {
+-							const v = vertexColors[i];
+-							if (typeof v !== 'number' || Number.isNaN(v)) {
+-								vcBad++;
+-								continue;
+-							}
+-							if (v < vcMin) vcMin = v;
+-							if (v > vcMax) vcMax = v;
+-						}
+-
+-						log.write('Tile %s bake inputs: %d diffuse layers, vertex colour %s..%s, %d unusable entries',
+-							this.tileID, unique_diffuse_ids.length,
+-							vcMin === Infinity ? 'none' : vcMin.toFixed(3),
+-							vcMax === -Infinity ? 'none' : vcMax.toFixed(3), vcBad);
++						// A tile with no diffuse layers bakes to solid black, so record
++						// where the texture list came from. MDID carries fileDataIDs and
++						// is what the bake reads; MTEX carries filenames and is used by
++						// older maps, which would leave the list here empty. A tile with
++						// a single texture also matters, since the buffer reader returns
++						// a bare number rather than an array in that case.
++						const mdidType = Array.isArray(materialIDs) ? 'array[' + materialIDs.length + ']' : typeof materialIDs;
++						const mtexCount = Array.isArray(texAdt.textures) ? texAdt.textures.length : 0;
++						const chunkLayers = (texAdt.texChunks || []).reduce((sum, c) => sum + (c && c.layers ? c.layers.length : 0), 0);
++
++						log.write('Tile %s bake inputs: %d diffuse layers, MDID=%s, MTEX filenames=%d, MCLY layers=%d',
++							this.tileID, unique_diffuse_ids.length, mdidType, mtexCount, chunkLayers);
+ 
+ 						// map file data id -> array index
+ 						const diffuse_id_to_index = new Map();
+diff --git a/src/js/3D/loaders/ADTLoader.js b/src/js/3D/loaders/ADTLoader.js
+index 6d8ac10..9c376eb 100644
+--- a/src/js/3D/loaders/ADTLoader.js
++++ b/src/js/3D/loaders/ADTLoader.js
+@@ -405,12 +405,16 @@ const ADTTexChunkHandlers = {
+ 
+ 	// MHID
+ 	0x4D484944: function(data, chunkSize) {
+-		this.heightTextureFileDataIDs = data.readUInt32LE(chunkSize / 4);
++		// Reading a single entry yields a bare number rather than an array, which
++		// every consumer of these lists treats as empty. Keep the shape consistent.
++		const ids = data.readUInt32LE(chunkSize / 4);
++		this.heightTextureFileDataIDs = Array.isArray(ids) ? ids : [ids];
+ 	},
+ 
+ 	// MDID
+ 	0x4D444944: function(data, chunkSize) {
+-		this.diffuseTextureFileDataIDs = data.readUInt32LE(chunkSize / 4);
++		const ids = data.readUInt32LE(chunkSize / 4);
++		this.diffuseTextureFileDataIDs = Array.isArray(ids) ? ids : [ids];
+ 	}
+ };
+ 
+-- 
+2.47.1.windows.1
+

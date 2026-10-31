@@ -1,0 +1,9 @@
+{
+  "_comment": "Template for awowlab.config.json, the file that says where your build points. CMake copies it on the first configure and fills settings_key with a random value; edit the copy, never commit it. Each builder uses their own WarcraftLogs client id, repositories and signing key; see docs/BUILD-OPTIONS.md. Only the public half of the signing key goes here. The private key stays outside the repository, named by the AWOWLAB_SIGNING_KEY environment variable (tools/release/SIGNING.md).",
+  "project_url": "https://github.com/Wobblucy/Awowlab",
+  "update_repo": "Wobblucy/WoWLogreplayer-Public",
+  "assets_repo": "Wobblucy/WoWLogreplayer-Public",
+  "wcl_client_id": "a099c341-602f-4cc0-90fa-05bb1d4fb015",
+  "signing_public_key": "ff1eea5c40acb7b36b489dac769ef7bd77889173eccae8e3549055e6de5107a7e20657365e70fc90136e59a759dc74ce3aec2678cadfc0e42030f65c745a801e",
+  "settings_key": ""
+}

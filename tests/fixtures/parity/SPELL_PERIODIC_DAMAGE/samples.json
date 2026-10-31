@@ -1,0 +1,106 @@
+[
+{
+    "timestamp": 4297079,
+    "type": "damage",
+    "sourceID": 104,
+    "targetID": 117,
+    "targetInstance": 3,
+    "abilityGameID": 458169,
+    "fight": 8,
+    "hitType": 1,
+    "amount": 39538,
+    "unmitigatedAmount": 39538,
+    "isAoE": false,
+    "tick": true,
+    "resourceActor": 2,
+    "classResources": [
+        {
+            "amount": 0,
+            "max": 0,
+            "type": 1
+        }
+    ],
+    "hitPoints": 123586304,
+    "maxHitPoints": 128755200,
+    "attackPower": 0,
+    "spellPower": 0,
+    "armor": 42857,
+    "absorb": 0,
+    "x": -335214,
+    "y": 200790,
+    "facing": -315,
+    "mapID": 2467,
+    "versatility": 0,
+    "avoidance": 0,
+    "itemLevel": 82
+},
+{
+    "timestamp": 4422013,
+    "type": "damage",
+    "sourceID": 85,
+    "targetID": 85,
+    "abilityGameID": 387846,
+    "fight": 8,
+    "hitType": 1,
+    "amount": 15957,
+    "unmitigatedAmount": 17730,
+    "absorbed": 1773,
+    "isAoE": false,
+    "tick": true,
+    "resourceActor": 1,
+    "classResources": [
+        {
+            "amount": 2481750,
+            "max": 2525000,
+            "type": 0
+        }
+    ],
+    "hitPoints": 17979998,
+    "maxHitPoints": 18906152,
+    "attackPower": 15858,
+    "spellPower": 170128,
+    "armor": 57515,
+    "absorb": 0,
+    "x": -333686,
+    "y": 198431,
+    "facing": -735,
+    "mapID": 2467,
+    "versatility": 1304,
+    "avoidance": 300,
+    "itemLevel": 726
+},
+{
+    "timestamp": 4579849,
+    "type": "damage",
+    "sourceID": 104,
+    "targetID": 196,
+    "abilityGameID": 55095,
+    "fight": 8,
+    "hitType": 1,
+    "amount": 275054,
+    "unmitigatedAmount": 222907,
+    "isAoE": false,
+    "tick": true,
+    "resourceActor": 2,
+    "classResources": [
+        {
+            "amount": 20,
+            "max": 100,
+            "type": 3
+        }
+    ],
+    "hitPoints": 2078845297,
+    "maxHitPoints": 5579392000,
+    "attackPower": 0,
+    "spellPower": 0,
+    "armor": 42857,
+    "absorb": 0,
+    "x": -21651,
+    "y": 213292,
+    "facing": -531,
+    "mapID": 2469,
+    "versatility": 0,
+    "avoidance": 0,
+    "itemLevel": 82
+}
+]

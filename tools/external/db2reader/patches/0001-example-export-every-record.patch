@@ -1,0 +1,17 @@
+diff --git a/example.php b/example.php
+index d7411de..cc41209 100644
+--- a/example.php
++++ b/example.php
+@@ -36,8 +36,9 @@ foreach ($reader->generateRecords() as $id => $record) {
+ 
+     echo "\n";
+ 
+-    if (++$recordNum >= 10) {
+-        break;
+-    }
++    // Export all records - limit removed
++    // if (++$recordNum >= 10) {
++    //     break;
++    // }
+ }
+ 

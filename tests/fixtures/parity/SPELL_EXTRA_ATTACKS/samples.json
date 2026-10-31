@@ -1,0 +1,29 @@
+[
+{
+    "timestamp": 4295706,
+    "type": "extraattacks",
+    "sourceID": 93,
+    "targetID": 93,
+    "abilityGameID": 465660,
+    "fight": 8,
+    "extraAttacks": 1
+},
+{
+    "timestamp": 4393811,
+    "type": "extraattacks",
+    "sourceID": 83,
+    "targetID": 83,
+    "abilityGameID": 465660,
+    "fight": 8,
+    "extraAttacks": 1
+},
+{
+    "timestamp": 4577311,
+    "type": "extraattacks",
+    "sourceID": 84,
+    "targetID": 84,
+    "abilityGameID": 465660,
+    "fight": 8,
+    "extraAttacks": 1
+}
+]

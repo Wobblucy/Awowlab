@@ -1,0 +1,27 @@
+[
+{
+    "timestamp": 4295447,
+    "type": "refreshbuff",
+    "sourceID": 84,
+    "targetID": 84,
+    "abilityGameID": 1719,
+    "fight": 8
+},
+{
+    "timestamp": 4406613,
+    "type": "refreshbuff",
+    "sourceID": 83,
+    "targetID": 83,
+    "abilityGameID": 196741,
+    "fight": 8
+},
+{
+    "timestamp": 4576150,
+    "type": "refreshdebuff",
+    "sourceID": 93,
+    "targetID": 192,
+    "targetInstance": 11,
+    "abilityGameID": 376974,
+    "fight": 8
+}
+]

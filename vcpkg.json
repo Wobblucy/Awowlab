@@ -1,0 +1,13 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/vcpkg-tool/main/docs/vcpkg.schema.json",
+  "name": "awowlab",
+  "version-string": "0",
+  "builtin-baseline": "2149b777ffcc916992023df82ff0fe59390bb115",
+  "dependencies": [
+    "boost-asio",
+    "boost-beast",
+    "openssl",
+    "rapidjson",
+    "zlib"
+  ]
+}

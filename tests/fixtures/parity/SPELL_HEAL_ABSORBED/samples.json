@@ -1,0 +1,35 @@
+[
+{
+    "timestamp": 4299047,
+    "type": "healabsorbed",
+    "sourceID": 97,
+    "targetID": 97,
+    "abilityGameID": 448005,
+    "fight": 8,
+    "healerID": 110,
+    "amount": 41293,
+    "extraAbilityGameID": 439902
+},
+{
+    "timestamp": 4486515,
+    "type": "healabsorbed",
+    "sourceID": 97,
+    "targetID": 97,
+    "abilityGameID": 448005,
+    "fight": 8,
+    "healerID": 97,
+    "amount": 45628,
+    "extraAbilityGameID": 431939
+},
+{
+    "timestamp": 4494516,
+    "type": "healabsorbed",
+    "sourceID": 97,
+    "targetID": 97,
+    "abilityGameID": 448005,
+    "fight": 8,
+    "healerID": 97,
+    "amount": 45629,
+    "extraAbilityGameID": 431939
+}
+]

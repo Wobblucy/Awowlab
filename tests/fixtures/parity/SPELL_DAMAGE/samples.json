@@ -1,0 +1,102 @@
+[
+{
+    "timestamp": 4295043,
+    "type": "damage",
+    "sourceID": 104,
+    "targetID": 4,
+    "abilityGameID": 1239674,
+    "fight": 8,
+    "hitType": 1,
+    "amount": 427731,
+    "unmitigatedAmount": 427731,
+    "isAoE": true,
+    "resourceActor": 2,
+    "classResources": [
+        {
+            "amount": 86,
+            "max": 100,
+            "type": 3
+        }
+    ],
+    "hitPoints": 10021018669,
+    "maxHitPoints": 10021446400,
+    "attackPower": 0,
+    "spellPower": 0,
+    "armor": 42857,
+    "absorb": 0,
+    "x": -331200,
+    "y": 204177,
+    "facing": -315,
+    "mapID": 2467,
+    "versatility": 0,
+    "avoidance": 0,
+    "itemLevel": 83
+},
+{
+    "timestamp": 4411184,
+    "type": "damage",
+    "sourceID": 105,
+    "targetID": 4,
+    "abilityGameID": 453770,
+    "fight": 8,
+    "hitType": 1,
+    "amount": 2265077,
+    "unmitigatedAmount": 2265077,
+    "isAoE": false,
+    "resourceActor": 2,
+    "classResources": [
+        {
+            "amount": 19,
+            "max": 100,
+            "type": 3
+        }
+    ],
+    "hitPoints": 1654256214,
+    "maxHitPoints": 10021446400,
+    "attackPower": 0,
+    "spellPower": 0,
+    "armor": 42857,
+    "absorb": 0,
+    "x": -331200,
+    "y": 204177,
+    "facing": -315,
+    "mapID": 2467,
+    "versatility": 0,
+    "avoidance": 0,
+    "itemLevel": 83
+},
+{
+    "timestamp": 4576030,
+    "type": "damage",
+    "sourceID": 82,
+    "targetID": 191,
+    "targetInstance": 41,
+    "abilityGameID": 212105,
+    "fight": 8,
+    "hitType": 2,
+    "amount": 290585,
+    "unmitigatedAmount": 103867,
+    "isAoE": true,
+    "resourceActor": 2,
+    "classResources": [
+        {
+            "amount": 0,
+            "max": 0,
+            "type": 1
+        }
+    ],
+    "hitPoints": 100097216,
+    "maxHitPoints": 208154236,
+    "attackPower": 0,
+    "spellPower": 0,
+    "armor": 42857,
+    "absorb": 0,
+    "x": -21760,
+    "y": 214064,
+    "facing": -480,
+    "mapID": 2469,
+    "versatility": 0,
+    "avoidance": 0,
+    "itemLevel": 81
+}
+]
