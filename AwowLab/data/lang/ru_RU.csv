@@ -467,16 +467,17 @@ wcl.authorizing,Разрешение...
 wcl.waiting_browser,В ожидании браузера...
 wcl.authenticated,Аутентифицированный
 wcl.public_only,Только публичные журналы
+wcl.user_points_spent,"Ваши очки WarcraftLogs за этот час исчерпаны. Они восстановятся через %d минут; данные о боях, которые вы открывали ранее, по-прежнему загружаются из кэша."
+wcl.user_points_spent_unknown,"Ваши очки WarcraftLogs за этот час исчерпаны. Они восстанавливаются в течение часа; бои, которые вы открывали ранее, по-прежнему загружаются из кэша."
+wcl.points_help,"При загрузке из WarcraftLogs расходуются ваши собственные очки WarcraftLogs, которые пополняются каждый час. Запуск рейдового босса стоит около %d очков, а прохождение Mythic+ — около %d; более длительные сражения стоят дороже. Сражения, которые вы уже открывали ранее, загружаются из кэша бесплатно."
+wcl.points_tiers,"Очки в час: %d без подписки, %d с подпиской «Серебро», %d с подпиской «Золото», %d с подпиской «Платина». Эти данные синхронизируются со всеми другими сайтами и приложениями, в которые вы входите с помощью WarcraftLogs."
+wcl.points_third_party,Подписки продает компания Archon (WarcraftLogs). AwowLab не имеет к ней никакого отношения и не получает от неё никаких доходов.
+wcl.points_more,Дополнительные баллы
 wcl.session_expired,"Срок действия сессии истек - пожалуйста, авторизуйтесь заново"
 wcl.select_fight,Выберите бой
 wcl.no_session,Сессия не загружена
 wcl.report,Отчет: %s
 wcl.fights_count,(%zu бои)
-wcl.api_usage,Использование API: %d/%d (сбрасывается за %d мин)
-wcl.api_usage_hourly,Использование API: %d/%d в час
-wcl.rate_limited,Ограничение скорости - сбрасывается через %d минут
-wcl.api_queries_remaining,"%d/%d Запросы API, оставшиеся на этот час"
-wcl.mplus_note,Примечание: M+ подземелья используют 2 запроса API
 
 # =============================================================================
 # Cached Fights Panel
@@ -828,27 +829,6 @@ deaths.last_events,Последние события
 deaths.no_events,"События, связанные с повреждениями или исцелением, не зарегистрированы"
 resurrections.spell,Заклинание воскрешения
 status.view_not_implemented,Функция просмотра пока не реализована
-
-# =============================================================================
-# WarcraftLogs Help Text
-# =============================================================================
-wcl_help.want_unlimited,Хотите неограниченный доступ? Создайте свой собственный клиент API (бесплатно!)
-wcl_help.get_unlimited,Получите неограниченный доступ - создайте свой собственный клиент API (бесплатно!):
-wcl_help.step1,1. Перейти к: warcraftlogs.com/api/clients
-wcl_help.step2,"2. Нажмите ""Создать клиента"""
-wcl_help.step3,3. Название приложения: тест
-wcl_help.step4,4. URL-адрес перенаправления: http://localhost:8080/callback
-wcl_help.step5,"5. Оставьте ""Публичный клиент"" ОТКЛЮЧЕННЫМ"
-wcl_help.step6,"6. Нажмите ""Создать"""
-wcl_help.step7,7. Скопируйте идентификатор клиента и секрет клиента
-wcl_help.step8,8. Создайте файл 'wcl_credentials.txt' рядом с AwowLab.exe
-wcl_help.step9,9. Строка 1: ID клиента | Строка 2: Секрет клиента
-wcl_help.go_to,Перейти к: warcraftlogs.com/api/clients
-wcl_help.app_name,Название приложения: тест
-wcl_help.redirect_url,URL-адрес перенаправления: http://localhost:8080/callback
-wcl_help.public_client,"Оставьте флажок ""Публичный клиент"" снятым, нажмите кнопку Создать"
-wcl_help.save_credentials,Сохраните идентификатор и секрет клиента в файл 'wcl_credentials.txt'
-wcl_help.credentials_format,"(Строка 1: идентификатор клиента, строка 2: секрет клиента)"
 
 # =============================================================================
 # Spell Display Locations
@@ -1936,12 +1916,12 @@ benchmark.composition.shares,%.0f%% / %.0f%%
 benchmark.downtime_hint,"Пробелы, при которых не происходит отправка трансляции. Причины указываются только в тех случаях, когда они отражены в журнале."
 benchmark.downtime_count,%s через промежутки %d
 benchmark.downtime_worst,Наибольшие промежутки для %s
-benchmark.downtime_gap,%s  -  с%.1f
+benchmark.downtime_gap,%s  -  %.1f с
 benchmark.downtime_in_cd,в период ожидания
 benchmark.downtime_cancelled,отменено %s
 benchmark.downtime_none,"Отклонений, заслуживающих упоминания, нет"
 benchmark.composition.header,%s / %s
-benchmark.gap_seconds,%.1fs
+benchmark.gap_seconds,%.1f с
 classify.aura.channel,Канал (продолжается набор участников)
 benchmark.tab.damage,Повреждения
 benchmark.strip.cumulative,Накопленный урон

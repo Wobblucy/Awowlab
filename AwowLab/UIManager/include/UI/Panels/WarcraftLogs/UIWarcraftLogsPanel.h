@@ -5,9 +5,6 @@
 #include <functional>
 #include <cstdint>
 
-// Forward declaration
-struct WclRateLimitState;
-
 namespace warcraftlogs {
     struct WclFight;
     class WarcraftLogsSession;
@@ -67,11 +64,6 @@ public:
      */
     void setLoading(bool loading) { isLoading_ = loading; }
 
-    /**
-     * Set rate limit state for display.
-     */
-    void setRateLimitState(WclRateLimitState* state) { rateLimitState_ = state; }
-
 private:
     warcraftlogs::WarcraftLogsSession* session_ = nullptr;
     int32_t selectedFightId_ = -1;
@@ -82,9 +74,6 @@ private:
     // Progress tracking
     std::string progressMessage_;
     float progressValue_ = 0.0f;
-
-    // Rate limit display
-    WclRateLimitState* rateLimitState_ = nullptr;
 
     // Helper to get difficulty name
     static const char* getDifficultyName(int32_t difficultyId);

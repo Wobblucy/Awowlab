@@ -465,16 +465,17 @@ wcl.authorizing,Authorizing...
 wcl.waiting_browser,Waiting for browser...
 wcl.authenticated,Authenticated
 wcl.public_only,Public logs only
+wcl.user_points_spent,"Your WarcraftLogs points for this hour are used up. They come back in %d min; fights you have opened before still load from the cache."
+wcl.user_points_spent_unknown,"Your WarcraftLogs points for this hour are used up. They come back within the hour; fights you have opened before still load from the cache."
+wcl.points_help,"Loading from WarcraftLogs spends your own WarcraftLogs points, which refill every hour. A raid boss pull costs about %d points and a Mythic+ run about %d; longer fights cost more. Fights you have opened before load from the cache for free."
+wcl.points_tiers,"Points per hour: %d without a subscription, %d with Silver, %d with Gold, %d with Platinum. They are shared with every other site and app you sign in to with WarcraftLogs."
+wcl.points_third_party,Subscriptions are sold by Archon (WarcraftLogs). AwowLab is not affiliated with them and gets nothing from them.
+wcl.points_more,More points
 wcl.session_expired,Session expired - please re-authorize
 wcl.select_fight,Select Fight
 wcl.no_session,No session loaded
 wcl.report,Report: %s
 wcl.fights_count,(%zu fights)
-wcl.api_usage,API Usage: %d/%d (resets in %d min)
-wcl.api_usage_hourly,API Usage: %d/%d per hour
-wcl.rate_limited,Rate limited - resets in %d minutes
-wcl.api_queries_remaining,%d/%d API queries remaining this hour
-wcl.mplus_note,Note: M+ dungeons use 2 API queries
 
 # =============================================================================
 # Cached Fights Panel
@@ -826,27 +827,6 @@ deaths.last_events,Recent Events
 deaths.no_events,No damage/healing events recorded
 resurrections.spell,Resurrection Spell
 status.view_not_implemented,View not yet implemented
-
-# =============================================================================
-# WarcraftLogs Help Text
-# =============================================================================
-wcl_help.want_unlimited,Want unlimited access? Create your own API client (free!)
-wcl_help.get_unlimited,Get unlimited access - create your own API client (free!):
-wcl_help.step1,1. Go to: warcraftlogs.com/api/clients
-wcl_help.step2,2. Click 'Create a Client'
-wcl_help.step3,3. Application name: test
-wcl_help.step4,4. Redirect URL: http://localhost:8080/callback
-wcl_help.step5,5. Leave 'Public Client' UNCHECKED
-wcl_help.step6,6. Click 'Create'
-wcl_help.step7,7. Copy your Client ID and Client Secret
-wcl_help.step8,8. Create 'wcl_credentials.txt' next to AwowLab.exe
-wcl_help.step9,9. Line 1: Client ID | Line 2: Client Secret
-wcl_help.go_to,Go to: warcraftlogs.com/api/clients
-wcl_help.app_name,Application name: test
-wcl_help.redirect_url,Redirect URL: http://localhost:8080/callback
-wcl_help.public_client,Leave 'Public Client' unchecked, click Create
-wcl_help.save_credentials,Save Client ID & Secret to 'wcl_credentials.txt'
-wcl_help.credentials_format,(Line 1: Client ID, Line 2: Client Secret)
 
 # =============================================================================
 # Spell Display Locations

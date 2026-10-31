@@ -10,8 +10,6 @@
 #include <vector>
 
 class ClassIconCache;
-struct WclRateLimitState;
-struct LandingPageRateLimitInfo;
 
 namespace warcraftlogs {
     class ResponseCache;
@@ -129,20 +127,8 @@ private:
     int mentorPickerMode_ = 0;
     std::unique_ptr<benchmark_ui::UIMentorPicker> mentorPicker_;
 
-    // Rate limit state for WarcraftLogs (passed from Application)
-    WclRateLimitState* rateLimitState_ = nullptr;
-    bool hasCustomCredentials_ = false;
-
     // Class icon cache for cached fights panel
     ClassIconCache* classIconCache_ = nullptr;
-
-    // Unlock instructions popup state
-    bool showUnlockInstructions_ = false;
-    char inputClientId_[128] = "";
-    char inputClientSecret_[128] = "";
-    std::string credentialSaveError_;
-    bool credentialsSaved_ = false;
-    bool isValidating_ = false;
 
     // Credential validation callback (provided by Application)
     std::function<bool(const std::string&, const std::string&, std::string&)> validateCredentialsCallback_;
@@ -164,12 +150,6 @@ private:
     void renderLanguagePackCard();
 
 public:
-    // Set rate limit state for WarcraftLogs display
-    void setRateLimitState(WclRateLimitState* state, bool hasCustomCredentials) {
-        rateLimitState_ = state;
-        hasCustomCredentials_ = hasCustomCredentials;
-    }
-
     // Set callback to validate credentials before saving
     // Callback returns true if valid, false otherwise. Error message in outError.
     void setValidateCredentialsCallback(

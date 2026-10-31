@@ -89,14 +89,16 @@ def placeholders_in(text):
 
 def protect_placeholders(text):
     """
-    Turn printf placeholders into empty XML tags, which DeepL's XML mode keeps
-    in place untouched. Returns (modified_text, list_of_placeholders).
+    Wrap each printf placeholder in an ignored XML tag. DeepL leaves the
+    contents alone and keeps it attached to the words around it; an empty tag
+    tends to drift past the next word ("in %d min" came back "in  min%d").
+    Returns (modified_text, list_of_placeholders).
     """
     placeholders = []
 
     def replace(match):
         placeholders.append(match.group(0))
-        return f'<x i="{len(placeholders) - 1}"/>'
+        return f'<x i="{len(placeholders) - 1}">{match.group(0)}</x>'
 
     protected = PLACEHOLDER_PATTERN.sub(replace, html.escape(text, quote=False))
     return protected, placeholders
@@ -108,7 +110,7 @@ def restore_placeholders(text, placeholders):
         index = int(match.group(1))
         return placeholders[index] if index < len(placeholders) else match.group(0)
 
-    return html.unescape(re.sub(r'<x\s+i="(\d+)"\s*/>', replace, text))
+    return html.unescape(re.sub(r'<x\s+i="(\d+)"\s*>.*?</x>', replace, text))
 
 
 def parse_csv(filepath):
@@ -203,6 +205,7 @@ def translate_entries(entries, translator, target_lang, locale_name, existing):
             target_lang=target_lang,
             preserve_formatting=True,
             tag_handling="xml",
+            ignore_tags=["x"],
         )
     except deepl.DeepLException as e:
         print(f"  Error translating to {locale_name}: {e}")

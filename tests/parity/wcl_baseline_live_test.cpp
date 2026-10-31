@@ -13,7 +13,6 @@
 #include "Models/Fight.h"
 #include "Database/AnalysisPackage/PackageBuilder.h"
 #include "Settings/WclSettings.h"
-#include "Settings/RateLimitBackup.h"
 #include "UnifiedSettings.h"
 #include "SpellNameDatabase.h"
 #include "HeroTalents.h"
@@ -80,7 +79,6 @@ TEST_CASE("a baseline is built from ranked fights", "[wcl][live][baseline]") {
     }
     REQUIRE_FALSE(chosen.empty());
 
-    awow::registerRateLimitBackups();
     SettingsCache::instance().initialize();
     const auto& settings = SettingsCache::instance().get();
     const std::string token = WclSettings::readFrom(settings).accessToken;

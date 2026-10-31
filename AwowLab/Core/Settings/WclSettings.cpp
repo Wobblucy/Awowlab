@@ -22,8 +22,6 @@ namespace {
 
 // Entry names in the settings file. The plain-text token name is what
 // older builds serialized; current builds only ever remove it.
-constexpr const char* kQueriesUsed = "wclQueriesUsed";
-constexpr const char* kWindowStartTime = "wclWindowStartTime";
 constexpr const char* kAccessTokenLegacy = "wclAccessToken";
 constexpr const char* kAccessTokenProtected = "wclAccessTokenProtected";
 constexpr const char* kTokenExpiresAt = "wclTokenExpiresAt";
@@ -144,16 +142,6 @@ bool fromBase64(const std::string&, std::vector<uint8_t>&) { return false; }
 WclSettings WclSettings::readFrom(const UnifiedSettings::AllSettings& settings) {
     WclSettings out;
 
-    auto queries = parseEntry(settings, kQueriesUsed);
-    if (!queries.HasParseError() && queries.IsInt()) {
-        out.queriesUsed = queries.GetInt();
-    }
-
-    auto windowStart = parseEntry(settings, kWindowStartTime);
-    if (!windowStart.HasParseError() && windowStart.IsInt64()) {
-        out.windowStartTime = windowStart.GetInt64();
-    }
-
     auto protectedToken = parseEntry(settings, kAccessTokenProtected);
     if (!protectedToken.HasParseError() && protectedToken.IsString()) {
         std::vector<uint8_t> blob;
@@ -183,8 +171,6 @@ WclSettings WclSettings::readFrom(const UnifiedSettings::AllSettings& settings) 
 }
 
 void WclSettings::writeTo(UnifiedSettings::AllSettings& settings) const {
-    settings.extraValues[kQueriesUsed] = std::to_string(queriesUsed);
-    settings.extraValues[kWindowStartTime] = std::to_string(windowStartTime);
     settings.extraValues[kTokenExpiresAt] = std::to_string(tokenExpiresAt);
 
     // The token only ever leaves this function wrapped with the user's
@@ -203,6 +189,11 @@ void WclSettings::writeTo(UnifiedSettings::AllSettings& settings) const {
 }
 
 std::string& awow::wclAuthError() {
+    static std::string message;
+    return message;
+}
+
+std::string& awow::wclNotice() {
     static std::string message;
     return message;
 }

@@ -2,7 +2,6 @@
 #include <cstdint>
 #include <string>
 #include <memory>
-#include "UIManager/include/UI/UISettings.h"
 #include "UnifiedSettings.h"
 
 struct ExtractedData;
@@ -112,9 +111,6 @@ private:
     // rebuilds from the session every frame - shows the new numbers.
     void runLiveCompareMode();
     void loadSettings();
-    void syncRateLimitToCache();
-    // Charges the session's queries against the shared local quota
-    void attachRateLimit(warcraftlogs::WarcraftLogsSession& session);
     void clearCombatLog();
 
     int width_;
@@ -125,9 +121,6 @@ private:
     std::unique_ptr<LogSession> logSession_;  // Manages log parsing state
     std::unique_ptr<warcraftlogs::WarcraftLogsSession> wclSession_;  // WarcraftLogs API session
     std::unique_ptr<awow::SingleInstance> singleInstance_;  // Single-instance enforcement
-
-    // WarcraftLogs rate limit state (synced to SettingsCache)
-    WclRateLimitState wclRateLimitState_;
 
     // Initial snapshot to load (set via command-line argument)
     std::string initialSnapshotPath_;

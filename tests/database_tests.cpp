@@ -2303,8 +2303,6 @@ TEST_CASE("WclSettings - access token round trips through protected storage", "[
     UnifiedSettings::AllSettings settings;
 
     WclSettings wcl;
-    wcl.queriesUsed = 7;
-    wcl.windowStartTime = 1719854321;
     wcl.accessToken = "secret-oauth-token-value";
     wcl.tokenExpiresAt = 1800000000;
     wcl.writeTo(settings);
@@ -2315,15 +2313,11 @@ TEST_CASE("WclSettings - access token round trips through protected storage", "[
     CHECK(settings.extraValues.at("wclAccessTokenProtected")
               .find("secret-oauth-token-value") == std::string::npos);
 
-    // Non-secret values stay as ordinary readable entries
-    CHECK(settings.extraValues.at("wclQueriesUsed") == "7");
-    CHECK(settings.extraValues.at("wclWindowStartTime") == "1719854321");
+    // The expiry is not a secret and stays an ordinary readable entry
     CHECK(settings.extraValues.at("wclTokenExpiresAt") == "1800000000");
 
     auto loaded = WclSettings::readFrom(settings);
     CHECK(loaded.accessToken == "secret-oauth-token-value");
-    CHECK(loaded.queriesUsed == 7);
-    CHECK(loaded.windowStartTime == 1719854321);
     CHECK(loaded.tokenExpiresAt == 1800000000);
 }
 
@@ -2364,7 +2358,7 @@ TEST_CASE("WclSettings - plain-text token from older builds migrates", "[setting
 
 TEST_CASE("WclSettings - unreadable protected token reads as no token", "[settings][wcl]") {
     UnifiedSettings::AllSettings settings;
-    settings.extraValues["wclQueriesUsed"] = "3";
+    settings.extraValues["wclTokenExpiresAt"] = "1800000000";
 
     SECTION("entry is not valid base64") {
         settings.extraValues["wclAccessTokenProtected"] = "\"%%% not base64 %%%\"";
@@ -2384,7 +2378,23 @@ TEST_CASE("WclSettings - unreadable protected token reads as no token", "[settin
     WclSettings loaded;
     REQUIRE_NOTHROW(loaded = WclSettings::readFrom(settings));
     CHECK(loaded.accessToken.empty());
-    CHECK(loaded.queriesUsed == 3);  // the rest of the settings still load
+    CHECK(loaded.tokenExpiresAt == 1800000000);  // the rest of the settings still load
+}
+
+TEST_CASE("WclSettings - query counters from older builds are left alone", "[settings][wcl]") {
+    // Older builds kept a local query count in the settings file. Nothing
+    // reads it any more; it must not stop the rest from loading.
+    UnifiedSettings::AllSettings settings;
+    settings.extraValues["wclQueriesUsed"] = "2";
+    settings.extraValues["wclWindowStartTime"] = "1719854321";
+    settings.extraValues["wclTokenExpiresAt"] = "1800000000";
+
+    WclSettings loaded;
+    REQUIRE_NOTHROW(loaded = WclSettings::readFrom(settings));
+    CHECK(loaded.tokenExpiresAt == 1800000000);
+
+    loaded.writeTo(settings);
+    CHECK(settings.extraValues.at("wclTokenExpiresAt") == "1800000000");
 }
 
 TEST_CASE("OutputWriter - hostile units are found without position data",

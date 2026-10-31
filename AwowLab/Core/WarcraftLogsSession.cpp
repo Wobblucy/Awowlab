@@ -28,11 +28,6 @@ const WclFight* findFight(const WclReportMetadata& metadata, int32_t fightId) {
     return nullptr;
 }
 
-// What one fight's events cost against the local query limit
-int queryCostOf(const WclFight& fight) {
-    return fight.isMythicPlus() ? 2 : 1;
-}
-
 // A server that never stops paging gives up after this many pages
 constexpr int kMaxEventPages = 100;
 
@@ -302,16 +297,6 @@ ExtractedData WarcraftLogsSession::loadFight(int32_t fightId,
         throw std::runtime_error(errorMsg);
     }
 
-    // Only a fetch is charged against the local limit; cache hits are free
-    if (!isFightCached(fightId)) {
-        if (m_canQueryCallback && !m_canQueryCallback(queryCostOf(*fight))) {
-            std::string errorMsg = m_getErrorCallback ? m_getErrorCallback() : "Rate limit exceeded";
-            m_lastError = errorMsg;
-            AWOW_LOG_ERROR("WCL", errorMsg);
-            throw std::runtime_error(errorMsg);
-        }
-    }
-
     m_state = SessionState::FetchingFight;
 
     return fetchFightEvents(fightId, progressCallback, onlyActorId);
@@ -541,6 +526,16 @@ std::string WarcraftLogsSession::dumpRawQuery(const std::string& query,
                           outputPath, "raw query");
 }
 
+int WarcraftLogsSession::userPointsResetIn() {
+    try {
+        ensureGraphQLClient();
+        return m_graphqlClient->fetchRateLimitInfo().userPointsResetIn;
+    } catch (const std::exception& e) {
+        AWOW_LOG_ERROR("WCL", std::string("Could not read the user points reset time: ") + e.what());
+        return -1;
+    }
+}
+
 std::string WarcraftLogsSession::dumpCharacterRankings(
     int32_t encounterId,
     const std::string& className,
@@ -740,11 +735,6 @@ ExtractedData WarcraftLogsSession::fetchFightEvents(int32_t fightId,
         }
     }
 
-    // Charged only now that the API was actually used
-    if (m_recordQueryCallback) {
-        m_recordQueryCallback(queryCostOf(*fight));
-    }
-
     safeProgressCallback(progressCallback, "Processing events...", 0.9f);
 
     ExtractedData result = WclToAwowAdapter::mergePages(pages);
@@ -779,27 +769,12 @@ void WarcraftLogsSession::setUserAccessToken(const std::string& token) {
     m_graphqlClient.reset();
 }
 
-void WarcraftLogsSession::setLocalRateLimitCallbacks(
-    RateLimitCanQueryCallback canQuery,
-    RateLimitRecordCallback recordQuery,
-    RateLimitErrorCallback getErrorMsg
-) {
-    m_canQueryCallback = std::move(canQuery);
-    m_recordQueryCallback = std::move(recordQuery);
-    m_getErrorCallback = std::move(getErrorMsg);
-}
-
 void WarcraftLogsSession::setCustomCredentials(const std::string& clientId, const std::string& clientSecret) {
     m_clientOAuth = std::make_unique<OAuthClient>(clientId, clientSecret);
     m_hasCustomCredentials = true;
 
     // Rebuilt lazily with the new credentials
     m_graphqlClient.reset();
-
-    // The user's own quota applies, so the local limit is dropped
-    m_canQueryCallback = nullptr;
-    m_recordQueryCallback = nullptr;
-    m_getErrorCallback = nullptr;
 }
 
 } // namespace warcraftlogs

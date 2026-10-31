@@ -467,16 +467,17 @@ wcl.authorizing,Ermächtigung...
 wcl.waiting_browser,Warten auf den Browser...
 wcl.authenticated,Authentifiziert
 wcl.public_only,Nur öffentliche Protokolle
+wcl.user_points_spent,"Deine WarcraftLogs-Punkte für diese Stunde sind aufgebraucht. Sie stehen in %d Minuten wieder zur Verfügung; Kämpfe, die du zuvor geöffnet hast, werden weiterhin aus dem Cache geladen."
+wcl.user_points_spent_unknown,"Deine WarcraftLogs-Punkte für diese Stunde sind aufgebraucht. Sie werden innerhalb einer Stunde wieder aufgefüllt; Kämpfe, die du zuvor geöffnet hast, werden weiterhin aus dem Cache geladen."
+wcl.points_help,"Beim Laden aus WarcraftLogs werden deine eigenen WarcraftLogs-Punkte verbraucht, die sich stündlich wieder auffüllen. Ein Raid-Boss-Pull kostet etwa %d Punkte und ein Mythic+-Lauf etwa %d; längere Kämpfe kosten mehr. Kämpfe, die du bereits zuvor geöffnet hast, werden kostenlos aus dem Cache geladen."
+wcl.points_tiers,"Punkte pro Stunde: %d ohne Abonnement, %d mit Silber, %d mit Gold, %d mit Platin. Diese Punkte werden mit allen anderen Websites und Apps geteilt, bei denen du dich mit WarcraftLogs anmeldest."
+wcl.points_third_party,Die Abonnements werden von Archon (WarcraftLogs) verkauft. AwowLab steht in keiner Verbindung zu diesem Unternehmen und erhält keine Vergütung von diesem.
+wcl.points_more,Weitere Punkte
 wcl.session_expired,Sitzung ist abgelaufen - bitte erneut autorisieren
 wcl.select_fight,Kampf auswählen
 wcl.no_session,Keine Sitzung geladen
 wcl.report,Bericht: %s
 wcl.fights_count,(%zu-Kämpfe)
-wcl.api_usage,API-Verwendung: %d/%d (Rückstellung in %d min)
-wcl.api_usage_hourly,API-Nutzung: %d/%d pro Stunde
-wcl.rate_limited,Ratenbegrenzung - Rückstellung in %d-Minuten
-wcl.api_queries_remaining,%d/%d Verbleibende API-Abfragen in dieser Stunde
-wcl.mplus_note,Hinweis: M+ Dungeons verwenden 2 API-Abfragen
 
 # =============================================================================
 # Cached Fights Panel
@@ -828,27 +829,6 @@ deaths.last_events,Aktuelle Ereignisse
 deaths.no_events,Es wurden keine Schadens- oder Heilungsereignisse aufgezeichnet
 resurrections.spell,Wiederbelebungszauber
 status.view_not_implemented,Ansicht noch nicht implementiert
-
-# =============================================================================
-# WarcraftLogs Help Text
-# =============================================================================
-wcl_help.want_unlimited,Sie möchten unbegrenzten Zugang? Erstellen Sie Ihren eigenen API-Client (kostenlos!)
-wcl_help.get_unlimited,Erhalten Sie unbegrenzten Zugang - erstellen Sie Ihren eigenen API-Client (kostenlos!):
-wcl_help.step1,1. Weiter zu: warcraftlogs.com/api/clients
-wcl_help.step2,2. Klicken Sie auf 'Einen Kunden erstellen'
-wcl_help.step3,3. Name der Anwendung: test
-wcl_help.step4,4. Umleitungs-URL: http://localhost:8080/callback
-wcl_help.step5,5. Lassen Sie 'Public Client' UNGEKONTROLLIERT
-wcl_help.step6,6. Klicken Sie auf 'Erstellen'
-wcl_help.step7,7. Kopieren Sie Ihre Kunden-ID und Ihr Kundengeheimnis
-wcl_help.step8,8. Erstellen Sie 'wcl_credentials.txt' neben AwowLab.exe
-wcl_help.step9,9. Zeile 1: Kunden-ID | Zeile 2: Kundengeheimnis
-wcl_help.go_to,Weiter zu: warcraftlogs.com/api/clients
-wcl_help.app_name,Name der Anwendung: test
-wcl_help.redirect_url,Umleitungs-URL: http://localhost:8080/callback
-wcl_help.public_client,"Lassen Sie die Option ""Öffentlicher Client"" deaktiviert und klicken Sie auf Erstellen"
-wcl_help.save_credentials,Client-ID und Geheimnis in 'wcl_credentials.txt' speichern
-wcl_help.credentials_format,"(Zeile 1: Kunden-ID, Zeile 2: Kundengeheimnis)"
 
 # =============================================================================
 # Spell Display Locations
@@ -1925,7 +1905,7 @@ benchmark.no_positions_hint,"Passen Sie den Verweis an, um die Bewegung zu erfas
 benchmark.movie.play,Abspielen
 benchmark.movie.pause,Pause
 benchmark.movie.restart,Neustart
-benchmark.movie.speed,%.0fx
+benchmark.movie.speed,%.0fX
 benchmark.trail.full,Vollständiger Pfad
 benchmark.trail.5s,Die letzten 5 Sekunden
 benchmark.trail.10s,Die letzten 10 Sekunden
@@ -1936,7 +1916,7 @@ benchmark.composition.shares,%.0f%% / %.0f%%
 benchmark.downtime_hint,"Lücken, bei denen kein Cast ausgeführt wurde. Ursachen werden nur dann genannt, wenn im Protokoll eine solche angegeben ist."
 benchmark.downtime_count,%s über %d-Lücken hinweg
 benchmark.downtime_worst,Längste Lücken bei %s
-benchmark.downtime_gap,%s  –  %.1fs
+benchmark.downtime_gap,%s  -  %.1f s
 benchmark.downtime_in_cd,während einer Abklingzeit
 benchmark.downtime_cancelled,abgesagt %s
 benchmark.downtime_none,Keine nennenswerten Lücken

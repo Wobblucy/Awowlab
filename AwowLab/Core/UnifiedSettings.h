@@ -138,21 +138,6 @@ private:
 };
 
 /**
- * Optional callbacks the host application can register around settings
- * persistence. The main app uses these to reconcile and mirror some of
- * its values outside the settings file; the standalone overlay registers
- * nothing and works with the file alone.
- */
-struct SettingsPersistenceHooks {
-    /** Runs at the end of initialize(), after the file has been read.
-     *  May adjust the freshly loaded settings in place. */
-    std::function<void(UnifiedSettings::AllSettings&)> afterLoad;
-
-    /** Runs after every successful save to disk. */
-    std::function<void(const UnifiedSettings::AllSettings&)> afterSave;
-};
-
-/**
  * In-memory copy of the settings that every component reads and writes,
  * instead of calling UnifiedSettings::load/save. After changing a value,
  * call markDirty(); tick(), called each frame, writes the file once
@@ -168,13 +153,6 @@ public:
     SettingsCache& operator=(const SettingsCache&) = delete;
     SettingsCache(SettingsCache&&) = delete;
     SettingsCache& operator=(SettingsCache&&) = delete;
-
-    /**
-     * Register persistence callbacks (see SettingsPersistenceHooks).
-     * Call before initialize() so the load step can run them.
-     * Without a registration, loads and saves touch only the settings file.
-     */
-    void setPersistenceHooks(SettingsPersistenceHooks hooks);
 
     // Call once at startup
     void initialize();
@@ -202,7 +180,6 @@ private:
     ~SettingsCache();
 
     UnifiedSettings::AllSettings settings_;
-    SettingsPersistenceHooks hooks_;
     std::atomic<bool> dirty_{false};
     std::chrono::steady_clock::time_point lastSaveTime_;
     bool initialized_{false};

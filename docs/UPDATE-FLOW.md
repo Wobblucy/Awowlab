@@ -228,12 +228,9 @@ python tools/worldmap-builder/extract_map_bounds.py
 `extract_map_bounds.py` writes straight to the canonical location - there is no
 copy step. A map id missing from that CSV renders as a blank grid floor.
 
-**The app writes to this file too.** It stores rate-limit state in a row with a
-reserved map id (99999) that no real map uses, as one of three redundant locations
-(see `Core/Settings/RateLimitBackup.h`). The generator preserves any row at or
-above `RESERVED_MAP_ID_FLOOR` across a rebuild. In debug builds CMake junctions
-`PNG/` to the source tree, so that row appears as an uncommitted one-line diff in
-your working copy - that is runtime state, not a change to commit.
+Older builds wrote a row with map id 99999 into this file at runtime. Current
+builds leave the file alone; a leftover 99999 row in an existing install just
+loads as bounds for a map that never comes up, and the next rebuild drops it.
 
 ### Map images
 

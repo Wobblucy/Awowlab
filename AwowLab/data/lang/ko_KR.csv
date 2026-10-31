@@ -467,16 +467,17 @@ wcl.authorizing,권한 부여...
 wcl.waiting_browser,브라우저를 기다리는 중...
 wcl.authenticated,인증됨
 wcl.public_only,공개 로그만 해당
+wcl.user_points_spent,"이번 시간 동안의 워크래프트 로그 포인트가 모두 소진되었습니다. 포인트는 %d 분 후에 다시 충전되며, 이전에 열었던 전투 기록은 캐시에서 계속 불러옵니다."
+wcl.user_points_spent_unknown,"이번 시간대의 워크래프트 로그 포인트가 모두 소진되었습니다. 1시간 이내에 포인트가 다시 충전되며, 이전에 열었던 전투 기록은 캐시에서 계속 불러옵니다."
+wcl.points_help,"WarcraftLogs에서 데이터를 불러오면 본인의 WarcraftLogs 포인트가 소모되며, 이 포인트는 매시간 재충전됩니다. 레이드 보스를 소환하는 데는 약 %d 포인트가 소요되고, 미스틱+ 진행에는 약 %d 포인트가 소요됩니다. 전투 시간이 길수록 더 많은 포인트가 소모됩니다. 이전에 열었던 전투는 캐시에서 무료로 불러옵니다."
+wcl.points_tiers,"시간당 포인트: 구독 미가입 시 %d, 실버 회원 시 %d, 골드 회원 시 %d, 플래티넘 회원 시 %d. 이 포인트는 WarcraftLogs로 로그인한 다른 모든 사이트 및 앱과 공유됩니다."
+wcl.points_third_party,"구독 서비스는 Archon(WarcraftLogs)에서 판매합니다. AwowLab은 해당 업체와 아무런 관련이 없으며, 그로부터 어떠한 수익도 얻지 않습니다."
+wcl.points_more,더 많은 포인트
 wcl.session_expired,세션이 만료되었습니다 - 다시 승인해 주세요
 wcl.select_fight,싸움 선택
 wcl.no_session,세션이 로드되지 않았습니다
 wcl.report,보고: 보고: %s
 wcl.fights_count,(%zu 싸움)
-wcl.api_usage,API 사용량: %d/%d (%d 분 단위로 재설정)
-wcl.api_usage_hourly,API 사용량: 시간당 %d/%d: 시간당
-wcl.rate_limited,속도 제한 - %d 분 단위로 재설정됩니다
-wcl.api_queries_remaining,%d/%d 이 시간 동안 남은 API 쿼리
-wcl.mplus_note,참고: M+ 던전은 2개의 API 쿼리를 사용합니다
 
 # =============================================================================
 # Cached Fights Panel
@@ -828,27 +829,6 @@ deaths.last_events,최근 행사
 deaths.no_events,기록된 피해/치유 이벤트 없음
 resurrections.spell,부활 주문
 status.view_not_implemented,이 기능은 아직 구현되지 않았습니다.
-
-# =============================================================================
-# WarcraftLogs Help Text
-# =============================================================================
-wcl_help.want_unlimited,무제한 액세스를 원하시나요? 나만의 API 클라이언트 만들기(무료!)
-wcl_help.get_unlimited,무제한 액세스 - 나만의 API 클라이언트 만들기(무료!):
-wcl_help.step1,1. 이동: warcraftlogs.com/api/clients
-wcl_help.step2,2. '클라이언트 만들기'를 클릭합니다
-wcl_help.step3,3. 애플리케이션 이름: 테스트
-wcl_help.step4,4. 리디렉션 URL: http://localhost:8080/callback
-wcl_help.step5,5. '공용 클라이언트'를 선택하지 않은 상태로 둡니다
-wcl_help.step6,6. '만들기'를 클릭합니다
-wcl_help.step7,7. 클라이언트 ID와 클라이언트 비밀번호 복사
-wcl_help.step8,8. AwowLab.exe 옆에 'wcl_credentials.txt'를 생성합니다
-wcl_help.step9,9. 라인 1: 1줄: 클라이언트 ID | 2줄: 클라이언트 비밀
-wcl_help.go_to,이동: warcraftlogs.com/api/clients
-wcl_help.app_name,애플리케이션 이름: 테스트
-wcl_help.redirect_url,리디렉션 URL: http://localhost:8080/callback
-wcl_help.public_client,'공용 클라이언트'를 선택하지 않은 상태로 두고 만들기를 클릭합니다
-wcl_help.save_credentials,클라이언트 ID 및 비밀번호를 'wcl_credentials.txt'에 저장합니다
-wcl_help.credentials_format,"(1줄: 클라이언트 ID, 2줄: 클라이언트 비밀번호)"
 
 # =============================================================================
 # Spell Display Locations
@@ -1925,7 +1905,7 @@ benchmark.no_positions_hint,움직임을 포착할 수 있도록 참조를 재�
 benchmark.movie.play,재생
 benchmark.movie.pause,일시 정지
 benchmark.movie.restart,다시 시작
-benchmark.movie.speed,%.0fx
+benchmark.movie.speed,%.0f×
 benchmark.trail.full,전체 경로
 benchmark.trail.5s,지난 5초
 benchmark.trail.10s,지난 10초
@@ -1936,12 +1916,12 @@ benchmark.composition.shares,%.0f%% / %.0f%%
 benchmark.downtime_hint,캐스트가 발생하지 않은 갭. 원인은 로그에 원인이 표시된 경우에만 명시됩니다.
 benchmark.downtime_count,%s을 가로질러 %d 간극
 benchmark.downtime_worst,%s의 가장 긴 간격
-benchmark.downtime_gap,%s  -  s%.1f
+benchmark.downtime_gap,%s  -  %.1f초
 benchmark.downtime_in_cd,쿨타임 중
 benchmark.downtime_cancelled,취소됨 %s
 benchmark.downtime_none,보고할 만한 차이는 없음
 benchmark.composition.header,%s / %s
-benchmark.gap_seconds,%.1fs
+benchmark.gap_seconds,%.1f초
 classify.aura.channel,채널 (현재 모집 중)
 benchmark.tab.damage,피해
 benchmark.strip.cumulative,누적 피해량

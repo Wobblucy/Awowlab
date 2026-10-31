@@ -11,7 +11,6 @@
 #include "Models/RankingSample.h"
 #include "Models/SeasonZones.h"
 #include "Settings/WclSettings.h"
-#include "Settings/RateLimitBackup.h"
 #include "UnifiedSettings.h"
 
 namespace fs = std::filesystem;
@@ -31,7 +30,6 @@ TEST_CASE("dummy dome rankings", "[wcl][live][dummy]") {
         return;
     }
 
-    awow::registerRateLimitBackups();
     SettingsCache::instance().initialize();
     const std::string token =
         WclSettings::readFrom(SettingsCache::instance().get()).accessToken;
@@ -149,7 +147,6 @@ TEST_CASE("dummy configurations are separate encounters", "[wcl][season][dummy]"
 TEST_CASE("refresh havoc rankings", "[wcl][live][refresh]") {
     if (!std::getenv("AWL_LIVE_WCL")) { WARN("AWL_LIVE_WCL not set; skipping"); return; }
 
-    awow::registerRateLimitBackups();
     SettingsCache::instance().initialize();
     const std::string token =
         WclSettings::readFrom(SettingsCache::instance().get()).accessToken;

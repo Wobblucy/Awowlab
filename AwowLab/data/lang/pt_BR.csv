@@ -467,16 +467,17 @@ wcl.authorizing,Autorização...
 wcl.waiting_browser,Aguardando o navegador...
 wcl.authenticated,Autenticado
 wcl.public_only,Somente registros públicos
+wcl.user_points_spent,Seus pontos do WarcraftLogs para esta hora se esgotaram. Eles serão repostos em %d min; as batalhas que você já abriu continuam sendo carregadas do cache.
+wcl.user_points_spent_unknown,Seus pontos do WarcraftLogs para esta hora se esgotaram. Eles serão repostos dentro de uma hora; as batalhas que você já iniciou continuam sendo carregadas a partir do cache.
+wcl.points_help,"Carregar a partir do WarcraftLogs gasta seus próprios pontos do WarcraftLogs, que são recarregados a cada hora. Iniciar uma luta contra um chefe de raid custa cerca de %d pontos e uma corrida em Mythic+ custa cerca de %d; lutas mais longas custam mais. As lutas que você já iniciou anteriormente são carregadas do cache gratuitamente."
+wcl.points_tiers,"Pontos por hora: %d sem assinatura, %d com o plano Prata, %d com o plano Ouro, %d com o plano Platina. Esses pontos são compartilhados com todos os outros sites e aplicativos nos quais você fizer login usando o WarcraftLogs."
+wcl.points_third_party,As assinaturas são vendidas pela Archon (WarcraftLogs). A AwowLab não tem nenhuma afiliação com eles e não recebe nada deles.
+wcl.points_more,Mais pontos
 wcl.session_expired,"A sessão expirou - por favor, autorize novamente"
 wcl.select_fight,Selecionar luta
 wcl.no_session,Nenhuma sessão carregada
 wcl.report,Relatório: %s
 wcl.fights_count,(%zu lutas)
-wcl.api_usage,Uso da API: %d/%d (redefine em %d min)
-wcl.api_usage_hourly,Uso da API: %d/%d por hora
-wcl.rate_limited,Taxa limitada - reinicia em %d minutos
-wcl.api_queries_remaining,%d/%d Consultas de API restantes nesta hora
-wcl.mplus_note,Nota: Masmorras M+ usam 2 consultas de API
 
 # =============================================================================
 # Cached Fights Panel
@@ -828,27 +829,6 @@ deaths.last_events,Eventos recentes
 deaths.no_events,Não foram registrados eventos de dano/cura
 resurrections.spell,Feitiço da Ressurreição
 status.view_not_implemented,Visualização ainda não implementada
-
-# =============================================================================
-# WarcraftLogs Help Text
-# =============================================================================
-wcl_help.want_unlimited,Deseja ter acesso ilimitado? Crie seu próprio cliente de API (gratuito!)
-wcl_help.get_unlimited,Obtenha acesso ilimitado - crie seu próprio cliente de API (gratuito!):
-wcl_help.step1,1. Ir para: warcraftlogs.com/api/clients
-wcl_help.step2,"2. Clique em ""Create a Client"" (Criar um cliente)"
-wcl_help.step3,3. Nome do aplicativo: test
-wcl_help.step4,4. URL de redirecionamento: http://localhost:8080/callback
-wcl_help.step5,"5. Deixe a opção ""Cliente público"" DESMARCADA"
-wcl_help.step6,"6. Clique em ""Create"" (Criar)"
-wcl_help.step7,7. Copie seu Client ID e Client Secret
-wcl_help.step8,"8. Crie ""wcl_credentials.txt"" ao lado do AwowLab.exe"
-wcl_help.step9,9. Linha 1: ID do cliente | Linha 2: Segredo do cliente
-wcl_help.go_to,Ir para: warcraftlogs.com/api/clients
-wcl_help.app_name,Nome do aplicativo: test
-wcl_help.redirect_url,URL de redirecionamento: http://localhost:8080/callback
-wcl_help.public_client,"Deixe a opção ""Public Client"" desmarcada e clique em Create"
-wcl_help.save_credentials,"Salvar a ID e o segredo do cliente em ""wcl_credentials.txt"
-wcl_help.credentials_format,"(Linha 1: ID do cliente, Linha 2: Segredo do cliente)"
 
 # =============================================================================
 # Spell Display Locations
@@ -1925,7 +1905,7 @@ benchmark.no_positions_hint,Recrie a referência para capturar o movimento.
 benchmark.movie.play,Jogar
 benchmark.movie.pause,Pausa
 benchmark.movie.restart,Reiniciar
-benchmark.movie.speed,%.0fx
+benchmark.movie.speed,%.0fX
 benchmark.trail.full,Caminho completo
 benchmark.trail.5s,Últimos 5s
 benchmark.trail.10s,Últimos 10s
@@ -1936,7 +1916,7 @@ benchmark.composition.shares,%.0f%% / %.0f%%
 benchmark.downtime_hint,Lacunas sem que nenhum valor seja atribuído. As causas são indicadas apenas quando o log mostra alguma.
 benchmark.downtime_count,%s atravessando as lacunas %d
 benchmark.downtime_worst,Maiores intervalos para %s
-benchmark.downtime_gap,%s  -  s%.1f
+benchmark.downtime_gap,%s  -  %.1fs
 benchmark.downtime_in_cd,durante um tempo de recarga
 benchmark.downtime_cancelled,cancelado %s
 benchmark.downtime_none,Não há lacunas dignas de menção

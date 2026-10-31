@@ -112,8 +112,8 @@ bool UILandingPage::render() {
     ImGui::BeginGroup();
 
     // Vertical centering - estimate total content height more accurately
-    // Header ~100, Cards ~220, Rate limit ~30, Links ~40, Footer ~30, spacing ~100
-    float totalHeight = 520.0f * scale;
+    // Header ~100, Cards ~220, Links ~40, Footer ~30, spacing ~100
+    float totalHeight = 490.0f * scale;
     float startY = std::max(20.0f * scale, (windowSize.y - totalHeight) * 0.5f);
     ImGui::SetCursorPosY(startY);
 
@@ -391,7 +391,7 @@ void UILandingPage::renderFooter() {
     // ESC exits only from the bare landing page. While a dialog, popup or
     // text field is up, ESC belongs to that and closing it must not quit.
     const bool landingDialogOpen = wclDialogOpen_ || cachedFightsPanelOpen_ ||
-                                   mentorPickerOpen_ || showUnlockInstructions_;
+                                   mentorPickerOpen_;
     if (ImGui::IsKeyPressed(ImGuiKey_Escape) && !landingDialogOpen &&
         !ImGui::IsAnyItemActive() &&
         !ImGui::IsPopupOpen("", ImGuiPopupFlags_AnyPopupId)) {

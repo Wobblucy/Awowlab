@@ -114,11 +114,14 @@ RateLimitInfo GraphQLClient::fetchRateLimitInfo() {
     info.limitPerHour = json::getInt(rateLimitData, "limitPerHour");
     info.pointsSpentThisHour = json::getInt(rateLimitData, "pointsSpentThisHour");
     info.pointsResetIn = json::getInt(rateLimitData, "pointsResetIn");
+    info.userPointsResetIn = json::getInt(rateLimitData, "userPointsResetIn", -1);
     info.lastUpdated = std::chrono::system_clock::now();
 
     if (m_rateLimiter) {
         m_rateLimiter->update(info.limitPerHour, info.pointsSpentThisHour, info.pointsResetIn);
-        return m_rateLimiter->getInfo();
+        RateLimitInfo tracked = m_rateLimiter->getInfo();
+        tracked.userPointsResetIn = info.userPointsResetIn;
+        return tracked;
     }
     return info;
 }

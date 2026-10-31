@@ -13,7 +13,6 @@
 
 #include "WarcraftLogsSession.h"
 #include "Settings/WclSettings.h"
-#include "Settings/RateLimitBackup.h"
 #include "UnifiedSettings.h"
 
 namespace fs = std::filesystem;
@@ -31,7 +30,6 @@ TEST_CASE("characterRankings arguments", "[wcl][live][schema]") {
         return;
     }
 
-    awow::registerRateLimitBackups();
     SettingsCache::instance().initialize();
     const std::string token =
         WclSettings::readFrom(SettingsCache::instance().get()).accessToken;
@@ -87,7 +85,6 @@ TEST_CASE("characterRankings arguments", "[wcl][live][schema]") {
 TEST_CASE("dump the warcraftlogs schema", "[wcl][live][schemadump]") {
     if (!std::getenv("AWL_LIVE_WCL")) { WARN("AWL_LIVE_WCL not set; skipping"); return; }
 
-    awow::registerRateLimitBackups();
     SettingsCache::instance().initialize();
     const std::string token =
         WclSettings::readFrom(SettingsCache::instance().get()).accessToken;

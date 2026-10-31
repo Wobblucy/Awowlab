@@ -467,16 +467,17 @@ wcl.authorizing,Autorizando...
 wcl.waiting_browser,Esperando navegador...
 wcl.authenticated,Autentificado
 wcl.public_only,Sólo registros públicos
+wcl.user_points_spent,Ya has agotado tus puntos de WarcraftLogs para esta hora. Volverán en %d min; las batallas que hayas abierto anteriormente seguirán cargándose desde la caché.
+wcl.user_points_spent_unknown,Ya has agotado tus puntos de WarcraftLogs para esta hora. Se recuperarán en menos de una hora; las batallas que hayas iniciado anteriormente seguirán cargándose desde la caché.
+wcl.points_help,"Al cargar desde WarcraftLogs se consumen tus propios puntos de WarcraftLogs, que se recargan cada hora. Iniciar una batalla contra un jefe de banda cuesta aproximadamente %d puntos y una partida de Mítico+ unos %d; las batallas más largas cuestan más. Las batallas que ya hayas iniciado se cargan desde la caché de forma gratuita."
+wcl.points_tiers,"Puntos por hora: %d sin suscripción, %d con la suscripción Silver, %d con la suscripción Gold, %d con la suscripción Platinum. Se comparten con el resto de sitios web y aplicaciones en los que inicies sesión con WarcraftLogs."
+wcl.points_third_party,Las suscripciones las comercializa Archon (WarcraftLogs). AwowLab no tiene ninguna relación con ellos y no obtiene ningún beneficio de ellos.
+wcl.points_more,Más puntos
 wcl.session_expired,"Sesión expirada - por favor, vuelva a autorizar"
 wcl.select_fight,Seleccionar combate
 wcl.no_session,No se ha cargado ninguna sesión
 wcl.report,Informe: %s
 wcl.fights_count,(%zupeleas)
-wcl.api_usage,Uso de la API: %d/%d (se reinicia en %d min)
-wcl.api_usage_hourly,Uso de API: %d/%d por hora
-wcl.rate_limited,Velocidad limitada - se restablece en %d minutos
-wcl.api_queries_remaining,%d/%d Consultas API restantes esta hora
-wcl.mplus_note,Nota: Las mazmorras M+ usan 2 consultas de API
 
 # =============================================================================
 # Cached Fights Panel
@@ -828,27 +829,6 @@ deaths.last_events,Eventos recientes
 deaths.no_events,No se han registrado eventos de daño ni de curación
 resurrections.spell,Hechizo de resurrección
 status.view_not_implemented,Vista aún no implementada
-
-# =============================================================================
-# WarcraftLogs Help Text
-# =============================================================================
-wcl_help.want_unlimited,¿Quiere acceso ilimitado? Cree su propio cliente API (¡gratis!)
-wcl_help.get_unlimited,Obtenga acceso ilimitado: cree su propio cliente API (¡gratis!):
-wcl_help.step1,1. Ir a: warcraftlogs.com/api/clients
-wcl_help.step2,"2. Haga clic en ""Crear un cliente"
-wcl_help.step3,3. Nombre de la aplicación: test
-wcl_help.step4,4. Redirigir URL: http://localhost:8080/callback
-wcl_help.step5,"5. Dejar ""Cliente público"" SIN MARCAR"
-wcl_help.step6,"6. Haga clic en ""Crear"
-wcl_help.step7,7. Copie su ID de cliente y su secreto de cliente
-wcl_help.step8,8. Crear 'wcl_credentials.txt' junto a AwowLab.exe
-wcl_help.step9,9. Línea 1: ID de cliente | Línea 2: Secreto del cliente
-wcl_help.go_to,Ir a: warcraftlogs.com/api/clients
-wcl_help.app_name,Nombre de la aplicación: test
-wcl_help.redirect_url,Redirigir URL: http://localhost:8080/callback
-wcl_help.public_client,"No marque la opción ""Cliente público"" y haga clic en Crear"
-wcl_help.save_credentials,Guardar ID de cliente y secreto en 'wcl_credentials.txt'
-wcl_help.credentials_format,"(Línea 1: ID del cliente, Línea 2: Secreto del cliente)"
 
 # =============================================================================
 # Spell Display Locations
@@ -1936,12 +1916,12 @@ benchmark.composition.shares,%.0f%% / %.0f%%
 benchmark.downtime_hint,Huecos sin que se haya lanzado el anzuelo. Las causas solo se indican cuando el registro muestra alguna.
 benchmark.downtime_count,%s a través de los huecos de %d
 benchmark.downtime_worst,Los intervalos más largos para %s
-benchmark.downtime_gap,%s  -  s%.1f
+benchmark.downtime_gap,%s  -  %.1f s
 benchmark.downtime_in_cd,durante un tiempo de espera
 benchmark.downtime_cancelled,cancelado %s
 benchmark.downtime_none,No hay diferencias dignas de mención
 benchmark.composition.header,%s / %s
-benchmark.gap_seconds,%.1fs
+benchmark.gap_seconds,%.1f s
 classify.aura.channel,Canal (aún en fase de selección de personal)
 benchmark.tab.damage,Daños
 benchmark.strip.cumulative,Daño acumulado

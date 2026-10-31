@@ -6,7 +6,7 @@ namespace queries {
 // Report metadata: fights and actors.
 // Variables: code (String!)
 constexpr const char* REPORT_METADATA = R"(
-query($code: String!) {
+query($code: String!) @onlySpendUserPoints {
   reportData {
     report(code: $code) {
       startTime
@@ -108,7 +108,7 @@ query($encounterId: Int!, $className: String, $specName: String, $difficulty: In
 // One page of events for a fight.
 // Variables: code (String!), fightIDs ([Int!]), start (Float), end (Float)
 constexpr const char* FIGHT_EVENTS = R"(
-query($code: String!, $start: Float, $end: Float, $fightIDs: [Int!]) {
+query($code: String!, $start: Float, $end: Float, $fightIDs: [Int!]) @onlySpendUserPoints {
   reportData {
     report(code: $code) {
       events(
@@ -142,7 +142,7 @@ query($code: String!, $start: Float, $end: Float, $fightIDs: [Int!]) {
 // Variables: code (String!), fightIDs ([Int!]), start (Float), end (Float),
 //            sourceID (Int)
 constexpr const char* FIGHT_EVENTS_FOR_ACTOR = R"(
-query($code: String!, $start: Float, $end: Float, $fightIDs: [Int!], $sourceID: Int) {
+query($code: String!, $start: Float, $end: Float, $fightIDs: [Int!], $sourceID: Int) @onlySpendUserPoints {
   reportData {
     report(code: $code) {
       events(
@@ -169,6 +169,7 @@ constexpr const char* RATE_LIMIT = R"(
     limitPerHour
     pointsSpentThisHour
     pointsResetIn
+    userPointsResetIn
   }
 }
 )";

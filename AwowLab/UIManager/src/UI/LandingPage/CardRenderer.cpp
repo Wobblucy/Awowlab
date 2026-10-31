@@ -225,19 +225,16 @@ void UILandingPage::renderSourceCards() {
         drawSourceCardHeading(L("landing.warcraftlogs"), L("landing.warcraftlogs_desc"),
                               cardWidth, 6.0f, scale);
 
-        bool rateLimited = rateLimitState_ && rateLimitState_->getRemainingQueries() <= 0;
         size_t cachedCount = getCachedFightCount();
         bool hasCachedFights = cachedCount > 0;
 
         ImGui::SetCursorPosY(buttonStackY);
         ImGui::SetCursorPosX(kButtonInsetX * scale);
 
-        if (rateLimited) ImGui::BeginDisabled();
         if (awlui::Button(L("btn.fetch_url"), awlui::ButtonVariant::Primary, awlui::ButtonSize::Md, ImVec2(buttonWidth, buttonHeight))) {
             wclDialogOpen_ = true;
             wclUrlDialog_->open();
         }
-        if (rateLimited) ImGui::EndDisabled();
 
         // The cache buttons stay visible but disabled until a fight is cached.
         ImGui::SetCursorPosX(kButtonInsetX * scale);
@@ -588,76 +585,6 @@ void UILandingPage::renderSourceCards() {
     }
     ImGui::EndChild();
     popSourceCardFrame();
-
-    // Rate limit indicator - positioned below the WarcraftLogs card
-    if (rateLimitState_) {
-        ImGui::Dummy(ImVec2(0, 8.0f * scale));
-
-        // Calculate position to align with WarcraftLogs card
-        float rateLimitStartX = startX + cardWidth + cardSpacing;
-        ImGui::SetCursorPosX(ImGui::GetCursorPosX() + rateLimitStartX);
-
-        int remaining = rateLimitState_->getRemainingQueries();
-        int max = WclRateLimitState::MAX_QUERIES;
-
-        ImDrawList* drawList = ImGui::GetWindowDrawList();
-        ImVec2 barPos = ImGui::GetCursorScreenPos();
-
-        float barWidth = cardWidth;
-        float barHeight = 8.0f * scale;
-
-        // Background bar
-        drawList->AddRectFilled(
-            barPos,
-            ImVec2(barPos.x + barWidth, barPos.y + barHeight),
-            ImGui::ColorConvertFloat4ToU32(ImVec4(0.12f, 0.12f, 0.18f, 1.0f)),
-            4.0f * scale
-        );
-
-        // Progress fill (green when available, orange when limited, red when exhausted)
-        float fillWidth = barWidth * (static_cast<float>(remaining) / static_cast<float>(max));
-        ImVec4 fillColor;
-        if (remaining == 0) {
-            fillColor = ImVec4(0.85f, 0.25f, 0.25f, 1.0f);  // Red
-        } else if (remaining == 1) {
-            fillColor = ImVec4(0.85f, 0.55f, 0.25f, 1.0f);  // Orange
-        } else {
-            fillColor = ImVec4(0.25f, 0.75f, 0.45f, 1.0f);  // Green
-        }
-
-        drawList->AddRectFilled(
-            barPos,
-            ImVec2(barPos.x + fillWidth, barPos.y + barHeight),
-            ImGui::ColorConvertFloat4ToU32(fillColor),
-            4.0f * scale
-        );
-
-        ImGui::Dummy(ImVec2(barWidth, barHeight + 6.0f * scale));
-
-        // Usage text centered under the bar
-        ImGui::SetCursorPosX(ImGui::GetCursorPosX() + rateLimitStartX);
-
-        ImGui::PushStyleColor(ImGuiCol_Text, LandingColors::TextMuted);
-        ImGui::SetWindowFontScale(0.9f);
-
-        if (remaining > 0) {
-            ImGui::Text(L("wcl.api_queries_remaining"), remaining, max);
-        } else {
-            int minutesUntilReset = rateLimitState_->getMinutesUntilReset();
-            ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(0.85f, 0.55f, 0.25f, 1.0f));
-            ImGui::Text(L("wcl.rate_limited"), minutesUntilReset);
-            ImGui::PopStyleColor();
-        }
-
-        ImGui::SetWindowFontScale(1.0f);
-        ImGui::PopStyleColor();
-
-        // M+ note - displayed prominently near rate limit meter
-        ImGui::SetCursorPosX(ImGui::GetCursorPosX() + rateLimitStartX);
-        ImGui::PushStyleColor(ImGuiCol_Text, ImVec4(0.85f, 0.65f, 0.25f, 1.0f));  // Amber/gold
-        ImGui::Text("%s", L("wcl.mplus_note"));
-        ImGui::PopStyleColor();
-    }
 }
 
 void UILandingPage::renderLanguagePackCard() {

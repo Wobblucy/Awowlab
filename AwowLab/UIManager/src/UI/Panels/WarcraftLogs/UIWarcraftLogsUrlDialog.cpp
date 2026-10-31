@@ -5,6 +5,7 @@
 #include "Core/UnifiedSettings.h"
 #include "Core/Settings/WclSettings.h"
 #include "Core/LocalizationManager.h"
+#include "Core/BrowserHelper.h"
 
 #include <imgui.h>
 #include <fstream>
@@ -50,6 +51,26 @@ struct UIWarcraftLogsUrlDialog::AuthTask {
     bool done = false;
     warcraftlogs::AuthResult result;
 };
+
+
+namespace {
+
+// WarcraftLogs points a user spends loading a fight with its report details,
+// measured 2026-10-31: a 10-minute 20-player Mythic boss kill cost 70 and a
+// 29-minute +24 key 40. Cost follows the number of events, so short pulls
+// and small groups cost less.
+constexpr int kRaidPullPoints = 70;
+constexpr int kMythicPlusRunPoints = 40;
+
+// User points per hour by Archon (WarcraftLogs) subscription tier
+constexpr int kUserPointsNone = 100;
+constexpr int kUserPointsSilver = 250;
+constexpr int kUserPointsGold = 400;
+constexpr int kUserPointsPlatinum = 800;
+
+constexpr const char* kArchonSubscribeUrl = "https://www.patreon.com/warcraftlogs";
+
+} // namespace
 
 UIWarcraftLogsUrlDialog::UIWarcraftLogsUrlDialog() {
     loadPersistedToken();
@@ -322,6 +343,36 @@ void UIWarcraftLogsUrlDialog::renderAuthSection() {
         }
     } else {
         ImGui::TextColored(Colors::TextMuted, "%s", L("wcl.public_only"));
+    }
+
+    // What a load costs from the user's own WarcraftLogs points
+    ImGui::SameLine();
+    ImGui::TextDisabled("(?)");
+    if (ImGui::IsItemHovered()) {
+        ImGui::BeginTooltip();
+        ImGui::PushTextWrapPos(ImGui::GetFontSize() * 32.0f);
+        ImGui::TextUnformatted(LF("wcl.points_help", kRaidPullPoints, kMythicPlusRunPoints).c_str());
+        ImGui::Spacing();
+        ImGui::TextUnformatted(LF("wcl.points_tiers", kUserPointsNone, kUserPointsSilver,
+                                  kUserPointsGold, kUserPointsPlatinum).c_str());
+        ImGui::Spacing();
+        ImGui::TextDisabled("%s", L("wcl.points_third_party"));
+        ImGui::PopTextWrapPos();
+        ImGui::EndTooltip();
+    }
+    ImGui::SameLine();
+    if (awlui::Button(L("wcl.points_more"), awlui::ButtonVariant::Ghost, awlui::ButtonSize::Sm)) {
+        BrowserHelper::openUrl(kArchonSubscribeUrl);
+    }
+    if (ImGui::IsItemHovered()) {
+        ImGui::SetTooltip("%s\n%s", L("wcl.points_third_party"), kArchonSubscribeUrl);
+    }
+
+    if (!awow::wclNotice().empty()) {
+        ImGui::Spacing();
+        ImGui::PushTextWrapPos(0.0f);
+        ImGui::TextColored(Colors::TextWarning, "%s", awow::wclNotice().c_str());
+        ImGui::PopTextWrapPos();
     }
 
     ImGui::Spacing();

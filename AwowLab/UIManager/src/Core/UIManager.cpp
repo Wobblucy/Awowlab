@@ -372,9 +372,7 @@ AutoAnnotationTriggerManager* UIManager::getAutoAnnotationTriggerManager() {
     return vulkanRenderer ? vulkanRenderer->getAutoAnnotationTriggerManager() : nullptr;
 }
 
-LandingPageResult UIManager::showLandingPage(WclRateLimitState* rateLimitState,
-                                               bool hasCustomCredentials,
-                                               ValidateCredentialsCallback validateCredentials,
+LandingPageResult UIManager::showLandingPage(ValidateCredentialsCallback validateCredentials,
                                                warcraftlogs::ResponseCache* responseCache,
                                                bool autoOpenWclDialog) {
     UILandingPage landingPage;
@@ -389,8 +387,6 @@ LandingPageResult UIManager::showLandingPage(WclRateLimitState* rateLimitState,
             iconPath)) {
         landingPage.setClassIconCache(&classIconCache);
     }
-
-    landingPage.setRateLimitState(rateLimitState, hasCustomCredentials);
 
     // Carry over whatever the last action reported, then clear it so the
     // message shows once rather than on every return to the menu.
@@ -442,11 +438,9 @@ LandingPageResult UIManager::showLandingPage(WclRateLimitState* rateLimitState,
     return result;
 }
 
-int32_t UIManager::showFightSelector(warcraftlogs::WarcraftLogsSession* session,
-                                     WclRateLimitState* rateLimitState) {
+int32_t UIManager::showFightSelector(warcraftlogs::WarcraftLogsSession* session) {
     UIWarcraftLogsPanel fightSelector;
     fightSelector.setSession(session);
-    fightSelector.setRateLimitState(rateLimitState);
 
     AWOW_LOG_INFO("UI", "Showing WarcraftLogs fight selector...");
 

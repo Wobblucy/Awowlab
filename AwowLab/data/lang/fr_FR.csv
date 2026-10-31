@@ -467,16 +467,17 @@ wcl.authorizing,Autoriser...
 wcl.waiting_browser,En attendant le navigateur...
 wcl.authenticated,Authentifié
 wcl.public_only,Journaux publics uniquement
+wcl.user_points_spent,Vos points WarcraftLogs pour cette heure sont épuisés. Ils seront réinitialisés dans %d min ; les combats que vous avez déjà ouverts continueront à se charger à partir du cache.
+wcl.user_points_spent_unknown,Vos points WarcraftLogs pour cette heure sont épuisés. Ils seront réinitialisés d'ici une heure ; les combats que vous avez déjà ouverts continueront à se charger à partir du cache.
+wcl.points_help,"Le chargement depuis WarcraftLogs utilise vos propres points WarcraftLogs, qui se rechargent toutes les heures. Un combat contre un boss de raid coûte environ %d points et une session Mythic+ environ %d ; les combats plus longs coûtent plus cher. Les combats que vous avez déjà ouverts sont chargés gratuitement depuis le cache."
+wcl.points_tiers,"Points par heure : %d sans abonnement, %d avec l'abonnement Silver, %d avec l'abonnement Gold, %d avec l'abonnement Platinum. Ces points sont partagés avec tous les autres sites et applications auxquels vous vous connectez via WarcraftLogs."
+wcl.points_third_party,Les abonnements sont vendus par Archon (WarcraftLogs). AwowLab n'est pas affilié à cette société et ne perçoit aucune commission de sa part.
+wcl.points_more,Plus de points
 wcl.session_expired,Session expirée - veuillez ré-autoriser
 wcl.select_fight,Sélectionner le combat
 wcl.no_session,Pas de session chargée
 wcl.report,Rapport : %s
 wcl.fights_count,(%zu combats))
-wcl.api_usage,Utilisation de l'API : %d/%d (réinitialisation en %d min)
-wcl.api_usage_hourly,Utilisation de l'API : %d/%d par heure
-wcl.rate_limited,Taux limité - réinitialisation en %d minutes
-wcl.api_queries_remaining,%d/%d Requêtes API restantes pour cette heure
-wcl.mplus_note,Note : Les donjons M+ utilisent 2 requêtes API
 
 # =============================================================================
 # Cached Fights Panel
@@ -828,27 +829,6 @@ deaths.last_events,Événements récents
 deaths.no_events,Aucun événement de dégâts ou de soins n'a été enregistré
 resurrections.spell,Sort de résurrection
 status.view_not_implemented,Fonctionnalité non encore mise en œuvre
-
-# =============================================================================
-# WarcraftLogs Help Text
-# =============================================================================
-wcl_help.want_unlimited,Vous voulez un accès illimité ? Créez votre propre client API (gratuit !)
-wcl_help.get_unlimited,Obtenez un accès illimité - créez votre propre client API (gratuit !):
-wcl_help.step1,1. Aller à : warcraftlogs.com/api/clients
-wcl_help.step2,"2. Cliquez sur ""Créer un client"""
-wcl_help.step3,3. Nom de l'application : test
-wcl_help.step4,4. URL de redirection : http://localhost:8080/callback
-wcl_help.step5,"5. Ne pas cocher la case ""Client public"""
-wcl_help.step6,"6. Cliquez sur ""Créer"""
-wcl_help.step7,7. Copiez votre identifiant et votre secret client
-wcl_help.step8,8. Créer 'wcl_credentials.txt' à côté de AwowLab.exe
-wcl_help.step9,9. Ligne 1 : ID du client | Ligne 2 : Secret du client
-wcl_help.go_to,Aller à : warcraftlogs.com/api/clients
-wcl_help.app_name,Nom de l'application : test
-wcl_help.redirect_url,URL de redirection : http://localhost:8080/callback
-wcl_help.public_client,"Ne pas cocher la case ""Client public"", cliquer sur Créer"
-wcl_help.save_credentials,Enregistrer l'ID et le secret du client dans 'wcl_credentials.txt'
-wcl_help.credentials_format,"(Ligne 1 : ID du client, Ligne 2 : Secret du client)"
 
 # =============================================================================
 # Spell Display Locations
@@ -1925,7 +1905,7 @@ benchmark.no_positions_hint,Reconstruisez la référence pour capturer le mouvem
 benchmark.movie.play,Jouer
 benchmark.movie.pause,Pause
 benchmark.movie.restart,Redémarrer
-benchmark.movie.speed,%.0fx
+benchmark.movie.speed,%.0fX
 benchmark.trail.full,Chemin d'accès complet
 benchmark.trail.5s,Les 5 dernières secondes
 benchmark.trail.10s,Les 10 dernières secondes
@@ -1936,12 +1916,12 @@ benchmark.composition.shares,%.0f%% / %.0f%%
 benchmark.downtime_hint,Lacunes sans lancer effectué. Les causes ne sont mentionnées que lorsque le journal en indique une.
 benchmark.downtime_count,%s en travers des espaces %d
 benchmark.downtime_worst,Les plus longues lacunes pour %s
-benchmark.downtime_gap,%s  -  s%.1f
+benchmark.downtime_gap,%s  -  %.1f s
 benchmark.downtime_in_cd,pendant un temps de recharge
 benchmark.downtime_cancelled,annulé %s
 benchmark.downtime_none,Aucune lacune digne d'être signalée
 benchmark.composition.header,%s / %s
-benchmark.gap_seconds,%.1fs
+benchmark.gap_seconds,%.1f s
 classify.aura.channel,Chaîne (recrutement en cours)
 benchmark.tab.damage,Dégâts
 benchmark.strip.cumulative,Dommages cumulés

@@ -8,7 +8,6 @@
 
 #include "WarcraftLogsSession.h"
 #include "Settings/WclSettings.h"
-#include "Settings/RateLimitBackup.h"
 #include "UnifiedSettings.h"
 #include "SpellNameDatabase.h"
 
@@ -28,7 +27,6 @@ TEST_CASE("dummy pulls and cooldown resets", "[wcl][live][dummy][reset]") {
         return;
     }
 
-    awow::registerRateLimitBackups();
     SettingsCache::instance().initialize();
     const std::string token =
         WclSettings::readFrom(SettingsCache::instance().get()).accessToken;

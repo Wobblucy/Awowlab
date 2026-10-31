@@ -7,7 +7,6 @@
 #include "Settings/WclSettings.h"
 #include "UnifiedSettings.h"
 #include "StringInterner.h"
-#include "Settings/RateLimitBackup.h"
 
 // Spends real API queries, so it only runs when AWL_LIVE_WCL is set.
 //
@@ -29,10 +28,8 @@ TEST_CASE("a fight can be fetched for one actor", "[wcl][live]") {
     warcraftlogs::WarcraftLogsSession session;
     session.setCacheEnabled(false, "");   // measure the fetch, not the cache
 
-    // Same order the app uses: the hooks are what decrypt the DPAPI-protected
-    // token, and initialize() is what reads the file at all. Without both the
-    // cache is empty and the token looks absent rather than encrypted.
-    awow::registerRateLimitBackups();
+    // initialize() is what reads the file at all. Without it the cache is
+    // empty and the token looks absent rather than encrypted.
     SettingsCache::instance().initialize();
 
     const auto& settings = SettingsCache::instance().get();

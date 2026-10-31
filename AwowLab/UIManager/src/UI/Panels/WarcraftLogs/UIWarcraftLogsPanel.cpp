@@ -1,6 +1,5 @@
 #include "UI/Panels/WarcraftLogs/UIWarcraftLogsPanel.h"
 #include "UI/AwlUI/Widgets.h"
-#include "UI/UISettings.h"
 #include "Core/WarcraftLogsSession.h"
 #include "Core/LocalizationManager.h"
 #include "Adapter/WclToAwowAdapter.h"
@@ -87,58 +86,6 @@ bool UIWarcraftLogsPanel::render() {
         ImGui::Text(L("wcl.report"), reportCode.c_str());
         ImGui::SameLine();
         ImGui::TextColored(ImVec4(0.6f, 0.6f, 0.7f, 1.0f), L("wcl.fights_count"), fights.size());
-
-        // Rate limit status and API key guidance
-        if (rateLimitState_) {
-            int used = rateLimitState_->queriesUsed;
-            int max = WclRateLimitState::MAX_QUERIES;
-            int minutesLeft = rateLimitState_->getMinutesUntilReset();
-            bool atLimit = used >= max;
-
-            ImVec4 color = atLimit ? ImVec4(1.0f, 0.3f, 0.3f, 1.0f) : ImVec4(0.7f, 0.7f, 0.3f, 1.0f);
-
-            if (minutesLeft > 0 && atLimit) {
-                ImGui::TextColored(color, L("wcl.api_usage"), used, max, minutesLeft);
-            } else {
-                ImGui::TextColored(color, L("wcl.api_usage_hourly"), used, max);
-            }
-
-            ImGui::SameLine();
-            ImGui::TextDisabled("(?)");
-            if (ImGui::IsItemHovered()) {
-                ImGui::BeginTooltip();
-                ImGui::PushTextWrapPos(500.0f);
-                ImGui::TextColored(ImVec4(1.0f, 0.9f, 0.5f, 1.0f), "%s", L("wcl_help.want_unlimited"));
-                ImGui::Spacing();
-                ImGui::Text("%s", L("wcl_help.step1"));
-                ImGui::Text("%s", L("wcl_help.step2"));
-                ImGui::Text("%s", L("wcl_help.step3"));
-                ImGui::Text("%s", L("wcl_help.step4"));
-                ImGui::Text("%s", L("wcl_help.step5"));
-                ImGui::Text("%s", L("wcl_help.step6"));
-                ImGui::Text("%s", L("wcl_help.step7"));
-                ImGui::Text("%s", L("wcl_help.step8"));
-                ImGui::Text("%s", L("wcl_help.step9"));
-                ImGui::PopTextWrapPos();
-                ImGui::EndTooltip();
-            }
-
-            if (atLimit) {
-                ImGui::Spacing();
-                ImGui::PushStyleColor(ImGuiCol_ChildBg, ImVec4(0.2f, 0.15f, 0.1f, 1.0f));
-                ImGui::BeginChild("APIKeyHelp", ImVec2(0, 130), true);
-                ImGui::TextColored(ImVec4(1.0f, 0.8f, 0.3f, 1.0f), "%s", L("wcl_help.get_unlimited"));
-                ImGui::Spacing();
-                ImGui::BulletText("%s", L("wcl_help.go_to"));
-                ImGui::BulletText("%s", L("wcl_help.app_name"));
-                ImGui::BulletText("%s", L("wcl_help.redirect_url"));
-                ImGui::BulletText("%s", L("wcl_help.public_client"));
-                ImGui::BulletText("%s", L("wcl_help.save_credentials"));
-                ImGui::TextColored(ImVec4(0.6f, 0.6f, 0.6f, 1.0f), "   %s", L("wcl_help.credentials_format"));
-                ImGui::EndChild();
-                ImGui::PopStyleColor();
-            }
-        }
 
         ImGui::Spacing();
 

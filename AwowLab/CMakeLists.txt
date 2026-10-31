@@ -309,8 +309,6 @@ add_executable(AwowLab WIN32
     Core/UnifiedSettings.cpp
     Core/UnifiedSettings.h
     Core/Settings/Crypto.cpp
-    Core/Settings/RateLimitBackup.h
-    Core/Settings/RegistryBackup.cpp
     Core/Settings/WclSettings.cpp
     Core/Settings/WclSettings.h
     Core/Settings/SettingsExportManager.cpp

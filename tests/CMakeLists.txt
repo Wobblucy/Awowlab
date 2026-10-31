@@ -102,7 +102,6 @@ add_executable(database_tests
     resource_csv_test.cpp
     package_csv_test.cpp
     package_builder_test.cpp
-    rate_limit_backup_test.cpp
     spell_assignment_tests.cpp
     ${CMAKE_SOURCE_DIR}/AwowLab/UIManager/src/UI/SpellAssignmentSettings.cpp
     settings_key_test.cpp
@@ -116,7 +115,6 @@ add_executable(database_tests
     ${CMAKE_SOURCE_DIR}/AwowLab/Core/Utils/ColorUtils.cpp
     ${CMAKE_SOURCE_DIR}/AwowLab/Core/UnifiedSettings.cpp
     ${CMAKE_SOURCE_DIR}/AwowLab/Core/Settings/Crypto.cpp
-    ${CMAKE_SOURCE_DIR}/AwowLab/Core/Settings/RegistryBackup.cpp
     ${CMAKE_SOURCE_DIR}/AwowLab/Core/Settings/WclSettings.cpp
     ${CMAKE_SOURCE_DIR}/AwowLab/Core/Utils/ExecutablePath.cpp
 )
@@ -166,7 +164,6 @@ add_executable(benchmark_tests
     ${CMAKE_SOURCE_DIR}/AwowLab/Core/Utils/ColorUtils.cpp
     ${CMAKE_SOURCE_DIR}/AwowLab/Core/UnifiedSettings.cpp
     ${CMAKE_SOURCE_DIR}/AwowLab/Core/Settings/Crypto.cpp
-    ${CMAKE_SOURCE_DIR}/AwowLab/Core/Settings/RegistryBackup.cpp
     ${CMAKE_SOURCE_DIR}/AwowLab/Core/Settings/WclSettings.cpp
     ${CMAKE_SOURCE_DIR}/AwowLab/Core/Utils/ExecutablePath.cpp
     ${CMAKE_SOURCE_DIR}/AwowLab/Core/Benchmark/MentorProfile.cpp
@@ -237,7 +234,6 @@ add_executable(rollforward_e2e
     ${CMAKE_SOURCE_DIR}/AwowLab/Core/Utils/ColorUtils.cpp
     ${CMAKE_SOURCE_DIR}/AwowLab/Core/UnifiedSettings.cpp
     ${CMAKE_SOURCE_DIR}/AwowLab/Core/Settings/Crypto.cpp
-    ${CMAKE_SOURCE_DIR}/AwowLab/Core/Settings/RegistryBackup.cpp
     ${CMAKE_SOURCE_DIR}/AwowLab/Core/Settings/WclSettings.cpp
     ${CMAKE_SOURCE_DIR}/AwowLab/Core/Utils/ExecutablePath.cpp
 )
@@ -266,6 +262,7 @@ add_executable(parity_tests
     parity/wcl_baseline_live_test.cpp
     parity/wcl_dummy_zone_test.cpp
     parity/wcl_dummy_reset_test.cpp
+    parity/wcl_point_cost_test.cpp
     parity/wcl_rankings_args_test.cpp
     parity/wcl_single_fight_test.cpp
     parity/press_groups_test.cpp
@@ -278,7 +275,6 @@ add_executable(parity_tests
     ${CMAKE_SOURCE_DIR}/AwowLab/Core/WarcraftLogsSession.cpp  # the live actor-scope test drives it
     ${CMAKE_SOURCE_DIR}/AwowLab/Core/SpellNameDatabase.cpp
     ${CMAKE_SOURCE_DIR}/AwowLab/Core/Settings/Crypto.cpp
-    ${CMAKE_SOURCE_DIR}/AwowLab/Core/Settings/RegistryBackup.cpp
     ${CMAKE_SOURCE_DIR}/AwowLab/Core/Settings/WclSettings.cpp
     ${CMAKE_SOURCE_DIR}/AwowLab/Core/Utils/ExecutablePath.cpp
 )
@@ -362,7 +358,6 @@ add_executable(livelog_scan_tests
     # database_tests does.
     ${CMAKE_SOURCE_DIR}/AwowLab/Core/UnifiedSettings.cpp
     ${CMAKE_SOURCE_DIR}/AwowLab/Core/Settings/Crypto.cpp
-    ${CMAKE_SOURCE_DIR}/AwowLab/Core/Settings/RegistryBackup.cpp
     ${CMAKE_SOURCE_DIR}/AwowLab/Core/Settings/WclSettings.cpp
     ${CMAKE_SOURCE_DIR}/AwowLab/Core/Utils/ExecutablePath.cpp
 )

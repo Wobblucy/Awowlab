@@ -18,7 +18,6 @@ struct CombatantInfoEvent;
 struct MapChangeEvent;
 struct DeathEvent;
 struct ResurrectEvent;
-struct WclRateLimitState;
 struct ExtractedData;
 struct Annotation;
 struct AutoAnnotationTrigger;
@@ -227,21 +226,16 @@ public:
 
     // Show landing page and wait for user choice
     // Returns the user's choice (LocalFile, WarcraftLogs, CachedFight, or Exit)
-    // rateLimitState: optional rate limit state for WarcraftLogs display
-    // hasCustomCredentials: true if user has their own API credentials
     // validateCredentials: optional callback to validate API credentials before saving
     // responseCache: optional cache for browsing previously loaded WarcraftLogs fights
     // autoOpenWclDialog: if true, automatically opens the WCL URL dialog (e.g., after auth failure)
-    LandingPageResult showLandingPage(WclRateLimitState* rateLimitState = nullptr,
-                                       bool hasCustomCredentials = false,
-                                       ValidateCredentialsCallback validateCredentials = nullptr,
+    LandingPageResult showLandingPage(ValidateCredentialsCallback validateCredentials = nullptr,
                                        warcraftlogs::ResponseCache* responseCache = nullptr,
                                        bool autoOpenWclDialog = false);
 
     // Show WarcraftLogs fight selector and wait for user selection
     // Returns the selected fight ID, or -1 if cancelled
-    int32_t showFightSelector(warcraftlogs::WarcraftLogsSession* session,
-                              WclRateLimitState* rateLimitState = nullptr);
+    int32_t showFightSelector(warcraftlogs::WarcraftLogsSession* session);
 
     // Show a progress overlay while executing a long-running task
     // Renders the loading UI while the task runs

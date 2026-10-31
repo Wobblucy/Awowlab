@@ -4,61 +4,7 @@
 #include <fstream>
 #include <sstream>
 #include <filesystem>
-#include <ctime>
 #include "Core/UnifiedSettings.h"
-
-// WarcraftLogs API rate limit state (local enforcement)
-struct WclRateLimitState {
-    int queriesUsed = 0;
-    int64_t windowStartTime = 0;  // Unix timestamp when current window started
-
-#ifdef NDEBUG
-    static constexpr int MAX_QUERIES = 2;  // Limited to encourage users to get their own API key
-#else
-    static constexpr int MAX_QUERIES = 30; // Higher limit for debug builds
-#endif
-    static constexpr int64_t WINDOW_SECONDS = 3600;  // 1 hour
-
-    // Check if window has expired and reset if needed
-    void maybeResetWindow() {
-        if (windowStartTime == 0) return;  // No window started yet
-
-        int64_t now = static_cast<int64_t>(std::time(nullptr));
-        if (now - windowStartTime >= WINDOW_SECONDS) {
-            // Window expired, reset
-            queriesUsed = 0;
-            windowStartTime = 0;
-        }
-    }
-
-    int getRemainingQueries() const {
-        return MAX_QUERIES - queriesUsed;
-    }
-
-    // Check if we can afford a query with the given cost
-    // M+ costs 2, raid costs 1
-    bool canAfford(int cost) const {
-        return getRemainingQueries() >= cost;
-    }
-
-    int getMinutesUntilReset() const {
-        if (windowStartTime == 0) return 0;
-
-        int64_t now = static_cast<int64_t>(std::time(nullptr));
-        int64_t elapsed = now - windowStartTime;
-        int64_t remaining = WINDOW_SECONDS - elapsed;
-
-        if (remaining <= 0) return 0;
-        return static_cast<int>((remaining + 59) / 60);  // Round up to nearest minute
-    }
-
-    void recordQuery(int cost = 1) {
-        if (windowStartTime == 0) {
-            windowStartTime = static_cast<int64_t>(std::time(nullptr));
-        }
-        queriesUsed += cost;
-    }
-};
 
 // Anchor point for window positioning (relative to viewport)
 enum class WindowAnchor {
@@ -199,9 +145,6 @@ struct UISettings {
 
     // Menu bar visibility
     bool showMenuBar = true;
-
-    // WarcraftLogs rate limit state
-    WclRateLimitState wclRateLimit;
 
     // Default constructor sets default window positions using anchors
     UISettings() {
@@ -457,7 +400,7 @@ struct UISettings {
                            &currentWindow->size.x, &currentWindow->size.y);
                 }
             }
-            // wclRateLimit and other global settings are stored separately in UnifiedSettings
+            // Global settings are stored separately in UnifiedSettings
         }
 
         return true;

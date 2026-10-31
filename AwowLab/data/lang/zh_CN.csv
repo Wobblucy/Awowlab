@@ -467,16 +467,17 @@ wcl.authorizing,授权...
 wcl.waiting_browser,等待浏览器...
 wcl.authenticated,已认证
 wcl.public_only,仅限公共日志
+wcl.user_points_spent,您本小时的《魔兽世界日志》积分已用完。积分将在 %d 分钟后恢复；您之前打开过的战斗记录仍会从缓存中加载。
+wcl.user_points_spent_unknown,您本小时的 WarcraftLogs 积分已用完。一小时内积分将自动恢复；此前已开启的战斗仍会从缓存中加载。
+wcl.points_help,从 WarcraftLogs 加载内容会消耗你自己的 WarcraftLogs 积分，这些积分每小时会自动恢复。拉一个团队副本首领大约消耗 %d 积分，一次神话+副本大约消耗 %d 积分；战斗时间越长，消耗的积分越多。你之前打开过的战斗将从缓存中免费加载。
+wcl.points_tiers,每小时积分：未订阅时为 %d，银卡会员为 %d，金卡会员为 %d，白金卡会员为 %d。这些积分将与您使用 WarcraftLogs 登录的其他所有网站和应用共享。
+wcl.points_third_party,订阅服务由 Archon（WarcraftLogs）提供。AwowLab 与该公司无任何关联，也未从中获得任何收益。
+wcl.points_more,更多积分
 wcl.session_expired,会话已过期，请重新授权
 wcl.select_fight,选择战斗
 wcl.no_session,未加载会话
 wcl.report,报告： %s
 wcl.fights_count,(%zu 格斗)
-wcl.api_usage,API 使用：%d/%d（在%d分钟内重置）
-wcl.api_usage_hourly,API 使用量：%d/%d每小时
-wcl.rate_limited,速率受限 - 在 %d 分钟内重置
-wcl.api_queries_remaining,%d/%d 本小时剩余的 API 查询次数
-wcl.mplus_note,注意：M+ 地下城使用 2 次 API 查询
 
 # =============================================================================
 # Cached Fights Panel
@@ -828,27 +829,6 @@ deaths.last_events,近期活动
 deaths.no_events,未记录任何伤害/治疗事件
 resurrections.spell,复活咒
 status.view_not_implemented,该视图尚未实现
-
-# =============================================================================
-# WarcraftLogs Help Text
-# =============================================================================
-wcl_help.want_unlimited,想要无限制访问？创建自己的 API 客户端（免费）
-wcl_help.get_unlimited,无限制访问 - 创建自己的 API 客户端（免费！）：
-wcl_help.step1,1.转至： warcraftlogs.com/api/clients
-wcl_help.step2,"2.点击 ""创建客户"
-wcl_help.step3,3.应用程序名称：测试
-wcl_help.step4,4.重定向 URL: http://localhost:8080/callback
-wcl_help.step5,"5.不勾选 ""公共客户端"
-wcl_help.step6,"6.点击 ""创建"
-wcl_help.step7,7.复制您的客户 ID 和客户保密信息
-wcl_help.step8,"8.在 AwowLab.exe 旁边创建 ""wcl_credentials.txt""。"
-wcl_help.step9,9.第 1 行：第 2 行：客户 ID客户秘密
-wcl_help.go_to,转至： warcraftlogs.com/api/clients
-wcl_help.app_name,应用程序名称：测试
-wcl_help.redirect_url,重定向 URL: http://localhost:8080/callback
-wcl_help.public_client,"不选中 ""公共客户端""，点击创建"
-wcl_help.save_credentials,"将客户 ID 和保密信息保存到 ""wcl_credentials.txt ""中"
-wcl_help.credentials_format,(第 1 行：客户 ID，第 2 行：客户密文）
 
 # =============================================================================
 # Spell Display Locations
@@ -1651,7 +1631,7 @@ phases.kind_time,在
 phases.kind_emote,表情
 phases.not_this_pull,本次尝试未达到
 phases.add_time,添加时间分段
-phases.time_hint,m:ss
+phases.time_hint,分:秒
 phases.emotes_header,本次尝试的表情
 phases.split_here,在此分段
 phases.no_emotes,本次尝试没有表情
@@ -1826,7 +1806,7 @@ benchmark.action.rebuild,立即重建
 benchmark.cd_show_buffs,显示每个窗口中正在运行的缓冲区
 benchmark.cd_window,(%s - %s)
 benchmark.cd_output,%s 伤害 (%s DPS) 超过 %d 全局冷却时间
-benchmark.cd_buff,%s (%.0fs)
+benchmark.cd_buff,%s（%.0fs）
 benchmark.melee,近战
 classify.evidence.faster_than_gcd,%d 四处散落——%.2f速度太快，来不及按住
 classify.evidence.auto_attack,%d 普通攻击挥击
@@ -1925,7 +1905,7 @@ benchmark.no_positions_hint,重建该引用以捕捉运动。
 benchmark.movie.play,播放
 benchmark.movie.pause,暂停
 benchmark.movie.restart,重新启动
-benchmark.movie.speed,%.0fx
+benchmark.movie.speed,%.0f×
 benchmark.trail.full,完整路径
 benchmark.trail.5s,最后5秒
 benchmark.trail.10s,最近10秒
@@ -1936,12 +1916,12 @@ benchmark.composition.shares,%.0f%% / %.0f%%
 benchmark.downtime_hint,存在未进行投射的缺口。仅当日志中显示了原因时，才会列出原因。
 benchmark.downtime_count,%s 跨越 %d 间隙
 benchmark.downtime_worst,%s的最长间隔
-benchmark.downtime_gap,%s  -  s%.1f
+benchmark.downtime_gap,%s  -  %.1f秒
 benchmark.downtime_in_cd,处于冷却时间内
 benchmark.downtime_cancelled,已取消 %s
 benchmark.downtime_none,没有值得报告的差距
 benchmark.composition.header,%s / %s
-benchmark.gap_seconds,%.1fs
+benchmark.gap_seconds,%.1f秒
 classify.aura.channel,频道（仍在招募中）
 benchmark.tab.damage,损坏
 benchmark.strip.cumulative,累计伤害

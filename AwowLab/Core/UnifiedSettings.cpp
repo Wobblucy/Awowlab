@@ -387,11 +387,6 @@ SettingsCache::~SettingsCache() {
     flush();
 }
 
-void SettingsCache::setPersistenceHooks(SettingsPersistenceHooks hooks) {
-    std::lock_guard<std::mutex> lock(mutex_);
-    hooks_ = std::move(hooks);
-}
-
 void SettingsCache::initialize() {
     std::lock_guard<std::mutex> lock(mutex_);
 
@@ -407,13 +402,6 @@ void SettingsCache::initialize() {
     if (!loadedFromFile && settings_.trackedDefensiveSpellIds.empty()) {
         settings_.trackedDefensiveSpellIds = awow::defaultDefensiveSpellIds();
         dirty_ = true;
-    }
-
-    // Let the host application reconcile the freshly loaded settings with
-    // whatever it keeps outside the file. No-op when nothing is registered
-    // (overlay-only installs).
-    if (hooks_.afterLoad) {
-        hooks_.afterLoad(settings_);
     }
 
     lastSaveTime_ = std::chrono::steady_clock::now();
@@ -448,11 +436,6 @@ void SettingsCache::flush() {
     if (UnifiedSettings::save(settings_)) {
         dirty_ = false;
         lastSaveTime_ = std::chrono::steady_clock::now();
-
-        if (hooks_.afterSave) {
-            hooks_.afterSave(settings_);
-        }
-
     } else {
         AWOW_LOG_WARNING("SETTINGS", "Failed to auto-save settings");
     }
@@ -468,11 +451,6 @@ void SettingsCache::forceSave() {
     if (UnifiedSettings::save(settings_)) {
         dirty_ = false;
         lastSaveTime_ = std::chrono::steady_clock::now();
-
-        if (hooks_.afterSave) {
-            hooks_.afterSave(settings_);
-        }
-
     } else {
         AWOW_LOG_WARNING("SETTINGS", "Failed to force-save settings");
     }

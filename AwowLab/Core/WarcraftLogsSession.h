@@ -13,12 +13,6 @@
 #include <functional>
 #include <optional>
 
-// Local rate limit hooks supplied by Application. The cost is 2 for a keystone
-// pull and 1 for a raid pull.
-using RateLimitCanQueryCallback = std::function<bool(int cost)>;
-using RateLimitRecordCallback = std::function<void(int cost)>;
-using RateLimitErrorCallback = std::function<std::string()>;
-
 struct ExtractedData;
 
 namespace warcraftlogs {
@@ -158,6 +152,10 @@ public:
     [[nodiscard]] std::string dumpRawQuery(const std::string& query,
                                            const std::string& outputPath);
 
+    // Seconds until the signed-in user's WarcraftLogs points reset, or -1
+    // when that can't be read. Costs one request.
+    [[nodiscard]] int userPointsResetIn();
+
     [[nodiscard]] std::string dumpCharacterRankings(int32_t encounterId,
                                                     const std::string& className,
                                                     const std::string& specName,
@@ -215,16 +213,7 @@ public:
 
     [[nodiscard]] bool isFightCached(int32_t fightId) const;
 
-    // The shared app credentials have one quota for everyone, so each user
-    // is held to a local share of it
-    void setLocalRateLimitCallbacks(
-        RateLimitCanQueryCallback canQuery,
-        RateLimitRecordCallback recordQuery,
-        RateLimitErrorCallback getErrorMsg
-    );
-
-    // The user's own API client. Their own quota applies, so the local
-    // limit is switched off.
+    // The user's own API client
     void setCustomCredentials(const std::string& clientId, const std::string& clientSecret);
 
     [[nodiscard]] bool hasCustomCredentials() const noexcept { return m_hasCustomCredentials; }
@@ -256,10 +245,6 @@ private:
     std::unique_ptr<ResponseCache> m_cache;
     bool m_cacheEnabled = true;
     std::string m_cacheDir = "./wcl_cache";
-
-    RateLimitCanQueryCallback m_canQueryCallback;
-    RateLimitRecordCallback m_recordQueryCallback;
-    RateLimitErrorCallback m_getErrorCallback;
 
     bool m_hasCustomCredentials = false;
 };

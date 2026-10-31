@@ -30,7 +30,6 @@
 #include <cctype>
 #include <fstream>
 #include <functional>
-#include "Settings/RateLimitBackup.h"
 #include "Settings/WclSettings.h"
 #include "Database/OutputWriter.h"
 #include "Database/HasteBuffData.h"
@@ -98,6 +97,27 @@ std::string storedWclAccessToken() {
 
 // A failed query that looks like a rejected sign-in marks the stored token
 // invalid, so the dialog asks the user to sign in again.
+// Report queries carry @onlySpendUserPoints, so WarcraftLogs refuses them
+// once the signed-in user's points for the hour are spent instead of
+// charging the app's own limit.
+bool isUserPointsError(const std::string& error) {
+    std::string lower = error;
+    std::transform(lower.begin(), lower.end(), lower.begin(),
+                   [](unsigned char ch) { return static_cast<char>(std::tolower(ch)); });
+    return lower.find("status 429") != std::string::npos ||
+           lower.find("user points") != std::string::npos ||
+           lower.find("onlyspenduserpoints") != std::string::npos;
+}
+
+// Tells the user their points ran out and when they come back, through the
+// WCL dialog. The sign-in stays valid.
+void noteUserPointsSpent(warcraftlogs::WarcraftLogsSession& session) {
+    const int seconds = session.userPointsResetIn();
+    awow::wclNotice() = seconds > 0
+        ? LF("wcl.user_points_spent", (seconds + 59) / 60)
+        : std::string(L("wcl.user_points_spent_unknown"));
+}
+
 void persistIfAuthError(const std::string& error) {
     if (error.find("401") != std::string::npos ||
         error.find("Unauthorized") != std::string::npos ||
@@ -188,9 +208,6 @@ Application::Application(int width, int height, const std::string& title)
     , singleInstance_(std::make_unique<awow::SingleInstance>())
 {
     singleInstance_->tryAcquire();
-    // Wire the multi-location rate limit backup in before the cache loads,
-    // so the restore step can pick the most restrictive stored value
-    awow::registerRateLimitBackups();
     // Wowhead shortcuts open in the browser; offline builds skip this
     // registration and the shortcuts stay hidden
     ui::setSpellLinkOpener([](uint32_t spellId) {
@@ -271,37 +288,6 @@ void Application::loadSettings() {
         cache.get().windowHeight = height_;
         cache.markDirty();
     }
-
-    auto wclSettings = WclSettings::readFrom(settings);
-    wclRateLimitState_.queriesUsed = wclSettings.queriesUsed;
-    wclRateLimitState_.windowStartTime = wclSettings.windowStartTime;
-    wclRateLimitState_.maybeResetWindow();  // Reset if hour has passed
-}
-
-void Application::syncRateLimitToCache() {
-    auto& cache = SettingsCache::instance();
-    auto wclSettings = WclSettings::readFrom(cache.get());
-    wclSettings.queriesUsed = wclRateLimitState_.queriesUsed;
-    wclSettings.windowStartTime = wclRateLimitState_.windowStartTime;
-    wclSettings.writeTo(cache.get());
-    cache.markDirty();
-}
-
-void Application::attachRateLimit(warcraftlogs::WarcraftLogsSession& session) {
-    // Sign-in is PKCE, so every user draws on the same quota. M+ pulls cost
-    // 2, raid pulls cost 1.
-    session.setLocalRateLimitCallbacks(
-        [this](int cost) { return wclRateLimitState_.canAfford(cost); },
-        [this](int cost) {
-            wclRateLimitState_.recordQuery(cost);
-            syncRateLimitToCache();  // Update cache (auto-saves after 10s)
-        },
-        [this]() {
-            return "Rate limit reached (" + std::to_string(wclRateLimitState_.queriesUsed)
-                   + "/" + std::to_string(WclRateLimitState::MAX_QUERIES)
-                   + "). Resets in " + std::to_string(wclRateLimitState_.getMinutesUntilReset()) + " minutes.";
-        }
-    );
 }
 
 Application::~Application() {
@@ -370,16 +356,15 @@ int Application::run() {
         }
     }
 
-    // Rate limit state already loaded in loadSettings() - ensure window is checked
-    wclRateLimitState_.maybeResetWindow();
-
     // Create shared ResponseCache for WarcraftLogs (reused across flows)
     warcraftlogs::ResponseCache responseCache(kWclCacheDir);
 
     // Set when a WarcraftLogs flow failed on sign-in, so the landing page
     // reopens the sign-in dialog
     bool autoOpenWclDialog = false;
-    const auto signInFailed = []() { return !awow::wclAuthError().empty(); };
+    const auto signInFailed = []() {
+        return !awow::wclAuthError().empty() || !awow::wclNotice().empty();
+    };
 
     // Validation callback for API credentials
     const auto validateCredentials = [](const std::string& clientId, const std::string& clientSecret, std::string& outError) -> bool {
@@ -400,7 +385,7 @@ int Application::run() {
         }
 
         LandingPageResult landingResult = uiManager_->showLandingPage(
-            &wclRateLimitState_, false, validateCredentials, &responseCache, autoOpenWclDialog);
+            validateCredentials, &responseCache, autoOpenWclDialog);
         autoOpenWclDialog = false;  // Reset flag after showing
 
         switch (landingResult.choice) {
@@ -841,8 +826,6 @@ bool Application::runWarcraftLogsFlow(const std::string& urlOrCode, const std::s
         }
     }
 
-    attachRateLimit(*wclSession_);
-
     AWOW_LOG_INFO("WCL", "Parsing WarcraftLogs URL...");
     if (!wclSession_->initialize(urlOrCode)) {
         AWOW_LOG_ERROR("WCL", "Failed to parse URL '" + urlOrCode + "': " + wclSession_->getLastError());
@@ -862,13 +845,18 @@ bool Application::runWarcraftLogsFlow(const std::string& urlOrCode, const std::s
     // No sign-in check up front. Auth happens only when a cache miss needs
     // the API, so cached fights load without it.
 
+    awow::wclNotice().clear();
     AWOW_LOG_INFO("WCL", "Fetching report metadata...");
     if (!wclSession_->fetchReport([this](const std::string& msg, float progress) {
         uiManager_->renderProgressFrame(msg, progress);
     })) {
         std::string error = wclSession_->getLastError();
         AWOW_LOG_ERROR("WCL", "Failed to fetch report for code '" + wclSession_->getReportCode() + "': " + error);
-        persistIfAuthError(error);
+        if (isUserPointsError(error)) {
+            noteUserPointsSpent(*wclSession_);
+        } else {
+            persistIfAuthError(error);
+        }
         wclSession_.reset();
         return false;
     }
@@ -889,7 +877,7 @@ bool Application::runWarcraftLogsFlow(const std::string& urlOrCode, const std::s
         selectedFightId = requestedFightId.value();
         AWOW_LOG_INFO("WCL", "Using fight from URL: " + std::to_string(selectedFightId));
     } else {
-        selectedFightId = uiManager_->showFightSelector(wclSession_.get(), &wclRateLimitState_);
+        selectedFightId = uiManager_->showFightSelector(wclSession_.get());
 
         if (selectedFightId < 0) {
             AWOW_LOG_INFO("WCL", "Fight selection cancelled.");
@@ -1041,7 +1029,11 @@ bool Application::runWarcraftLogsFlow(const std::string& urlOrCode, const std::s
     } catch (const std::exception& e) {
         std::string error = e.what();
         AWOW_LOG_ERROR("WCL", "Failed to load fight " + std::to_string(selectedFightId) + " from " + wclSession_->getReportCode() + ": " + error);
-        persistIfAuthError(error);
+        if (isUserPointsError(error)) {
+            noteUserPointsSpent(*wclSession_);
+        } else {
+            persistIfAuthError(error);
+        }
         wclSession_.reset();
         return false;
     }
@@ -1549,7 +1541,6 @@ bool Application::runFetchRankings(baseline_ui::BaselineContent content,
     if (!wclSession_) {
         wclSession_ = std::make_unique<warcraftlogs::WarcraftLogsSession>();
         wclSession_->setCacheEnabled(true, kWclCacheDir);
-        attachRateLimit(*wclSession_);
     }
 
     // The stored token, same as every other WCL path. Opening a browser sign-in
@@ -1922,7 +1913,6 @@ bool Application::runPlayAlongMode(const std::string& reportCode, int32_t fightI
 
     wclSession_ = std::make_unique<WarcraftLogsSession>();
     wclSession_->setCacheEnabled(true, kWclCacheDir);
-    attachRateLimit(*wclSession_);
 
     if (!wclSession_->initialize(url)) {
         AWOW_LOG_ERROR("PLAYALONG", "Failed to parse URL '" + url + "': " + wclSession_->getLastError());

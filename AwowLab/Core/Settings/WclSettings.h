@@ -10,8 +10,8 @@
  *
  * The shared UnifiedSettings code has no fields for these; they ride in
  * AllSettings::extraValues under the same entry names older builds wrote
- * ("wclQueriesUsed", "wclWindowStartTime", ...), so existing settings files
- * keep working and overlay-only builds carry the values through untouched.
+ * ("wclTokenExpiresAt", ...), so existing settings files keep working and
+ * overlay-only builds carry the values through untouched.
  *
  * The OAuth access token gets extra care: the settings file key ships in
  * the open-source overlay, so anything in the file is readable. The token
@@ -19,16 +19,11 @@
  * goes into the file, under the "wclAccessTokenProtected" entry. Older
  * builds wrote it as plain text under "wclAccessToken"; readFrom still
  * accepts that, and writeTo drops the plain entry once the protected one
- * exists. The rate-limit counters and expiry timestamp are not secrets and
- * stay as ordinary entries.
+ * exists. The expiry timestamp is not a secret and stays an ordinary entry.
  *
  * Main-app only - none of this compiles into the standalone overlay.
  */
 struct WclSettings {
-    // Rate limit window
-    int queriesUsed = 0;
-    int64_t windowStartTime = 0;
-
     // OAuth token
     std::string accessToken;
     int64_t tokenExpiresAt = 0;
@@ -48,6 +43,13 @@ namespace awow {
  * Runtime-only - never persisted.
  */
 std::string& wclAuthError();
+
+/**
+ * A WarcraftLogs refusal that is not a sign-in problem, such as the user's
+ * points for the hour being spent. The WCL dialog shows it; unlike
+ * wclAuthError it leaves the token alone. Runtime-only.
+ */
+std::string& wclNotice();
 
 /**
  * One-time upgrade for settings files written by older builds: if a

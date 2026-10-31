@@ -11,7 +11,6 @@
 #include "Models/Fight.h"
 #include "Database/AnalysisPackage/PackageBuilder.h"
 #include "Settings/WclSettings.h"
-#include "Settings/RateLimitBackup.h"
 #include "UnifiedSettings.h"
 #include "SpellNameDatabase.h"
 #include "HeroTalents.h"
@@ -30,7 +29,6 @@ TEST_CASE("package one fight for one player", "[wcl][live][onefight]") {
     if (!code || !fightEnv || !who) { WARN("set AWL_REPORT, AWL_FIGHT, AWL_PLAYER"); return; }
     const int32_t wantFight = std::atoi(fightEnv);
 
-    awow::registerRateLimitBackups();
     SettingsCache::instance().initialize();
     const std::string token =
         WclSettings::readFrom(SettingsCache::instance().get()).accessToken;
