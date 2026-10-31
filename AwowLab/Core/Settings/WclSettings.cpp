@@ -171,22 +171,11 @@ WclSettings WclSettings::readFrom(const UnifiedSettings::AllSettings& settings) 
         out.tokenExpiresAt = expires.GetInt64();
     }
 
-    auto used = parseEntry(settings, kPointsUsedEstimate);
-    if (!used.HasParseError() && used.IsInt()) {
-        out.pointsUsedEstimate = used.GetInt();
-    }
-    auto resetAt = parseEntry(settings, kPointsResetAt);
-    if (!resetAt.HasParseError() && resetAt.IsInt64()) {
-        out.pointsResetAt = resetAt.GetInt64();
-    }
-
     return out;
 }
 
 void WclSettings::writeTo(UnifiedSettings::AllSettings& settings) const {
     settings.extraValues[kTokenExpiresAt] = std::to_string(tokenExpiresAt);
-    settings.extraValues[kPointsUsedEstimate] = std::to_string(pointsUsedEstimate);
-    settings.extraValues[kPointsResetAt] = std::to_string(pointsResetAt);
 
     // The token only ever leaves this function wrapped with the user's
     // Windows key; the plain-text entry older builds wrote is dropped.
@@ -221,45 +210,55 @@ int awow::estimateFightPoints(int64_t durationMs, bool mythicPlus) {
 
 namespace {
 
-// The stored estimate with an expired window cleared
-WclSettings currentUsage(int64_t now) {
-    auto wcl = WclSettings::readFrom(SettingsCache::instance().get());
-    if (wcl.pointsResetAt != 0 && now >= wcl.pointsResetAt) {
-        wcl.pointsUsedEstimate = 0;
-        wcl.pointsResetAt = 0;
+// The stored estimate with an expired window cleared. Reads only its own
+// two entries: the fight list asks every frame, and going through
+// WclSettings::readFrom would unwrap the token each time.
+awow::WclPointUsage currentUsage(int64_t now) {
+    const auto& settings = SettingsCache::instance().get();
+    awow::WclPointUsage usage;
+    auto used = parseEntry(settings, kPointsUsedEstimate);
+    if (!used.HasParseError() && used.IsInt()) {
+        usage.used = used.GetInt();
     }
-    return wcl;
+    auto resetAt = parseEntry(settings, kPointsResetAt);
+    if (!resetAt.HasParseError() && resetAt.IsInt64()) {
+        usage.resetsAt = resetAt.GetInt64();
+    }
+    if (usage.resetsAt != 0 && now >= usage.resetsAt) {
+        usage = {};
+    }
+    return usage;
 }
 
-void saveUsage(const WclSettings& wcl) {
+void saveUsage(const awow::WclPointUsage& usage) {
     auto& cache = SettingsCache::instance();
-    wcl.writeTo(cache.get());
+    cache.get().extraValues[kPointsUsedEstimate] = std::to_string(usage.used);
+    cache.get().extraValues[kPointsResetAt] = std::to_string(usage.resetsAt);
     cache.markDirty();
 }
 
 } // namespace
 
 awow::WclPointUsage awow::wclPointUsage(int64_t now) {
-    const auto wcl = currentUsage(now);
-    return {wcl.pointsUsedEstimate, wcl.pointsResetAt};
+    return currentUsage(now);
 }
 
 void awow::addWclPointUsage(int points, int64_t now) {
     if (points <= 0) return;
-    auto wcl = currentUsage(now);
-    wcl.pointsUsedEstimate += points;
-    if (wcl.pointsResetAt == 0) {
-        wcl.pointsResetAt = now + 3600;
+    auto usage = currentUsage(now);
+    usage.used += points;
+    if (usage.resetsAt == 0) {
+        usage.resetsAt = now + 3600;
     }
-    saveUsage(wcl);
+    saveUsage(usage);
 }
 
-void awow::setWclPointsResetIn(int seconds, int64_t now) {
-    // Zero means no hour is running for the user yet
-    if (seconds <= 0) return;
-    auto wcl = currentUsage(now);
-    wcl.pointsResetAt = now + seconds;
-    saveUsage(wcl);
+void awow::setWclPointsResetAt(int64_t resetAt, int64_t now) {
+    if (resetAt <= now) return;
+    auto usage = currentUsage(now);
+    if (usage.resetsAt == resetAt) return;
+    usage.resetsAt = resetAt;
+    saveUsage(usage);
 }
 
 void awow::moveWclTokenToProtectedStorage() {

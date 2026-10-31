@@ -28,11 +28,6 @@ struct WclSettings {
     std::string accessToken;
     int64_t tokenExpiresAt = 0;
 
-    // AwowLab's estimate of the user's WarcraftLogs points spent this hour,
-    // and when they reset (unix seconds, 0 when not known)
-    int pointsUsedEstimate = 0;
-    int64_t pointsResetAt = 0;
-
     /** Parse the WCL entries out of a loaded settings snapshot. */
     static WclSettings readFrom(const UnifiedSettings::AllSettings& settings);
 
@@ -81,8 +76,8 @@ WclPointUsage wclPointUsage(int64_t now);
 /** Add a load's estimate. Starts an hour-long window if none is known. */
 void addWclPointUsage(int points, int64_t now);
 
-/** Record WarcraftLogs' own reset time for the user's points. */
-void setWclPointsResetIn(int seconds, int64_t now);
+/** Record WarcraftLogs' own reset time for the user's points (unix seconds). */
+void setWclPointsResetAt(int64_t resetAt, int64_t now);
 
 /**
  * One-time upgrade for settings files written by older builds: if a

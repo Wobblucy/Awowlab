@@ -2397,6 +2397,16 @@ TEST_CASE("WclSettings - query counters from older builds are left alone", "[set
     CHECK(settings.extraValues.at("wclTokenExpiresAt") == "1800000000");
 }
 
+TEST_CASE("WclSettings - fight point estimates follow fight length", "[settings][wcl]") {
+    // Measured: a 9.9-minute 20-player Mythic kill cost 68 user points and a
+    // 29.5-minute +24 key 36. The estimate should land near both.
+    CHECK(awow::estimateFightPoints(594000, false) == 70);
+    CHECK(awow::estimateFightPoints(1771731, true) == 45);
+    // Never free, even for an empty or broken fight
+    CHECK(awow::estimateFightPoints(0, false) == 1);
+    CHECK(awow::estimateFightPoints(-5000, true) == 1);
+}
+
 TEST_CASE("OutputWriter - hostile units are found without position data",
           "[database][hostility]") {
     // Enemies used to be collected from actor and resource events, which only

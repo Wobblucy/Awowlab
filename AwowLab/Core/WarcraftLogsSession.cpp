@@ -1,3 +1,4 @@
+#include <ctime>
 #include <chrono>
 #include <cstring>
 #include <fstream>
@@ -531,19 +532,12 @@ void WarcraftLogsSession::noteUserPointsReset(const rapidjson::Document& respons
     const auto& data = response["data"];
     if (data.HasMember("rateLimitData") && data["rateLimitData"].IsObject()) {
         const auto& rate = data["rateLimitData"];
-        if (rate.HasMember("userPointsResetIn") && rate["userPointsResetIn"].IsInt()) {
-            m_lastUserPointsResetIn = rate["userPointsResetIn"].GetInt();
+        // Zero means no hour is running for the user yet
+        if (rate.HasMember("userPointsResetIn") && rate["userPointsResetIn"].IsInt() &&
+            rate["userPointsResetIn"].GetInt() > 0) {
+            m_userPointsResetAt = static_cast<int64_t>(std::time(nullptr)) +
+                                  rate["userPointsResetIn"].GetInt();
         }
-    }
-}
-
-int WarcraftLogsSession::userPointsResetIn() {
-    try {
-        ensureGraphQLClient();
-        return m_graphqlClient->fetchRateLimitInfo().userPointsResetIn;
-    } catch (const std::exception& e) {
-        AWOW_LOG_ERROR("WCL", std::string("Could not read the user points reset time: ") + e.what());
-        return -1;
     }
 }
 

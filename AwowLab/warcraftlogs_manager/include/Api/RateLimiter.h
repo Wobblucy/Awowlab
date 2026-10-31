@@ -12,7 +12,6 @@ struct RateLimitInfo {
     int32_t limitPerHour = 0;
     int32_t pointsSpentThisHour = 0;
     int32_t pointsResetIn = 0;          // milliseconds until the limit resets
-    int32_t userPointsResetIn = -1;     // seconds until the signed-in user's points reset; -1 without a user
     std::chrono::system_clock::time_point lastUpdated;
 
     [[nodiscard]] int32_t remainingPoints() const noexcept {

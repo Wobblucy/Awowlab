@@ -139,6 +139,8 @@ void UIWarcraftLogsUrlDialog::open() {
 
 void UIWarcraftLogsUrlDialog::close() {
     shouldClose_ = true;
+    // A points notice has been seen; it shouldn't reopen the dialog later
+    awow::wclNotice().clear();
 }
 
 void UIWarcraftLogsUrlDialog::reset() {

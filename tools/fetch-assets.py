@@ -103,6 +103,10 @@ def main():
     parser.add_argument("--force", action="store_true",
                         help="replace an existing spell icon folder")
     args = parser.parse_args()
+    if awowlab_config.is_placeholder_repo(args.repo):
+        parser.error(f"{args.repo} is the example's placeholder. Set assets_repo in "
+                     "awowlab.config.json, or pass --repo owner/name (the published assets "
+                     "are in Wobblucy/Awowlab).")
 
     with open(HASHES_PATH, encoding="utf-8") as handle:
         hashes = json.load(handle)

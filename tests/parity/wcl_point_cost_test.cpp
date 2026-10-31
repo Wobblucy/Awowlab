@@ -15,11 +15,13 @@
 #include "Settings/WclSettings.h"
 #include "UnifiedSettings.h"
 
-// What each kind of request costs in WarcraftLogs API points.
+// What each kind of request costs the app's own WarcraftLogs points.
 //
-// The app counts requests, not points, so nothing records what a report load
-// or a rankings lookup actually spends. This reads rateLimitData before and
-// after each one. The figure is per account and every client on it shares it,
+// Reads rateLimitData before and after each request. Report requests carry
+// @onlySpendUserPoints and are charged to the signed-in user, so they show
+// about 0 here; that is the check that they never reach the app's points.
+// What they cost the user is not reported anywhere in rateLimitData totals;
+// measure it with [rawquery] and currentRequest, one events page at a time. The figure is per account and every client on it shares it,
 // so another user spending points at the same moment shows up here too; run
 // it twice and trust the smaller numbers.
 //

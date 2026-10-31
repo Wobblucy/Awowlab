@@ -3,8 +3,9 @@
 The release tools and CMake read the same file, so a builder changes their
 repositories and keys in one place. The file is each builder's own and is not
 committed: CMake creates it from awowlab.config.example.json on the first
-configure. Until then load() reads the example, so tools that only need the
-public repositories work in a fresh checkout. Standard library only.
+configure. Until then load() reads the example. Its repositories are the
+placeholder xyz/xyz, so tools that download from one check
+is_placeholder_repo() first. Standard library only.
 
     import awowlab_config
     config = awowlab_config.load()
@@ -72,6 +73,11 @@ class Config:
     def split_repo(repo):
         owner, name = repo.split("/")
         return owner, name
+
+
+def is_placeholder_repo(repo):
+    """True for the example's xyz/... repositories, which a builder has to replace."""
+    return repo.split("/")[0].lower() == "xyz"
 
 
 def check_repo(value, field="repository"):

@@ -178,7 +178,6 @@ constexpr const char* RATE_LIMIT = R"(
     limitPerHour
     pointsSpentThisHour
     pointsResetIn
-    userPointsResetIn
   }
 }
 )";

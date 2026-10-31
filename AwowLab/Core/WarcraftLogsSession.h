@@ -152,13 +152,9 @@ public:
     [[nodiscard]] std::string dumpRawQuery(const std::string& query,
                                            const std::string& outputPath);
 
-    // Seconds until the signed-in user's WarcraftLogs points reset, or -1
-    // when that can't be read. Costs one request.
-    [[nodiscard]] int userPointsResetIn();
-
-    // The same figure as it came back with the last report request, free;
-    // -1 before any request carried it.
-    [[nodiscard]] int lastUserPointsResetIn() const noexcept { return m_lastUserPointsResetIn; }
+    // When the signed-in user's WarcraftLogs points reset (unix seconds), as
+    // the last report request reported it; 0 before any request did.
+    [[nodiscard]] int64_t userPointsResetAt() const noexcept { return m_userPointsResetAt; }
 
     [[nodiscard]] std::string dumpCharacterRankings(int32_t encounterId,
                                                     const std::string& className,
@@ -241,7 +237,7 @@ private:
     bool m_useUserAuth = true;
 
     std::unique_ptr<GraphQLClient> m_graphqlClient;
-    int m_lastUserPointsResetIn = -1;
+    int64_t m_userPointsResetAt = 0;
     int m_requestTimeoutMs = 0;   // 0 leaves the client's own default
     std::unique_ptr<RateLimiter> m_rateLimiter;
 

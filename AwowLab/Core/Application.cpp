@@ -96,11 +96,10 @@ std::string storedWclAccessToken() {
     return WclSettings::readFrom(SettingsCache::instance().get()).accessToken;
 }
 
-// A failed query that looks like a rejected sign-in marks the stored token
-// invalid, so the dialog asks the user to sign in again.
 // Report queries carry @onlySpendUserPoints, so WarcraftLogs refuses them
 // once the signed-in user's points for the hour are spent instead of
-// charging the app's own limit.
+// charging the app's own limit. A 429 from its per-second throttle looks
+// the same; on a report query the spent points are by far the likelier.
 bool isUserPointsError(const std::string& error) {
     std::string lower = error;
     std::transform(lower.begin(), lower.end(), lower.begin(),
@@ -111,11 +110,16 @@ bool isUserPointsError(const std::string& error) {
 }
 
 // Tells the user their points ran out and when they come back, through the
-// WCL dialog. The sign-in stays valid.
-void noteUserPointsSpent(warcraftlogs::WarcraftLogsSession& session) {
-    const int seconds = session.userPointsResetIn();
-    awow::wclNotice() = seconds > 0
-        ? LF("wcl.user_points_spent", (seconds + 59) / 60)
+// WCL dialog. The sign-in stays valid. The reset time is the one the last
+// report request brought back, or failing that the stored estimate's.
+void noteUserPointsSpent(const warcraftlogs::WarcraftLogsSession& session) {
+    const int64_t now = static_cast<int64_t>(std::time(nullptr));
+    int64_t resetAt = session.userPointsResetAt();
+    if (resetAt <= now) {
+        resetAt = awow::wclPointUsage(now).resetsAt;
+    }
+    awow::wclNotice() = resetAt > now
+        ? LF("wcl.user_points_spent", static_cast<int>((resetAt - now + 59) / 60))
         : std::string(L("wcl.user_points_spent_unknown"));
 }
 
@@ -125,9 +129,7 @@ void noteUserPointsSpent(warcraftlogs::WarcraftLogsSession& session) {
 void noteFightPoints(const warcraftlogs::WarcraftLogsSession& session, int32_t fightId,
                      bool wasCached, bool onePlayer) {
     const int64_t now = static_cast<int64_t>(std::time(nullptr));
-    if (session.lastUserPointsResetIn() > 0) {
-        awow::setWclPointsResetIn(session.lastUserPointsResetIn(), now);
-    }
+    awow::setWclPointsResetAt(session.userPointsResetAt(), now);
     if (wasCached) return;
 
     int points = 1;
@@ -142,6 +144,8 @@ void noteFightPoints(const warcraftlogs::WarcraftLogsSession& session, int32_t f
     awow::addWclPointUsage(points, now);
 }
 
+// A failed query that looks like a rejected sign-in marks the stored token
+// invalid, so the dialog asks the user to sign in again.
 void persistIfAuthError(const std::string& error) {
     if (error.find("401") != std::string::npos ||
         error.find("Unauthorized") != std::string::npos ||
@@ -1998,6 +2002,9 @@ bool Application::runPlayAlongMode(const std::string& reportCode, int32_t fightI
         noteFightPoints(*wclSession_, fightId, fightWasCached, false);
     } catch (const std::exception& e) {
         AWOW_LOG_ERROR("PLAYALONG", "Failed to load fight " + std::to_string(fightId) + ": " + std::string(e.what()));
+        if (isUserPointsError(e.what())) {
+            noteUserPointsSpent(*wclSession_);
+        }
         wclSession_.reset();
         return false;
     }

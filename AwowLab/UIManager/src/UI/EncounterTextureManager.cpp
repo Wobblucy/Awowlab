@@ -2,6 +2,8 @@
 #include "Core/Utils/ExecutablePath.h"
 #include "AssetResolver.h"
 #include "Core/ErrorLogger.h"
+#include <vector>
+#include <algorithm>
 #include <filesystem>
 
 EncounterTextureManager::EncounterTextureManager()
@@ -149,16 +151,25 @@ std::optional<EncounterTextureInfo> EncounterTextureManager::scanDirectoryForEnc
 
     std::string prefix = "encounter_" + std::to_string(encounterId) + "_";
 
+    // Folder listings come back sorted on Windows but in no fixed order
+    // elsewhere (Wine on a Linux filesystem), so sort the candidates and
+    // take the first valid one: the same file on every system.
+    std::vector<std::filesystem::path> candidates;
     for (const auto& entry : std::filesystem::directory_iterator(directory)) {
         if (!entry.is_regular_file()) continue;
 
         std::string filename = entry.path().filename().string();
         if (filename.find(prefix) == 0 && filename.ends_with(".png")) {
-            auto infoOpt = parseEncounterFilename(filename);
-            if (infoOpt.has_value()) {
-                infoOpt->filePath = entry.path().string();
-                return infoOpt;
-            }
+            candidates.push_back(entry.path());
+        }
+    }
+    std::sort(candidates.begin(), candidates.end());
+
+    for (const auto& path : candidates) {
+        auto infoOpt = parseEncounterFilename(path.filename().string());
+        if (infoOpt.has_value()) {
+            infoOpt->filePath = path.string();
+            return infoOpt;
         }
     }
 
